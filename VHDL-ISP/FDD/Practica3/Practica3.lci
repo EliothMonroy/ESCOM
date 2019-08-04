@@ -1,0 +1,135 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4256ZE-5TN144C;
+Package = 144TQFP;
+PartType = LC4256ZE;
+Speed = -5.8;
+Operating_condition = COM;
+Status = Production;
+
+[Revision]
+Parent = lc4k256e.lci;
+DATE = 2002;
+TIME = 0:00:00;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+a_5_ = pin, 4, -, -, -;
+s_15_ = pin, 111, -, -, -;
+a_4_ = pin, 5, -, -, -;
+a_3_ = pin, 6, -, -, -;
+a_2_ = pin, 7, -, -, -;
+a_1_ = pin, 8, -, -, -;
+a_0_ = pin, 9, -, -, -;
+s_14_ = pin, 112, -, -, -;
+s_13_ = pin, 113, -, -, -;
+s_12_ = pin, 114, -, -, -;
+s_11_ = pin, 115, -, -, -;
+s_10_ = pin, 116, -, -, -;
+s_9_ = pin, 120, -, -, -;
+s_8_ = pin, 121, -, -, -;
+s_7_ = pin, 122, -, -, -;
+s_6_ = pin, 123, -, -, -;
+s_5_ = pin, 124, -, -, -;
+s_4_ = pin, 125, -, -, -;
+s_3_ = pin, 130, -, -, -;
+s_2_ = pin, 131, -, -, -;
+s_1_ = pin, 132, -, -, -;
+s_0_ = pin, 133, -, -, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Power Guard]
+
+[ORP Bypass]
+
+[Register Powerup]

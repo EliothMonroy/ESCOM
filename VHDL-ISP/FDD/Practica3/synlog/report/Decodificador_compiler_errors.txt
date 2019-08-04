@@ -1,0 +1,12 @@
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":21:21:21:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":22:21:22:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":23:21:23:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":24:21:24:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":25:21:25:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":26:21:26:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":27:21:27:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":28:21:28:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":29:21:29:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":30:21:30:29|Constant width 7 does not match context width 16
+@E: CD395 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":31:21:31:29|Constant width 7 does not match context width 16
+

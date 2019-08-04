@@ -1,0 +1,41 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Sat Mar 25 11:49:10 2017
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/elith/documents/github/vhdl-isp/dsd/practica4\contador.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.srr"
+
+Generating HDL info...
+hdl_info_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+log file: "C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.srr"
+
+Running contador|practica4
+
+Running: Compile on contador|practica4
+
+Running: Compile Process on contador|practica4
+
+Running: Compile Input on contador|practica4
+compiler exited with errors
+Job: "compiler" terminated with error status: 2.
+See log file: "C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.srr"
+Return Code: 2
+Run Time:0h:00m:00s
+Copied C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.srr to C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.srf
+
+exit status=2
+
+exit status=2
+

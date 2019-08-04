@@ -1,0 +1,25 @@
+timestamp=1496613815288
+
+[~A]
+ModifyID=5
+Version=73
+
+[bin_bcd]
+A/convertir=21|./../src/binario_bcd.vhd|12|1*0
+BinI32/convertir=3*0
+I=0*564
+I/convertir=0*1348
+M=11|0|vc1|1496613814403|./../src/binario_bcd.vhd|0*175*0x561d224801ca8688eeb5be29cc014415041024f4|0*481*0x5eebbfaf24833dd780412b1f91e05209
+M/convertir=21|0|vc1|1496613814406|./../src/binario_bcd.vhd|0*799*0x74187536a4563e5e7af997fd207e3d2e9d0bc87d|0*1252*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../src/binario_bcd.vhd|5
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|26336760c6a261b0037f12bdd0654bb226527262ddaa47cb266f3a3c4d9b973a9e85be45058e209eb41fb12a8a4e1eaf
+Version/convertir=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|7ba4036fd5ecae5712af02ccb417f6aa9457ed1d655cf0f590e1ce743eccced93a7d9e8756e91aa0f99baf7038679243
+
+[~MFT]
+0=6|0BinarioBCD.mgf|1348|0
+1=0|1BinarioBCD.mgf|0|0
+3=0|3BinarioBCD.mgf|0|0
+
+[~U]
+bin_bcd=11|0*0|
+

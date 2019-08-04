@@ -1,0 +1,1 @@
+-nodal -src practica3.bl5 -type BLIF -presrc practica3.bl3 -crf practica3.crf -sif practica3.sif -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/lc4k/m4e_256_96.dev" -lci practica3.lct

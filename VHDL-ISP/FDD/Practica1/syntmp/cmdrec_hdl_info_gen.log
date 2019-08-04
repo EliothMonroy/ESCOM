@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_hdl_.srs  -top  prueba  -prodtype  synplify_pro  -nostructver -encrypt  -pro  -dmgen  C:\users\elith\documents\github\vhdl-isp\practica1\dm  -lite -compiler_compatible -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd -loga  C:\users\elith\documents\github\vhdl-isp\practica1\syntax.log  -fileorder  C:\users\elith\documents\github\vhdl-isp\practica1\syntmp\hdlorder.tcl 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_hdl_.srs|o|0|0
+C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd|i|1474857872|1220
+C:\users\elith\documents\github\vhdl-isp\practica1\syntax.log|o|1474857915|1111
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401249098|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401249304|5533184

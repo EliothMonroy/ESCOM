@@ -1,0 +1,10 @@
+CLK  i
+CLR  i
+CONTROL  i
+display[6]  b
+display[5]  b
+display[4]  b
+display[3]  b
+display[2]  b
+display[1]  b
+display[0]  b

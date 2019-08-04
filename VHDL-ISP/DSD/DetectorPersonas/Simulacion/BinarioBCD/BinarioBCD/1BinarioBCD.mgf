@@ -1,0 +1,30 @@
+V 000050 55 1239          1496613814407 convertir
+(_unit VHDL (bin_bcd 0 5(convertir 0 12))
+	(_version vc1)
+	(_time 1496613814408 2017.06.04 17:03:34)
+	(_source (\./../src/binario_bcd.vhd\))
+	(_code a4a5a0f3a9f3a5b1f0a6b6fef6a2a0a2a6a2ada2f1)
+	(_entity
+		(_time 1496613814404)
+	)
+	(_object
+		(_type (_int ~STD_LOGIC_VECTOR{7~downto~0}~12 0 7(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto i 7 i 0)))))
+		(_port (_int salida ~STD_LOGIC_VECTOR{7~downto~0}~12 0 7(_entity(_inout))))
+		(_type (_int ~STD_LOGIC_VECTOR{7~downto~0}~122 0 8(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto i 7 i 0)))))
+		(_port (_int displays ~STD_LOGIC_VECTOR{7~downto~0}~122 0 8(_entity(_out))))
+		(_type (_int ~STD_LOGIC_VECTOR{15~downto~0}~13 0 15(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto i 15 i 0)))))
+		(_variable (_int aux ~STD_LOGIC_VECTOR{15~downto~0}~13 0 15(_process 0)))
+		(_process
+			(convertidor(_architecture 0 0 14(_process (_simple)(_target(1))(_sensitivity(0)))))
+		)
+		(_subprogram
+			(_ext resolved (0 15))
+		)
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC (0 STD_LOGIC)))
+	)
+	(_use (ieee(std_logic_1164))(std(standard))(ieee(std_logic_arith))(ieee(STD_LOGIC_UNSIGNED)))
+	(_static
+		(33686018 33686018 33686018 33686018)
+	)
+	(_model . convertir 1 -1)
+)

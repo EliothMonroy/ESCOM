@@ -1,0 +1,17 @@
+#$ DATE Sun Sep 25 16:48:12 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE prueba
+#$ PINS 3 A B S
+#$ NODES 3 A_c B_c S_c 
+.model prueba
+.inputs A.BLIF B.BLIF A_c.BLIF B_c.BLIF S_c.BLIF  
+.outputs S A_c B_c S_c
+.names  A.BLIF A_c
+1 1
+.names  B.BLIF B_c
+1 1
+.names  S_c.BLIF S
+1 1
+.names  A_c.BLIF B_c.BLIF S_c
+11 1
+.end

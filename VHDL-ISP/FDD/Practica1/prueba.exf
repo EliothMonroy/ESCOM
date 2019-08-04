@@ -1,0 +1,11 @@
+Section Cross Reference File
+Design 'prueba' created Sun Sep 25 16:48:12 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     A
+        Input     B
+        Output     S
+End

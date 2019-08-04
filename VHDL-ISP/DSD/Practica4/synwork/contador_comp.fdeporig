@@ -1,0 +1,23 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|contador|-prodtype|synplify_pro|-nostructver|-encrypt|-pro|-lite|-compiler_compatible|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\bin64\\c_vhdl.exe":1401245704
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\location.map":1310478974
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std.vhd":1401245322
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1401245322
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std1164.vhd":1401245322
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\numeric.vhd":1401245322
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\umr_capim.vhd":1401245568
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\arith.vhd":1401245322
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\unsigned.vhd":1401245322
+#CUR:"C:\\users\\elith\\documents\\github\\vhdl-isp\\dsd\\practica4\\contador.vhd":1490464121
+0 "C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+
+# Dependency Lists (Users Of)
+0 -1
+
+# Design Unit to File Association
+arch work contador a_contador 0
+module work contador 0

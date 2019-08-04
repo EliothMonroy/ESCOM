@@ -1,0 +1,137 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon Jun 12 21:10:10 2017
+#$ MODULE dadodigital
+#$ PINS 10 display_6_:130'ke'  CLK:4'ke'  display_3_:133'ke'  CLR:5'ke'  CONTROL:6'ke'  \
+#  display_5_:131'ke'  display_4_:132'ke'  display_2_:134'ke'  display_1_:135'ke'  \
+#  display_0_:138'ke' 
+#$ NODES 1 display_1_3reg
+.model dado
+.inputs CLK.BLIF CLR.BLIF CONTROL.BLIF display_0_.Q display_1_.Q display_2_.Q \
+display_1_3reg.Q display_4_.Q display_5_.Q
+.outputs display_6_ display_3_ display_0_.CE display_0_.C display_0_.AP \
+display_1_.CE display_1_.C display_1_.AP display_2_.CE display_2_.C \
+display_2_.AP display_1_3reg.CE display_1_3reg.C display_1_3reg.AP \
+display_4_.CE display_4_.C display_4_.AR display_5_.CE display_5_.C \
+display_5_.AR display_0_.D display_1_.D display_2_.D display_1_3reg.D \
+display_4_.D display_5_.D
+.names CONTROL.BLIF display_0_.CE
+0 1
+1 0
+.names CLR.BLIF display_0_.AP
+0 1
+1 0
+.names CONTROL.BLIF display_1_.CE
+0 1
+1 0
+.names CLR.BLIF display_1_.AP
+0 1
+1 0
+.names CONTROL.BLIF display_2_.CE
+0 1
+1 0
+.names CLR.BLIF display_2_.AP
+0 1
+1 0
+.names CONTROL.BLIF display_1_3reg.CE
+0 1
+1 0
+.names CLR.BLIF display_1_3reg.AP
+0 1
+1 0
+.names CONTROL.BLIF display_4_.CE
+0 1
+1 0
+.names CLR.BLIF display_4_.AR
+0 1
+1 0
+.names CONTROL.BLIF display_5_.CE
+0 1
+1 0
+.names CLR.BLIF display_5_.AR
+0 1
+1 0
+.names display_1_3reg.Q display_6_
+1 1
+0 0
+.names display_1_3reg.Q display_3_
+1 1
+0 0
+.names CLK.BLIF display_0_.C
+1 1
+0 0
+.names CLK.BLIF display_1_.C
+1 1
+0 0
+.names CLK.BLIF display_2_.C
+1 1
+0 0
+.names CLK.BLIF display_1_3reg.C
+1 1
+0 0
+.names CLK.BLIF display_4_.C
+1 1
+0 0
+.names CLK.BLIF display_5_.C
+1 1
+0 0
+.names display_0_.Q display_1_.Q display_2_.Q display_1_3reg.Q display_4_.Q \
+display_5_.Q display_0_.D
+000001 1
+----1- 0
+---1-- 0
+--1--- 0
+-1---- 0
+1----- 0
+-----0 0
+.names display_0_.Q display_1_.Q display_2_.Q display_1_3reg.Q display_4_.Q \
+display_5_.Q display_1_.D
+111100 1
+000001 1
+010010 1
+---11- 0
+-10-0- 0
+---1-1 0
+1--0-- 0
+0-1--- 0
+-0---0 0
+----11 0
+.names display_0_.Q display_1_.Q display_2_.Q display_1_3reg.Q display_4_.Q \
+display_5_.Q display_2_.D
+-0---0 1
+---1-1 1
+1--0-- 1
+01---- 1
+----1- 1
+--0--- 1
+111100 0
+001001 0
+.names display_0_.Q display_1_.Q display_2_.Q display_1_3reg.Q display_4_.Q \
+display_5_.Q display_1_3reg.D
+011000 1
+000001 1
+--0--0 0
+-1---1 0
+-01--- 0
+----1- 0
+---1-- 0
+1----- 0
+.names display_0_.Q display_1_.Q display_2_.Q display_1_3reg.Q display_4_.Q \
+display_5_.Q display_4_.D
+111100 1
+----1- 0
+---0-- 0
+--0--- 0
+-0---- 0
+0----- 0
+-----1 0
+.names display_0_.Q display_1_.Q display_2_.Q display_1_3reg.Q display_4_.Q \
+display_5_.Q display_5_.D
+001100 1
+001001 1
+---0-0 0
+---1-1 0
+----1- 0
+--0--- 0
+-1---- 0
+1----- 0
+.end

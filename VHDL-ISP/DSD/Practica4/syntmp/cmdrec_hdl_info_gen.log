@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\elith\documents\github\vhdl-isp\dsd\practica4\synwork\contador_hdl_.srs  -top  contador  -prodtype  synplify_pro  -nostructver -encrypt  -pro  -dmgen  C:\users\elith\documents\github\vhdl-isp\dsd\practica4\dm  -lite -compiler_compatible -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd -loga  C:\users\elith\documents\github\vhdl-isp\dsd\practica4\syntax.log  -fileorder  C:\users\elith\documents\github\vhdl-isp\dsd\practica4\syntmp\hdlorder.tcl 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\dsd\practica4\synwork\contador_hdl_.srs|o|0|0
+C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd|i|1490464121|2519
+C:\users\elith\documents\github\vhdl-isp\dsd\practica4\syntax.log|o|1490464150|1119
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401245498|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401245704|5533184

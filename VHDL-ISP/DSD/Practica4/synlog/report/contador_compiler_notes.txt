@@ -1,0 +1,5 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":6:7:6:14|Top entity is set to contador.
+@N: CD630 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":6:7:6:14|Synthesizing work.contador.a_contador 
+

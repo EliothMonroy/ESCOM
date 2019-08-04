@@ -1,0 +1,28 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ELIOTH
+
+#Implementation: practica4
+
+$ Start of Compile
+#Sat Mar 25 11:49:10 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":6:7:6:14|Top entity is set to contador.
+VHDL syntax check successful!
+@N: CD630 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":6:7:6:14|Synthesizing work.contador.a_contador 
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":32:8:32:38|No matching overload for "and"
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":34:7:34:19|No matching overload for "xor"
+@E: CD716 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":36:7:36:9|Expression has ambiguous type
+?"and"(?"not"(input:ctrl), ?"and"(inout:q(1), inout:q(2)))
+@E: CD308 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":32:46:32:72|Unable to evaluate expression type
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 25 11:49:10 2017
+
+###########################################################]

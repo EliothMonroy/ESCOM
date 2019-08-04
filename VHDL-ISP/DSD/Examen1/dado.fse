@@ -1,0 +1,16 @@
+
+fsm_encoding {7302301} original
+
+fsm_state_encoding {7302301} dig3 {0000110}
+
+fsm_state_encoding {7302301} dig2 {0010010}
+
+fsm_state_encoding {7302301} dig6 {0100000}
+
+fsm_state_encoding {7302301} dig5 {0100100}
+
+fsm_state_encoding {7302301} dig4 {1001100}
+
+fsm_state_encoding {7302301} dig1 {1001111}
+
+fsm_registers {7302301} {display_1[6]}  {display_1[5]}  {display_1[4]}  {display_1[3]}  {display_1[2]}  {display_1[1]}  {display_1[0]} 

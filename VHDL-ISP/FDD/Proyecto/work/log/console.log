@@ -1,0 +1,56 @@
+adel -all
+# Library contents cleared.
+vcom calculadorachida.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: calculadorachida.vhd
+# Compile Entity "CalculadoraChida"
+# Compile Architecture "calcu" of Entity "CalculadoraChida"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom simulacion.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: simulacion.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vsim +access +r testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# vsim: Stack memory: 32MB
+# vsim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5948 kB (elbread=1023 elab2=4774 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ELITH\Documents\GitHub\VHDL-ISP\Proyecto\work\src\wave.asdb
+#  09:28 p. m., domingo, 11 de diciembre de 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+do -tcl simulacion_vhdaf.udo
+add wave *
+# 4 signal(s) traced.
+run 1000 ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/ELITH/Documents/GitHub/VHDL-ISP/Proyecto/work/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped
+# Adding file C:\Users\ELITH\Documents\GitHub\VHDL-ISP\Proyecto\work\src\untitled.awc ... Done

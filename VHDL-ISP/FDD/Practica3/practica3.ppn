@@ -1,0 +1,56 @@
+//
+// Software Version :  ispLEVER Classic 2.0.00.17.20.15  
+// Project Name	    :  practica3
+// Targeted Device  :  LC4256ZE-5TN144C
+// Date             :  Sun Oct 09 21:31:59 2016
+//
+                      GND          SYS           1
+                   VCCIO0          SYS           3
+                     a_5_          IN            4
+                     a_4_          IN            5
+                     a_3_          IN            6
+                     a_2_          IN            7
+                     a_1_          IN            8
+                     a_0_          IN            9
+                   GNDIO0          SYS           10
+                   VCCIO0          SYS           19
+                   GNDIO0          SYS           27
+                   VCCIO0          SYS           34
+                      VCC          SYS           36
+                      GND          SYS           37
+                   GNDIO0          SYS           46
+                   VCCIO0          SYS           47
+                   GNDIO1          SYS           55
+                      VCC          SYS           57
+                   VCCIO1          SYS           64
+                   GNDIO1          SYS           65
+                      GND          SYS           73
+                   VCCIO1          SYS           75
+                   GNDIO1          SYS           82
+                   VCCIO1          SYS           91
+                   GNDIO1          SYS           99
+                   VCCIO1          SYS           106
+                      VCC          SYS           108
+                      GND          SYS           109
+                    s_15_          OUT           111
+                    s_14_          OUT           112
+                    s_13_          OUT           113
+                    s_12_          OUT           114
+                    s_11_          OUT           115
+                    s_10_          OUT           116
+                   GNDIO1          SYS           118
+                   VCCIO1          SYS           119
+                     s_9_          OUT           120
+                     s_8_          OUT           121
+                     s_7_          OUT           122
+                     s_6_          OUT           123
+                     s_5_          OUT           124
+                     s_4_          OUT           125
+                   GNDIO0          SYS           127
+                      VCC          SYS           129
+                     s_3_          OUT           130
+                     s_2_          OUT           131
+                     s_1_          OUT           132
+                     s_0_          OUT           133
+                   VCCIO0          SYS           136
+                   GNDIO0          SYS           137

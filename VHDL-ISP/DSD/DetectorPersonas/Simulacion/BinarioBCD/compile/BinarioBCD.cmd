@@ -1,0 +1,1 @@
+-w -s "c:\my_designs\Simulations\library.cfg"  -j "c:\my_designs\Simulations\BinarioBCD\projlib.cfg"  -d "c:\my_designs\Simulations\BinarioBCD\compile"   -work BinarioBCD  -O3 -e 100 -o -2002 "c:/my_designs/Simulations/BinarioBCD/src/binario_bcd.vhd"

@@ -1,0 +1,2 @@
+@E: CD297 :"C:\users\elith\documents\github\vhdl-isp\proyecto\calculadorachida.vhd":21:14:21:16|Width mismatch, location has width 8, value 7
+

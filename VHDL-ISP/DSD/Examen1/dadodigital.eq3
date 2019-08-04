@@ -1,0 +1,57 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 2.0.00.17.20.15 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+display_0_.D = !display_6_.Q & display_5_.Q & !display_4_.Q & !display_2_.Q
+       & !display_1_.Q & !display_0_.Q ; (1 pterm, 6 signals)
+display_0_.C = CLK ; (1 pterm, 1 signal)
+display_0_.CE = !CONTROL ; (1 pterm, 1 signal)
+display_0_.AP = !CLR ; (1 pterm, 1 signal)
+
+display_1_.D = display_6_.Q & !display_5_.Q & !display_4_.Q & display_2_.Q
+       & display_1_.Q & display_0_.Q
+    # !display_6_.Q & display_5_.Q & !display_4_.Q & !display_2_.Q
+       & !display_1_.Q & !display_0_.Q
+    # !display_6_.Q & !display_5_.Q & display_4_.Q & !display_2_.Q
+       & display_1_.Q & !display_0_.Q ; (3 pterms, 6 signals)
+display_1_.C = CLK ; (1 pterm, 1 signal)
+display_1_.CE = !CONTROL ; (1 pterm, 1 signal)
+display_1_.AP = !CLR ; (1 pterm, 1 signal)
+
+display_2_.D = !( display_6_.Q & !display_5_.Q & !display_4_.Q & display_2_.Q
+       & display_1_.Q & display_0_.Q
+    # !display_6_.Q & display_5_.Q & !display_4_.Q & display_2_.Q
+       & !display_1_.Q & !display_0_.Q ) ; (2 pterms, 6 signals)
+display_2_.C = CLK ; (1 pterm, 1 signal)
+display_2_.CE = !CONTROL ; (1 pterm, 1 signal)
+display_2_.AP = !CLR ; (1 pterm, 1 signal)
+
+display_3_ = display_6_.Q ; (1 pterm, 1 signal)
+
+display_4_.D = display_6_.Q & !display_5_.Q & !display_4_.Q & display_2_.Q
+       & display_1_.Q & display_0_.Q ; (1 pterm, 6 signals)
+display_4_.C = CLK ; (1 pterm, 1 signal)
+display_4_.CE = !CONTROL ; (1 pterm, 1 signal)
+display_4_.AR = !CLR ; (1 pterm, 1 signal)
+
+display_5_.D = display_6_.Q & !display_5_.Q & !display_4_.Q & display_2_.Q
+       & !display_1_.Q & !display_0_.Q
+    # !display_6_.Q & display_5_.Q & !display_4_.Q & display_2_.Q
+       & !display_1_.Q & !display_0_.Q ; (2 pterms, 6 signals)
+display_5_.C = CLK ; (1 pterm, 1 signal)
+display_5_.CE = !CONTROL ; (1 pterm, 1 signal)
+display_5_.AR = !CLR ; (1 pterm, 1 signal)
+
+display_6_.D = !display_6_.Q & !display_5_.Q & !display_4_.Q & display_2_.Q
+       & display_1_.Q & !display_0_.Q
+    # !display_6_.Q & display_5_.Q & !display_4_.Q & !display_2_.Q
+       & !display_1_.Q & !display_0_.Q ; (2 pterms, 6 signals)
+display_6_.C = CLK ; (1 pterm, 1 signal)
+display_6_.CE = !CONTROL ; (1 pterm, 1 signal)
+display_6_.AP = !CLR ; (1 pterm, 1 signal)
+

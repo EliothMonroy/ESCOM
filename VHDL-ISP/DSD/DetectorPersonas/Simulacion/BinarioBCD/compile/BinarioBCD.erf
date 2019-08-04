@@ -1,0 +1,7 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: c:\my_designs\Simulations\BinarioBCD\src\binario_bcd.vhd" 
+MESSAGE "Compile Entity "bin_bcd"" 
+MESSAGE "Compile Architecture "convertir" of Entity "bin_bcd"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => bin_bcd" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]" 

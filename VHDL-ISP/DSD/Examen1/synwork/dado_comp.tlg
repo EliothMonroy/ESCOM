@@ -1,0 +1,12 @@
+@N: CD630 :"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":6:7:6:10|Synthesizing work.dado.a_dado 
+@N: CD364 :"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":45:5:45:11|Removed redundant assignment
+Post processing for work.dado.a_dado
+@N: CL201 :"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":30:2:30:3|Trying to extract state machine for register display
+Extracted state machine for register display
+State machine has 6 reachable states with original encodings of:
+   0000110
+   0010010
+   0100000
+   0100100
+   1001100
+   1001111

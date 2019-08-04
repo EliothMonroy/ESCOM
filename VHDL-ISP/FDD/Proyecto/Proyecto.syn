@@ -1,0 +1,12 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Proyecto
+DESIGN proyecto Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure VHDL
+MODULE calculadorachida.vhd
+MODSTYLE CalculadoraChida Normal
+STIMULUS CalculadoraChida simulacion.vhd
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE CalculadoraChida

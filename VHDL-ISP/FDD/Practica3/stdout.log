@@ -1,0 +1,58 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Sun Oct 09 21:31:26 2016
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/elith/documents/github/vhdl-isp/practica3\Decodificador.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\elith\documents\github\vhdl-isp\practica3\Decodificador.srr"
+
+Generating HDL info...
+hdl_info_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+log file: "C:\users\elith\documents\github\vhdl-isp\practica3\Decodificador.srr"
+
+Running Decodificador|practica3
+
+Running: Compile on Decodificador|practica3
+
+Running: Compile Process on Decodificador|practica3
+
+Running: Compile Input on Decodificador|practica3
+Copied C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_comp.srs to C:\users\elith\documents\github\vhdl-isp\practica3\Decodificador.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on Decodificador|practica3
+Copied C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_comp.srs to C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Copied C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_mult.srs to C:\users\elith\documents\github\vhdl-isp\practica3\Decodificador.srs
+Copied C:\users\elith\documents\github\vhdl-isp\practica3\Decodificador.srr to C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.srf
+Complete: Compile Process on Decodificador|practica3
+Complete: Compile on Decodificador|practica3
+
+Running: Map on Decodificador|practica3
+
+Running: Map & Optimize on Decodificador|practica3
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Complete: Map on Decodificador|practica3
+Complete: Logic Synthesis on Decodificador|practica3
+
+exit status=0
+
+exit status=0
+

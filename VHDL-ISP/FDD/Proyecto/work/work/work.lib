@@ -1,0 +1,37 @@
+timestamp=1481513334806
+
+[~A]
+ModifyID=10
+Version=73
+
+[calculadorachida]
+A/calcu=21|./../../calculadorachida.vhd|16|1*0
+BinI32/calcu=3*0
+I=0*722
+I/calcu=0*1394
+M=11|0|vc1|1481513334396|./../../calculadorachida.vhd|0*251*0x9af11be7c851c241a62e434743bbd75d43c23546|0*626*0x5eebbfaf24833dd780412b1f91e05209
+M/calcu=21|0|vc1|1481513334399|./../../calculadorachida.vhd|0*966*0x374ce7e7e9e7a69858792064be207d79a298c2df|0*1289*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../calculadorachida.vhd|6
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|43b23309e79108a9d19510d8a95eab88a66cb243eb4b193e407fbc8051b63bbb914d6936f9edd51bca6e0d17aa602572
+Version/calcu=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|2925de9a617b26f1521fa9b3744c80f6e3df72f4a7167e081d9233cb22329afe
+
+[testbench]
+A/behavior=21|./../../simulacion.vhd|10|1*1493
+BinI32/behavior=3*665
+I=0*2031
+I/behavior=0*2898
+M=11|0|vc1|1481513334694|./../../simulacion.vhd|0*1717*0x60b39730ac49a2b83510569ace244188fc801624|0*1948*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vc1|1481513334697|./../../simulacion.vhd|0*2260*0x5685e2668ba721ce92d94100d4495f04c903b49a|0*2803*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../simulacion.vhd|7
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d7913aedc6a0d48bd89350a83b89f8efee14e
+Version/behavior=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5f373d7f9179d6eeb607db19e1aca25b64
+
+[~MFT]
+0=13|0work.mgf|2898|0
+1=1|1work.mgf|1493|0
+3=1|3work.mgf|665|0
+
+[~U]
+calculadorachida=CalculadoraChida 11|0*0|
+testbench=11|0*1644|
+

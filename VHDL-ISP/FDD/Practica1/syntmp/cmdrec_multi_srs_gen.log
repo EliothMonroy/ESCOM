@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  prueba  -multisrs  C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_comp.srs  -osyn  C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_mult.srs  -log  C:\users\elith\documents\github\vhdl-isp\practica1\synlog\prueba_multi_srs_gen.srr 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_comp.srs|i|1474857916|2034
+C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_mult.srs|o|1474857918|2039
+C:\users\elith\documents\github\vhdl-isp\practica1\synlog\prueba_multi_srs_gen.srr|o|1474857918|469
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401249136|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401249332|6337536

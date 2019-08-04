@@ -1,0 +1,13 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit dado
+    Number of input ports   : 3
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 60
+    Number of nets          : 63
+
+No design errors found in circuit dado
+
+WriteBLIF ended normally.

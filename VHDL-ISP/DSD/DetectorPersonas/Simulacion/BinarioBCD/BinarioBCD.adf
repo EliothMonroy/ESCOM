@@ -1,0 +1,77 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=BinarioBCD
+
+[Library]
+BinarioBCD=.\BinarioBCD\BinarioBCD.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+FAMILY=Lattice ECP2
+show_inport=1
+show_outport=1
+show_inoutport=1
+show_buffer=1
+show_linkage=1
+show_constant=1
+show_file=1
+show_signal=1
+show_variable=1
+show_generic=1
+show_port=1
+show_Processes=1
+show_cover=1
+show_assertion=1
+show_builtin=1
+show_package=1
+show_udp=1
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+BinarioBCD=.
+
+[IMPLEMENTATION]
+UCF=
+
+[Files]
+/binario_bcd.vhd=-1
+/convertidor.asdb=-1
+/convertidor.awc=-1
+
+[Files.Data]
+.\src\binario_bcd.vhd=VHDL Source Code
+.\src\convertidor.asdb=Accelerated Waveform File
+.\src\convertidor.awc=Accelerated Waveform Configuration
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=bin_bcd|convertir|0 
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,10 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\checkini.exe -err=automake.err "C:\ispLEVER_Classic2_0\ispcpld\config\lc4k.ini"'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\vhd2jhd.exe contador.vhd -o contador.jhd -m "C:\ispLEVER_Classic2_0\ispcpld/generic/lib/vhd/location.map" -p "C:\ispLEVER_Classic2_0\ispcpld/generic/lib"'
+
+Done: completed successfully.

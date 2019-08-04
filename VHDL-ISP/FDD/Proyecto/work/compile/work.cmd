@@ -1,0 +1,1 @@
+-w -s "C:\Users\ELITH\Documents\GitHub\VHDL-ISP\Proyecto\work\library.cfg"  -j "C:\Users\ELITH\Documents\GitHub\VHDL-ISP\Proyecto\work\projlib.cfg"  -d "C:\Users\ELITH\Documents\GitHub\VHDL-ISP\Proyecto\work\compile"   -work work  -O3 -e 100 "simulacion.vhd"

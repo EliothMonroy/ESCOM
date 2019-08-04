@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\users\elith\documents\github\vhdl-isp\practica1  -part LC4064B  -package T44C  -grade -2.5   -ispmach4s -RWCheckOnRam 1 -areadelay 0 -minc -auto_constrain_io -summaryfile C:\users\elith\documents\github\vhdl-isp\practica1\synlog\report\prueba_fpga_mapper.xml -top_level_module  prueba  -multisrs  -ta_num_paths 3  -ta_num_points 0  -oedif  C:\users\elith\documents\github\vhdl-isp\practica1\prueba.edi  -freq 200.000  C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_mult.srs  -ologparam  C:\users\elith\documents\github\vhdl-isp\practica1\syntmp\prueba.plg  -osyn  C:\users\elith\documents\github\vhdl-isp\practica1\prueba.srm  -prjdir  c:\users\elith\documents\github\vhdl-isp\practica1\  -prjname  prueba  -log  C:\users\elith\documents\github\vhdl-isp\practica1\synlog\prueba_fpga_mapper.srr 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\practica1\prueba.edi|o|1474857919|7361
+C:\users\elith\documents\github\vhdl-isp\practica1\synwork\prueba_mult.srs|i|1474857918|2039
+C:\users\elith\documents\github\vhdl-isp\practica1\syntmp\prueba.plg|o|1474857918|0
+C:\users\elith\documents\github\vhdl-isp\practica1\prueba.srm|o|1474857919|4662
+C:\users\elith\documents\github\vhdl-isp\practica1\synlog\prueba_fpga_mapper.srr|o|1474857919|1066
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399390884|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399393722|8049664

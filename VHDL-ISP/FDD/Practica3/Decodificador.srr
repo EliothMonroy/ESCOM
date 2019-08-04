@@ -1,0 +1,67 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ELIOTH
+
+#Implementation: practica3
+
+$ Start of Compile
+#Sun Oct 09 21:31:27 2016
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":6:7:6:19|Top entity is set to Decodificador.
+File C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd changed - recompiling
+@N: CD630 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":6:7:6:19|Synthesizing work.decodificador.dec 
+Post processing for work.decodificador.dec
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Oct 09 21:31:27 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Oct 09 21:31:29 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"c:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":20:2:20:5|Found ROM, 's_1[15:0]', 36 words by 16 bits 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            6 uses
+OBUF            16 uses
+AND2            168 uses
+INV             92 uses
+XOR2            1 use
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 104MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Oct 09 21:31:29 2016
+
+###########################################################]

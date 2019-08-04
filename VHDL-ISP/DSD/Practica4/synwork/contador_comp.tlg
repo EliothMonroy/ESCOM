@@ -1,0 +1,7 @@
+@N: CD630 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":6:7:6:14|Synthesizing work.contador.a_contador 
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":32:8:32:38|No matching overload for "and"
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":34:7:34:19|No matching overload for "xor"
+@E: CD716 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":36:7:36:9|Expression has ambiguous type
+?"and"(?"not"(input:ctrl), ?"and"(inout:q(1), inout:q(2)))
+@E: CD308 :"C:\users\elith\documents\github\vhdl-isp\dsd\practica4\contador.vhd":32:46:32:72|Unable to evaluate expression type
+@END

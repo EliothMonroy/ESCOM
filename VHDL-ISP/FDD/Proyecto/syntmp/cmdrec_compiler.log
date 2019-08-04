@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\elith\documents\github\vhdl-isp\proyecto\synwork\CalculadoraChida_comp.srs  -top  CalculadoraChida  -prodtype  synplify_pro  -nostructver -encrypt  -pro  -dmgen  C:\users\elith\documents\github\vhdl-isp\proyecto\dm  -lite -compiler_compatible -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\elith\documents\github\vhdl-isp\proyecto\calculadorachida.vhd -loga  C:\users\elith\documents\github\vhdl-isp\proyecto\CalculadoraChida.srr 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\proyecto\synwork\CalculadoraChida_comp.srs|o|1481515916|1859
+C:\users\elith\documents\github\vhdl-isp\proyecto\calculadorachida.vhd|i|1481515906|592
+C:\users\elith\documents\github\vhdl-isp\proyecto\CalculadoraChida.srr|o|1481515916|1480
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401245498|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401245704|5533184

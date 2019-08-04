@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  Decodificador  -multisrs  C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_comp.srs  -osyn  C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_mult.srs  -log  C:\users\elith\documents\github\vhdl-isp\practica3\synlog\Decodificador_multi_srs_gen.srr 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_comp.srs|i|1476066687|1755
+C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_mult.srs|o|1476066689|1903
+C:\users\elith\documents\github\vhdl-isp\practica3\synlog\Decodificador_multi_srs_gen.srr|o|1476066689|486
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401249136|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401249332|6337536

@@ -1,0 +1,69 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Mon Jun 12 21:10:10 2017
+#$ MODULE  dado
+#$ PINS 10 display_6_:130 CLK:4 display_3_:133 CLR:5 CONTROL:6 display_5_:131
+ display_4_:132 display_2_:134 display_1_:135 display_0_:138
+.model dado 
+.inputs CLK.BLIF CLR.BLIF CONTROL.BLIF display_0_.Q display_1_.Q display_2_.Q \
+ display_4_.Q display_5_.Q display_6_.Q
+.outputs display_6_.D display_6_.C display_6_.CE display_6_.AP display_3_ \
+ display_5_.D display_5_.C display_5_.CE display_5_.AR display_4_.D display_4_.C \
+ display_4_.CE display_4_.AR display_2_.D- display_2_.C display_2_.CE \
+ display_2_.AP display_1_.D display_1_.C display_1_.CE display_1_.AP display_0_.D \
+ display_0_.C display_0_.CE display_0_.AP
+.names display_0_.Q display_1_.Q display_2_.Q display_4_.Q display_5_.Q display_6_.Q display_6_.D
+011000 1
+000010 1
+.names CLK.BLIF display_6_.C
+1 1
+.names CONTROL.BLIF display_6_.CE
+0 1
+.names CLR.BLIF display_6_.AP
+0 1
+.names display_6_.Q display_3_
+1 1
+.names display_0_.Q display_1_.Q display_2_.Q display_4_.Q display_5_.Q display_6_.Q display_5_.D
+001001 1
+001010 1
+.names CLK.BLIF display_5_.C
+1 1
+.names CONTROL.BLIF display_5_.CE
+0 1
+.names CLR.BLIF display_5_.AR
+0 1
+.names display_0_.Q display_1_.Q display_2_.Q display_4_.Q display_5_.Q display_6_.Q display_4_.D
+111001 1
+.names CLK.BLIF display_4_.C
+1 1
+.names CONTROL.BLIF display_4_.CE
+0 1
+.names CLR.BLIF display_4_.AR
+0 1
+.names display_0_.Q display_1_.Q display_2_.Q display_4_.Q display_5_.Q display_6_.Q display_2_.D-
+111001 1
+001010 1
+.names CLK.BLIF display_2_.C
+1 1
+.names CONTROL.BLIF display_2_.CE
+0 1
+.names CLR.BLIF display_2_.AP
+0 1
+.names display_0_.Q display_1_.Q display_2_.Q display_4_.Q display_5_.Q display_6_.Q display_1_.D
+111001 1
+000010 1
+010100 1
+.names CLK.BLIF display_1_.C
+1 1
+.names CONTROL.BLIF display_1_.CE
+0 1
+.names CLR.BLIF display_1_.AP
+0 1
+.names display_0_.Q display_1_.Q display_2_.Q display_4_.Q display_5_.Q display_6_.Q display_0_.D
+000010 1
+.names CLK.BLIF display_0_.C
+1 1
+.names CONTROL.BLIF display_0_.CE
+0 1
+.names CLR.BLIF display_0_.AP
+0 1
+.end

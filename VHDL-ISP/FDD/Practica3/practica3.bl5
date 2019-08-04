@@ -1,0 +1,138 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Sun Oct 09 21:31:46 2016
+#$ MODULE  Decodificador
+#$ PINS 22 a_5_:4 s_15_:111 a_4_:5 a_3_:6 a_2_:7 a_1_:8 a_0_:9 s_14_:112
+ s_13_:113 s_12_:114 s_11_:115 s_10_:116 s_9_:120 s_8_:121 s_7_:122 s_6_:123
+ s_5_:124 s_4_:125 s_3_:130 s_2_:131 s_1_:132 s_0_:133
+#$ NODES 5 N_157 N_56_i N_69_i N_57_i N_71_i
+.model decodificador 
+.inputs a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_157.BLIF \
+ N_56_i.BLIF N_69_i.BLIF N_57_i.BLIF N_71_i.BLIF
+.outputs s_15_- s_14_ s_13_- s_12_- s_11_.X1 s_11_.X2 s_10_ s_9_- s_8_- s_7_ \
+ s_6_ s_5_ s_4_ s_3_.X1 s_3_.X2 s_2_- s_1_ s_0_ N_157 N_56_i N_69_i- N_57_i- \
+ N_71_i-
+.names a_5_.BLIF a_4_.BLIF a_2_.BLIF a_1_.BLIF N_157.BLIF N_57_i.BLIF s_15_-
+0111-- 1
+----1- 1
+-----0 1
+.names a_5_.BLIF a_4_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_157.BLIF N_57_i.BLIF s_14_
+---0101 1
+--0--01 1
+-0---01 1
+1----01 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_13_-
+010-00- 1
+0111-1- 1
+0-1100- 1
+01001-- 1
+001-11- 1
+00-110- 1
+0-0101- 1
+1----11 1
+1---1-1 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_12_-
+01-011- 1
+0011-0- 1
+0-1111- 1
+0-0010- 1
+01-10-- 1
+011--1- 1
+1----11 1
+1---1-1 1
+.names a_5_.BLIF a_4_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_57_i.BLIF N_71_i.BLIF s_11_.X1
+010-111 1
+0-00111 1
+0110011 1
+0-11111 1
+.names N_57_i.BLIF N_71_i.BLIF s_11_.X2
+11 1
+.names a_5_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_57_i.BLIF N_71_i.BLIF s_10_
+-10-11 1
+-01-11 1
+---011 1
+1---11 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_9_-
+0-0100- 1
+01-100- 1
+0111-1- 1
+01001-- 1
+00-001- 1
+-000-1- 1
+1---1-1 1
+000--1- 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_8_-
+010100- 1
+000-11- 1
+0-1101- 1
+0111-1- 1
+0-001-- 1
+----1-1 1
+-----11 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_7_
+-1011-- 1
+1---01- 1
+-1-111- 1
+1---10- 1
+1-----0 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_6_
+-11111- 1
+-101-0- 1
+0---001 1
+1----1- 1
+1---1-- 1
+1-----0 1
+.names a_5_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_5_
+-001 1
+1-1- 1
+1--0 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_4_
+-10100- 1
+-10111- 1
+-1101-- 1
+1---0-- 1
+1-----0 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_69_i.BLIF s_3_.X1
+0-11001 1
+11----1 1
+-110-11 1
+-1-0011 1
+-111001 1
+.names a_4_.BLIF N_69_i.BLIF s_3_.X2
+01 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_69_i.BLIF s_2_-
+0-1100- 1
+010-1-- 1
+011--0- 1
+01-1--- 1
+------0 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_1_
+-11101- 1
+-10100- 1
+-1001-- 1
+1-----0 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF s_0_
+01-100- 1
+-1001-- 1
+-1110-- 1
+1---10- 1
+1-----0 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_157
+001011 1
+001101 1
+010-01 1
+0-0001 1
+.names a_4_.BLIF a_3_.BLIF a_2_.BLIF N_56_i
+000 1
+.names a_5_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF N_69_i-
+00111- 1
+---0-1 1
+1----1 1
+.names a_5_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_56_i.BLIF N_57_i-
+00100- 1
+1---01 1
+1--0-1 1
+.names a_5_.BLIF a_4_.BLIF a_3_.BLIF a_2_.BLIF a_1_.BLIF a_0_.BLIF N_71_i-
+001010 1
+01011- 1
+011--1 1
+.end

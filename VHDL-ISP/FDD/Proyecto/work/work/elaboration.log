@@ -1,0 +1,39 @@
+Active-HDL 10.1.3088.5434  2016-12-11 21:28:54
+
+Elaboration top modules:
+Architecture                  behavior(testbench)
+
+
+----------------------------------------------------------------------------------------------------
+Entity           | Architecture | Library  | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------------
+testbench        | behavior     | work     |      | 10.1.3088.5434  (Windows) | -O3
+CalculadoraChida | calcu        | work     |      | 10.1.3088.5434  (Windows) | -O3
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+VHDL Package                    | Library  | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------------
+standard                        | std      |      |                           | <unavailable>
+TEXTIO                          | std      |      | 10.1.3088.5434  (Windows) |  -2008
+std_logic_1164                  | ieee     |      | 10.1.3088.5434  (Windows) |  -2008
+NUMERIC_STD                     | ieee     |      | 10.1.3088.5434  (Windows) |  -2008
+COMPONENTS                      | generics |      | 10.1.3088.5434  (Windows) | -vendor lattice
+std_logic_arith                 | ieee     |      | 10.1.3088.5434  (Windows) | <unavailable>
+STD_LOGIC_UNSIGNED              | ieee     |      | 10.1.3088.5434  (Windows) | <unavailable>
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Library                         | Comment
+----------------------------------------------------------------------------------------------------
+generics                        | LATTICE ispLEVER Classic 2.0, generics VHDL LIBRARY
+ieee                            | Standard IEEE packages library
+std                             | Standard VHDL library
+work                            | None
+----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: vsim +access +r testbench
+
+
+The performance of simulation is reduced. Version Lattice Edition

@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\users\elith\documents\github\vhdl-isp\dsd\examen1  -part LC4064B  -package T44C  -grade -2.5   -ispmach4s -RWCheckOnRam 1 -areadelay 0 -minc -auto_constrain_io -summaryfile C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synlog\report\dado_fpga_mapper.xml -top_level_module  dado  -multisrs  -ta_num_paths 3  -ta_num_points 0  -oedif  C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.edi  -freq 200.000  C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synwork\dado_mult.srs  -ologparam  C:\users\elith\documents\github\vhdl-isp\dsd\examen1\syntmp\dado.plg  -osyn  C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.srm  -prjdir  c:\users\elith\documents\github\vhdl-isp\dsd\examen1\  -prjname  dado  -log  C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synlog\dado_fpga_mapper.srr 
+rc:1 success:1
+C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.edi|o|1497319805|23920
+C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synwork\dado_mult.srs|i|1497319804|2369
+C:\users\elith\documents\github\vhdl-isp\dsd\examen1\syntmp\dado.plg|o|1497319805|0
+C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.srm|o|1497319805|13760
+C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synlog\dado_fpga_mapper.srr|o|1497319805|1537
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399390884|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399393722|8049664

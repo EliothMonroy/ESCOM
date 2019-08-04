@@ -1,0 +1,14 @@
+ctrl[2]  i
+ctrl[1]  i
+ctrl[0]  i
+CLK  i
+CLR  i
+q[2]  b
+q[1]  b
+q[0]  b
+JKa[1]  b
+JKa[0]  b
+JKb[1]  b
+JKb[0]  b
+JKc[1]  b
+JKc[0]  b

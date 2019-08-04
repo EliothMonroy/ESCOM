@@ -1,0 +1,95 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      display(6:0)                  display                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      display_6_                  display[6]                       1            0            
+        Port      display_5_                  display[5]                       1            1            
+        Port      display_4_                  display[4]                       1            2            
+        Port      display_3_                  display[3]                       1            3            
+        Port      display_2_                  display[2]                       1            4            
+        Port      display_1_                  display[1]                       1            5            
+        Port      display_0_                  display[0]                       1            6            
+End
+Section Cross Reference File
+Design 'dado' created Mon Jun 12 21:10:10 2017
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst             display_0_                                display[0]
+   Inst             display_1_                                display[1]
+   Inst             display_2_                                display[2]
+   Inst             display_3_                                display[3]
+   Inst             display_4_                                display[4]
+   Inst             display_5_                                display[5]
+   Inst             display_6_                                display[6]
+   Inst   display_1_ns_i_a2_i_a3_3_                 display_1_ns_i_a2_i_a3[3]
+   Inst   display_1_ns_i_a2_i_a3_1_5_               display_1_ns_i_a2_i_a3_1[5]
+   Inst   display_1_ns_i_a2_i_a3_5_                 display_1_ns_i_a2_i_a3[5]
+   Inst   display_1_ns_i_a2_i_a3_1_1_               display_1_ns_i_a2_i_a3_1[1]
+   Inst   display_1_ns_i_a2_i_a3_2_1_               display_1_ns_i_a2_i_a3_2[1]
+   Inst   display_1_ns_i_a2_i_a3_3_1_               display_1_ns_i_a2_i_a3_3[1]
+   Inst   display_1_ns_i_a2_i_a3_1_                 display_1_ns_i_a2_i_a3[1]
+   Inst      display_1_ns_i_4_                         display_1_ns_i[4]
+   Inst      display_1_ns_i_0_                         display_1_ns_i[0]
+   Inst   display_1_ns_i_a2_i_i_3_                  display_1_ns_i_a2_i_i[3]
+   Inst   display_1_ns_i_a2_i_i_1_                  display_1_ns_i_a2_i_i[1]
+   Inst   display_1_ns_i_a2_i_1_1_                  display_1_ns_i_a2_i_1[1]
+   Inst   display_1_ns_i_a2_i_1_                    display_1_ns_i_a2_i[1]
+   Inst   display_1_ns_0_a2_i_a3_1_2_               display_1_ns_0_a2_i_a3_1[2]
+   Inst   display_1_ns_0_a2_i_a3_2_2_               display_1_ns_0_a2_i_a3_2[2]
+   Inst   display_1_ns_0_a2_i_a3_2_                 display_1_ns_0_a2_i_a3[2]
+   Inst   display_1_ns_i_a2_i_a3_1_3_               display_1_ns_i_a2_i_a3_1[3]
+   Inst   display_1_ns_i_a2_i_a3_2_3_               display_1_ns_i_a2_i_a3_2[3]
+   Inst         display_1_i_0_                            display_1_i[0]
+   Inst         display_1_i_1_                            display_1_i[1]
+   Inst   display_1_ns_i_a2_i_3_                    display_1_ns_i_a2_i[3]
+   Inst   display_1_ns_0_a2_i_2_                    display_1_ns_0_a2_i[2]
+   Inst   display_1_ns_i_a2_i_x2_5_                 display_1_ns_i_a2_i_x2[5]
+   Inst         display_1_i_2_                            display_1_i[2]
+   Inst         display_1_i_5_                            display_1_i[5]
+   Inst         display_1_i_6_                            display_1_i[6]
+   Inst   display_1_ns_i_a2_i_a2_1_                 display_1_ns_i_a2_i_a2[1]
+   Inst         display_1_i_4_                            display_1_i[4]
+   Net          display_1_0__n                              display_1[0]
+   Net          display_1_1__n                              display_1[1]
+   Net          display_1_2__n                              display_1[2]
+   Net          display_1_6__n                              display_1[6]
+   Net          display_1_4__n                              display_1[4]
+   Net          display_1_5__n                              display_1[5]
+   Net       display_1_ns_4__n                           display_1_ns[4]
+   Net       display_1_ns_0__n                           display_1_ns[0]
+   Net        display_1_i_0__n                            display_1_i[0]
+   Net        display_1_i_1__n                            display_1_i[1]
+   Net        display_1_i_4__n                            display_1_i[4]
+   Net        display_1_i_5__n                            display_1_i[5]
+   Net        display_1_i_6__n                            display_1_i[6]
+   Net        display_1_i_2__n                            display_1_i[2]
+   Net            display_0__n                                display[0]
+   Net            display_1__n                                display[1]
+   Net            display_2__n                                display[2]
+   Net            display_3__n                                display[3]
+   Net            display_4__n                                display[4]
+   Net            display_5__n                                display[5]
+   Net     display_1_ns_i_4__n                         display_1_ns_i[4]
+   Net     display_1_ns_i_0__n                         display_1_ns_i[0]
+   Net     display_1_ns_1_0__n                         display_1_ns_1[0]
+   Net     display_1_ns_2_0__n                         display_1_ns_2[0]
+   Net     display_1_ns_3_0__n                         display_1_ns_3[0]
+   Net     display_1_ns_1_4__n                         display_1_ns_1[4]
+   Net     display_1_ns_2_4__n                         display_1_ns_2[4]
+   Net     display_1_ns_3_4__n                         display_1_ns_3[4]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     CLK
+        Input     CLR
+        Input     CONTROL
+        Output     display_6_
+        Output     display_5_
+        Output     display_4_
+        Output     display_3_
+        Output     display_2_
+        Output     display_1_
+        Output     display_0_
+End

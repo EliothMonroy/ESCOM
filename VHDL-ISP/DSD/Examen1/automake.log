@@ -1,0 +1,231 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: JEDEC File
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\Synpwrap.exe -e dado -target ispmach4000b -pro '
+
+Copyright (c) 1991-2010 Lattice Semiconductor Corporation,  All rights reserved.
+Version : 2.0.00.17.20.15
+
+Done sucessfully with exit code 0.
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ELIOTH
+
+#Implementation: examen1
+
+$ Start of Compile
+#Mon Jun 12 21:10:03 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":6:7:6:10|Top entity is set to dado.
+File C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd changed - recompiling
+@N: CD630 :"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":6:7:6:10|Synthesizing work.dado.a_dado 
+@N: CD364 :"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":45:5:45:11|Removed redundant assignment
+Post processing for work.dado.a_dado
+@N: CL201 :"C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd":30:2:30:3|Trying to extract state machine for register display
+Extracted state machine for register display
+State machine has 6 reachable states with original encodings of:
+   0000110
+   0010010
+   0100000
+   0100100
+   1001100
+   1001111
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 12 21:10:03 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synwork\dado_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 12 21:10:04 2017
+
+###########################################################]
+
+Synplicity VHDL/Verilog HDL Synthesizer finished successfully
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe -edf dado.edi -out dado.bl0 -err automake.err -log dado.log -prj dadodigital -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" -net_Vcc VCC -net_GND GND -nbx -dse -tlw -cvt YES -xor'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit dado
+    Number of input ports   : 3
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 60
+    Number of nets          : 63
+
+No design errors found in circuit dado
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mblifopt.exe dado.bl0 -collapse none -reduce none -keepwires -gui -err automake.err -family'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file dado.bl0...
+Writing Open-ABEL 2 (BLIF) file dado.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mblflink.exe "dado.bl1" -o "dadodigital.bl2" -omod "dadodigital" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'dado.bl1'
+
+Hierarchical BLIF: 'dadodigital.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\impsrc.exe -gui -prj dadodigital -lci dadodigital.lct -log dadodigital.imp -err automake.err -tti dadodigital.bl2 -dir c:\users\elith\documents\github\vhdl-isp\dsd\examen1'
+
+Source constraints were successfully imported to the current project.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\abelvci.exe -vci dadodigital.lct -blifopt dadodigital.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mblifopt.exe dadodigital.bl2 -sweep -mergefb -err automake.err -o dadodigital.bl3 @dadodigital.b2_ -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file dadodigital.bl2...
+Merging feedbacks...
+Note 13707: Node display_1_i_1__n is collapsed...
+Note 13707: Node CLR_c is collapsed...
+Note 13707: Node CONTROL_c is collapsed...
+Note 13707: Node N_26_i is collapsed...
+Note 13707: Node N_25_i is collapsed...
+Note 13707: Node N_23_i is collapsed...
+Note 13707: Node display_1_i_4__n is collapsed...
+Note 13707: Node display_1_i_5__n is collapsed...
+Note 13707: Node display_1_i_2__n is collapsed...
+Note 13707: Node display_1_ns_i_4__n is collapsed...
+Note 13707: Node display_1_ns_i_0__n is collapsed...
+Note 13707: Node N_23 is collapsed...
+Note 13707: Node N_25_1 is collapsed...
+Note 13707: Node N_26_2 is collapsed...
+Note 13707: Node N_26_1 is collapsed...
+Note 13707: Node display_1_ns_i_a2_i_x2_5_ is collapsed...
+Note 13707: Node N_67_i_0_0 is collapsed...
+Note 13707: Node display_1_ns_1_0__n is collapsed...
+Note 13707: Node N_10_0 is collapsed...
+Note 13707: Node N_25_2 is collapsed...
+Note 13707: Node display_1_ns_2_0__n is collapsed...
+Note 13707: Node display_1_ns_3_4__n is collapsed...
+Note 13707: Node N_23_3 is collapsed...
+Note 13707: Node display_1_ns_1_4__n is collapsed...
+Note 13707: Node display_1_ns_2_4__n is collapsed...
+Note 13707: Node N_23_2 is collapsed...
+Note 13707: Node N_23_1 is collapsed...
+Note 13707: Node display_1_i_0__n is collapsed...
+Note 13707: Node display_1_i_6__n is collapsed...
+Note 13707: Node N_28 is collapsed...
+Note 13707: Node CLR_i is collapsed...
+Note 13707: Node CLK_c is collapsed...
+Note 13707: Node CONTROL_i is collapsed...
+Note 13707: Node N_24_1 is collapsed...
+Note 13707: Node display_1_ns_0__n is collapsed...
+Note 13707: Node N_30 is collapsed...
+Note 13707: Node N_29 is collapsed...
+Note 13707: Node N_25 is collapsed...
+Note 13707: Node N_26 is collapsed...
+Note 13707: Node display_1_ns_3_0__n is collapsed...
+Note 13707: Node N_67_i_0_0_1 is collapsed...
+Note 13707: Node display_1_ns_4__n is collapsed...
+Note 13707: Fmax mode satisfied
+Control path optimization...
+Performing 'bypin choose' optimization...
+Note    0: Estimated (clusters + macrocells): 13, Fmax Logic Level: 1
+Writing Open-ABEL 2 (BLIF) file dadodigital.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\abelvci.exe -vci dadodigital.lct -dev lc4k -diofft dadodigital.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mdiofft.exe dadodigital.bl3 -family AMDMACH -idev van -o dadodigital.bl4 -oxrf dadodigital.xrf -err automake.err @dadodigital.d0 -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+Input file: dadodigital.bl3.
+Output file: dadodigital.bl4.
+Cross reference file: dadodigital.xrf.
+
+..............................
+Shortening signal names...
+Writing signal name cross reference file dadodigital.xrf... 
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\abelvci.exe -vci dadodigital.lct -dev lc4k -prefit dadodigital.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -blif -inp dadodigital.bl4 -out dadodigital.bl5 -err automake.err -log dadodigital.log -mod dado @dadodigital.l0 -gui -sc'
+
+Prefit Logic Optimizer (May 31 2012)  Mon Jun 12 21:10:20 2017
+
+C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -blif -inp dadodigital.bl4 -out dadodigital.bl5 -err automake.err -log dadodigital.log -mod dado @dadodigital.l0 -gui -sc 
+<Note> F34000: display_1_3reg is removed
+Number of pins (IO)    :    10
+Number of outputs (MC) :     7
+Number of registers    :     6
+Number of logic pterms :    12
+C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\lpf4k.exe @"dadodigital.rs2"'
+
+Project 'dadodigital' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\tda.exe -i dadodigital.bl5 -o dadodigital.tda -lci dadodigital.lct -dev m4e_256_96 -family lc4k -mod dado -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf.exe -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj dadodigital -if dadodigital.jed -j2s -log dadodigital.svl -gui'
+
+Need not generate svf file according to the constraints, exit
+Done: completed successfully.

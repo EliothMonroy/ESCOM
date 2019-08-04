@@ -1,0 +1,5 @@
+10
+~E 1 "./../../calculadorachida.vhd" 6 CalculadoraChida
+~A 1 "./../../calculadorachida.vhd" 16 calcu
+~E 1 "./../../simulacion.vhd" 7 testbench
+~A 1 "./../../simulacion.vhd" 10 behavior

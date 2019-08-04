@@ -1,0 +1,44 @@
+//
+// Software Version :  ispLEVER Classic 2.0.00.17.20.15  
+// Project Name	    :  dadodigital
+// Targeted Device  :  LC4256ZE-5TN144C
+// Date             :  Mon Jun 12 21:10:22 2017
+//
+                      GND          SYS           1
+                   VCCIO0          SYS           3
+                      CLK          IN            4
+                      CLR          IN            5
+                  CONTROL          IN            6
+                   GNDIO0          SYS           10
+                   VCCIO0          SYS           19
+                   GNDIO0          SYS           27
+                   VCCIO0          SYS           34
+                      VCC          SYS           36
+                      GND          SYS           37
+                   GNDIO0          SYS           46
+                   VCCIO0          SYS           47
+                   GNDIO1          SYS           55
+                      VCC          SYS           57
+                   VCCIO1          SYS           64
+                   GNDIO1          SYS           65
+                      GND          SYS           73
+                   VCCIO1          SYS           75
+                   GNDIO1          SYS           82
+                   VCCIO1          SYS           91
+                   GNDIO1          SYS           99
+                   VCCIO1          SYS           106
+                      VCC          SYS           108
+                      GND          SYS           109
+                   GNDIO1          SYS           118
+                   VCCIO1          SYS           119
+                   GNDIO0          SYS           127
+                      VCC          SYS           129
+               display_6_          OUT           130
+               display_5_          OUT           131
+               display_4_          OUT           132
+               display_3_          OUT           133
+               display_2_          OUT           134
+               display_1_          OUT           135
+                   VCCIO0          SYS           136
+                   GNDIO0          SYS           137
+               display_0_          OUT           138

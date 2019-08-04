@@ -1,0 +1,2 @@
+@W: CD286 :"C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd":6:7:6:19|Creating black box for empty architecture Decodificador 
+

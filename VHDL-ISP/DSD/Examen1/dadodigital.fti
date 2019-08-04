@@ -1,0 +1,70 @@
+#PLAFILE     dadodigital.bl5
+#DATE        Mon Jun 12 21:10:22 2017
+
+#DESIGN      dadodigital
+#DEVICE      MACH4S-256
+
+
+// Default settings.
+DATA GLOBAL tINDIO:0
+
+
+// Signal locations
+DATA LOCATION CLK:C_*_4
+DATA LOCATION CLR:C_*_5
+DATA LOCATION CONTROL:C_*_6
+DATA LOCATION display_6_:A_3_130
+DATA LOCATION display_3_:A_9_133
+DATA LOCATION display_5_:A_5_131
+DATA LOCATION display_4_:A_7_132
+DATA LOCATION display_2_:A_12_134
+DATA LOCATION display_1_:A_1_135
+DATA LOCATION display_0_:B_7_138
+
+// Signals direction
+DATA IO_DIR CLK:IN
+DATA IO_DIR CLR:IN
+DATA IO_DIR CONTROL:IN
+DATA IO_DIR display_6_:OUT
+DATA IO_DIR display_3_:OUT
+DATA IO_DIR display_5_:OUT
+DATA IO_DIR display_4_:OUT
+DATA IO_DIR display_2_:OUT
+DATA IO_DIR display_1_:OUT
+DATA IO_DIR display_0_:OUT
+
+// Signals using Shared Clock or CE
+DATA tBCLK display_6_.C
+DATA tBCLK display_5_.C
+DATA tBCLK display_4_.C
+DATA tBCLK display_2_.C
+DATA tBCLK display_1_.C
+DATA tBCLK display_0_.C
+
+// Signals using Shared Init Pterm
+DATA tBSR display_6_.PR
+DATA tBSR display_5_.AR
+DATA tBSR display_4_.AR
+DATA tBSR display_2_.PR
+DATA tBSR display_1_.PR
+DATA tBSR display_0_.PR
+
+// Block Load Adders
+DATA tBLA display_0_:1
+DATA tBLA display_1_:1
+DATA tBLA display_2_:1
+DATA tBLA display_4_:1
+DATA tBLA display_5_:1
+DATA tBLA display_6_:1
+DATA tBLA CLK:1
+DATA tBLA CLR:1
+DATA tBLA CONTROL:1
+
+// Signals using OSM or fast 5-PTs path
+DATA tOSM display_6_
+DATA tOSM display_3_
+DATA tOSM display_5_
+DATA tOSM display_4_
+DATA tOSM display_2_
+DATA tOSM display_1_
+DATA tOSM display_0_

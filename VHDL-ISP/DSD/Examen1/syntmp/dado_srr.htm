@@ -1,0 +1,91 @@
+<html><body><samp><pre>
+<!@TC:1497319803>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ELIOTH
+
+#Implementation: examen1
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Mon Jun 12 21:10:03 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1497319803> | Running in 64-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1497319803> | Setting time resolution to ns
+@N: : <a href="C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd:6:7:6:11:@N::@XP_MSG">dado.vhd(6)</a><!@TM:1497319803> | Top entity is set to dado.
+File C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd changed - recompiling
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd:6:7:6:11:@N:CD630:@XP_MSG">dado.vhd(6)</a><!@TM:1497319803> | Synthesizing work.dado.a_dado 
+@N:<a href="@N:CD364:@XP_HELP">CD364</a> : <a href="C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd:45:5:45:12:@N:CD364:@XP_MSG">dado.vhd(45)</a><!@TM:1497319803> | Removed redundant assignment
+Post processing for work.dado.a_dado
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd:30:2:30:4:@N:CL201:@XP_MSG">dado.vhd(30)</a><!@TM:1497319803> | Trying to extract state machine for register display
+Extracted state machine for register display
+State machine has 6 reachable states with original encodings of:
+   0000110
+   0010010
+   0100000
+   0100100
+   1001100
+   1001111
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 12 21:10:03 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1497319805> | Running in 64-bit mode 
+File C:\users\elith\documents\github\vhdl-isp\dsd\examen1\synwork\dado_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 12 21:10:04 2017
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1497319805> | Running in 64-bit mode. 
+Encoding state machine display_1[0:5] (view:work.dado(a_dado))
+original code -> new code
+   0000110 -> 0000110
+   0010010 -> 0010010
+   0100000 -> 0100000
+   0100100 -> 0100100
+   1001100 -> 1001100
+   1001111 -> 1001111
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\users\elith\documents\github\vhdl-isp\dsd\examen1\dado.vhd:30:2:30:4:@W:BN132:@XP_MSG">dado.vhd(30)</a><!@TM:1497319805> | Removing instance display_1[6],  because it is equivalent to instance display_1[3]</font>
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+DFFCSH          4 uses
+DFFCRH          2 uses
+IBUF            3 uses
+OBUF            7 uses
+AND2            27 uses
+INV             15 uses
+XOR2            1 use
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1497319805> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 103MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 12 21:10:05 2017
+
+###########################################################]
+
+</pre></samp></body></html>

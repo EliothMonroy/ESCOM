@@ -1,0 +1,7 @@
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd":33:18:33:22|No matching overload for "="
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd":35:19:35:23|No matching overload for "="
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd":37:19:37:23|No matching overload for "="
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd":39:19:39:23|No matching overload for "="
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd":41:20:41:24|No matching overload for "="
+@E: CD371 :"C:\users\elith\documents\github\vhdl-isp\practica1\prueba.vhd":43:20:43:24|No matching overload for "="
+

@@ -1,0 +1,223 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon Jun 12 21:10:10 2017
+#$ MODULE dado
+#$ PINS 10 display_5_:131'ke'  display_6_:130'ke'  display_4_:132'ke'  CLK:4'ke'  \
+#  display_3_:133'ke'  CLR:5'ke'  display_2_:134'ke'  CONTROL:6'ke'  display_1_:135'ke'  \
+#  display_0_:138'ke' 
+#$ NODES 48 display_1_0reg display_1_1reg display_1_2reg display_1_3reg \
+#  display_1_4reg display_1_5reg display_1_ns_4__n display_1_ns_0__n N_23 N_25 N_26 N_28 \
+#  N_29 N_30 display_1_ns_i_a2_i_x2_5_ display_1_i_0__n display_1_i_1__n \
+#  display_1_i_4__n display_1_i_5__n display_1_i_6__n display_1_i_2__n CONTROL_i CLR_i \
+#  CLK_c CLR_c CONTROL_c N_26_i display_1_ns_i_4__n N_25_i display_1_ns_i_0__n N_10_0 \
+#  N_23_i N_67_i_0_0 N_67_i_0_0_1 N_26_1 N_26_2 N_25_1 N_25_2 N_24_1 N_23_1 N_23_2 N_23_3 \
+#  display_1_ns_1_0__n display_1_ns_2_0__n display_1_ns_3_0__n display_1_ns_1_4__n \
+#  display_1_ns_2_4__n display_1_ns_3_4__n
+.model dado
+.inputs CLK.BLIF CLR.BLIF CONTROL.BLIF display_1_0reg.BLIF display_1_1reg.BLIF \
+display_1_2reg.BLIF display_1_3reg.BLIF display_1_4reg.BLIF \
+display_1_5reg.BLIF display_1_ns_4__n.BLIF display_1_ns_0__n.BLIF N_23.BLIF \
+N_25.BLIF N_26.BLIF N_28.BLIF N_29.BLIF N_30.BLIF \
+display_1_ns_i_a2_i_x2_5_.BLIF display_1_i_0__n.BLIF display_1_i_1__n.BLIF \
+display_1_i_4__n.BLIF display_1_i_5__n.BLIF display_1_i_6__n.BLIF \
+display_1_i_2__n.BLIF CONTROL_i.BLIF CLR_i.BLIF CLK_c.BLIF CLR_c.BLIF \
+CONTROL_c.BLIF N_26_i.BLIF display_1_ns_i_4__n.BLIF N_25_i.BLIF \
+display_1_ns_i_0__n.BLIF N_10_0.BLIF N_23_i.BLIF N_67_i_0_0.BLIF \
+N_67_i_0_0_1.BLIF N_26_1.BLIF N_26_2.BLIF N_25_1.BLIF N_25_2.BLIF N_24_1.BLIF \
+N_23_1.BLIF N_23_2.BLIF N_23_3.BLIF display_1_ns_1_0__n.BLIF \
+display_1_ns_2_0__n.BLIF display_1_ns_3_0__n.BLIF display_1_ns_1_4__n.BLIF \
+display_1_ns_2_4__n.BLIF display_1_ns_3_4__n.BLIF
+.outputs display_6_ display_5_ display_4_ display_3_ display_2_ display_1_ \
+display_0_ display_1_0reg.D display_1_0reg.CE display_1_0reg.C \
+display_1_0reg.AP display_1_1reg.D display_1_1reg.CE display_1_1reg.C \
+display_1_1reg.AP display_1_2reg.D display_1_2reg.CE display_1_2reg.C \
+display_1_2reg.AP display_1_3reg.D display_1_3reg.CE display_1_3reg.C \
+display_1_3reg.AP display_1_4reg.D display_1_4reg.CE display_1_4reg.C \
+display_1_4reg.AR display_1_5reg.D display_1_5reg.CE display_1_5reg.C \
+display_1_5reg.AR display_1_ns_4__n display_1_ns_0__n N_23 N_25 N_26 N_28 N_29 \
+N_30 display_1_i_0__n display_1_i_1__n display_1_i_4__n display_1_i_5__n \
+display_1_i_6__n display_1_i_2__n CONTROL_i CLR_i CLK_c CLR_c CONTROL_c N_26_i \
+display_1_ns_i_4__n N_25_i display_1_ns_i_0__n N_10_0 N_23_i N_67_i_0_0 \
+N_67_i_0_0_1 N_26_1 N_26_2 N_25_1 N_25_2 N_24_1 N_23_1 N_23_2 N_23_3 \
+display_1_ns_1_0__n display_1_ns_2_0__n display_1_ns_3_0__n \
+display_1_ns_1_4__n display_1_ns_2_4__n display_1_ns_3_4__n \
+display_1_ns_i_a2_i_x2_5_
+.names N_67_i_0_0.BLIF display_1_1reg.D
+0 1
+.names N_26_i.BLIF display_1_ns_i_4__n.BLIF display_1_2reg.D
+11 1
+.names N_10_0.BLIF display_1_3reg.D
+0 1
+.names N_24_1.BLIF N_30.BLIF display_1_5reg.D
+11 1
+.names display_1_ns_3_4__n.BLIF display_1_3reg.BLIF display_1_ns_4__n
+11 1
+.names display_1_ns_3_0__n.BLIF display_1_i_4__n.BLIF display_1_ns_0__n
+11 1
+.names N_23_3.BLIF display_1_i_2__n.BLIF N_23
+11 1
+.names N_25_1.BLIF N_25_2.BLIF N_25
+11 1
+.names N_26_1.BLIF N_26_2.BLIF N_26
+11 1
+.names display_1_i_5__n.BLIF display_1_i_6__n.BLIF N_28
+11 1
+.names display_1_2reg.BLIF display_1_i_4__n.BLIF N_29
+11 1
+.names display_1_i_0__n.BLIF display_1_i_1__n.BLIF N_30
+11 1
+.names display_1_0reg.BLIF display_1_i_0__n
+0 1
+.names display_1_1reg.BLIF display_1_i_1__n
+0 1
+.names display_1_4reg.BLIF display_1_i_4__n
+0 1
+.names display_1_5reg.BLIF display_1_i_5__n
+0 1
+.names display_1_3reg.BLIF display_1_i_6__n
+0 1
+.names display_1_2reg.BLIF display_1_i_2__n
+0 1
+.names CONTROL_c.BLIF CONTROL_i
+0 1
+.names CLR_c.BLIF CLR_i
+0 1
+.names N_26.BLIF N_26_i
+0 1
+.names display_1_ns_4__n.BLIF display_1_ns_i_4__n
+0 1
+.names N_25.BLIF N_25_i
+0 1
+.names display_1_ns_0__n.BLIF display_1_ns_i_0__n
+0 1
+.names N_25_i.BLIF display_1_ns_i_0__n.BLIF N_10_0
+11 1
+.names N_23.BLIF N_23_i
+0 1
+.names N_67_i_0_0_1.BLIF display_1_ns_i_4__n.BLIF N_67_i_0_0
+11 1
+.names N_23_i.BLIF display_1_ns_i_0__n.BLIF N_67_i_0_0_1
+11 1
+.names N_29.BLIF N_30.BLIF N_26_1
+11 1
+.names display_1_5reg.BLIF display_1_i_6__n.BLIF N_26_2
+11 1
+.names N_28.BLIF N_29.BLIF N_25_1
+11 1
+.names display_1_1reg.BLIF display_1_i_0__n.BLIF N_25_2
+11 1
+.names display_1_ns_i_a2_i_x2_5_.BLIF N_29.BLIF N_24_1
+11 1
+.names N_28.BLIF display_1_1reg.BLIF N_23_1
+11 1
+.names display_1_4reg.BLIF display_1_i_0__n.BLIF N_23_2
+11 1
+.names N_23_1.BLIF N_23_2.BLIF N_23_3
+11 1
+.names display_1_i_6__n.BLIF N_30.BLIF display_1_ns_1_0__n
+11 1
+.names display_1_5reg.BLIF display_1_i_2__n.BLIF display_1_ns_2_0__n
+11 1
+.names display_1_ns_1_0__n.BLIF display_1_ns_2_0__n.BLIF display_1_ns_3_0__n
+11 1
+.names display_1_i_5__n.BLIF N_29.BLIF display_1_ns_1_4__n
+11 1
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_ns_2_4__n
+11 1
+.names display_1_ns_1_4__n.BLIF display_1_ns_2_4__n.BLIF display_1_ns_3_4__n
+11 1
+.names display_1_3reg.BLIF display_6_
+1 1
+0 0
+.names display_1_5reg.BLIF display_5_
+1 1
+0 0
+.names display_1_4reg.BLIF display_4_
+1 1
+0 0
+.names display_1_3reg.BLIF display_3_
+1 1
+0 0
+.names display_1_2reg.BLIF display_2_
+1 1
+0 0
+.names display_1_1reg.BLIF display_1_
+1 1
+0 0
+.names display_1_0reg.BLIF display_0_
+1 1
+0 0
+.names display_1_ns_0__n.BLIF display_1_0reg.D
+1 1
+0 0
+.names CONTROL_i.BLIF display_1_0reg.CE
+1 1
+0 0
+.names CLK_c.BLIF display_1_0reg.C
+1 1
+0 0
+.names CLR_i.BLIF display_1_0reg.AP
+1 1
+0 0
+.names CONTROL_i.BLIF display_1_1reg.CE
+1 1
+0 0
+.names CLK_c.BLIF display_1_1reg.C
+1 1
+0 0
+.names CLR_i.BLIF display_1_1reg.AP
+1 1
+0 0
+.names CONTROL_i.BLIF display_1_2reg.CE
+1 1
+0 0
+.names CLK_c.BLIF display_1_2reg.C
+1 1
+0 0
+.names CLR_i.BLIF display_1_2reg.AP
+1 1
+0 0
+.names CONTROL_i.BLIF display_1_3reg.CE
+1 1
+0 0
+.names CLK_c.BLIF display_1_3reg.C
+1 1
+0 0
+.names CLR_i.BLIF display_1_3reg.AP
+1 1
+0 0
+.names display_1_ns_4__n.BLIF display_1_4reg.D
+1 1
+0 0
+.names CONTROL_i.BLIF display_1_4reg.CE
+1 1
+0 0
+.names CLK_c.BLIF display_1_4reg.C
+1 1
+0 0
+.names CLR_i.BLIF display_1_4reg.AR
+1 1
+0 0
+.names CONTROL_i.BLIF display_1_5reg.CE
+1 1
+0 0
+.names CLK_c.BLIF display_1_5reg.C
+1 1
+0 0
+.names CLR_i.BLIF display_1_5reg.AR
+1 1
+0 0
+.names CLK.BLIF CLK_c
+1 1
+0 0
+.names CLR.BLIF CLR_c
+1 1
+0 0
+.names CONTROL.BLIF CONTROL_c
+1 1
+0 0
+.names display_1_3reg.BLIF display_1_5reg.BLIF display_1_ns_i_a2_i_x2_5_
+01 1
+10 1
+11 0
+00 0
+.end

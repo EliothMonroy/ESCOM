@@ -1,0 +1,1 @@
+project -fileorder "C:/users/elith/documents/github/vhdl-isp/dsd/practica4/contador.vhd" 

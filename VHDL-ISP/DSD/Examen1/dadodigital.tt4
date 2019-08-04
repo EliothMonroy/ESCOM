@@ -1,0 +1,28 @@
+#$ TOOL   ispLEVER Classic 2.0.00.17.20.15
+#$ DATE   Mon Jun 12 21:10:22 2017
+#$ MODULE   dado
+#$ PINS 10 display_6_ CLK display_3_ CLR CONTROL display_5_ display_4_
+ display_2_ display_1_ display_0_
+.type f
+.i 9
+.o 25
+.ilb CLK CLR CONTROL display_0_.Q display_1_.Q display_2_.Q display_4_.Q
+ display_5_.Q display_6_.Q
+.ob display_6_.D display_6_.C display_6_.CE display_6_.AP display_3_
+ display_5_.D display_5_.C display_5_.CE display_5_.AR display_4_.D display_4_.C
+ display_4_.CE display_4_.AR display_2_.D- display_2_.C display_2_.CE
+ display_2_.AP display_1_.D display_1_.C display_1_.CE display_1_.AP
+ display_0_.D display_0_.C display_0_.CE display_0_.AP
+.phase 1111111111111111111111111
+.p 10
+---011000 1000000000000000000000000
+---000010 1000000000000000010001000
+1-------- 0100001000100010001000100
+--0------ 0010000100010001000100010
+-0------- 0001000010001000100010001
+--------1 0000100000000000000000000
+---001001 0000010000000000000000000
+---001010 0000010000000100000000000
+---111001 0000000001000100010000000
+---010100 0000000000000000010000000
+.end

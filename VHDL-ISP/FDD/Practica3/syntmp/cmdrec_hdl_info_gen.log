@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_hdl_.srs  -top  Decodificador  -prodtype  synplify_pro  -nostructver -encrypt  -pro  -dmgen  C:\users\elith\documents\github\vhdl-isp\practica3\dm  -lite -compiler_compatible -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd -loga  C:\users\elith\documents\github\vhdl-isp\practica3\syntax.log  -fileorder  C:\users\elith\documents\github\vhdl-isp\practica3\syntmp\hdlorder.tcl 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\practica3\synwork\Decodificador_hdl_.srs|o|0|0
+C:\users\elith\documents\github\vhdl-isp\practica3\decodificador.vhd|i|1476066673|2612
+C:\users\elith\documents\github\vhdl-isp\practica3\syntax.log|o|1476066687|1125
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401249098|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401249304|5533184

@@ -1,0 +1,214 @@
+# Design: Design BinarioBCD already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -work BinarioBCD -2002  $dsn/src/binario_bcd.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\my_designs\Simulations\BinarioBCD\src\binario_bcd.vhd
+# Compile Entity "bin_bcd"
+# Compile Architecture "convertir" of Entity "bin_bcd"
+# Top-level unit(s) detected:
+# Entity => bin_bcd
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+bin_bcd bin_bcd convertir
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5799 kB (elbread=1023 elab2=4626 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\my_designs\Simulations\BinarioBCD\src\wave.asdb
+#  05:06 p. m., domingo, 4 de junio de 2017
+#  Simulation has been initialized
+#  Selected Top-Level: bin_bcd (convertir)
+endsim
+#  Simulation has been stopped
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+bin_bcd bin_bcd convertir
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5799 kB (elbread=1023 elab2=4626 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\my_designs\Simulations\BinarioBCD\src\wave.asdb
+#  05:08 p. m., domingo, 4 de junio de 2017
+#  Simulation has been initialized
+#  Selected Top-Level: bin_bcd (convertir)
+# 1 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/my_designs/Simulations/BinarioBCD/src/wave.asdb'.
+# 1 signal(s) traced.
+# Qt: Untested Windows version 6.2 detected!
+# Conflict in C:/ispLEVER_Classic2_0/active-hdl/bin/imageformats/qgif4.dll:
+#  Plugin cannot be queried successfully!
+# Qt: Untested Windows version 6.2 detected!
+# Conflict in C:/ispLEVER_Classic2_0/active-hdl/bin/imageformats/qico4.dll:
+#  Plugin cannot be queried successfully!
+# Qt: Untested Windows version 6.2 detected!
+# Conflict in C:/ispLEVER_Classic2_0/active-hdl/bin/imageformats/qjpeg4.dll:
+#  Plugin cannot be queried successfully!
+# Qt: Untested Windows version 6.2 detected!
+# Conflict in C:/ispLEVER_Classic2_0/active-hdl/bin/imageformats/qmng4.dll:
+#  Plugin cannot be queried successfully!
+# Qt: Untested Windows version 6.2 detected!
+# Conflict in C:/ispLEVER_Classic2_0/active-hdl/bin/imageformats/qtiff4.dll:
+#  Plugin cannot be queried successfully!
+# KERNEL: Warning: KERNEL_0291 Signal '/bin_bcd/salida' has already been traced.
+# 0 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/my_designs/Simulations/BinarioBCD/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/bin_bcd/displays' has already been traced.
+# 0 signal(s) traced.
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+bin_bcd bin_bcd convertir
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5799 kB (elbread=1023 elab2=4626 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\my_designs\Simulations\BinarioBCD\src\wave.asdb
+#  05:12 p. m., domingo, 4 de junio de 2017
+#  Simulation has been initialized
+#  Selected Top-Level: bin_bcd (convertir)
+# Waveform file 'untitled.awc' connected to 'c:/my_designs/Simulations/BinarioBCD/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /bin_bcd,  Process: convertidor.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Error:  You do not have a valid license to run Advanced Dataflow. Contact Aldec for ordering information sales@aldec.com
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+bin_bcd bin_bcd convertir
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5799 kB (elbread=1023 elab2=4626 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\my_designs\Simulations\BinarioBCD\src\wave.asdb
+#  05:14 p. m., domingo, 4 de junio de 2017
+#  Simulation has been initialized
+#  Selected Top-Level: bin_bcd (convertir)
+# Waveform file 'untitled.awc' connected to 'c:/my_designs/Simulations/BinarioBCD/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5799 kB (elbread=1023 elab2=4626 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\my_designs\Simulations\BinarioBCD\src\wave.asdb
+#  05:18 p. m., domingo, 4 de junio de 2017
+#  Simulation has been initialized
+#  Selected Top-Level: bin_bcd (convertir)
+# Waveform file 'untitled.awc' connected to 'c:/my_designs/Simulations/BinarioBCD/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Adding file c:\my_designs\Simulations\BinarioBCD\src\convertidor.asdb ... Done
+# Adding file c:\my_designs\Simulations\BinarioBCD\src\convertidor.awc ... Done
+#  Simulation has been stopped

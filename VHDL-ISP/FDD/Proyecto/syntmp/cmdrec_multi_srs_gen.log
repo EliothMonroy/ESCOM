@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  CalculadoraChida  -multisrs  C:\users\elith\documents\github\vhdl-isp\proyecto\synwork\CalculadoraChida_comp.srs  -osyn  C:\users\elith\documents\github\vhdl-isp\proyecto\synwork\CalculadoraChida_mult.srs  -log  C:\users\elith\documents\github\vhdl-isp\proyecto\synlog\CalculadoraChida_multi_srs_gen.srr 
+rc:0 success:1
+C:\users\elith\documents\github\vhdl-isp\proyecto\synwork\CalculadoraChida_comp.srs|i|1481515916|1859
+C:\users\elith\documents\github\vhdl-isp\proyecto\synwork\CalculadoraChida_mult.srs|o|1481515918|2118
+C:\users\elith\documents\github\vhdl-isp\proyecto\synlog\CalculadoraChida_multi_srs_gen.srr|o|1481515918|488
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401245536|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401245732|6337536

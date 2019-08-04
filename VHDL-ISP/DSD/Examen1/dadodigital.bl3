@@ -1,0 +1,156 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon Jun 12 21:10:10 2017
+#$ MODULE dadodigital
+#$ PINS 10 display_5_:131'ke'  display_6_:130'ke'  display_4_:132'ke'  CLK:4'ke'  \
+#  display_3_:133'ke'  CLR:5'ke'  display_2_:134'ke'  CONTROL:6'ke'  display_1_:135'ke'  \
+#  display_0_:138'ke' 
+#$ NODES 6 display_1_0reg display_1_1reg display_1_2reg display_1_3reg \
+#  display_1_4reg display_1_5reg
+.model dado
+.inputs CLK.BLIF CLR.BLIF CONTROL.BLIF display_1_0reg.BLIF display_1_1reg.BLIF \
+display_1_2reg.BLIF display_1_3reg.BLIF display_1_4reg.BLIF \
+display_1_5reg.BLIF
+.outputs display_6_ display_5_ display_4_ display_3_ display_2_ display_1_ \
+display_0_ display_1_0reg.D display_1_0reg.CE display_1_0reg.C \
+display_1_0reg.AP display_1_1reg.D display_1_1reg.CE display_1_1reg.C \
+display_1_1reg.AP display_1_2reg.D display_1_2reg.CE display_1_2reg.C \
+display_1_2reg.AP display_1_3reg.D display_1_3reg.CE display_1_3reg.C \
+display_1_3reg.AP display_1_4reg.D display_1_4reg.CE display_1_4reg.C \
+display_1_4reg.AR display_1_5reg.D display_1_5reg.CE display_1_5reg.C \
+display_1_5reg.AR
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_2reg.BLIF \
+display_1_3reg.BLIF display_1_4reg.BLIF display_1_5reg.BLIF display_1_1reg.D
+111100 1
+000001 1
+010010 1
+---11- 0
+-10-0- 0
+---1-1 0
+1--0-- 0
+0-1--- 0
+-0---0 0
+----11 0
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_2reg.BLIF \
+display_1_3reg.BLIF display_1_4reg.BLIF display_1_5reg.BLIF display_1_2reg.D
+-0---0 1
+---1-1 1
+1--0-- 1
+01---- 1
+----1- 1
+--0--- 1
+111100 0
+001001 0
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_2reg.BLIF \
+display_1_3reg.BLIF display_1_4reg.BLIF display_1_5reg.BLIF display_1_3reg.D
+011000 1
+000001 1
+--0--0 0
+-1---1 0
+-01--- 0
+----1- 0
+---1-- 0
+1----- 0
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_2reg.BLIF \
+display_1_3reg.BLIF display_1_4reg.BLIF display_1_5reg.BLIF display_1_5reg.D
+001100 1
+001001 1
+---0-0 0
+---1-1 0
+----1- 0
+--0--- 0
+-1---- 0
+1----- 0
+.names display_1_3reg.BLIF display_6_
+1 1
+0 0
+.names display_1_5reg.BLIF display_5_
+1 1
+0 0
+.names display_1_4reg.BLIF display_4_
+1 1
+0 0
+.names display_1_3reg.BLIF display_3_
+1 1
+0 0
+.names display_1_2reg.BLIF display_2_
+1 1
+0 0
+.names display_1_1reg.BLIF display_1_
+1 1
+0 0
+.names display_1_0reg.BLIF display_0_
+1 1
+0 0
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_2reg.BLIF \
+display_1_3reg.BLIF display_1_4reg.BLIF display_1_5reg.BLIF display_1_0reg.D
+000001 1
+----1- 0
+---1-- 0
+--1--- 0
+-1---- 0
+1----- 0
+-----0 0
+.names CONTROL.BLIF display_1_0reg.CE
+0 1
+1 0
+.names CLK.BLIF display_1_0reg.C
+1 1
+0 0
+.names CLR.BLIF display_1_0reg.AP
+0 1
+1 0
+.names CONTROL.BLIF display_1_1reg.CE
+0 1
+1 0
+.names CLK.BLIF display_1_1reg.C
+1 1
+0 0
+.names CLR.BLIF display_1_1reg.AP
+0 1
+1 0
+.names CONTROL.BLIF display_1_2reg.CE
+0 1
+1 0
+.names CLK.BLIF display_1_2reg.C
+1 1
+0 0
+.names CLR.BLIF display_1_2reg.AP
+0 1
+1 0
+.names CONTROL.BLIF display_1_3reg.CE
+0 1
+1 0
+.names CLK.BLIF display_1_3reg.C
+1 1
+0 0
+.names CLR.BLIF display_1_3reg.AP
+0 1
+1 0
+.names display_1_0reg.BLIF display_1_1reg.BLIF display_1_2reg.BLIF \
+display_1_3reg.BLIF display_1_4reg.BLIF display_1_5reg.BLIF display_1_4reg.D
+111100 1
+----1- 0
+---0-- 0
+--0--- 0
+-0---- 0
+0----- 0
+-----1 0
+.names CONTROL.BLIF display_1_4reg.CE
+0 1
+1 0
+.names CLK.BLIF display_1_4reg.C
+1 1
+0 0
+.names CLR.BLIF display_1_4reg.AR
+0 1
+1 0
+.names CONTROL.BLIF display_1_5reg.CE
+0 1
+1 0
+.names CLK.BLIF display_1_5reg.C
+1 1
+0 0
+.names CLR.BLIF display_1_5reg.AR
+0 1
+1 0
+.end

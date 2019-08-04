@@ -1,0 +1,10 @@
+[Files List]
+C:\ispLEVER_Classic2_0\active-hdl\vlib\std/src/standard.vhd=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\std/src/textio.vhd=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/arith_p.vhd=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/arith_b.vhd=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/unsigned_p.vhd=S
+C:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/unsigned_b.vhd=S
+c:\my_designs\Simulations\BinarioBCD/src/binario_bcd.vhd=S
