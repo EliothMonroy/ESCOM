@@ -1,0 +1,3 @@
+interface Imprime{
+	void imprime();
+}

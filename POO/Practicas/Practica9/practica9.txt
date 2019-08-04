@@ -1,0 +1,42 @@
+Practica 9
+POO
+Servlets
+
+Opción 1
+Codificar un servlet que genere HTML para mostrar las tablas de multiplicar del 1 al 10. Puede usar la etiqueta <BR> para pasar a la línea siguiente.
+
+Opción 2
+Codificar un servlet  que genere HTML para mostrar un triangulo de asteriscos de n renglones. Abajo se muestra el triangulo cuando n=5. El numero de renglones se introduce en un formulario (codifíquelo también).
+<h1> Triangulo de 5 renglones de asteriscos</h1>
+	        *<br>
+	      **<br>
+	    ***<br>
+	  ****<br>
+	*****<br>
+Opción 3
+Codificar un servlet que recibe dos cadenas y el servlet envía un mensaje donde “dice” si una cadena es o no es un anagrama de la otra.   Las dos cadenas se introducen en un formulario (codifíquelo también).
+
+ENVIO DE ARCHIVOS
+Opción 4
+Codificar un servlet que lea un archivo de texto plano y lo envie al navegador
+
+Opción 5
+Codificar un servlet que lea una imagen gif o jpg de un archivo y la envie al navegador
+
+Opción 6
+Codificar un servlet que lea un archivo pdf  y  lo envie al cliente
+
+Opción 7
+Codificar un servlet que lea un video avi de un  archivo y  lo envie al cliente
+
+Opción 8
+Codificar un servlet que lea un audio mp3 de un  archivo y  lo envie al cliente
+
+BASE DE DATOS
+Opción 9
+Codificar un servlet que recibe una consulta en SQL y se conecta a una base de datos (en Access) que tiene una tabla perro con el esquema Perro(nombre, raza, edad, genero) . Para enviar (al navegador) la tabla resultado de la consulta SQL se genera HTML.
+
+Notas:
+-Se usara el servidor web habilitado para ejecutar servlets: winstone
+
+-Ejecutarlo con

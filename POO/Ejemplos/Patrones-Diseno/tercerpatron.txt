@@ -1,0 +1,10 @@
+1er Patron:
+Separar las cosas que cambian de las que no, y encapsular aquellos que cambian.
+
+3er Patron Diseño: Estrategia.
+Define una familia de algoritmos encapsula cada uno, y los hace intercambiable.
+Estrategia permite que el algoritmo varie independientemente de quien lo use.
+
+En general:
+Principios:
+    Favorecer la composición sobre la herencia.

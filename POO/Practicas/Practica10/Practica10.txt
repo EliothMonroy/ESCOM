@@ -1,0 +1,30 @@
+﻿POO
+
+Practica 10
+
+JavaBeans ( Carpeta Practica9 )
+Escribir los métodos: getters/setters  que sean necesarios
+
+Escribir los métodos:  addNombreEventoListener para que se registren los escuchas
+
+Escribir los métodos:   removeNombreEventoListener para que se den de baja los escuchas
+
+Definir las clases de los objetos Evento donde sea necesario
+
+1.-Modificacion Dinámica de Propiedades (Subcarpeta PropiedadGrafi)
+Hacer un programa para modificar las propiedades de un JavaBean de manera dinámica y grafica (es decir por medio de una GUI).
+
+Deben poderse modificar al menos las propiedades de Color, Visibilidad y Habilitación de objetos de tipo JLabel, JTextArea y JButton
+
+Utilizando reflexión, introspección y el paquete beanutils
+
+2.-Digito (Subcarpeta valvula)
+Codificar un JavaBean digito con una propiedad Numero y que se pueda poner en cascada con otros para hacer contadores.
+Cuando la propiedad Numero de un JavaBean digito llega a 10 se pone de nuevo en cero y se envía un evento DigitEvent al JavaBean
+digito que es el escucha (el de la izquierda). Cuando un JavaBean digito recibe un evento DigitEvent incrementa en uno el valor de su
+propiedad Numero.
+
+3.-Tren (Subcarpeta valvula)
+Codificar un JavaBean locomotora y un JavaBean vagón que se puedan poner en cascada para armar un tren y que cuando la
+locomotora se mueva envié un evento MoveEvent al vagón que remolca y este a su vez lo envié al vagón que remolca y así sucesivamente
+hasta que no haya vagones.  Cuando un JavaBean vagón recibe un evento MoveEvent se mueve la misma distancia que se haya movido la locomotora.

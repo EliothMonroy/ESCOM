@@ -1,0 +1,39 @@
+﻿POO
+
+Practica 5 
+Sockets clientes
+Moviendo objetos de una maquina a otra
+
+Para esa practica dispone del servidor VerySimpleChatServer el cual tiene la capacidad de recibir un objeto de un cliente y enviarlo al los demas clientes.
+
+1.-Chat 3D (Carpeta estatiProgBarRedSimBot)
+Modificar el programa que cambia el estado de animo del tamagochi en la maquina local y la maquina remota de modo que en lugar de disponer de solo 2 estados de animo se tengan 5 estados de animo.
+
+2.-ChatBot (Carpeta estatiProgBarRedSimBot)
+Modificar el programa que cambia el estado de animo del tamagochi en la maquina local y la maquina remota de modo que actue como un ChatBot con al menos 10 preguntas y respuestas predefinidas. 
+En este caso se debe enviar un objeto que contenga una cadena (mensaje) al servidor. 
+En el problema 1 el objeto que se mueve entre maquinas es de la clase Icono dicha clase contiene un entero que es el dato que nos interesa enviar de una maquina a otra.
+
+Ejemplos de preguntas tipo y respuestas tipo
+En que ciudad vives?
+D.F
+Cuantos años tienes?
+20
+En que escuela estudias?
+ESCOM
+
+3.-Envio de imagenes
+Modificar el programa que cambia el estado de animo del tamagochi en la maquina local y la maquina remota de modo que lo que se envie al servidor sean imagenes (ImageIcon).
+
+
+4.-Envio de animaciones (Carpeta anired)
+Modificar el programa que cambia el estado de animo del tamagochi en la maquina local y la maquina remota de modo que lo que se envie al servidor sean Animaciones ver el codigo en la carpeta anired.
+
+5.-Cambio de vistas de manera remota
+Modificar el programa del sistema solar para que si la vista cambia de un planeta a otro en un cliente hacer que tambien cambie en los demas clientes
+
+
+ 
+
+
+

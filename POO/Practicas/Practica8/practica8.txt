@@ -1,0 +1,30 @@
+﻿POO
+
+Practica 8
+
+RMI
+
+1.-ChatBot
+Codificar un programa que actué como un ChatBot con al menos 10 preguntas y respuestas predefinidas. El servidor debe tener un metodo remoto que reciba 
+la pregunta como parametro y que tenga como valor de retorno la respuesta.
+
+Ejemplos de preguntas tipo y respuestas tipo:
+En que ciudad vives?
+D.F
+Cuantos años tienes?
+
+20
+En que escuela estudias?
+ESCOM
+Cuantas materias llevas?
+6
+
+2.-Marco digital remoto
+Modificar los archivos con extension java en la carpeta rmima para que sea un marco digital que obtenga sus imagenes de forma remota.
+
+
+3.-
+
+
+
+

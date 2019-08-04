@@ -1,0 +1,41 @@
+POO
+
+Practica 6
+Sockets Servidores
+
+1.-Login
+Codificar un cliente y un servidor que interactuen del siguiente modo cuando un cliente se conecta al servidor
+le envia su nombre y el servidor le envia los nombres de todos los que se habian conectado hata ese momento.
+
+2.-ChatBot
+Codificar un cliente y un servidor que interactuen del siguiente modo el cliente envia una pregunta al servidor
+y el servidor envia una respuesta al cliente. El servidor puede almacenar al menos 10 preguntas
+y 10 respuestas predefinidas (se pueden usar 2 arreglos o un HashMap).
+
+Ejemplos de preguntas tipo y respuestas tipo
+En que ciudad vives?
+D.F
+Cuantos años tienes?
+20
+En que escuela estudias?
+ESCOM
+
+3.-Servidor de imagenes (o album fotografico digital remoto)
+Codificar un cliente y un servidor donde el servidor almacena imagenes (objetos ImageIcon) en un arreglo (o en un HashMap)
+y el cliente puede solicitar los nombres de los archivos de todas las imagenes o enviar el nombre del archivo de una imagen
+ en dicho caso el servidor busca la imagen en el arreglo y la envia al cliente.
+
+4.-Tablero de avisos electronico
+Codificar un cliente y un servidor para ofrecer un servicio de Tablero de avisos electronico.
+ Dicho programa tendra 2 comandos setinfo y getinfo
+    java TableroAvisos setinfo titulo aviso
+	java TableroAvisos getinfo titulo o java TableroAvisos getinfo alltags
+Un cliente envia un aviso y su titulo al servidor este lo almacena en un HashMap (o en dos arreglos).
+El cliente puedes solicitar un aviso del servidor por titulo o pedir los titulos de todos los avisos.
+Si el cliente envia el titulo de un aviso el servidor lo usa para buscar en el arreglo de avisos el aviso correspondiente a dicho titulo.
+
+5.-Control del tiempo en una maquina remota
+Cuando un usuario se "sube" a un juego (es decir se cambia la vista actual para que esta se mueva junto con el juego)
+se conecta el servidor y este almacena el tiempo correspondiente al momento de la conexion
+y cuando pasan 2 minutos el servidor envia un mensaje para "bajar" al usuario del juego
+(es decir para que se cambie la vista actual para que ya no se mueva junto con el juego).

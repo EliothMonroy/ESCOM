@@ -1,0 +1,6 @@
+"C:\Program Files\Java\jdk1.8.0_73\bin\javac" -cp .;j3dcore.jar;j3dutils.jar;vecmath.jar SolarSis.java
+ 
+"C:\Program Files\Java\jdk1.8.0_73\bin\java" -cp .;j3dcore.jar;j3dutils.jar;vecmath.jar SolarSis
+
+
+

@@ -1,0 +1,19 @@
+﻿P.O.O.
+PRACTICA 7
+JDBC (Carpeta practica7jdbc)
+
+
+
+1.-Insertar Perros
+Hacer un programa que utilice la API JDBC y que tenga una GUI que permita insertar "perros" en una base de datos que tiene una tabla Perro con el siguiente esquema Perro(nombre, raza, edad, genero). La GUI consistirá en 4 etiquetas, 4 campos de entrada y 2 botones.
+
+2.-Nombres de las tablas en una base de datos
+Modificar vista.java y modelo.java para que tenga una pestaña mas con la etiqueta tablas y mostrar en dichas pestañas los nombres de las tablas en una base de datos.
+
+3.-Insertar Perros con foto
+Modificar la opción 1 para que se pueda almacenar la foto del perro como un BLOB en la base de datos.
+
+Nota:
+Empezar por modificar ResultApp.java para que use el driver de Access,  modificar el path a la base de datos que se usara y modificar el nombre de la tabla en la cadena de consulta, compilar ResultApp.java y ejecutar ResultApp.
+ 
+

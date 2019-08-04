@@ -1,0 +1,42 @@
+PRACTICA  1
+
+Realizar uno de los siguientes programas (ya sea como applets o como aplicaciones)
+
+1.-Calculo de una edad
+	Un campo de entrada para introducir el año de nacimiento y un botón para mostrar el calculo de 
+	la edad (actual) en una etiqueta.
+2.-Conversión de temperaturas
+	Un campo de entrada para introducir la temperatura
+	Un botón para convertir de grados Centígrados a Kelvin y un botón para convertir de grados 
+	Kelvin a Centígrados
+3.-Configurar un Reloj
+            Establecer las horas y los minutos en un reloj
+	Poner un botón para incrementar las horas y un botón para incrementar los minutos 
+4.-Control de la temperatura en una habitación
+           Un botón para incrementar la temperatura y un botón para decrementar la temperatura
+	Etiqueta para mostrar la temperatura
+	-abajo del intervalo poner la etiqueta en azul
+	-dentro del intervalo poner la etiqueta en verde
+	-arriba del intervalo poner la etiqueta en rojo
+
+5.-Álbum Fotográfico (usando Swing para la IGU)
+	Etiqueta gráfica para mostrar la imagen
+	-Un botón para avanzar y un botón para retroceder. 
+            -Cuando se llega a la ultima imagen se debe avanzar a la primera.
+            -Cuando se llega a la primera imagen se debe regresar a la ultima.
+
+6.-Juego de  tirar 2 dados (usando Swing para la IGU)
+	-Poner dos etiquetas gráficas una por cada dado y un botón para jugar. Si la suma de los dos 
+	dados es 7 el usuario gana si no pierde. Después de que el usuario presione el botón mostrar en 
+	una tercer etiqueta si el usuario gana o pierde.
+
+Notas:
+1.-Editar los programas en un editor ASCII en Ubuntu puede ser gedit
+2.-Guardar el programa con extensión java
+En el caso de los applets Guardar la pagina web con  extensión html
+3.-Compilar (en una terminal) con
+	javac NombrePrograma.java
+el compilador va a generar el archivo NombrePrograma.class
+4.-Ejecutar con 
+	java  NombrePrograma 
+o ejecutar con

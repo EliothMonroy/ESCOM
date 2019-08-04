@@ -1,0 +1,42 @@
+
+POO
+
+Practica 2 (Arreglos de objetos)
+
+
+En cada opcion usar un arreglo de botones y un GridLayout
+Agregar elementos de IGU al gusto (sin caer en excesos o extravagancias)
+Solo es obligatorio hacer una de las opciones
+
+1.-Reservaciones de asientos en un camion
+   -Tablero de botones de 4X11 
+   -Reservar el asiento cuando se hace click sobre el boton que lo representa y cambiar el color y etiqueta de dicho boton .
+   -Se pulsa un boton especial (el 45) cuando se desea conocer cuantos asientos han sido reservados.
+
+2.-Juego de pegarle al topo
+   -Poner imagenes de topos en un tablero de botones de 4X5 de forma aleatoria
+   -Cuando se haga click sobre un boton que contenga la imagen de un topo incrementar la puntuacion del jugador
+
+3.-Juego de Memorama
+   -Poner la misma imagen (la imagen por default) como etiqueta grafica de cada boton en un tablero de 40 botones
+   -Almacenar 20 pares de imagenes diferentes de forma aleatoria en un arreglo de 40 ImageIcon
+   -Manejar los turnos 
+   -Si en un turno se hace click sobre 2 botones a los que corresponden imagenes iguales incrementar la puntuacion del jugador actual. Si las imagenes no son iguales "taparlas" es decir cambiar la etiqueta del boton por la imagen por default.
+
+4.-Juego de busca minas
+   -Poner imagenes de bombas aleatoriamente en un tablero de botones
+   -En cada boton que no tenga una imagen de bomba contar las bombas que hay en los botones adyacentes y poner dicha cuenta del boton.
+
+5.-Juego de Serpientes y escaleras
+   -Los jugadores inician en la casilla cero.
+   -Manejar los turnos
+   -En cada turno determinar el numero de casillas a avanzar de forma aleatoria
+   -Si se cae en una casilla  donde inicia una escalera (serpiente) ir a la casilla donde finaliza la escalera (serpiente). 
+   -Declarar ganador al primero que llegue a la meta.
+
+6.-Juego de Ajedrez
+   -Poner las imagenes de las piezas de ajedrez en un tablero de botones de 8X8
+   -Manejar los turnos
+   -Mover una pieza de una casilla a otra (no necesitan ser adyacentes).
+
+
