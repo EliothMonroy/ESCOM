@@ -1,0 +1,17 @@
+\BOOKMARK [0][-]{chapter.1}{Descripci\363n de la Prueba}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Prop\363sito de la prueba}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Alcance}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Elementos involucrados}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Requerimientos}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Checklist}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Instrucciones}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Ejecuci\363n de Pruebas}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Prueba P1: Caso de Uso Iniciar Sesi\363n}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Prueba P2: Caso de Uso Registrar alumno}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Prueba P3: Caso de Uso Registrar acad\351mico}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Prueba P4: Caso de Uso Registrar analista}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{Prueba P6: Caso de Uso Registrar materia}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.6}{Prueba P7: Caso de Uso Registrar profesor}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.7}{Prueba P8: Caso de Uso Generar Grupo}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.8}{Prueba P9: Caso de Uso Registrar grupo}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.9}{Prueba P12: Caso de Uso Editar Profesor}{chapter.2}% 17

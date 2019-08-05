@@ -1,0 +1,137 @@
+\section{Caso de Uso Registrar Alumno}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Registrar Alumno\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El analista registra los datos del alumno en un formulario otorgandole un perfil en el sistema.\\
+\hline
+\textbf{ENTRADAS} & Nombre del alumno: Caracteres (solo letras)\\& Apellido Paterno: Caracteres (solo letras)\\& Apellido Materno: Caracteres (solo letras)\\&Número de Boleta: Números con longitud de 10 dígitos\\& Correo Electrónico: Caracteres con el formato de correo electrónico\\& Contraseña: longitud de 6 a 20 caracteres.\\
+\hline
+\textbf{SALIDAS} & Se mostrará un mensaje de confirmación si el registro fue exitoso.\\& Se mostrará un mensaje de error cuando falten campos por llenar o el formato no sea correcto.\\
+\hline
+\textbf{PRECONDICIONES} & No hay\\
+\hline
+\textbf{POSTCONDICIONES} & Se registran los datos del alumno en la base de datos y se le otorga una cuenta\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item Se dejaron campos obligatorios en blanco.
+    \item El correo ya ha sido registrado en otra cuenta.
+    \item El formato de los datos es inválido.
+    \item El número de boleta ya fue asignado a otro alumno.
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se registran los datos del alumno\\
+\hline
+\textbf{ACTORES} & Analista, Jefe de Gestión Escolar\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Confirmación}: Se muestra cuando los datos han sido almacenados correctamente: MC.1\\&\textbf{Mensajes de Error}: Se muestran en los siguientes casos:\begin{itemize}
+    \item Se dejaron campos obligatorios en blanco: ME.1
+    \item El formato de los datos es inválido: ME.2
+    \item El correo está registrado en otra cuenta: ME.3
+    \item El número de boleta ya fue asignado a otro alumno: ME.4
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Hernández Pineda Miguel Angel\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Analista o Jefe de Gestión Escolar.
+    \item El usuario da click en la opción de <<Registrar Alumno>> de la sección Registrar (Figura 3.14)
+    \item El usuario ingresa el nombre del alumno.
+    \item El usuario ingresa el apellido paterno.
+    \item El usuario ingresa el apellido materno.
+    \item El usuario ingresa el número de boleta.
+    \item El usuario ingresa el correo electrónico.
+    \item El usuario ingresa la contraseña del alumno.
+    \item El usuario da click en el botón enviar.
+    \item El sistema valida que no haya campos obligatorios en blanco. \textbf{[Trayectoria 1]}
+    \item *El sistema valida los datos en el campo de nombre. \textbf{[Trayectoria 2]}
+    \item *El sistema valida los datos en el campo de apellido paterno. \textbf{[Trayectoria 3]}
+    \item *El sistema valida los datos en el campo de apellido materno. \textbf{[Trayectoria 4]}
+    \item *El sistema valida los datos en el campo de número de boleta. \textbf{[Trayectoria 5]} \textbf{[Trayectoria 6]}
+    \item *El sistema valida los datos en el campo de correo electrónico. \textbf{[Trayectoria 7]} \textbf{[Trayectoria 8]}
+    \item *El sistema valida los datos en el campo de contraseña según la regla de negocio RN.2. \textbf{[Trayectoria 9]}
+    \item Se registran los datos del alumno y se crea un perfil en el sistema.
+    \item Se muestra un mensaje de confirmación MC.1.
+    \item Fin del caso de uso
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: Quedaron campos obligatorios en blanco.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1.
+    \item *El sistema marca de color rojo los campos vacios.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El formato de texto para el campo nombre del alumno es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de nombre.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El formato de texto para el campo apellido paterno es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de apellido paterno.
+    \item Regresa al punto 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: El formato de texto para el campo apellido materno es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de apellido materno.
+    \item Regresa al punto 5 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: El formato de los datos en el campo número de boleta es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo número de boleta.
+    \item Regresa al punto 6 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 7}\\
+\textbf{Condición}: El número de boleta ingresado ya ha sido asignado a otro alumno.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.4.
+    \item *El sistema marca de color rojo el campo número de boleta.
+    \item Regresa al punto 6 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 7}\\
+\textbf{Condición}: El formato del correo electrónico es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de correo electrónico.
+    \item Regresa al punto 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 8}\\
+\textbf{Condición}: El correo electrónico ingresado ya fue registrado en otra cuenta.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.3.
+    \item *El sistema marca de color rojo el campo de correo electrónico.
+    \item Regresa al punto 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 9}\\
+\textbf{Condición}: El formato de la contraseña es inválido según la regla de negocio RN.2.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de contraseña.
+    \item Regresa al punto 8 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

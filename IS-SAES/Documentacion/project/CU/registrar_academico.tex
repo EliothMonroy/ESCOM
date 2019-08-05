@@ -1,0 +1,144 @@
+\newpage
+\section{Caso de Uso Registrar Académico}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Registrar Académico\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El usuario registra los datos del Académico en un formulario otorgandole un perfil en el sistema.\\
+\hline
+\textbf{ENTRADAS} & Nombre del Académico: Caracteres (solo letras)\\& Apellido Paterno: Caracteres (solo letras)\\& Apellido Materno: Caracteres (solo letras)\\&Número de empleado: Números con longitud de 10 dígitos\\&RFC: Números y letras con el formato de RFC con longitud de 10 dígitos\\& Correo Electrónico: Caracteres con el formato de correo electrónico\\& Contraseña: longitud de 6 a 20 caracteres.\\
+\hline
+\textbf{SALIDAS} & Se mostrará un mensaje de confirmación si el registro fue exitoso.\\& Se mostrará un mensaje de error cuando falten campos por llenar o el formato no sea correcto.\\
+\hline
+\textbf{PRECONDICIONES} & No hay\\
+\hline
+\textbf{POSTCONDICIONES} & Se registran los datos del Académico en la base de datos y se le otorga una cuenta\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item Se dejaron campos obligatorios en blanco.
+    \item El correo ya ha sido registrado en otra cuenta.
+    \item El formato de los datos es inválido.
+    \item El número de empleado ya fue asignado a otro Académico.
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se registran los datos del Académico\\
+\hline
+\textbf{ACTORES} & Analista, Jefe de Gestión Escolar\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Confirmación}: Se muestra cuando los datos han sido almacenados correctamente: MC.1\\&\textbf{Mensajes de Error}: Se muestran en los siguientes casos:\begin{itemize}
+    \item Se dejaron campos obligatorios en blanco: ME.1
+    \item El formato de los datos es inválido: ME.2
+    \item El correo está registrado en otra cuenta: ME.3
+    \item El número de empleado ya fue asignado a otro Académico: ME.5
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Matus López Carlos Eduardo\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Analista o Jefe de Gestión Escolar.
+    \item El usuario da click en la opción de <<Registrar Académico>> de la sección Registrar (Figura 3.14)
+    \item El usuario ingresa el nombre del profesor.
+    \item El usuario ingresa el apellido paterno.
+    \item El usuario ingresa el apellido materno.
+    \item El usuario ingresa el número de empleado.
+    \item El usuario ingresa el correo electrónico.
+    \item El usuario ingresa el RFC del profesor.
+    \item El usuario ingresa la contraseña del profesor.
+    \item El usuario da click en el botón enviar.
+    \item El sistema valida que no haya campos obligatorios en blanco. \textbf{[Trayectoria 1]}
+    \item *El sistema valida los datos en el campo de nombre. \textbf{[Trayectoria 2]}
+    \item *El sistema valida los datos en el campo de apellido paterno. \textbf{[Trayectoria 3]}
+    \item *El sistema valida los datos en el campo de apellido materno. \textbf{[Trayectoria 4]}
+    \item *El sistema valida los datos en el campo de número de empleado. \textbf{[Trayectoria 5]} \textbf{[Trayectoria 9]}
+    \item *El sistema valida los datos en el campo de correo electrónico. \textbf{[Trayectoria 6]}
+    \item *El sistema valida los datos en el campo de RFC. \textbf{[Trayectoria 7]}
+    \item *El sistema valida los datos en el campo de contraseña según la regla de negocio RN.2. \textbf{[Trayectoria 8]}
+    \item Se registran los datos del profesor y se crea un perfil en el sistema.
+    \item Se muestra un mensaje de confirmación MC.1.
+    \item Fin del caso de uso
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: Quedaron campos obligatorios en blanco.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1.
+    \item *El sistema marca de color rojo los campos vacios.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El formato de texto para el campo nombre del alumno es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de nombre.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El formato de texto para el campo apellido paterno es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de apellido paterno.
+    \item Regresa al punto 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: El formato de texto para el campo apellido materno es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de apellido materno.
+    \item Regresa al punto 5 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: El formato de los datos en el campo número de empleado es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo número de empleado.
+    \item Regresa al punto 6 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 6}\\
+\textbf{Condición}: El formato del correo electrónico es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de correo electrónico.
+    \item Regresa al punto 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 7}\\
+\textbf{Condición}: El formato del RFC es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de RFC.
+    \item Regresa al punto 8 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 8}\\
+\textbf{Condición}: El formato de la contraseña es inválido según la regla de negocio RN.2.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de contraseña.
+    \item Regresa al punto 9 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 9}\\
+\textbf{Condición}: El número de empleado asignado ya ha sido registrado.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.5.
+    \item *El sistema marca de color rojo el campo número de empleado.
+    \item Regresa al punto 6 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

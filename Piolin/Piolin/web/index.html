@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bienvenido a Piolin</title>
+        <!-- Como casi nunca tenemos internet en la escuela, mejor descargue bootstrap-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="imagenes/Twitter_Bird.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <!--menu de opciones de navegacion-->
+    <body>
+
+
+        <!-- Header -->
+        <header id="top" class="header">
+            <div class="text-vertical-center">
+                <h1 style="color: #293641">Piolin</h1>
+                <h3 style="color: #293641">Busca gente, comparte tu vida.</h3>
+                <br>
+                <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#login-modal">Inicia Sesion</a>
+                <a href="Registro.jsp" class="btn btn-dark btn-lg">Registrate</a>
+
+            </div>
+        </header>
+
+        
+        <!-- Fotos cool -->
+        <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Un mundo de posibilidades te esperan</h2>
+                    <hr class="small">
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-5">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+        <!--Popup de inicio de sesion-->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Inicia Sesión</h1><br>
+                    <form action="Login" method="post">
+                        <input type="email" name="txtcorreo" placeholder="Correo" required>
+                        <input type="password" name="contra" placeholder="Contraseña" required>
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                    <div class="login-help">
+                        <a href="Registro.jsp">Registrate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Final del Popup de inicio de sesion-->
+        
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Escuela Superior de Cómputo</strong>
+                    </h4>
+                    <p>3481 Melrose Place
+                        <br>Mec, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">contacto@piolin.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="long">
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.js"></script>
+        <!-- JS de bootstrap -->
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<%-- 
+    Document   : MenuCliente
+    Created on : 04-dic-2016, 18:58:20
+    
+--%>
+<%@page import="logica.Pelicula"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Como casi nunca tenemos internet en la escuela, mejor descargue bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/index-styles.css" >
+        <title>Menu Cliente</title>
+       <style>
+          
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+         width: 100%;
+         margin: auto;
+         }
+
+       /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+       .row.content {height: 550px}
+       /* Set gray background color and 100% height */
+      .sidenav {
+        background-color: #000000;
+        height: 1000%;
+     }
+      /* On small screens, set height to 'auto' for the grid */
+        @media screen and (max-width: 462px) {
+      .row.content {height: auto;}  
+    }
+      </style>
+</head>
+   <body style="background-image:url(img/fondo3.jpg) " >
+       
+    <nav class="navbar navbar-inverse visible-xs">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="#"> <a href="/NetBlim" class="header-logo header-logo-fixed">NETBLIM</a></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="SeleccionaPerfil.jsp">Perfil</a></li>
+        <br><li color='white'>Lista de Géneros</li></br>
+        <li><a href="cf.jsp">Ciencia Ficcion</a></li>
+        <li><a href="#">Aventura</a></li>
+        <li><a href="#">Romanticas</a></li>
+        <li><a href="#">Comedia</a></li>
+        <li><a href="#">Terror</a></li>
+        <li><a href="#">Clasicas</a></li>
+        <li><a href="#">Accion</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+        <br><a href="/NetBlim" class="header-logo header-logo-fixed">NETBLIM</a></br>
+      <ul class="nav nav-pills nav-stacked">
+          <br><li class="active"><a href="SeleccionaPerfil.jsp">Perfil</a></li></br>
+        <br><li color='white'>Lista de Géneros</li></br>
+        <li><a href="cf.jsp" >Ciencia Ficcion</a></li>
+        <li><a href="aventura.jsp">Aventura</a></li>
+        <li><a href="romance.jsp">Romanticas</a></li>
+        <li><a href="comedia.jsp">Comedia</a></li>
+        <li><a href="terror.jsp">Terror</a></li>
+        <li><a href="clasicas.jsp">Clasicas</a></li>
+        <li><a href="accion.jsp">Accion</a></li>
+        <br><a href="/NetBlim" class="header-logo header-logo-fixed"><img src="img/cerrarsesion.jpg" class="img-responsive" alt="CF" width="80" height="80"></a></br>
+      </ul>
+    </div>  
+    <div class="col-sm-9">
+      <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">NetBlim</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="Peliculas.jsp">Películas</a></li>
+          <li><a href="Series.jsp">Series</a></li>
+        </ul>
+       <form method="post" action="ConsultaGeneral.jsp" class="navbar-form navbar-left">
+           <div class="input-group">
+             <input name="buscar" type="text" class="form-control" placeholder="Search">
+               <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                 </button>
+              </div>
+           </div>
+        </form>
+      </div><%--fin container fluid--%>
+      </nav><%--fin navbar--%>
+  
+  </body>    
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">    
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/Images/tron.jpg" alt="tron" width="120" height="245">
+      </div>    
+
+      <div class="item">
+        <img src="img/Images/terminator.jpg" alt="Chania" width="120" height="245">
+      </div>
+    
+      <div class="item">
+        <img src="img/Images/intensamente.jpeg" alt="intensamente" width="120" height="245">
+      </div>
+
+      <div class="item">
+        <img src="img/Images/america.jpg" alt="Flower" width="120" height="245">
+      </div>
+    </div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+       <%ResultSet rs=null;
+      Pelicula peli = new Pelicula();
+     try{
+          rs=peli.Peliculas();
+     
+     }catch(Exception e ){
+         System.out.println("Error DB"+e);
+     }
+	  int count=0;
+ 	  out.println(" <div class='row'>");
+ 	while(rs.next())
+ 	{ 
+  	if (count!= 59) {
+          out.println("<div width=132 height=202 class='col-sm-3'>"
+           + " <div class='panel-body' color:#000000><a href='InfoPelil.jsp?idSesion="+rs.getString("idPeli_serie")+"''><img src='img/Images/"+rs.getString("url_imagen")+"' class='img-responsive' alt='Image'></a></div>"
+           + "</div>");
+    
+ 
+    }else {
+     out.println("'</div>"
+             + "<div class='row'>");
+       
+      
+       count=0;
+    }
+    count++;
+  }
+ peli.close();
+%>
+      
+    </div><%--fin column 9--%>
+  </div><%--fin row content--%>
+</div><%--fin container fluid--%>
+
+
+</html>

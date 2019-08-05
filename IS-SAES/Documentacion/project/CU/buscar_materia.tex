@@ -1,0 +1,82 @@
+\newpage
+\section{Caso de Uso: Buscar Materia}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Buscar Materia\\
+\hline
+\textbf{TIPO} & Secundario\\
+\hline
+\textbf{DESCRIPCIÓN} & Se despliega las materias disponibles en la base de datos, en base al grupo seleccionado\\
+\hline
+\textbf{ENTRADAS} & Grupo: Cadena de caracteres de tamaño 4 o 5 \\
+\hline
+\textbf{SALIDAS} & Listado de materias del grupo seleccionado\\
+\hline
+\textbf{PRECONDICIONES} & Estar registrado en el sistema
+Registro de materias y grupos con anterioridad\\
+\hline
+\textbf{POSTCONDICIONES} & No aplica\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item Se dejaron campos obligatorios en blanco.
+    \item No hay grupos registrados con anterioridad.
+    \item No hay materias registradas con anterioridad.
+\end{itemize}
+\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se despliega una tabla con las materias\\
+\hline
+\textbf{ACTORES} & Alumno\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensasje de Error:}Se muestra en lso siguientes casos: \begin{itemize}
+    \item Se dejaron campos en blanco : ME1
+    \item No hay grupos registrados: ME12
+    \item No hay materias registradas: ME10
+\end{itemize} 
+\\
+\hline
+\textbf{AUTOR} & Matus López Carlos Eduardo\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El alumno ingresa al sistema e inicia sesión.
+    \item El alumno da click en la opción <<Buscar Materia>> de la sección Reincripcion (Figura 3.7)
+    \item El sistema despliega el formulario para la busqueda de materias.
+    \item El alumno selecciona el grupo de cual desea visualizar las materias \textbf{[trayectoria 1]} \textbf{[trayectoria 2]}
+    \item Se despliega las materias del grupo que eligio el alumno \textbf{[trayectoria 3]} 
+    \item Fin del caso de uso.
+\end{enumerate}
+\Large{PROCEDIMIENTO ALTERNATIVOS}\\
+\large{}
+Trayectoria 1\\
+\textbf{Condición:}Se dejaron campos obligatorios en blanco
+\large{}
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME1
+    \item *El sistema marca de color rojo los campos vacíos.
+    \item Regresa al punto 3 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}
+
+Trayectoria 2\\
+\textbf{Condición:}No hay grupos registrados previamente
+\large{}
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME12
+    \item Regresa al punto 5 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}
+
+Trayectoria 3\\
+\textbf{Condición:}No hay materias registradas previamente
+\large{}
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME10
+    \item *El sistema muestra una pantalla con una tabla vacia
+    \item Regresa al punto 5 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}

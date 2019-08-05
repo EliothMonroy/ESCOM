@@ -1,0 +1,98 @@
+\newpage
+\section{Caso de Uso Crear Horario}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+	\hline
+	\textbf{NOMBRE} & Crear Horario\\
+	\hline
+	\textbf{TIPO} & Secundario\\
+	\hline
+	\textbf{DESCRIPCIÓN} & El alumno selecciona materias y crea un horario antes o durante el proceso de reinscripción\\
+	\hline
+	\textbf{ENTRADAS} & Materias seleccionadas para crear el horario.\\
+	\hline
+	\textbf{SALIDAS} & Confirmación de que el horario fue creado exitosamente. Aviso de que el horario no pudo ser creado.\\
+	\hline
+	\textbf{PRECONDICIONES} & El alumno debe estar inscrito.\\
+	\hline
+	\textbf{POSTCONDICIONES} & El sistema guarda el horario creado y lo relaciona con el estudiante correspondiente para su posterior uso si el Alumno así lo requiere.\\
+	\hline
+	\textbf{SITUACIONES DE ERROR} & Se presentan en las siguientes situaciones:
+	\begin{itemize}
+		\item La materia no puede ser agregada al horario debido a que no existe cupo en ella. 
+		\item La materia no puede ser agregada al horario debido a que se traslapa con otra materia previamente agregada.
+		\item La materia no puede ser agregada debido a que ya se encuentra otra materia con el mismo nombre en el horario.
+		\item El horario no puede ser guardado debido a que no se encuentra en el rango de créditos permitidos.
+	\end{itemize}\\
+	\hline
+	\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} &  En espera de que el Alumno agregue una nueva materia al horario o presione el botón <<Guardar>>.\\
+	\hline
+	\textbf{ACTORES} & Alumno\\
+	\hline
+	\textbf{MENSAJES} & \textbf{Mensajes de error}: Se presentan cuando:
+	\begin{itemize}
+		\item El Alumno intenta agregar una materia que ya no tiene cupo, al horario: ME.15. 
+		\item El Alumno intenta agregar una materia que se traslapa con alguna otra materia previamente agregada al horario [RN 17]: ME.16.
+		\item El Alumno intenta agregar una materia con el mismo nombre que otra que ya ha sido agregada previamente al horario[RN 16]: ME.17.
+		\item El alumno intenta guardar un horario que no entra en el rango de créditos permitidos[RN 5]: ME.25.
+	\end{itemize}\\&\textbf{Mensaje de confirmación}: Se presenta cuando el horario fue creado exitosamente: MC.7\\
+	\hline
+	\textbf{AUTOR} & Monroy Martos Elioth\\
+	\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+	\item El usuario accede al sistema como Alumno.
+	\item El Alumno selecciona la opción <<Crear Horario>> dentro de la sección <<Reinscripción>>.
+	\item El Alumno ejecuta el caso de uso Búsqueda con el cual obtiene una serie de resultados con las posibles materias que puede agregar al horario (en caso de existir) (Figura 3.49).$\left[\textbf{Trayectoria 1}\right]$
+	\item El usuario presiona el botón agregar ubicado a un lado de la materia obtenida por la Búsqueda.\\$\left[\textbf{Trayectoria 2}\right]$
+	$\left[\textbf{Trayectoria 3}\right]$
+	$\left[\textbf{Trayectoria 4}\right]$
+	\item *El sistema agrega la materia seleccionada al horario.
+	\item Opcional: El Alumno puede volver al punto 3 o 4 del flujo principal.
+	\item El Alumno presiona el botón <<Guardar horario>>.
+	\item *El sistema le muestra al Alumno el formulario para nombrar el horario creado.
+	\item El Alumno ingresa el nombre y presiona el botón <<Registrar>> (Figura 3.50).$\left[\textbf{Trayectoria 5}\right]$
+	\item *El sistema almacena el horario creado por el Alumno.
+	\item *El sistema muestra el mensaje de confirmación MC.7.
+	\item Fin de caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El caso de uso Búsqueda no ha regresado ninguna materia como posible opción.
+\begin{enumerate}
+	\item *El sistema muestra el mensaje de error ME.29.
+	\item *Se vuelve al punto 3 de la trayectoria Principal.
+	\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: La materia que intenta agregar el Alumno se traslapa con el horario que tiene otra materia previamente agregada.
+\begin{enumerate}
+	\item *El sistema muestra el mensaje de error ME.16.
+	\item *Se vuelve al punto 3 de la trayectoria Principal.
+	\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: La materia que intenta agregar el Alumno tiene el mismo nombre que otra materia previamente agregada.
+\begin{enumerate}
+	\item *El sistema muestra el mensaje de error ME.17.
+	\item *Se vuelve al punto 3 de la trayectoria Principal.
+	\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: La materia que intenta agregar el alumno no tiene cupo.
+\begin{enumerate}
+	\item *El sistema muestra el mensaje de error ME.15.
+	\item *Se vuelve al punto 3 de la trayectoria Principal.
+	\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: El horario no entra en el rango de créditos permitidos.
+\begin{enumerate}
+	\item *El sistema muestra el mensaje de error ME.25.
+	\item *Se vuelve al punto 3 de la trayectoria Principal.
+	\item Fin de trayectoria.
+\end{enumerate}

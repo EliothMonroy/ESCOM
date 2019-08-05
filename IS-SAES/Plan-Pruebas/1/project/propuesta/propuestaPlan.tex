@@ -1,0 +1,672 @@
+\newpage
+\chapter{Propuesta Plan de Pruebas}
+\section{Propuesta Tipo A}
+Instrucciones: En cada etapa que sea concluida es importante que se levante la mano para poder mantener el mismo ritmo en el grupo. Responder la columna de Salidas rellenando el círculo del lado izquierdo con la salida que se obtuvo para terminar o interrumpir la Acción. Seleccionar el error que impidió concluir con la acción.
+\subsection*{Etapa 1}
+\textbf{Actores:} Alumno, Analista y Académico\newline
+\textbf{Prueba:} Iniciar Sesión.
+Dirigirse al apartado Iniciar Sesión que se encuentra en la esquina superior derecha de la pantalla principal.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	ID y Contraseña
+	&
+	1 Ingresar al sistema por medio de los siguientes ID’s correspondientes al tipo de prueba que se fue entregada:\newline
+	\textbf{Alumno - Tipo A}\newline
+	\textbf{Analista – Tipo B}\newline 
+	\textbf{Academico – Tipo C}\newline
+	2 Ingresar la siguiente contraseña correspondiente al tipo de prueba que se fue entregada:\newline
+	\textbf{aAlumno1 - Tipo A}\newline
+	\textbf{bAnalista2 – Tipo B}\newline
+	\textbf{cAcademico3 – Tipo C}\newline
+	& 	
+	O Mensaje de Error\newline
+	O Mensaje Positivo\newline
+	O Ninguna
+	&
+	O Contraseña no corresponde\newline
+	O ID inexistente\newline
+	O Los campos son correctos y los marca como incorrectos\\
+	\hline
+	2. 
+	&
+	ID y Contraseña
+	&
+	1 Repetir el paso uno de la acción anterior.\newline
+	2 Ingresar la siguiente contraseña correspondiente al tipo de prueba que se fue entregada:\newline
+	\textbf{Alumno1- Tipo A}\newline
+	\textbf{Analista2 – Tipo B}\newline
+	\textbf{Academico3 -  Tipo C}\newline
+	& 	
+	O Mensaje de Error\newline
+	O Mensaje Positivo\newline
+	O Ninguna
+	&
+	O Contraseña no corresponde
+	O ID inexistente 
+	O Los campos son correctos y los marca como incorrectos\\
+	\hline
+\end{longtable}
+\section*{Etapa 2}
+\textbf{Actores:} Alumno\newline
+\textbf{Prueba:} Guardar Horario
+Cerrar la sesión (se encuentra en la parte superio derecha de la pantalla) e iniciar sesión con el nuevo usuario (número de boleta y contraseña).\newline
+Dirigirse al apartado Reinscripción del menú que se encuentra en la parte izquierda de la pantalla, seleccionar Guardar Horario. 
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	Buscar Materia	
+	&
+	1 Buscar una materia.\newline
+	2 Seleccionar la materia con el horario y profesor que se desee.\newline
+	3 Repetir el paso 1 y 2 hasta tener 6 materias elegidas.\newline
+	4 Seleccionar guardar.	 	
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna
+ 	&
+ 	O No existe la materia a buscar y es una materia válida en el mapa curricular.\newline
+ 	O No agrega la materia.\\
+ 	\hline
+ 	2.
+ 	&
+	Buscar Materia	
+	&
+	1 Buscar la materia: Sistemas Operativos.\newline
+	2 Repetir el paso 1 dos veces.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna
+ 	&
+ 	O No existe la materia a buscar.\newline
+ 	O Los resultados arrojados son distintos en cada búsqueda.\\
+	\hline
+	3.
+	&
+	Buscar Materia	
+	&
+	1 Buscar la materia: Administración de Proyectos. \newline
+	2 Agregar 2 veces la materia.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna
+ 	&
+ 	O No existe la materia a buscar.\newline
+ 	O No agrega la materia.\\
+ 	\hline
+\end{longtable}
+\section*{Etapa 3}
+\textbf{Actores:} Alumno\newline
+\textbf{Prueba:} Revisar Cita de Reinscripción.
+Dirigirse al apartado Reinscripción que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Cita de Reinscripción.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	Ninguna	
+	&
+	1 Revisar hora y fecha de la reinscripción.\newline
+	2 Reportar sino se tiene cita de reinscripción.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna
+ 	&
+ 	O No se ha asignado una cita para reinscripción.\\
+ 	\hline
+\end{longtable}
+\section*{Etapa 4}
+\textbf{Actores:} Alumno\newline
+\textbf{Prueba:} Reinscribir.\newline
+Dirigirse al apartado Renscripción que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Cita de Reinscripción.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	Buscar Materia	
+	&
+	1 Revisar la información que parezca acerca del horario que se guardo en la etapa 2.\newline
+	2 Si no aparece alguna información continué con la Acción 2.\newline
+	3 Si hay materias que no se hayan podido inscribir eliminé las materias y elija nuevas materias (juntar un total de 6 materias a inscribir).
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	 
+ 	&
+ 	O La materia no existe.\newline
+ 	O No cargo el horario anteriormente guardado.\newline
+ 	O No agrega la materia que selecciono.\\
+ 	\hline
+ 	 & &
+	4 Seleccionar Terminar Reinscripción. 
+	& &
+ 	O No permitió que Concluyera su reinscripción.\\
+	\hline
+ 	2.
+	&
+	Buscar Materia	
+	&
+	1 Buscar una materia.\newline
+	2 Seleccionar la materia para añadir  al futuro horario.\newline
+	3 Repetir el punto 1 y 2 seis veces (para juntar un total de seis materias a inscribir).\newline
+	4 Seleccionar Terminar Reincripción. 	
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	 
+ 	&
+ 	O La materia no existe.\newline
+ 	O No agrega la materia que selecciono.\newline
+ 	O No permitió que Concluyera su reinscripción.\\
+ 	\hline
+\end{longtable}
+\section*{Etapa 5}
+\textbf{Actores:} Alumno\newline
+\textbf{Prueba:} Confirmar Horario Inscrito.\newline
+Dirigirse al apartado Horario Actual.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+	\hline
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	Ninguna	
+	&
+	1 Revisar el horario.\newline
+	2 El número de materias inscritas tiene que ser igual a seis en este caso.\newline
+	3 Revisar el horario y el profesor.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	O No agrego un horario nuevo.\newline
+ 	O Las materias tienen los datos equivocados.\\
+ 	\hline
+\end{longtable}
+\newpage
+\section*{Etapa 6}
+\textbf{Actores:} Alumno\newline
+\textbf{Prueba:} Revisar Cita de Reinscripción.\newline
+Dirigirse al apartado Reinscripción que se encuentra en el menú del lado izquierdo.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+	\hline
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	2.
+	&
+	Ninguna	
+	&
+	1 Revisar el mensaje que muestra al seleccionar Reinscripción. 	
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	O Me deja reinscribir más materias\\
+ 	\hline
+\end{longtable}
+\newpage
+\section{Propuesta Tipo B}
+Instrucciones: En cada etapa que sea concluida es importante que se levante la mano para poder mantener el mismo ritmo en el grupo. Responder la columna de Salidas rellenando el círculo del lado izquierdo con la salida que se obtuvo para terminar o interrumpir la Acción. Seleccionar el error que impidió concluir con la acción.
+\subsection*{Etapa 1}
+\textbf{Actores:} Alumno, Analista y Académico\newline
+\textbf{Prueba:} Iniciar Sesión.
+Dirigirse al apartado Iniciar Sesión que se encuentra en la esquina superior derecha de la pantalla principal.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	ID y Contraseña
+	&
+	1 Ingresar al sistema por medio de los siguientes ID’s correspondientes al tipo de prueba que se fue entregada:\newline
+	\textbf{Alumno - Tipo A}\newline
+	\textbf{Analista – Tipo B}\newline 
+	\textbf{Academico – Tipo C}\newline
+	2 Ingresar la siguiente contraseña correspondiente al tipo de prueba que se fue entregada:\newline
+	\textbf{aAlumno1 - Tipo A}\newline
+	\textbf{bAnalista2 – Tipo B}\newline
+	\textbf{cAcademico3 – Tipo C}\newline
+	& 	
+	O Mensaje de Error\newline
+	O Mensaje Positivo\newline
+	O Ninguna
+	&
+	O Contraseña no corresponde\newline
+	O ID inexistente\newline
+	O Los campos son correctos y los marca como incorrectos\\
+	\hline
+	2. 
+	&
+	ID y Contraseña
+	&
+	1 Repetir el paso uno de la acción anterior.\newline
+	2 Ingresar la siguiente contraseña correspondiente al tipo de prueba que se fue entregada:\newline
+	\textbf{Alumno1- Tipo A}\newline
+	\textbf{Analista2 – Tipo B}\newline
+	\textbf{Academico3 -  Tipo C}\newline
+	& 	
+	O Mensaje de Error\newline
+	O Mensaje Positivo\newline
+	O Ninguna
+	&
+	O Contraseña no corresponde.\newline
+	O ID inexistente.\newline
+	O Los campos son correctos y los marca como incorrectos.\\
+	\hline
+\end{longtable}
+\newpage
+\section*{Etapa 2}
+\textbf{Actores:} Analista\newline
+\textbf{Prueba:} Registrar Alumno.\newline
+Dirigirse al apartado Registro que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Registrar Alumno.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	Nombre\newline
+	Apellidos\newline
+	Correo electrónico\newline
+	Contraseña\newline
+	Contraseña (confirmación)	
+	&
+	1. Llenar los campos que solicitan con la información de su compañero de alado como alumno (el correo electrónico debe ser existente). La contraseña debe ser asignada por usted utilizando la primera letra del nombre y el primer apellido, ejemplo:\newline
+	Nombre: América Monsalvo.\newline
+	Contraseña: amonsalvo.	 	
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	O El alumno ya ha sido registrado.\newline
+ 	O Los campos son correctos y los marca como incorrectos.\\
+ 	\hline
+\end{longtable}
+\section*{Etapa 3}
+\textbf{Actores:} Analista\newline
+\textbf{Prueba:} Generar Cita.\newline
+Dirigirse al apartado Periodos que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Generar Cita.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+    \hline
+	1.
+	&
+	Fecha Inicio\newline
+	Fecha Termino\newline
+	Hora inicio\newline
+	Hora termino\newline
+	Tiempo de  reinscripción	
+	&
+	1 Selección como fecha de inicio el día en que se está ejerciendo la prueba.\newline
+	2 Seleccionar como fecha de termino los tres días hábiles posteriores a la fecha de inicio.\newline
+	3 Seleccionar Hora de inicio  las 8 a.m. y hora de término las 4 p.m.	 	
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	 
+	&
+ 	O Ya existe un periodo de inscripción.\newline
+ 	O El rango de horas no está permitido.\newline
+ 	O Las fechas no son días hábiles.\newline
+ 	O El tiempo de reinscripción no es suficiente.\\
+ 	\hline
+ 	  & &
+ 	3 Seleccionar el Tiempo de reinscripción de 30 minutos.\newline
+	4 Seleccionar Aceptar.
+	& &
+ 	O Los campos son válidos y los marca como incorrectos.\\
+ 	\hline
+\end{longtable}
+\section*{Etapa 4}
+\textbf{Actores:} Analista\newline
+\textbf{Prueba:} Reinscribir\newline
+Dirigirse al apartado Renscribir que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Reinscripción.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+    \hline
+	1.
+	&
+	Buscar Materia\newline
+	Buscar Alumno	
+	&
+	1 Seleccionar el alumno que se desea inscribir.\newline
+	2 Buscar Materia que el alumno solicité a inscribir.\newline
+	3 Seleccionar Materia.\newline
+	4 Repetir los pasos 2 y3 seis veces para juntar un total de seis materias a inscribir. Si la materia no puede ser inscrita utilicen otra materia.\newline
+	5 Seleccionar Terminar reinscripción.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	 
+	&
+ 	O La materia no existe.\newline
+ 	O No agrega la materia que selecciono.\newline
+ 	O No permitió que Concluyera su reinscripción.\\
+ 	\hline
+\end{longtable}
+\newpage
+\section{Propuesta Tipo C}
+Instrucciones: En cada etapa que sea concluida es importante que se levante la mano para poder mantener el mismo ritmo en el grupo. Responder la columna de Salidas rellenando el círculo del lado izquierdo con la salida que se obtuvo para terminar o interrumpir la Acción. Seleccionar el error que impidió concluir con la acción.
+\subsection*{Etapa 1}
+\textbf{Actores:} Alumno, Analista y Académico\newline
+\textbf{Prueba:} Iniciar Sesión.
+Dirigirse al apartado Iniciar Sesión que se encuentra en la esquina superior derecha de la pantalla principal.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	ID y Contraseña
+	&
+	1 Ingresar al sistema por medio de los siguientes ID’s correspondientes al tipo de prueba que se fue entregada:\newline
+	\textbf{Alumno - Tipo A}\newline
+	\textbf{Analista – Tipo B}\newline 
+	\textbf{Academico – Tipo C}\newline
+	2 Ingresar la siguiente contraseña correspondiente al tipo de prueba que se fue entregada:\newline
+	\textbf{aAlumno1 - Tipo A}\newline
+	\textbf{bAnalista2 – Tipo B}\newline
+	\textbf{cAcademico3 – Tipo C}\newline
+	& 	
+	O Mensaje de Error\newline
+	O Mensaje Positivo\newline
+	O Ninguna
+	&
+	O Contraseña no corresponde\newline
+	O ID inexistente\newline
+	O Los campos son correctos y los marca como incorrectos\\
+	\hline
+	2. 
+	&
+	ID y Contraseña
+	&
+	1 Repetir el paso uno de la acción anterior.\newline
+	2 Ingresar la siguiente contraseña correspondiente al tipo de prueba que se fue entregada:\newline
+	\textbf{Alumno1- Tipo A}\newline
+	\textbf{Analista2 – Tipo B}\newline
+	\textbf{Academico3 -  Tipo C}\newline
+	& 	
+	O Mensaje de Error\newline
+	O Mensaje Positivo\newline
+	O Ninguna
+	&
+	O Contraseña no corresponde
+	O ID inexistente 
+	O Los campos son correctos y los marca como incorrectos\\
+	\hline
+\end{longtable}
+\section*{Etapa 2}
+\textbf{Actores:} Académico\newline
+\textbf{Prueba:} Registrar Horario.\newline
+Dirigirse al apartado Administrar que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Registrar Horario.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+	\hline
+	1.
+	&
+	Materia\newline
+	Profesor\newline
+	Grupo\newline
+	Hora	
+	&
+	1 Seleccionar la Materia: Compiladores.\newline
+	2 Seleccionar la Materia: Administración Financiera.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	O La materia no existe.\newline
+ 	O No actualiza los profesores que imparten la materia.\\
+ 	\hline
+ 	2.
+	&
+	Materia\newline
+	Profesor\newline
+	Grupo\newline
+	Horario	
+	&
+	1 Seleccionar la Materia: Bases de Datos.\newline
+	2 Seleccionar al primer profesor que aparezca.\newline
+	3 Seleccionar el Grupo (el tercer grupo en aparecer).\newline
+	4 Seleccionar el Horario.\newline
+	5 Seleccionar Registrar.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	O La materia no existe.\newline
+ 	O No actualiza los profesores que imparten la materia.\newline
+ 	O La materia ya ha sido registrada en el grupo.\newline
+ 	O El horario ya ha sido ocupado por otra materia.\\
+ 	\hline
+ 	3.
+	&
+	Materia\newline
+	Profesor\newline
+	Grupo\newline
+	Horario	
+	&
+	1 Seleccionar alguna Materia.\newline
+	2 Seleccionar al primer profesor que aparezca.\newline
+	3 Seleccionar el Grupo.\newline
+	4 Seleccionar el Horario.\newline
+	5 Seleccionar Registrar.\newline
+	6 Si la materia ya ha sido registrada o el horario está ocupado intentar con otra materia, o cambiar algún campo que permita registrar la materia. Después de 5 intentos fallidos  concluya esta Etapa.
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	La materia no existe.\newline
+ 	No actualiza los profesores que imparten la materia.\newline
+ 	No registro la materia en 5 intentos.\newline
+ 	La materia no tiene disponibilidad de horario.\\
+ 	\hline
+\end{longtable}
+\section*{Etapa 3}
+\textbf{Actores:} Académico\newline
+\textbf{Prueba:} Editar Horario.\newline
+Dirigirse al apartado Administrar que se encuentra en el menú del lado izquierdo de la pantalla, después seleccionar Editar Horario.
+\begin{longtable}{|p{0.7cm}|p{3cm}|p{6cm}|p{2.3cm}|p{3cm}|}
+    \hline	
+	\textbf{No.}
+	&
+	\textbf{Entradas}	
+	&
+	\textbf{Acción}
+	&
+	\textbf{Salidas}
+	&
+	\textbf{Error}
+	\\
+    \hline	
+	1.
+	&
+	Buscar Materia\newline
+	Materia\newline
+	Profesor\newline
+	Grupo\newline
+	Hora	
+	&
+	1 Buscar la materia que fue registrada en la Etapa 2.\newline
+	2 Modificar al profesor por el segundo que parece.\newline
+	3 Seleccionar Guardar.\newline
+	4 Si la materia ya ha sido registrada o el horario está ocupado intentar con otro Profesor. Después de 5 intentos fallidos concluya esta Etapa.	 	
+	&
+	O Mensaje de Error\newline
+ 	O Mensaje Positivo\newline
+ 	O Ninguna	 	
+ 	&
+ 	O La materia no existe.\newline
+ 	O No actualiza los profesores que imparten la materia.\newline 
+ 	O La materia editada no puede ser registrada ya que no tiene disponibilidad de horario.\\
+	\hline
+\end{longtable}
+\newpage
+\subsection{Propuesta Cuestionario}
+\begin{longtable}{p{15cm} p{1cm}}
+    1. Del 0 al 10 (considerando que 0 es no me gusto y 10 es me encanto) ¿Cuánto le agradaron los colores que tiene el sistema SAES?
+    &
+    [  ]\\
+    2. Si la respuesta anterior fue menor o igual a 7, elija el color base que le agradaría que tuviera el sistema SAES (considerando al blanco como su color acompañante), sino pase a la siguiente pregunta.\newline
+    a. Guinda  \hspace{2cm} b. Negro  \hspace{2cm} c. Naranja oscuro
+    &
+    [  ]\\
+    3. Del 0 al 5 (considerando 0 como no se puede ver y 5 se ve claramente)¿Qué tan claro podía leer el texto dentro del sistema SAES?
+    &
+    [  ]\\
+    4. ¿El tipo de letra es legible y entendible?\newline
+    a. SI   \hspace{2cm} b. NO
+    &
+    [  ]\\
+    5. ¿Los mensajes mostrados por el sistema SAES fueron poco entendibles, ambigüos o poseen faltas de ortografía? \newline
+    a. SI \hspace{2cm}  b.NO
+    &
+    [  ]\\
+    6. ¿EL texto en los mensajes, botones, etiquetas y alertas del sistema SAES lo incomodarón, molestarón o irritarón? \newline
+    a. SI \hspace{2cm}  b. NO
+    &
+    [  ]\\
+    7. Del 0 a 5 ¿Cómo le parece la velocidad del sistema SAES?  & [  ]\\
+    8. Del 0 al 10 ¿Qué le parece la opción de crear un horario y guardarlo? & [  ]\\
+    9. Del 0 al 5 ¿Qué le pareció la distribución de las funciones en el menú? & [  ]\\
+    10. ¿Recomendaría y/ o usaría el sistema SAES? \newline a. SI \hspace{2cm} b.NO &  [  ]\\ 
+\end{longtable}
+\vspace*{2cm}
+\noindent
+Es importante escuchar su opinión por lo que si tiene algún comentario acerca del sistema, le pedimos que lo escribe en las siguientes líneas.
+\begin{longtable}{ |p{15cm}| }
+\hline
+    \vspace*{5cm} \\
+\hline
+\end{longtable}

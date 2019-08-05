@@ -1,0 +1,59 @@
+\newpage
+\section{Caso de Uso Ver Horario y disponibilidadl}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Ver Horario y disponibilidad\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & Se muestran las materias en base al nivel que selecciono el alumno, teniendo en cuenta si se selecciono un o varios de los siguientes filtros:Grupo,Profesor,Materia\\
+\hline
+\textbf{ENTRADAS} & Nivel y filtros.\\
+\hline
+\textbf{SALIDAS} & Listado de las materias basadas en la seleccion del alumno\\
+\hline
+\textbf{PRECONDICIONES} & Estar registrado en el sistema\\
+\hline
+\textbf{POSTCONDICIONES} & No aplica\\
+\hline
+\textbf{SITUACIONES DE ERROR} & Se dejo en blanco el campo de nivel de la materia.\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & Se despliega el mensaje de error ME1\\
+\hline
+\textbf{ACTORES} & Alumno\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensasje de Error:}Se muestra en el siguiente caso. Se dejaron campos en blanco : ME1\\
+\hline
+\textbf{AUTOR} & Matus López Carlos Eduardo\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El alumno ingresa al sistema e inicia sesión.
+    \item El alumno da click en la opción <<Horarios y Disponibilidad>> de la sección Reincripción (Figura 3.7)
+    \item El sistema despliega el formulario para la búsqueda de materias.
+    \item El alumno selecciona el nivel de las materias que quiere visualizar \textbf{[Trayectoria 1]}
+    \item El alumno selecciona los filtros que desea para visualizar las materias. \textbf{[Trayectoria 2]}
+    \item Se despliega las materias del nivel que eligió el alumno
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTO ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición:}Se dejaron campos obligatorios en blanco
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME1
+    \item *El sistema marca de color rojo los campos vacíos.
+    \item Regresa al punto 3 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición:}Se seleccionaron filtros de selección.
+\begin{enumerate}
+    \item El sistema aplica los filtros de selección a la búsqueda de las materias.
+    \item Regresa al punto 6 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}

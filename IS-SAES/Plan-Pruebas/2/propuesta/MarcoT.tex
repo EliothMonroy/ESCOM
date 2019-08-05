@@ -1,0 +1,133 @@
+\chapter{Marco Teórico}
+\noindent
+Incluso los desarrolladores de software más experimentados estarán de acuerdo en que obtener software de alta calidad es una meta importante. Pero, ¿cómo se define la calidad del software?
+\vspace*{.2cm}\\
+\noindent
+En el sentido más general se define como: \textit{Proceso eficaz de software que se aplica de manera que crea un producto útil que proporciona valor medible a quienes lo producen y a quienes lo utilizan}
+\section{Dimensiones de la calidad de Garvin}
+\noindent
+David Garvin sugiere que la calidad debe tomarse en cuenta, adoptando un punto de vista multidimensional que comience con la evaluación de la conformidad y termine con una visión trascendental (estética). Aunque las ocho dimensiones de Garvin de la calidad no fuerondesarrolladas específicamente para el software, se aplican a la calidad de éste:\\
+\begin{itemize}
+    \item  \textbf{Calidad del desempeño:}¿El software entrega todo el contenido, las funciones y las características especificadas como parte del modelo de requerimientos, de manera que da valor al usuario final?
+    \item  \textbf{Calidad de las características:} ¿El software tiene características que sorprenden y agradan la primera vez que lo emplean los usuarios finales?
+    \item  \textbf{Confiabilidad:}¿El software proporciona todas las características y capacidades sin fallar?¿Está disponible cuando se necesita? ¿Entrega funcionalidad libre de errores?
+    \item  \textbf{Conformidad:}¿El software concuerda con los estándares locales y externos que son relevantes para la aplicación? ¿Concuerda con el diseño de facto y las convenciones de código? Por ejemplo, ¿la interfaz de usuario está de acuerdo con las reglas aceptadas del diseño para la selección de menú o para la entrada de datos?
+    \item  \textbf{Durabilidad:}¿El software puede recibir mantenimiento (cambiar) o corregirse (depurarse) sin la generación inadvertida de eventos colaterales? ¿Los cambios ocasionarán que la tasa de errores o la confiabilidad disminuyan con el tiempo?
+    \item  \textbf{Servicio:} ¿Existe la posibilidad de que el software reciba mantenimiento (cambios) o correcciones (depuración) en un periodo de tiempo aceptablemente breve? ¿El equipo de apoyo puede adquirir toda la información necesaria para hacer cambios o corregir defectos?
+    \item  \textbf{Estética:} No hay duda de que todos tenemos una visión diferente y muy subjetiva de lo que es estético. Aun así, la mayoría de nosotros estaría de acuerdo en que una entidad estética posee cierta elegancia, un flujo único y una “presencia” obvia que es difícil de cuantificar y que, no obstante, resulta evidente. El software estético tiene estas características
+    \item  \textbf{Percepción:}En ciertas situaciones, existen prejuicios que influirán en la percepción de la calidad por parte del usuario. Por ejemplo, si se introduce un producto de software elaborado por un proveedor que en el pasado ha demostrado mala calidad, se estará receloso y la percepción de la calidad del producto tendrá influencia negativa. De manera similar, si un vendedor tiene una reputación excelente se percibirá buena calidad, aun si ésta en realidad no existe.
+\end{itemize}
+Las dimensiones de la calidad de Garvin dan una visión “suave” de la calidad del software. Muchas de estas dimensiones (aunque no todas) sólo pueden considerarse de manera subjetiva. Por esta razón, también se necesita un conjunto de factores “duros” de la calidad que se clasifican en dos grandes grupos: \\
+
+\begin{itemize}
+\item factores que pueden medirse en forma directa (por ejemplo, defectos no descubiertos durante las pruebas)
+\item factores que sólo pueden medirse indirectamente (como la usabilidad o la facilidad de recibir mantenimiento)
+\end{itemize}
+En cada caso deben hacerse mediciones: debe compararse el software con algún dato para llegar a un indicador de la calidad.
+\section{Factores de la calidad de McCall}
+McCall, Richards y Walters [McC77] proponen una clasificación útil de los factores que afectan la calidad del software. Éstos se ilustran en la figura 1 y se centran en tres aspectos importantes del producto de software: sus características operativas, su capacidad de ser modificado y su adaptabilidad a nuevos ambientes.\\
+En relación con los factores mencionados en la figura 1, McCalletal., hacen las descripciones siguientes:\\
+\begin{itemize}
+    \item  \textbf{Corrección:} Grado en el que un programa satisface sus especificaciones y en el que cumple con los objetivos de la misión del cliente.
+    \item  \textbf{Confiabilidad:}Grado en el que se espera que un programa cumpla con su función y con la precisión requerida 
+    \item  \textbf{Eficiencia:} Cantidad de recursos de cómputo y de código requeridos por un programa para llevar a cabo su función.
+    \item  \textbf{Integridad:}Grado en el que es posible controlar el acceso de personas no autorizadas al software o alos datos.
+    \item  \textbf{Usabilidad:}Esfuerzo que se requiere para aprender, operar, preparar las entradas e interpretar las salidas de un programa
+    \item  \textbf{Facilidad de recibir mantenimiento:}Esfuerzo requerido para detectar y corregir un error en un programa 
+    \item  \textbf{Flexibilidad:}Esfuerzo necesario para modificar un programa que ya opera.
+    \item  \textbf{Susceptibilidad de someterse a pruebas:} Esfuerzo que se requiere para probar un programa a fin de garantizar que realiza la función que se pretende. 
+    \item  \textbf{Portabilidad :}Esfuerzo que se necesita para transferir el programa de un ambiente de sistema de hardware o software a otro.
+    \item  \textbf{Reusabilidad:}Grado en el que un programa (o partes de uno) pueden volverse a utilizar en otras aplicaciones (se relaciona con el empaque y el alcance de las funciones que lleva a cabo el programa).
+    \item  \textbf{Interoperabilidad:}Esfuerzo requerido para acoplar un sistema con otro.
+\end{itemize}
+
+Es difícil — y, en ciertos casos, imposible— desarrollar mediciones directas de estos factores de la calidad. En realidad, muchas de las unidades de medida definidas por McCall et al., sólopueden obtenerse de manera indirecta. Sin embargo, la evaluación de la calidad de una aplicación por medio de estos factores dará un indicio sólido de ella.\\
+
+\section{Factores de la calidad ISO 9126}
+
+El estándar ISO 9126 se desarrolló con la intención de identificar los atributos clave del software de cómputo. Este sistema identifica seis atributos clave de la calidad:\\
+\begin{itemize}
+    \item  \textbf{Funcionalidad:}Grado en el que el software satisface las necesidades planteadas según las
+establecen los atributos siguientes: adaptabilidad, exactitud, interoperabilidad, cumplimiento
+y seguridad.
+    \item  \textbf{Confiabilidad:}Cantidad de tiempo que el software se encuentra disponible para su uso,según lo indican los siguientes atributos: madurez, tolerancia a fallas y recuperación.
+    \item  \textbf{Usabilidad:}Grado en el que el software es fácil de usar, según lo indican los siguientes subatributos: entendible, aprendible y operable.
+    \item  \textbf{Eficiencia:}Grado en el que el software emplea óptimamente los recursos del sistema, según lo indican los subatributos siguientes: comportamiento del tiempo y de los recursos.
+    \item  \textbf{Facilidad de recibir mantenimiento:}Facilidad con la que pueden efectuarse reparaciones al software, según lo indican los atributos que siguen: analizable, cambiable, estable,susceptible de someterse a pruebas.
+    \item  \textbf{Portabilidad:}Facilidad con la que el software puede llevarse de un ambiente a otro según lo indican los siguientes atributos: adaptable, instalable, conformidad y sustituible.
+\end{itemize}
+
+\section{El costo de la calidad}
+
+El costo de la calidad incluye todos los costos en los que se incurre al buscar la calidad o al realizar actividades relacionadas con ella y los costos posteriores de la falta de calidad. Para entender estos costos, una organización debe contar con unidades de medición que provean el fundamento del costo actual de la calidad, que identifiquen las oportunidades para reducir dichos costos y que den una base normalizada de comparación. El costo de la calidad puede dividirse en los costos que están asociados con la prevención, la evaluación y la falla.\\
+Los costos de prevención incluyen lo siguiente: \\
+\begin{enumerate}
+    \item  el costo de las actividades de administración
+requeridas para planear y coordinar todas las actividades de control y aseguramiento de la calidad
+    \item el costo de las actividades técnicas agregadas para desarrollar modelos completos de los requerimientos y del diseño
+    \item los costos de planear las pruebas
+    \item el costo de toda la
+capacitación asociada con estas actividades.
+\end{enumerate}
+Los costos de evaluación incluyen las actividades de investigación de la condición del producto la “primera vez” que pasa por cada proceso. Algunos ejemplos de costos de evaluación incluyen los siguientes:\\
+\begin{enumerate}
+    \item  El costo de efectuar revisiones técnicas de los productos del trabajo de la ingeniería de software.
+    \item El costo de recabar datos y unidades de medida para la evaluación
+    \item El costo de hacer las pruebas y depurar
+\end{enumerate}
+Los costos de falla son aquellos que se eliminarían si no hubiera errores antes o después de enviar el producto a los consumidores. Los costos de falla se subdividen en internos y externos.\\
+Se incurre en costos internos de falla cuando se detecta un error en un producto antes del envío.\\
+Los costos internos de falla incluyen los siguientes:\\
+\begin{itemize}
+    \item El costo requerido por efectuar repeticiones (reparaciones para corregir un error)
+    \item El costo en el que se incurre cuando una repetición genera inadvertidamente efectos colaterales que deban mitigarse
+    \item Los costos asociados con la colección de las unidades de medida de la calidad que permitan que una organización evalúe los modos de la falla
+\end{itemize}
+Los costos externos de falla se asocian con defectos encontrados después de que el producto se envió a los consumidores. Algunos ejemplos de costos externos de falla son los de solución de quejas, devolución y sustitución del producto, ayuda en línea y trabajo asociado con la garantía.\\
+La mala reputación y la pérdida resultante de negocios es otro costo externo de falla que resulta difícil de cuantificar y que, sin embargo, es real. Cuando se produce software de mala calidad, suceden cosas malas
+\section{Tecnicas de revision}
+\subsection{El efecto de los defectos del software en el costo}
+ El objetivo principal de las revisiones técnicas es encontrar errores durante el proceso a fin de que no se conviertan en defectos después de liberar el software. El beneficio obvio de las revisiones técnicas es el descubrimiento temprano de los errores, de modo que no se propaguen a la siguiente etapa del proceso del software.\\
+Varios estudios de la industria indican que las actividades de diseño introducen de 50 a 65 por ciento de todos los errores (y en realidad de todos los defectos) durante el proceso del software. Sin embargo, las técnicas de revisión han demostrado tener una eficacia de hasta 75 por ciento [Jon86] para descubrir fallas del diseño. Al detectar y eliminar un gran porcentaje de estos errores, el proceso de revisión reduce de manera sustancial el costo de las actividades posteriores en el proceso del software.\\
+\subsection{Amplificación y eliminación del defecto}
+Para ilustrar la generación y detección de errores durante las acciones de diseño y generación de código de un proceso de software, puede usarse un modelo de amplificación del defecto[IBM81]. En la figura 2 se ilustra esquemáticamente el modelo. Un cuadro representa una acción de la ingeniería de software. Durante la acción, los errores se generan de manera inadvertida.\\
+La revisión puede fracasar en descubrir los errores nuevos que se generan y los cometidos en etapas anteriores, lo que da como resultado cierto número de errores pasados por alto. En ciertos casos, los errores de etapas anteriores ignorados son amplificados (en un factor x de amplificación) por el trabajo en curso. Las subdivisiones de los cuadros representan a cada una de estas características y al porcentaje de eficiencia de la detección de errores, que es una función de la profundidad de la revisión.\\
+La figura 3 ilustra un ejemplo hipotético de amplificación del defecto para un proceso de software en el que no se hacen revisiones. En la figura, se supone que en cada etapa de prueba se detecta y corrige 50 por ciento de todos los errores de entrada sin que se introduzcan nuevos errores (suposición optimista). Diez defectos preliminares de diseño se amplifican a 94 erroresantes de que comiencen las pruebas. Se liberan al campo 12 errores latentes (defectos). La figura 4 considera las mismas condiciones, excepto porque se efectúan revisiones del diseño y código como parte de cada acción de la ingeniería de software. En este caso, son 10 los errores
+\subsection{Metricas de revisión}
+Las revisiones técnicas son una de las muchas acciones que se requieren como parte de las buenas prácticas de la ingeniería de software. Cada acción requiere un esfuerzo humano dirigido.\\
+Como el esfuerzo disponible para el proyecto es finito, es importante que una organización de software comprenda la eficacia de cada acción, definiendo un conjunto de métricas Aunque se han definido muchas métricas para las revisiones técnicas, un conjunto relativamente pequeño da una perspectiva útil. Las siguientes métricas para la revisión pueden obtenerse conforme se efectúe ésta:\\
+\begin{itemize}
+    \item \textit{Esfuerzo de preparación, E$_p$:}esfuerzo (en horas-hombre) requerido para revisar un producto del trabajo antes de la reunión de revisión real.
+    \item \textit{Esfuerzo de evaluación, E$_a$}esfuerzo requerido (en horas-hombre) que se dedica a la revisión real.
+    \item \textit{Esfuerzo de la repetición, E$_r$:}esfuerzo (en horas-hombre) que se dedica a la corrección de los errores descubiertos durante la revisión.
+    \item \textit{Tamaño del producto del trabajo, TPT:}medición del tamaño del producto del trabajo que se ha revisado (por ejemplo, número de modelos UML o número de páginas de documento o de líneas de código).
+    \item \textit{Errores menores detectados, Err$_{menores}$:}número de errores detectados que pueden clasificarse como menores (requieren menos de algún esfuerzo especificado para corregirse).    
+    \item \textit{Errores mayores detectados, Err$_{mayores:}$} número de errores encontrados que pueden clasificarse como mayores (requieren más que algún esfuerzo especificado para corregirse).  
+\end{itemize}
+
+\subsection{Principios de medicion}
+Antes de presentar una serie de métricas de producto que 1) auxilien en la evaluación de los modelos de análisis y diseño, 2) proporcionen un indicio de la complejidad de los diseños procedimentales y del código fuente y 3) faciliten el diseño de pruebas más efectivas, es importante comprender los principios de medición básicos. Roche [Roc94] sugiere un proceso de medición que puede caracterizarse mediante cinco actividades:\\
+
+\begin{itemize}
+    \item \textit{Formulación:}La derivación de medidas y métricas de software apropiadas para la representación del software que se está construyendo.
+    \item \textit{Recolección:}Mecanismo que se usa para acumular datos requeridos para derivar las métricas formuladas.
+    \item \textit{Análisis:}El cálculo de métricas y la aplicación de herramientas matemáticas.
+    \item \textit{Interpretación:}Evaluación de las métricas resultantes para comprender la calidad de la representación.
+    \item \textit{Retroalimentación:}Recomendaciones derivadas de la interpretación de las métricas del producto, transmitidas al equipo de software
+\end{itemize}
+
+Las métricas de software serán útiles sólo si se caracterizan efectivamente y si se validan de manera adecuada. Los siguientes principios [Let03b] son representativos de muchos que pueden proponerse para la caracterización y validación de métricas:\\
+
+\begin{itemize}
+    \item Una métrica debe tener propiedades matemáticas deseables, es decir, el valor de la métrica debe estar en un rango significativo (por ejemplo, 0 a 1, donde 0 realmente significa ausencia, 1 indica el valor máximo y 0.5 representa el “punto medio”). Además, una métrica que intente estar en una escala racional no debe constituirse con componentes que sólo se miden en una escala ordinal.
+    \item Cuando una métrica representa una característica de software que aumenta cuando ocurren rasgos positivos o que disminuye cuando se encuentran rasgos indeseables, el valor de la métrica debe aumentar o disminuir en la misma forma.
+    \item Cada métrica debe validarse de manera empírica en una gran variedad de contextos antes de publicarse o utilizarse para tomar decisiones. Una métrica debe medir el factor de interés, independientemente de otros factores. Debe “escalar” a sistemas más grandes y funcionar en varios lenguajes de programación y dominios de sistema
+\end{itemize}
+
+Aunque la formulación, caracterización y validación son cruciales, la recolección y el análisis son las actividades que impulsan el proceso de medición. Roche [Roc94] sugiere los siguientes principios para dichas actividades:\\
+\begin{enumerate}
+    \item siempre que sea posible, la recolección y el análisis de
+datos deben automatizarse
+    \item deben aplicarse técnicas estadísticas válidas para establecer relaciones entre atributos de producto internos y características de calidad externas (por ejemplo, si el nivel de complejidad arquitectónica se correlaciona con el número de defectos reportados en el uso de producción)
+    \item para cada métrica deben establecerse lineamientos y recomendaciones interpretativos.
+\end{enumerate}

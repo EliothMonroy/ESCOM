@@ -1,0 +1,104 @@
+\newpage
+\section{Caso de Uso Cambiar Contraseña}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Cambiar Contraeña\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El usuario cambia su contraseña actual por una nueva.\\
+\hline
+\textbf{ENTRADAS} & Identificador del usuario: \begin{itemize}
+    \item En caso de ser un alumno, su número de boleta: Entero positivo de 10 dígitos con el formato de número de boleta.
+    \item En caso de ser un académico o analista de gestión escolar, su RFC: Cadena de 13 caracteres con el formato de RFC.
+    \item Contraseña actual: cadena con una longitud de 6 o más caracteres, incluyendo una letra mayúscula, una letra minúscula, un número y un carácter especial.
+    \item Nueva contraseña: cadena con una longitud de 6 o más caracteres, incluyendo una letra mayúscula, una letra minúscula, un número y un carácter especial.
+    \item Confirmación de nueva contraseña: cadena con una longitud de 6 o más caracteres, incluyendo una letra mayúscula, una letra minúscula, un número y un carácter especial.
+    \end{itemize}\\
+\hline
+\textbf{SALIDAS} & Un mensaje de confirmación cuando la nueva contraseña haya sido actualizada.\\ & Un mensaje de error si la nueva contraseña y su confirmación no coinciden, si la contraseña actual no coincide con la registrada en el sistema o si las contraseñas ingresadas no cumplen con la regla de negocio RN.2.\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{PRECONDICIONES} & Estar registrado en el sistema con un número de boleta o RFC válido.\\ & Si se trata de un simple cambio de contraseña, haber iniciado sesión.\\ & Si se trata de un restablecimiento de contraseña, haber dado clic en el enlace de restablecimiento enviado a la dirección de correo asociada al usuario.
+\\
+\hline
+\textbf{POSTCONDICIONES} & La contraseña se actualiza en el sistema para el usuario en cuestión.\\ & Si se trata de un simple cambio de contraseña, el sistema redirigirá a la página principal del sistema.\\ & Si se trata de un restablecimiento de contraseña, el sistema redirigirá al formulario de inicio de sesión.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item La nueva contraseña y su confirmación no coinciden.
+    \item Las contraseñas ingresadas no cumplen con el formato indicado en la regla de negocio RN.2.
+    \item Se dejan campos en blanco al enviar el formulario.
+    \item Si se trata de un simple cambio de contraseña, la contraseña actual ingresada no coincide con la registrada en el sistema.
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se actualizan los datos y se envía el mensaje de error correspondiente.\\
+\hline
+\textbf{ACTORES} & Alumno, Académica, Analista\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Confirmación}: Se presenta cuando los campos del formulario de cambio de contraseña hayan sido llenados correctamente: MC.3 \\ & \textbf{Mensajes de Error}: Se presentan en los siguientes casos: \begin{itemize}
+    \item Cuando se dejan campos en blanco en el formulario: ME.1
+    \item Cuando la nueva contraseña y su confirmación no coinciden: ME.8
+    \item Cuando la contraseña actual ingresada no coincide con la registrada en el sistema: ME.9
+    \item Cuando las contraseñas no cumplen con el formato establecido en las reglas del negocio: ME.2
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Medina Luqueño Ana Ximena\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario selecciona la opción Cambiar Contraseña desde el menú de usuario. 
+    \item Se carga el formulario de cambio de contraseña.
+    \item El usuario ingresa su contraseña actual, nueva contraseña y confirmación de esta.
+    \item El usuario selecciona el botón de Reestablecer Contraseña.
+    \item *El sistema valida que ninguno de los campos esté vacío. \textbf{[Trayectoria 1]}
+    \item *El sistema valida que la contraseña actual coincida con la registrada en la base de datos del sistema. \textbf{[Trayectoria 2]}
+    \item *El sistema valida que el dato en el campo nueva contraseña sea válido. \textbf{[Trayectoria 3]}
+    \item *El sistema valida que el dato en el campo nueva contraseña y el dato en el campo confirmación de nueva contraseña sean iguales. \textbf{[Trayectoria 4]} 
+    \item *El sistema muestra el mensaje de confirmación correspondiente.
+    \item *El sistema redirige a la pantalla de inicio.
+    \item Fin del caso de uso. 
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El usuario envió el formulario con algún campo vacío. (Cambio de contraseña)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1.
+    \item Regresa al paso 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El usuario envió el formulario con una contraseña actual incorrecta. (Cambio de contraseña)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.8
+    \item *El sistema limpia el campo de contraseña actual.
+    \item Regresa al paso 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El usuario envió el formulario con una nueva contraseña con un formato no válido. (Cambio de contraseña)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo y limpia los campos de nueva contraseña y confirmación de nueva contraseña.
+    \item Regresa al paso 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: El usuario envió el formulario con una nueva contraseña y confirmación de nueva contraseña que no coinciden. (Cambio de contraseña)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.8.
+    \item *El sistema marca de color rojo y limpia el campo de confirmación de nueva contraseña.
+    \item Regresa al paso 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

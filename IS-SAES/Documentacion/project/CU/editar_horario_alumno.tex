@@ -1,0 +1,185 @@
+\newpage
+\section{Caso de Uso Editar Horario de Alumno}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Editar Horario de Alumno\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El usuario elimina o inscribe una materia del horario de un alumno en particular después de consultar su horario por medio de su número de boleta.\\
+\hline
+\textbf{ENTRADAS} & Número de boleta: Entero positivo de 10 dígitos con el formato de número de boleta.\\ & En caso de querer inscribir una materia:\begin{itemize}
+    \item Nombre del grupo: Cadena con 4 o 5 caracteres correspondientes cada uno a nivel escolar, identificador de la carrera “C”, turno (M para matutino y V para vespertino), y número de grupo. 
+    \item Nombre de la materia: Opción seleccionada desde un combobox con las materias impartidas en el grupo previamente ingresado
+\end{itemize}\\
+\hline
+\textbf{SALIDAS} & Si se realizó algún cambio en el horario del alumno en cuestión se muestra un mensaje de confirmación, avisando de los cambios hechos.\\ & Si ocurrió algún error durante la edición del horario, se mostrará un mensaje de error y se volverá a la pantalla de edición de horario.\\
+\hline
+\textbf{PRECONDICIONES} & El académico o analista de gestión escolar ya inició sesión.\\ & El número de boleta que se está consultando es válido y está registrado en el sistema.\\ & Es periodo de inscripción o baja de materias.\\
+\hline
+\textbf{POSTCONDICIONES} & Los cambios en el horario del alumno son registrados y actualizados el sistema.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item Se dejan campos vacíos al enviar el formulario.
+    \item El alumno ha agotado sus periodos escolares disponibles para concluir la carrera.
+    \item El alumno tiene la carga máxima de créditos por semestre.
+    \item El alumno no cuenta con los suficientes créditos para poder inscribir la materia (ya sea por dictamen o irregularidad).
+    \item La materia que se quiere inscribir en el grupo elegido no cuenta con cupo.
+    \item La materia que se quiere inscribir ya fue cursada y aprobada anteriormente.
+    \item La materia que se quiere inscribir ya fue cursada dos veces sin haberla aprobado.
+    \item El horario de la materia que se quiere inscribir en el grupo elegido es el mismo del de una que ya se encuentra inscrita por el alumno.
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & El sistema no se actualiza y muestra un mensaje de error.\\
+\hline
+\textbf{ACTORES} & Analista\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{MENSAJES} & \textbf{Mensajes de Alerta}: Se presentan en los siguientes casos: \begin{itemize}
+    \item En caso de querer realizar más inscripciones de materias: MA.4
+    \item En caso de querer dar de baja una materia: MA.1
+\end{itemize}\\ & \textbf{Mensajes de Confirmación}: Se presentan en los siguientes casos: \begin{itemize}
+    \item En caso de que se haya inscrito exitosamente una materia en el horario del alumno: MC.1
+    \item En caso de que se haya eliminado exitosamente una materia del horario del alumno: MC.3
+\end{itemize}\\ & \textbf{Mensajes de Error}: Se presentan en los siguientes casos: \begin{itemize}
+    \item Cuando se dejan campos en blanco en los formularios o buscador: ME.1
+    \item Cuando el número de boleta a buscar no se encuentra registrado: ME.40
+    \item En caso de que se hayan agotado los periodos escolares disponibles para concluir la carrera del alumno: ME.23
+    \item En caso de que el alumno ya tenga la carga máxima de créditos por semestre: ME.22
+    \item En caso de que el alumno no cuente con crédito suficientes para inscribir más materias: ME.22
+    \item En caso de que la materia en el grupo que se quiere inscribir no cuente con cupo: ME.19
+    \end{itemize}\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{MENSAJES} & \begin{itemize}
+    \item En caso de que la materia que se quiere inscribir ya haya sido cursada y aprobada: ME.25
+    \item En caso de que la materia ya se haya cursado 2 veces: ME.35
+    \item En caso de que el horario de la materia que se quiere inscribir sea el mismo del de una que ya está inscrita por el alumno en el semestre actual: ME.20
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Medina Luqueño Ana Ximena\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR: INSCRIPCIÓN}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como académico o analista de gestión escolar.
+    \item El usuario selecciona la opción “Gestionar horarios de alumnos” en el menú de opciones.
+    \item *El sistema despliega la sección “Gestionar horarios de alumnos” en pantalla.
+    \item El usuario ingresa el número de boleta del alumno en el buscador.
+    \item El usuario selecciona el botón de Buscar.
+    \item *El sistema valida que el campo de número de boleta no esté vacío. \textbf{[Trayectoria 1]}
+    \item *El sistema despliega los datos académicos y el horario actual del alumno.
+    \item El usuario selecciona el botón de Inscribir Materia.
+    \item *El sistema despliega el formulario para inscribir materias.
+    \item El usuario ingresa el nombre de grupo y el nombre de la materia a inscribir.
+    \item El usuario selecciona el botón de Inscribir.
+    \item *El sistema valida que ninguno de los campos esté vacío. \textbf{[Trayectoria 2]}
+    \item *El sistema valida que el alumno aún tenga periodos escolares disponibles para concluir la carrera. \textbf{[Trayectoria 3]}
+    \item *El sistema valida que el alumno tenga créditos suficientes para inscribir. \textbf{[Trayectoria 4]}
+    \item *El sistema valida que el alumno no tenga la carga máxima de créditos aún. \textbf{[Trayectoria 5]}
+    \item *El sistema valida que la materia no haya sido aprobada por el alumno. \textbf{[Trayectoria 7]}
+    \item *El sistema valida que el horario de la materia no se traslape con el horario de otra que ya esté inscrita en el horario del alumno. \textbf{[Trayectoria 8]}
+    \item *El sistema valida que la materia en el grupo a inscribir cuente con cupo. \textbf{[Trayectoria 9]}
+    \item *El sistema muestra el mensaje de confirmación correspondiente.
+    \item *El sistema muestra el mensaje de alerta para confirmar que no se quieran inscribir más materias. \textbf{[Trayectoria 10]}
+    \item *El sistema redirige a la pantalla de Gestionar horarios de alumnos.
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTO ESTÁNDAR: BAJA}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como académico o analista de gestión escolar.
+    \item El usuario selecciona la opción “Gestionar horarios de alumnos” en el menú de opciones.
+    \item *El sistema despliega la sección “Gestionar horarios de alumnos” en pantalla.
+    \item El usuario ingresa el número de boleta del alumno en el buscador.
+    \item El usuario selecciona el botón de Buscar.
+    \item *El sistema valida que el campo de número de boleta no esté vacío. \textbf{[Trayectoria 1]}
+    \item *El sistema despliega los datos académicos y el horario actual del alumno.
+    \item El usuario selecciona el botón de Dar de Baja Materia.
+    \item *El sistema habilita los hipervínculos “Dar de baja” para cada materia inscrita en el horario del alumno.
+    \item El usuario selecciona el hipervínculo de baja deseado.
+    \item *El sistema despliega el mensaje de alerta para confirmar el cambio. \textbf{[Trayectoria 12]}
+    \item *El sistema despliega el mensaje de confirmación correspondiente.
+    \item *El sistema redirige a la pantalla Gestionar horarios de alumnos.
+    \item Fin de caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El usuario envió el formulario de búsqueda con el campo de búsqueda vacío. (Dar de baja e inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1
+    \item Regresa al paso 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El usuario envió el formulario con algún campo vacío. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1
+    \item Regresa al paso 10 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El alumno agotó sus periodos escolares disponibles para concluir la carrera. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.23
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: El alumno no tiene créditos suficientes para inscribir la materia. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.22
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: El alumno ya tiene la carga máxima de créditos. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.22
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 7}\\
+\textbf{Condición}: La materia a inscribir ya fue aprobada por el alumno en cuestión. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.25
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 8}\\
+\textbf{Condición}: El horario de la materia a inscribir se traslapa con el horario de otra que ya está inscrita en el horario del alumno en cuestión. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.20
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 9}\\
+\textbf{Condición}: La materia a inscribir no cuenta con cupo. (Inscribir materia)
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.19
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 10}\\
+\textbf{Condición}: Se quiere inscribir otra materia al mismo alumno. (Inscribir materia)
+\begin{enumerate}
+    \item Regresa al paso 9 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 11}\\
+\textbf{Condición}: No se quiere seguir con la dada de baja de la materia para el alumno en cuestión. (Dar de baja materia)
+\begin{enumerate}
+    \item Regresa al paso 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

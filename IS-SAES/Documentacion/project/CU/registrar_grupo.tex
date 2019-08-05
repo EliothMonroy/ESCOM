@@ -1,0 +1,133 @@
+\newpage
+\section{Caso de Uso Registrar Grupo}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Registrar Grupo\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El usuario registra un nuevo horario para una materia determinada para el siguiente periodo de reinscripciones\\
+\hline
+\textbf{ENTRADAS} & Materia: Selección de una materia de una lista.\\ & Profesor: Selección del profesor de una lista.\\ & Grupo: Selección de un grupo de una lista.\\ & Horario: Selección de un horario de una lista.\\
+\hline
+\textbf{SALIDAS} & Se mostrará un mensaje de confirmación si las asignaciones fueron exitosas.\\ & Se mostrará un mensaje de error si existe la misma materia 2 o mas veces en el mismo grupo, los horarios asignados ya están siendo ocupados por otra materia en el mismo grupo.\\
+\hline
+\textbf{PRECONDICIONES} & Registro de profesores, grupos, horarios y materias con anterioridad.\\
+\hline
+\textbf{POSTCONDICIONES} & Se le asignará un horario para el periodo siguiente a la materia determinada.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item No hay materias registradas.
+    \item No hay profesores del área registrados.
+    \item No hay grupos registrados.
+    \item No hay horarios registrados.
+    \item Ya está la materia registrada en el grupo asignado.
+    \item El horario asignado ya esta siendo ocupado por otra materia en el mismo grupo.
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se registra el horario para la materia seleccionada.\\
+\hline
+\textbf{ACTORES} & Académica, Jefe de Gestión Escolar\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Confirmación}: Se muestra cuando los datos han sido almacenados correctamente: MC.1\\ & \textbf{Mensajes de Error}: Se muestran en los siguientes casos: \begin{itemize}
+    \item Se dejaron campos en blanco: ME.1
+    \item No hay materias registradas: ME.10
+    \item No hay profesores del área registrados: ME.11
+    \item No hay grupos registrados: ME.12
+    \item No hay horarios registrados: ME.13
+    \item Ya está la materia registrada en el grupo asignado: ME.14
+    \item El profesor ya tiene una materia asignada en el mismo horario: ME.15
+    \item El horario asignado ya esta siendo ocupado por otra materia en el mismo grupo: ME.16
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Hernández Pineda Miguel Angel\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Académica o Jefe de Gestión Escolar.
+    \item El usuario da click en la opción <<Registrar Horario>> de la sección Registrar (Figura 3.) . \textbf{[Trayectoria 1]} . \textbf{[Trayectoria 2]} . \textbf{[Trayectoria 3]} . \textbf{[Trayectoria 4]}
+    \item El usuario selecciona una materia.
+    \item El usuario selecciona un profesor.
+    \item El usuario selecciona un grupo.
+    \item El usuario selecciona un horario.
+    \item El usuario da click en el botón enviar.
+    \item *El sistema valida que no se dejen campos obligatorios en blanco. \textbf{[Trayectoria 5]}
+    \item *El sistema valida los datos de profesor y horario según la regla de negocio RN.11. \textbf{[Trayectoria 6]}
+    \item *El sistema valida los datos de materia y grupo según la regla de negocio RN.13. \textbf{[Trayectoria 7]}
+    \item *El sistema valida los datos de horario y grupo según la regla de negocio RN.14. \textbf{[Trayectoria 8]}
+    \item Se registra el horario de manera correcta para el siguiente periodo.
+    \item Se muestra el mensaje de confirmación MC.1.
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: No hay materias registradas.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.10.
+\item Regresa al punto 2 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: No hay profesores del área registrados.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.11.
+\item Regresa al punto 2 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: No hay grupos registrados.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.12.
+\item Regresa al punto 2 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\newpage
+\noindent
+\large{Trayectoria 4}\\
+\textbf{Condición}: No hay horarios registrados.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.13.
+\item Regresa al punto 2 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: Quedaron campos obligatorios en blanco.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.1.
+\item *El sistema marca de color rojo los campos vacíos.
+\item Regresa al punto 3 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 6}\\
+\textbf{Condición}: Los datos no son congruentes según la regla de negocio RN.11.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.15.
+    \item *El sistema limpia el campo de profesor.
+    \item Regresa al punto 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 7}\\
+\textbf{Condición}: Los datos no son congruentes según la regla de negocio RN.13.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.14.
+    \item *El sistema limpia el campo de grupo.
+    \item Regresa al punto 5 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 8}\\
+\textbf{Condición}: Los datos no son congruentes según la regla de negocio RN.14.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.16.
+    \item *El sistema limpia el campo de horario.
+    \item Regresa al punto 6 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

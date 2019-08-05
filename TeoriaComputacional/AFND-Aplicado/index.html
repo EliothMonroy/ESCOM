@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>
+<!--> 
+<html> 
+<!--<![endif]-->
+	<head>
+		
+		<title>Practica 3</title>
+		
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="Yahir Trejo" />
+
+		<!-- viewport settings -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+
+		<!-- JS -->
+		<script src="https://use.fontawesome.com/f2be4a12aa.js"></script>
+		
+	</head>
+	<body>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 text-center">
+					<h1 class="inline-block">
+						Practica 4 <small>Trejo Granados Yahir</small>
+					</h1>					
+				</div>
+				<div class="col-xs-offset-2 col-sm-offset-2 col-xs-4 col-sm-4">
+					<div class="form-group" id="form1">
+						<label for="expression1">Automata 1:</label>
+						<input type="text" class="form-control" id="expression1" placeholder="Expresión">
+					</div>
+					<button class="btn btn-default" id="btn1">Enviar</button> <br><br>
+					<strong>Expresiones aceptadas: </strong>
+					<ul>
+						<li>aababb</li>
+						<li>bbabab</li>
+						<li>aaaaaa</li>
+						<li>bbbaba</li>
+						<li>aabbbb</li>
+					</ul>
+					<strong>Expresiones no aceptadas: </strong>
+					<ul>
+						<li>ab</li>
+						<li>ba</li>
+						<li>ababab</li>
+						<li>bababa</li>
+						<li>aba</li>
+					</ul>
+					<img src="img/afnd1.png" class="img-responsive">
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<div class="form-group" id="form2">
+						<label for="expression2">Automata 2:</label>
+						<input type="text" class="form-control" id="expression2" placeholder="Expresión">
+					</div>
+					<button class="btn btn-default" id="btn2">Enviar</button> <br><br>
+					<strong>Expresiones aceptadas: </strong>
+					<ul>
+						<li>aba</li>
+						<li>abbaaa</li>
+						<li>aab</li>
+						<li>aaaaaba</li>
+						<li>ab</li>
+					</ul>
+					<strong>Expresiones no aceptadas: </strong>
+					<ul>
+						<li>baaba</li>
+						<li>baaa</li>
+						<li>baba</li>
+						<li>abbbaab</li>
+						<li>ababaab</li>
+					</ul>
+					<img src="img/afnd2.png" class="img-responsive">
+				</div>
+			</div>
+		</div>
+
+		<script   src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/practica4.js"></script>
+		<script src="js/Automata1.js"></script>
+		<script src="js/Automata2.js"></script>
+	</body>
+</html>

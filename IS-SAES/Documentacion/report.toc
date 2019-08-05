@@ -1,0 +1,43 @@
+\select@language {spanish}
+\contentsline {paragraph}{}{3}{section*.1}
+\thispagestyle {empty}
+\contentsline {chapter}{\numberline {1}\IeC {\'A}mbito del Software}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis de Requerimientos}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Requisitos Funcionales}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Requisitos No Funcionales}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Reglas de Negocio}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Mensajes}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Mensajes de Alerta}{7}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Mensajes de Confirmaci\IeC {\'o}n}{7}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Mensajes de Error}{8}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Dise\IeC {\~n}o de las Interfaces}{10}{chapter.3}
+\contentsline {chapter}{\numberline {4}Diagrama de Casos de Uso}{29}{chapter.4}
+\contentsline {chapter}{\numberline {5}Descripci\IeC {\'o}n de Casos de Uso}{30}{chapter.5}
+\contentsline {section}{\numberline {5.1}Caso de Uso Iniciar Sesi\IeC {\'o}n}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Caso de Uso Registrar Alumno}{33}{section.5.2}
+\contentsline {section}{\numberline {5.3}Caso de Uso Registrar Acad\IeC {\'e}mico}{38}{section.5.3}
+\contentsline {section}{\numberline {5.4}Caso de Uso Registrar Materia}{43}{section.5.4}
+\contentsline {section}{\numberline {5.5}Caso de Uso Registrar Profesor}{46}{section.5.5}
+\contentsline {section}{\numberline {5.6}Caso de Uso Generar Grupo}{50}{section.5.6}
+\contentsline {section}{\numberline {5.7}Caso de Uso Registrar Grupo}{53}{section.5.7}
+\contentsline {section}{\numberline {5.8}Caso de Uso Modificar Alumno}{57}{section.5.8}
+\contentsline {section}{\numberline {5.9}Caso de Uso Editar Profesor}{61}{section.5.9}
+\contentsline {section}{\numberline {5.10}Caso de Uso Editar Acad\IeC {\'e}mico}{66}{section.5.10}
+\contentsline {section}{\numberline {5.11}Caso de Uso Modificar Grupo}{71}{section.5.11}
+\contentsline {section}{\numberline {5.12}Caso de Uso: Modificar Materia}{75}{section.5.12}
+\contentsline {section}{\numberline {5.13}Caso de Uso Reestablecer contrase\IeC {\~n}a}{78}{section.5.13}
+\contentsline {section}{\numberline {5.14}Caso de Uso Cambiar Contrase\IeC {\~n}a}{81}{section.5.14}
+\contentsline {section}{\numberline {5.15}Caso de Uso Ver Alumno}{85}{section.5.15}
+\contentsline {section}{\numberline {5.16}Caso de Uso Habilitar Reinscripci\IeC {\'o}n}{88}{section.5.16}
+\contentsline {section}{\numberline {5.17}Caso de Uso: Buscar Materia}{91}{section.5.17}
+\contentsline {section}{\numberline {5.18}Caso de Uso Crear Horario}{93}{section.5.18}
+\contentsline {section}{\numberline {5.19}Caso de Uso Editar Horario de Alumno}{96}{section.5.19}
+\contentsline {section}{\numberline {5.20}Caso de Uso Reinscribir}{103}{section.5.20}
+\contentsline {section}{\numberline {5.21}Caso de Uso Ver Historial Acad\IeC {\'e}mico}{109}{section.5.21}
+\contentsline {section}{\numberline {5.22}Caso de Uso Ver Estado Actual}{110}{section.5.22}
+\contentsline {section}{\numberline {5.23}Caso de Uso Ver Horario Actual}{111}{section.5.23}
+\contentsline {section}{\numberline {5.24}Caso de Uso Ver Horario y disponibilidadl}{113}{section.5.24}
+\contentsline {section}{\numberline {5.25}Caso de Uso Registrar Horario}{115}{section.5.25}
+\contentsline {chapter}{\numberline {6}Diagramas de Secuencia}{118}{chapter.6}
+\contentsline {chapter}{\numberline {7}Diagramas de Actividad}{140}{chapter.7}
+\contentsline {chapter}{\numberline {8}Diagramas de Estado}{164}{chapter.8}

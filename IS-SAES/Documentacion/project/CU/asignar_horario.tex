@@ -1,0 +1,239 @@
+\newpage
+\section{Caso de Uso Modificar Horario}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+		\hline
+	\textbf{NOMBRE}
+	&
+	Modificar Horario\\
+	\hline
+	\textbf{TIPO}
+	&
+	Primario\\
+	\hline
+	\textbf{DESCRIPCIÓN}
+	&
+	El analista ingresa al sistema, se dirige al apartado Modificar Horario que se encuentra en Administrar. El sistema muestra las materias que han sido registradas y al extremo derecho la leyenda ''Editar'', el analista puede buscar las materias por grupo. El sistema muestra las coincidencias, el analista selecciona la materia a editar, la edita y guarda.\\
+	\hline
+	\textbf{ENTRADAS}
+	&
+	Campos: Buscar,Materia, Nombre de Profesor, Grupo y Horario.\\
+	\hline
+	\textbf{SALIDAS}
+	&
+	Mensaje de Error.\newline
+	Mensaje de Éxito.\\
+	\hline
+	\textbf{PRECONDICIONES}
+	&
+	Ninguna.\\
+	\hline
+	\textbf{POSTCONDICIONES}
+	&
+	Ninguna.\\
+	\hline
+	\textbf{SITUCIONES DE ERROR}
+	&
+	El grupo a buscar no existe.\newline
+	La materia ya fue registrada en ese grupo.\newline
+	El horario de la nueva materia se traslapa con algún otro horario.\newline
+	El nivel del grupo no coincide al nivel de la materia.\newline
+	El horario no coincide con el turno del grupo.\newline
+	Error al conectar con la base de datos.\\
+	\hline
+	\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR}
+	&
+	En pausa solicitando correción en los campos.\newline
+	En pausa e intentando conectar a la Base de Datos.\\
+	\hline
+	\textbf{ACTORES}
+	&
+	Analista.\\
+	\hline
+	\textbf{MENSAJES}
+	&
+	Mensaje de error ''El grupo ingresado no existe''.\newline
+	Mensaje de error ''La materia ya ha sido registrada anteriormente''.\newline
+	Mensaje de error ''El horario ya ha sido cubierto por otra materia''.\newline
+	Mensaje de error ''El nivel del grupo no coincide al nivel de la materia''.\newline
+	Mensaje de error ''El horario no coincide con el turno del grupo''.\newline
+	Mensaje de error ''Disculpa, Tenemos un problema con el Servidor. Intentando Conectar...''.\newline
+	Mensaje de éxito ''Se ha editado correctamente''\\
+	\hline
+	\textbf{AUTOR}
+	&
+	América Berenice Monsalvo Fuentes\\
+	\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+	\item El usuario ingresa al sistema como Analista
+	\item El analista selecciona ''Registrar Horario'' en el apartado ''Administrar''
+	\item *El sistema realiza la conexión con la Base de Datos.\textbf{[Trayectoria 1]}
+	\item *El sistema despliega el campo ''Buscar'' y la tabla con las materias inscritas en ese grupo. Pantalla ?? \textbf{[Trayectoria 2]}
+	\item El analista selecciona la leyenda ''Editar'' en el extremo derecho de la materia a Editar.
+	\item *El sistema redirecciona a la Pantalla ??
+	\item EL analista selecciona un campo a modificar. \textbf{[Trayectoria 3]}
+	\item El analista selecciona el botón ''Registrar horario''
+	\item *El sistema busca que la materia no haya sido registrada con anterioridad en el grupo seleccionado. \textbf{[Trayectoria 4]}
+	\item *El sistema busca que el grupo corresponda con el nivel de la materia.\textbf{[Trayectoria 5]}
+	\item *EL sistema busca que el horario corresponda con el turno del grupo.\textbf{[Trayectoria 6]}
+	\item *El sistema busca que el horario elegido no haya sido utilizado por otra materia que esté registrada en el grupo seleccionado.\textbf{[Trayectoria 7]}
+	\item *El sistema guarda la materia con el horario seleccionado en el grupo elegido.
+	\item *El sistema muestra el Mensaje de Éxito ''Se ha registrado la materia correctamente''.
+	\item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+	\large{Trayectoria 1}\\
+		\textbf{Condición:} No se puede conectar con la Base de Datos.
+		\begin{enumerate}
+			\item *El sistema muestra el Mensaje de Error ''Disculpa, Tenemos un problema con el Servidor. Intentando Conectar...''
+			\item *Se vuelve al punto 4 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 2}\\
+		\textbf{Condición:} EL analista introduce un grupo a buscar.
+		\begin{enumerate}
+			\item *El sistema busca el grupo introducido.[Trayectoria 3]
+			\item *Se vuelve al punto 4 de la trayectoria principa.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 3}\\
+		\textbf{Condición:} El analista selecciona cancelar.
+		\begin{enumerate}
+			\item *El sistema redirecciona a la vista anterior. Pantalla ??
+			\item *Se vuelve al punto 4 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 4}\\
+		\textbf{Condición:} La materia ya ha sido registrada en el grupo seleccionado.
+		\begin{enumerate}
+			\item *El sistema muestra el Mensaje de Error ''La materia ya ha sido registrada anteriormente''.
+			\item *Se vuelve al punto 3 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}\newpage
+\section{Caso de Uso Asignar Horario}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+	\hline
+	\textbf{NOMBRE}
+	&
+	Asignar Horario\\
+	\hline
+	\textbf{TIPO}
+	&
+	Primario\\
+	\hline
+	\textbf{DESCRIPCIÓN}
+	&
+	El analista ingresa al sistema, se dirige al apartado Asignar Horario que se encuentra en Administrar. El sistema despliega el formulario para que se registren las materias en los grupos, el analista selecciona ''Asignar horario".\\
+	\hline
+	\textbf{ENTRADAS}
+	&
+	Campos: Materia, Nombre de Profesor, Grupo y Horario.\\
+	\hline
+	\textbf{SALIDAS}
+	&
+	Mensaje de Error.\newline
+	Mensaje de Éxito.\\
+	\hline
+	\textbf{PRECONDICIONES}
+	&
+	Ninguna.\\
+	\hline
+	\textbf{POSTCONDICIONES}
+	&
+	Ninguna\\
+	\hline
+	\textbf{SITUACIONES DE ERROR}
+	&
+	La materia ya fue registrada en ese grupo.\newline
+	El horario de la nueva materia se traslapa con algún otro horario.\newline
+	El nivel del grupo no coincide al nivel de la materia.\newline
+	El horario no coincide con el turno del grupo.\newline
+	Error al conectar con la base de datos.\\
+	\hline
+	\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR}
+	&
+	En pausa solicitando correción en los campos.\newline
+	En pausa e intentando conectar a la Base de Datos.\\
+	\hline
+	\textbf{ACTORES}
+	&
+	Analista.\\
+	\hline
+	\textbf{MENSAJES}
+	&
+	Mensaje de error ''La materia ya ha sido registrada anteriormente".\newline
+	Mensaje de error ''El horario ya ha sido cubierto por otra materia".\newline
+	Mensaje de error ''El nivel del grupo no coincide al nivel de la materia".\newline
+	Mensaje de error ''El horario no coincide con el turno del grupo".\newline
+	Mensaje de error ''Disculpa, Tenemos un problema con el Servidor. Intentando Conectar...".\newline
+	Mensaje de éxito ''Se ha registrado la materia correctamente"\\
+	\hline
+	\textbf{AUTOR}
+	&
+	América Berenice Monsalvo Fuentes\\
+	\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Analista
+	\item El analista selecciona ''Asignar horario'' en el apartado ''Administrar".
+	\item *El sistema realiza la conexión con la Base de Datos.\textbf{[Trayectoria 1]}
+	\item *El sistema despliega el formulario con los campos correspondientes. Pantalla ??
+	\item El analista selecciona la materia a asignar.
+	\item El analista selecciona el Profesor.
+	\item El analista selecciona el Grupo.
+	\item El analista selecciona el Horario.
+	\item El analista selecciona el botón ''Asignar horario"
+	\item *El sistema busca que la materia no haya sido registrada con anterioridad en el grupo seleccionado. \textbf{[Trayectoria 2]}
+	\item *El sistema busca que el grupo corresponda con el nivel de la materia.\textbf{[Trayectoria 3]}
+	\item *EL sistema busca que el horario corresponda con el turno del grupo.\textbf{[Trayectoria 4]}
+	\item *El sistema busca que el horario elegido no haya sido utilizado por otra materia que esté registrada en el grupo seleccionado.\textbf{[Trayectoria 5]}
+	\item *El sistema guarda la materia con el horario seleccionado en el grupo elegido.
+	\item *El sistema muestra el Mensaje de Éxito ''Se ha registrado la materia correctamente".
+	\item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+	\large{Trayectoria 1}\\
+		\textbf{Condición:} No se puede conectar con la Base de Datos.
+		\begin{enumerate}
+			\item *El sistema muestra el Mensaje de Error ''Disculpa, Tenemos un problema con el Servidor. Intentando Conectar..."
+			\item *Se vuelve al punto 3 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 2}\\
+		\textbf{Condición:} La materia ya ha sido registrada en el grupo seleccionado.
+		\begin{enumerate}
+			\item *El sistema muestra el Mensaje de Error ''La materia ya ha sido registrada anteriormente".
+			\item *Se vuelve al punto 3 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 3}\\
+		\textbf{Condición:} El nivel del grupo no coincide al nivel de la materia.
+		\begin{enumerate}
+			\item *El sistema muestra el Mensaje de error ''El nivel del grupo no coincide al nivel de la materia''.
+			\item *Se vuelve al punto 3 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 4}\\
+		\textbf{Condición:} El horario no coincide con el turno del grupo (matutino o vespertino).
+		\begin{enumerate}
+			\item *El sistema muestra el 	Mensaje de error ''El horario no coincide con el turno del grupo''.
+			\item *Se vuelve al punto 3 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}
+		\large{Trayectoria 5}\\
+		\textbf{Condición:} El horario seleccionado ya ha sido asignado a otra materia.
+		\begin{enumerate}
+			\item *El sistema muestra el Mensaje de Error ''El horario ya ha sido cubierto por otra materia''.
+			\item *Se vuelve al punto 3 de la trayectoria principal.
+			\item Fin de la trayectoria
+		\end{enumerate}

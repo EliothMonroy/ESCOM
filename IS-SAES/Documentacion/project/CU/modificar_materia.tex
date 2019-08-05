@@ -1,0 +1,101 @@
+\newpage
+\section{Caso de Uso: Modificar Materia}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Modificar Materia\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & Se muestran las materias disponibles en la base de datos, para su modificación en los campos de:nombre,nivel y creditos\\
+\hline
+\textbf{ENTRADAS} & Materia a modificar y campos a modificar\\
+\hline
+\textbf{SALIDAS} & Se mostrará un mensaje de confirmación si la modificación de la materia seleccionada
+Se mostrará un mensaje de error de error cuando falten campos por llenar o el formato no sea correcto\\
+\hline
+\textbf{PRECONDICIONES} & Estar registrado en el sistema
+Registro de materias con anterioridad\\
+\hline
+\textbf{POSTCONDICIONES} & Modificación en la materia seleccionada\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item Se dejaron campos obligatorios en blanco
+    \item El formato de los datos es invalido
+    \item No hay materias registradas con anterioridad.
+\end{itemize}
+\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se modifica la materia seleccionada\\
+\hline
+\textbf{ACTORES} & Gestión Escolar y Analista\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensasje de Error:}Se muestra en lso siguientes casos: \begin{itemize}
+    \item Se dejaron campos en blanco : ME1
+    \item El formato de los datos es invalido: ME2
+    \item No hay materias registradas: ME10
+\end{itemize} 
+\textbf{Mensasje de Confirmación:}Se muestra cuando los datos han sidos modificados correctamente MC2
+\\
+\hline
+\textbf{AUTOR} & Matus López Carlos Eduardo\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Jefe de Gestión Escolar o Analista
+    \item El usuario da click en la opción <<Modificar Materia>> de la sección Administar
+    \item El sistema despliega las materias que estan registradas \textbf{[trayectoria 1]}
+    \item El usuario selecciona la materia que desea modificar 
+    \item *El sistema despliega el formalario de registro de materia
+    \item El usuario ingresa el campo de nombre de la materia
+    \item El usuario ingresa el campo de nivel de la materia
+     \item El usuario ingresa el campo de creditos de la materia
+    \item El usuario da clic en el boton de aceptar
+    \item *El sistema valida que no haya campos obligatorios vacios.\textbf{[Trayectoria 2]} 
+    \item *El sistema valida el campo de nombre \textbf{[Trayectoria 3]} 
+    \item *El sistema valida el campo de creditos en base a la RN15 \textbf{[Trayectoria 4]}
+    \item Se despliega el mensaje de confirmacíon MC2
+    \item Fin del caso de uso.
+\end{enumerate}
+\Large{PROCEDIMIENTO ALTERNATIVOS}\\
+
+\large{Trayectoria 1}\\
+\textbf{Condición:}No hay materias registradas previamente
+\large{}
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME10
+    \item *El sistema muestra una pantalla con una tabla vacia
+    \item Regresa al punto 14 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}
+
+\large{Trayectoria 2}\\
+\textbf{Condición:}Se dejaron campos obligatorios en blanco
+\large{}
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME1
+    \item *El sistema marca de color rojo los campos vacíos.
+    \item Regresa al punto 5 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}
+
+\large{Trayectoria 3}\\
+\textbf{Condición:}Se introdujo con un formato incorrecto el nombre de la materia
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME2
+    \item *El sistema marca de color rojo el campo de nombre.
+    \item Regresa al punto 6 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}
+
+\large{Trayectoria 4}\\
+\textbf{Condición:}Se introdujo con un formato incorrecto el numero de creditos de la materia
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME2
+    \item *El sistema marca de color rojo el campo de materia.
+    \item Regresa al punto 7 de la trayectoria principal
+    \item Fin de la trayectoria.
+\end{enumerate}

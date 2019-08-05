@@ -1,0 +1,170 @@
+\newpage
+\chapter{Pruebas de Usabilidad}
+\section{Aspectos Generales}
+Al igual que con otros aspectos, es importante probar para validar el nivel de usabilidad que muestra un producto de software.\\ \\
+
+De acuerdo con lo señalado en el estándar ISO/IEC 25010 dentro del cual se identifican características de la calidad del software, la usabilidad se define como “la capacidad de un producto de software para ser entendido, aprendido, utilizado y atractivo hacia el usuario, cuando se usa bajo determinadas condiciones”. Es decir, la usabilidad comprende atributos relacionados con el aprendizaje, la comprensión, la operatividad y lo atractivo del software. \\ \\
+
+Las pruebas de usabilidad se suelen llevar a cabo observando a un grupo de personas mientras usan el producto a probar. Este grupo es seleccionado considerando ciertas características según las condiciones que se desean valorar, según su categoría: usuario experto, medio o inexperto. \\ \\ 
+
+Las métricas de usabilidad suelen ser subjetivas pues requieren de un juicio individual que dependerá de las circunstancias bajo las cuales el producto es usado en su valoración. Sin embargo, existen estándares internacionales, normas y guías de comportamiento respecto a los cuales evaluar, así como métricas que brindan una pauta sobre qué tan “usable” es una aplica.
+
+\section{Clasificación de pruebas de usabilidad}
+Las pruebas de usabilidad de clasifican en 3 métodos:
+\begin{itemize}
+\item Pruebas de usabilidad por inspección
+\item Pruebas de usabilidad por indagación
+\item Pruebas de usabilidad por test
+\end{itemize}
+
+\section{Pruebas de usabilidad por inspección}
+El término inspección aplicado a la usabilidad aglutina un conjunto de métodos para probar la usabilidad en los que unos expertos conocidos como evaluadores explican el grado de usabilidad de un sistema basándose en la inspección o examen de la interfaz del mismo. \\ \\
+Existen varios métodos que se enmarcan en la clasificación de evaluación por inspección, siendo los siguientes los más importantes:
+
+\subsection{Prueba Heurística}
+La “Heurística” es un método de evaluación de sistemas interactivos que consiste en analizar (mediante la inspección de varios evaluadores expertos) la calidad de uso de una interfaz a partir de comprobar su conformidad respecto unos principios reconocidos de usabilidad.
+\subsubsection{Modo de aplicación}
+Un conjunto de evaluadores expertos en usabilidad contrasta y valida individualmente el conjunto de reglas (o heurísticas, o guidelines) escogido en la interfaz del sistema. Tras las revisiones individuales, los resultados son puestos en común y debatidos en una reunión entre los evaluadores y el responsable de la evaluación, generando el informe final de la evaluación.
+
+\subsection{Recorrido cognitivo}
+El recorrido cognitivo (o Cognitive Walkthrough) es un método de inspección de la usabilidad que se centra en evaluar en un diseño su facilidad de aprendizaje, básicamente por exploración y está motivado por la observación que muchos usuarios prefieren aprender software a base de explorar sus posibilidades.
+\subsubsection{Modo de aplicación}
+Los pasos necesarios para la realización del método son los siguientes:
+\begin{enumerate}
+	\item Definición de los datos necesarios para el recorrido
+	\begin{itemize}
+	    \item Se identifican y documentan las características de los usuarios (el tipo de usuario que es dependiendo de su experiencia y el conocimiento adquirido hasta ahora sobre el la aplicación).
+	    \item Se describe también el prototipo a utilizar para la evaluación.
+	    \item Se enumeran las tareas concretas a desarrollar.
+	    \item Para cada tarea se implementa por escrito la lista íntegra de las acciones necesarias para completar la tarea con el prototipo descrito. Esta lista consta de una serie repetitiva de pares de acciones (del usuario) y respuestas (del sistema).
+	\end{itemize}
+	\item Recorrer las acciones
+	\begin{itemize}
+	    \item Los evaluadores realizan cada una de las tareas determinadas anteriormente siguiendo los pasos especificados y utilizando el prototipo detallado. En este proceso, el evaluador utilizará la información del usuario (experiencia y conocimiento adquirido) para comprobar si la interfaz es adecuada para el mismo. El evaluador en cada acción criticará el sistema respondiendo a las siguientes preguntas:
+	    \begin{itemize}
+	        \item ¿Son adecuadas las acciones disponibles de acuerdo a la experiencia y al conocimiento del usuario?
+	        \item ¿Percibirán los usuarios que está disponible la acción correcta? Esto se relaciona con la visibilidad y la comprensibilidad de las acciones en la interfaz. 
+	        \item Una vez encontrada la acción en la interfaz, ¿asociarán estos usuarios la acción correcta al efecto que se alcanzará?
+	        \item Una vez realizada la acción, ¿entenderán los usuarios la realimentación del sistema?
+	    \end{itemize}
+	\end{itemize}
+	\item Documentar los resultados
+	\begin{itemize}
+	    \item El evaluador anotará para cada acción las respuestas del sistema y sus anotaciones.
+	    \item El documento incluirá un anexo especial, conocido como Usability Problem Report Sheet, detallando los aspectos negativos de la evaluación relacionándolos con un grado de severidad que distinga aquellos errores más perjudiciales de los que no lo son tanto. 
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Recorrido de la usabilidad plural}
+Método que comparte algunas características con los recorridos tradicionales pero tiene algunas particularidades que lo diferencian, entre las que cabe destacar la intervención de usuarios finales.
+\subsubsection{Modo de aplicación}
+Los pasos necesarios para realizar el recorrigo son los siguientes:
+\begin{enumerate}
+    \item Este método se realiza con tres tipos de participantes, usuarios representativos, desarrolladores y expertos en usabilidad, que conforman todos los actores implicados en el producto.
+    \item Las pruebas se realizan con prototipos de papel u otros materiales utilizados en escenarios. Cada participante dispone de una copia del escenario de la tarea con datos que se puedan manipular.
+    \item Todos los participantes han de asumir el papel de los usuarios, por tanto, aparte de los usuarios representativos que ya lo son, los desarrolladores y los expertos en usabilidad también lo han de asumir.
+    \item Los participantes han de escribir en cada panel del prototipo la acción que tomarán para seguir la tarea que están realizando, escribiendo las respuestas lo más detalladamente posibles.
+    \item Una vez que todos los participantes han escrito las acciones que tomarían cuando interactuaban con cada panel, comienza el debate. En primer lugar, deben hablar los usuarios representativos y una vez éstos han expuesto completamente sus opiniones, hablan los desarrolladores y después los expertos en usabilidad.
+\end{enumerate}
+
+
+\subsection{Inspección de estándares}
+Para evaluar este método se precisa de un evaluador que sea un experto en los estándares a evaluar. El experto realiza una inspección minuciosa a la interfaz para comprobar que cumple en todo momento y globalmente todos los puntos definidos en el estándar establecido.
+\subsubsection{Modo de aplicación}
+Si bien este método podría realizarse partiendo de prototipos de baja fidelidad, lo más efectivo es realizarlo a partir de prototipos software o incluso mejor con una primera versión del sistema final donde estén implementadas las partes que deben confrontarse con el estándar (que normalmente serán aspectos más relacionados con la interfaz que con las funcionalidades). \\ \\
+En fase de análisis de requisitos se define el estándar que el sistema seguirá (ya sea porque es una especificación del proyecto o uno escogido por sus características) y el experto en dicho estándar realiza una inspección minuciosa a la totalidad de la interfaz para comprobar que cumple en todo momento y globalmente todos los puntos definidos en el estándar. Durante esta exploración, al experto no le importa la funcionalidad de las acciones que va realizando.
+
+\section{Pruebas de usabilidad por indagación}
+El proceso de indagación trata de llegar al conocimiento de una cosa discurriendo o por conjeturas y señales. En este tipo de pruebas de la usabilidad una parte muy significativa del trabajo a realizar consiste en hablar con los usuarios y observarlos detenidamente usando el sistema en trabajo real y obteniendo respuestas a preguntas formuladas verbalmente o por escrito. \\ \\
+Existen varios métodos que se enmarcan en la clasificación de evaluación por indagación, siendo los siguientes los más importantes.
+
+\subsection{Observación de campo}
+La técnica de prueba conocida como Observación de Campo tiene como principal objetivo entender cómo los usuarios de los sistemas interactivos realizan sus tareas y, más concretamente, conocer todas las acciones que realizan durante la ejecución de las mismas. Con ello se pretende capturar toda la actividad relacionada con la tarea y el contexto de su realización así como entender los diferentes modelos mentales que de las mismas tienen los usuarios.
+\subsubsection{Modo de aplicación}
+La prueba de campo debe prepararse previamente, y esta preparación consiste en:
+\begin{itemize}
+    \item Escoger una variedad de usuarios representativos del producto.
+    \item Utilizar el sitio de observación y el tiempo con eficacia. 
+\end{itemize}
+Una vez en el lugar, el método se compone básicamente de dos acciones:
+\begin{itemize}
+    \item La primera y principal es la observación. Observando todo cuanto acontece el lugar de la acción: de qué manera lo hacen, qué botones utilizan, en qué situación los utilizan, dónde buscan las secciones, para qué los utilizan, qué secuencia de acciones siguen, en qué orden lo hacen, cuál es la finalidad, etc.
+    \item La segunda y opcional es preguntar o entrevistar. Una vez terminada la observación, se pregunta a los usuarios acerca de su trabajo para complementar la información recabada durante la observación.
+\end{itemize}
+Al final de una sesión de observación de campo obtendremos una lista de acciones, objetos, personas relacionado con sistema que se está probando.
+
+\subsection{Grupos de discusión o Focus Group}
+El Focus Group o Grupo de Discusión es una técnica de recogida de datos donde se reúnen de 6 a 9 personas (generalmente usuarios y también implicados) para discutir aspectos relacionados con el sistema. En ellos un evaluador experto en usabilidad) realiza la función de moderador. Éste preparará previamente la lista de aspectos a discutir y se encargará de recoger la información que necesita de la discusión.
+Esto permite capturar reacciones espontáneas e ideas de los usuarios que evolucionan en el proceso dinámico del grupo.
+\subsubsection{Modo de aplicación}
+El procedimiento general para dirigir un Focus Group es:
+\begin{itemize}
+    \item Localizar usuarios representativos (típicamente 6 a 9 por sesión) que quieran participar y uno o varios observadores que no intervienen en el debate y sólo toman anotaciones.
+    \item Preparar una lista de temas a discutir y los objetivos a asumir por los temas propuestos.
+    \item El moderador deberá poner especial énfasis en:
+    \begin{itemize}
+        \item Que todos los participantes contribuyen a la discusión.
+        \item Que no haya un participante que domine la discusión.
+        \item Controlar la discusión sin inhibir el flujo libre de ideas y comentarios.
+        \item Permitir que la discusión discurra libremente en ciertos momentos pero procurando seguir el esquema planeado.
+    \end{itemize}
+    \item Al final el moderador (y el/los observador/es) realizará un informe escrito con los resultados y las conclusiones del debate. Incluirá las opiniones que han prevalecido y los comentarios críticos de la sesión.
+\end{itemize}
+
+\subsection{Entrevistas}
+Una entrevista consiste básicamente en una conversación donde uno o varios usuarios reales del sistema que se va probar o a rediseñar responden a una serie de preguntas relacionadas con el sistema que el entrevistador les va formulando. En este caso, el entrevistador es el evaluador y va tomando nota de las respuestas para obtener las conclusiones finales. \\ \\
+Las entrevistas pueden ser estructuradas o abiertas (o desestructuradas), en las primeras el evaluador es más rígido en procurar el buen seguimiento del guión preestablecido, mientras que en las abiertas se da espacio a los implicados a expresarse con más libertad.  \\ \\
+Este tipo de evaluación suele realizarse una vez el sistema ya ha sido puesto en marcha, siendo en este caso el principal objetivo captar la satisfacción del cliente o usuario con el producto. El principal problema en estos casos es que si no se ha realizado una correcta planificación de la usabilidad del sistema en ese momento surgen una serie de características que de haber surgido anteriormente se hubieran ahorrado muchos problemas.
+
+\subsection{Cuestionarios}
+En el ámbito de prueba de sistemas interactivos hablamos de cuestionarios para referirnos a listas de preguntas que el evaluador distribuye entre usuarios e implicados para que éstos nos las devuelvan respuestas y, así, poder extraer conclusiones. El cuestionario normalmente se distribuye en formato escrito y las preguntas plantean aspectos relacionados con el sistema o aplicación concreta. \\ \\
+Así pues, la base del cuestionario es la recolección de información a partir de respuestas contestadas por los usuarios y/o los implicados. \\ \\
+Los tipos de preguntas que puede incluir un cuestionario son:
+\begin{enumerate}
+    \item \textbf{Pregunta de carácter general:} Preguntas que ayudan a establecer el perfil de usuario y su puesto dentro de la población en estudio. 
+    \item \textbf{Pregunta abierta:} Preguntas útiles para recoger información general subjetiva. Pueden dar sugerencias interesantes y encontrar errores no previstos.
+    \item \textbf{Pregunta de tipo escalar:} Permite preguntar al usuario sobre un punto específico en una escala numérica.   
+    \item \textbf{Opción múltiple:} En este caso se ofrecen una serie de opciones y se pide responder a una o varias. Son particularmente útiles para recoger información de la experiencia previa del usuario. Un caso especial es cuando se le dan opciones para contestar si o no.
+    \item \textbf{Preguntas ordenadas:} Se presentan una serie de opciones que hay que ordenar.
+\end{enumerate}
+La actividad de la realización de cuestionarios puede estar ligada a la consecución de ciertas tareas que el evaluador ha creído conveniente realizar (actividad combinada de varios métodos de evaluación) para medir aspectos interactivos del sistema. En estos casos es recomendable dividir el cuestionario en tres partes:
+\begin{itemize}
+    \item \textbf{Pre-tarea:} Las preguntas de esta sección suelen ser generales acerca de ciertas habilidades del usuario (esta parte suele aprovecharse para recoger información útil acerca del perfil del usuario).
+    \item \textbf{Post-tarea:} Esta sección se repetirá tantas veces como tareas tenga que resolver el usuario.
+    \item \textbf{Post-test:} Esta sección recogerá aspectos generales acerca de la percepción gomal del usuario tras la consecución de las diferentes tareas planteadas.
+\end{itemize}
+
+\section{Pruebas de usabilidad por test}
+En los métodos de prueba de usabilidad por test de usuarios representativos se trabaja en tareas utilizando el sistema -o el prototipo- y los evaluadores utilizan los resultados para ver cómo la interfaz de usuario soporta a los usuarios con sus tareas.
+Existen varios métodos que se enmarcan en la clasificación de prueba por test, siendo los siguientes los más importantes.
+
+\subsection{Pensando en voz alta (Thinking Aloud) o interacción constructiva}
+En este método de evaluación conocido como “thinking aloud” se pide a los usuarios que de forma individual expresen en voz alta y libremente sus pensamientos, sentimientos y opiniones sobre cualquier aspecto (diseño, usabilidad…) mientras que interaccionan con el sistema o un prototipo del mismo. \\ \\
+Resulta ser un método altamente eficaz para capturar aspectos relacionados con las actividades cognitivas de los usuarios potenciales del sistema evaluado.
+\subsubsection{Modo de aplicación}
+Se proporciona a los usuarios el prototipo a probar y un conjunto de tareas a realizar.
+\begin{itemize}
+    \item Se les pide que realicen las tareas y que expliquen en voz alta qué es lo que piensan al respecto mientras están trabajando con la interfaz, describiendo qué es lo que creen que está pasando, por qué toman una u otra acción o qué es lo que están intentando realizar. 
+    \item Pensando en voz alta permite a los evaluadores comprender cómo el usuario se aproxima al objetivo con la interfaz propuesta y qué consideraciones tiene en la mente cuando la usa. El usuario puede expresar que la secuencia de etapas que le dicta el producto para realizar el objetivo de su tarea es diferente de la que esperaba.
+\end{itemize}
+
+\subsection{Método del conductor}
+El método del conductor es algo diferente a los métodos anteriores en los que hay una interacción explícita entre el usuario y el evaluador (o conductor). \\ \\
+Este caso resulta ser totalmente al contrario en este aspecto: Se conduce al usuario en la dirección correcta mientras se usa el sistema. \\ \\
+Durante el test, el usuario puede preguntar al evaluador cualquier aspecto relacionado con el sistema y éste le responderá. \\ \\
+Este método se centra en el usuario inexperto y el propósito del mismo es descubrir las necesidades de información de los usuarios de tal manera que se proporcione un mejor entrenamiento y documentación al mismo tiempo que un posible rediseño de la interfaz para evitar la necesidad de preguntas.
+
+\subsection{Ordenación de tarjetas (Card Sorting)}
+Al comenzar un nuevo ejercicio de diseño de la información es normal encontrarse con una larga lista de ítems sin relacionar que “hay que incluir” y “no sabemos cómo hacerlo”. El reto radica en organizar esta información de manera que sea útil y comprensible para los usuarios del sistema. \\ \\
+La técnica conocida como ordenación de tarjetas, o card sorting, es la utilizada para conocer cómo los usuarios visualizan la organización de la información. El diseñador utiliza las aportaciones de los usuarios para decidir cómo deberá estructurarse la información en la interfaz. \\ \\
+Se trata de una técnica simple -fácil de entender y de aplicar-, barata, rápida y que involucra a los usuarios, que es especialmente indicada cuando disponemos de una serie de ítems que precisen ser catalogados, así como para decidir la estructura organizativa de cualquier sistema de información. \\ \\
+Esta técnica tiene demostrada utilidad para desarrollar sitios web, para la cual está especialmente recomendada.
+\subsubsection{Modo de aplicación}
+Los pasos a seguir para implementar una ordenación de tarjetas son los siguientes:
+\begin{enumerate}
+    \item Determinar la lista de tópicos (ítems a ordenar). Esta lista no debería ser muy extensa y comprensible para los participantes de la sesión.
+    \item Crear las tarjetas. Cada tópico deberá escribirse en una tarjeta (papel, cartón) que ocasionalmente puede adjuntar algún tipo de explicación. Deberá, además, proporcionar unas cuantas tarjetas en blanco a los participantes.
+    \item Seleccionar a los participantes. Los participantes preferentemente serán usuarios finales de quienes deberemos estar seguros que representan fielmente a grupos de usuarios potenciales del sistema.
+    \item Proceder con la sesión de ordenación. Cada sesión debe comenzar con una explicación del método y de los objetivos animando a todos los participantes a organizar las tarjetas y etiquetar, en las tarjetas en blanco, los grupos según sus criterios personales. El organizador de la sesión debe tomar nota de todo aquello que pueda resultar relevante para la evaluación final.
+    \item Analizar las agrupaciones. Una vez han concluido todos, el evaluador deberá analizar todas las agrupaciones en un ejercicio de “análisis democrático” para identificar aquellas agrupaciones más frecuentes para poder decidir la estructura final.
+\end{enumerate}

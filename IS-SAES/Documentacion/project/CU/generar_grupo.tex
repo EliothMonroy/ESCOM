@@ -1,0 +1,78 @@
+\newpage
+\section{Caso de Uso Generar Grupo}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Generar Grupo\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El analista registra los datos de un grupo nuevo en un formulario, asentándolo en el sistema.\\
+\hline
+\textbf{ENTRADAS} & Nivel: Selección de una lista numérica (entre 1 y 5)\\ & Turno: Selección de una lista (Matutino/Vespertino)\\ & Identificador: Entero Positivo\\
+\hline
+\textbf{SALIDAS} & Si el grupo fue dado de alta de forma exitosa se muestra un mensaje de confirmación.\\ & Si ocurrió algún error durante su registro, se muestra un mensaje con el error correspondiente.\\
+\hline
+\textbf{PRECONDICIONES} & El analista de gestión debe haber iniciado sesión.\\ & Es periodo de registro de grupos.\\
+\hline
+\textbf{POSTCONDICIONES} & El sistema se actualiza con los datos ingresados. Se muestra un mensaje de confirmación para avisar que el registro del grupo fue correcto.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item El grupo ya ha sido registrado.
+    \item Se dejaron campos obligatorios en blanco.
+    \item El formato de los datos es inválido
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & El sistema no se actualiza.\\
+\hline
+\textbf{ACTORES} & Analista, Jefe de Gestión Escolar\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensajes de Confirmación}: Se presentan en los siguientes casos: \begin{itemize}
+    \item En caso de que se haya registrado exitosamente el nuevo grupo: MC.1.
+\end{itemize}\\ & \textbf{Mensajes de Error}: Se presentan en los siguientes casos: \begin{itemize}
+    \item El grupo ya ha sido registrado: ME.33
+    \item Se dejaron campos obligatorios en blanco: ME.1
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Medina Luqueño Ana Ximena\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como analista de gestión escolar.
+    \item El usuario selecciona la opción “Registrar grupo” en el menú de opciones.
+    \item *El sistema carga el formulario para registrar grupos.
+    \item El usuario selecciona el nivel y turno del grupo.
+    \item El usuario ingresa el identificador del grupo.
+    \item *El sistema valida que ninguno de los campos este vacío. \textbf{[Trayectoria 1]}
+    \item *El sistema valida que los datos en el campo de identificador sean válidos. \textbf{[Trayectoria 2]}
+    \item *El sistema valida que el grupo no haya sido registrado antes. \textbf{[Trayectoria 3]}
+    \item *El sistema muestra el mensaje de confirmación correspondiente.
+    \item *El sistema redirige a la pantalla de Registrar grupos.
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El usuario envió el formulario con algún campo vacío.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1.
+    \item Regresa al paso 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: Los datos en el campo de identificador son inválidos.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item Regresa al paso 5 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El grupo ya ha sido registrado.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.33.
+    \item Regresa al paso 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

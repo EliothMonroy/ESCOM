@@ -1,0 +1,19 @@
+\select@language {spanish}
+\thispagestyle {empty}
+\contentsline {chapter}{\numberline {1}Descripci\IeC {\'o}n de la Prueba}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Prop\IeC {\'o}sito de la prueba}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Alcance}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Elementos involucrados}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Requerimientos}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Checklist}{2}{section.1.5}
+\contentsline {section}{\numberline {1.6}Instrucciones}{2}{section.1.6}
+\contentsline {chapter}{\numberline {2}Ejecuci\IeC {\'o}n de Pruebas}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Prueba P1: Caso de Uso Iniciar Sesi\IeC {\'o}n}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Prueba P2: Caso de Uso Registrar alumno}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Prueba P3: Caso de Uso Registrar acad\IeC {\'e}mico}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Prueba P4: Caso de Uso Registrar analista}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Prueba P6: Caso de Uso Registrar materia}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}Prueba P7: Caso de Uso Registrar profesor}{13}{section.2.6}
+\contentsline {section}{\numberline {2.7}Prueba P8: Caso de Uso Generar Grupo}{14}{section.2.7}
+\contentsline {section}{\numberline {2.8}Prueba P9: Caso de Uso Registrar grupo}{15}{section.2.8}
+\contentsline {section}{\numberline {2.9}Prueba P12: Caso de Uso Editar Profesor}{17}{section.2.9}

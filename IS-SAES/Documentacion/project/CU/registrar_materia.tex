@@ -1,0 +1,80 @@
+\newpage
+\section{Caso de Uso Registrar Materia}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Registrar Materia\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El analista registra los datos de una nueva unidad de aprendizaje\\
+\hline
+\textbf{ENTRADAS} & Nombre de la Materia: Cadena de caracteres\\ & Créditos: Valor numérico con dos decimales\\ & Nivel: Selección de una lista numérica (entre 1 y 4)\\ & Área: Selección de área de una lista.\\ & Cupo: Selección de una lista numérica (entre 25 y 35)\\
+\hline
+\textbf{SALIDAS} & Se mostrará un mensaje de confirmación si los datos se registran de manera exitosa.\\ & Se mostrará un mensaje de error si se dejaron campos en blanco, o el formato de los datos no es correcto.\\
+\hline
+\textbf{PRECONDICIONES} & No hay\\
+\hline
+\textbf{POSTCONDICIONES} & Se registra una nueva materia dentro del mapa curricular.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & \begin{itemize}
+    \item Se dejaron campos obligatorios en blanco.
+    \item El formato de los datos es inválido.
+\end{itemize}\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se registra la materia.\\
+\hline
+\textbf{ACTORES} & Analista\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Confirmación}: Se muestra cuando los datos han sido almacenados correctamente: MC.1\\ & \textbf{Mensajes de Error}: Se muestran en los siguientes casos: \begin{itemize}
+    \item Se dejaron campos obligatorios en blanco: ME.1
+    \item El formato de los datos es inválido: ME.2
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Hernández Pineda Miguel Angel\\
+\hline
+\end{longtable}
+\newpage
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Analista.
+    \item El usuario da click en la opción <<Registrar Materia>> de la Sección Registrar (Figura 3.15)
+    \item El usuario ingresa el nombre de la materia.
+    \item El usuario ingresa el número de créditos de la materia.
+    \item El usuario selecciona un nivel.
+    \item El usuario selecciona un área de conocimiento.
+    \item El usuario da click en el botón enviar.
+    \item *El sistema valida que no haya campos obligatorios en blanco. \textbf{[Trayectoria 1]}
+    \item *El sistema valida los datos en el campo de nombre de la materia. \textbf{[Trayectoria 2]}
+    \item *El sistema valida los datos en el campo de créditos según la regla de negocio RN.15. \textbf{[Trayectoria 3]}
+    \item Se registra la materia de forma correcta en el mapa curricular.
+    \item Se muestra el mensaje de confirmación MC.1.
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: Se dejaron campos obligatorios en blanco.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1.
+    \item *El sistema marca de color rojo los campos vacíos.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El formato de texto para el campo de nombre de la materia es inválido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de nombre.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El formato para el campo de créditos es inválido según la regla de negocio RN.15.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item *El sistema marca de color rojo el campo de créditos.
+    \item Regresa al punto 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

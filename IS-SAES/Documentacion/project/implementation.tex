@@ -1,0 +1,301 @@
+\newpage
+\section{Caso de Uso Mostrar Bitácora}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+      \textbf{NOMBRE} & Mostrar bitácora\\
+      \hline
+      \textbf{TIPO} & Primario\\
+      \hline
+      \textbf{DESCRIPCIÓN} & El tutor visualiza la bitácora de tomas realizadas al paciente mediante una tabla donde se especifica el detalle de cada una de estas tomas.\\
+      \hline
+      \textbf{ENTRADAS} & No hay.\\
+      \hline
+      \textbf{SALIDAS} & A partir de la consulta correspondiente, el sistema muestra en una tabla todos los registros de tomas que correspondan al paciente que el tutor tiene asignado, en la cual se muestran los datos ordenados ascendentemente de acuerdo a la fecha en que se registró la toma.\\
+      \hline
+      \textbf{PRECONDICIONES} & Entrar al menú del tutor y dar clic en Bitácora (Figura 4.7)\\
+      \hline
+      \textbf{POSTCONDICIONES} & El sistema muestra al tutor la bitácora de tomas realizadas a su paciente por medio de una tabla, en la cual se especifica la fecha, el color, hora de drenado, hora de admisión, la cantidad de líquido drenado e ingerido y la orina expulsada de cada una de estas tomas.\\
+      \hline
+      \textbf{SITUACIONES DE ERROR} & No todos los registros son cargados en la tabla. \\
+      \hline
+      \textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} &  El sistema muestra la bitácora de tomas con registros faltantes.\\
+      \hline
+      \textbf{ACTORES} & Tutor\\
+      \hline
+      \textbf{MENSAJES} & \textbf{Mensaje de error}: Se presenta cuando por lo menos un registro no es cargado en la tabla de bitácora de tomas: ME.22
+      \newline \textbf{Mensaje de confirmación}: Cuando todos los registros son cargados en la tabla exitosamente: MC.8\\
+      \hline
+      \textbf{AUTOR} & Rogelio Beltrán Alvarado \\
+	  \hline
+\end{longtable}
+\vspace*{1cm}
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+\item El usuario accede al sistema como tutor.
+		\item El tutor da clic en el botón bitácora, del menú del tutor (Figura 4.7).
+		\item El sistema realiza la consulta necesaria para obtener todos los registros de tomas del paciente ordenados ascendentemente por la fecha en que se realizó el registro.$\left[\textbf{Trayectoria 1}\right]$
+		\item El sistema carga en cada fila de la tabla el valor de la fecha, el color, la hora de drenado y adminsión, el líquido drenado e ingerido así como el valor de la orina expulsada de todos los registros de toma del paciente.$\left[\textbf{Trayectoria 2}\right]$
+		\item El sistema verifica que el número de registros cargados en la tabla sea el mismo número de registros que existe en la base de datos. $\left[\textbf{Trayectoria 3}\right]$
+		\item El sistema muestra el mensaje de confirmación MC.8.
+		\item El sistema muestra la bitácora de las tomas realizadas al paciente (Figura 4.9).
+		\item Fin de caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: La consulta a la base de datos no devuelve ningún registro al sistema.
+\begin{enumerate}
+		\item El sistema muestra el mensaje de error ME.22.
+		\item El sistema redirige al tutor al menú del tutor (Figura 4.7).
+		\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: Algún dato del registro de la toma del paciente no es cargado en la tabla.
+\begin{enumerate}
+		\item El sistema muestra el mensaje de error ME.22.
+		\item El sistema redirige al tutor a la pantalla de la Bitácora (Figura 4.9).
+		\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: La comparación entre los registros de la base de datos y los registros cargados en la tabla de la bitácora no son iguales.
+\begin{enumerate}
+		\item El sistema muestra el mensaje de error ME.22.
+		\item El sistema redirige al tutor a la pantalla de la Bitácora (Figura 4.9).
+		\item Fin de trayectoria.
+\end{enumerate}
+\newpage
+\section{Caso de Uso Editar Bitácora}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+      \textbf{NOMBRE} & Editar bitácora\\
+      \hline
+      \textbf{TIPO} & Secundario\\
+      \hline
+      \textbf{DESCRIPCIÓN} & El usuario que fungirá como tutor llenará un formulario para crear una cuenta en el sistema.\\
+      \hline
+      \textbf{ENTRADAS} & Fila seleccionada de la toma.
+\newline Dependiendo del dato a editar:
+\newline Tiempo de drenado: Flotante positivo, tiempo en minutos que duró el drenado del paciente.
+\newline Cantidad de drenado: Flotante positivo, cantidad en mililitros drenada del paciente.
+\newline Tiempo de depósito: Flotante positivo, tiempo en minutos que duró el depósito del paciente.
+\newline Cantidad de depósito: Flotante positivo, cantidad en mililitros que se depositó en el paciente.
+\newline Líquidos bebidos: Flotante positivo, cantidad en mililitros de líquido ingerido por el paciente.
+\newline Orina: Flotante positivo, cantidad de orina emitida por el paciente.\\
+      \hline
+      \textbf{SALIDAS} & El sistema mostrará un mensaje de confirmación cuando la actualización de datos haya sido exitosa.
+\newline El sistema mostrará un mensaje de error cuando queden datos en blanco.
+\newline El sistema mostrará un mensaje de error cuando los datos no sean válidos.\\
+      \hline
+      \textbf{PRECONDICIONES} & El tutor ya está registrado en el sistema.
+\newline El tutor ya inició sesión.
+\newline El tutor ya ha registrado a su paciente en el sistema.
+\newline La bitácora que se quiere editar ya está registrada en el sistema.\\
+      \hline
+      \textbf{POSTCONDICIONES} & Los datos de la bitácora se actualizarán con los datos ingresados por el tutor.\\
+      \hline
+      \textbf{SITUACIONES DE ERROR} & \begin{itemize} \item El tutor no llenó uno o más campos.
+\item El tutor ingresó un dato no válido. \end{itemize}\\
+      \hline
+      \textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se efectúan los cambios hechos por el tutor y la bitácora permanece como en la última actualización (ya sea la creación de la toma o una edición previa).\\
+      \hline
+      \textbf{ACTORES} & Tutor\\
+      \hline
+      \textbf{MENSAJES} & \textbf{Mensajes de Confirmación}:\newline Se muestran en las siguientes situaciones: \begin{itemize} \item Cuando se abandona el formulario: MC.6
+    \item Cuando el formulario fue llenado de forma correcta y es guardado en el sistema: MC.7
+    \end{itemize}\\  & \textbf{Mensajes de Error}:\newline Se muestran en las siguientes situaciones: \begin{itemize} \item Cuando el tutor quiere ingresar un valor no válido para un campo de la bitácora: ME. 7,10-16
+\item Cuando el tutor no llena la información de algún campo del formulario: ME. 18 
+    \end{itemize}\\
+      \hline
+      \textbf{AUTOR} & Ana Ximena Medina Luqueño \\
+	  \hline
+\end{longtable}
+\vspace*{1cm}
+\Large{PROCEDIMIENTO ESTANDAR}
+\large{}
+\begin{enumerate}
+\item El tutor da clic en el botón “Editar” en la pantalla de la bitácora (Figura 4.9).
+\item El sistema habilita los hipervínculos para dar clic en cada toma registrada en la bitácora (Figura 4.10).
+\item El tutor da clic en la toma que desea editar.
+\item El sistema muestra el registro de la toma seleccionada.
+\item El usuario cambia o conserva la fecha de la toma.
+\item El usuario cambia o conserva el color de la toma.
+\item El usuario cambia o conserva la hora de drenado de la toma.
+\item El usuario cambia o conserva la hora de admisión de la toma.
+\item El usuario cambia o conserva la cantidad de líquido drenado de la toma.
+\item El usuario cambia o conserva la cantidad de líquido ingerido de la toma.
+\item El usuario cambia o conserva la cantidad de orina producida durante la toma.
+\item El tutor da clic en el botón de “Enviar”. $\left[\textbf{Trayectoria 1}\right]$
+\item El sistema valida que ninguno de los campos este vacío. $\left[\textbf{Trayectoria 2}\right]$
+\item El sistema valida el dato de fecha de la toma. $\left[\textbf{Trayectoria 3}\right]$
+\item El sistema valida el dato de color de la toma. $\left[\textbf{Trayectoria 4}\right]$
+\item El sistema valida el dato de hora de drenado de la toma. $\left[\textbf{Trayectoria 5}\right]$
+\item El sistema valida el dato de hora de admisión de la toma. $\left[\textbf{Trayectoria 6}\right]$
+\item El sistema valida el dato de cantidad de líquido drenado de la toma segun la regla de negocio 1. $\left[\textbf{Trayectoria 7}\right]$
+\item El sistema valida el dato de cantidad de líquido ingerido antes de la toma segun la regla de negocio 2. $\left[\textbf{Trayectoria 8}\right]$
+\item El sistema valida el dato de orina producida antes de la toma segun la regla de negocio 6. $\left[\textbf{Trayectoria 9}\right]$ 
+\item El sistema registra la actualización de datos de la toma en la bitácora del paciente.
+\item El sistema muestra el mensaje de confirmación MC.7.
+\item El sistema redirecciona a la bitácora del paciente (Figura 4.9).
+\item Fin de caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El tutor dio clic en el botón “Cancelar”.
+\begin{enumerate}
+\item El sistema muestra mensaje de confirmación MC.6. 
+\item El sistema redirecciona a la bitácora del paciente (Figura 4.9).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El tutor dio clic en el botón “Enviar” con algún campo vacío.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.18.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: El dato en el campo fecha de toma no es válido.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.7.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: El dato en el campo color de toma no es válido.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.16.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: El dato en el campo tiempo de drenado de la toma no es válido.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.10.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 6}\\
+\textbf{Condición}: El dato en el campo tiempo de admisión de la toma no es válido.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.12.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 7}\\
+\textbf{Condición}: El dato en el campo cantidad de líquido drenado de la toma no es válido con base en la regla de negocio 1.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.11.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 8}\\
+\textbf{Condición}: El dato en el campo cantidad de líquido ingerido antes de la toma no es válido con base en la regla de negocio 2.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.13.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 9}\\
+\textbf{Condición}: El dato en el campo cantidad de orina producida antes de la toma no es válido con base en la regla de negocio 6.
+\begin{enumerate}
+\item El sistema muestra mensaje de error ME.15.
+\item El sistema redirecciona al tutor a la pantalla de modificación de la toma seleccionada (Figura 4.10).
+\item Fin de trayectoria.
+\end{enumerate}
+\newpage
+\section{Caso de Uso Imprimir Bitácora}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+      \textbf{NOMBRE} & Imprimir bitácora\\
+      \hline
+      \textbf{TIPO} & Secundario\\
+      \hline
+      \textbf{DESCRIPCIÓN} & Se genera el pdf  con los datos de la bitácora del paciente, la cual contiene  todos los registros previamente guardados.\\
+      \hline
+      \textbf{ENTRADAS} & No hay.\\
+      \hline
+      \textbf{SALIDAS} & El sistema mostrará un pdf de una tabla con todos los registros previamente guardados \newline El sistema mostrará un pdf con solo el encabezado si no hay datos registrados en la bitácora.\\
+      \hline
+      \textbf{PRECONDICIONES} & El tutor ya ha registrado registros en el sistema.\\
+      \hline
+      \textbf{POSTCONDICIONES} & El sistema despliega el pdf generado de la bitacora.\\
+      \hline
+      \textbf{SITUACIONES DE ERROR} & Ninguno.\\
+      \hline
+      \textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} &  No aplica.\\
+      \hline
+      \textbf{ACTORES} & Tutor\\
+      \hline
+      \textbf{MENSAJES} & \textbf{Mensaje de alerta}: Se presenta cuando se genera un pdf con solo el encabezado de la bitácora, es decir sin registros: MC.4\\& \textbf{Mensaje de confirmación}: Cuando el pdf es generado correctamente se envía de manera exitosa: MC.5\\
+      \hline
+      \textbf{AUTOR} & Carlos Eduardo Matus López \\
+	  \hline
+\end{longtable}
+\vspace*{1cm}
+\Large{PROCEDIMIENTO ESTANDAR}
+\large{}
+\begin{enumerate}
+\item El tutor selecciona la opción de “Imprimir” en la pantalla de la Bitácora (Figura 4.9).
+\item El sistema genera el pdf. $\left[\textbf{Trayectoria 1}\right]$
+\item El sistema despliega el pdf de la bitácora con todos los registros.
+\item El sistema muestra el mensaje de confirmación MC.5.
+\item Fin del caso de uso.
+\end{enumerate}
+\newpage
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El tutor solicitó la bitácora cuando no hay registros en la bitácora.
+\begin{enumerate}
+\item El sistema muestra el mensaje MC.4.
+\item El sistema despliega un pdf que contiene solo el encabezado de la bitácora.
+\item Se carga la pantala de bitácora (Figura 4.9).
+\end{enumerate}
+\newpage
+\section{Caso de Uso Ver Solución a Administrar}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+      \textbf{NOMBRE} & Ver solución a administrar\\
+      \hline
+      \textbf{TIPO} & Primario\\
+      \hline
+      \textbf{DESCRIPCIÓN} & El paciente consulta la solución que debe administrarse en la siguiente diálisis.\\
+      \hline
+      \textbf{ENTRADAS} & No hay.\\
+      \hline
+      \textbf{SALIDAS} & El sistema le mostrará al paciente el color de la solución así como la hora en la que debe ser administrada.\\
+      \hline
+      \textbf{PRECONDICIONES} & El tutor debe haber iniciado sesión \newline El tutor debe haber registrado a su paciente.\\
+      \hline
+      \textbf{POSTCONDICIONES} & Se ingresa a la pantalla de Paciente (Figuras 4.11, 4.12, 4.13 y 4.14) y se muestran el color y la hora de aplicación de la toma\\
+      \hline
+      \textbf{SITUACIONES DE ERROR} & No hay.\\
+      \hline
+      \textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No aplica\\
+      \hline
+      \textbf{ACTORES} & Paciente\\
+      \hline
+      \textbf{MENSAJES} & No aplica\\
+      \hline
+      \textbf{AUTOR} & Carlos Eduardo Matus López y Alberto Paredes Rivas \\
+	  \hline
+\end{longtable}
+\vspace*{1cm}
+\Large{PROCEDIMIENTO ESTANDAR}
+\large{}
+\begin{enumerate}
+\item El paciente selecciona la opción Paciente en la pantalla del menú principal (Figura 4.6).
+		\item El sistema recupera el último registro de diálisis del paciente para calcular el color de la solución según lo establecido en la regla de negocio 11. $\left[\textbf{Trayectoria 1}\right]$
+		\item El sistema calcula el color y la hora de la siguiente diálisis en base a las reglas de negocio 8, 9 y 10. 
+		\item El sistema muestra la pantalla con el color y la hora calculados (Figuras 4.12, 4.13 y 4.14).
+		\item Fin de caso de uso.
+\end{enumerate}
+\newpage
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: No hay ningún registro en la bitácora del paciente.
+\begin{enumerate}
+		\item El sistema muestra la pantalla de paciente en estado inicial (Figura 4.11).
+		\item Fin de trayectoria.
+\end{enumerate}

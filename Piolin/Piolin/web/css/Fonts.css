@@ -1,0 +1,45 @@
+.fb-profile img.fb-image-lg{
+    width: 100%;  
+    margin-bottom: 10px;
+}
+
+.fb-image-profile
+{
+    margin: -150px 40px 10px 70px;
+    width: 19%; 
+}
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; 
+}
+}
+
+li{
+    display: inline-block;
+}
+
+division1{
+    border: solid;
+    color: #00ccff;
+    display: inline-block;
+}
+
+
+
+/* portada */
+
+.portada-container{
+    
+    margin-top:0%;
+}

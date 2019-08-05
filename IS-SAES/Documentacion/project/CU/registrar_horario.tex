@@ -1,0 +1,91 @@
+\newpage
+\section{Caso de Uso Registrar Horario}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+	\hline
+	\textbf{NOMBRE} & Registrar Horario\\
+	\hline
+	\textbf{TIPO} & Primario\\
+	\hline
+	\textbf{DESCRIPCIÓN} & El analista registra un horario, el Sistema toma en cuenta  que los horarios tengan distintos nombres que cumplan con el formto soicitado (de 1 a 2 letras del abecedario en mayúsculas).\\
+	\hline
+	\textbf{ENTRADAS} & Nombre del horario\\
+	\hline
+	\textbf{SALIDAS} & Mensaje de Error.\newline Mensaje de Confirmación.\\
+	\hline
+	\textbf{PRECONDICIONES} & Ninguna.\\
+	\hline
+	\textbf{POSTCONDICIONES} & Ninguna\\
+	\hline
+	\textbf{SITUACIONES DE ERROR} 
+	&
+	El nombre del horario ya existe.\\
+	\hline
+	\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & En espera de ingresar un nombre valido.\\
+	\hline
+	\textbf{ACTORES} & Analista\\
+	\hline
+	\textbf{MENSAJES} 
+	&
+	Mensaje de Error ME.33: Haz coincidir el formato solicitado.\newline
+	Mensaje de Error ME.34: Ya se tiene registrado un horario con este nombre\newline
+	Mensaje de Error ME.37: Completa este campo\\
+	\hline
+	\textbf{AUTOR} & América Berenice Monsalvo Fuentes\\
+	\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El analista selecciona ''Horario'' que se encuentra en el apartado ''Administrar'' en el menú del lado izquierdo de la pantalla.
+    \item *El Sistema muestra la pantalla 3.42 Administrar Tipos de Horario 1
+    \item El analista selecciona el botón ''Agregar'' que se encuentra en la parte de en medio inmediatamente abajo del encabezado ''Administrar  tipo de horarios.
+    \item *El Sistema muestra la pantalla 3.43 Administrar Tipos de Horario 2. \textbf{[Trayectoria 1]}
+    \item El analista ingresa un nombre para el horario.
+    \item El analista selecciona el botón ''Registrar'' (color verde claro).
+    \item *El Sistema valida que el campo no esté vacío. \textbf{[Trayectoria 2]}
+    \item *El Sistema valida que cumpla con el formato solicitado. \textbf{[Trayectoria 3]}
+    \item *El Sistema valida que el nombre no lo tenga otro horario que ya ha sido registrado. \textbf{[Trayectoria 4]}
+    \item *El Sistema muestra el mensaje de confirmación MC.7
+    \item El analista selecciona el botón ''OK''
+    \item *El Sistema muestra la pantalla 3.53 Agregar horas
+    \item El analista selecciona el botón ''Agregar''. \textbf{[Trayectoria 5]}
+    \item *El Sistema muestra la pantalla 3.54 Editar Horario 2
+    \item El analista selecciona un Día y una Hora. \item El analista selecciona el botón ''Registrar'' (color verde claro). \textbf{[Trayectoria 6]}
+    \item *El Sistema muestra el mensaje de confirmación MC.8
+    \item El analista selecciona el botón ''OK'' que muestra el mensaje.
+    \item *El Sistema muestra la pantalla 3.44 Editar Horario. \textbf{[Trayectoria 1]}
+    \item Fin del caso de uso
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+	\large{Trayectoria 1}\\
+	\textbf{Condición:} El analista selecciona el botón ''Cerrar'' o ''Regresar''.
+	\begin{enumerate}
+		\item *Se vuelve al punto 2 de la trayectoria principal.
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 2}\\
+	\textbf{Condición:} El campo ''Nombre del horario'' está vacío.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.37.
+		\item *Se vuelve al punto 5 de la trayectoria principal
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 3}\\
+	\textbf{Condición:} El nombre del horario no cumple con el formato.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.33.
+		\item *Se vuelve al punto 5 de la trayectoria principal
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 4}\\
+	\textbf{Condición:} Otro horario ya ha sido registrado con el nombre ingresado.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.34.
+		\item El analista selecciona el botón ''OK'' del mensaje de error.
+		\item *Se vuelve al punto 5 de la trayectoria principal
+		\item Fin de la trayectoria
+	\end{enumerate}
+\newpage

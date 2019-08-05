@@ -1,0 +1,80 @@
+\newpage
+\section{Caso de Uso Generar Propuesta de Horario}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+	\hline
+	\textbf{NOMBRE} & Generar propuesta de horario.\\
+	\hline
+	\textbf{TIPO} & Secundario.\\
+	\hline
+	\textbf{DESCRIPCIÓN}
+	&
+	El sistema recopila información acerca del horario que el alumno desea inscribir al semestre próximo a cursar, valida que materias podría inscribir (tomando en cuenta las materias anteriores que han sido cursadas, la seriarización entre ellas, y las acomoda tratando de no dejar espacios entre ellas. También se tendrá en cuenta la ocupabilidad en el momento de generarlo.\\
+	\hline
+	\textbf{ENTRADAS} & Número de materias que se desean incribir, hora de entra y hora de salida.\\
+	\hline
+	\textbf{SALIDAS} & Mensaje de Error, Éxito o Alerta.\\
+	\hline
+	\textbf{PRECONDICIONES}
+	&
+	Estar dentro de las 24hrs correspondientes a su reinscripción y que no haya finalizado la reinscripción.\\
+	\hline
+	\textbf{POSTCONDICIONES} & Ninguna\\
+	\hline
+	\textbf{SITUACIONES DE ERROR}
+	&
+	El número de materias que desea inscribir no son posibles en el rango de horario que ingreso.\\
+	\hline
+	\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & En espera de la corrección de la horarios por el alumno.\\
+	\hline
+	\textbf{ACTORES} & Alumno\\
+	\hline
+	\textbf{MENSAJES}
+	&
+	\textbf{Mensaje de Error}: Se presenta cuando no se han seleccionado materias: ME.29 \newline
+	\textbf{Mensaje de Confirmación}: Se presenta cuando el horario se generó correctamente: MC.5\\
+	\hline
+	\textbf{AUTOR} & América Berenice Monsalvo Fuentes\\
+	\hline
+\end{longtable}
+\newpage
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como Alumno
+	\item Selecciona "Propuesta de horario" que se encuentra en el apartado "Reinscripción". Pantalla 3.9
+	\item El usuario ingresa el número de materias que desea inscribir, horario de entrada y horario de salida
+	\item El usuario selecciona el botón "Generar"
+	\item *El sistema válida que  el número de materias sea mayor a 0. \textbf{[Trayectoria 1]}
+	\item *El sistema válida que la hoa de entrada sea mayor o igual a las 7hrs. \textbf{[Trayectoria 2]}
+	\item *El sistema válida que la hora de salida sea menor o igual a las 21:30hrs. \textbf{[Trayectoria 3]}
+	\item *EL sistema genera un horario.
+	\item *EL sistema muestra el Mensaje de Éxito "Se genero un horario".
+	\item *El sistema muestra el horario generado al usuario. Pantalla ??
+	\item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+	\large{Trayectoria 1}\\
+	\textbf{Condición:} El número de materias es menor o igual a 0.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.29
+		\item *El sistema limpia todos los campos 
+		\item *Se continúa al punto 6 de la trayectoria Principal.
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 2}\\
+	\textbf{Condición:} La hora de entrada es menor a las 7hrs.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.29
+		\item *El sistema limpia todos los campos 
+		\item *Se continúa al punto 6 de la trayectoria Principal.
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 1}\\
+	\textbf{Condición:} La hora de salida es mayor a las 21:30hrs.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.29
+		\item *El sistema limpia todos los campos 
+		\item *Se continúa al punto 6 de la trayectoria Principal.
+		\item Fin de la trayectoria
+	\end{enumerate}

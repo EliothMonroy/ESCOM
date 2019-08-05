@@ -1,0 +1,91 @@
+\newpage
+\section{Caso de Uso Habilitar Reinscripción}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+    \hline
+    \textbf{NOMBRE} & Habilitar Reinscripción\\
+    \hline
+    \textbf{TIPO} & Primario\\
+    \hline
+    \textbf{DESCRIPCIÓN} & El jefe de gestión escolar, selecciona dos fechas, inicio y fin del periodo de reinscripciones respectivamente, lo cual da como resultado que sea habilitado el período de reinscripciones en el sistema.\\
+    \hline
+    \textbf{ENTRADAS} & Fecha de inicio del período de reinscripciones y fecha de término.\\&Hora de inicio y fin de las inscripciones\\
+    \hline
+    \textbf{SALIDAS} & Mensaje de éxito o mensaje de error dependiendo del caso.\\
+    \hline
+    \textbf{PRECONDICIONES} & El usuario debe ser autenticado como Jefe de Gestión Escolar y no debe de estar habilitado ningún otro periodo de reinscripciones.\\
+    \hline
+    \textbf{POSTCONDICIONES} & El sistema crea las citas de reinscripción para todos los estudiantes inscritos automáticamente y notifica al usuario en caso de que haya existido un error, de igual manera notifica al usuario en el caso de que todas las citas de reinscripción hayan sido creadas satisfactoriamente.\\
+    \hline
+    \textbf{SITUACIONES DE ERROR} &Se presenta un error en las siguientes situaciones:
+    \begin{itemize}
+        \item No todos los campos del formulario fueron llenados.
+    	\item No todos los alumnos inscritos obtienen una cita de reinscripción.
+    	\item Las fecha de término del periodo de reinscripciones no es posterior a la fecha de inicio.
+    	\item La hora de finalización por día del periodo de reinscripciones no es posterior a la hora de inicio.
+    	\item El periodo de reinscripciones seleccionado es menor a tres días.
+    \end{itemize}\\
+    \hline
+    \textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} &  En espera de que el Jefe de Gestión Escolar asigne una cita de reinscripción a los alumnos faltantes.\\
+    \hline
+    \textbf{ACTORES} & Jefe de Gestión Escolar\\
+    \hline
+    \textbf{MENSAJES} & \textbf{Mensaje de confirmación}: Se presenta cuando todos los alumnos inscritos obtienen una cita de inscripción: MC.4.\\&\textbf{Mensaje de error}: Se presentan en los siguientes casos:
+    \begin{itemize}
+    \item Cuando al menos uno de los campos del formulario no fue llenado: ME.37
+\item Cuando al menos uno de los estudiantes inscritos no obtuvo una cita de reinscripción: ME.13
+\item Cuando la fecha de término del periodo de reinscripción no es posterior a la fecha de inicio: ME.26
+\item Cuando la hora de finalización por día del periodo de reinscripciones no es posterior a la hora de inicio: ME.27
+\item Cuando el periodo seleccionado para reinscripciones tiene una duración menor a tres días: ME.28
+\end{itemize}\\
+    \hline
+    \textbf{AUTOR} & Monroy Martos Elioth\\
+    \hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario accede al sistema como Jefe de Gestión Escolar.
+	\item El Jefe de Gestión Escolar da click en la opción <<Períodos>> dentro de la sección Administrar.
+	\item El Jefe de Gestión Escolar selecciona el período de inicio de las reinscripciones al presionar el campo <<Inicio>>, posteriormente selecciona la fecha de término de las reinscripciones al presionar el campo <<Final>> (Figura 3.19).
+	\item El Jefe de Gestión Escolar presiona el botón <<Enviar>>
+	\item *El sistema valida que la fecha de término sea posterior a la fecha de inicio.\\$\left[\textbf{Trayectoria 1}\right]$
+	$\left[\textbf{Trayectoria 2}\right]$
+	$\left[\textbf{Trayectoria 3}\right]$
+	\item *El sistema genera las citas de reinscripciones correspondientes para todos los alumnos inscritos.$\left[\textbf{Trayectoria 4}\right]$
+	\item *El sistema muestra el mensaje de confirmación MC.4.
+	\item Fin de caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: Las fecha u hora de término no es posterior a la fecha u hora de inicio de las reinscripciones.
+\begin{enumerate}
+		\item *El sistema muestra el mensaje de error ME.26 o ME.27.
+		\item *Se vuelve al punto 3 de la trayectoria Principal.
+		\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: La duración del periodo de reinscripciones es menor a tres días.
+\begin{enumerate}
+		\item *El sistema muestra el mensaje de error ME.28.
+		\item *Se vuelve al punto 3 de la trayectoria Principal.
+		\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: Al menos uno de los campos del formulario no fue llenado.
+\begin{enumerate}
+		\item *El sistema muestra el mensaje de error ME.37.
+		\item *El sistema señala el primer campo que no haya sido llenado.
+		\item *Se vuelve al punto 3 de la trayectoria Principal.
+		\item Fin de trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: No todos los alumnos inscritos obtuvieron una cita de reinscripción.
+\begin{enumerate}
+		\item *El sistema muestra el mensaje de error ME.13 al usuario y le muestra un botón llamado <<Asignar Citas Manualmente>>.
+		\item El Jefe de Departamento presiona el botón <<Asignar Citas Manualmente>>.
+		\item *El sistema inicia el caso de uso <<Asignar Citas Manualmente>>.
+		\item Fin de trayectoria.
+\end{enumerate}

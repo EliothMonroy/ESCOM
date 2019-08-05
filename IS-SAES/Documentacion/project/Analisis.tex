@@ -1,0 +1,123 @@
+\chapter{Análisis de Requerimientos}
+\section{Requisitos Funcionales}
+\begin{enumerate}[{RF} 1.]
+\item El sistema contará con perfiles de alumno y administrativo.
+\item El sistema permitirá el acceso mediante el id del usuario y la contraseña correspondiente.
+\item El sistema permitirá al alumno restablecer su contraseña mediante el envío de un enlace temporal a una dirección web que le permita asignar una nueva contraseña. 
+\item El sistema permitirá al usuario de tipo administrador gestionar la información de: alumnos, materias (Plan de estudios 09), grupos y profesores.
+\item El sistema mostrará al alumno su historial académico.
+\item El sistema determinará el estado del alumno con base en su historial académico.
+\item El sistema informará al alumno si puede llevar a cabo o no su reinscripción en linea, cuando se le asigne una cita de reinscripción.
+\item El administrador podrá habilitar o deshabilitar el proceso de reinscripción con base en el calendario escolarizado del IPN.
+\item El sistema permitirá la inscripción y reinscripción de alumnos.
+\item El sistema será capaz de realizar búsquedas de materias disponibles para la reinscripción con base en el nombre de la materia, nombre del profesor, grupo y nivel de la materia.
+\item El sistema permitirá observar al alumno la disponibilidad de materias durante el periodo de reinscripción con base en el nombre de la materia, nombre del profesor, grupo y nivel.
+\item El sistema permitirá al alumno elegir entre una serie de horarios generados a partir del turno en el que desea inscribirse así como en la disponibilidad de los grupos al momento de su inscripción.
+\item El sistema le permitirá al usuario crear diferentes horarios desde 2 semanas antes de la fecha de reinscripción.
+\item El sistema permitirá al usuario inscribir un horario previamente diseñado como horario de clases a la hora de su inscripción.
+\item El sistema permitirá al usuario seleccionar una materia para ser inscrita durante su proceso de inscripción.
+\item El sistema permitirá al usuario eliminar una materia inscrita previamente a su horario de clases antes de finalizar su reinscripción.
+\item El sistema no permitirá inscribir al alumno una materia con el mismo horario que alguna otra seleccionada anteriormente.
+\item El sistema no permitirá al alumno inscribir materias que se encuentren seriadas con alguna materia que no ha sido cursada por el alumno.
+\item El sistema permitirá al alumno inscribir una materia seriada solo si la materia que serializa a esta ha sido aprobada.
+\item El sistema permitirá al alumno finalizar su reinscripción y visualizar su horario inscrito.
+\end{enumerate}
+\newpage
+\section{Requisitos No Funcionales}
+\begin{enumerate}[{RNF} 1.]
+\item Usabilidad, el sistema contará con un diseño amigable e intuitivo otorgando al usuario un fácil uso y una grata experiencia.
+\item Usabilidad, el sistema proporcionará los mensajes adecuados a cada caso que se enfrente el usuario.
+\item Estabilidad, el sistema funcionará de manera correcta siempre que el usuario haga uso de él.
+\item Operatividad, el sistema cumplirá con el objetivo y los requisitos planteados.
+\item Mantenibilidad, si el sistema requiere de alguna mejora futura, debido a la organización.
+\item Disponibilidad, el sistema será accesible en todo momento para los distintos usuarios del mismo.
+\item Accesibilidad, el sistema será accesible desde cualquier navegador moderno, permitiendo así a los usuarios acceder desde cualquier dispositivo inteligente.
+\item Concurrencia, el sistema permitirá a más de un usuario acceder al mismo tiempo.
+\end{enumerate}
+\newpage
+\section{Reglas de Negocio}
+\begin{enumerate}[{RN} 1.]
+\item El alumno tiene que contar con un número de boleta proporcionado por el Instituto Politécnico Nacional para poder entrar al sistema
+\item La contraseña establecida por el alumno debe tener más de 6 caracteres, una letra mayúscula, una letra minúscula, un número y un caracter especial.
+\item Para la reinscripción, el alumno deberá considerar el resultado de dividir el total de los créditos faltantes para concluir su plan de estudio, entre los periodos escolares disponibles para completarlo. Si el resultado de la división es menor o igual a la carga media definida en el plan de estudio, el alumno tendrá derecho a reinscripción conforme a las reglas siguientes:
+\item El alumno tendrá que inscribirse en el rango de créditos presentados por el mapa curricular de la institución.
+\item Cuando el alumno solicite reinscribirse a una carga menor a la mínima o mayor a la máxima, deberá presentar por escrito una solicitud justificada  al titular de la unidad académica para obtener la autorización correspondiente.
+\item Si el alumno adeuda más de 3 materias, no podrá reinscribirse a través del sistema, tendrá que llevar a cabo dicho proceso en la oficina de Gestión Escolar. 
+\item El alumno que cuente con adeudos de unidades de aprendizaje tendrá derecho a recursarlas solo una vez.
+\item En caso de presentarse recurses, el alumno no podrá rebasar la carga media de créditos.
+\item Si el alumno adeuda una unidad de aprendizaje de cualquier otro periodo escolar y solicita reinscribirse a una carga menor a la mínima, deberá presentar por escrito una solicitud justificada a la Comisión de Situación Escolar del Consejo Técnico Consultivo Escolar.
+\item Si el resultado de la división referida en la regla de negocio 2, es mayor a la carga media definida en el plan de estudio, esto implica que no podrá concluir sus estudios en el plazo máximo establecido en el plan de estudio, por lo que deberá solicitar ante la Comisión de Situación Escolar del Consejo General Consultivo la autorización de reinscripción y, en su caso, ampliación de plazo para la conclusión del plan de estudio.
+\item Un profesor no puede tener más de 1 materia en el mismo horario.
+\item Un profesor sólo puede ser asignado a materias del área del conocimiento correspondiente a los conocimientos del mismo.
+\item Una materia no puede asignarse al mismo grupo más de una vez.
+\item En un mismo grupo no puede haber 2 o mas materias con el mismo horario.
+\item Los créditos de una unidad de aprendizaje van de 1.5 a 13.0
+\item El Alumno no podrá inscribir en un mismo periodo dos o más materias con el mismo nombre.
+\item El Alumno no podrá inscribir en un mismo periodo dos o más materias con el mismo horario. 
+\item El periodo de reinscripciones deberá de ser de al menos 3 días de duración.
+\end{enumerate}
+\section{Mensajes}
+\subsection{Mensajes de Alerta}
+\begin{enumerate}[{MA} 1.]
+\item ¿Estás seguro al dar de baja la materia seleccionada?
+\item ¿Estás seguro que quieres finalizar tu inscripción?
+\item No cuentas con materias inscritas en este momento
+\item ¿Deseas inscribir otra materia?
+\item No tienes grupos-materias asignados en este semestre.
+\item No hay alumnos inscritos <<grupo seleccionado>> - <<materia seleccionada>> aún.
+\end{enumerate}
+\subsection{Mensajes de Confirmación}
+\begin{enumerate} [{MC} 1.]
+\item El <<registro actual>> se registró correctamente.
+\item Se ha enviado un correo para la restauración de la contraseña al correo asociado con la cuenta.
+\item Se actualizaron los datos correctamente.
+\item Se generaron todas las citas de inscripción correctamente.
+\item Se concluyó la inscripción correctamente.
+\item Se registró la solicitud de dictamen de manera correcta.
+\item Se agregó correctamente el tipo de horario
+\end{enumerate}
+\newpage
+\subsection{Mensajes de Error}
+\begin{enumerate}[{ME} 1.]
+\item Se dejaron campos obligatorios en blanco
+\item El correo está registrado en otra cuenta
+\item Lo sentimos, el número de boleta ya fue asignado a otro alumno
+\item El número de empleado ya fue asignado a otra cuenta
+\item No hay cuenta asociada a este usuario. Ingrese un usuario válido
+\item No hay materias registradas
+\item No hay profesores del área registrados
+\item No hay grupos registrados
+\item No hay horarios registrados
+\item No se aceptan duplicados de materias en un mismo grupo
+\item No se aceptan duplicados de horarios para un mismo profesor
+\item El horario no está disponible, seleccione otro
+\item No se generaron todas la citas de reinscripción correctamente
+\item El número de boleta no existe.
+\item Lo sentimos, ya no hay cupo
+\item Se genera un traslape de materias, por favor escoge la materia en otro horario
+\item Ya has agregado una materia con el mismo nombre
+\item Ya no cuenta con mas periodos escolares para concluir su carrera. Favor de checar su situación académica
+\item La materia ya ha sido cursada y aprobada, no es posible inscribirla.
+\item La cita de reinscripción expiró
+\item No se han seleccionado materias
+\item El grupo ya ha sido registrado, por favor ingrese otro valor.
+\item La búsqueda no obtuvo resultados.
+\item La materia ya ha sido recursada, no puedes inscribirla de nuevo.
+\item No se encuentra en el rango de créditos.
+\item La fecha de fin del periodo de reinscripciones debe ser posterior a la fecha de inicio.
+\item La hora de fin por día del periodo de reinscripciones debe ser posterior a la hora de inicio.
+\item El periodo de reinscripciones debe ser de al menos 3 días.
+\item No se encontraron resultados.
+\item El grupo ingresado no existe.
+\item Extiende este texto para que tenga 6 caracteres o más (actualmente usas <<número de caracteres ingresados>> carácter).
+\item El usuario o la contraseña son incorrectos.
+\item Haz coincidir el formato solicitado.
+\item Ya se tiene registrado un horario con este nombre
+\item Completa este campo
+\item Utiliza un formato que coincida con el solicitado <<formato solicitado>>
+\item Incluye un signo ''@''  en la dirección de correo electrónico. La dirección <<dirección actual>> no incluye el signo ''@''
+\item Introduce texto detrás del signo ''@''. La dirección <<dirección actual>> esta incompleta.
+\item El RFC ya existe.
+\item Contraseña incorrecta
+\item Las contraseñas no coinciden
+\end{enumerate} 

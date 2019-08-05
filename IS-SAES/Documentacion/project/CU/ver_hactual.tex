@@ -1,0 +1,50 @@
+\newpage
+\section{Caso de Uso Ver Horario Actual}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Ver Horario Actual\\
+\hline
+\textbf{TIPO} & Secundario\\
+\hline
+\textbf{DESCRIPCIÓN} & El alumno consulta el horario con el que está actualmente inscrito.\\
+\hline
+\textbf{ENTRADAS} & Ninguno\\
+\hline
+\textbf{SALIDAS} & El sistema mostrará el horario actual del alumno en cuestión en pantalla, junto con algunos de sus datos generales (número de boleta y nombre completo).\\
+\hline
+\textbf{PRECONDICIONES} & El alumno debe haber iniciado sesión.\\ & El alumno debe estar inscrito en el semestre en cuestión.\\
+\hline
+\textbf{POSTCONDICIONES} & El sistema muestra el horario actual del alumno en cuestión junto con algunos de sus datos generales (número de boleta y nombre completo).\\
+\hline
+\textbf{SITUACIONES DE ERROR} & Ninguno\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No aplica.\\
+\hline
+\textbf{ACTORES} & Alumno\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Alerta}: Se presenta en caso de que el alumno no esté inscrito en el semestre actual: MA.3\\
+\hline
+\textbf{AUTOR} & Medina Luqueño Ana Ximena\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como alumno.
+    \item El usuario selecciona la opción “Ver horario actual” en el menú de opciones.
+    \item *El sistema valida que el número de materias inscritas por el alumno sea mayor a 0. \textbf{[Trayectoria 1]}
+    \item *El sistema despliega el horario del alumno.
+    \item Fin del caso de uso.
+\end{enumerate}
+\newpage
+\noindent
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El alumno no tiene materias inscritas.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de alerta MA.3.
+    \item Regresa al paso 5 de la trayectoria principal.
+    \item Fin de la trayectoria. 
+\end{enumerate}

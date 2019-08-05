@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[top=0.70in, bottom=0.70in, left=0.8in,right=0.80in]{geometry} % 
+\usepackage[pdftex]{graphicx} %for embedding images
+\usepackage[%dvips, % commented for pdflatex
+bookmarks,  colorlinks=false]{hyperref}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+\usepackage{verbatim}
+\usepackage[final]{pdfpages} 
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{pslatex}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[font=small,labelfont=bf]{caption}
+\def\figurename{\textbf{Figure }}
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{%
+\fancyfoot[L]{\emph{Ingeniería de Software}} % except the center
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+}
+\pagestyle{fancy}
+\rhead{\emph{Sistema de Administraci\'on Escolar}}
+\fancyfoot[LO,LE]{\emph{Ingenier\'ia de Software}}
+\cfoot{}
+\fancyfoot[RO, RE]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{0pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=0,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+\pgfpagesuselayout{boxed}
+\setlength{\parindent}{1cm}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} 
+
+%%Cuadritos
+\usepackage{enumitem,amssymb}
+\newlist{checklist}{itemize}{2}
+\setlist[checklist]{label=$\square$}
+%%Cuadritos
+
+\begin{document}
+\tracingall
+\renewcommand\bibname{Referencias Bibliográficas}
+\lhead{ }
+
+%\input{project/portada.tex}
+\newpage
+%\input{project/contraportada.tex}
+\newpage
+\pagenumbering{roman}
+\pagestyle{empty}
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\tableofcontents
+%\cleardoublepage
+
+\pagestyle{fancy}
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{31}
+\chapter{}
+\chapter{}
+\input{project/Pruebas.tex}
+\end{document}

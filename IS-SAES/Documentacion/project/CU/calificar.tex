@@ -1,0 +1,78 @@
+\newpage
+\section{Caso de Uso Calificar}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Calificar\\
+\hline
+\textbf{TIPO} & Secundario\\
+\hline
+\textbf{DESCRIPCIÓN} & El profesor le otorga una calificación al alumno al final del semestre.\\
+\hline
+\textbf{ENTRADAS} & Calificación: Selección de una lista numérica (0 a 10)\\ & Forma de Evaluación: Selección de una lista (Ordinario/Extraordinario)\\
+\hline
+\textbf{SALIDAS} & Se muestra un mensaje de confirmación en caso de que los datos se hayan guardado correctamente.\\ & Se muestra un mensaje de error correspondiente dependiendo de la situación que se presente.\\
+\hline
+\textbf{PRECONDICIONES} & El registro de evaluaciones esté activado, tener grupos, tener alumnos\\
+\hline
+\textbf{POSTCONDICIONES} & Se guardan las calificaciones establecidas para cada uno de los alumnos.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & Se registro el tipo de evaluación pero no la calificación\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se registran los datos.\\
+\hline
+\textbf{ACTORES} & Profesor\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Alerta}: Se presenta cuando no a todos los alumnos se les otorgó una calificación: MA.5\\ & \textbf{Mensaje de Confirmación}: Se presenta cuando todos los datos se almacenaron correctamente: MC.1\\ & \textbf{Mensajes de Error}: Se presenta cuando se registró el tipo de evaluación pero no la calificación: ME.1\\
+\hline
+\textbf{AUTOR} & Hernández Pineda Miguel Angel\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+\item El usuario inicia el caso de uso ver lista de alumnos.
+\item El usuario se dirige a la columna de calificación en la tabla de los alumnos inscritos.
+\item El usuario selecciona una calificación para el alumno.
+\item El usuario se dirige a la columna de Tipo de Evaluación.
+\item El usuario selecciona un tipo de evaluación para el alumno.
+\item El usuario selecciona da clic en el botón terminar. \textbf{[Trayectoria 1]}
+\item *El sistema valida que se haya seleccionado calificación tanto como tipo de evaluación. \textbf{[Trayectoria 2]} \textbf{[Trayectoria 3]}
+\item *El sistema guarda la información en la base de datos.
+\item Se muestra el mensaje de confirmación MC.1. 
+\item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: No a todos los alumnos se les asigna una calificación.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de alerta MA.5.
+\item El usuario da clic en el botón aceptar \textbf{[Trayectoria 4]}
+\item Regresa al punto 7 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: Se seleccionó una calificación pero no el tipo de evaluación.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.1.
+\item *El sistema marca de color rojo los campos que se dejaron en blanco de tipo de evaluación.
+\item Regresa al punto 5 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: Se seleccionó una tipo de evaluación pero no la calificación.
+\begin{enumerate}
+\item *El sistema muestra el mensaje de error ME.1.
+\item *El sistema marca de color rojo los campos que se dejaron en blanco de calificación.
+\item Regresa al punto 3 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: El usuario dío clic al botón cancelar del mensaje de alerta.
+\begin{enumerate}
+\item *El sistema cierra el mensaje de alerta.
+\item Regresa al punto 6 de la trayectoria principal.
+\item Fin de la trayectoria.
+\end{enumerate}

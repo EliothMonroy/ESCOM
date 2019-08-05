@@ -1,0 +1,61 @@
+\newpage
+\section{Caso de Uso Ver Lista de Alumnos}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Ver Lista de Alumnos\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El profesor consulta la lista de alumnos inscritos en cada clase impartida por el mismo.\\
+\hline
+\textbf{ENTRADAS}  & Grupo y materia: Opción seleccionada desde un combobox con los pares grupo-materia asignados para el profesor en el semestre actual.  \\
+\hline
+\textbf{SALIDAS} & El sistema mostrará la lista de alumnos inscritos en la clase seleccionada anteriormente con su número de boleta y nombre.\\
+\hline
+\textbf{PRECONDICIONES} & El profesor debe haber iniciado sesión.
+                        \\ & El profesor debe tener grupos-materias asignadas en el semestre en cuestión.\\
+\hline
+\textbf{POSTCONDICIONES} & No aplica.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & Ninguno.\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No aplica.\\
+\hline
+\textbf{ACTORES} & Profesor\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensajes de Alerta:}
+\\& En caso de que el profesor no tenga grupos asignados en el semestre actual: MA.5.
+\\& En caso de que en la clase seleccionada no haya alumnos inscritos: MA.6.\\
+\hline
+\textbf{AUTOR} & Medina Luqueño Ana Ximena\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema como profesor.
+    \item El usuario selecciona la opción “Ver grupos” en el menú de opciones.
+    \item *El sistema valida que el número de clases (grupos-materias) asignadas al profesor sea mayor a 0. \textbf{[Trayectoria 1]}
+    \item El usuario selecciona la clase (grupo-materia) de la que quiera checar los alumnos en lista.
+    \item *El sistema valida que el número de alumnos inscritos en la clase seleccionada sea mayor a 0. \textbf{[Trayectoria 2]}
+    \item *El sistema despliega la lista de alumnos inscritos (número de boleta y nombre) en la clase seleccionada asignada al profesor.
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición:} El profesor no tiene clases (grupos-materias) asignadas.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de alerta MA5.
+    \item Regresa al punto 7 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición:} La clase asignada al profesor no tiene alumnos inscritos.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de alerta MA6.
+    \item Regresa al punto 7 de la trayectoria principal.
+    \item Fin de la trayectoria. 
+\end{enumerate}

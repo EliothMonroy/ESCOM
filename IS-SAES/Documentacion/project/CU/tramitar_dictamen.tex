@@ -1,0 +1,43 @@
+\newpage
+\section{Caso de Uso Tramitar Dictamen}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+    \hline
+    \textbf{NOMBRE} & Tramitar Dictamen\\
+    \hline
+    \textbf{TIPO} & Primario\\
+    \hline
+    \textbf{DESCRIPCIÓN} & El Alumno que presente una o más materias desfasadas por primera vez, puede tramitar un dictamen para poderse inscribir.\\
+    \hline
+    \textbf{ENTRADAS} & Ninguna.\\
+    \hline
+    \textbf{SALIDAS} & Mensaje de confirmación sobre registro de dictamen exitoso.\\
+    \hline
+    \textbf{PRECONDICIONES} & El Alumno debe de tener una o más materias desfasadas por primera vez.\\
+    \hline
+    \textbf{POSTCONDICIONES} & El estado del Alumno cambia de no inscrito a inscrito.\\
+    \hline
+    \textbf{SITUACIONES DE ERROR} & No aplica.\\
+    \hline
+    \textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} &  No aplica.\\
+    \hline
+    \textbf{ACTORES} & Alumno\\
+    \hline
+    \textbf{MENSAJES} & \textbf{Mensaje de error}: No aplica.
+    \newline \textbf{Mensaje de confirmación}: Se presenta cuando el dictamen fue registrado correctamente: MC.7.\\
+    \hline
+    \textbf{AUTOR} & Monroy Martos Elioth\\
+    \hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario accede al sistema como Alumno.
+	%\ref{Figura1}
+	\item El Alumno selecciona la opción <<Inscribir dictamen>> en la sección <<Dictamen>> figura (3.19).
+	\item El Alumno presiona el botón <<Inscribir dictamen>>.
+	\item *El sistema registra el dictamen que solicita el Alumno y cambia el estado del mismo a inscrito.
+	\item *El sistema notifica al Alumno sobre el registro exitoso y le informa que ahora puede proceder con la reinscripción.
+	\item Fin de caso de uso.
+\end{enumerate} 

@@ -1,0 +1,251 @@
+body{
+    background-color: rgba(0, 93, 147, 0.02);
+    
+}
+
+.section-fixed{
+    background-color: white;
+    margin-top: 8em;
+    height: 28em;
+    max-width: 50%;
+    padding: 2em 2em 2.5em 2em;
+    box-shadow: 0px 0px 10px #d1d1d1;
+}
+
+.s-fixed{
+    height: 32em;
+}
+
+.section-seleccion-perfil{
+    margin-top: 10em;
+}
+
+.perfil-seleccion{
+    margin-bottom: 4em;
+}
+
+#bg-video{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 0;
+}
+
+.container-relative{
+    position: relative;
+    z-index: 2;
+    margin-top: 10em;
+}
+
+.button-first {
+    margin-bottom: 1em;
+}
+
+.header-fixed {
+    border-bottom: none;
+    margin-bottom: 1em;
+}
+
+.header-logo{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 7.5rem;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    color: white;
+    text-shadow: -1px -1px black, 1px 1px black, 5px 5px black;
+}
+.header-logo:hover{
+    text-decoration: none;
+    font-size: 7.5rem;
+}
+
+.lel{
+    border: none;
+    box-shadow: 0px .2px 25px white;
+}
+
+.lel a{
+    font-size: 2em;
+}
+
+.bar-fixed{
+    padding: .5em;
+}
+
+.container-fixed{
+    margin-top: .5em;
+}
+
+.container-margin{
+    margin-top: 4.5em;
+}
+
+.shadow{
+    box-shadow: 0px 0px 10px #d1d1d1;
+}
+
+.img-height{
+    height: 6.5em;
+}
+
+.li-padding{
+    padding: 2.5em 2em;
+}
+
+.legend-lel{
+    border: none;
+}
+.advertencia{
+    font-size: 1.5rem;
+    color: yellow;
+}
+´
+
+.div-fondo{
+    background-color: rgba(0, 93, 147, 0.62);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header-logo-fixed{
+    text-shadow: -1px -1px black, 1px 1px black, 3px 3px black;
+    font-size: 2.2em;
+}
+
+.header-logo-fixed:hover{
+    color: white;
+    font-size: 2.2em;
+}
+
+.color-bar{
+    background-color: #337ab7;
+}
+
+.margin-btn{
+    margin: .5em;
+}
+
+.btn-lel{
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+}
+
+.perfil-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-container-child{
+    width: 160px;
+    height: 160px;
+    margin: 1em;
+}
+
+.icon-fixed a{
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.icon-fixed a:hover{
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.icon-fixed a:focus{
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.contenedor-menu{
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    color: #337ab7;
+}
+
+.contenedor-menu-titulo{
+    margin: 4.5em 0 2em 0;
+    padding: .5em;
+    font-size: 1.5em;
+}
+
+.ocultar{
+    -ms-transform: translate(-300px, 0);
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    -ms-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.mover{
+    -ms-transform: translate(0px, 0);
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    -ms-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.rotar{
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.regresar{
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -ms-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.lista-contenedor-lel{
+    padding: 0;
+    height: 45%;
+    max-height: 400px;
+}
+
+.div-bueno{
+    height: 45%;
+    max-height: 400px;
+    overflow-y:scroll;
+}
+
+.elemnto{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 1em .5em 1em 3em;
+    border-bottom: solid;
+    border-color: rgba(128, 128, 128, 0.32);
+    border-width: thin;
+    cursor: pointer;
+}
+
+.elemnto:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.generos-p{
+    padding: 0 0 0 1em;
+}
+.inline{
+    display: inline-block;
+}

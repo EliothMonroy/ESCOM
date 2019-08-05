@@ -1,0 +1,80 @@
+\newpage
+\section{Caso de Uso Ver Alumno}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Ver Alumnos\\
+\hline
+\textbf{TIPO} & Secundario\\
+\hline
+\textbf{DESCRIPCIÓN} & El analista busca al alumno por su numero de boleta y se despliegan los datos generales de este, así como las materias que tiene inscritas actualmente. En temporada de inscripciones están habilitadas las opciones de inscribir y dar de baja materias.\\
+\hline
+\textbf{ENTRADAS} & Número de Boleta: Números con longitud de 10 dígitos\\
+\hline
+\textbf{SALIDAS} & Datos Generales del alumno, así como su inscripción actual.\\ & En caso de no encontrar el número de boleta, se mostrará un mensaje de error\\
+\hline
+\textbf{PRECONDICIONES} & El alumno debe estar registrado en el sistema.\\
+\hline
+\textbf{POSTCONDICIONES} & Se muestran los datos del alumno en la pantalla.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & El número de boleta no se encuentra en el sistema.\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & Se muestra un mensaje en la pantalla informando que no hay resultados para el número de boleta especificado.\\
+\hline
+\textbf{ACTORES} & Analista\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensaje de Alerta}: Se presenta cuando en temporada de inscripciones el analista da click en dar de baja: MA.1\\ & \textbf{Mensajes de Error}: Se presentan en los siguientes casos: \begin{itemize}
+\item Cuando el número de boleta no se encuentra en el sistema: ME.18
+\item El formato del numero de boleta es incorrecto: ME.2
+\end{itemize}\\
+\hline
+\textbf{AUTOR} &  Hernández Pineda Miguel Angel\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El analista ingresa al sistema.
+    \item El analista da click en la opción <<Alumno>> en la sección Administrar. (Figura 3.16)
+    \item El analista ingresa el numero de boleta en el campo numero de boleta. \textbf{[Trayectoria 1]}
+    \item El analista da click en el ícono de buscar. \textbf{[Trayectoria 2]}
+    \item *El sistema despliega la información del alumno con ese número de boleta. \textbf{[Trayectoria 3]} \textbf{[Trayectoria 4]}
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El número de boleta no se encuentra en la base de datos.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.18.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El formato del número de boleta ingresado es incorrecto.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.2.
+    \item Regresa al punto 3 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 3}\\
+\textbf{Condición}: En temporada de inscripciones, el analista da click en inscribir.
+\begin{enumerate}
+    \item *El sistema carga el formulario de reinscripción (Figura 3.10).
+    \item Fin del caso de uso.
+\end{enumerate}
+\large{Trayectoria 4}\\
+\textbf{Condición}: En temporada de inscripciones, el analista da click en la opcion <<dar de baja>> de una materia.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de alerta MA.1.
+    \item El usuario da click en la opción <<Aceptar>> del cuadro de diálogo. \textbf{[Trayectoria 5]}
+    \item La materia se da de baja.
+    \item Fin de la trayectoria.
+\end{enumerate}
+\large{Trayectoria 5}\\
+\textbf{Condición}: El analista le da click a la opción cancelar del cuadro de  diálogo.
+\begin{enumerate}
+    \item *El sistema cierra el cuadro de dialogo.
+    \item Fin de la trayectoria.
+\end{enumerate}

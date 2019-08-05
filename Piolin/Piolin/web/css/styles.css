@@ -1,0 +1,330 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.border-blue{
+    border: solid;
+    color: #00ccff;
+}
+
+p{
+  font-family: sans-serif;
+  font-size: 10%;
+  font-style: italic;
+}
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password], input[type=email]{
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+/*propiedades del registro*/
+.registro-container{
+    color:white;
+    padding-top: 1%;
+    padding-bottom: 35%;
+    vertical-align:middle;
+
+    margin:auto; /*conflicto visual XD*/
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+.registrate-container{
+    margin-left: 31%;
+    width: 160%;
+}
+
+.imagen-seleccion-container{
+
+    float:left;
+}
+
+/*botones de la barra de navegacion*/
+
+
+
+.button1 {
+    -webkit-transition-duration: 0.4s;
+    background-color: #5AAFE6; 
+    color: white; 
+    margin:auto;
+    transition-duration: 0.4s;
+}
+
+.imagen-container-logo{
+    border-radius:15px;
+    height:3.5em;
+    width:3.5em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:.5em;
+    padding-right:.5em;
+}
+
+.imagen-container-perfil{
+    border-radius:25px;
+    height:3.5em;
+    width:3.5em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:.5em;
+    padding-right:.5em;
+}
+
+/*diseño de cambiar imagen*/
+
+.table-container{
+    border-radius:5%;
+    width: 60%;
+    height: auto;
+
+    background-color: white;
+    
+}
+
+.btnimagen-container{
+    margin-left: 20px;
+}
+
+/*diseño inicio*/
+
+.tweets-container{
+    float:left;
+    width: 70%;
+    margin-left: 2%;
+    display: block;
+}
+
+.topicos-container{
+   float:right;
+    margin-right: 10%;
+    width: 15%;
+    display: inline-block;
+}
+
+.text-container{
+    margin:auto;
+    height:9em;
+    width: 100%;
+    border-style:solid;
+    border-radius: 6px;
+    border-color:#5AAFE6;
+}
+
+.text-container-cambiar-nombre{
+    margin:auto;
+    height:2em;
+    width: 100%;
+    border-style:solid;
+    border-radius: 6px;
+    border-color:#5AAFE6;
+    margin-bottom:2em;
+}
+
+.imagen-container-perfil-tweet{
+    border-radius:25px;
+    height:4.5em;
+    width:4.5em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:.5em;
+    padding-right:.5em;
+}
+
+/*pop up tweet*/
+/****** LOGIN MODAL ******/
+.loginmodal-container-tweet {
+    border-radius: 6px;
+  padding: 30px;
+  max-width: 650px;
+  width: 100% !important;
+  background-color:#CEE3F6;
+  margin: 0 auto;
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+
+}
+
+/*sticky navbar*/
+.active {
+    color: #fff !important;
+    text-decoration: underline !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.previous {
+text-align: left;
+}
+
+.next {
+text-align:center;
+}
+
+/*retweet*/
+.imagen-container-retweet{
+    border-radius:100px;
+    height:5.5em;
+    width:5.5em;
+    margin-left:0em;
+    padding-top:-2em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-container-retweet{
+    margin:auto;
+    height:9em;
+    width: 100%;
+    border-color:white; 
+    border-style:solid;
+    border-radius:2px;
+}
+
+.rows{
+    display: table;
+    table-layout: fixed; /*Optional*/
+    border-spacing: 1px; /*Optional*/
+}
+
+.imagen-container-perfiles{
+    border-radius:100px;
+    height:7.5em;
+    width:7.5em;
+    margin-left:-10em;
+    padding-top:-2em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.imagen-container-inicio{
+    border-radius:100px;
+    height:7.5em;
+    width:7.5em;
+    margin-left:-10em;
+    padding-top:-2em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}

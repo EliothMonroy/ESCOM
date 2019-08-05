@@ -1,0 +1,79 @@
+\newpage
+\section{Caso de Uso Iniciar Sesión}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+	\hline
+	\textbf{NOMBRE} & Iniciar Sesión\\
+	\hline
+	\textbf{TIPO} & Primario\\
+	\hline
+	\textbf{DESCRIPCIÓN} & El usuario ingresa su ID y su contraseña correspondiente para ingresar al sistema.\\
+	\hline
+	\textbf{ENTRADAS} & ID de usuario y contraseña.\\
+	\hline
+	\textbf{SALIDAS} & Mensaje de Error.\\
+	\hline
+	\textbf{PRECONDICIONES} & Ninguna.\\
+	\hline
+	\textbf{POSTCONDICIONES} & Ninguna\\
+	\hline
+	\textbf{SITUACIONES DE ERROR} 
+	&
+	El ID o contraseña no son correspondientes.\newline
+	EL usuario quiere enviar campos vacíos.\newline
+	La contraseña no tiene como mínimo 6 caracteres.\\
+	\hline
+	\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & En espera de ingresar el ID correcto y la contraseña correspondiente al ID.\\
+	\hline
+	\textbf{ACTORES} & Alumno, Jefe de Gestión Escolar (Analista), Analista y Académico.\\
+	\hline
+	\textbf{MENSAJES} 
+	&
+	Mensaje de Error ME.31: Extiende este texto para que tenga 6 caracteres o más (actualmente usas <<número de caracteres ingresados>> carácter).\newline
+	Mensaje de Error ME.32: El usuario o la contraseña son incorrectos.\newline
+	Mensaje de Error ME.37: Completa este campo\\
+	\hline
+	\textbf{AUTOR} & América Berenice Monsalvo Fuentes\\
+	\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario accede a la vista principal del sistema. (Figura 3.1)
+	\item El usuario se dirige a la esquina superior derecha.
+	\item El usuario selecciona Iniciar sesión.
+	\item *EL sistema muestra el campo Usuario y Contraseña. \textbf{[Trayectoria 3]}
+	\item El usuario ingresa su ID de usuario y Contraseña
+	\item El usuario selecciona el botón Entrar
+	\item *El sistema válida la longitud de la contraseña (al menos 6 caracteres). \textbf{[Trayectoria 1]}
+	\item *El sistema busca el ID en la Base de Datos. \textbf{[Trayectoria 2]}
+	\item *El sistema válida que la contraseña corresponda al ID y cumpla con el formato con base a RN 2. \textbf{[Trayectoria 2]}
+	\item *El sistema direcciona a los Datos generales correspondientes al tipo de usuario. (Figura 3.3)
+	\item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+	\large{Trayectoria 1}\\
+	\textbf{Condición:} El ID no existe en la Base de Datos.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.1.
+		\item *Se vuelve al punto 5 de la trayectoria principal.
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 2}\\
+	\textbf{Condición:} La contraseña no corresponde al ID.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.32.
+		\item *El sistema limpia todos los campos.
+		\item *Se vuelve al punto 5 de la trayectoria principal
+		\item Fin de la trayectoria
+	\end{enumerate}
+	\large{Trayectoria 3}\\
+	\textbf{Condición:} Selecciona el botón entrar sin llenar los campo mostrados.
+	\begin{enumerate}
+		\item *El sistema muestra el Mensaje de Error ME.37.
+		\item *Se vuelve al punto 5 de la trayectoria principal
+		\item Fin de la trayectoria
+	\end{enumerate}
+\newpage

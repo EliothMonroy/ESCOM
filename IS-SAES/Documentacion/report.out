@@ -1,0 +1,40 @@
+\BOOKMARK [0][-]{chapter.1}{\301mbito del Software}{}% 1
+\BOOKMARK [0][-]{chapter.2}{An\341lisis de Requerimientos}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Requisitos Funcionales}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Requisitos No Funcionales}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Reglas de Negocio}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Mensajes}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.4.1}{Mensajes de Alerta}{section.2.4}% 7
+\BOOKMARK [2][-]{subsection.2.4.2}{Mensajes de Confirmaci\363n}{section.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.4.3}{Mensajes de Error}{section.2.4}% 9
+\BOOKMARK [0][-]{chapter.3}{Dise\361o de las Interfaces}{}% 10
+\BOOKMARK [0][-]{chapter.4}{Diagrama de Casos de Uso}{}% 11
+\BOOKMARK [0][-]{chapter.5}{Descripci\363n de Casos de Uso}{}% 12
+\BOOKMARK [1][-]{section.5.1}{Caso de Uso Iniciar Sesi\363n}{chapter.5}% 13
+\BOOKMARK [1][-]{section.5.2}{Caso de Uso Registrar Alumno}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.3}{Caso de Uso Registrar Acad\351mico}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.4}{Caso de Uso Registrar Materia}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.5}{Caso de Uso Registrar Profesor}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.6}{Caso de Uso Generar Grupo}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.7}{Caso de Uso Registrar Grupo}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.8}{Caso de Uso Modificar Alumno}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.9}{Caso de Uso Editar Profesor}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.10}{Caso de Uso Editar Acad\351mico}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.11}{Caso de Uso Modificar Grupo}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.12}{Caso de Uso: Modificar Materia}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.13}{Caso de Uso Reestablecer contrase\361a}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.14}{Caso de Uso Cambiar Contrase\361a}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.15}{Caso de Uso Ver Alumno}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.16}{Caso de Uso Habilitar Reinscripci\363n}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.17}{Caso de Uso: Buscar Materia}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.18}{Caso de Uso Crear Horario}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.19}{Caso de Uso Editar Horario de Alumno}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.20}{Caso de Uso Reinscribir}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.21}{Caso de Uso Ver Historial Acad\351mico}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.22}{Caso de Uso Ver Estado Actual}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.23}{Caso de Uso Ver Horario Actual}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.24}{Caso de Uso Ver Horario y disponibilidadl}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.25}{Caso de Uso Registrar Horario}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{Diagramas de Secuencia}{}% 38
+\BOOKMARK [0][-]{chapter.7}{Diagramas de Actividad}{}% 39
+\BOOKMARK [0][-]{chapter.8}{Diagramas de Estado}{}% 40

@@ -1,0 +1,48 @@
+\newpage
+\chapter{Pruebas de Desempeño}
+\section{Aspectos Generales}
+\noindent
+Para sistemas de tiempo real es inaceptable que el software se apegue a la funcionalidad requerida pero sin tomar en cuenta la parte del rendimiento del mismo. Por este motivo existen las pruebas de rendimiento que se diseñan para poner a prueba dicha característica dentro del marco de un sistema integrado. Según Pressman \cite{press} \textit{"Las pruebas de rendimiento requieren de instrumentación de hardware y software"}, podemos interpretar esto como que es necesario medir la utilización de los recursos (memoria, ciclos del procesador, etc) de forma meticulosa.
+Las pruebas de rendimiento se usan para descubrir problemas de rendimiento que pueden ser resultado de: falta de recursos, red con ancho de banda o conexión inadecuada, capacidades de base de datos inadecuadas, capacidades de sistema operativo deficientes o débiles, funcionalidad del sistema diseñado y otros conflictos de hardware o software que pueden conducir a un rendimiento degradado. La intención es doble:
+\begin{enumerate}
+    \item Comprender cómo responde el sistema conforme aumenta la carga(es decir, número de usuarios, número de transacciones o volumen de datos global)
+    \item Recopilar mediciones que conducirán a 
+modificaciones de diseño para mejorar el rendimiento
+\end{enumerate}
+\section{Objetivos}
+\noindent
+Las pruebas de rendimiento se diseñan para simular situaciones de carga del mundo real. Conforme aumenta el número de usuarios simultáneos del sistema el número de transacciones en línea o la cantidad de datos (descargados o subidos), las pruebas de rendimiento ayudarán a responder las siguientes preguntas:
+\begin{itemize}
+    \item ¿En qué punto (en términos de usuarios, transacciones o carga de datos) el rendimiento 
+se vuelve inaceptable?
+    \item ¿Qué componentes del sistema son responsables de la degradación del rendimiento?
+    \item ¿Cuál es el tiempo de respuesta promedio para los usuarios bajo diversas condiciones de 
+carga?
+    \item ¿La degradación del rendimiento tiene impacto sobre la seguridad del sistema?
+\end{itemize}
+Para desarrollar respuestas a estas preguntas, se realizan dos tipos diferentes de pruebas de rendimiento, la prueba de carga examina la carga del mundo real en varios niveles de carga y en varias combinaciones, por otro lado, la prueba de esfuerzo fuerza a aumentar la carga hasta el punto de rompimiento para determinar cuánta capacidad puede manejar el entorno del sistema.
+\section{Estrategias de Prueba}
+\subsection{Prueba de carga}
+\noindent
+La intención de la prueba de carga es determinar cómo responderá el sistema y su entorno a varias condiciones de carga. Conforme avanzan las pruebas, las permutas de las siguientes variables definen un conjunto de condiciones de prueba:
+\begin{itemize}
+    \item \textbf{N} Número de usuarios concurrentes
+    \item \textbf{T} Número de transacciones en línea por unidad de tiempo
+    \item \textbf{D} Carga de datos procesados por el servidor en cada transacción
+\end{itemize}
+En todo caso, dichas variables se definen dentro de fronteras operativas normales del sistema. Conforme se aplica cada condición de prueba, se recopila una o más de las siguientes medidas: respuesta de usuario promedio, tiempo promedio para descargar una unidad estandarizada de datos y tiempo promedio para procesar una transacción.\\
+La prueba de carga también puede usarse para valorar las velocidades de conexión recomendadas para los usuarios del sistema. El rendimiento global, P, se calcula de la forma siguiente:
+\begin{equation}
+    P= N * T * D
+\end{equation}
+\subsection{Prueba de esfuerzo}
+\noindent
+La prueba de esfuerzo es una continuación de la prueba de carga, pero en esta instancia las variables N, T y D se fuerzan a satisfacerse y luego se superan los límites operativos. La intención de estas pruebas es responder a cada una de las siguientes preguntas:
+\begin{itemize}
+    \item ¿Las transacciones se pierden conforme la capacidad se excede?
+    \item ¿La integridad de los datos resulta afectada conforme la capacidad se excede?
+    \item Si el sistema falla, ¿cuánto tiempo tardará en regresar en línea?
+    \item ¿Ciertas funciones del sistema quedan descontinuadas conforme la capacidad alcanza el nivel de 80 o 90 por ciento?
+\end{itemize}
+A una variación de las pruebas de esfuerzo en ocasiones se le conoce como prueba pico/rebote, en este régimen de pruebas, la carga alcanza un pico de capacidad, 
+luego se baja rápidamente a condiciones operativas normales y después alcanza de nuevo un pico. Al rebotar la carga del sistema, es posible determinar cuán bien el servidor puede ordenar los recursos para satisfacer una demanda muy alta y entonces liberarlos cuando reaparecen condiciones normales.

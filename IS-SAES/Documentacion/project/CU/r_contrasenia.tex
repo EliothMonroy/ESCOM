@@ -1,0 +1,79 @@
+\newpage
+\section{Caso de Uso Reestablecer contraseña}
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{NOMBRE} & Reestablecer contraseña\\
+\hline
+\textbf{TIPO} & Primario\\
+\hline
+\textbf{DESCRIPCIÓN} & El usuario solicita al sistema restaurar su contraseña en caso de haberla olvidado.\\
+\hline
+\textbf{ENTRADAS} & Usuario: \begin{itemize}
+    \item En caso de ser un alumno, su número de boleta: Entero positivo de 10 dígitos con el formato de número de boleta.
+    \item En caso de ser un académico o analista de gestión escolar, su RFC: Cadena de 13 caracteres con el formato de RFC.
+\end{itemize}\\
+\hline
+\textbf{SALIDAS} & El sistema enviará un correo con un hipervínculo de restauración de contraseña a la dirección de correo al que está vinculada la cuenta del usuario.\\ & El sistema mostrará el mensaje de alerta, indicando que el correo ha sido enviado a la dirección de correo vinculada.\\
+\hline
+\textbf{PRECONDICIONES} & El usuario debe estar registrado en el sistema.\\
+\hline
+\textbf{POSTCONDICIONES} & Se inicia el caso de uso “Cambiar contraseña”.\\
+\hline
+\textbf{SITUACIONES DE ERROR} & Se deja el campo de usuario vacío.\\ & Se quiere reestablecer la contraseña de un usuario que no se encuentra en el sistema.\\
+\hline
+\textbf{ESTADO DEL SISTEMA EN CASO DE ERROR} & No se envía ningún correo con hipervínculo de restauración de contraseña y se muestra un mensaje de error. \\
+\hline
+\textbf{ACTORES} & Alumno, Académica, Analista\\
+\hline
+\textbf{MENSAJES} & \textbf{Mensajes de Confirmación}: Se presentan en los siguientes casos: \begin{itemize}
+    \item Cuando el usuario ingresó un número de boleta válido y registrado en el sistema: MC.2
+    \item Cuando el usuario ingresó un RFC válido y registrado en el sistema: MC.2
+\end{itemize}\\
+\hline
+\end{longtable}
+\newpage
+\begin{longtable}{ | p{6cm} | p{10cm} |}
+\hline
+\textbf{MENSAJES} & \textbf{Mensajes de Error}: Se presentan en los siguientes casos: \begin{itemize}
+    \item Cuando el usuario deja el campo de identificador (número de boleta o RFC) vacío: ME.1
+    \item Cuando el usuario ingresa un identificador (número de boleta o RFC) no válido o no registrado en el sistema: ME.6
+\end{itemize}\\
+\hline
+\textbf{AUTOR} & Medina Luqueño Ana Ximena\\
+\hline
+\end{longtable}
+\vspace*{1cm}
+\noindent
+\Large{PROCEDIMIENTO ESTÁNDAR}
+\large{}
+\begin{enumerate}
+    \item El usuario ingresa al sistema.
+    \item Cargada la pantalla de inicio, selecciona la opción de iniciar sesión.
+    \item Se carga el formulario de login y el usuario selecciona la opción <<Reestablecer contraseña>>.
+    \item Se carga el formulario de restablecimiento de contraseña y el usuario ingresa su identificador (número de boleta para alumno y RFC para académico o analista de gestión escolar.
+    \item El usuario selecciona el botón de Reestablecer Contraseña.
+    \item *El sistema valida que el campo de usuario no esté vacío. \textbf{[Trayectoria 1]}
+    \item *El sistema valido el dato ingresado en el campo de usuario. \textbf{[Trayectoria 2]}
+    \item *El sistema envía un correo con un hipervínculo de restauración de contraseña a la dirección de correo al que está vinculada la cuenta del usuario.
+    \item *El sistema muestra el mensaje de confirmación correspondiente.
+    \item *El sistema redirige a la pantalla de inicio.
+    \item Fin del caso de uso.
+\end{enumerate}
+\vspace*{1cm}
+\Large{PROCEDIMIENTOS ALTERNATIVOS}\\
+\large{Trayectoria 1}\\
+\textbf{Condición}: El usuario envió el formulario con el campo de identificador vacío.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.1.
+    \item Regresa al paso 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+
+\end{enumerate}
+\large{Trayectoria 2}\\
+\textbf{Condición}: El usuario envió el formulario con un usuario no válido.
+\begin{enumerate}
+    \item *El sistema muestra el mensaje de error ME.6.
+    \item *El sistema limpia el campo de usuario.
+    \item Regresa al paso 4 de la trayectoria principal.
+    \item Fin de la trayectoria.
+\end{enumerate}

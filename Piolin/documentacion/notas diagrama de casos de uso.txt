@@ -1,0 +1,4 @@
+*El usuario no registrado solo se puede registrar, de ahí pasa a ser un usuario registrado.
+
+* Consideramos a un repiolinazo como un piolinazo es por eso que Repiolinear es un extends de Piolinear.
+*Se puede hacer busqueda de usuario o de hashtags (topicos), y de la busqueda puedes ver los topicos o meterte al perfil de algún usuario. Pero también eso lo puedes hacer sin necesidad de buscar algo.

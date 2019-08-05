@@ -1,0 +1,3714 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.25)  11 NOV 2017 19:02
+entering extended mode
+**./report.tex
+(report.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/13 v1.2b Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/20 v1.0f Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen113
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count93
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count94
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen114
+\Fld@menulength=\count95
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count96
+\c@Item=\count97
+\c@Hfootnote=\count98
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count99
+\c@bookmark@seq@number=\count100
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2017/08/14 v0.5k Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count101
+\calc@Bcount=\count102
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count103
+\calc@Cskip=\skip46
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen119
+\AM@pageheight=\dimen120
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2017/08/14 v0.5k Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@global@opts=\toks18
+\AM@toc@title=\toks19
+\c@AM@survey=\count104
+\AM@templatesizebox=\box27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pslatex\pslatex.sty"
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen121
+\extrarowheight=\dimen122
+\NC@list=\toks22
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks23
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count106
+\LTcapwidth=\dimen123
+\LT@head=\box30
+\LT@firsthead=\box31
+\LT@foot=\box32
+\LT@lastfoot=\box33
+\LT@cols=\count107
+\LT@rows=\count108
+\c@LT@tables=\count109
+\c@LT@chunks=\count110
+\LT@p@ftn=\toks24
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@tempdima=\dimen127
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
+)
+\c@ContinuedFloat=\count111
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
+)
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 30.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 32.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen131
+\pgfutil@tempdimb=\dimen132
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box34
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen133
+\pgf@y=\dimen134
+\pgf@xa=\dimen135
+\pgf@ya=\dimen136
+\pgf@xb=\dimen137
+\pgf@yb=\dimen138
+\pgf@xc=\dimen139
+\pgf@yc=\dimen140
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count112
+\c@pgf@countb=\count113
+\c@pgf@countc=\count114
+\c@pgf@countd=\count115
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count116
+\pgfsyssoftpath@bigbuffer@items=\count117
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+ex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen141
+\pgfmath@count=\count118
+\pgfmath@box=\box35
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count119
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen142
+\pgf@picmaxx=\dimen143
+\pgf@picminy=\dimen144
+\pgf@picmaxy=\dimen145
+\pgf@pathminx=\dimen146
+\pgf@pathmaxx=\dimen147
+\pgf@pathminy=\dimen148
+\pgf@pathmaxy=\dimen149
+\pgf@xx=\dimen150
+\pgf@xy=\dimen151
+\pgf@yx=\dimen152
+\pgf@yy=\dimen153
+\pgf@zx=\dimen154
+\pgf@zy=\dimen155
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+ode.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen156
+\pgf@path@lasty=\dimen157
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen158
+\pgf@shorten@start@additional=\dimen159
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count120
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen160
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen161
+\pgf@pt@y=\dimen162
+\pgf@pt@temp=\dimen163
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+x"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen164
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen165
+\pgf@sys@shading@range@num=\count121
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box39
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+de.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+ex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box40
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen166
+\pgf@nodesepend=\dimen167
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfpages.sty"
+Package: pgfpages 2011/01/05 ver 0.02
+\pgf@logicalpages=\count122
+\pgf@firstshipout=\count123
+\pgf@lastshipout=\count124
+\pgf@currentshipout=\count125
+\pgf@cpn=\count126
+\pgf@shipoutnextto=\count127
+\pgfphysicalheight=\dimen168
+\pgfphysicalwidth=\dimen169
+\pgfpages@shipoutbox=\box41
+)
+\pgfpages@box@1=\box42
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks35
+\inpenc@posthook=\toks36
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/05/19 3.10 The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-spanish\spanish.ldf"
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2017/05/19 3.10 Babel common definitions
+\babel@savecnt=\count128
+\U@D=\dimen170
+)
+\es@quottoks=\toks37
+\es@quotdepth=\count129
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+)) (report.aux
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 60
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(57.81621pt, 481.87546pt, 57.81621pt)
+* v-part:(T,H,B)=(50.58878pt, 743.8693pt, 50.58878pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=481.87546pt
+* \textheight=743.8693pt
+* \oddsidemargin=-14.45378pt
+* \evensidemargin=-14.45378pt
+* \topmargin=-58.68121pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count130
+\scratchdimen=\dimen171
+\scratchbox=\box43
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen172
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks39
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring OFF on input line 60.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count136
+)
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
+
+(report.out) (report.out)
+\@outlinefile=\write4
+\openout4 = `report.out'.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ (project/portada.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) (project/contraportada.t
+ex
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[2]) (project/objetivo.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+) [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+ (report.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 6.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd"
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 6.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptmcm.fd"
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 6.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxpsycm.fd"
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+ [1
+
+])
+\tf@toc=\write5
+\openout5 = `report.toc'.
+
+ [2]
+(report.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [3
+
+] [4])
+\tf@lof=\write6
+\openout6 = `report.lof'.
+
+ [5] (project/Ambito.tex
+Cap\'{\i }tulo 1.
+
+Overfull \hbox (9.53203pt too wide) in paragraph at lines 2--8
+\OT1/ptm/m/n/14.4 SAES) del Ins-ti-tu-to Po-lit[]ecni-co Na-cio-nal (en ade-lan
+-te IPN) se vol-ver[]a a ha-cer a[]nadien-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \newpage
+             [1
+
+
+]) (project/Analisis.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {An√°lisis de Requerimientos} [2]
+Cap\'{\i }tulo 2.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \item E
+            l sistema le permitir√° al usuario crear diferentes horarios des...
+[3
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+Overfull \hbox (0.9801pt too wide) in paragraph at lines 34--35
+[]\OT1/ptm/m/n/14.4 Accesibilidad, el sis-te-ma ser[]a ac-ce-si-ble des-de cual
+-quier na-ve-ga-dor mo-derno,
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+LaTeX Font Info:    Try loading font information for U+lasy on input line 67.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]) (project/Disenio.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+Cap\'{\i }tulo 3.
+<project/images/1.png, id=597, 1445.4pt x 813.0375pt>
+File: project/images/1.png Graphic file (type png)
+<use project/images/1.png>
+Package pdftex.def Info: project/images/1.png  used on input line 4. on input l
+ine 4.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 4.
+<project/images/2.png, id=598, 1445.4pt x 813.0375pt>
+File: project/images/2.png Graphic file (type png)
+<use project/images/2.png>
+Package pdftex.def Info: project/images/2.png  used on input line 9. on input l
+ine 9.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 9.
+<project/images/15.png, id=599, 1445.4pt x 813.0375pt>
+File: project/images/15.png Graphic file (type png)
+<use project/images/15.png>
+Package pdftex.def Info: project/images/15.png  used on input line 14. on input
+ line 14.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 14.
+<project/images/19.png, id=600, 1445.4pt x 813.0375pt>
+File: project/images/19.png Graphic file (type png)
+<use project/images/19.png>
+Package pdftex.def Info: project/images/19.png  used on input line 19. on input
+ line 19.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 19.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+[10
+
+ <./project/images/1.png> <./project/images/2.png>]
+<project/images/17.png, id=605, 1445.4pt x 813.0375pt>
+File: project/images/17.png Graphic file (type png)
+<use project/images/17.png>
+Package pdftex.def Info: project/images/17.png  used on input line 24. on input
+ line 24.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 24.
+<project/images/16.png, id=606, 1445.4pt x 813.0375pt>
+File: project/images/16.png Graphic file (type png)
+<use project/images/16.png>
+Package pdftex.def Info: project/images/16.png  used on input line 29. on input
+ line 29.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 29.
+<project/images/18.png, id=607, 1445.4pt x 813.0375pt>
+File: project/images/18.png Graphic file (type png)
+<use project/images/18.png>
+Package pdftex.def Info: project/images/18.png  used on input line 34. on input
+ line 34.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 34.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./project/images/15.png> <./project/images/19.png> <./project/images/17.pn
+g>]
+<project/images/20.png, id=613, 1445.4pt x 813.0375pt>
+File: project/images/20.png Graphic file (type png)
+<use project/images/20.png>
+Package pdftex.def Info: project/images/20.png  used on input line 39. on input
+ line 39.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 39.
+<project/images/27.png, id=614, 1445.4pt x 813.0375pt>
+File: project/images/27.png Graphic file (type png)
+<use project/images/27.png>
+Package pdftex.def Info: project/images/27.png  used on input line 44. on input
+ line 44.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 44.
+<project/images/55.png, id=615, 1927.2pt x 1084.05pt>
+File: project/images/55.png Graphic file (type png)
+<use project/images/55.png>
+Package pdftex.def Info: project/images/55.png  used on input line 49. on input
+ line 49.
+Package pdftex.def Info: Requested size: 289.06754pt x 162.60048pt on input lin
+e 49.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12 <./project/images/16.png> <./project/images/18.png> <./project/images/20.pn
+g>]
+<project/images/23.png, id=621, 1445.4pt x 813.0375pt>
+File: project/images/23.png Graphic file (type png)
+<use project/images/23.png>
+Package pdftex.def Info: project/images/23.png  used on input line 54. on input
+ line 54.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 54.
+<project/images/24.png, id=622, 1445.4pt x 813.0375pt>
+File: project/images/24.png Graphic file (type png)
+<use project/images/24.png>
+Package pdftex.def Info: project/images/24.png  used on input line 59. on input
+ line 59.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 59.
+<project/images/21.png, id=623, 1445.4pt x 813.0375pt>
+File: project/images/21.png Graphic file (type png)
+<use project/images/21.png>
+Package pdftex.def Info: project/images/21.png  used on input line 64. on input
+ line 64.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 64.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./project/images/27.png> <./project/images/55.png> <./project/images/23.pn
+g>]
+<project/images/22.png, id=629, 1445.4pt x 813.0375pt>
+File: project/images/22.png Graphic file (type png)
+<use project/images/22.png>
+Package pdftex.def Info: project/images/22.png  used on input line 69. on input
+ line 69.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 69.
+<project/images/25.png, id=630, 1445.4pt x 813.0375pt>
+File: project/images/25.png Graphic file (type png)
+<use project/images/25.png>
+Package pdftex.def Info: project/images/25.png  used on input line 74. on input
+ line 74.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 74.
+<project/images/26.png, id=631, 1445.4pt x 813.0375pt>
+File: project/images/26.png Graphic file (type png)
+<use project/images/26.png>
+Package pdftex.def Info: project/images/26.png  used on input line 79. on input
+ line 79.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 79.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./project/images/24.png> <./project/images/21.png> <./project/images/22.pn
+g>]
+<project/images/12.png, id=636, 1445.4pt x 813.0375pt>
+File: project/images/12.png Graphic file (type png)
+<use project/images/12.png>
+Package pdftex.def Info: project/images/12.png  used on input line 84. on input
+ line 84.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 84.
+<project/images/28.png, id=637, 1445.4pt x 813.0375pt>
+File: project/images/28.png Graphic file (type png)
+<use project/images/28.png>
+Package pdftex.def Info: project/images/28.png  used on input line 89. on input
+ line 89.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 89.
+<project/images/30.png, id=638, 1445.4pt x 813.0375pt>
+File: project/images/30.png Graphic file (type png)
+<use project/images/30.png>
+Package pdftex.def Info: project/images/30.png  used on input line 94. on input
+ line 94.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 94.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./project/images/25.png> <./project/images/26.png> <./project/images/12.pn
+g>]
+<project/images/31.png, id=643, 1445.4pt x 813.0375pt>
+File: project/images/31.png Graphic file (type png)
+<use project/images/31.png>
+Package pdftex.def Info: project/images/31.png  used on input line 99. on input
+ line 99.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 99.
+<project/images/53.png, id=644, 1927.2pt x 1084.05pt>
+File: project/images/53.png Graphic file (type png)
+<use project/images/53.png>
+Package pdftex.def Info: project/images/53.png  used on input line 104. on inpu
+t line 104.
+Package pdftex.def Info: Requested size: 289.06754pt x 162.60048pt on input lin
+e 104.
+<project/images/11.png, id=645, 1445.4pt x 813.0375pt>
+File: project/images/11.png Graphic file (type png)
+<use project/images/11.png>
+Package pdftex.def Info: project/images/11.png  used on input line 109. on inpu
+t line 109.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 109.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./project/images/28.png> <./project/images/30.png> <./project/images/31.pn
+g>]
+File: project/images/12.png Graphic file (type png)
+<use project/images/12.png>
+Package pdftex.def Info: project/images/12.png  used on input line 114. on inpu
+t line 114.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 114.
+<project/images/13.png, id=650, 1445.4pt x 813.0375pt>
+File: project/images/13.png Graphic file (type png)
+<use project/images/13.png>
+Package pdftex.def Info: project/images/13.png  used on input line 119. on inpu
+t line 119.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 119.
+<project/images/14.png, id=651, 1445.4pt x 813.0375pt>
+File: project/images/14.png Graphic file (type png)
+<use project/images/14.png>
+Package pdftex.def Info: project/images/14.png  used on input line 124. on inpu
+t line 124.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 124.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17 <./project/images/53.png> <./project/images/11.png>]
+<project/images/51.png, id=658, 1927.2pt x 1084.05pt>
+File: project/images/51.png Graphic file (type png)
+<use project/images/51.png>
+Package pdftex.def Info: project/images/51.png  used on input line 129. on inpu
+t line 129.
+Package pdftex.def Info: Requested size: 289.06754pt x 162.60048pt on input lin
+e 129.
+<project/images/36.png, id=659, 1445.4pt x 813.0375pt>
+File: project/images/36.png Graphic file (type png)
+<use project/images/36.png>
+Package pdftex.def Info: project/images/36.png  used on input line 134. on inpu
+t line 134.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 134.
+<project/images/33.png, id=660, 1445.4pt x 813.0375pt>
+File: project/images/33.png Graphic file (type png)
+<use project/images/33.png>
+Package pdftex.def Info: project/images/33.png  used on input line 139. on inpu
+t line 139.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 139.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./project/images/13.png> <./project/images/14.png> <./project/images/51.pn
+g>]
+<project/images/34.png, id=666, 1445.4pt x 813.0375pt>
+File: project/images/34.png Graphic file (type png)
+<use project/images/34.png>
+Package pdftex.def Info: project/images/34.png  used on input line 144. on inpu
+t line 144.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 144.
+<project/images/35.png, id=667, 1445.4pt x 813.0375pt>
+File: project/images/35.png Graphic file (type png)
+<use project/images/35.png>
+Package pdftex.def Info: project/images/35.png  used on input line 149. on inpu
+t line 149.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 149.
+<project/images/37.png, id=668, 1445.4pt x 813.0375pt>
+File: project/images/37.png Graphic file (type png)
+<use project/images/37.png>
+Package pdftex.def Info: project/images/37.png  used on input line 154. on inpu
+t line 154.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 154.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <./project/images/36.png> <./project/images/33.png> <./project/images/34.pn
+g>]
+<project/images/38.png, id=673, 1445.4pt x 813.0375pt>
+File: project/images/38.png Graphic file (type png)
+<use project/images/38.png>
+Package pdftex.def Info: project/images/38.png  used on input line 159. on inpu
+t line 159.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 159.
+<project/images/39.png, id=674, 1445.4pt x 813.0375pt>
+File: project/images/39.png Graphic file (type png)
+<use project/images/39.png>
+Package pdftex.def Info: project/images/39.png  used on input line 164. on inpu
+t line 164.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 164.
+<project/images/40.png, id=675, 1445.4pt x 813.0375pt>
+File: project/images/40.png Graphic file (type png)
+<use project/images/40.png>
+Package pdftex.def Info: project/images/40.png  used on input line 169. on inpu
+t line 169.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 169.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./project/images/35.png> <./project/images/37.png> <./project/images/38.pn
+g>]
+<project/images/41.png, id=680, 1445.4pt x 813.0375pt>
+File: project/images/41.png Graphic file (type png)
+<use project/images/41.png>
+Package pdftex.def Info: project/images/41.png  used on input line 174. on inpu
+t line 174.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 174.
+<project/images/42.png, id=681, 1445.4pt x 813.0375pt>
+File: project/images/42.png Graphic file (type png)
+<use project/images/42.png>
+Package pdftex.def Info: project/images/42.png  used on input line 179. on inpu
+t line 179.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 179.
+<project/images/54.png, id=682, 1927.2pt x 1084.05pt>
+File: project/images/54.png Graphic file (type png)
+<use project/images/54.png>
+Package pdftex.def Info: project/images/54.png  used on input line 184. on inpu
+t line 184.
+Package pdftex.def Info: Requested size: 289.06754pt x 162.60048pt on input lin
+e 184.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./project/images/39.png> <./project/images/40.png> <./project/images/41.pn
+g>]
+<project/images/43.png, id=687, 1445.4pt x 813.0375pt>
+File: project/images/43.png Graphic file (type png)
+<use project/images/43.png>
+Package pdftex.def Info: project/images/43.png  used on input line 189. on inpu
+t line 189.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 189.
+<project/images/44.png, id=688, 1445.4pt x 813.0375pt>
+File: project/images/44.png Graphic file (type png)
+<use project/images/44.png>
+Package pdftex.def Info: project/images/44.png  used on input line 194. on inpu
+t line 194.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 194.
+<project/images/45.png, id=689, 1445.4pt x 813.0375pt>
+File: project/images/45.png Graphic file (type png)
+<use project/images/45.png>
+Package pdftex.def Info: project/images/45.png  used on input line 199. on inpu
+t line 199.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 199.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./project/images/42.png> <./project/images/54.png> <./project/images/43.pn
+g>]
+<project/images/46.png, id=695, 1445.4pt x 813.0375pt>
+File: project/images/46.png Graphic file (type png)
+<use project/images/46.png>
+Package pdftex.def Info: project/images/46.png  used on input line 204. on inpu
+t line 204.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 204.
+<project/images/47.png, id=696, 1445.4pt x 813.0375pt>
+File: project/images/47.png Graphic file (type png)
+<use project/images/47.png>
+Package pdftex.def Info: project/images/47.png  used on input line 209. on inpu
+t line 209.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 209.
+<project/images/48.png, id=697, 1445.4pt x 813.0375pt>
+File: project/images/48.png Graphic file (type png)
+<use project/images/48.png>
+Package pdftex.def Info: project/images/48.png  used on input line 214. on inpu
+t line 214.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 214.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./project/images/44.png> <./project/images/45.png> <./project/images/46.pn
+g>]
+<project/images/49.png, id=703, 1445.4pt x 813.0375pt>
+File: project/images/49.png Graphic file (type png)
+<use project/images/49.png>
+Package pdftex.def Info: project/images/49.png  used on input line 219. on inpu
+t line 219.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 219.
+<project/images/50.png, id=704, 1445.4pt x 813.0375pt>
+File: project/images/50.png Graphic file (type png)
+<use project/images/50.png>
+Package pdftex.def Info: project/images/50.png  used on input line 224. on inpu
+t line 224.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 224.
+<project/images/3.png, id=705, 1445.4pt x 813.0375pt>
+File: project/images/3.png Graphic file (type png)
+<use project/images/3.png>
+Package pdftex.def Info: project/images/3.png  used on input line 229. on input
+ line 229.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 229.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./project/images/47.png> <./project/images/48.png> <./project/images/49.pn
+g>]
+<project/images/4.png, id=710, 1445.4pt x 813.0375pt>
+File: project/images/4.png Graphic file (type png)
+<use project/images/4.png>
+Package pdftex.def Info: project/images/4.png  used on input line 234. on input
+ line 234.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 234.
+<project/images/5.png, id=711, 1445.4pt x 813.0375pt>
+File: project/images/5.png Graphic file (type png)
+<use project/images/5.png>
+Package pdftex.def Info: project/images/5.png  used on input line 239. on input
+ line 239.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 239.
+<project/images/6.png, id=712, 1445.4pt x 813.0375pt>
+File: project/images/6.png Graphic file (type png)
+<use project/images/6.png>
+Package pdftex.def Info: project/images/6.png  used on input line 244. on input
+ line 244.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 244.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./project/images/50.png> <./project/images/3.png> <./project/images/4.png>
+]
+<project/images/7.png, id=717, 1445.4pt x 813.0375pt>
+File: project/images/7.png Graphic file (type png)
+<use project/images/7.png>
+Package pdftex.def Info: project/images/7.png  used on input line 249. on input
+ line 249.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 249.
+<project/images/8.png, id=718, 1445.4pt x 813.0375pt>
+File: project/images/8.png Graphic file (type png)
+<use project/images/8.png>
+Package pdftex.def Info: project/images/8.png  used on input line 254. on input
+ line 254.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 254.
+<project/images/9.png, id=719, 1445.4pt x 813.0375pt>
+File: project/images/9.png Graphic file (type png)
+<use project/images/9.png>
+Package pdftex.def Info: project/images/9.png  used on input line 259. on input
+ line 259.
+Package pdftex.def Info: Requested size: 289.07487pt x 162.60461pt on input lin
+e 259.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./project/images/5.png> <./project/images/6.png> <./project/images/7.png>]
+<project/images/editar_horario_alumno_01.jpg, id=724, 963.6pt x 542.025pt>
+File: project/images/editar_horario_alumno_01.jpg Graphic file (type jpg)
+<use project/images/editar_horario_alumno_01.jpg>
+Package pdftex.def Info: project/images/editar_horario_alumno_01.jpg  used on i
+nput line 264. on input line 264.
+Package pdftex.def Info: Requested size: 289.08223pt x 162.60875pt on input lin
+e 264.
+<project/images/editar_horario_alumno_02.jpg, id=725, 963.6pt x 542.025pt>
+File: project/images/editar_horario_alumno_02.jpg Graphic file (type jpg)
+<use project/images/editar_horario_alumno_02.jpg>
+Package pdftex.def Info: project/images/editar_horario_alumno_02.jpg  used on i
+nput line 269. on input line 269.
+Package pdftex.def Info: Requested size: 289.08223pt x 162.60875pt on input lin
+e 269.
+<project/images/editar_horario_alumno_03.jpg, id=726, 963.6pt x 542.025pt>
+File: project/images/editar_horario_alumno_03.jpg Graphic file (type jpg)
+<use project/images/editar_horario_alumno_03.jpg>
+Package pdftex.def Info: project/images/editar_horario_alumno_03.jpg  used on i
+nput line 274. on input line 274.
+Package pdftex.def Info: Requested size: 289.08223pt x 162.60875pt on input lin
+e 274.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <./project/images/8.png> <./project/images/9.png> <./project/images/editar_
+horario_alumno_01.jpg>]) (project/Diagrama.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./project/images/editar_horario_alumno_02.jpg> <./project/images/editar_ho
+rario_alumno_03.jpg>]
+Cap\'{\i }tulo 4.
+<project/images/CU.jpg, id=735, 1294.8375pt x 1080.035pt>
+File: project/images/CU.jpg Graphic file (type jpg)
+<use project/images/CU.jpg>
+Package pdftex.def Info: project/images/CU.jpg  used on input line 4. on input 
+line 4.
+Package pdftex.def Info: Requested size: 543.82805pt x 453.61162pt on input lin
+e 4.
+) (project/casos_de_uso.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+[29
+
+ <./project/images/CU.jpg>]
+Cap\'{\i }tulo 5.
+(project/CU/iniciar_sesion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+[30
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 25--25
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]) (project/CU/registrar_alumno.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 25--25
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 38
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]) (project/CU/registrar_academico.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 26--26
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 30
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+Underfull \vbox (badness 10000) detected at line 43
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]) (project/CU/registrar_materia.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 24--24
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 35
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]) (project/CU/registrar_profesor.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 26--26
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 30
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46]
+Underfull \vbox (badness 10000) detected at line 43
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]) (project/CU/generar_grupo.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\OT1/ptm/m/n/14.4 Turno: Se-lec-ci[]on de una lis-ta (Ma-tu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 25--25
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 38
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]) (project/CU/registrar_grupo.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 28--28
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 32
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
+Underfull \hbox (badness 2189) in paragraph at lines 39--40
+[]\OT1/ptm/m/n/14.4 No hay pro-fe-so-res del []area re-gis-tra-dos:
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 49
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]) (project/CU/modificar_alumno.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 27--27
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+Overfull \hbox (39.47006pt too wide) in paragraph at lines 49--50
+[]\OT1/ptm/m/n/14.4 El usua-rio in-gre-sa el nu-me-ro de bo-le-ta del alumno a 
+rea-li-zar mo-di-fi-ca-cion\OT1/ptm/b/n/14.4 [Trayectoria
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]) (project/CU/editar_profesor.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 35--35
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 48
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61]
+Overfull \hbox (42.83482pt too wide) in paragraph at lines 55--56
+[]\OT1/ptm/m/n/14.4 El usua-rio da click en la op-ci[]on de []Administrar Pro-f
+e-sor[] de la sec-ci[]on []Administrar[]. 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]) (project/CU/editar_academico.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 35--35
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 48
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66]
+Overfull \hbox (11.12083pt too wide) in paragraph at lines 56--58
+[]\OT1/ptm/m/n/14.4 El usua-rio in-gre-sa el RFC del acad[]emi-co a mo-di-fi-ca
+r y pre-sio-na el bot[]on []Buscar[]
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69]) (project/CU/modificar_grupo.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 28--28
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 32
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71]
+Underfull \hbox (badness 2189) in paragraph at lines 39--40
+[]\OT1/ptm/m/n/14.4 No hay pro-fe-so-res del []area re-gis-tra-dos:
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 49
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73]) (project/CU/modificar_materia.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 28--28
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 42
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76]) (project/CU/r_contrasenia.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 24--24
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 33
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78]
+Underfull \vbox (badness 10000) detected at line 44
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]) (project/CU/c_contrasenia.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[80]
+Underfull \vbox (badness 10000) detected at line 21
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 37--37
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[82]
+Underfull \vbox (badness 10000) detected at line 54
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[83]) (project/CU/ver_alumno.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 21--21
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 32
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[85]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[86]) (project/CU/habilitar_reinscripcion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[87]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 28--28
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 43
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[88]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[89]) (project/CU/buscar_materia.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 27--27
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 40
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[91]) (project/CU/crear_horario.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 27--27
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93]
+Overfull \hbox (38.94707pt too wide) in paragraph at lines 48--49
+[]\OT1/ptm/m/n/14.4 El Alumno se-lec-cio-na la op-ci[]on []Crear Ho-ra-rio[] de
+n-tro de la sec-ci[]on []Reinscripci[]on[]. 
+ []
+
+
+Overfull \hbox (65.39531pt too wide) in paragraph at lines 57--58
+[]\OT1/ptm/m/n/14.4 El Alumno in-gre-sa el nom-bre y pre-sio-na el bot[]on []Re
+gistrar[] (Fi-gu-ra 3.50).$[]$ 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[94]) (project/CU/editar_horario_alumno.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[95]
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 33--33
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[96]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[97]
+Underfull \vbox (badness 10000) detected at line 56
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[98]
+Underfull \vbox (badness 10000) detected at line 68
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[99]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[100]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[101]) (project/CU/reinscribir.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[102]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 27--27
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 32--33
+[]\OT1/ptm/m/n/14.4 La ma-te-ria se-lec-cio-na-da no tie-ne cu-po:
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[103]
+Overfull \hbox (31.83322pt too wide) in paragraph at lines 48--49
+[]\OT1/ptm/m/n/14.4 El alumno se-lec-cio-na la op-ci[]on []Reinscripci[]on[] de
+n-tro de la sec-ci[]on []Reinscripci[]on[]
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[104]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[105]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[106]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[107]) (project/CU/historial_academico.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 23--23
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 31
+ []
+
+) (project/CU/ver_eactual.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[109]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 21--21
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 29
+ []
+
+) (project/CU/ver_hactual.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[110]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 21--21
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 29
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[111]) (project/CU/ver_horario_y_disponibilidad.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[112]
+Underfull \hbox (badness 1496) in paragraph at lines 9--10
+\OT1/ptm/m/n/14.4 se-lec-ciono un o va-rios de los si-guien-tes fil-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 21--21
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 29
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[113]) (project/CU/registrar_horario.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[114]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]|\OT1/ptm/b/n/14.4 SITUACIONES DE
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 23--23
+[]|\OT1/ptm/b/n/14.4 ESTADO DEL SIS-TE-MA
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 35
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[115]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[116]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[117]) (project/CU/editar_horario_analista.tex))
+(project/diagramas_secuencia.tex
+Cap\'{\i }tulo 6.
+<project/Secuencia/Iniciar_Sesion.jpg, id=1969, 983.675pt x 959.585pt>
+File: project/Secuencia/Iniciar_Sesion.jpg Graphic file (type jpg)
+<use project/Secuencia/Iniciar_Sesion.jpg>
+Package pdftex.def Info: project/Secuencia/Iniciar_Sesion.jpg  used on input li
+ne 4. on input line 4.
+Package pdftex.def Info: Requested size: 491.8363pt x 479.79132pt on input line
+ 4.
+
+Overfull \hbox (9.96085pt too wide) in paragraph at lines 4--5
+ [][] 
+ []
+
+<project/Secuencia/Registrar_Alumno.jpg, id=1970, 644.4075pt x 467.7475pt>
+File: project/Secuencia/Registrar_Alumno.jpg Graphic file (type jpg)
+<use project/Secuencia/Registrar_Alumno.jpg>
+Package pdftex.def Info: project/Secuencia/Registrar_Alumno.jpg  used on input 
+line 9. on input line 9.
+Package pdftex.def Info: Requested size: 451.08218pt x 327.421pt on input line 
+9.
+<project/Secuencia/Registrar_Analista.jpg, id=1971, 703.62875pt x 398.48875pt>
+File: project/Secuencia/Registrar_Analista.jpg Graphic file (type jpg)
+<use project/Secuencia/Registrar_Analista.jpg>
+Package pdftex.def Info: project/Secuencia/Registrar_Analista.jpg  used on inpu
+t line 14. on input line 14.
+Package pdftex.def Info: Requested size: 492.53676pt x 278.94022pt on input lin
+e 14.
+
+Overfull \hbox (10.6613pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+[118
+
+ <./project/Secuencia/Iniciar_Sesion.jpg>]
+<project/Secuencia/Registrar_Materia.jpg, id=1976, 671.50874pt x 398.48875pt>
+File: project/Secuencia/Registrar_Materia.jpg Graphic file (type jpg)
+<use project/Secuencia/Registrar_Materia.jpg>
+Package pdftex.def Info: project/Secuencia/Registrar_Materia.jpg  used on input
+ line 19. on input line 19.
+Package pdftex.def Info: Requested size: 470.05292pt x 278.94022pt on input lin
+e 19.
+<project/Secuencia/Registrar_Grupo.jpg, id=1977, 671.50874pt x 478.78876pt>
+File: project/Secuencia/Registrar_Grupo.jpg Graphic file (type jpg)
+<use project/Secuencia/Registrar_Grupo.jpg>
+Package pdftex.def Info: project/Secuencia/Registrar_Grupo.jpg  used on input l
+ine 24. on input line 24.
+Package pdftex.def Info: Requested size: 470.05292pt x 335.14984pt on input lin
+e 24.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[119 <./project/Secuencia/Registrar_Alumno.jpg> <./project/Secuencia/Registrar_
+Analista.jpg>]
+<project/Secuencia/editar_profesor.png, id=1983, 727.71875pt x 743.77875pt>
+File: project/Secuencia/editar_profesor.png Graphic file (type png)
+<use project/Secuencia/editar_profesor.png>
+Package pdftex.def Info: project/Secuencia/editar_profesor.png  used on input l
+ine 29. on input line 29.
+Package pdftex.def Info: Requested size: 509.39964pt x 520.64157pt on input lin
+e 29.
+
+Overfull \hbox (27.52419pt too wide) in paragraph at lines 29--30
+ [][] 
+ []
+
+<project/Secuencia/editar_academico.png, id=1984, 727.71875pt x 743.77875pt>
+File: project/Secuencia/editar_academico.png Graphic file (type png)
+<use project/Secuencia/editar_academico.png>
+Package pdftex.def Info: project/Secuencia/editar_academico.png  used on input 
+line 34. on input line 34.
+Package pdftex.def Info: Requested size: 509.39964pt x 520.64157pt on input lin
+e 34.
+
+Overfull \hbox (27.52419pt too wide) in paragraph at lines 34--35
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[120 <./project/Secuencia/Registrar_Materia.jpg> <./project/Secuencia/Registrar
+_Grupo.jpg>]
+<project/Secuencia/Restablecer_contrasena.jpg, id=1989, 2616.77625pt x 2520.416
+24pt>
+File: project/Secuencia/Restablecer_contrasena.jpg Graphic file (type jpg)
+<use project/Secuencia/Restablecer_contrasena.jpg>
+Package pdftex.def Info: project/Secuencia/Restablecer_contrasena.jpg  used on 
+input line 39. on input line 39.
+Package pdftex.def Info: Requested size: 523.34598pt x 504.07433pt on input lin
+e 39.
+
+Overfull \hbox (22.19887pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[121 <./project/Secuencia/editar_profesor.png>]
+<project/Secuencia/Cambiar_Contrasena.jpg, id=1995, 2881.76625pt x 4580.11125pt
+>
+File: project/Secuencia/Cambiar_Contrasena.jpg Graphic file (type jpg)
+<use project/Secuencia/Cambiar_Contrasena.jpg>
+Package pdftex.def Info: project/Secuencia/Cambiar_Contrasena.jpg  used on inpu
+t line 44. on input line 44.
+Package pdftex.def Info: Requested size: 432.24629pt x 686.98706pt on input lin
+e 44.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[122 <./project/Secuencia/editar_academico.png>]
+<project/Secuencia/Ver_Alumno.jpg, id=2001, 703.62875pt x 422.57875pt>
+File: project/Secuencia/Ver_Alumno.jpg Graphic file (type jpg)
+<use project/Secuencia/Ver_Alumno.jpg>
+Package pdftex.def Info: project/Secuencia/Ver_Alumno.jpg  used on input line 4
+9. on input line 49.
+Package pdftex.def Info: Requested size: 492.53676pt x 295.8031pt on input line
+ 49.
+
+Overfull \hbox (10.6613pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[123 <./project/Secuencia/Restablecer_contrasena.jpg>]
+<project/Secuencia/habilitar_reinscripcion.png, id=2006, 896.34875pt x 808.0187
+5pt>
+File: project/Secuencia/habilitar_reinscripcion.png Graphic file (type png)
+<use project/Secuencia/habilitar_reinscripcion.png>
+Package pdftex.def Info: project/Secuencia/habilitar_reinscripcion.png  used on
+ input line 54. on input line 54.
+Package pdftex.def Info: Requested size: 537.8134pt x 484.815pt on input line 5
+4.
+
+Overfull \hbox (55.93794pt too wide) in paragraph at lines 54--55
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[124 <./project/Secuencia/Cambiar_Contrasena.jpg>]
+<project/Secuencia/crear_horario.png, id=2011, 1008.76875pt x 1145.27875pt>
+File: project/Secuencia/crear_horario.png Graphic file (type png)
+<use project/Secuencia/crear_horario.png>
+Package pdftex.def Info: project/Secuencia/crear_horario.png  used on input lin
+e 59. on input line 59.
+Package pdftex.def Info: Requested size: 514.46526pt x 584.08444pt on input lin
+e 59.
+
+Overfull \hbox (32.5898pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[125 <./project/Secuencia/Ver_Alumno.jpg>]
+<project/Secuencia/Editar_horario.jpg, id=2017, 1725.44624pt x 3580.37625pt>
+File: project/Secuencia/Editar_horario.jpg Graphic file (type jpg)
+<use project/Secuencia/Editar_horario.jpg>
+Package pdftex.def Info: project/Secuencia/Editar_horario.jpg  used on input li
+ne 64. on input line 64.
+Package pdftex.def Info: Requested size: 345.08313pt x 716.06258pt on input lin
+e 64.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[126 <./project/Secuencia/habilitar_reinscripcion.png>]
+<project/Secuencia/Reinscribir.jpg, id=2023, 880.28876pt x 615.29875pt>
+File: project/Secuencia/Reinscribir.jpg Graphic file (type jpg)
+<use project/Secuencia/Reinscribir.jpg>
+Package pdftex.def Info: project/Secuencia/Reinscribir.jpg  used on input line 
+69. on input line 69.
+Package pdftex.def Info: Requested size: 616.19794pt x 430.70618pt on input lin
+e 69.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[127 <./project/Secuencia/crear_horario.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[128 <./project/Secuencia/Editar_horario.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[129 <./project/Secuencia/Reinscribir.jpg>]
+<project/Secuencia/ReinscribirAn.jpg, id=2037, 1233.60875pt x 824.07875pt>
+File: project/Secuencia/ReinscribirAn.jpg Graphic file (type jpg)
+<use project/Secuencia/ReinscribirAn.jpg>
+Package pdftex.def Info: project/Secuencia/ReinscribirAn.jpg  used on input lin
+e 75. on input line 75.
+Package pdftex.def Info: Requested size: 616.80287pt x 412.03836pt on input lin
+e 75.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[130 <./project/Secuencia/ReinscribirAn.jpg>]
+<project/Secuencia/Registrar_profesor.jpg, id=2042, 788.9475pt x 646.415pt>
+File: project/Secuencia/Registrar_profesor.jpg Graphic file (type jpg)
+<use project/Secuencia/Registrar_profesor.jpg>
+Package pdftex.def Info: project/Secuencia/Registrar_profesor.jpg  used on inpu
+t line 82. on input line 82.
+Package pdftex.def Info: Requested size: 394.47278pt x 323.20671pt on input lin
+e 82.
+<project/Secuencia/Modificar_Grupo.jpg, id=2043, 888.31876pt x 652.4375pt>
+File: project/Secuencia/Modificar_Grupo.jpg Graphic file (type jpg)
+<use project/Secuencia/Modificar_Grupo.jpg>
+Package pdftex.def Info: project/Secuencia/Modificar_Grupo.jpg  used on input l
+ine 87. on input line 87.
+Package pdftex.def Info: Requested size: 444.1583pt x 326.21794pt on input line
+ 87.
+<project/Secuencia/Modificar_Materia.jpg, id=2044, 992.70876pt x 646.415pt>
+File: project/Secuencia/Modificar_Materia.jpg Graphic file (type jpg)
+<use project/Secuencia/Modificar_Materia.jpg>
+Package pdftex.def Info: project/Secuencia/Modificar_Materia.jpg  used on input
+ line 92. on input line 92.
+Package pdftex.def Info: Requested size: 496.35316pt x 323.20671pt on input lin
+e 92.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[131 <./project/Secuencia/Registrar_profesor.jpg>]
+<project/Secuencia/Ver_horario_y_disponibilidad.jpg, id=2050, 735.74875pt x 435
+.6275pt>
+File: project/Secuencia/Ver_horario_y_disponibilidad.jpg Graphic file (type jpg
+)
+<use project/Secuencia/Ver_horario_y_disponibilidad.jpg>
+Package pdftex.def Info: project/Secuencia/Ver_horario_y_disponibilidad.jpg  us
+ed on input line 97. on input line 97.
+Package pdftex.def Info: Requested size: 367.87347pt x 217.81322pt on input lin
+e 97.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[132 <./project/Secuencia/Modificar_Grupo.jpg>]
+<project/Secuencia/Modificar_Alumno.jpg, id=2055, 944.52875pt x 646.415pt>
+File: project/Secuencia/Modificar_Alumno.jpg Graphic file (type jpg)
+<use project/Secuencia/Modificar_Alumno.jpg>
+Package pdftex.def Info: project/Secuencia/Modificar_Alumno.jpg  used on input 
+line 102. on input line 102.
+Package pdftex.def Info: Requested size: 472.26321pt x 323.20671pt on input lin
+e 102.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[133 <./project/Secuencia/Modificar_Materia.jpg>]
+<project/Secuencia/Buscar_Materia.jpg, id=2060, 663.47874pt x 318.18875pt>
+File: project/Secuencia/Buscar_Materia.jpg Graphic file (type jpg)
+<use project/Secuencia/Buscar_Materia.jpg>
+Package pdftex.def Info: project/Secuencia/Buscar_Materia.jpg  used on input li
+ne 107. on input line 107.
+Package pdftex.def Info: Requested size: 331.73856pt x 159.09398pt on input lin
+e 107.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[134 <./project/Secuencia/Ver_horario_y_disponibilidad.jpg>]
+<project/Secuencia/Registrar_Academico.jpg, id=2065, 746.79pt x 646.415pt>
+File: project/Secuencia/Registrar_Academico.jpg Graphic file (type jpg)
+<use project/Secuencia/Registrar_Academico.jpg>
+Package pdftex.def Info: project/Secuencia/Registrar_Academico.jpg  used on inp
+ut line 112. on input line 112.
+Package pdftex.def Info: Requested size: 373.39407pt x 323.20671pt on input lin
+e 112.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[135 <./project/Secuencia/Modificar_Alumno.jpg>]
+<project/Secuencia/Ver_Historial.jpg, id=2070, 903.375pt x 393.47pt>
+File: project/Secuencia/Ver_Historial.jpg Graphic file (type jpg)
+<use project/Secuencia/Ver_Historial.jpg>
+Package pdftex.def Info: project/Secuencia/Ver_Historial.jpg  used on input lin
+e 117. on input line 117.
+Package pdftex.def Info: Requested size: 451.6864pt x 196.73451pt on input line
+ 117.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[136 <./project/Secuencia/Buscar_Materia.jpg>]
+<project/Secuencia/Asignar_Horario.jpg, id=2075, 999.735pt x 1228.59pt>
+File: project/Secuencia/Asignar_Horario.jpg Graphic file (type jpg)
+<use project/Secuencia/Asignar_Horario.jpg>
+Package pdftex.def Info: project/Secuencia/Asignar_Horario.jpg  used on input l
+ine 122. on input line 122.
+Package pdftex.def Info: Requested size: 499.86627pt x 614.2935pt on input line
+ 122.
+
+Overfull \hbox (17.99081pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+<project/Secuencia/Modificar_Horario.jpg, id=2076, 999.735pt x 1373.13pt>
+File: project/Secuencia/Modificar_Horario.jpg Graphic file (type jpg)
+<use project/Secuencia/Modificar_Horario.jpg>
+Package pdftex.def Info: project/Secuencia/Modificar_Horario.jpg  used on input
+ line 127. on input line 127.
+Package pdftex.def Info: Requested size: 499.86627pt x 686.56332pt on input lin
+e 127.
+
+Overfull \hbox (17.99081pt too wide) in paragraph at lines 127--128
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[137 <./project/Secuencia/Registrar_Academico.jpg> <./project/Secuencia/Ver_His
+torial.jpg>]) (project/diagramas_actividad.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[138 <./project/Secuencia/Asignar_Horario.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[139 <./project/Secuencia/Modificar_Horario.jpg>]
+Cap\'{\i }tulo 7.
+<project/Actividades/Alumno.jpg, id=2090, 379.4175pt x 653.44125pt>
+File: project/Actividades/Alumno.jpg Graphic file (type jpg)
+<use project/Actividades/Alumno.jpg>
+Package pdftex.def Info: project/Actividades/Alumno.jpg  used on input line 4. 
+on input line 4.
+Package pdftex.def Info: Requested size: 303.53441pt x 522.75371pt on input lin
+e 4.
+<project/Actividades/Analista.jpg, id=2091, 379.4175pt x 653.44125pt>
+File: project/Actividades/Analista.jpg Graphic file (type jpg)
+<use project/Actividades/Analista.jpg>
+Package pdftex.def Info: project/Actividades/Analista.jpg  used on input line 9
+. on input line 9.
+Package pdftex.def Info: Requested size: 303.53441pt x 522.75371pt on input lin
+e 9.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+[140
+
+]
+Overfull \vbox (0.54726pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[141 <./project/Actividades/Alumno.jpg>]
+<project/Actividades/materia.jpg, id=2100, 456.70625pt x 691.58376pt>
+File: project/Actividades/materia.jpg Graphic file (type jpg)
+<use project/Actividades/materia.jpg>
+Package pdftex.def Info: project/Actividades/materia.jpg  used on input line 14
+. on input line 14.
+Package pdftex.def Info: Requested size: 365.36548pt x 553.26775pt on input lin
+e 14.
+<project/Actividades/A_generar_grupo.jpg, id=2101, 629.35126pt x 990.70125pt>
+File: project/Actividades/A_generar_grupo.jpg Graphic file (type jpg)
+<use project/Actividades/A_generar_grupo.jpg>
+Package pdftex.def Info: project/Actividades/A_generar_grupo.jpg  used on input
+ line 19. on input line 19.
+Package pdftex.def Info: Requested size: 409.07347pt x 643.9482pt on input line
+ 19.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[142 <./project/Actividades/Analista.jpg>]
+<project/Actividades/grupo.jpg, id=2106, 467.7475pt x 693.59125pt>
+File: project/Actividades/grupo.jpg Graphic file (type jpg)
+<use project/Actividades/grupo.jpg>
+Package pdftex.def Info: project/Actividades/grupo.jpg  used on input line 24. 
+on input line 24.
+Package pdftex.def Info: Requested size: 374.19849pt x 554.87375pt on input lin
+e 24.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[143 <./project/Actividades/materia.jpg>]
+<project/Actividades/editar_profesor.png, id=2112, 494.84875pt x 910.40125pt>
+File: project/Actividades/editar_profesor.png Graphic file (type png)
+<use project/Actividades/editar_profesor.png>
+Package pdftex.def Info: project/Actividades/editar_profesor.png  used on input
+ line 29. on input line 29.
+Package pdftex.def Info: Requested size: 395.87955pt x 728.32199pt on input lin
+e 29.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[144 <./project/Actividades/A_generar_grupo.jpg>]
+<project/Actividades/editar_academico.png, id=2117, 494.84875pt x 910.40125pt>
+File: project/Actividades/editar_academico.png Graphic file (type png)
+<use project/Actividades/editar_academico.png>
+Package pdftex.def Info: project/Actividades/editar_academico.png  used on inpu
+t line 34. on input line 34.
+Package pdftex.def Info: Requested size: 395.87955pt x 728.32199pt on input lin
+e 34.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[145 <./project/Actividades/grupo.jpg>]
+Overfull \vbox (8.05269pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[146 <./project/Actividades/editar_profesor.png>]
+<project/Actividades/A_restablecer_contrasena.jpg, id=2127, 737.75626pt x 1328.
+965pt>
+File: project/Actividades/A_restablecer_contrasena.jpg Graphic file (type jpg)
+<use project/Actividades/A_restablecer_contrasena.jpg>
+Package pdftex.def Info: project/Actividades/A_restablecer_contrasena.jpg  used
+ on input line 39. on input line 39.
+Package pdftex.def Info: Requested size: 368.87723pt x 664.48088pt on input lin
+e 39.
+
+Overfull \vbox (8.05269pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[147 <./project/Actividades/editar_academico.png>]
+<project/Actividades/A_cambiar_contrasena.jpg, id=2133, 557.08125pt x 883.3pt>
+File: project/Actividades/A_cambiar_contrasena.jpg Graphic file (type jpg)
+<use project/Actividades/A_cambiar_contrasena.jpg>
+Package pdftex.def Info: project/Actividades/A_cambiar_contrasena.jpg  used on 
+input line 44. on input line 44.
+Package pdftex.def Info: Requested size: 362.09853pt x 574.1382pt on input line
+ 44.
+<project/Actividades/vera.jpg, id=2134, 543.02875pt x 713.66624pt>
+File: project/Actividades/vera.jpg Graphic file (type jpg)
+<use project/Actividades/vera.jpg>
+Package pdftex.def Info: project/Actividades/vera.jpg  used on input line 49. o
+n input line 49.
+Package pdftex.def Info: Requested size: 434.42357pt x 570.93376pt on input lin
+e 49.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[148 <./project/Actividades/A_restablecer_contrasena.jpg>]
+<project/Actividades/habilitar_reinscripciones.png, id=2139, 494.84875pt x 765.
+86125pt>
+File: project/Actividades/habilitar_reinscripciones.png Graphic file (type png)
+
+<use project/Actividades/habilitar_reinscripciones.png>
+Package pdftex.def Info: project/Actividades/habilitar_reinscripciones.png  use
+d on input line 54. on input line 54.
+Package pdftex.def Info: Requested size: 336.4927pt x 520.77876pt on input line
+ 54.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[149 <./project/Actividades/A_cambiar_contrasena.jpg>]
+<project/Actividades/crear_horario.png, id=2145, 542.025pt x 846.16125pt>
+File: project/Actividades/crear_horario.png Graphic file (type png)
+<use project/Actividades/crear_horario.png>
+Package pdftex.def Info: project/Actividades/crear_horario.png  used on input l
+ine 59. on input line 59.
+Package pdftex.def Info: Requested size: 460.72342pt x 719.24048pt on input lin
+e 59.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[150 <./project/Actividades/vera.jpg>]
+<project/Actividades/A_editar_horario.jpg, id=2150, 1014.79124pt x 1979.395pt>
+File: project/Actividades/A_editar_horario.jpg Graphic file (type jpg)
+<use project/Actividades/A_editar_horario.jpg>
+Package pdftex.def Info: project/Actividades/A_editar_horario.jpg  used on inpu
+t line 64. on input line 64.
+Package pdftex.def Info: Requested size: 355.18225pt x 692.79865pt on input lin
+e 64.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[151 <./project/Actividades/habilitar_reinscripciones.png>]
+<project/Actividades/reinscripcion.jpg, id=2156, 619.31375pt x 1103.12125pt>
+File: project/Actividades/reinscripcion.jpg Graphic file (type jpg)
+<use project/Actividades/reinscripcion.jpg>
+Package pdftex.def Info: project/Actividades/reinscripcion.jpg  used on input l
+ine 69. on input line 69.
+Package pdftex.def Info: Requested size: 402.54916pt x 717.02032pt on input lin
+e 69.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[152 <./project/Actividades/crear_horario.png>]
+<project/Actividades/edoactual.jpg, id=2162, 278.03876pt x 510.90875pt>
+File: project/Actividades/edoactual.jpg Graphic file (type jpg)
+<use project/Actividades/edoactual.jpg>
+Package pdftex.def Info: project/Actividades/edoactual.jpg  used on input line 
+74. on input line 74.
+Package pdftex.def Info: Requested size: 222.4313pt x 408.72755pt on input line
+ 74.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[153 <./project/Actividades/A_editar_horario.jpg>]
+<project/Actividades/A_ver_horario_actual.jpg, id=2167, 761.84625pt x 811.03pt>
+
+File: project/Actividades/A_ver_horario_actual.jpg Graphic file (type jpg)
+<use project/Actividades/A_ver_horario_actual.jpg>
+Package pdftex.def Info: project/Actividades/A_ver_horario_actual.jpg  used on 
+input line 79. on input line 79.
+Package pdftex.def Info: Requested size: 533.28874pt x 567.71713pt on input lin
+e 79.
+
+Overfull \hbox (51.41328pt too wide) in paragraph at lines 79--80
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[154 <./project/Actividades/reinscripcion.jpg>]
+<project/Actividades/Registrar_Academico.jpg, id=2172, 575.14874pt x 741.77126p
+t>
+File: project/Actividades/Registrar_Academico.jpg Graphic file (type jpg)
+<use project/Actividades/Registrar_Academico.jpg>
+Package pdftex.def Info: project/Actividades/Registrar_Academico.jpg  used on i
+nput line 84. on input line 84.
+Package pdftex.def Info: Requested size: 460.11961pt x 593.41782pt on input lin
+e 84.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[155 <./project/Actividades/edoactual.jpg>]
+<project/Actividades/Registrar_Profesor.jpg, id=2178, 575.14874pt x 741.77126pt
+>
+File: project/Actividades/Registrar_Profesor.jpg Graphic file (type jpg)
+<use project/Actividades/Registrar_Profesor.jpg>
+Package pdftex.def Info: project/Actividades/Registrar_Profesor.jpg  used on in
+put line 89. on input line 89.
+Package pdftex.def Info: Requested size: 460.11961pt x 593.41782pt on input lin
+e 89.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[156 <./project/Actividades/A_ver_horario_actual.jpg>]
+<project/Actividades/Editar_Materia.jpg, id=2183, 643.40375pt x 1119.18124pt>
+File: project/Actividades/Editar_Materia.jpg Graphic file (type jpg)
+<use project/Actividades/Editar_Materia.jpg>
+Package pdftex.def Info: project/Actividades/Editar_Materia.jpg  used on input 
+line 94. on input line 94.
+Package pdftex.def Info: Requested size: 386.04523pt x 671.51393pt on input lin
+e 94.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[157 <./project/Actividades/Registrar_Academico.jpg>]
+<project/Actividades/Editar_Grupo.jpg, id=2188, 643.40375pt x 1119.18124pt>
+File: project/Actividades/Editar_Grupo.jpg Graphic file (type jpg)
+<use project/Actividades/Editar_Grupo.jpg>
+Package pdftex.def Info: project/Actividades/Editar_Grupo.jpg  used on input li
+ne 99. on input line 99.
+Package pdftex.def Info: Requested size: 386.04523pt x 671.51393pt on input lin
+e 99.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[158 <./project/Actividades/Registrar_Profesor.jpg>]
+<project/Actividades/Editar_Alumno.jpg, id=2193, 643.40375pt x 1119.18124pt>
+File: project/Actividades/Editar_Alumno.jpg Graphic file (type jpg)
+<use project/Actividades/Editar_Alumno.jpg>
+Package pdftex.def Info: project/Actividades/Editar_Alumno.jpg  used on input l
+ine 104. on input line 104.
+Package pdftex.def Info: Requested size: 386.04523pt x 671.51393pt on input lin
+e 104.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[159 <./project/Actividades/Editar_Materia.jpg>]
+<project/Actividades/Buscar_Materia.jpg, id=2198, 283.0575pt x 476.78125pt>
+File: project/Actividades/Buscar_Materia.jpg Graphic file (type jpg)
+<use project/Actividades/Buscar_Materia.jpg>
+Package pdftex.def Info: project/Actividades/Buscar_Materia.jpg  used on input 
+line 109. on input line 109.
+Package pdftex.def Info: Requested size: 226.44629pt x 381.4255pt on input line
+ 109.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[160 <./project/Actividades/Editar_Grupo.jpg>]
+<project/Actividades/Ver_horario_y_disponibilidad.jpg, id=2203, 304.13625pt x 4
+76.78125pt>
+File: project/Actividades/Ver_horario_y_disponibilidad.jpg Graphic file (type j
+pg)
+<use project/Actividades/Ver_horario_y_disponibilidad.jpg>
+Package pdftex.def Info: project/Actividades/Ver_horario_y_disponibilidad.jpg  
+used on input line 114. on input line 114.
+Package pdftex.def Info: Requested size: 243.30933pt x 381.4255pt on input line
+ 114.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[161 <./project/Actividades/Editar_Alumno.jpg>]) (project/diagramas_estado.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[162 <./project/Actividades/Buscar_Materia.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[163 <./project/Actividades/Ver_horario_y_disponibilidad.jpg>]
+Cap\'{\i }tulo 8.
+<project/Estado/E_cambiar_contrasena.jpg, id=2217, 692.5875pt x 322.20375pt>
+File: project/Estado/E_cambiar_contrasena.jpg Graphic file (type jpg)
+<use project/Estado/E_cambiar_contrasena.jpg>
+Package pdftex.def Info: project/Estado/E_cambiar_contrasena.jpg  used on input
+ line 4. on input line 4.
+Package pdftex.def Info: Requested size: 380.9243pt x 177.2126pt on input line 
+4.
+<project/Estado/habilitar_reinscripciones.png, id=2218, 399.4925pt x 404.51125p
+t>
+File: project/Estado/habilitar_reinscripciones.png Graphic file (type png)
+<use project/Estado/habilitar_reinscripciones.png>
+Package pdftex.def Info: project/Estado/habilitar_reinscripciones.png  used on 
+input line 9. on input line 9.
+Package pdftex.def Info: Requested size: 279.64284pt x 283.15593pt on input lin
+e 9.
+<project/Estado/crear_horario.png, id=2219, 467.7475pt x 388.45125pt>
+File: project/Estado/crear_horario.png Graphic file (type png)
+<use project/Estado/crear_horario.png>
+Package pdftex.def Info: project/Estado/crear_horario.png  used on input line 1
+4. on input line 14.
+Package pdftex.def Info: Requested size: 467.74634pt x 388.45029pt on input lin
+e 14.
+<project/Estado/E_editar_horario.jpg, id=2220, 1406.25375pt x 627.34375pt>
+File: project/Estado/E_editar_horario.jpg Graphic file (type jpg)
+<use project/Estado/E_editar_horario.jpg>
+Package pdftex.def Info: project/Estado/E_editar_horario.jpg  used on input lin
+e 19. on input line 19.
+Package pdftex.def Info: Requested size: 492.19618pt x 219.5736pt on input line
+ 19.
+
+Overfull \hbox (10.32072pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+[164
+
+ <./project/Estado/E_cambiar_contrasena.jpg> <./project/Estado/habilitar_reinsc
+ripciones.png>]
+<project/Estado/estado_inscripcion.jpg, id=2226, 337.26pt x 528.97626pt>
+File: project/Estado/estado_inscripcion.jpg Graphic file (type jpg)
+<use project/Estado/estado_inscripcion.jpg>
+Package pdftex.def Info: project/Estado/estado_inscripcion.jpg  used on input l
+ine 24. on input line 24.
+Package pdftex.def Info: Requested size: 337.25917pt x 528.97496pt on input lin
+e 24.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[165 <./project/Estado/crear_horario.png> <./project/Estado/E_editar_horario.jp
+g>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[166 <./project/Estado/estado_inscripcion.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+ (report.aux
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: B45568183E9F6DAD74E8033E1146B6FE;2943.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
+ ) 
+Here is how much of TeX's memory you used:
+ 18626 strings out of 493323
+ 322645 string characters out of 3139066
+ 392378 words of memory out of 3000000
+ 20350 multiletter control sequences out of 15000+200000
+ 31757 words of font info for 60 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,12n,45p,896b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (174 pages, 17765592 bytes).
+PDF statistics:
+ 2518 PDF objects out of 2984 (max. 8388607)
+ 1284 named destinations out of 1440 (max. 500000)
+ 873 words of extra memory for PDF output out of 10000 (max. 10000000)
+
