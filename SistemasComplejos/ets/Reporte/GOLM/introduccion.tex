@@ -1,0 +1,23 @@
+\subsection{Introducción}
+	Los autómatas celulares(AC) surgen en la década de 1940 con John Von Neumann, que intentaba modelar una máquina que fuera capaz de auto-replicarse, llegando así a un modelo matemático de dicha maquina con reglas complicadas sobre una red rectangular. Inicialmente fueron interpretados como conjunto de células que crecían, se reproducían y morían a medida que pasaba el tiempo. A esta similitud con el crecimiento de las células se le debe su nombre.\cite{PAGINA}
+
+	Un autómata celular se caracteriza por contar con los siguientes elementos:
+	\begin{itemize}
+		\item Arreglo regular. Ya sea un plano de dos dimensiones o un espacio n-dimensional, este es el espacio de evoluciones, y cada división homogénea del arreglo es llamada célula.
+		\item Conjunto de estados. Es finito y cada elemento o célula del arreglo toma un valor de este conjunto de estados. También se denomina alfabeto. Puede ser expresado en valores o colores.
+		\item configuración inicial. Consiste en asignar un estado a cada una de las células del espacio de evolución inicial del sistema.
+		\item Vecindades. Define el conjunto contiguo de células y posición relativa respecto a cada una de ellas. A cada vecindad diferente corresponde un elemento del conjunto de estados.
+		\item Función local. Es la regla de evolución que determina el comportamiento del A. C. Se conforma de una célula central y sus vecindades. Define como debe cambiar de estado cada célula dependiendo de los estados anteriores de sus vecindades. Puede ser una expresión algebraica o un grupo de ecuaciones.
+	\end{itemize}
+
+\subsection{Planteamiento de la práctica}
+	Este programa implementa la simulación de un autómata celular. Como fue expuesto en la sección 2 de este mismo documento, con la diferencia que este autómata celular implementa una nueva caracteristica, la de tener ``memoria''.
+
+	Se cuenta con la opción para utilizar una matriz auxiliar junto con una función $\Phi$ para realizar el calculo de las matrices a través de las generaciones futuras. Esta opción consiste en lo siguiente.
+
+	\begin{enumerate}
+		\item Se elige una función $\Phi$ la cual puede ser de paridad, máximo o mínimo. También, se asigna un valor de $\tau$ el cual debe de ir de 3 a 8.
+		\item Después de $\tau$ iteraciones se utiliza la función $\Phi$ para obtener una matriz auxiliar, la función $\Phi$ utiliza como parámetros los valores de las $\tau$ matrices anteriores.
+		\item A la matriz auxiliar se le debe de aplicar la regla del autómata celular que se ha estado utilizado para calcular las iteraciones por lo que ahora tendremos una nueva matriz.
+		\item Esto se repite las veces que se desee.
+	\end{enumerate}

@@ -1,0 +1,49 @@
+Cadena: 11
+Estado actual: q0, apuntador: 1
+Siguiente estado: q1
+-----------------
+Cadena: X1
+Estado actual: q1, apuntador: 2
+Siguiente estado: q1
+-----------------
+Cadena: X1
+Estado actual: q1, apuntador: 3
+Siguiente estado: q2
+-----------------
+Cadena: X1Y
+Estado actual: q2, apuntador: 2
+Siguiente estado: q2
+-----------------
+Cadena: X1Y
+Estado actual: q2, apuntador: 1
+Siguiente estado: q0
+-----------------
+Cadena: 11Y
+Estado actual: q0, apuntador: 2
+Siguiente estado: q1
+-----------------
+Cadena: 1XY
+Estado actual: q1, apuntador: 3
+Siguiente estado: q1
+-----------------
+Cadena: 1XY
+Estado actual: q1, apuntador: 4
+Siguiente estado: q2
+-----------------
+Cadena: 1XYY
+Estado actual: q2, apuntador: 3
+Siguiente estado: q2
+-----------------
+Cadena: 1XYY
+Estado actual: q2, apuntador: 2
+Siguiente estado: q0
+-----------------
+Cadena: 11YY
+Estado actual: q0, apuntador: 3
+Siguiente estado: q3
+-----------------
+Cadena: 111Y
+Estado actual: q3, apuntador: 4
+Siguiente estado: q3
+-----------------
+Resultado: 1111

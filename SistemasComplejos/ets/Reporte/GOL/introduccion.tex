@@ -1,0 +1,42 @@
+\subsection{Introducción}
+	Los autómatas celulares(AC) surgen en la década de 1940 con John Von Neumann, que intentaba modelar una máquina que fuera capaz de auto-replicarse, llegando así a un modelo matemático de dicha maquina con reglas complicadas sobre una red rectangular. Inicialmente fueron interpretados como conjunto de células que crecían, se reproducían y morían a medida que pasaba el tiempo. A esta similitud con el crecimiento de las células se le debe su nombre.\cite{PAGINA}
+
+	Un autómata celular se caracteriza por contar con los siguientes elementos:
+	\begin{itemize}
+	 \item Arreglo regular. Ya sea un plano de dos dimensiones o un espacio n-dimensional, este es el espacio de evoluciones, y cada división homogénea del arreglo es llamada célula.
+	 \item Conjunto de estados. Es finito y cada elemento o célula del arreglo toma un valor de este conjunto de estados. También se denomina alfabeto. Puede ser expresado en valores o colores.
+	 \item configuración inicial. Consiste en asignar un estado a cada una de las células del espacio de evolución inicial del sistema.
+	 \item Vecindades. Define el conjunto contiguo de células y posición relativa respecto a cada una de ellas. A cada vecindad diferente corresponde un elemento del conjunto de estados.
+	 \item Función local. Es la regla de evolución que determina el comportamiento del A. C. Se conforma de una célula central y sus vecindades. Define como debe cambiar de estado cada célula dependiendo de los estados anteriores de sus vecindades. Puede ser una expresión algebraica o un grupo de ecuaciones.
+	\end{itemize}
+
+	\subsubsection{Juego de la Vida}
+	El juego de la vida fue desarrollado por John Horton Conway, quien fuera un matemático estadounidense que trabajaba en la Universidad de Cambridge. Él desarrollo un ``juego'' al cual llamaba vida, debido a su parecido con la forma en que las sociedades de organismos vivos se levantan y caen.\cite{web}
+
+	Este juego se considera como un simulador, ya que se asemeja a la vida real. Originalmente, se planteó como un juego de mesa, pero con el pasar de los años fue usado en otras ramas (como la computación) debido a las posibilidades que este juego brinda.
+
+	La idea básica del juego, es iniciar con una configuración simple de organismos vivientes, cada uno asignado a una celda dentro de un tablero (el cual se considera un plano infinito), para así observar como está cambia según se aplican las leyes genéticas de Conway, las cuales determinan el nacimiento, muerte o supervivencia de cada organismo. Estás reglas son tres:
+	\begin{enumerate}
+		\item Supervivencia: Cada organismo con dos o tres vecinos vivos sobrevivirá a la siguiente generación.
+		\item Muerte: Cada organismo con cuatro o más vecinos muere por sobrepoblación, así mismo cada organismo con solo un vecino o ninguno morirá por aislamiento.
+		\item Nacimiento: En cada celda vacía que este rodeada por exactamente tres vecinos, nacerá un organismo. \cite{web}
+	\end{enumerate}
+
+	Es importante señalar que cada muerte, nacimiento o supervivencia debe ser simultaneo durante cada salto de generación.
+	Para realizar la evaluación de cada una de las celdas, estás son divididas a su vez en grupos de 9 celdas, la célula que se evaluará constituye el centro del ahora cuadrado. Dentro de este cuadrado, son aplicadas las reglas ya descritas anteriormente.
+
+	El programa que ha sido desarrollado para está actividad, simula este juego. Son dados como parámetros el total de la población y la probabilidad de que existan organismos vivos en la misma. Y con base a esto se realizada la simulación del juego de la vida aplicando las reglas de Conway. Además se gráfica el histórico de la cantidad de organismos vivos que han existido durante cada una de las generaciones.
+	
+\subsection{Planteamiento de la práctica}
+	Este programa implementa la simulación de un autómata celular mediante el uso de las reglas conocidas como Life y Difusión. A su vez, el programa debe tener una interfaz gráfica donde se muestren las células vivas y muertas mediante el uso de una cuadrilla.
+	Las características de este simulador son las siguientes:
+	\begin{itemize}
+		\item Permitir seleccionar el tamaño de la población de la matriz.
+		\item Permitir seleccionar la regla que se utilizara en cada iteración de la simulación.
+		\item Se podrá elegir la distribución de células que habrá en la matriz.
+		\item Se podrá cambiar los colores de las células vivas y muertas.
+		\item Se mostrará el cambio de unos que hay a lo largo de cada iteración.
+		\item Se graficará a lo largo del tiempo la cantidad de células vivas.
+		\item Cuando el usuario de click a una de las células está deberá cambiarse al estado contrario al que se encuentra en ese momento (de viva a muerta y viceversa).
+	\end{itemize}
+	El objetivo que se tiene es mostrar una matriz de hasta 1000 por 1000 para poder observar un comportamiento que nos proporcione información.

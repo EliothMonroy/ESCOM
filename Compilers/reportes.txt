@@ -1,0 +1,6 @@
+* Introducción
+* Desarrollo:
+Código
+* Resultados: Pantallazos y pruebas
+* Conclusiones
+* Referencias

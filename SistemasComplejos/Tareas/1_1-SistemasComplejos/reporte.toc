@@ -1,0 +1,14 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}% 
+\contentsline {section}{\numberline {2}Desarrollo}{4}% 
+\contentsline {paragraph}{Primer Conferencia de Cibern\IeC {\'e}tica (1946, Marzo)}{4}% 
+\contentsline {paragraph}{Segunda Conferencia de Cibern\IeC {\'e}tica (1946, Octubre)}{4}% 
+\contentsline {paragraph}{Tercera Conferencia de Cibern\IeC {\'e}tica (1947, Marzo)}{4}% 
+\contentsline {paragraph}{Cuarta Conferencia de Cibern\IeC {\'e}tica (1947, Octubre)}{4}% 
+\contentsline {paragraph}{Quinta Conferencia de Cibern\IeC {\'e}tica (1948, Marzo)}{4}% 
+\contentsline {paragraph}{Sexta Conferencia de Cibern\IeC {\'e}tica (1949, Marzo)}{5}% 
+\contentsline {paragraph}{S\IeC {\'e}ptima Conferencia de Cibern\IeC {\'e}tica (1950, Marzo)}{5}% 
+\contentsline {paragraph}{Octava Conferencia de Cibern\IeC {\'e}tica (1951, Marzo)}{5}% 
+\contentsline {paragraph}{Novena Conferencia de Cibern\IeC {\'e}tica (1952, Marzo)}{6}% 
+\contentsline {paragraph}{D\IeC {\'e}cima Conferencia de Cibern\IeC {\'e}tica (1953, Marzo)}{6}% 
+\contentsline {section}{Referencias}{6}% 

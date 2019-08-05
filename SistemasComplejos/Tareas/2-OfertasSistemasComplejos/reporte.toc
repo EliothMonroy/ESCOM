@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Desarrollo}{1}
+\contentsline {subsection}{\numberline {1.1}UACM - Maestr\IeC {\'\i }a en Ciencias de la Complejidad}{1}
+\contentsline {subsection}{\numberline {1.2}El Colegio de Morelos - Maestr\IeC {\'\i }a y Doctorado en Filosof\IeC {\'\i }a y Ciencia}{1}
+\contentsline {subsection}{\numberline {1.3}Instituto Balseiro - Maestr\IeC {\'\i }a en Ciencias F\IeC {\'\i }sicas}{1}
+\contentsline {subsection}{\numberline {1.4}CCSS - Carrera Universitaria con especialidad en Sistemas Complejos/Maestr\IeC {\'\i }a en Sistemas Complejos}{2}
+\contentsline {section}{Referencias}{2}

@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}
+\contentsline {section}{\numberline {2}Desarrollo}{4}
+\contentsline {paragraph}{Clases AFD y AFN}{4}
+\contentsline {paragraph}{Archivos auxiliares}{10}
+\contentsline {section}{\numberline {3}Resultados}{12}
+\contentsline {paragraph}{AFD}{12}
+\contentsline {paragraph}{AFND}{14}
+\contentsline {section}{\numberline {4}Conclusiones}{16}
+\contentsline {section}{Referencias}{16}

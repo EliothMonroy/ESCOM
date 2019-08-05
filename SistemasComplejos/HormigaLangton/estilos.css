@@ -1,0 +1,11 @@
+#botones{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#aside{
+	display: flex;
+}
+#contenedor{
+	display: inline-flex;
+}

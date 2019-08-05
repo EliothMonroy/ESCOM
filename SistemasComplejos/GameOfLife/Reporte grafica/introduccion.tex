@@ -1,0 +1,16 @@
+\section{Introducción}
+	El juego de la vida fue desarrollado por John Horton Conway, quien fuera un matemático estadounidense que trabajaba en la Universidad de Cambridge. Él desarrollo un ``juego'' al cual llamaba vida, debido a su parecido con la forma en que las sociedades de organismos vivos se levantan y caen.\cite{web}
+
+	Este juego se considera como un simulador, ya que se asemeja a la vida real. Originalmente, se planteó como un juego de mesa, pero con el pasar de los años fue usado en otras ramas (como la computación) debido a las posibilidades que este juego brinda.
+
+	La idea básica del juego, es iniciar con una configuración simple de organismos vivientes, cada uno asignado a una celda dentro de un tablero (el cual se considera un plano infinito), para así observar como está cambia según se aplican las leyes genéticas de Conway, las cuales determinan el nacimiento, muerte o supervivencia de cada organismo. Estás reglas son tres:
+	\begin{enumerate}
+		\item Supervivencia: Cada organismo con dos o tres vecinos vivos sobrevivirá a la siguiente generación.
+		\item Muerte: Cada organismo con cuatro o más vecinos muere por sobrepoblación, así mismo cada organismo con solo un vecino o ninguno morirá por aislamiento.
+		\item Nacimiento: En cada celda vacía que este rodeada por exactamente tres vecinos, nacerá un organismo. \cite{web}
+	\end{enumerate}
+
+	Es importante señalar que cada muerte, nacimiento o supervivencia debe ser simultaneo durante cada salto de generación.
+	Para realizar la evaluación de cada una de las celdas, estás son divididas a su vez en grupos de 9 celdas, la célula que se evaluará constituye el centro del ahora cuadrado. Dentro de este cuadrado, son aplicadas las reglas ya descritas anteriormente.
+
+	El programa que ha sido desarrollado para está actividad, simula este juego. Son dados como parámetros el total de la población y la probabilidad de que existan organismos vivos en la misma. Y con base a esto se realizada la simulación del juego de la vida aplicando las reglas de Conway. Además se gráfica el histórico de la cantidad de organismos vivos que han existido durante cada una de las generaciones.

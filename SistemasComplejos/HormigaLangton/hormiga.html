@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hormiga de Langton Modificada</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<div id="contenedor">
+			<!-- <canvas id="myCanvas" width="1260"  height="680" style="border:1px solid #000000;"> -->
+			<div >
+				<canvas onclick="clickCanvas(event)" id="myCanvas" width="680" height="680" style="border:1px solid #000000;">
+				</canvas>
+			</div>
+			<div id="">
+				<div id="botones">
+					<!-- <div> -->
+					<button onclick="iniciar()">Iniciar</button>
+					<button onclick="continuar()">Continuar</button>
+					<button onclick="pausa()">Pausar</button>
+					<button onclick="siguiente()">Siguiente</button>
+					<!-- </div> -->
+				</div>
+				<div>
+					<button id="descargar" onclick="descargar()">Descargar log</button>
+				</div><br>
+				<div>
+					<label id="generacion">Generación: 0</label><br>
+					<label id="vivas">Total de hormigas: 0</label>
+				</div><br>
+				<div>
+					<label for="tam">Tamaño población: </label>
+					<input type="number" id="tam" value="100"><br>
+				</div><br>
+				<div>
+					<label for="distribucion">
+						Distribución de hormigas:
+						<span id="distribucion_valor">50</span>%
+					</label>
+					<input type="range" min="0" max="100" value="50" id="distribucion">
+				</div><br>
+				<div>
+					<label for="obrera">Probabilidad obrera: </label>
+					<input type="number" id="obrera" value="90"><br>
+					<label for="soldado">Probabilidad soldado: </label>
+					<input type="number" id="soldado" value="8"><br>
+					<label for="reina">Probabilidad reina: </label>
+					<input type="number" id="reina" value="2"><br>
+				</div><br>
+				<div>
+					<label for="color_norte">Color hormiga norte:</label>
+					<input type="color" value="#ff0000"  id="color_norte"><br>
+					<label for="color_este">Color hormiga este:</label>
+					<input type="color" value="#ffff00"  id="color_este"><br>
+					<label for="color_oeste">Color hormiga oeste:</label>
+					<input type="color" value="#00cc00"  id="color_oeste"><br>
+					<label for="color_sur">Color hormiga sur:</label>
+					<input type="color" value="#0000ff"  id="color_sur"><br>
+					<label for="color_reina">Color hormiga reina:</label>
+					<input type="color" value="#3366ff"  id="color_reina"><br>
+					<label for="color_soldado">Color hormiga soldado:</label>
+					<input type="color" value="#66ff33"  id="color_soldado"><br>
+					<label for="color_obrera">Color hormiga obrera:</label>
+					<input type="color" value="#ffffff"  id="color_obrera"><br>
+				</div>
+			</div>
+		</div>
+		<canvas id="myChart" width="600" height="600"></canvas>
+		<canvas id="myChart2" width="600" height="600"></canvas>
+		<script src="Chart.min.js"></script>
+		<script type="text/javascript" src="hormiga.js"></script>
+	</body>
+</html>

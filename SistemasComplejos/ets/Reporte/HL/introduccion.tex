@@ -1,0 +1,38 @@
+\subsection{Introducción}
+	La hormiga de Langton es un autómata celular desarrollado por Chris Langton en 1968, Langton se inspiro en la bioquímica, exploró la posibilidad de implementar la lógica molecular del estado viviente generando así una bioquímica artificial basada en la interacción entre moléculas artificiales. Langton dijo que el comportamiento global de una sociedad es un fenómeno emergente que surge de todas las interacciones locales de sus miembros. 
+
+	El comportamiento complejo puede surgir de la interacción de las partes muy simples. Por lo que utilizo una colonia de hormigas como modelo para una forma variante de un autómata celular, en donde cada célula puede cambiar de estado, en virtud de los estados de las otras células. \cite{LANGTON}
+
+	Las hormigas del modelo clásico se mueven en un entorno que consta de células en donde cada una de estas células se encuentra en uno de los dos posibles estados (viva o muerta, 0 o 1), la hormiga viaja en linea recta en el espacio siguiendo las siguientes reglas:
+	\begin{description}
+	 \item Si se encuentra con una célula muerta, hace un giro a la derecha y sale de la célula invirtiendo el estado de la misma.
+	 \item Si se encuentra con una célula viva, gira a la izquierda y sale de la célula invirtiendo su estado.
+	\end{description}
+
+	De esta forma la hormiga deja un rastro a medida que se mueve.
+
+\subsection{Planteamiento de la práctica}
+	En esta práctica se trabajaron dos versiones diferentes de la hormiga de Langton, la primera que es la implementación clásica de este autómata celular y una segunda versión, en la cual se cuenta con tres tipos de hormigas y algunas otras restricciones que modifican el comportamiento del autómata original. 
+	
+	\subsubsection{Hormiga de Langton Original}
+		Las principales características de esta versión es la posibilidad de insertar hormigas por parte del usuario en la posición que se desee además de poder cambiar el color del camino generado por la hormiga. Para poder apreciar de una forma más clara el comportamiento de la hormiga los movimientos que se realizan tienen un color realizado.
+
+		\begin{itemize}
+		 \item Si la hormiga esta viendo hacia el sur el color de la hormiga es azul.
+		 \item El color sera rojo si la hormiga se encuentra viendo hacia el norte.
+		 \item Para el oeste se tiene el color verde.
+		 \item Y para el este el color asociado sera el amarillo.
+		\end{itemize}
+
+		Finalmente, se tiene la posibilidad de generar una cantidad de hormigas basada en una probabilidad de nacimiento, por lo que cada hormiga que se genera tendrá un color diferente. Es importante señalar que el tamaño del espacio en donde se trabaja puede cambiar y las dimensiones de cada célula se ajustan al tamaño del espacio.
+
+	\subsubsection{Hormiga de Langton Modificada}
+		Esta versión modificada tiene todo la funcionalidad de la versión con excepción de que cada hormiga tenga un color diferente, en este caso los colores generados por las hormigas depende del tipo de hormiga del que se trate. Para las hormigas normales el color asociado es el blanco, para las soldado sera el naranja y para las reinas sera el morado.
+
+		El comportamiento es el mismo que en la versión clásica, sin embargo se tienen las siguientes restricciones:
+		\begin{itemize}
+		 \item Cada tipo de hormiga tiene una probabilidad de nacimiento asociada, los valores por defecto son 90\% para las normales, 8\% para las soldado y 2\% para las reinas.
+		 \item También se tiene la posibilidad de cambiar estos valores en la interfaz.
+		 \item Si una hormiga reina y una soldado se encuentran, se reproducen y nace una nueva hormiga dependiendo de las probabilidades anteriores.
+		 \item Se tiene un programa para poder visualizar la población de hormigas separando por tipo de hormiga.
+		\end{itemize}

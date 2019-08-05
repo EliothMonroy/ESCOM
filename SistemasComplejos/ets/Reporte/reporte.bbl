@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{LIBRO}
+J.~E. Hopcroft, R.~Motwani, and J.~D. Ullman, {\em Introducci\'on a La Teor\'ia
+  De Aut\'omatas, Lenguajes Y Computaci\'on}.
+\newblock Addison-Wesley, 2007.
+
+\bibitem{PAGINA}
+{Reyes Gómez, D.}, {\em {Descripción y Aplicaciones de los Autómatas
+  Celulares}}.
+\newblock cinvestav, 2011.
+
+\bibitem{web}
+M.~Gardner, ``Mathematical games the fantastic combinations of john conway's
+  new solitaire game life.''
+  \url{https://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm},
+  1970.
+\newblock [Consultado: 2018-09-19].
+
+\bibitem{LANGTON}
+{De Felipe Vargas, D. and Sanchez Salazar C.}, {\em {Comportamiento colectivo
+  no trivial implementado en robots de bajo costo: el caso de “La hormiga de
+  Langton”}}.
+\newblock {Instituto Politécnico Nacional}, 2016.
+
+\end{thebibliography}

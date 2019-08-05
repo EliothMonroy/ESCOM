@@ -1,0 +1,56 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}M\IeC {\'a}quina de Turing}{4}% 
+\contentsline {subsection}{\numberline {1.1}Introducci\IeC {\'o}n}{4}% 
+\contentsline {subsection}{\numberline {1.2}Planteamiento de la pr\IeC {\'a}ctica}{5}% 
+\contentsline {subsection}{\numberline {1.3}Desarrollo}{6}% 
+\contentsline {subsection}{\numberline {1.4}Pruebas y resultados}{9}% 
+\contentsline {subsection}{\numberline {1.5}Conclusiones}{12}% 
+\contentsline {section}{\numberline {2}Aut\IeC {\'o}mata Celular (Juego de la Vida y Regla de Difusi\IeC {\'o}n)}{13}% 
+\contentsline {subsection}{\numberline {2.1}Introducci\IeC {\'o}n}{13}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Juego de la Vida}{13}% 
+\contentsline {subsection}{\numberline {2.2}Planteamiento de la pr\IeC {\'a}ctica}{14}% 
+\contentsline {subsection}{\numberline {2.3}Desarrollo}{16}% 
+\contentsline {paragraph}{Archivo: }{16}% 
+\contentsline {paragraph}{Archivo: }{18}% 
+\contentsline {subsection}{\numberline {2.4}Pruebas y resultados}{27}% 
+\contentsline {subsubsection}{\numberline {2.4.1}An\IeC {\'a}lisis de poblaciones}{36}% 
+\contentsline {subsection}{\numberline {2.5}Conclusiones}{56}% 
+\contentsline {section}{\numberline {3}Hormiga de Langton}{57}% 
+\contentsline {subsection}{\numberline {3.1}Introducci\IeC {\'o}n}{57}% 
+\contentsline {subsection}{\numberline {3.2}Planteamiento de la pr\IeC {\'a}ctica}{57}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Hormiga de Langton Original}{57}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Hormiga de Langton Modificada}{58}% 
+\contentsline {subsection}{\numberline {3.3}Desarrollo}{59}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Hormiga de Langton Original}{59}% 
+\contentsline {paragraph}{Archivo: }{59}% 
+\contentsline {paragraph}{Archivo: }{60}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Hormiga de Langton Modificada}{71}% 
+\contentsline {paragraph}{Archivo: }{71}% 
+\contentsline {paragraph}{Archivo: }{73}% 
+\contentsline {subsection}{\numberline {3.4}Pruebas y resultados}{89}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Hormiga de Langton Original}{89}% 
+\contentsline {subsection}{\numberline {3.5}Hormiga de Langton Modificada}{92}% 
+\contentsline {subsection}{\numberline {3.6}Conclusiones}{96}% 
+\contentsline {section}{\numberline {4}Grafos}{97}% 
+\contentsline {subsection}{\numberline {4.1}Introducci\IeC {\'o}n}{97}% 
+\contentsline {subsection}{\numberline {4.2}Planteamiento de la pr\IeC {\'a}ctica}{97}% 
+\contentsline {subsection}{\numberline {4.3}Desarrollo}{98}% 
+\contentsline {paragraph}{Archivo: }{98}% 
+\contentsline {subsection}{\numberline {4.4}Pruebas y resultados}{101}% 
+\contentsline {paragraph}{Archivo generado:}{101}% 
+\contentsline {paragraph}{Archivo generado:}{101}% 
+\contentsline {subsection}{\numberline {4.5}Conclusiones}{103}% 
+\contentsline {section}{\numberline {5}Aut\IeC {\'o}mata Celular con Memoria}{104}% 
+\contentsline {subsection}{\numberline {5.1}Introducci\IeC {\'o}n}{104}% 
+\contentsline {subsection}{\numberline {5.2}Planteamiento de la pr\IeC {\'a}ctica}{104}% 
+\contentsline {subsection}{\numberline {5.3}Desarrollo}{106}% 
+\contentsline {paragraph}{Archivo: }{106}% 
+\contentsline {paragraph}{Archivo: }{108}% 
+\contentsline {subsection}{\numberline {5.4}Pruebas y resultados}{120}% 
+\contentsline {subsubsection}{\numberline {5.4.1}Regla: 2 7 4 6. Densidad: 20\%}{120}% 
+\contentsline {subsubsection}{\numberline {5.4.2}Regla: 3 6 3 4 (Cruz en el centro)}{125}% 
+\contentsline {subsubsection}{\numberline {5.4.3}Regla: 1 6 1 6. Densidad: 10\%}{132}% 
+\contentsline {subsubsection}{\numberline {5.4.4}Regla: 3 3 1 8. Densidad: 10\%}{138}% 
+\contentsline {subsubsection}{\numberline {5.4.5}Regla: 3 3 1 7. L\IeC {\'\i }nea en el centro de 7 cuadros}{145}% 
+\contentsline {subsection}{\numberline {5.5}Conclusiones}{153}% 
+\contentsline {section}{Referencias}{154}% 

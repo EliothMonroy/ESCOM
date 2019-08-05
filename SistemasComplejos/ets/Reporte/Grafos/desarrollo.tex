@@ -1,0 +1,10 @@
+\subsection{Desarrollo}
+	Este programa se desarrollo usando Python 3.7, además que se uso la herramienta para la creación de diagramas de flujo Mermaid.cli (la cual es una librería de javascript) para la creación de los grafos. Ya que es bastante eficiente y pudo generar imágenes hasta para 4x4, sin embargo, estás imágenes tienen que ser demasiado grandes, para que haciendo zoom en ellas se puedan apreciar los grafos.
+
+	\paragraph{Archivo: } arboles.py
+	\lstinputlisting[language=Python]{../../Arboles/arboles.py}
+	
+	Una vez obtenida una salida, está misma se usaba con el siguiente comando en Mermaid:
+	
+	
+	mmdc -i input.mmd -o output.png
