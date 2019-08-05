@@ -1,0 +1,15 @@
+table{
+	width: 100%;
+}
+table tr td{
+	text-align: center;
+	/*border: 1px solid black;*/
+}
+
+.centrar{
+	text-align: center;
+}
+/*Selector de id*/
+#izquierda{
+	text-align: left;
+}

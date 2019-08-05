@@ -1,0 +1,6 @@
+SubChunk2size=numsamples*numchanels*bitspersample/8
+SubChunk2size=x*1*2
+x=4/2
+
+cada dos numeritos es un byte
+cada cuatro numerito es una muestra.

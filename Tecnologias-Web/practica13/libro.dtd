@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!ELEMENT libro (seccion*)>
+<!ELEMENT seccion (nombre,receta*)>
+<!ELEMENT receta (nombre,ingrediente+,metodo)
+
+<!ELEMENT ingrediente (nombre, porcion)
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT porcion (#PCDATA)>
+<!ELEMENT metodo (#PCDATA)>

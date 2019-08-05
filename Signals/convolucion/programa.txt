@@ -1,0 +1,3 @@
+Filtro con frecuencia de corte (fc) igual a 1000.
+Realizar mediante la convolución de la señal de entrada con la respuesta al impulso del filtro.
+Con una frecuencia de muestreo de 44100.

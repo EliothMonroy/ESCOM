@@ -1,0 +1,6 @@
+todas las teclas:
+(sin(5912*t)+sin(9280*t))/2*(step(t-.01)-step(t-.05))+(sin(5912*t)+sin(7596*t))/2*(step(t-.09)-step(t-.13))+(sin(5912*t)+sin(8394*t))/2*(step(t-.17)-step(t-.21))+(sin(4379*t)+sin(7596*t))/2*(step(t-.25)-step(t-.29))+(sin(4379*t)+sin(8394*t))/2*(step(t-.33)-step(t-.37))+(sin(4379*t)+sin(9280*t))/2*(step(t-.41)-step(t-.45))+(sin(4838*t)+sin(7596*t))/2*(step(t-.49)-step(t-.53))+(sin(4838*t)+sin(8394*t))/2*(step(t-.57)-step(t-.61))+(sin(4838*t)+sin(9280*t))/2*(step(t-.65)-step(t-.69))+(sin(5353*t)+sin(7596*t))/2*(step(t-.73)-step(t-.77))+(sin(5353*t)+sin(8394*t))/2*(step(t-.81)-step(t-.85))+(sin(5353*t)+sin(9280*t))/2*(step(t-.89)-step(t-.93))+(sin(4379*t)+sin(10260*t))/2*(step(t-.97)-step(t-1))
+0 y 1:
+(sin(5912*t)+sin(8394*t))/2*(step(t-0)-step(t-.4)) + (sin(4379*t)+sin(7596*t))/2*(step(t-.5)-step(t-.9))
+8 frecuencias:
+(sin(5912*t)+sin(7596*t))/2+(sin(5353*t)+sin(7596*t))/2+(sin(4838*t)+sin(8394*t))/2+(sin(4379*t)+sin(7596*t))/2+(sin(4379*t)+sin(8394*t))/2+(sin(4379*t)+sin(9280*t))/2+(sin(4379*t)+sin(10260*t))/2

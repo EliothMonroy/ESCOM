@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="project_data" version="1.3.0" audacityversion="2.1.3" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="89687.5000000000" rate="2000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="GoldWave (C) Chris S. Craig, http://www.goldwave.com"/>
+	</tags>
+	<wavetrack name="entrada" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="2000" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="32">
+				<waveblock start="0">
+					<pcmaliasblockfile summaryfile="e0000f33.auf" aliasfile="C:\Users\ELITH\Documents\GitHub\Signals\producto\entrada.wav" aliasstart="0" aliaslen="32" aliaschannel="0" min="-1.0" max="0.999969" rms="0.707098"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="entrada2" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="2000" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="32">
+				<waveblock start="0">
+					<pcmaliasblockfile summaryfile="e000046e.auf" aliasfile="C:\Users\ELITH\Documents\GitHub\Signals\producto\entrada2.wav" aliasstart="0" aliaslen="32" aliaschannel="0" min="-1.0" max="0.999969" rms="0.707101"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="salida" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="2000" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="32">
+				<waveblock start="0">
+					<pcmaliasblockfile summaryfile="e0000961.auf" aliasfile="C:\Users\ELITH\Documents\GitHub\Signals\producto\salida.wav" aliasstart="0" aliaslen="32" aliaschannel="0" min="-0.569824" max="0.97168" rms="0.315681"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

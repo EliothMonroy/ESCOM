@@ -1,0 +1,11 @@
+Registros:
+(16 bits)
+Ax = acumulador (i,j,k, guarda resultados) 
+bx= base
+cx = contador
+dx = datos
+**Todos estos se pueden dividir en dos espacios de 8 bits, por ejemplo AX -> AH (HIGH) Y AL (low), y esto es igual para todos**
+(32 bits):
+eax, ebx, ecx, edx
+(64 bits)
+rax, rbx, rcx, rdx

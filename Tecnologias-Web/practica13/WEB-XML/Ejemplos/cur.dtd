@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ 
+ 
+<!ELEMENT curso(titulo, unidad+)>
+
+<!ELEMENT titulo(#PCDATA)>
+<!ELEMENT unidad(lecciones)>
+<!ATTLIST unidad titulo CDATA #REQUIRED>
+
+<!ELEMENT lecciones (leccion+)>
+
+<!ELEMENT leccion (#PCDATA)>
+<!ATTLIST leccion titulo CDATA #REQUIRED>

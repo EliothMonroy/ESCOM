@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body{
+	font-family:'Roboto';
+}
+.flexbox{
+	display: inline-flex;
+	/* position: center; */
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	align-items: center;
+	/* height: 300px; */
+	width: 15%;
+	/* margin: auto; */
+	margin-left: 15%;
+	/* background-color: lightgreen; */
+	background-color: #4CAF50;
+	border-radius: 15px;
+}
+#descripcion{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#descripcion *{
+	opacity: 0;
+}
+.formulario *{
+	display: block;
+}
+.centrado{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.flexbox:hover{
+	border: 2px solid #4CAF50;
+}
+.button {
+	/* background-color: #4CAF50;  */
+	background-color: white;
+	
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	/* text-decoration: none;
+	display: inline-block; */
+	font-size: 16px;
+	border-radius: 15px;
+	transition-duration: 0.4s;
+	margin: auto;
+}
+.agregar{
+	border: 2px solid #4CAF50; /* Verde */
+}
+.agregar:hover {
+	background-color: #4CAF50; 
+	color: white;
+}
+.agregar:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.borrar{
+	border: 2px solid red;
+}
+.borrar:hover {
+	background-color: red; 
+	color: white;
+}
+.borrar:active {
+	background-color: red;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+h1{
+	color: #4CAF50;
+	text-align: center;
+}
+.revelar-texto{
+	animation: reveal 4s;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 2px;
+}
+
+.ocultar-texto{
+	animation: ocultar 2s;
+}
+@keyframes reveal {
+	0% {opacity:0;}
+	50% {opacity:0.6;}
+	100%{opacity:1;}
+}
+
+@keyframes revelar-tabla {
+	0% {
+		opacity:0;
+		/* font-size: 8px; */
+		left:100px;
+	}
+	50% {
+		opacity:0.7;
+		/* font-size: 12px; */
+		left:50px;
+	}
+	100%{
+		opacity:1;
+		/* font-size: 15px; */
+		left:0px;
+	}
+}
+
+@keyframes ocultar {
+	0% {opacity:1;}
+	50% {opacity:0.5;}
+	100%{opacity:0;}
+}
+
+@keyframes headers{
+	from {background-color: lightgreen;}
+	to {background-color: y#4CAF50;}
+}
+
+input[type=number] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	background-color: ;
+	/* color: white; */
+	/* border-radius: 2px; */
+}
+input[type=number]:focus {
+	background-color: #3CBC8D;
+	color: white;
+}
+
+#hexagramas {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	animation: revelar-tabla 4s;
+}
+
+#hexagramas td, #hexagramas th {
+	border: 1px solid #ddd;
+	padding: 2px;
+}
+
+#hexagramas tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#hexagramas tr:hover {
+	background-color: #ddd;
+}
+
+#hexagramas th {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+	animation: headers 4s;
+}
+
+.resaltar{
+	animation: animacion-resaltar 3s;
+	border: 4px solid red;
+}
+
+.sin-resaltar{
+	border: 0px;
+}
+
+@keyframes animacion-resaltar{
+	0% {border: 1px solid red;}
+	30% {border: 2px solid red;}
+	70% {border: 3px solid red;}
+	100% {border: 4px solid red;}
+}

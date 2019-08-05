@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBpC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario - Elioth Monroy</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen"/>
+	</head>
+	<body>
+		<form action="" method="" accept-charset="utf-8">
+			<fieldset>
+				<legend>Datos Personales</legend>
+				<table>
+					<tr>
+						<td colspan="2">
+							<label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre">
+						</td>
+						<td>
+							<label for="nombre">Apellido Paterno:</label><input type="text" name="apellidoP" id="apellidoP">
+						</td>
+						<td>
+							<label for="nombre">Apellido Materno:</label><input type="text" name="apellidoM" id="apellidoM">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="">Fecha de Nacimiento:</label>
+						</td>
+						<td>
+							<label for="nacimientoAnio">Año:</label>
+							<select name="nacimientoAnio" id="nacimientoAnio" >
+								<option value="1980">1980</option>
+								<option value="1990">1990</option>
+								<option value="2000">2000</option>
+								<option value="2001">2001</option>
+								<option value="2002">2002</option>
+								<option value="2003">2003</option>
+								<option value="2004">2004</option>
+								<option value="2005">2005</option>
+								<option value="2006">2006</option>
+								<option value="2007">2007</option>
+								<option value="2008">2008</option>
+							</select>
+						</td>
+						<td>
+							<label for="nacimientoMes">Mes:</label>
+							<select name="nacimientoMes" id="nacimientoMes">
+								<option value="0">Enero</option>
+								<option value="1">Febrero</option>
+								<option value="2">Marzo</option>
+								<option value="3">Abril</option>
+								<option value="4">Mayo</option>
+								<option value="5">Junio</option>
+								<option value="6">Julio</option>
+								<option value="7">Agosto</option>
+								<option value="8">Septiembre</option>
+								<option value="9">Octubre</option>
+								<option value="10">Noviembre</option>
+								<option value="11">Diciembre</option>
+							</select>
+						</td>
+						<td>
+							<label for="nacimientoMes">Día:</label>
+							<select name="nacimientoDia" id="nacimientoDia">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label for="sexo">Sexo:</label>
+							<input type="radio" value="Masculino" name="sexo" id="sexo1"/>Masculino
+							<input type="radio" value="Femenino" name="sexo" id="sexo2"/>Femenino
+						</td>
+						<td colspan="2">
+							<label for="correo">Correo:</label>
+							<input type="email" name="correo" id="correo" />
+						</td>
+					</tr>
+				</table>
+				<fieldset>
+					<legend>Dirección</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="calle">Calle:</label><input type="text" name="calle" id="calle">
+							</td>
+							<td>
+								<label for="numero">Número:</label><input type="text" name="numero" id="numero">
+							</td>
+							<td>
+								<label for="colonia">Colonia:</label><input type="text" name="colonia" id="colonia">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="municipio">Municipio:</label><input type="text" name="municipio" id="municipio">
+							</td>
+							<td>
+								<label for="ciudad">Ciudad:</label><input type="text" name="ciudad" id="ciudad">
+							</td>
+							<td>
+								<label for="cp">Código Postal:</label><input type="text" name="cp" id="cp">
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</fieldset>
+			<fieldset>
+				<legend>Preferencias</legend>
+				<table>
+					<tr>
+						<td colspan="6">
+							<label for="lenguaje">Lenguage de programación preferido:</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6">
+							<input type="radio" value="l1" name="lenguaje" id="l1"/>C++
+							<input type="radio" value="l2" name="lenguaje" id="l2"/>C
+							<input type="radio" value="l3" name="lenguaje" id="l3"/>Java
+							<input type="radio" value="l4" name="lenguaje" id="l4"/>Python
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6">
+							<label for="pasatiempos">Pasatiempos:</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="pasatiempos" id="pasatiempos1"/>Leer
+						</td>
+						<td>
+							<input type="checkbox" name="pasatiempos" id="pasatiempos2"/>Chatear
+						</td>
+						<td>
+							<input type="checkbox" name="pasatiempos" id="pasatiempos3"/>Hacer deporte
+						</td>
+						<td>
+							<input type="checkbox" name="pasatiempos" id="pasatiempos4"/>Ver TV
+						</td>
+						<td>
+							<input type="checkbox" name="pasatiempos" id="pasatiempos5"/>Jugar
+						</td>
+						<td>
+							<input type="checkbox" name="pasatiempos" id="pasatiempos6"/>Meditar
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6"><label for="fuente">Fuente de consulta de información</label></td>
+					</tr>
+					<tr>
+						<td colspan="6">
+							<select name="fuente" id="fuente">
+								<option value="Internet">Internet</option>
+								<option value="Libros">Libros</option>
+								<option value="Revistas">Revistas</option>
+								<option value="Periodicos">Periodicos</option>
+								<option value="Otros">Otros</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Comentarios</legend>
+				<label for="comentarios"></label>
+				<textarea name="comentarios" id="comentarios" cols="30" rows="3" placeholder="Escriba un comentario aquí"></textarea>
+			</fieldset>
+			<div class="centrar"><input type="button" value="Enviar" onclick="validarFormulario()"/></div>
+			<input type="button" value="Mostrar Nombre, Tipo y valor" onclick="obtenerNombreTipoValor()"/>
+		</form>
+		<script src="formulario.js"></script>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Definimos 4 columnas de imagenes */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Al ser menor a 800px cambiamos a 2 columnas */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Al ser menor a 600 px cambiamos a 1 sola columna, cada columna se posiciona encima una de otra */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Galería de imagenes responsiva</h1>
+  <p>Para ver el efecto es necesario redimensionar el navegador.</p>
+</div>
+
+<!-- Galería -->
+<div class="row"> 
+  <div class="column">
+    <img src="img//wedding.jpg" style="width:100%">
+    <img src="img//rocks.jpg" style="width:100%">
+    <img src="img//falls2.jpg" style="width:100%">
+    <img src="img//paris.jpg" style="width:100%">
+    <img src="img//nature.jpg" style="width:100%">
+    <img src="img//mist.jpg" style="width:100%">
+    <img src="img//paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img//underwater.jpg" style="width:100%">
+    <img src="img//ocean.jpg" style="width:100%">
+    <img src="img//wedding.jpg" style="width:100%">
+    <img src="img//mountainskies.jpg" style="width:100%">
+    <img src="img//rocks.jpg" style="width:100%">
+    <img src="img//underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img//wedding.jpg" style="width:100%">
+    <img src="img//rocks.jpg" style="width:100%">
+    <img src="img//falls2.jpg" style="width:100%">
+    <img src="img//paris.jpg" style="width:100%">
+    <img src="img//nature.jpg" style="width:100%">
+    <img src="img//mist.jpg" style="width:100%">
+    <img src="img//paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img//underwater.jpg" style="width:100%">
+    <img src="img//ocean.jpg" style="width:100%">
+    <img src="img//wedding.jpg" style="width:100%">
+    <img src="img//mountainskies.jpg" style="width:100%">
+    <img src="img//rocks.jpg" style="width:100%">
+    <img src="img//underwater.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

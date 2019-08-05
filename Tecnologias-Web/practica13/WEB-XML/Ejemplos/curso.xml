@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?> 
+
+<!DOCTYPE curso SYSTEM "cur.dtd">
+
+<curso>
+<titulo>
+Introducción a XML
+</titulo>
+
+<unidad titulo="XML">
+<lecciones>
+<leccion titulo="Introccion">El contenido de la lección...</leccion>
+<leccion titulo="Documento bien formado">Documento bien formado...</leccion>
+<leccion titulo="Ejemplos de uso">El contenido de la lección...</leccion>
+</lecciones>
+</unidad>
+
+</curso>

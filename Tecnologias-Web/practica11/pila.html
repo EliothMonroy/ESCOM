@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Simulación pila</title>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+		<div id="contenedor-pila">
+			<input type="number" id="valor-pila">
+			<div class="flex-container" id="pila"></div>
+			<button onclick="push()">Agregar valor</button>
+			<button onclick="pop()">Eliminar valor</button><br>
+		</div>
+		<div id="contenedor-cola">
+			<input type="number" id="valor-cola">
+			<div class="flex-container" id="cola"></div>
+			<button onclick="insertar()">Agregar valor</button>
+			<button onclick="eliminar()">Eliminar valor</button>
+		</div>
+		<script src="pila.js"></script>
+	</body>
+</html>

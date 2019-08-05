@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!ELEMENT agenda (contacto*)>
+<!ELEMENT contacto (nombre, apellido+, telefono, email?, direccion)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT direccion (calle, numero, cp)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+
+<!ATTLIST telefono pais CDATA #REQUIRED>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<familia codigo="L03-07">
+<madre>
+<nombre>Filomena</nombre>
+<apellido>Pérez</apellido>
+<apellido>Cántaro</apellido>
+<dni>11.222.333-D</dni>
+</madre>
+<hijos>
+<hijo pos="1">
+<nombre>Manuel</nombre>
+<apellido>López</apellido>
+<apellido>Pérez</apellido>
+<dni>44.555.666-E</dni>
+<edad>25</edad>
+</hijo>
+<hijo pos="2">
+<nombre>José Antonio</nombre>
+<apellido>López</apellido>
+<apellido>Pérez</apellido>
+<edad>15</edad>
+</hijo>
+</hijos>
+</familia>
+

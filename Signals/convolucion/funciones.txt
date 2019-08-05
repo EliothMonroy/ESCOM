@@ -1,0 +1,2 @@
+Para el filtro:
+cos(2*pi*t*(exp(log(20)+n/N*6.6)))

@@ -1,0 +1,26 @@
+.texto-centrado{
+	text-align: center;
+}
+.izquierda{
+	float: left;
+	width: 33.3%;
+}
+.texto-izquierda{
+	text-align: left;
+}
+.vertical{
+	height: 25%;
+	/* display:inline-block; */
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 40%; */
+}
+table{
+	width: 100%; 
+}
+h4{
+	text-align: center;
+}

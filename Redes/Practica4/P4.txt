@@ -1,0 +1,5 @@
+Practica 4.- Diseño e Implementacion de un protocolo de comunicacion para la transmision de archivos.
+
+Tomando como referencia el programa de http://148.204.58.221/axel/redesnp/sniffer/jnetpcap/Envia.java
+
+asi como las caracteristicas de un protocolo, implementar un protocolo que cuente con una sintaxis, semantica y temporizacionn para transmitir archivos de cualquier tamaño/tipo entre 2 maquinas garantizando la entrega en orden, sin errores y sin duplicados de informacion

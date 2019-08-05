@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE agenda SYSTEM "agendadtd.dtd">
+
+<agenda>
+	<contacto>
+		<nombre>Juan</nombre>
+		<apellido>Rodriguez</apellido>
+		<apellido>Martinez</apellido>
+		<telefono pais="Mexico">345940954985</telefono>
+		<email>ojuandamian@gmail.com</email>
+		<direccion>
+			<calle>Zumpango</calle>
+			<numero>93939392</numero>
+			<cp>55234</cp>
+		</direccion>
+	</contacto>
+</agenda>

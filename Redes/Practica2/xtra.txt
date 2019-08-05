@@ -1,0 +1,51 @@
+int IHL= packet.getUByte(14); 
+                                        IHL=(IHL&0x0F)*4;//No da el largo de la trama para saber en que posicion esta el checksum
+                                        int longitud = (packet.getUByte(16)*256) + packet.getUByte(17);
+                                        longitud-=IHL;
+                                        int longitud2=longitud;
+                                        int bytesEncIP=longitud;
+                                        System.out.println(longitud+" bytes conforman el Encabezado IP");
+                                        System.out.println("IHL: "+IHL+" bytes.");
+                                       //Trama a ser enviada para calcular checksum
+                                        byte trama []= new byte [10+IHL+longitud];
+                                        int i;
+                                        //IP origen e IP destino
+                                        for(i=0;i<6;i++){
+                                            trama[i]=(byte)packet.getUByte(i+26);
+                                        }
+                                        //Byte de ceros
+                                        trama[i]=0;
+                                        i++;
+                                        //Protocolo
+                                        trama[i]=(byte)packet.getUByte(23);
+                                        i++;
+                                        //Longitud
+                                        longitud=longitud/256;
+                                        longitud=(longitud&0x0000FF);
+                                        trama[i]=(byte)longitud;
+                                        i++;
+                                        trama[i]=(byte)(longitud2&0x000000FF);
+                                        i++;
+
+                                        /*Concatenamos los bytes que se van a sumar para calcular checksum
+                                        (valor de IHL)*/
+                                        for(int aux=0;aux<IHL;aux++,i++){
+                                            trama[i]=(byte)packet.getUByte(aux+14);
+                                        }
+
+                                        //Concatenamos los bytes del encabezado IP
+                                        for(int l=0;l<bytesEncIP;l++,i++){
+                                            trama[i]=(byte)packet.getUByte(l+14+IHL);
+                                        }System.out.println("");
+                                        System.out.println("Trama a ser enviada al metodo Checksum:");
+                                        for (int cont = 0; cont < trama.length; cont++) {
+                                            System.out.printf("%02X ", trama[cont]);
+                                            if (cont % 16 == 15) {
+                                                System.out.println("");
+                                            }
+                                        }
+                                        System.out.println("\n");
+                                        /*Llamamos al metodo que calcula el checksum, enviando como parametro
+                                        la cadena de byres que hemos creado: trama*/
+                                        long ChkSum=Checksum.calculateChecksum(trama);
+                                        System.out.printf("Checksum calculado: %02X \n\n",ChkSum);

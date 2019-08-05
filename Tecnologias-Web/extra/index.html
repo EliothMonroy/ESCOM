@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Extra</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen">
+	</head>
+	<body>
+		<h1>Hexagramas</h1>
+		<div class="formulario">
+			<input type="number" id="campo1">
+			<input type="number" id="campo2">
+			<input type="number" id="campo3">
+			<div class="centrado">
+				<button onclick="agregar()" class="button agregar">Agregar linea</button>
+				<button onclick="borrar()" class="button borrar">Borrar linea</button>
+				<button onclick="borrarTodo()" class="button borrar">Borrar hexagrama</button>
+			</div>
+		</div>
+		<div style="width: 100%; padding: 5%" id="descripcion">
+			<div id="uno">Aún no soy un hexagrama :/</div>
+			<div id="dos"></div>
+			<div id="tres"></div>
+		</div>
+		<div class="flexbox" onmouseover="mostrarDescripcion('uno');" onmouseout="quitarDescripcion('uno')" id="contenedor1">
+			<div id="titulo1"></div>
+		</div>
+		<div class="flexbox" id="contenedor2" onmouseover="mostrarDescripcion('dos');" onmouseout="quitarDescripcion('dos')">
+			<div id="titulo2"></div>
+		</div>
+		<div class="flexbox" id="contenedor3" onmouseover="mostrarDescripcion('tres');" onmouseout="quitarDescripcion('tres')">
+			<div id="titulo3"></div>
+		</div>
+		<div style="width: 100%; padding: 5%"></div>
+		<table id="hexagramas">
+			<tr>
+				<th>
+					Triagama Superior<br>
+					Triagrama Inferior
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h1.svg.png">
+							<figcaption>Ch'len</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h2.svg.png">
+							<figcaption>Chen</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h3.svg.png">
+							<figcaption>K'an</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h4.svg.png">
+							<figcaption>Ken</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h5.svg.png">
+							<figcaption>K'un</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h6.svg.png">
+							<figcaption>Sun</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h7.svg.png">
+							<figcaption>Li</figcaption>
+						</figure>
+					</div>
+				</th>
+				<th>
+					<div>
+						<figure>
+							<img src="img/h8.svg.png">
+							<figcaption>Tui</figcaption>
+						</figure>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v1.svg.png">
+							<figcaption>Ch'len</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f1">
+							<img src="img/1.svg.png">
+							<figcaption>1</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f34">
+							<img src="img/34.svg.png">
+							<figcaption>34</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f5">
+							<img src="img/5.svg.png">
+							<figcaption>5</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f26">
+							<img src="img/26.svg.png">
+							<figcaption>26</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f11">
+							<img src="img/11.svg.png">
+							<figcaption>11</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f9">
+							<img src="img/9.svg.png">
+							<figcaption>9</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f14">
+							<img src="img/14.svg.png">
+							<figcaption>14</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f43">
+							<img src="img/43.svg.png">
+							<figcaption>43</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v2.svg.png">
+							<figcaption>Chen</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f25">
+							<img src="img/25.svg.png">
+							<figcaption>25</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f51">
+							<img src="img/51.svg.png">
+							<figcaption>51</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f3">
+							<img src="img/3.svg.png">
+							<figcaption>3</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f27">
+							<img src="img/27.svg.png">
+							<figcaption>27</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f24">
+							<img src="img/24.svg.png">
+							<figcaption>24</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f42">
+							<img src="img/42.svg.png">
+							<figcaption>42</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f21">
+							<img src="img/21.svg.png">
+							<figcaption>21</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f17">
+							<img src="img/17.svg.png">
+							<figcaption>17</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v3.svg.png">
+							<figcaption>K'an</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f6">
+							<img src="img/6.svg.png">
+							<figcaption>6</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f40">
+							<img src="img/40.svg.png">
+							<figcaption>40</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f29">
+							<img src="img/29.svg.png">
+							<figcaption>29</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f4">
+							<img src="img/4.svg.png">
+							<figcaption>4</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f7">
+							<img src="img/7.svg.png">
+							<figcaption>7</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f59">
+							<img src="img/59.svg.png">
+							<figcaption>59</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f64">
+							<img src="img/64.svg.png">
+							<figcaption>64</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f47">
+							<img src="img/47.svg.png">
+							<figcaption>47</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v4.svg.png">
+							<figcaption>Ken</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f33">
+							<img src="img/33.svg.png">
+							<figcaption>33</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f62">
+							<img src="img/62.svg.png">
+							<figcaption>62</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f39">
+							<img src="img/39.svg.png">
+							<figcaption>39</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f52">
+							<img src="img/52.svg.png">
+							<figcaption>52</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f15">
+							<img src="img/15.svg.png">
+							<figcaption>15</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f53">
+							<img src="img/53.svg.png">
+							<figcaption>53</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f56">
+							<img src="img/56.svg.png">
+							<figcaption>56</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f31">
+							<img src="img/31.svg.png">
+							<figcaption>31</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v5.svg.png">
+							<figcaption>K'un</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f12">
+							<img src="img/12.svg.png">
+							<figcaption>12</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f16">
+							<img src="img/16.svg.png">
+							<figcaption>16</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f8">
+							<img src="img/8.svg.png">
+							<figcaption>8</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f23">
+							<img src="img/23.svg.png">
+							<figcaption>23</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f2">
+							<img src="img/2.svg.png">
+							<figcaption>2</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f20">
+							<img src="img/20.svg.png">
+							<figcaption>20</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f35">
+							<img src="img/35.svg.png">
+							<figcaption>35</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f45">
+							<img src="img/45.svg.png">
+							<figcaption>45</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v6.svg.png">
+							<figcaption>Sun</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f44">
+							<img src="img/44.svg.png">
+							<figcaption>44</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f32">
+							<img src="img/32.svg.png">
+							<figcaption>32</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f48">
+							<img src="img/48.svg.png">
+							<figcaption>48</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f18">
+							<img src="img/18.svg.png">
+							<figcaption>18</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f46">
+							<img src="img/46.svg.png">
+							<figcaption>46</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f57">
+							<img src="img/57.svg.png">
+							<figcaption>57</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f50">
+							<img src="img/50.svg.png">
+							<figcaption>50</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f20">
+							<img src="img/20.svg.png">
+							<figcaption>20</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v7.svg.png">
+							<figcaption>Li</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f13">
+							<img src="img/13.svg.png">
+							<figcaption>13</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f55">
+							<img src="img/55.svg.png">
+							<figcaption>55</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f63">
+							<img src="img/63.svg.png">
+							<figcaption>63</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f22">
+							<img src="img/22.svg.png">
+							<figcaption>22</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f36">
+							<img src="img/36.svg.png">
+							<figcaption>36</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f37">
+							<img src="img/37.svg.png">
+							<figcaption>37</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f30">
+							<img src="img/30.svg.png">
+							<figcaption>30</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f49">
+							<img src="img/49.svg.png">
+							<figcaption>49</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div>
+						<figure>
+							<img src="img/v8.svg.png">
+							<figcaption>Tui</figcaption>
+						</figure>
+					</div>
+				</th>
+				<td>
+					<div>
+						<figure id="f10">
+							<img src="img/10.svg.png">
+							<figcaption>10</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f54">
+							<img src="img/54.svg.png">
+							<figcaption>54</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f60">
+							<img src="img/60.svg.png">
+							<figcaption>60</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f41">
+							<img src="img/41.svg.png">
+							<figcaption>41</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f42">
+							<img src="img/19.svg.png">
+							<figcaption>19</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f61">
+							<img src="img/61.svg.png">
+							<figcaption>61</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f38">
+							<img src="img/38.svg.png">
+							<figcaption>38</figcaption>
+						</figure>
+					</div>
+				</td>
+				<td>
+					<div>
+						<figure id="f58">
+							<img src="img/58.svg.png">
+							<figcaption>58</figcaption>
+						</figure>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<script src="aplicacion.js"></script>
+	</body>
+</html>

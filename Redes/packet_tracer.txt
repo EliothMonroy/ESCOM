@@ -1,0 +1,19 @@
+enable
+config t
+int faX/X
+ip add 11.0.0.1 255.0.0.0
+************* clock rate 4000000
+no shut
+exit
+
+
+
+
+
+GateWay= Misma direccion de la interfaz fax/x
+
+ip route id_red mask ip_destino
+
+id_Red = 10.0.0.0
+
+ip_destino = interfaz del sig router

@@ -1,0 +1,8 @@
+windows:
+nasm -f win32 -o example.obj example.asm
+
+ld example.obj -m i386pe -e _main -L "C:\Program Files (x86)\EnsambladorWindows" -l kernel32 -o example.exe
+
+Linux:
+nasm -f elf hola_mundo.asm
+ld -m elf_i386 -s -o hola hola_mundo.o

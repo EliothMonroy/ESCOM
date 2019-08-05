@@ -1,0 +1,42 @@
+Selector universal*/
+*{
+	color: red;
+}
+/*selector de etiqueta
+estructura: selector{propiedad:valor;}*/
+h1 {
+	color: red;
+	font-size: 16pt;
+}
+
+p,h1,a{
+	color: blue;
+	font-size: : 18pt;
+}
+
+a{
+	margin: 3px;
+}
+/*Selector descendente*/
+p a{
+	color: yellow;
+}
+/* Selector de clase */
+.clase{
+	/* estilos */
+}
+/* Selector de id */
+#id{
+	/* estilos */
+}
+/* Selector de hijos
+Es un selector similar al selector descendentes solo que
+selecciona a los hijos directos de un elemento */
+td>a{
+	background: yellow
+}
+/* Selector adyacente */
+/* La sintaxis es elem1+elem2{}
+	Selecciona el elmento elem2 cuyo elemento padre sea el mismo que el elem1 y elem2 
+	este inmediatamente después de elem1
+ 

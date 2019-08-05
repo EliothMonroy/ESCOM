@@ -1,0 +1,42 @@
+1.- .08s
+
+2.-
+18849.555922 ->h[0]=1
+5803.099144 ->h[1]=.3078
+1786.565148 ->h[2]=.0948
+550.019042 ->h[3]=.0292
+169.331046 ->h[4]=.0089
+52.130928 ->h[5]=.0028
+16.049235 ->h[6]=.0008
+4.940981 ->h[7]=.0003
+1.521150 ->h[8]=.00008
+0.468307 ->h[9]=.00002
+
+3.-
+convolucion.exe entrada.wav salida.wav
+tdf.exe -3 salida.wav salida_frecuencia.wav
+tdf.exe entrada3.wav salida3.wav
+multiplicacion.exe salida_frecuencia.wav salida3.wav salida_mult.wav
+tdfi.exe salida_mult.wav inversa_mult.wav
+
+4.-
+tdf.exe -2 entrada4.wav salida4.wav
+tdf.exe -2 senal_portadora.wav salida_portadora.wav
+Abrir en goldwave y comparar
+
+5.-
+En goldwave crear un archivo estereo con fm=44100 y duracion de .1s
+Aplicar chain para solo seleccionar el canal izquierdo.
+En f(x) ingresar:
+(step(n)-step(n-882))+(step(n-(4410-882)))
+Salvar el archivo como salida5.wav
+
+7.- 
+697Hz, k=174
+770Hz, k=192
+852Hz, k=213
+941Hz, k=235
+1209Hz, k=302
+1336Hz, k=333
+1477Hz, k=369
+1633Hz, k=408

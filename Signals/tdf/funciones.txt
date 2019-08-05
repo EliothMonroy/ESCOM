@@ -1,0 +1,6 @@
+f1(t)=step(n-1)-step(n-16)-step(n-17)
+f2(t)=1-step(n-8)-step(n-9)+step(n-24)+step(n-25)
+f3(t)=cos(2*pi*(62.5)*f*t)
+f4(t)=sin(2*pi*(62.5)*f*t)
+filtro:
+2000*pi*exp(-2000*pi*t)

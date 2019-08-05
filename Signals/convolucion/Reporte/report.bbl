@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+
+\bibitem{libro}
+S.~W. Smith, {\em The Scientist and Engineer's Guide to Digital Signal
+  Processing}.
+\newblock California Technical Publishing, 2011.
+
+\bibitem{rc}
+Sengpielaudio, ``Rc filter and cutoff frecuency [online]. disponible en:
+  http://www.sengpielaudio.com/calculator-rcpad.htm.''
+
+\end{thebibliography}

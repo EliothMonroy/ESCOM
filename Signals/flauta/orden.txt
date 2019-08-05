@@ -1,0 +1,15 @@
+do
+re
+mi
+fa
+sol
+la
+si
+
+Superiores
+do
+re
+mi
+fa
+sol
+la

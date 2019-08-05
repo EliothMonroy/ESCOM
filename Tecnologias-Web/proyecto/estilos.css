@@ -1,0 +1,72 @@
+img{
+	width: 100px;
+	height: 150px;
+}
+.flexbox{
+	display: flex;
+	flex-direction: row;
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* height: 800px;  */
+	background-color: DodgerBlue;
+	/* height: 100%;
+	width: 100%; */
+}
+#cartas_compu{ 
+	align-self: flex-end;
+	/* align-items: flex-end; */
+	text-align: center;
+	margin-left: auto;
+	margin-bottom: auto;
+	/* flex: 1; */
+}
+#cartas_usuario{
+	align-self: flex-start;
+	text-align: center;
+	margin-right: auto;
+	margin-bottom: 100%;
+}
+#cartas_usuario img:hover{
+	opacity: 0.8;
+	border: 2px solid red;
+}
+.en_medio{
+	display: flex;
+	/* justify-content: space-between; */
+	background-color: DodgerBlue;
+	/* align-self: center; */
+	/* text-align: center; */
+	/* margin-right: 50%; */
+	/* margin-right: 50%; */
+	/* justify-content: space-between; */
+}
+.darCartaUsuario{
+	position: relative;
+	animation: darCartaUsuario 2s normal ease-out;
+}
+.darCartaMaquina{
+	position: relative;
+	animation: darCartaMaquina 2s normal ease-out;
+}
+#centro{
+	align-self: center;
+	margin-left: 40%;
+}
+@keyframes darCartaUsuario{
+	0%{
+		top: 0px;
+	}
+	100%{
+		top: 150px;
+	}
+}
+@keyframes darCartaMaquina{
+	0%{
+		top: 0px;
+		left: 0px;
+	}
+	100%{
+		top: -150px;
+		left: 800px;
+	}
+}

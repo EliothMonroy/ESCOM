@@ -1,0 +1,9 @@
+/* Unidades de medida */
+/* Absolutas: cm,in,pt,pc,px;
+	Relativas:
+	em: Ancho de la letra m de tamaño de fuente del elemnto padre
+	ex: Se toma el tamaño de la fuente del navegador, o por default de 12 a 16px
+	rem: Tamaño relativo en la fuente detectada en el elemento raíz <body><html>
+	%: Depende del elemento contenedor o el elemento padre
+ */
+/* Propiedades  */

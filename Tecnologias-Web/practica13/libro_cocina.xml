@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE libro SYSTEM "libro.dtd">
+<libro>
+	<seccion>
+		<nombre>Apetitosos Pasteles</nombre>
+		<receta>
+			<nombre>Pastel de queso</nombre>
+			<ingrediente>
+				<nombre>Pan cortado de rebanadas</nombre>
+				<porcion>1/2 kg</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Huevos</nombre>
+				<porcion>6</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Leche</nombre>
+				<porcion>6 tazas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Queso rallado o ricota</nombre>
+				<porcion>2 tazas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Sal</nombre>
+				<porcion>cantidad necesaria</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Pimienta</nombre>
+				<porcion>2 cucharaditas</porcion>
+			</ingrediente>
+			<metodo>
+				1. En una asadera enmatecada se coloca, en el fondo, una camada de rebanadas de pan, se espolvorean con abundante queso rallado y se vuelve a poner otra camada de rebanadas de pan, que se cubre con el queso restante.
+				2. Aparte se baten los huevos, se les agrega leche, la sal y la cebolla y se vierte este líquito sobre las rebandas de pan y queso. Se cocina en horno moderado durante una hora más o menos.
+			</metodo>
+		</receta>
+		<receta>
+			<nombre>Pastel de choclo</nombre>
+			<ingrediente>
+				<nombre>Choclos desgranados, previamente cocidos</nombre>
+				<porcion>2 tazas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Huevos</nombre>
+				<porcion>4</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Manteca o mantequilla</nombre>
+				<porcion>2 cucharadas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Crema de leche</nombre>
+				<porcion>1/4 de litro</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Harina cernida</nombre>
+				<porcion>1/4 de taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Sal</nombre>
+				<porcion>Cantidad necesaria</porcion>
+			</ingrediente>
+			<metodo>
+				1. Baten los huevos y se le agrega la harina, la sal, el choclo, la manteca y por último la crema de leche, batiendo siempre hasta que la preparación quede bien homogénea. Se coloca luego un molde a baño maria en horno moderado durante una hora. Se sirve caliente.
+			</metodo>
+		</receta>
+		<receta>
+			<nombre>Pastel de espinacas o acelga</nombre>
+			<ingrediente>
+				<nombre>Pure de acelga o espinaca cocida con sal</nombre>
+				<porcion>1 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Huevos duros picados</nombre>
+				<porcion>2</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Salsa blanca</nombre>
+				<porcion>1 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Queso rallado</nombre>
+				<porcion>1/2 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Sal</nombre>
+				<porcion>cantidad necesaria</porcion>
+			</ingrediente>
+			<metodo>
+				1. Se mezclan todos los ingredientes, se ponen en una asadera y se espolvorean con pan rallado. Se deja en el horno sólo hasta que se dore.
+			</metodo>
+		</receta>
+	</seccion>
+	<seccion>
+		<nombre>Tortillas para todos los gustos</nombre>
+		<receta>
+			<nombre>Tortilla al horno</nombre>
+			<ingrediente>
+				<nombre>Huevos</nombre>
+				<porcion>3</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Queso rallado</nombre>
+				<porcion>4 cucharadas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Leche</nombre>
+				<porcion>1 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Queso fresco</nombre>
+				<porcion>6 tajadas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Sal y condimento</nombre>
+				<porcion>cantidad necesaria</porcion>
+			</ingrediente>
+			<metodo>
+				1. Se baten muy bien por separado las claras y las yemas. En estas últimas se incorpora la sal y se continúa batiendo hasta que se espesen.
+			</metodo>
+		</receta>
+		<receta>
+			<nombre>Tortilla de arroz</nombre>
+			<ingrediente>
+				<nombre>Arroz cocido</nombre>
+				<porcion>1/2 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Cebolla chica bien picada</nombre>
+				<porcion>1</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Diente de ajo bien picado</nombre>
+				<porcion>1</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Huevos</nombre>
+				<porcion>3</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Perejil picado</nombre>
+				<porcion>2 cucharadas</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Manteca o mantequilla</nombre>
+				<porcion>1 cucharada</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Sal y condimento</nombre>
+				<porcion>cantidad necesaria</porcion>
+			</ingrediente>
+			<metodo>
+				1. Se baten muy bien los tres huevos y se les añade el arroz. En la manteca derretida, se dotan ligeramente la cebolla y el ajo picados; cuando están listos, se les agrega la mezcla de arroz con huevos y por último la sal y el perejil
+			</metodo>
+		</receta>
+	</seccion>
+
+	<seccion>
+		<nombre>Postres para adornar en mesa</nombre>
+		<receta>
+			<nombre>Budín de limón</nombre>
+			<ingrediente>
+				<nombre>Azúcar</nombre>
+				<porcion>3/4 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Harina</nombre>
+				<porcion>1 taza</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Sal</nombre>
+				<porcion>1/4 de cucharadita</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Huevos</nombre>
+				<porcion>3</porcion>
+			</ingrediente>
+			<ingrediente>
+				<nombre>Polvo de hornear</nombre>
+				<porcion>3</porcion>
+			</ingrediente>
+			<metodo>
+				1. Se baten separadas las claras de las yemas. En estas últimas, se añaden los dos jugos de fruta. Se mezclan los sólidos: azucar, harina y sal. y se unen las dos mezclas resolviendo bien.
+			</metodo>
+		</receta>
+	</seccion>
+</libro>

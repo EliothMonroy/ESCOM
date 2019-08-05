@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Proyecto</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen"/>
+	</head>
+	<body onload="iniciar()">
+		<div class="flexbox">
+			<div id="cartas_compu">
+				<!-- <img src="images/TC.png" id="" alt="Carta compu" width="100px" draggable="false" height="150px">
+				<img src="images/TD.png" id="" alt="Carta compu" width="100px" draggable="false" height="150px">
+				<img src="images/TH.png" id="" alt="Carta compu" width="100px" draggable="false" height="150px"> -->
+			</div>
+		</div>
+		<div class="en_medio">
+			<div id="deck">
+				<!-- <img src="images/gray_back.png" id="" alt="Carta compu" draggable="false" width="100px" height="150px"> -->
+			</div>
+			<div id="centro" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<!-- <img src="images/TC.png" id="centro2" alt="Carta compu" width="100px" draggable="false"  height="150px"> -->
+			</div>
+		</div>
+		<div class="flexbox">
+			<div id="cartas_usuario">
+				<!-- <img src="images/TC.png" id="imag1" alt="Carta compu" width="100px" draggable="true" ondragstart="drag(event)" height="150px">
+				<img src="images/TD.png" id="imag2" alt="Carta compu" width="100px" draggable="true" ondragstart="drag(event)" height="150px">
+				<img src="images/TH.png" id="img3" alt="Carta compu" width="100px" draggable="true" ondragstart="drag(event)" height="150px"> -->
+			</div>
+		</div>
+	<script src="aplicacion.js"></script>
+	</body>
+</html>

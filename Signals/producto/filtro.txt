@@ -1,0 +1,7 @@
+filtro (fc=1000Hz), duración: 1.486:
+(step(n)-step(n-1486))+step(n-(65536-1486))
+Filtro tdf:
+(step(n)-step(n-40))+step(n-(1764-40))
+
+Examen:
+(step(n)-step(n-88.2))+step(n-(4410-88.2))

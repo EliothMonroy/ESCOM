@@ -1,0 +1,10 @@
+#header{
+	display: flex;
+	flex-direction: row;
+	/* flex: 100%; */
+	background-color: lightgray;
+	align-content: center;
+}
+#encabezado{
+	align-self: center;
+}
