@@ -1,0 +1,20 @@
+#Start recording tcl command: 9/18/2017 21:02:00
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00; Project name: shiftR00
+prj_project new -name "shiftR00" -impl "shiftR00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/toposcdiv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/source"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/source/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/source/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/source/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/source/toposcdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/packageshiftR00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/topshiftR00.vhdl"
+prj_run Export -impl shiftR00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/shiftR00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/shiftR00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/shiftR00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftR00/shiftR00/shiftR00.xcf"
+pgr_program run
+prj_project save
+pgr_project close
+prj_project save
+#Stop recording: 9/18/2017 23:15:59

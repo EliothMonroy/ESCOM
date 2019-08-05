@@ -1,0 +1,6 @@
+#Start recording tcl command: 12/17/2016 17:51:51
+#Project Location: C:/Users/vlad/Documents/ESCOM/ARQUI/LCDRAM; Project name: LCDRAM
+prj_project open "C:/Users/vlad/Documents/ESCOM/ARQUI/LCDRAM/LCDRAM.ldf"
+pgr_project close
+prj_project close
+#Stop recording: 12/17/2016 17:52:00

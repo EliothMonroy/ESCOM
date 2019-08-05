@@ -1,0 +1,19 @@
+#Start recording tcl command: 9/18/2017 21:55:00
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00; Project name: rotL00
+prj_project new -name "rotL00" -impl "rotL00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/toposcdiv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/source"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/source/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/source/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/source/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/source/toposcdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/packagerotL00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/toprotL00.vhdl"
+prj_run Export -impl rotL00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/rotL00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/rotL00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/rotL00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rotL00/rotL00/rotL00.xcf"
+pgr_program run
+pgr_project close
+prj_project save
+#Stop recording: 9/18/2017 23:15:56

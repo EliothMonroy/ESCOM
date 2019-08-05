@@ -1,0 +1,822 @@
+<HTML>
+<HEAD><TITLE>Synthesis Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+#Build: Synplify Pro K-2015.09L-2, Build 126R, Dec 14 2015
+#install: C:\lscc\diamond\3.7_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: JORGE
+
+# Sun Dec 11 16:39:42 2016
+
+#Implementation: lcdram00
+
+Synopsys HDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.7_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":11:7:11:17|Top entity is set to toplcdram00.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":11:7:11:17|Synthesizing work.toplcdram00.toplcdram0.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":10:7:10:17|Synthesizing work.bufferlcd00.bufferlcd0.
+@W: CG296 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":29:7:29:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":37:23:37:33|Referenced variable inwordwrite is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":32:16:32:27|Referenced variable inwordconfig is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":39:10:39:13|Referenced variable rswb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":38:11:38:14|Referenced variable rwwb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":34:9:34:12|Referenced variable rscb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":33:9:33:12|Referenced variable rwcb is not in sensitivity list
+Post processing for work.bufferlcd00.bufferlcd0
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":10:7:10:14|Synthesizing work.config00.config0.
+Post processing for work.config00.config0
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to outWordc(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal outWordc(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal outFlagc; possible missing assignment in an if or case statement.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to RWc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to RSc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal ENc; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl":10:7:10:18|Synthesizing work.contconfig00.contconfig0.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl":32:7:32:11|Removing redundant assignment.
+Post processing for work.contconfig00.contconfig0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":10:7:10:16|Synthesizing work.contread00.contread0.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":50:8:50:18|Removing redundant assignment.
+Post processing for work.contread00.contread0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl":10:7:10:11|Synthesizing work.ram00.ram0.
+Post processing for work.ram00.ram0
+@N: CL134 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl":31:9:31:12|Found RAM sram, depth=16, width=8
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\topkey00.vhdl":11:7:11:14|Synthesizing work.topkey00.topkey0.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":10:7:10:13|Synthesizing work.coder00.coder0.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":44:12:44:19|Removing redundant assignment.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":97:5:97:12|Removing redundant assignment.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":151:5:151:12|Removing redundant assignment.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":208:11:208:18|Removing redundant assignment.
+@W: CG296 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":24:10:24:16|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:12:30:15|Referenced variable clkc is not in sensitivity list
+Post processing for work.coder00.coder0
+@N: CL189 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:8:30:9|Register bit out7segc(6) is always 1.
+@W: CL260 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:8:30:9|Pruning register bit 6 of out7segc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl":10:7:10:16|Synthesizing work.contring00.contring0.
+Post processing for work.contring00.contring0
+@W: CL279 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl":24:9:24:10|Pruning register bits 2 to 0 of sring(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Post processing for work.topkey00.topkey0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toposc00.vhdl":9:7:9:14|Synthesizing work.toposc00.toposc0.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\div00.vhdl":10:7:10:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposc00.toposc0
+Post processing for work.toplcdram00.toplcdram0
+@W: CL240 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":23:7:23:13|oscout0 is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL138 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":27:5:27:6|Register bit RScw is always 1.
+@N: CL159 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":22:7:22:13|Input oscdis0 is unused.
+@W: CL158 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":24:7:24:13|Inout tmrrst0 is unused
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 82MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Dec 11 16:39:43 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+File C:\lscc\diamond\3.6_x64\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\lcdram00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Dec 11 16:39:45 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Dec 11 16:39:45 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+File C:\lscc\diamond\3.6_x64\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Dec 11 16:39:47 2016
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00_scck.rpt 
+Printing clock  summary report in "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist toplcdram00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock                                           Clock              
+Clock                            Frequency     Period        Type                                            Group              
+--------------------------------------------------------------------------------------------------------------------------------
+System                           1.0 MHz       1000.000      system                                          system_clkgroup    
+div00|outdiv_derived_clock       2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0
+osc00|osc_int_inferred_clock     2.1 MHz       480.769       inferred                                        Inferred_clkgroup_0
+================================================================================================================================
+
+@W: MT531 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Found signal identified as System clock which controls 20 sequential elements including LCD03.outWordc_1[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\div00.vhdl":22:2:22:3|Found inferred clock osc00|osc_int_inferred_clock which controls 22 sequential elements including K01.OS01.sdiv[20:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+
+@W: MO171 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 76MB peak: 141MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sun Dec 11 16:39:52 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@W: MO171 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N:"c:\users\beatl\desktop\arqui\proyectos\lcdram\contread00.vhdl":27:5:27:6|Found counter in view:work.toplcdram00(toplcdram0) inst RA05.outContRead[3:0]
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_ret[4] (in view: ScratchLib.cell52(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_ret[5] (in view: ScratchLib.cell52(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outFlagcc_ret (in view: ScratchLib.cell52(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_ret[2] (in view: ScratchLib.cell52(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_ret[1] (in view: ScratchLib.cell52(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0_ret[3] (in view: ScratchLib.cell59(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0_ret[2] (in view: ScratchLib.cell59(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0_ret[1] (in view: ScratchLib.cell59(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0_ret[3] (in view: ScratchLib.cell59(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_ret[0] (in view: ScratchLib.cell64(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1_ret[1] (in view: ScratchLib.cell64(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1_ret[2] (in view: ScratchLib.cell64(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1_ret[2] (in view: ScratchLib.cell64(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1_ret[3] (in view: ScratchLib.cell76(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_2_ret[2] (in view: ScratchLib.cell76(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[0] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0[0] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_2[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_2[2] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_1[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1[2] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_1[3] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1[3] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_1[1] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_1[1] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[1] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0[1] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0[2] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[3] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc_0[3] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[0] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc[0] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[1] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc[1] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc[2] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[3] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc[3] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[4] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc[4] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[5] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outcc[5] (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outFlagcc (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Boundary register LCD02.outFlagcc (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 142MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 142MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 142MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		   236.97ns		 144 /        84
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FO126 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\ram00.vhdl":31:9:31:12|Generating RAM RA03.sram[7:0]
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contring00.vhdl":24:9:24:10|Boundary register RA02.K01.outr_3_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contring00.vhdl":24:9:24:10|Boundary register RA02.K01.outr_2_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contring00.vhdl":24:9:24:10|Boundary register RA02.K01.outr_1_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contring00.vhdl":24:9:24:10|Boundary register RA02.K01.outr_0_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\coder00.vhdl":30:8:30:9|Boundary register RA02.K02.outcontc_3_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\coder00.vhdl":30:8:30:9|Boundary register RA02.K02.outcontc_2_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\coder00.vhdl":30:8:30:9|Boundary register RA02.K02.outcontc_1_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\coder00.vhdl":30:8:30:9|Boundary register RA02.K02.outcontc_0_.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\ram00.vhdl":37:3:37:4|Boundary register RA03.outFlagm.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\ram00.vhdl":37:3:37:4|Boundary register RA03.outFlagw.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\coder00.vhdl":30:8:30:9|Boundary register RA02.K02.outFlago.fb (in view: work.toplcdram00(toplcdram0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 146MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+12 gated/generated clock tree(s) driving 105 clock pin(s) of sequential element(s)
+0 instances converted, 105 sequential instances remain driven by gated/generated clocks
+
+======================================================================================================== Gated/Generated Clocks =========================================================================================================
+Clock Tree ID     Driving Element                Drive Element Type     Fanout     Sample Instance         Explanation                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       K01.OS00.OSCInst0              OSCH                   84         RA03.aux                Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       K01.OS01.outdiv                FD1S3AX                2          RA03.sram_ram           No gated clock conversion method for cell cell:LUCENT.DPR16X4C                                                                
+@K:CKID0003       LCD06.N_18_i                   ORCALUT4               10         LCD06.ENbb              No clocks found on inputs                                                                                                     
+@K:CKID0004       LCD03.un1_inflagc_2_0_a3_0     ORCALUT4               1          LCD03.outFlagc          No clocks found on inputs                                                                                                     
+@K:CKID0005       LCD03.outWordc_1_RNO[3]        ORCALUT4               1          LCD03.outWordc_1[3]     No clocks found on inputs                                                                                                     
+@K:CKID0006       LCD03.outWordc_1_RNO[5]        ORCALUT4               1          LCD03.outWordc_1[5]     No clocks found on inputs                                                                                                     
+@K:CKID0007       LCD03.outWordc_1_RNO[4]        ORCALUT4               1          LCD03.outWordc_1[4]     No clocks found on inputs                                                                                                     
+@K:CKID0008       LCD03.outWordc_1_RNO[1]        ORCALUT4               1          LCD03.outWordc_1[1]     No clocks found on inputs                                                                                                     
+@K:CKID0009       LCD03.outWordc_1_RNO[0]        ORCALUT4               1          LCD03.outWordc_1[0]     No clocks found on inputs                                                                                                     
+@K:CKID0010       LCD03.outWordc_1_RNO[2]        ORCALUT4               1          LCD03.outWordc_1[2]     No clocks found on inputs                                                                                                     
+@K:CKID0011       LCD03.outWordc_1_RNO[7]        ORCALUT4               1          LCD03.outWordc_1[7]     No clocks found on inputs                                                                                                     
+@K:CKID0012       LCD03.ENc_RNO                  ORCALUT4               1          LCD03.ENc               No clocks found on inputs                                                                                                     
+=========================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 112MB peak: 146MB)
+
+Writing Analyst data base C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 146MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00.edi
+K-2015.09L-2
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 147MB peak: 149MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 147MB peak: 149MB)
+
+@N: MT615 |Found clock div00|outdiv_derived_clock with period 480.77ns 
+@W: MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:K01.OS00.osc_int"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Dec 11 16:39:57 2016
+#
+
+
+Top view:               toplcdram00
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 238.124
+
+                                 Requested     Estimated     Requested     Estimated                 Clock                                           Clock              
+Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type                                            Group              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+div00|outdiv_derived_clock       2.1 MHz       221.2 MHz     480.769       4.521         239.307     derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0
+osc00|osc_int_inferred_clock     2.1 MHz       101.7 MHz     480.769       9.835         238.124     inferred                                        Inferred_clkgroup_0
+System                           1.0 MHz       455.4 MHz     1000.000      2.196         997.804     system                                          system_clkgroup    
+========================================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                      |    rise  to  rise     |    fall  to  fall     |    rise  to  fall     |    fall  to  rise   
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack    |  constraint  slack    |  constraint  slack    |  constraint  slack  
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+System                        System                        |  1000.000    997.804  |  No paths    -        |  No paths    -        |  No paths    -      
+System                        osc00|osc_int_inferred_clock  |  No paths    -        |  No paths    -        |  480.769     473.824  |  No paths    -      
+osc00|osc_int_inferred_clock  System                        |  No paths    -        |  No paths    -        |  No paths    -        |  480.769     478.869
+osc00|osc_int_inferred_clock  osc00|osc_int_inferred_clock  |  No paths    -        |  480.769     470.934  |  No paths    -        |  No paths    -      
+osc00|osc_int_inferred_clock  div00|outdiv_derived_clock    |  No paths    -        |  No paths    -        |  No paths    -        |  240.385     238.124
+div00|outdiv_derived_clock    osc00|osc_int_inferred_clock  |  No paths    -        |  No paths    -        |  240.385     239.307  |  No paths    -      
+==========================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: div00|outdiv_derived_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                        Arrival            
+Instance            Reference                      Type         Pin     Net         Time        Slack  
+                    Clock                                                                              
+-------------------------------------------------------------------------------------------------------
+RA03.sram_ram       div00|outdiv_derived_clock     DPR16X4C     DO3     sram[3]     0.972       239.307
+RA03.sram_ram_0     div00|outdiv_derived_clock     DPR16X4C     DO3     sram[7]     0.972       239.307
+=======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                     Starting                                                       Required            
+Instance             Reference                      Type        Pin     Net         Time         Slack  
+                     Clock                                                                              
+--------------------------------------------------------------------------------------------------------
+RA03.outWordm[3]     div00|outdiv_derived_clock     FD1P3IX     D       sram[3]     240.279      239.307
+RA03.outWordm[7]     div00|outdiv_derived_clock     FD1P3IX     D       sram[7]     240.279      239.307
+========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      240.385
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         240.279
+
+    - Propagation time:                      0.972
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 239.307
+
+    Number of logic level(s):                0
+    Starting point:                          RA03.sram_ram / DO3
+    Ending point:                            RA03.outWordm[3] / D
+    The start point is clocked by            div00|outdiv_derived_clock [rising] on pin WCK
+    The end   point is clocked by            osc00|osc_int_inferred_clock [falling] on pin CK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+RA03.sram_ram        DPR16X4C     DO3      Out     0.972     0.972       -         
+sram[3]              Net          -        -       -         -           1         
+RA03.outWordm[3]     FD1P3IX      D        In      0.000     0.972       -         
+===================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: osc00|osc_int_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                         Starting                                                                    Arrival            
+Instance                 Reference                        Type        Pin     Net                    Time        Slack  
+                         Clock                                                                                          
+------------------------------------------------------------------------------------------------------------------------
+RA03.aux                 osc00|osc_int_inferred_clock     FD1S3AX     Q       aux                    1.108       238.124
+RA02.K02.outFlago        osc00|osc_int_inferred_clock     FD1P3IX     Q       outFlagk0_c            1.108       238.124
+RA05.outContRead[0]      osc00|osc_int_inferred_clock     FD1P3AX     Q       outContRead0_c[0]      1.220       239.165
+RA02.K02.outcontc[0]     osc00|osc_int_inferred_clock     FD1P3JX     Q       outContWrite0_c[0]     1.220       239.165
+RA05.outContRead[1]      osc00|osc_int_inferred_clock     FD1P3AX     Q       outContRead0_c[1]      1.204       239.181
+RA02.K02.outcontc[1]     osc00|osc_int_inferred_clock     FD1P3JX     Q       outContWrite0_c[1]     1.204       239.181
+RA05.outContRead[2]      osc00|osc_int_inferred_clock     FD1P3AX     Q       outContRead0_c[2]      1.188       239.197
+RA02.K02.outcontc[2]     osc00|osc_int_inferred_clock     FD1P3JX     Q       outContWrite0_c[2]     1.188       239.197
+RA05.outContRead[3]      osc00|osc_int_inferred_clock     FD1P3AX     Q       outContRead0_c[3]      1.180       239.205
+RA02.K02.outcontc[3]     osc00|osc_int_inferred_clock     FD1P3JX     Q       outContWrite0_c[3]     1.180       239.205
+========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                                      Required            
+Instance            Reference                        Type         Pin      Net                    Time         Slack  
+                    Clock                                                                                             
+----------------------------------------------------------------------------------------------------------------------
+RA03.sram_ram       osc00|osc_int_inferred_clock     DPR16X4C     WRE      outFlagm_0_sqmuxa      240.385      238.124
+RA03.sram_ram_0     osc00|osc_int_inferred_clock     DPR16X4C     WRE      outFlagm_0_sqmuxa      240.385      238.124
+RA03.sram_ram       osc00|osc_int_inferred_clock     DPR16X4C     RAD0     outContRead0_c[0]      240.385      239.165
+RA03.sram_ram       osc00|osc_int_inferred_clock     DPR16X4C     WAD0     outContWrite0_c[0]     240.385      239.165
+RA03.sram_ram_0     osc00|osc_int_inferred_clock     DPR16X4C     RAD0     outContRead0_c[0]      240.385      239.165
+RA03.sram_ram_0     osc00|osc_int_inferred_clock     DPR16X4C     WAD0     outContWrite0_c[0]     240.385      239.165
+RA03.sram_ram       osc00|osc_int_inferred_clock     DPR16X4C     RAD1     outContRead0_c[1]      240.385      239.181
+RA03.sram_ram       osc00|osc_int_inferred_clock     DPR16X4C     WAD1     outContWrite0_c[1]     240.385      239.181
+RA03.sram_ram_0     osc00|osc_int_inferred_clock     DPR16X4C     RAD1     outContRead0_c[1]      240.385      239.181
+RA03.sram_ram_0     osc00|osc_int_inferred_clock     DPR16X4C     WAD1     outContWrite0_c[1]     240.385      239.181
+======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      240.385
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         240.385
+
+    - Propagation time:                      2.261
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     238.124
+
+    Number of logic level(s):                1
+    Starting point:                          RA03.aux / Q
+    Ending point:                            RA03.sram_ram / WRE
+    The start point is clocked by            osc00|osc_int_inferred_clock [falling] on pin CK
+    The end   point is clocked by            div00|outdiv_derived_clock [rising] on pin WCK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+RA03.aux                   FD1S3AX      Q        Out     1.108     1.108       -         
+aux                        Net          -        -       -         -           3         
+RA03.outFlagm_0_sqmuxa     ORCALUT4     D        In      0.000     1.108       -         
+RA03.outFlagm_0_sqmuxa     ORCALUT4     Z        Out     1.153     2.261       -         
+outFlagm_0_sqmuxa          Net          -        -       -         -           3         
+RA03.sram_ram              DPR16X4C     WRE      In      0.000     2.261       -         
+=========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                          Arrival            
+Instance                Reference     Type       Pin     Net              Time        Slack  
+                        Clock                                                                
+---------------------------------------------------------------------------------------------
+LCD03.outFlagc          System        FD1S1D     Q       inFlagcc0_c      1.268       473.824
+LCD03.ENc               System        FD1S1D     Q       sENc             0.972       998.100
+LCD03.outWordc_1[0]     System        FD1S1D     Q       soutWordc[0]     0.972       998.100
+LCD03.outWordc_1[1]     System        FD1S1D     Q       soutWordc[1]     0.972       998.100
+LCD03.outWordc_1[2]     System        FD1S1D     Q       soutWordc[2]     0.972       998.100
+LCD03.outWordc_1[3]     System        FD1S1D     Q       soutWordc[3]     0.972       998.100
+LCD03.outWordc_1[4]     System        FD1S1D     Q       soutWordc[4]     0.972       998.100
+LCD03.outWordc_1[5]     System        FD1S1D     Q       soutWordc[5]     0.972       998.100
+LCD03.outWordc_1[7]     System        FD1S1D     Q       soutWordc[7]     0.972       998.100
+=============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                             Required            
+Instance                Reference     Type        Pin     Net                Time         Slack  
+                        Clock                                                                    
+-------------------------------------------------------------------------------------------------
+LCD03.outcc_0_ret_0     System        FD1S3AX     D       N_39_reti          480.858      473.824
+LCD03.outcc_0_ret_2     System        FD1S3AX     D       N_79_reti          480.858      473.824
+LCD03.outcc_0_ret_3     System        FD1S3AX     D       N_39_reti_i        480.858      473.824
+LCD03.outcc_0_ret_4     System        FD1S3AX     D       N_60_reti          480.858      473.824
+LCD03.outcc_0_ret_6     System        FD1S3AX     D       N_55_reti          480.858      473.824
+LCD03.outcc_0_ret_7     System        FD1S3AX     D       N_36_i_reti        480.858      473.824
+LCD03.outcc_0_ret_8     System        FD1S3AX     D       N_54_reti          480.858      473.824
+LCD03.outcc_1_ret_0     System        FD1S3AX     D       N_80_reti          480.858      473.824
+LCD03.outcc_ret         System        FD1S3AX     D       un1_incontc_9i     480.858      473.873
+LCD03.outcc_ret_9       System        FD1S3AX     D       N_35_reti          480.858      473.873
+=================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      480.769
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         480.858
+
+    - Propagation time:                      7.034
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 473.824
+
+    Number of logic level(s):                6
+    Starting point:                          LCD03.outFlagc / Q
+    Ending point:                            LCD03.outcc_0_ret_3 / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            osc00|osc_int_inferred_clock [falling] on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+LCD03.outFlagc                       FD1S1D       Q        Out     1.268     1.268       -         
+inFlagcc0_c                          Net          -        -       -         -           16        
+LCD03.outFlagc_RNIPRAB               INV          A        In      0.000     1.268       -         
+LCD03.outFlagc_RNIPRAB               INV          Z        Out     0.568     1.836       -         
+inFlagcc0_c_i                        Net          -        -       -         -           1         
+LCD02.un1_outcc_cry_0_0              CCU2D        B0       In      0.000     1.836       -         
+LCD02.un1_outcc_cry_0_0              CCU2D        COUT     Out     1.545     3.380       -         
+un1_outcc_cry_0                      Net          -        -       -         -           1         
+LCD02.un1_outcc_cry_1_0              CCU2D        CIN      In      0.000     3.380       -         
+LCD02.un1_outcc_cry_1_0              CCU2D        COUT     Out     0.143     3.523       -         
+un1_outcc_cry_2                      Net          -        -       -         -           1         
+LCD02.un1_outcc_cry_3_0              CCU2D        CIN      In      0.000     3.523       -         
+LCD02.un1_outcc_cry_3_0              CCU2D        S0       Out     1.621     5.144       -         
+un1_outcc_cry_3_0_S0                 Net          -        -       -         -           2         
+LCD02.un1_outcc_cry_3_0_RNIJ5JP1     ORCALUT4     B        In      0.000     5.144       -         
+LCD02.un1_outcc_cry_3_0_RNIJ5JP1     ORCALUT4     Z        Out     1.273     6.417       -         
+N_2_0ctr_0                           Net          -        -       -         -           9         
+LCD03.outcc_0_ret_3_RNO              ORCALUT4     B        In      0.000     6.417       -         
+LCD03.outcc_0_ret_3_RNO              ORCALUT4     Z        Out     0.617     7.034       -         
+N_39_reti_i                          Net          -        -       -         -           1         
+LCD03.outcc_0_ret_3                  FD1S3AX      D        In      0.000     7.034       -         
+===================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 147MB peak: 149MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 147MB peak: 149MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-5
+
+Register bits: 84 of 6864 (1%)
+Latch bits:      19
+PIC Latch:       0
+I/O cells:       46
+
+
+Details:
+CCU2D:          18
+DPR16X4C:       2
+FD1P3AX:        10
+FD1P3IX:        11
+FD1P3JX:        14
+FD1S1AY:        10
+FD1S1D:         9
+FD1S3AX:        26
+FD1S3IX:        21
+FD1S3JX:        2
+GSR:            1
+IB:             10
+INV:            4
+OB:             36
+ORCALUT4:       140
+OSCH:           1
+PUR:            1
+VHI:            9
+VLO:            9
+false:          3
+true:           3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 53MB peak: 149MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Sun Dec 11 16:39:58 2016
+
+###########################################################]
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

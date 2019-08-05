@@ -1,0 +1,24 @@
+#Start recording tcl command: 12/6/2017 21:11:18
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01; Project name: bcd00
+prj_project new -name "bcd00" -impl "bcd00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd00/bcd00/source/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd00/bcd00/source/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd00/bcd00/source/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd00/bcd00/source/toposcdiv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00/source"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00/source/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00/source/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00/source/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00/source/toposcdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/ac8bit04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/ac12bit04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/coderNibbles04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/compadd04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/contIter04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/contring04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/init04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/leeInst04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/mux04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/pcinc04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/portAB04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/shift8bit04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/shift12bit04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/sust04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/packagep04.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/topp04.vhdl"
+prj_run Export -impl bcd00 -task Jedecgen
+#Stop recording: 12/6/2017 22:02:43

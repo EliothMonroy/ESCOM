@@ -1,0 +1,67 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ALBERTORIOS-PC
+
+#Implementation: lcdram
+
+$ Start of Compile
+#Wed May 18 20:45:47 2016
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":6:7:6:16|Top entity is set to contring00.
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd changed - recompiling
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":6:7:6:16|Synthesizing work.contring00.contring0 
+Post processing for work.contring00.contring0
+@W: CL279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":20:9:20:10|Pruning register bits 2 to 0 of sring(3 downto 0)  
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 20:45:47 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\contring00_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 20:45:48 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N: MF248 |Running in 64-bit mode.
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+DFF             5 uses
+IBUF            2 uses
+OBUF            4 uses
+INV             2 uses
+AND2            5 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 102MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 20:45:48 2016
+
+###########################################################]

@@ -1,0 +1,955 @@
+
+synpwrap -msg -prj "rom00_rom00_synplify.tcl" -log "rom00_rom00.srf"
+Copyright (C) 1992-2017 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.9.1.119
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of rom00_rom00.srf
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
+#install: C:\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: ELIOTHLAPTOP
+
+# Fri Oct 20 11:34:56 2017
+
+#Implementation: rom00
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":8:7:8:14|Top entity is set to toprom00.
+File C:\lscc\diamond\3.9_x64\synpbase\lib\cpld\lattice.vhd changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\osc00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\packagediv00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\packagerom00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\toposcdiv00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl changed - recompiling
+VHDL syntax check successful!
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl changed - recompiling
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":8:7:8:14|Synthesizing work.toprom00.toprom0.
+@W: CD638 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":33:7:33:16|Signal soutcontro is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl":7:7:7:11|Synthesizing work.rom00.rom0.
+Post processing for work.rom00.rom0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl":7:7:7:18|Synthesizing work.contreadro00.contreadro0.
+@N: CD364 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl":27:6:27:14|Removing redundant assignment.
+Post processing for work.contreadro00.contreadro0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.toprom00.toprom0
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:56 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:56 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:56 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synwork\rom00_rom00_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:58 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Fri Oct 20 11:34:58 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\rom00_rom00_scck.rpt 
+Printing clock  summary report in "C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\rom00_rom00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist toprom00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock                                           Clock                   Clock
+Clock                            Frequency     Period        Type                                            Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------
+div00|outdiv_derived_clock       2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0     11   
+osc00|osc_int_inferred_clock     2.1 MHz       480.769       inferred                                        Inferred_clkgroup_0     23   
+==========================================================================================================================================
+
+@W: MT529 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00\source\div00.vhdl":20:2:20:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including RO00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Oct 20 11:34:58 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Fri Oct 20 11:34:58 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":40:17:40:23|ROM prom\.outwordrom_2[6:0] (in view: work.rom00(rom0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":40:17:40:23|ROM prom\.outwordrom_2[6:0] (in view: work.rom00(rom0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":40:17:40:23|Found ROM .delname. (in view: work.rom00(rom0)) with 16 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   470.58ns		  27 /        34
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\contreadro00.vhdl":19:2:19:3|Boundary register RO01.outcontro_3_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\contreadro00.vhdl":19:2:19:3|Boundary register RO01.outcontro_2_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\contreadro00.vhdl":19:2:19:3|Boundary register RO01.outcontro_1_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\contreadro00.vhdl":19:2:19:3|Boundary register RO01.outcontro_0_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_6_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_5_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_4_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_3_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_2_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_1_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\rom00\rom00.vhdl":35:2:35:3|Boundary register RO02.outwordrom_0_.fb (in view: work.toprom00(toprom0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+@N: MT611 :|Automatically generated clock div00|outdiv_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 34 clock pin(s) of sequential element(s)
+0 instances converted, 34 sequential instances remain driven by gated/generated clocks
+
+==================================================================================================== Gated/Generated Clocks =====================================================================================================
+Clock Tree ID     Driving Element       Drive Element Type     Fanout     Sample Instance          Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       RO00.D00.OSCInst0     OSCH                   34         RO02_outwordromio[0]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+=================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 141MB)
+
+Writing Analyst data base C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synwork\rom00_rom00_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\rom00_rom00.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+@W: MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:RO00.D00.osc_int"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Oct 20 11:34:59 2017
+#
+
+
+Top view:               toprom00
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 469.852
+
+                                 Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------
+osc00|osc_int_inferred_clock     2.1 MHz       91.6 MHz      480.769       10.917        469.852     inferred     Inferred_clkgroup_0
+=====================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------
+osc00|osc_int_inferred_clock  osc00|osc_int_inferred_clock  |  480.769     469.852  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: osc00|osc_int_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                                          Arrival            
+Instance              Reference                        Type        Pin     Net          Time        Slack  
+                      Clock                                                                                
+-----------------------------------------------------------------------------------------------------------
+RO00.DO1.sdiv[21]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[21]     1.180       469.852
+RO00.DO1.sdiv[19]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[19]     1.148       469.884
+RO00.DO1.sdiv[20]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[20]     1.108       469.924
+RO00.DO1.sdiv[18]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[18]     1.044       469.988
+RO00.DO1.sdiv[17]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[17]     1.148       471.037
+RO00.DO1.sdiv[16]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[16]     1.044       471.141
+RO00.DO1.sdiv[15]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[15]     1.148       472.190
+RO00.DO1.sdiv[14]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[14]     1.044       472.294
+RO00.DO1.sdiv[0]      osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[0]      0.972       475.170
+RO00.DO1.sdiv[1]      osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[1]      0.972       475.313
+===========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                              Required            
+Instance              Reference                        Type        Pin     Net              Time         Slack  
+                      Clock                                                                                     
+----------------------------------------------------------------------------------------------------------------
+RO00.DO1.sdiv[21]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[21]     480.664      469.852
+RO00.DO1.sdiv[19]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[19]     480.664      469.995
+RO00.DO1.sdiv[20]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[20]     480.664      469.995
+RO00.DO1.sdiv[17]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[17]     480.664      470.138
+RO00.DO1.sdiv[18]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[18]     480.664      470.138
+RO00.DO1.sdiv[15]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[15]     480.664      470.281
+RO00.DO1.sdiv[16]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[16]     480.664      470.281
+RO00.DO1.sdiv[13]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[13]     480.664      470.423
+RO00.DO1.sdiv[14]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[14]     480.664      470.423
+RO00.DO1.sdiv[11]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[11]     480.664      470.566
+================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      480.769
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         480.664
+
+    - Propagation time:                      10.811
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     469.852
+
+    Number of logic level(s):                18
+    Starting point:                          RO00.DO1.sdiv[21] / Q
+    Ending point:                            RO00.DO1.sdiv[21] / D
+    The start point is clocked by            osc00|osc_int_inferred_clock [rising] on pin CK
+    The end   point is clocked by            osc00|osc_int_inferred_clock [rising] on pin CK
+
+Instance / Net                                   Pin      Pin                Arrival     No. of    
+Name                                Type         Name     Dir     Delay      Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+RO00.DO1.sdiv[21]                   FD1S3IX      Q        Out     1.180      1.180       -         
+sdiv[21]                            Net          -        -       -          -           5         
+RO00.DO1.sdiv_RNIKOG8[18]           ORCALUT4     C        In      0.000      1.180       -         
+RO00.DO1.sdiv_RNIKOG8[18]           ORCALUT4     Z        Out     1.153      2.333       -         
+N_5                                 Net          -        -       -          -           3         
+RO00.DO1.sdiv_RNI17OC[16]           ORCALUT4     A        In      0.000      2.333       -         
+RO00.DO1.sdiv_RNI17OC[16]           ORCALUT4     Z        Out     1.153      3.485       -         
+N_7                                 Net          -        -       -          -           3         
+RO00.DO1.sdiv_RNIAHVG[14]           ORCALUT4     A        In      0.000      3.485       -         
+RO00.DO1.sdiv_RNIAHVG[14]           ORCALUT4     Z        Out     1.089      4.574       -         
+N_9                                 Net          -        -       -          -           2         
+RO00.DO1.un2_sdiv_cry_0_0_RNO_5     ORCALUT4     A        In      0.000      4.574       -         
+RO00.DO1.un2_sdiv_cry_0_0_RNO_5     ORCALUT4     Z        Out     1.017      5.591       -         
+un2_sdiv_cry_0_0_RNO_5              Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_0_0_RNO_1     PFUMX        BLUT     In      0.000      5.591       -         
+RO00.DO1.un2_sdiv_cry_0_0_RNO_1     PFUMX        Z        Out     -0.033     5.558       -         
+N_14                                Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_0_0_RNO       L6MUX21      D0       In      0.000      5.558       -         
+RO00.DO1.un2_sdiv_cry_0_0_RNO       L6MUX21      Z        Out     0.732      6.290       -         
+un1_outdiv_0_sqmuxa_1[0]            Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_0_0           CCU2D        B0       In      0.000      6.290       -         
+RO00.DO1.un2_sdiv_cry_0_0           CCU2D        COUT     Out     1.545      7.834       -         
+un2_sdiv_cry_0                      Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_1_0           CCU2D        CIN      In      0.000      7.834       -         
+RO00.DO1.un2_sdiv_cry_1_0           CCU2D        COUT     Out     0.143      7.977       -         
+un2_sdiv_cry_2                      Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_3_0           CCU2D        CIN      In      0.000      7.977       -         
+RO00.DO1.un2_sdiv_cry_3_0           CCU2D        COUT     Out     0.143      8.120       -         
+un2_sdiv_cry_4                      Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_5_0           CCU2D        CIN      In      0.000      8.120       -         
+RO00.DO1.un2_sdiv_cry_5_0           CCU2D        COUT     Out     0.143      8.263       -         
+un2_sdiv_cry_6                      Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_7_0           CCU2D        CIN      In      0.000      8.263       -         
+RO00.DO1.un2_sdiv_cry_7_0           CCU2D        COUT     Out     0.143      8.406       -         
+un2_sdiv_cry_8                      Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_9_0           CCU2D        CIN      In      0.000      8.406       -         
+RO00.DO1.un2_sdiv_cry_9_0           CCU2D        COUT     Out     0.143      8.548       -         
+un2_sdiv_cry_10                     Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_11_0          CCU2D        CIN      In      0.000      8.548       -         
+RO00.DO1.un2_sdiv_cry_11_0          CCU2D        COUT     Out     0.143      8.691       -         
+un2_sdiv_cry_12                     Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_13_0          CCU2D        CIN      In      0.000      8.691       -         
+RO00.DO1.un2_sdiv_cry_13_0          CCU2D        COUT     Out     0.143      8.834       -         
+un2_sdiv_cry_14                     Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_15_0          CCU2D        CIN      In      0.000      8.834       -         
+RO00.DO1.un2_sdiv_cry_15_0          CCU2D        COUT     Out     0.143      8.977       -         
+un2_sdiv_cry_16                     Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_17_0          CCU2D        CIN      In      0.000      8.977       -         
+RO00.DO1.un2_sdiv_cry_17_0          CCU2D        COUT     Out     0.143      9.120       -         
+un2_sdiv_cry_18                     Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_cry_19_0          CCU2D        CIN      In      0.000      9.120       -         
+RO00.DO1.un2_sdiv_cry_19_0          CCU2D        COUT     Out     0.143      9.262       -         
+un2_sdiv_cry_20                     Net          -        -       -          -           1         
+RO00.DO1.un2_sdiv_s_21_0            CCU2D        CIN      In      0.000      9.262       -         
+RO00.DO1.un2_sdiv_s_21_0            CCU2D        S0       Out     1.549      10.811      -         
+un2_sdiv[21]                        Net          -        -       -          -           1         
+RO00.DO1.sdiv[21]                   FD1S3IX      D        In      0.000      10.811      -         
+===================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 34 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       21
+
+
+Details:
+CCU2D:          12
+FD1P3IX:        4
+FD1S3AX:        1
+FD1S3IX:        22
+GSR:            1
+IB:             5
+L6MUX21:        1
+OB:             16
+OFS1P3IX:       7
+ORCALUT4:       27
+OSCH:           1
+PFUMX:          4
+PUR:            1
+VHI:            3
+VLO:            4
+false:          2
+true:           3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Oct 20 11:34:59 2017
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HE -path "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00" -path "C:/Users/eliot/Documents/Github/arqui3CM3/rom00"   "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00_rom00.edi" "rom00_rom00.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to rom00_rom00.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data"  -p "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00" -p "C:/Users/eliot/Documents/Github/arqui3CM3/rom00"  "rom00_rom00.ngo" "rom00_rom00.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'rom00_rom00.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="RO00/DO1/un2_sdiv_s_21_0_COUT" arg2="RO00/DO1/un2_sdiv_s_21_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="RO00/DO1/un2_sdiv_s_21_0_S1" arg2="RO00/DO1/un2_sdiv_s_21_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="RO00/DO1/un2_sdiv_cry_0_0_S0" arg2="RO00/DO1/un2_sdiv_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="RO00/D00/OSCInst0_SEDSTDBY" arg2="RO00/D00/OSCInst0_SEDSTDBY"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
+
+Design Results:
+    108 blocks expanded
+Complete the first expansion.
+Writing 'rom00_rom00.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "rom00_rom00.ngd" -o "rom00_rom00_map.ncd" -pr "rom00_rom00.prf" -mp "rom00_rom00.mrp" -lpf "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00_rom00_synplify.lpf" -lpf "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: rom00_rom00.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     34 out of  7209 (0%)
+      PFU registers:           27 out of  6864 (0%)
+      PIO registers:            7 out of   345 (2%)
+   Number of SLICEs:        27 out of  3432 (1%)
+      SLICEs as Logic/ROM:     27 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:         53 out of  6864 (1%)
+      Number used as logic LUTs:         29
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 21 + 4(JTAG) out of 115 (22%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net RO00.sclk_0: 22 loads, 22 rising, 0 falling (Driver: RO00/D00/OSCInst0 )
+   Number of Clock Enables:  1
+     Net outdiv_RNIFKBM6: 9 loads, 2 LSLICEs
+   Number of LSRs:  2
+     Net enable0_pad_RNIQQ717: 9 loads, 2 LSLICEs
+     Net RO00/DO1/N_32_i: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net outcontro_c[1]: 12 loads
+     Net outcontro_c[2]: 12 loads
+     Net RO00/DO1/N_32_i: 12 loads
+     Net outcontro_c[0]: 11 loads
+     Net outcontro_c[3]: 11 loads
+     Net outdiv_RNIFKBM6: 10 loads
+     Net enable0_pad_RNIQQ717: 9 loads
+     Net cdiv0_c[1]: 8 loads
+     Net cdiv0_c[3]: 8 loads
+     Net RO00/DO1/sdiv[21]: 5 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 58 MB
+
+Dumping design to file rom00_rom00_map.ncd.
+
+mpartrce -p "rom00_rom00.p2t" -f "rom00_rom00.p3t" -tf "rom00_rom00.pt" "rom00_rom00_map.ncd" "rom00_rom00.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "rom00_rom00_map.ncd"
+Fri Oct 20 11:35:01 2017
+
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/eliot/Documents/Github/arqui3CM3/rom00/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF rom00_rom00_map.ncd rom00_rom00.dir/5_1.ncd rom00_rom00.prf
+Preference file: rom00_rom00.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file rom00_rom00_map.ncd.
+Design name: toprom00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   21+4(JTAG)/336     7% used
+                  21+4(JTAG)/115     22% bonded
+   IOLOGIC            7/336           2% used
+
+   SLICE             27/3432         <1% used
+
+   OSC                1/1           100% used
+
+
+Number of Signals: 99
+Number of Connections: 242
+
+Pin Constraint Summary:
+   21 out of 21 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    RO00.sclk_0 (driver: RO00/D00/OSCInst0, clk load #: 22)
+
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    RO00/DO1/N_32_i (driver: RO00/DO1/SLICE_12, clk load #: 0, sr load #: 12, ce load #: 0)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 21191.
+Finished Placer Phase 1.  REAL time: 5 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  21137
+Finished Placer Phase 2.  REAL time: 5 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "RO00.sclk_0" from OSC on comp "RO00/D00/OSCInst0" on site "OSC", clk load = 22
+  SECONDARY "RO00/DO1/N_32_i" from F1 on comp "RO00/DO1/SLICE_12" on site "R14C18A", clk load = 0, ce load = 0, sr load = 12
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   21 + 4(JTAG) out of 336 (7.4%) PIO sites used.
+   21 + 4(JTAG) out of 115 (21.7%) bonded PIO sites used.
+   Number of PIO comps: 21; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 7 / 28 ( 25%) | 2.5V       | -         |
+| 1        | 0 / 29 (  0%) | -          | -         |
+| 2        | 5 / 29 ( 17%) | 2.5V       | -         |
+| 3        | 4 / 9 ( 44%)  | 2.5V       | -         |
+| 4        | 5 / 10 ( 50%) | 2.5V       | -         |
+| 5        | 0 / 10 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 4 secs 
+
+Dumping design to file rom00_rom00.dir/5_1.ncd.
+
+0 connections routed; 242 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 7 secs 
+
+Start NBR router at 11:35:08 10/20/17
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 11:35:08 10/20/17
+
+Start NBR section for initial routing at 11:35:08 10/20/17
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 465.465ns/0.000ns; real time: 7 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 11:35:08 10/20/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 465.465ns/0.000ns; real time: 7 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 11:35:08 10/20/17
+
+Start NBR section for re-routing at 11:35:08 10/20/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 465.465ns/0.000ns; real time: 7 secs 
+
+Start NBR section for post-routing at 11:35:08 10/20/17
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 465.465ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 6 secs 
+Total REAL time: 7 secs 
+Completely routed.
+End of route.  242 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file rom00_rom00.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 465.465
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.377
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 7 secs 
+Total REAL time to completion: 8 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "rom00_rom00.t2b" -w "rom00_rom00.ncd" -jedec "rom00_rom00.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file rom00_rom00.ncd.
+Design name: toprom00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from rom00_rom00.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "rom00_rom00.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 

@@ -1,0 +1,15 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe  -osyn  C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\synwork\key00_key00_comp.srs  -top  topkey00  -hdllog  C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\synlog\key00_key00_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\coder00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\contring00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\osc00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\div00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\packagediv00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\packagekey00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\toposcdiv00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\topkey00.vhdl 
+rc:0 success:1 runtime:2
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\synwork\key00_key00_comp.srs|io:o|time:1507856113|size:10156|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\synlog\key00_key00_compiler.srr|io:o|time:1507856113|size:4043|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\coder00.vhdl|io:i|time:1506881906|size:3242|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\contring00.vhdl|io:i|time:1506465532|size:715|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\osc00.vhdl|io:i|time:1506465532|size:523|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\div00.vhdl|io:i|time:1506881906|size:2056|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\packagediv00.vhdl|io:i|time:1506465532|size:402|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\packagekey00.vhdl|io:i|time:1506733369|size:707|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\key00\source\toposcdiv00.vhdl|io:i|time:1506733369|size:507|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\key00\topkey00.vhdl|io:i|time:1506881906|size:1532|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_hdl.exe|io:i|time:1489222768|size:1338368|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe|io:i|time:1489222974|size:1754112|exec:1

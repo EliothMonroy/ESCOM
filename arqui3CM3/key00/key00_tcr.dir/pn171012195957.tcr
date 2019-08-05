@@ -1,0 +1,11 @@
+#Start recording tcl command: 10/12/2017 19:54:54
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00; Project name: key00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00/key00.ldf"
+prj_run Export -impl key00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00/key00/key00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00/key00/key00.xcf"
+pgr_program run
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00/key00/key00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00/key00/key00.xcf"
+pgr_project close
+#Stop recording: 10/12/2017 19:59:57

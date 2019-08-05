@@ -1,0 +1,9 @@
+#Start recording tcl command: 12/6/2017 20:36:16
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01.ldf"
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 12/6/2017 21:00:29

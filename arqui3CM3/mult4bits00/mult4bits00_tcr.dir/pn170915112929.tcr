@@ -1,0 +1,20 @@
+#Start recording tcl command: 9/15/2017 10:55:25
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00; Project name: mult4bits00
+prj_project new -name "mult4bits00" -impl "mult4bits00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/and00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/or00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/ha00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/packageha00.vhdl"
+prj_project save
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/xor00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/packagefa00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/fa00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/packagemult4bit00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/mult4bits00/topmult4bit00.vhdl"
+prj_project save
+prj_run Export -impl mult4bits00 -task Jedecgen
+prj_project save
+prj_run Export -impl mult4bits00 -task Jedecgen
+prj_project close
+#Stop recording: 9/15/2017 11:29:29

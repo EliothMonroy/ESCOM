@@ -1,0 +1,242 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      inwordconfig(7:0)               inwordconfig                  7          8            -1
+      Port          2      inwordwrite(7:0)               inwordwrite                  7          8            -1
+      Port          3      outwordbuff(7:0)               outwordbuff                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      inwordconfig_7_               inwordconfig[7]                       1            0            
+        Port      inwordconfig_6_               inwordconfig[6]                       1            1            
+        Port      inwordconfig_5_               inwordconfig[5]                       1            2            
+        Port      inwordconfig_4_               inwordconfig[4]                       1            3            
+        Port      inwordconfig_3_               inwordconfig[3]                       1            4            
+        Port      inwordconfig_2_               inwordconfig[2]                       1            5            
+        Port      inwordconfig_1_               inwordconfig[1]                       1            6            
+        Port      inwordconfig_0_               inwordconfig[0]                       1            7            
+        Port      inwordwrite_7_               inwordwrite[7]                       2            0            
+        Port      inwordwrite_6_               inwordwrite[6]                       2            1            
+        Port      inwordwrite_5_               inwordwrite[5]                       2            2            
+        Port      inwordwrite_4_               inwordwrite[4]                       2            3            
+        Port      inwordwrite_3_               inwordwrite[3]                       2            4            
+        Port      inwordwrite_2_               inwordwrite[2]                       2            5            
+        Port      inwordwrite_1_               inwordwrite[1]                       2            6            
+        Port      inwordwrite_0_               inwordwrite[0]                       2            7            
+        Port      outwordbuff_7_               outwordbuff[7]                       3            0            
+        Port      outwordbuff_6_               outwordbuff[6]                       3            1            
+        Port      outwordbuff_5_               outwordbuff[5]                       3            2            
+        Port      outwordbuff_4_               outwordbuff[4]                       3            3            
+        Port      outwordbuff_3_               outwordbuff[3]                       3            4            
+        Port      outwordbuff_2_               outwordbuff[2]                       3            5            
+        Port      outwordbuff_1_               outwordbuff[1]                       3            6            
+        Port      outwordbuff_0_               outwordbuff[0]                       3            7            
+End
+Section Cross Reference File
+Design 'bufferlcd00' created Wed May 18 20:53:23 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst        inwordconfig_0_                           inwordconfig[0]
+   Inst        inwordconfig_1_                           inwordconfig[1]
+   Inst        inwordconfig_2_                           inwordconfig[2]
+   Inst        inwordconfig_3_                           inwordconfig[3]
+   Inst        inwordconfig_4_                           inwordconfig[4]
+   Inst        inwordconfig_5_                           inwordconfig[5]
+   Inst        inwordconfig_6_                           inwordconfig[6]
+   Inst        inwordconfig_7_                           inwordconfig[7]
+   Inst         inwordwrite_0_                            inwordwrite[0]
+   Inst         inwordwrite_1_                            inwordwrite[1]
+   Inst         inwordwrite_2_                            inwordwrite[2]
+   Inst         inwordwrite_3_                            inwordwrite[3]
+   Inst         inwordwrite_4_                            inwordwrite[4]
+   Inst         inwordwrite_5_                            inwordwrite[5]
+   Inst         inwordwrite_6_                            inwordwrite[6]
+   Inst         inwordwrite_7_                            inwordwrite[7]
+   Inst         outwordbuff_0_                            outwordbuff[0]
+   Inst         outwordbuff_1_                            outwordbuff[1]
+   Inst         outwordbuff_2_                            outwordbuff[2]
+   Inst         outwordbuff_3_                            outwordbuff[3]
+   Inst         outwordbuff_4_                            outwordbuff[4]
+   Inst         outwordbuff_5_                            outwordbuff[5]
+   Inst         outwordbuff_6_                            outwordbuff[6]
+   Inst         outwordbuff_7_                            outwordbuff[7]
+   Inst   pbuff_un2_inflagbuffwrite_i               pbuff.un2_inflagbuffwrite_i
+   Inst      outwordbufflat_0_                         outwordbufflat[0]
+   Inst      outwordbufflat_1_                         outwordbufflat[1]
+   Inst      outwordbufflat_2_                         outwordbufflat[2]
+   Inst      outwordbufflat_3_                         outwordbufflat[3]
+   Inst      outwordbufflat_4_                         outwordbufflat[4]
+   Inst      outwordbufflat_5_                         outwordbufflat[5]
+   Inst      outwordbufflat_6_                         outwordbufflat[6]
+   Inst      outwordbufflat_7_                         outwordbufflat[7]
+   Inst               ENbb_1_r                                  ENbb_1.r
+   Inst               ENbb_1_m                                  ENbb_1.m
+   Inst               ENbb_1_n                                  ENbb_1.n
+   Inst               ENbb_1_p                                  ENbb_1.p
+   Inst               RSbb_1_r                                  RSbb_1.r
+   Inst               RSbb_1_m                                  RSbb_1.m
+   Inst               RSbb_1_n                                  RSbb_1.n
+   Inst               RSbb_1_p                                  RSbb_1.p
+   Inst               RWbb_1_r                                  RWbb_1.r
+   Inst               RWbb_1_m                                  RWbb_1.m
+   Inst               RWbb_1_n                                  RWbb_1.n
+   Inst               RWbb_1_p                                  RWbb_1.p
+   Inst   pbuff_un2_inflagbuffwrite                 pbuff.un2_inflagbuffwrite
+   Inst     outwordbuff_1_0__r                        outwordbuff_1_0_.r
+   Inst     outwordbuff_1_0__m                        outwordbuff_1_0_.m
+   Inst     outwordbuff_1_0__n                        outwordbuff_1_0_.n
+   Inst     outwordbuff_1_0__p                        outwordbuff_1_0_.p
+   Inst     outwordbuff_1_1__r                        outwordbuff_1_1_.r
+   Inst     outwordbuff_1_1__m                        outwordbuff_1_1_.m
+   Inst     outwordbuff_1_1__n                        outwordbuff_1_1_.n
+   Inst     outwordbuff_1_1__p                        outwordbuff_1_1_.p
+   Inst     outwordbuff_1_2__r                        outwordbuff_1_2_.r
+   Inst     outwordbuff_1_2__m                        outwordbuff_1_2_.m
+   Inst     outwordbuff_1_2__n                        outwordbuff_1_2_.n
+   Inst     outwordbuff_1_2__p                        outwordbuff_1_2_.p
+   Inst     outwordbuff_1_3__r                        outwordbuff_1_3_.r
+   Inst     outwordbuff_1_3__m                        outwordbuff_1_3_.m
+   Inst     outwordbuff_1_3__n                        outwordbuff_1_3_.n
+   Inst     outwordbuff_1_3__p                        outwordbuff_1_3_.p
+   Inst     outwordbuff_1_4__r                        outwordbuff_1_4_.r
+   Inst     outwordbuff_1_4__m                        outwordbuff_1_4_.m
+   Inst     outwordbuff_1_4__n                        outwordbuff_1_4_.n
+   Inst     outwordbuff_1_4__p                        outwordbuff_1_4_.p
+   Inst     outwordbuff_1_5__r                        outwordbuff_1_5_.r
+   Inst     outwordbuff_1_5__m                        outwordbuff_1_5_.m
+   Inst     outwordbuff_1_5__n                        outwordbuff_1_5_.n
+   Inst     outwordbuff_1_5__p                        outwordbuff_1_5_.p
+   Inst     outwordbuff_1_6__r                        outwordbuff_1_6_.r
+   Inst     outwordbuff_1_6__m                        outwordbuff_1_6_.m
+   Inst     outwordbuff_1_6__n                        outwordbuff_1_6_.n
+   Inst     outwordbuff_1_6__p                        outwordbuff_1_6_.p
+   Inst     outwordbuff_1_7__r                        outwordbuff_1_7_.r
+   Inst     outwordbuff_1_7__m                        outwordbuff_1_7_.m
+   Inst     outwordbuff_1_7__n                        outwordbuff_1_7_.n
+   Inst     outwordbuff_1_7__p                        outwordbuff_1_7_.p
+   Net    pbuff_un2_inflagbuffwrite_n                 pbuff.un2_inflagbuffwrite
+   Net      outwordbuff_1_0__n                          outwordbuff_1[0]
+   Net      outwordbuff_1_1__n                          outwordbuff_1[1]
+   Net      outwordbuff_1_2__n                          outwordbuff_1[2]
+   Net      outwordbuff_1_3__n                          outwordbuff_1[3]
+   Net      outwordbuff_1_4__n                          outwordbuff_1[4]
+   Net      outwordbuff_1_5__n                          outwordbuff_1[5]
+   Net      outwordbuff_1_6__n                          outwordbuff_1[6]
+   Net      outwordbuff_1_7__n                          outwordbuff_1[7]
+   Net     inwordconfig_c_0__n                         inwordconfig_c[0]
+   Net       inwordconfig_0__n                           inwordconfig[0]
+   Net     inwordconfig_c_1__n                         inwordconfig_c[1]
+   Net       inwordconfig_1__n                           inwordconfig[1]
+   Net     inwordconfig_c_2__n                         inwordconfig_c[2]
+   Net       inwordconfig_2__n                           inwordconfig[2]
+   Net     inwordconfig_c_3__n                         inwordconfig_c[3]
+   Net       inwordconfig_3__n                           inwordconfig[3]
+   Net     inwordconfig_c_4__n                         inwordconfig_c[4]
+   Net       inwordconfig_4__n                           inwordconfig[4]
+   Net     inwordconfig_c_5__n                         inwordconfig_c[5]
+   Net       inwordconfig_5__n                           inwordconfig[5]
+   Net     inwordconfig_c_6__n                         inwordconfig_c[6]
+   Net       inwordconfig_6__n                           inwordconfig[6]
+   Net     inwordconfig_c_7__n                         inwordconfig_c[7]
+   Net      inwordwrite_c_0__n                          inwordwrite_c[0]
+   Net        inwordwrite_0__n                            inwordwrite[0]
+   Net      inwordwrite_c_1__n                          inwordwrite_c[1]
+   Net        inwordwrite_1__n                            inwordwrite[1]
+   Net      inwordwrite_c_2__n                          inwordwrite_c[2]
+   Net        inwordwrite_2__n                            inwordwrite[2]
+   Net      inwordwrite_c_3__n                          inwordwrite_c[3]
+   Net        inwordwrite_3__n                            inwordwrite[3]
+   Net      inwordwrite_c_4__n                          inwordwrite_c[4]
+   Net        inwordwrite_4__n                            inwordwrite[4]
+   Net      inwordwrite_c_5__n                          inwordwrite_c[5]
+   Net        inwordwrite_5__n                            inwordwrite[5]
+   Net      inwordwrite_c_6__n                          inwordwrite_c[6]
+   Net        inwordwrite_6__n                            inwordwrite[6]
+   Net      inwordwrite_c_7__n                          inwordwrite_c[7]
+   Net      outwordbuff_c_0__n                          outwordbuff_c[0]
+   Net        outwordbuff_0__n                            outwordbuff[0]
+   Net      outwordbuff_c_1__n                          outwordbuff_c[1]
+   Net        outwordbuff_1__n                            outwordbuff[1]
+   Net      outwordbuff_c_2__n                          outwordbuff_c[2]
+   Net        outwordbuff_2__n                            outwordbuff[2]
+   Net      outwordbuff_c_3__n                          outwordbuff_c[3]
+   Net        outwordbuff_3__n                            outwordbuff[3]
+   Net      outwordbuff_c_4__n                          outwordbuff_c[4]
+   Net        outwordbuff_4__n                            outwordbuff[4]
+   Net      outwordbuff_c_5__n                          outwordbuff_c[5]
+   Net        outwordbuff_5__n                            outwordbuff[5]
+   Net      outwordbuff_c_6__n                          outwordbuff_c[6]
+   Net        outwordbuff_6__n                            outwordbuff[6]
+   Net      outwordbuff_c_7__n                          outwordbuff_c[7]
+   Net    pbuff_un2_inflagbuffwrite_0_n               pbuff.un2_inflagbuffwrite_0
+   Net            enbb_1_un3_n                                ENbb_1.un3
+   Net            enbb_1_un1_n                                ENbb_1.un1
+   Net            enbb_1_un0_n                                ENbb_1.un0
+   Net            rsbb_1_un3_n                                RSbb_1.un3
+   Net            rsbb_1_un1_n                                RSbb_1.un1
+   Net            rsbb_1_un0_n                                RSbb_1.un0
+   Net            rwbb_1_un3_n                                RWbb_1.un3
+   Net            rwbb_1_un1_n                                RWbb_1.un1
+   Net            rwbb_1_un0_n                                RWbb_1.un0
+   Net    outwordbuff_1_0__un3_n                      outwordbuff_1_0_.un3
+   Net    outwordbuff_1_0__un1_n                      outwordbuff_1_0_.un1
+   Net    outwordbuff_1_0__un0_n                      outwordbuff_1_0_.un0
+   Net    outwordbuff_1_1__un3_n                      outwordbuff_1_1_.un3
+   Net    outwordbuff_1_1__un1_n                      outwordbuff_1_1_.un1
+   Net    outwordbuff_1_1__un0_n                      outwordbuff_1_1_.un0
+   Net    outwordbuff_1_2__un3_n                      outwordbuff_1_2_.un3
+   Net    outwordbuff_1_2__un1_n                      outwordbuff_1_2_.un1
+   Net    outwordbuff_1_2__un0_n                      outwordbuff_1_2_.un0
+   Net    outwordbuff_1_3__un3_n                      outwordbuff_1_3_.un3
+   Net    outwordbuff_1_3__un1_n                      outwordbuff_1_3_.un1
+   Net    outwordbuff_1_3__un0_n                      outwordbuff_1_3_.un0
+   Net    outwordbuff_1_4__un3_n                      outwordbuff_1_4_.un3
+   Net    outwordbuff_1_4__un1_n                      outwordbuff_1_4_.un1
+   Net    outwordbuff_1_4__un0_n                      outwordbuff_1_4_.un0
+   Net    outwordbuff_1_5__un3_n                      outwordbuff_1_5_.un3
+   Net    outwordbuff_1_5__un1_n                      outwordbuff_1_5_.un1
+   Net    outwordbuff_1_5__un0_n                      outwordbuff_1_5_.un0
+   Net    outwordbuff_1_6__un3_n                      outwordbuff_1_6_.un3
+   Net    outwordbuff_1_6__un1_n                      outwordbuff_1_6_.un1
+   Net    outwordbuff_1_6__un0_n                      outwordbuff_1_6_.un0
+   Net    outwordbuff_1_7__un3_n                      outwordbuff_1_7_.un3
+   Net    outwordbuff_1_7__un1_n                      outwordbuff_1_7_.un1
+   Net    outwordbuff_1_7__un0_n                      outwordbuff_1_7_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     inwordconfig_7_
+        Input     inwordwrite_7_
+        Input     inFlagbuffconfig
+        Input     inFlagbuffwrite
+        Input     RWcb
+        Input     RScb
+        Input     ENcb
+        Input     RWwb
+        Input     RSwb
+        Input     ENwb
+        Input     inwordconfig_6_
+        Input     inwordconfig_5_
+        Input     inwordconfig_4_
+        Input     inwordconfig_3_
+        Input     inwordconfig_2_
+        Input     inwordconfig_1_
+        Input     inwordconfig_0_
+        Input     inwordwrite_6_
+        Input     inwordwrite_5_
+        Input     inwordwrite_4_
+        Input     inwordwrite_3_
+        Input     inwordwrite_2_
+        Input     inwordwrite_1_
+        Input     inwordwrite_0_
+        Output     outwordbuff_7_
+        Output     RWbb
+        Output     RSbb
+        Output     ENbb
+        Output     outwordbuff_6_
+        Output     outwordbuff_5_
+        Output     outwordbuff_4_
+        Output     outwordbuff_3_
+        Output     outwordbuff_2_
+        Output     outwordbuff_1_
+        Output     outwordbuff_0_
+End

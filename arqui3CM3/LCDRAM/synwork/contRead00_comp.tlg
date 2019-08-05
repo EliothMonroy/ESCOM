@@ -1,0 +1,5 @@
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":6:7:6:16|Synthesizing work.contread00.contread0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":50:8:50:18|Removed redundant assignment
+Post processing for work.contread00.contread0
+@W: CL138 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":27:5:27:6|Register bit RScw is always 1, optimizing ...

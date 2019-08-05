@@ -1,0 +1,17 @@
+inFlagw  i
+inFlagwx  i
+incontw[5]  i
+incontw[4]  i
+incontw[3]  i
+incontw[2]  i
+incontw[1]  i
+incontw[0]  i
+outwordw[7]  o
+outwordw[6]  o
+outwordw[5]  o
+outwordw[4]  o
+outwordw[3]  o
+outwordw[2]  o
+outwordw[1]  o
+outwordw[0]  o
+outFlagw  o

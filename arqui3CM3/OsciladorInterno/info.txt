@@ -1,0 +1,2 @@
+Buscar machx02 sysClockPLL para encontrar la nota de aplicación
+Usaremos una frecuencia de 2.08 MHz

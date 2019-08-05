@@ -1,0 +1,7 @@
+#Start recording tcl command: 10/31/2017 10:41:51
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/lcd00; Project name: lcd00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcd00.ldf"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcdmux00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/packagelcd00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/toplcd00.vhdl"
+#Stop recording: 10/31/2017 12:03:04

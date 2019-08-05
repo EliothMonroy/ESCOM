@@ -1,0 +1,13 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00   -part LCMXO2_7000HE  -package TG144C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synlog\report\rotL00_rotL00_premap.xml  -top_level_module  toprotL00  -oedif  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\rotL00_rotL00.edi  -conchk_prepass  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\rotL00_rotL00_cck.rpt   -freq 1.000   C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synwork\rotL00_rotL00_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synwork\rotL00_rotL00_prem.srd  -devicelib  C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\syntmp\rotL00_rotL00.plg  -osyn  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synwork\rotL00_rotL00_prem.srd  -prjdir  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\  -prjname  proj_1  -log  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synlog\rotL00_rotL00_premap.srr 
+rc:1 success:1 runtime:2
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\rotL00_rotL00.edi|io:o|time:0|size:0|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\rotL00_rotL00_cck.rpt|io:o|time:1505790599|size:2645|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synwork\rotL00_rotL00_mult.srs|io:i|time:1505790597|size:2588|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synwork\rotL00_rotL00_prem.srd|io:o|time:1505790598|size:9054|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1489047244|size:54295|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1489047244|size:40584|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\syntmp\rotL00_rotL00.plg|io:o|time:1505790598|size:0|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synwork\rotL00_rotL00_prem.srd|io:o|time:1505790598|size:9054|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotL00\rotL00\synlog\rotL00_rotL00_premap.srr|io:o|time:1505790599|size:3752|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\m_gen_lattice.exe|io:i|time:1489220624|size:19190784|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1489222152|size:23049728|exec:1

@@ -1,0 +1,2 @@
+@W: CD280 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Unbound component OSCTIMER mapped to black box
+

@@ -1,0 +1,442 @@
+
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HE -path "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00" -path "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00"   "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00_word00.edi" "word00_word00.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to word00_word00.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data"  -p "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00" -p "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00"  "word00_word00.ngo" "word00_word00.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'word00_word00.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="W00/DO1/un2_sdiv_s_21_0_COUT" arg2="W00/DO1/un2_sdiv_s_21_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="W00/DO1/un2_sdiv_s_21_0_S1" arg2="W00/DO1/un2_sdiv_s_21_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="W00/DO1/un2_sdiv_cry_0_0_S0" arg2="W00/DO1/un2_sdiv_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="W00/D00/OSCInst0_SEDSTDBY" arg2="W00/D00/OSCInst0_SEDSTDBY"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
+
+Design Results:
+    130 blocks expanded
+Complete the first expansion.
+Writing 'word00_word00.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "word00_word00.ngd" -o "word00_word00_map.ncd" -pr "word00_word00.prf" -mp "word00_word00.mrp" -lpf "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00_word00_synplify.lpf" -lpf "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: word00_word00.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="W02/N_13_i"  />
+
+
+
+Design Summary:
+   Number of registers:     40 out of  7209 (1%)
+      PFU registers:           40 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        37 out of  3432 (1%)
+      SLICEs as Logic/ROM:     37 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:         73 out of  6864 (1%)
+      Number used as logic LUTs:         49
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 17 + 4(JTAG) out of 115 (18%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net W00.sclk_0_0: 25 loads, 25 rising, 0 falling (Driver: W00/D00/OSCInst0 )
+   Number of Clock Enables:  1
+     Net outdiv_RNIEDK91: 1 loads, 1 LSLICEs
+   Number of local set/reset loads for net W02/N_13_i merged into GSR:  1
+   Number of LSRs:  5
+     Net W02/outr_ret_3: 1 loads, 1 LSLICEs
+     Net W02/outr_0_ret_4: 1 loads, 1 LSLICEs
+     Net W02/outcoder7: 1 loads, 1 LSLICEs
+     Net outdiv_RNI54MH1: 1 loads, 1 LSLICEs
+     Net W00/DO1/N_3_i: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net W00/DO1/N_3_i: 12 loads
+     Net outdiv_RNIEDK91: 9 loads
+     Net cdiv0_c[1]: 8 loads
+     Net en0_c: 8 loads
+     Net cdiv0_c[0]: 7 loads
+     Net outtransist0_c[1]: 7 loads
+     Net cdiv0_c[3]: 6 loads
+     Net N_2_0ctr: 6 loads
+     Net N_4_0ctr: 6 loads
+     Net outtransist0_c[2]: 6 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 58 MB
+
+Dumping design to file word00_word00_map.ncd.
+
+mpartrce -p "word00_word00.p2t" -f "word00_word00.p3t" -tf "word00_word00.pt" "word00_word00_map.ncd" "word00_word00.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "word00_word00_map.ncd"
+Fri Oct 13 22:22:43 2017
+
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF word00_word00_map.ncd word00_word00.dir/5_1.ncd word00_word00.prf
+Preference file: word00_word00.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file word00_word00_map.ncd.
+Design name: topword00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   17+4(JTAG)/336     6% used
+                  17+4(JTAG)/115     18% bonded
+
+   SLICE             37/3432          1% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+
+
+Number of Signals: 127
+Number of Connections: 301
+
+Pin Constraint Summary:
+   17 out of 17 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    W00.sclk_0_0 (driver: W00/D00/OSCInst0, clk load #: 25)
+
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    W00/DO1/N_3_i (driver: W00/DO1/SLICE_31, clk load #: 0, sr load #: 12, ce load #: 0)
+
+Signal W02/N_13_i is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+.................
+Placer score = 21591.
+Finished Placer Phase 1.  REAL time: 7 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  21495
+Finished Placer Phase 2.  REAL time: 7 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "W00.sclk_0_0" from OSC on comp "W00/D00/OSCInst0" on site "OSC", clk load = 25
+  SECONDARY "W00/DO1/N_3_i" from F0 on comp "W00/DO1/SLICE_31" on site "R14C18D", clk load = 0, ce load = 0, sr load = 12
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   17 + 4(JTAG) out of 336 (6.3%) PIO sites used.
+   17 + 4(JTAG) out of 115 (18.3%) bonded PIO sites used.
+   Number of PIO comps: 17; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 7 / 28 ( 25%) | 2.5V       | -         |
+| 1        | 0 / 29 (  0%) | -          | -         |
+| 2        | 5 / 29 ( 17%) | 2.5V       | -         |
+| 3        | 4 / 9 ( 44%)  | 2.5V       | -         |
+| 4        | 1 / 10 ( 10%) | 2.5V       | -         |
+| 5        | 0 / 10 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 6 secs 
+
+Dumping design to file word00_word00.dir/5_1.ncd.
+
+0 connections routed; 301 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 9 secs 
+
+Start NBR router at 22:22:52 10/13/17
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 22:22:52 10/13/17
+
+Start NBR section for initial routing at 22:22:52 10/13/17
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 466.756ns/0.000ns; real time: 10 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 22:22:53 10/13/17
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 466.756ns/0.000ns; real time: 10 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 466.762ns/0.000ns; real time: 10 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 22:22:53 10/13/17
+
+Start NBR section for re-routing at 22:22:53 10/13/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 466.762ns/0.000ns; real time: 10 secs 
+
+Start NBR section for post-routing at 22:22:53 10/13/17
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 466.762ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 10 secs 
+Total REAL time: 11 secs 
+Completely routed.
+End of route.  301 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file word00_word00.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 466.762
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.278
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 10 secs 
+Total REAL time to completion: 11 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "word00_word00.t2b" -w "word00_word00.ncd" -jedec "word00_word00.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file word00_word00.ncd.
+Design name: topword00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from word00_word00.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "word00_word00.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 

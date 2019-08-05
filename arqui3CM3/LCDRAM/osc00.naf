@@ -1,0 +1,4 @@
+osc_dis  i
+tmr_rst  i
+osc_out  o
+tmr_out  o

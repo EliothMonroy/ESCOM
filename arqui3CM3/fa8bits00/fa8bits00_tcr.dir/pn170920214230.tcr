@@ -1,0 +1,19 @@
+#Start recording tcl command: 9/20/2017 13:35:56
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00; Project name: fa8bits00
+prj_project new -name "fa8bits00" -impl "fa8bits00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/and00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/or00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/packagefa00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/packageha00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/packagesumaresta00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source"
+file copy -force -- "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/topfa00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/topha00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/xnor00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/xor00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/and00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/or00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/packagefa00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/packageha00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/packagesumaresta00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/topfa00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/topha00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/xnor00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/source/xor00.vhdl"
+prj_project save
+pgr_project close
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/topfa8bits00.vhdl"
+prj_run Export -impl fa8bits00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/fa8bits00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/fa8bits00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/fa8bits00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/fa8bits00.xcf"
+pgr_program run
+prj_project save
+pgr_project close
+#Stop recording: 9/20/2017 21:42:30

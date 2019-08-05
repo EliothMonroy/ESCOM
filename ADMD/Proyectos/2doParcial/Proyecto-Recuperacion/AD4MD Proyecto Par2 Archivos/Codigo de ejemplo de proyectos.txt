@@ -1,0 +1,48 @@
+//	Medir voltaje del potenciómetro (10k) en A0 y mostrarlo en el monitor serial.
+int sensorPin	= A0;
+int sensorValor	= 0;
+void setup(){
+	Serial.begin(9600);
+}
+void loop(){
+	sensorValor = analogRead(sensorPin);
+	Serial.print("Sensor = ");
+	Serial.println(sensorValor, DEC);
+	delay(10);
+}
+
+
+//	Medir temperatura con el LM35 y mostrarla en el monitor serial.
+float	temperatura;
+int	tempPin = 0;
+void setup(){
+	Serial.begin(9600);
+}
+void loop(){
+	temperatura = analogRead(tempPin);
+	temperatura = temperatura * 0.48828125;
+	Serial.print("Temperatura = ");
+	Serial.print(temperatura);
+	Serial.print("*C");
+	Serial.println();
+	delay(1000);
+}
+
+
+// 	Medir RPM y enviarla al Bluetooth.
+void setup(){
+	Serial.begin(9600);
+}
+void loop(){
+	Serial.print('#');
+	float v = (analogRead(0) * 5) / 1024.0;
+	Serial.print(v);
+	Serial.print('+');
+	Serial.print('=');
+	Serial.println();
+	delay(700);
+}
+
+
+
+

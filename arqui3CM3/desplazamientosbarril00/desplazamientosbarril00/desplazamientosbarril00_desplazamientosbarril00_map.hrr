@@ -1,0 +1,52 @@
+---------------------------------------------------
+Report for cell topdesplazamientosbarril00
+   Instance path: topdesplazamientosbarril00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.00        100.0
+                                 IOLGC	       8.00        100.0
+                                  LUT4	      64.00        100.0
+                                 IOREG	          8        100.0
+                                 IOBUF	         28        100.0
+                                PFUREG	         35        100.0
+                                RIPPLE	         15        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           toposcdiv00	          1        52.1
+               desplazamientosbarril00	          1        47.9
+---------------------------------------------------
+Report for cell desplazamientosbarril00
+   Instance path: topdesplazamientosbarril00/W01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.50        47.9
+                                  LUT4	      39.00        60.9
+                                PFUREG	         12        34.3
+                                RIPPLE	          3        20.0
+---------------------------------------------------
+Report for cell toposcdiv00
+   Instance path: topdesplazamientosbarril00/W00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.50        52.1
+                                  LUT4	      25.00        39.1
+                                PFUREG	         23        65.7
+                                RIPPLE	         12        80.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 osc00	          1         0.0
+                                 div00	          1        52.1
+---------------------------------------------------
+Report for cell div00
+   Instance path: topdesplazamientosbarril00/W00/DO1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.50        52.1
+                                  LUT4	      25.00        39.1
+                                PFUREG	         23        65.7
+                                RIPPLE	         12        80.0
+---------------------------------------------------
+Report for cell osc00
+   Instance path: topdesplazamientosbarril00/W00/D00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

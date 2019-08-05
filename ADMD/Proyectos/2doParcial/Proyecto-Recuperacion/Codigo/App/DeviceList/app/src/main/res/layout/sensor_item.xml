@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="6dp"
+            android:src="@mipmap/ic_launcher"/>
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_toRightOf="@+id/iv_img"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_toRightOf="@+id/iv_img"
+            android:layout_below="@+id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_toRightOf="@+id/tv_type"
+            android:layout_below="@+id/tv_title"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

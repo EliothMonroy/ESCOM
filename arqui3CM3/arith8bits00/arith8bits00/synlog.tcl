@@ -1,0 +1,1 @@
+run_tcl -fg arith8bits00_arith8bits00_synplify.tcl

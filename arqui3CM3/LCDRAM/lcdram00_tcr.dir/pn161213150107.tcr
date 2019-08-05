@@ -1,0 +1,21 @@
+#Start recording tcl command: 12/12/2016 08:45:00
+#Project Location: C:/Users/beatl/Desktop/Gelacip/LCDRAM; Project name: lcdram00
+F:/lcdramomega
+lcdram00
+#Start recording tcl command: 12/13/2016 15:01:03
+#Project Location: F:/lcdramomega; Project name: lcdram00
+prj_project open "C:/Users/beatl/Desktop/Gelacip/LCDRAM/lcdram00.ldf"
+pgr_project open "C:/Users/beatl/Desktop/Gelacip/LCDRAM/lcdram00/lcdram00.xcf"
+pgr_program set -port FTUSB-1
+pgr_program set -port FTUSB-0
+pgr_program set -port FTUSB-1
+pgr_program run
+pgr_project save "C:/Users/beatl/Desktop/Gelacip/LCDRAM/lcdram00/lcdram00.xcf"
+pgr_project close
+pgr_project open "C:/Users/beatl/Desktop/Gelacip/LCDRAM/lcdram00/lcdram00.xcf"
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/beatl/Desktop/Gelacip/LCDRAM/lcdram00/lcdram00.xcf"
+prj_project saveas -name "lcdram00" -dir "F:/lcdramomega"
+pgr_project close
+#Stop recording: 12/13/2016 15:01:07

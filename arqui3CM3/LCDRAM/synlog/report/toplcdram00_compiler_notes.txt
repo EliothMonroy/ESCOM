@@ -1,0 +1,23 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":7:7:7:17|Top entity is set to toplcdram00.
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":7:7:7:17|Synthesizing work.toplcdram00.toplcdram0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":6:7:6:17|Synthesizing work.bufferlcd00.bufferlcd0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":6:7:6:14|Synthesizing work.config00.config0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":6:7:6:18|Synthesizing work.contconfig00.contconfig0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":28:7:28:11|Removed redundant assignment
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":6:7:6:16|Synthesizing work.contread00.contread0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":50:8:50:18|Removed redundant assignment
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd":6:7:6:11|Synthesizing work.ram00.ram0 
+@N: CL134 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd":28:9:28:12|Found RAM sram, depth=16, width=8
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd":7:7:7:14|Synthesizing work.topkey00.topkey0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":6:7:6:13|Synthesizing work.coder00.coder0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":42:12:42:19|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":95:5:95:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":149:5:149:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":206:11:206:18|Removed redundant assignment
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":6:7:6:16|Synthesizing work.contring00.contring0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\div00.vhd":6:7:6:11|Synthesizing work.div00.div0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Synthesizing work.osctimer.syn_black_box 
+

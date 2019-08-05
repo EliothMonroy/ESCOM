@@ -1,0 +1,45 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ALBERTORIOS-PC
+
+#Implementation: lcdram
+
+$ Start of Compile
+#Wed May 18 21:53:07 2016
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":8:7:8:11|Top entity is set to osc00.
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagekey00.vhd changed - recompiling
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagekey00.vhd changed - recompiling
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd changed - recompiling
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0 
+@W: CD280 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Unbound component OSCTIMER mapped to black box
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Synthesizing work.osctimer.syn_black_box 
+Post processing for work.osctimer.syn_black_box
+Post processing for work.osc00.osc0
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 74MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 21:53:07 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\osc00_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 21:53:08 2016
+
+###########################################################]

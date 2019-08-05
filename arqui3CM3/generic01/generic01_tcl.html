@@ -1,0 +1,136 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn171124115436"></A><B><U><big>pn171124115436</big></U></B>
+#Start recording tcl command: 11/24/2017 10:49:17
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/generic01.ldf"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/uc00.vhdl"
+prj_src remove "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/generic01/source/uc00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/packagegeneric01.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/topgeneric01.vhdl"
+prj_project save
+#Stop recording: 11/24/2017 11:54:36
+
+
+
+<A name="pn171128224451"></A><B><U><big>pn171128224451</big></U></B>
+#Start recording tcl command: 11/28/2017 18:18:12
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01.ldf"
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+pgr_program run
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/org00.vhdl"
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/notg00.vhdl"
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/nandg00.vhdl"
+prj_run Export -impl generic01 -task Jedecgen
+prj_run Export -impl generic01 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 11/28/2017 22:44:51
+
+
+
+<A name="pn171206165431"></A><B><U><big>pn171206165431</big></U></B>
+#Start recording tcl command: 12/6/2017 16:35:40
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01.ldf"
+prj_run Export -impl generic01 -task Jedecgen
+#Stop recording: 12/6/2017 16:54:31
+
+
+
+<A name="pn171206210029"></A><B><U><big>pn171206210029</big></U></B>
+#Start recording tcl command: 12/6/2017 20:36:16
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01.ldf"
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01/generic01.xcf"
+pgr_program run
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 12/6/2017 21:00:29
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

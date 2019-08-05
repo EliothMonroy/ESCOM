@@ -1,0 +1,3892 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed May 18 22:06:24 2016
+#$ PROPERTY LATTICE OSCTIMER K00_inst11= oscdis0_c, tmrrst0_c, oscout0_c, tmrout, 1024; 
+#$ MODULE lcdram
+#$ PINS 48 cdiv00_3_:100'ke'  inkey0_3_:53'ke'  reset0:81'ke'  wr0:87'ke'  oscdis0:38'ke'  \
+#  oscout0:104'ke'  tmrrst0:45'ke'  cdiv00_2_:76'ke'  cdiv00_1_:101'ke'  cdiv00_0_:77'ke'  RW0:32'ke'  \
+#  inkey0_2_:52'ke'  inkey0_1_:51'ke'  inkey0_0_:50'ke'  outr0_3_:43'ke'  outContWrite0_3_:28'ke'  \
+#  outContRead0_3_:4'ke'  outcc0_5_:122'ke'  outword0_7_:142'ke'  clk0:98'ke'  inFlagk0:59'ke'  \
+#  outFlagk0:60'ke'  inFlagcc0:58'ke'  outFlagcc0:61'ke'  outFlagw0:13'ke'  RS0:134'ke'  EN0:135'ke'  \
+#  outr0_2_:44'ke'  outr0_1_:48'ke'  outr0_0_:49'ke'  outContWrite0_2_:130'ke'  \
+#  outContWrite0_1_:29'ke'  outContWrite0_0_:131'ke'  outContRead0_2_:5'ke'  \
+#  outContRead0_1_:6'ke'  outContRead0_0_:7'ke'  outcc0_4_:95'ke'  outcc0_3_:123'ke'  \
+#  outcc0_2_:96'ke'  outcc0_1_:124'ke'  outcc0_0_:97'ke'  outword0_6_:141'ke'  outword0_5_:140'ke'  \
+#  outword0_4_:42'ke'  outword0_3_:139'ke'  outword0_2_:138'ke'  outword0_1_:39'ke'  \
+#  outword0_0_:33'ke' 
+#$ NODES 208 RA03_sram_sram_ram14__7_ RA03_sram_sram_ram15__0_ \
+#  RA03_sram_sram_ram15__1_ RA03_sram_sram_ram15__2_ RA03_sram_sram_ram15__3_ \
+#  RA03_sram_sram_ram15__4_ tmrout RA03_sram_sram_ram15__5_ RA02_K02_out7segc_1_0_ \
+#  RA03_sram_sram_ram15__6_ RA02_K02_out7segc_1_1_ RA02_K02_out7segc_1_2_ \
+#  RA03_sram_sram_ram15__7_ RA02_K02_out7segc_1_3_ RA02_K02_aux01 \
+#  RA02_K02_out7segc_1_4_ RA02_K02_aux02 RA02_K02_out7segc_1_5_ RA02_K02_aux03 \
+#  RA02_K02_out7segc_1_7_ RA02_K02_aux04 RA05_outFlagcw N_293_0_6 RA03_outWordm_0_ \
+#  RA03_outWordm_1_ ra03_outflagm_0_sqmuxa_n RA03_outWordm_2_ ra02_k02_outcontce_n \
+#  RA03_outWordm_3_ RA03_outWordm_4_ RA03_outWordm_5_ RA03_outWordm_6_ \
+#  RA03_outWordm_7_ RA05_ENcw LCD03_outWordc_1_0_ lcd03_n_30_i_2_n \
+#  LCD03_outWordc_1_1_ LCD03_outWordc_1_2_ LCD03_outWordc_1_3_ LCD03_outWordc_1_4_ \
+#  k01_n_325_i_4_n LCD03_outWordc_1_5_ k01_n_325_i_5_n LCD03_outWordc_1_7_ \
+#  lcd03_n_63_n LCD03_ENc lcd06_pbuff_un2_inflagbuffwrite_n K01_sdiv_0_ K01_sdiv_1_ \
+#  K01_sdiv_2_ K01_sdiv_3_ K01_sdiv_4_ RA03_aux K01_sdiv_5_ ra03_outwordm_0_sqmuxa_n \
+#  K01_sdiv_6_ K01_sdiv_7_ K01_sdiv_8_ K01_sdiv_9_ K01_sdiv_10_ K01_sdiv_11_ \
+#  RA02_K01_sring_3_ k01_n_16_2_n k01_n_17_1_n k01_n_17_2_n k01_n_18_1_n \
+#  ra05_outcontreade_0_n lcd03_un1_inflagc_9_0_n lcd03_un1_inflagc_8_0_n k01_n_15_n \
+#  k01_n_8_n lcd03_n_28_i_1_n lcd03_n_26_i_1_n lcd03_n_42_i_n lcd03_n_71_i_n \
+#  lcd03_n_46_i_n lcd03_un1_inflagc_6_n lcd03_un1_inflagc_10_0_n \
+#  RA03_sram_sram_ram0__0_ RA03_sram_sram_ram0__1_ RA03_sram_sram_ram0__2_ \
+#  RA03_sram_sram_ram0__3_ RA03_sram_sram_ram0__4_ RA03_sram_sram_ram0__5_ \
+#  RA03_sram_sram_ram0__6_ RA03_sram_sram_ram0__7_ RA03_sram_sram_ram1__0_ \
+#  RA03_sram_sram_ram1__1_ RA03_sram_sram_ram1__2_ RA03_sram_sram_ram1__3_ \
+#  RA03_sram_sram_ram1__4_ RA03_sram_sram_ram1__5_ RA03_sram_sram_ram1__6_ \
+#  RA03_sram_sram_ram1__7_ RA03_sram_sram_ram2__0_ RA03_sram_sram_ram2__1_ \
+#  ra03_n_34_0_n RA03_sram_sram_ram2__2_ RA03_sram_sram_ram2__3_ \
+#  RA03_sram_sram_ram2__4_ RA03_sram_sram_ram2__5_ RA03_sram_sram_ram2__6_ \
+#  RA03_sram_sram_ram2__7_ RA03_sram_sram_ram3__0_ RA03_sram_sram_ram3__1_ \
+#  RA03_sram_sram_ram3__2_ RA03_sram_sram_ram3__3_ RA03_sram_sram_ram3__4_ \
+#  RA03_sram_sram_ram3__5_ RA03_sram_sram_ram3__6_ RA03_sram_sram_ram3__7_ \
+#  RA03_sram_sram_ram4__0_ RA03_sram_sram_ram4__1_ RA03_sram_sram_ram4__2_ \
+#  RA03_sram_sram_ram4__3_ RA03_sram_sram_ram4__4_ ra02_k02_n_118_i_n \
+#  RA03_sram_sram_ram4__5_ RA03_sram_sram_ram4__6_ RA03_sram_sram_ram4__7_ \
+#  RA03_sram_sram_ram5__0_ RA03_sram_sram_ram5__1_ RA03_sram_sram_ram5__2_ \
+#  RA03_sram_sram_ram5__3_ RA03_sram_sram_ram5__4_ RA03_sram_sram_ram5__5_ \
+#  RA03_sram_sram_ram5__6_ RA03_sram_sram_ram5__7_ RA03_sram_sram_ram6__0_ \
+#  RA03_sram_sram_ram6__1_ RA03_sram_sram_ram6__2_ RA03_sram_sram_ram6__3_ \
+#  RA03_sram_sram_ram6__4_ RA03_sram_sram_ram6__5_ RA03_sram_sram_ram6__6_ \
+#  RA03_sram_sram_ram6__7_ RA03_sram_sram_ram7__0_ RA03_sram_sram_ram7__1_ \
+#  RA03_sram_sram_ram7__2_ RA03_sram_sram_ram7__3_ RA03_sram_sram_ram7__4_ \
+#  RA03_sram_sram_ram7__5_ RA03_sram_sram_ram7__6_ RA03_sram_sram_ram7__7_ \
+#  RA03_sram_sram_ram8__0_ oscdis0_c RA03_sram_sram_ram8__1_ RA03_sram_sram_ram8__2_ \
+#  oscout0_c ra02_k02_n_117_i_n RA03_sram_sram_ram8__3_ RA03_sram_sram_ram8__4_ \
+#  tmrrst0_c RA03_sram_sram_ram8__5_ RA03_sram_sram_ram8__6_ RA03_sram_sram_ram8__7_ \
+#  RA03_sram_sram_ram9__0_ RA03_sram_sram_ram9__1_ ra02_k02_n_122_i_n \
+#  RA03_sram_sram_ram9__2_ RA03_sram_sram_ram9__3_ RA03_sram_sram_ram9__4_ \
+#  RA03_sram_sram_ram9__5_ RA03_sram_sram_ram9__6_ RA03_sram_sram_ram9__7_ \
+#  RA03_sram_sram_ram10__0_ RA03_sram_sram_ram10__1_ RA03_sram_sram_ram10__2_ \
+#  RA03_sram_sram_ram10__3_ RA03_sram_sram_ram10__4_ RA03_sram_sram_ram10__5_ \
+#  RA03_sram_sram_ram10__6_ RA03_sram_sram_ram10__7_ RA03_sram_sram_ram11__0_ \
+#  RA03_sram_sram_ram11__1_ RA03_sram_sram_ram11__2_ RA03_sram_sram_ram11__3_ \
+#  RA03_sram_sram_ram11__4_ RA03_sram_sram_ram11__5_ RA03_sram_sram_ram11__6_ \
+#  RA03_sram_sram_ram11__7_ RA03_sram_sram_ram12__0_ RA03_sram_sram_ram12__1_ \
+#  RA03_sram_sram_ram12__2_ RA03_sram_sram_ram12__3_ RA03_sram_sram_ram12__4_ \
+#  RA03_sram_sram_ram12__5_ RA03_sram_sram_ram12__6_ RA03_sram_sram_ram12__7_ \
+#  RA03_sram_sram_ram13__0_ RA03_sram_sram_ram13__1_ RA03_sram_sram_ram13__2_ \
+#  RA03_sram_sram_ram13__3_ RA03_sram_sram_ram13__4_ RA03_sram_sram_ram13__5_ \
+#  RA03_sram_sram_ram13__6_ k01_n_4_i_n RA03_sram_sram_ram13__7_ \
+#  RA03_sram_sram_ram14__0_ k01_n_59_i_n RA03_sram_sram_ram14__1_ \
+#  RA03_sram_sram_ram14__2_ RA03_sram_sram_ram14__3_ ra05_rscw_0_sqmuxa_n \
+#  k01_n_63_i_n RA03_sram_sram_ram14__4_ RA03_sram_sram_ram14__5_ \
+#  RA03_sram_sram_ram14__6_
+#$ EXTERNAL osctimer  4 DYNOSCDIS'i'  TIMERRES'i'  OSCOUT'o'  TIMEROUT'o' 
+#$ INSTANCE K00_inst11 OSCTIMER 4 oscdis0_c tmrrst0_c oscout0_c tmrout
+.model toplcdram00
+.inputs cdiv00_3_.BLIF inkey0_3_.BLIF reset0.BLIF wr0.BLIF oscdis0.BLIF \
+tmrrst0.BLIF cdiv00_2_.BLIF cdiv00_1_.BLIF cdiv00_0_.BLIF inkey0_2_.BLIF \
+inkey0_1_.BLIF inkey0_0_.BLIF RA03_sram_sram_ram14__7_.Q \
+RA03_sram_sram_ram15__0_.Q RA03_sram_sram_ram15__1_.Q \
+RA03_sram_sram_ram15__2_.Q RA03_sram_sram_ram15__3_.Q \
+RA03_sram_sram_ram15__4_.Q tmrout.BLIF RA03_sram_sram_ram15__5_.Q \
+RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram15__6_.Q RA02_K02_out7segc_1_1_.Q \
+RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram15__7_.Q RA02_K02_out7segc_1_3_.Q \
+RA02_K02_aux01.Q RA02_K02_out7segc_1_4_.Q RA02_K02_aux02.Q \
+RA02_K02_out7segc_1_5_.Q RA02_K02_aux03.Q RA02_K02_out7segc_1_7_.Q \
+RA02_K02_aux04.Q RA05_outFlagcw.Q N_293_0_6.BLIF RA03_outWordm_0_.Q \
+RA03_outWordm_1_.Q ra03_outflagm_0_sqmuxa_n.BLIF RA03_outWordm_2_.Q \
+ra02_k02_outcontce_n.BLIF RA03_outWordm_3_.Q RA03_outWordm_4_.Q \
+RA03_outWordm_5_.Q RA03_outWordm_6_.Q RA03_outWordm_7_.Q RA05_ENcw.Q \
+LCD03_outWordc_1_0_.Q lcd03_n_30_i_2_n.BLIF LCD03_outWordc_1_1_.Q \
+LCD03_outWordc_1_2_.Q LCD03_outWordc_1_3_.Q LCD03_outWordc_1_4_.Q \
+k01_n_325_i_4_n.BLIF LCD03_outWordc_1_5_.Q k01_n_325_i_5_n.BLIF \
+LCD03_outWordc_1_7_.Q lcd03_n_63_n.BLIF LCD03_ENc.Q \
+lcd06_pbuff_un2_inflagbuffwrite_n.BLIF K01_sdiv_0_.Q K01_sdiv_1_.Q \
+K01_sdiv_2_.Q K01_sdiv_3_.Q K01_sdiv_4_.Q RA03_aux.Q K01_sdiv_5_.Q \
+ra03_outwordm_0_sqmuxa_n.BLIF K01_sdiv_6_.Q K01_sdiv_7_.Q K01_sdiv_8_.Q \
+K01_sdiv_9_.Q K01_sdiv_10_.Q K01_sdiv_11_.Q RA02_K01_sring_3_.Q \
+k01_n_16_2_n.BLIF k01_n_17_1_n.BLIF k01_n_17_2_n.BLIF k01_n_18_1_n.BLIF \
+ra05_outcontreade_0_n.BLIF lcd03_un1_inflagc_9_0_n.BLIF \
+lcd03_un1_inflagc_8_0_n.BLIF k01_n_15_n.BLIF k01_n_8_n.BLIF \
+lcd03_n_28_i_1_n.BLIF lcd03_n_26_i_1_n.BLIF lcd03_n_42_i_n.BLIF \
+lcd03_n_71_i_n.BLIF lcd03_n_46_i_n.BLIF lcd03_un1_inflagc_6_n.BLIF \
+lcd03_un1_inflagc_10_0_n.BLIF RA03_sram_sram_ram0__0_.Q \
+RA03_sram_sram_ram0__1_.Q RA03_sram_sram_ram0__2_.Q RA03_sram_sram_ram0__3_.Q \
+RA03_sram_sram_ram0__4_.Q RA03_sram_sram_ram0__5_.Q RA03_sram_sram_ram0__6_.Q \
+RA03_sram_sram_ram0__7_.Q RA03_sram_sram_ram1__0_.Q RA03_sram_sram_ram1__1_.Q \
+RA03_sram_sram_ram1__2_.Q RA03_sram_sram_ram1__3_.Q RA03_sram_sram_ram1__4_.Q \
+RA03_sram_sram_ram1__5_.Q RA03_sram_sram_ram1__6_.Q RA03_sram_sram_ram1__7_.Q \
+RA03_sram_sram_ram2__0_.Q RA03_sram_sram_ram2__1_.Q ra03_n_34_0_n.BLIF \
+RA03_sram_sram_ram2__2_.Q RA03_sram_sram_ram2__3_.Q RA03_sram_sram_ram2__4_.Q \
+RA03_sram_sram_ram2__5_.Q RA03_sram_sram_ram2__6_.Q RA03_sram_sram_ram2__7_.Q \
+RA03_sram_sram_ram3__0_.Q clk0.Q RA03_sram_sram_ram3__1_.Q \
+RA03_sram_sram_ram3__2_.Q RA03_sram_sram_ram3__3_.Q RA03_sram_sram_ram3__4_.Q \
+RA03_sram_sram_ram3__5_.Q RA03_sram_sram_ram3__6_.Q RA03_sram_sram_ram3__7_.Q \
+RA03_sram_sram_ram4__0_.Q RA03_sram_sram_ram4__1_.Q RA03_sram_sram_ram4__2_.Q \
+RA03_sram_sram_ram4__3_.Q RA03_sram_sram_ram4__4_.Q inFlagk0.Q \
+ra02_k02_n_118_i_n.BLIF RA03_sram_sram_ram4__5_.Q RA03_sram_sram_ram4__6_.Q \
+outFlagk0.Q RA03_sram_sram_ram4__7_.Q RA03_sram_sram_ram5__0_.Q \
+RA03_sram_sram_ram5__1_.Q RA03_sram_sram_ram5__2_.Q RA03_sram_sram_ram5__3_.Q \
+RA03_sram_sram_ram5__4_.Q RA03_sram_sram_ram5__5_.Q RA03_sram_sram_ram5__6_.Q \
+outr0_0_.Q RA03_sram_sram_ram5__7_.Q outr0_1_.Q RA03_sram_sram_ram6__0_.Q \
+outr0_2_.Q RA03_sram_sram_ram6__1_.Q RA03_sram_sram_ram6__2_.Q outr0_3_.Q \
+RA03_sram_sram_ram6__3_.Q RA03_sram_sram_ram6__4_.Q outContWrite0_0_.Q \
+RA03_sram_sram_ram6__5_.Q RA03_sram_sram_ram6__6_.Q outContWrite0_1_.Q \
+RA03_sram_sram_ram6__7_.Q outContWrite0_2_.Q RA03_sram_sram_ram7__0_.Q \
+outContWrite0_3_.Q RA03_sram_sram_ram7__1_.Q RA03_sram_sram_ram7__2_.Q \
+outContRead0_0_.Q RA03_sram_sram_ram7__3_.Q RA03_sram_sram_ram7__4_.Q \
+outContRead0_1_.Q RA03_sram_sram_ram7__5_.Q RA03_sram_sram_ram7__6_.Q \
+outContRead0_2_.Q RA03_sram_sram_ram7__7_.Q outContRead0_3_.Q \
+RA03_sram_sram_ram8__0_.Q RA03_sram_sram_ram8__1_.Q RA03_sram_sram_ram8__2_.Q \
+oscout0_c.BLIF ra02_k02_n_117_i_n.BLIF RA03_sram_sram_ram8__3_.Q \
+RA03_sram_sram_ram8__4_.Q RA03_sram_sram_ram8__5_.Q RA03_sram_sram_ram8__6_.Q \
+inFlagcc0.Q RA03_sram_sram_ram8__7_.Q outcc0_0_.Q RA03_sram_sram_ram9__0_.Q \
+outcc0_1_.Q RA03_sram_sram_ram9__1_.Q ra02_k02_n_122_i_n.BLIF \
+RA03_sram_sram_ram9__2_.Q outcc0_2_.Q RA03_sram_sram_ram9__3_.Q \
+RA03_sram_sram_ram9__4_.Q outcc0_3_.Q RA03_sram_sram_ram9__5_.Q \
+RA03_sram_sram_ram9__6_.Q outcc0_4_.Q RA03_sram_sram_ram9__7_.Q outcc0_5_.Q \
+RA03_sram_sram_ram10__0_.Q outFlagcc0.Q RA03_sram_sram_ram10__1_.Q \
+RA03_sram_sram_ram10__2_.Q outFlagw0.Q RA03_sram_sram_ram10__3_.Q \
+RA03_sram_sram_ram10__4_.Q RA03_sram_sram_ram10__5_.Q \
+RA03_sram_sram_ram10__6_.Q RA03_sram_sram_ram10__7_.Q \
+RA03_sram_sram_ram11__0_.Q RA03_sram_sram_ram11__1_.Q \
+RA03_sram_sram_ram11__2_.Q RA03_sram_sram_ram11__3_.Q \
+RA03_sram_sram_ram11__4_.Q RA03_sram_sram_ram11__5_.Q \
+RA03_sram_sram_ram11__6_.Q RA03_sram_sram_ram11__7_.Q \
+RA03_sram_sram_ram12__0_.Q RA03_sram_sram_ram12__1_.Q \
+RA03_sram_sram_ram12__2_.Q RA03_sram_sram_ram12__3_.Q \
+RA03_sram_sram_ram12__4_.Q RA03_sram_sram_ram12__5_.Q \
+RA03_sram_sram_ram12__6_.Q RA03_sram_sram_ram12__7_.Q \
+RA03_sram_sram_ram13__0_.Q RA03_sram_sram_ram13__1_.Q \
+RA03_sram_sram_ram13__2_.Q RA03_sram_sram_ram13__3_.Q \
+RA03_sram_sram_ram13__4_.Q RA03_sram_sram_ram13__5_.Q \
+RA03_sram_sram_ram13__6_.Q k01_n_4_i_n.BLIF RA03_sram_sram_ram13__7_.Q \
+RA03_sram_sram_ram14__0_.Q k01_n_59_i_n.BLIF RA03_sram_sram_ram14__1_.Q \
+RA03_sram_sram_ram14__2_.Q RA03_sram_sram_ram14__3_.Q \
+ra05_rscw_0_sqmuxa_n.BLIF k01_n_63_i_n.BLIF RA03_sram_sram_ram14__4_.Q \
+RA03_sram_sram_ram14__5_.Q RA03_sram_sram_ram14__6_.Q
+.outputs oscout0 RW0 outword0_0_.LH outword0_1_.LH outword0_2_.LH \
+outword0_3_.LH outword0_4_.LH outword0_5_.LH outword0_6_.LH outword0_7_.LH \
+EN0.LH RS0.LH K01_sdiv_9_.CE K01_sdiv_9_.C K01_sdiv_10_.CE K01_sdiv_10_.C \
+K01_sdiv_11_.CE K01_sdiv_11_.C K01_sdiv_7_.CE K01_sdiv_7_.C K01_sdiv_8_.CE \
+K01_sdiv_8_.C K01_sdiv_4_.CE K01_sdiv_4_.C K01_sdiv_5_.CE K01_sdiv_5_.C \
+K01_sdiv_6_.CE K01_sdiv_6_.C K01_sdiv_2_.CE K01_sdiv_2_.C K01_sdiv_3_.CE \
+K01_sdiv_3_.C K01_sdiv_0_.CE K01_sdiv_0_.C K01_sdiv_1_.CE K01_sdiv_1_.C clk0.C \
+outContWrite0_2_.CE outContWrite0_2_.C outContWrite0_3_.CE outContWrite0_3_.C \
+RA02_K02_out7segc_1_0_.CE RA02_K02_out7segc_1_0_.C RA02_K02_out7segc_1_1_.CE \
+RA02_K02_out7segc_1_1_.C RA02_K02_out7segc_1_2_.CE RA02_K02_out7segc_1_2_.C \
+RA02_K02_out7segc_1_3_.CE RA02_K02_out7segc_1_3_.C RA02_K02_out7segc_1_4_.CE \
+RA02_K02_out7segc_1_4_.C RA02_K02_out7segc_1_5_.CE RA02_K02_out7segc_1_5_.C \
+outContWrite0_0_.CE outContWrite0_0_.C outContWrite0_1_.CE outContWrite0_1_.C \
+RA02_K02_out7segc_1_7_.C outFlagk0.C RA02_K02_aux04.CE RA02_K02_aux04.C \
+RA02_K02_aux03.CE RA02_K02_aux03.C RA02_K02_aux02.CE RA02_K02_aux02.C \
+RA02_K02_aux01.CE RA02_K02_aux01.C RA02_K01_sring_3_.C outr0_0_.C outr0_1_.C \
+outr0_2_.C outr0_3_.C RA03_sram_sram_ram15__2_.CE RA03_sram_sram_ram15__2_.C \
+RA03_sram_sram_ram15__3_.CE RA03_sram_sram_ram15__3_.C \
+RA03_sram_sram_ram15__4_.CE RA03_sram_sram_ram15__4_.C \
+RA03_sram_sram_ram15__5_.CE RA03_sram_sram_ram15__5_.C \
+RA03_sram_sram_ram15__6_.C RA03_sram_sram_ram15__7_.CE \
+RA03_sram_sram_ram15__7_.C RA03_sram_sram_ram13__5_.CE \
+RA03_sram_sram_ram13__5_.C RA03_sram_sram_ram13__6_.C \
+RA03_sram_sram_ram13__7_.CE RA03_sram_sram_ram13__7_.C \
+RA03_sram_sram_ram14__0_.CE RA03_sram_sram_ram14__0_.C \
+RA03_sram_sram_ram14__1_.CE RA03_sram_sram_ram14__1_.C \
+RA03_sram_sram_ram14__2_.CE RA03_sram_sram_ram14__2_.C \
+RA03_sram_sram_ram14__3_.CE RA03_sram_sram_ram14__3_.C \
+RA03_sram_sram_ram14__4_.CE RA03_sram_sram_ram14__4_.C \
+RA03_sram_sram_ram14__5_.CE RA03_sram_sram_ram14__5_.C \
+RA03_sram_sram_ram14__6_.C RA03_sram_sram_ram14__7_.CE \
+RA03_sram_sram_ram14__7_.C RA03_sram_sram_ram15__0_.CE \
+RA03_sram_sram_ram15__0_.C RA03_sram_sram_ram15__1_.CE \
+RA03_sram_sram_ram15__1_.C RA03_sram_sram_ram12__0_.CE \
+RA03_sram_sram_ram12__0_.C RA03_sram_sram_ram12__1_.CE \
+RA03_sram_sram_ram12__1_.C RA03_sram_sram_ram12__2_.CE \
+RA03_sram_sram_ram12__2_.C RA03_sram_sram_ram12__3_.CE \
+RA03_sram_sram_ram12__3_.C RA03_sram_sram_ram12__4_.CE \
+RA03_sram_sram_ram12__4_.C RA03_sram_sram_ram12__5_.CE \
+RA03_sram_sram_ram12__5_.C RA03_sram_sram_ram12__6_.C \
+RA03_sram_sram_ram12__7_.CE RA03_sram_sram_ram12__7_.C \
+RA03_sram_sram_ram13__0_.CE RA03_sram_sram_ram13__0_.C \
+RA03_sram_sram_ram13__1_.CE RA03_sram_sram_ram13__1_.C \
+RA03_sram_sram_ram13__2_.CE RA03_sram_sram_ram13__2_.C \
+RA03_sram_sram_ram13__3_.CE RA03_sram_sram_ram13__3_.C \
+RA03_sram_sram_ram13__4_.CE RA03_sram_sram_ram13__4_.C \
+RA03_sram_sram_ram10__2_.CE RA03_sram_sram_ram10__2_.C \
+RA03_sram_sram_ram10__3_.CE RA03_sram_sram_ram10__3_.C \
+RA03_sram_sram_ram10__4_.CE RA03_sram_sram_ram10__4_.C \
+RA03_sram_sram_ram10__5_.CE RA03_sram_sram_ram10__5_.C \
+RA03_sram_sram_ram10__6_.C RA03_sram_sram_ram10__7_.CE \
+RA03_sram_sram_ram10__7_.C RA03_sram_sram_ram11__0_.CE \
+RA03_sram_sram_ram11__0_.C RA03_sram_sram_ram11__1_.CE \
+RA03_sram_sram_ram11__1_.C RA03_sram_sram_ram11__2_.CE \
+RA03_sram_sram_ram11__2_.C RA03_sram_sram_ram11__3_.CE \
+RA03_sram_sram_ram11__3_.C RA03_sram_sram_ram11__4_.CE \
+RA03_sram_sram_ram11__4_.C RA03_sram_sram_ram11__5_.CE \
+RA03_sram_sram_ram11__5_.C RA03_sram_sram_ram11__6_.C \
+RA03_sram_sram_ram11__7_.CE RA03_sram_sram_ram11__7_.C \
+RA03_sram_sram_ram8__5_.CE RA03_sram_sram_ram8__5_.C RA03_sram_sram_ram8__6_.C \
+RA03_sram_sram_ram8__7_.CE RA03_sram_sram_ram8__7_.C \
+RA03_sram_sram_ram9__0_.CE RA03_sram_sram_ram9__0_.C \
+RA03_sram_sram_ram9__1_.CE RA03_sram_sram_ram9__1_.C \
+RA03_sram_sram_ram9__2_.CE RA03_sram_sram_ram9__2_.C \
+RA03_sram_sram_ram9__3_.CE RA03_sram_sram_ram9__3_.C \
+RA03_sram_sram_ram9__4_.CE RA03_sram_sram_ram9__4_.C \
+RA03_sram_sram_ram9__5_.CE RA03_sram_sram_ram9__5_.C RA03_sram_sram_ram9__6_.C \
+RA03_sram_sram_ram9__7_.CE RA03_sram_sram_ram9__7_.C \
+RA03_sram_sram_ram10__0_.CE RA03_sram_sram_ram10__0_.C \
+RA03_sram_sram_ram10__1_.CE RA03_sram_sram_ram10__1_.C \
+RA03_sram_sram_ram7__0_.CE RA03_sram_sram_ram7__0_.C \
+RA03_sram_sram_ram7__1_.CE RA03_sram_sram_ram7__1_.C \
+RA03_sram_sram_ram7__2_.CE RA03_sram_sram_ram7__2_.C \
+RA03_sram_sram_ram7__3_.CE RA03_sram_sram_ram7__3_.C \
+RA03_sram_sram_ram7__4_.CE RA03_sram_sram_ram7__4_.C \
+RA03_sram_sram_ram7__5_.CE RA03_sram_sram_ram7__5_.C RA03_sram_sram_ram7__6_.C \
+RA03_sram_sram_ram7__7_.CE RA03_sram_sram_ram7__7_.C \
+RA03_sram_sram_ram8__0_.CE RA03_sram_sram_ram8__0_.C \
+RA03_sram_sram_ram8__1_.CE RA03_sram_sram_ram8__1_.C \
+RA03_sram_sram_ram8__2_.CE RA03_sram_sram_ram8__2_.C \
+RA03_sram_sram_ram8__3_.CE RA03_sram_sram_ram8__3_.C \
+RA03_sram_sram_ram8__4_.CE RA03_sram_sram_ram8__4_.C \
+RA03_sram_sram_ram5__2_.CE RA03_sram_sram_ram5__2_.C \
+RA03_sram_sram_ram5__3_.CE RA03_sram_sram_ram5__3_.C \
+RA03_sram_sram_ram5__4_.CE RA03_sram_sram_ram5__4_.C \
+RA03_sram_sram_ram5__5_.CE RA03_sram_sram_ram5__5_.C RA03_sram_sram_ram5__6_.C \
+RA03_sram_sram_ram5__7_.CE RA03_sram_sram_ram5__7_.C \
+RA03_sram_sram_ram6__0_.CE RA03_sram_sram_ram6__0_.C \
+RA03_sram_sram_ram6__1_.CE RA03_sram_sram_ram6__1_.C \
+RA03_sram_sram_ram6__2_.CE RA03_sram_sram_ram6__2_.C \
+RA03_sram_sram_ram6__3_.CE RA03_sram_sram_ram6__3_.C \
+RA03_sram_sram_ram6__4_.CE RA03_sram_sram_ram6__4_.C \
+RA03_sram_sram_ram6__5_.CE RA03_sram_sram_ram6__5_.C RA03_sram_sram_ram6__6_.C \
+RA03_sram_sram_ram6__7_.CE RA03_sram_sram_ram6__7_.C \
+RA03_sram_sram_ram3__5_.CE RA03_sram_sram_ram3__5_.C RA03_sram_sram_ram3__6_.C \
+RA03_sram_sram_ram3__7_.CE RA03_sram_sram_ram3__7_.C \
+RA03_sram_sram_ram4__0_.CE RA03_sram_sram_ram4__0_.C \
+RA03_sram_sram_ram4__1_.CE RA03_sram_sram_ram4__1_.C \
+RA03_sram_sram_ram4__2_.CE RA03_sram_sram_ram4__2_.C \
+RA03_sram_sram_ram4__3_.CE RA03_sram_sram_ram4__3_.C \
+RA03_sram_sram_ram4__4_.CE RA03_sram_sram_ram4__4_.C \
+RA03_sram_sram_ram4__5_.CE RA03_sram_sram_ram4__5_.C RA03_sram_sram_ram4__6_.C \
+RA03_sram_sram_ram4__7_.CE RA03_sram_sram_ram4__7_.C \
+RA03_sram_sram_ram5__0_.CE RA03_sram_sram_ram5__0_.C \
+RA03_sram_sram_ram5__1_.CE RA03_sram_sram_ram5__1_.C \
+RA03_sram_sram_ram2__0_.CE RA03_sram_sram_ram2__0_.C \
+RA03_sram_sram_ram2__1_.CE RA03_sram_sram_ram2__1_.C \
+RA03_sram_sram_ram2__2_.CE RA03_sram_sram_ram2__2_.C \
+RA03_sram_sram_ram2__3_.CE RA03_sram_sram_ram2__3_.C \
+RA03_sram_sram_ram2__4_.CE RA03_sram_sram_ram2__4_.C \
+RA03_sram_sram_ram2__5_.CE RA03_sram_sram_ram2__5_.C RA03_sram_sram_ram2__6_.C \
+RA03_sram_sram_ram2__7_.CE RA03_sram_sram_ram2__7_.C \
+RA03_sram_sram_ram3__0_.CE RA03_sram_sram_ram3__0_.C \
+RA03_sram_sram_ram3__1_.CE RA03_sram_sram_ram3__1_.C \
+RA03_sram_sram_ram3__2_.CE RA03_sram_sram_ram3__2_.C \
+RA03_sram_sram_ram3__3_.CE RA03_sram_sram_ram3__3_.C \
+RA03_sram_sram_ram3__4_.CE RA03_sram_sram_ram3__4_.C \
+RA03_sram_sram_ram0__2_.CE RA03_sram_sram_ram0__2_.C \
+RA03_sram_sram_ram0__3_.CE RA03_sram_sram_ram0__3_.C \
+RA03_sram_sram_ram0__4_.CE RA03_sram_sram_ram0__4_.C \
+RA03_sram_sram_ram0__5_.CE RA03_sram_sram_ram0__5_.C RA03_sram_sram_ram0__6_.C \
+RA03_sram_sram_ram0__7_.CE RA03_sram_sram_ram0__7_.C \
+RA03_sram_sram_ram1__0_.CE RA03_sram_sram_ram1__0_.C \
+RA03_sram_sram_ram1__1_.CE RA03_sram_sram_ram1__1_.C \
+RA03_sram_sram_ram1__2_.CE RA03_sram_sram_ram1__2_.C \
+RA03_sram_sram_ram1__3_.CE RA03_sram_sram_ram1__3_.C \
+RA03_sram_sram_ram1__4_.CE RA03_sram_sram_ram1__4_.C \
+RA03_sram_sram_ram1__5_.CE RA03_sram_sram_ram1__5_.C RA03_sram_sram_ram1__6_.C \
+LCD03_outWordc_1_7_.LH LCD03_outWordc_1_7_.AR RA03_sram_sram_ram1__7_.CE \
+RA03_sram_sram_ram1__7_.C LCD03_outWordc_1_0_.LH LCD03_outWordc_1_0_.AR \
+RA03_sram_sram_ram0__0_.CE RA03_sram_sram_ram0__0_.C LCD03_outWordc_1_3_.LH \
+LCD03_outWordc_1_3_.AR RA03_sram_sram_ram0__1_.CE RA03_sram_sram_ram0__1_.C \
+LCD03_outWordc_1_1_.LH LCD03_outWordc_1_1_.AR RA03_outWordm_0_.CE \
+RA03_outWordm_0_.C inFlagcc0.LH inFlagcc0.AR RA03_outWordm_1_.CE \
+RA03_outWordm_1_.C LCD03_outWordc_1_4_.LH LCD03_outWordc_1_4_.AR \
+RA03_outWordm_2_.CE RA03_outWordm_2_.C LCD03_outWordc_1_2_.LH \
+LCD03_outWordc_1_2_.AR RA03_outWordm_3_.CE RA03_outWordm_3_.C LCD03_ENc.LH \
+LCD03_ENc.AR RA03_outWordm_4_.CE RA03_outWordm_4_.C LCD03_outWordc_1_5_.LH \
+LCD03_outWordc_1_5_.AR RA03_outWordm_5_.CE RA03_outWordm_5_.C \
+RA03_outWordm_6_.CE RA03_outWordm_6_.C RA03_outWordm_7_.CE RA03_outWordm_7_.C \
+inFlagk0.C RA03_aux.C outFlagw0.C outcc0_5_.CE outcc0_5_.C outcc0_2_.CE \
+outcc0_2_.C outcc0_3_.CE outcc0_3_.C outcc0_4_.CE outcc0_4_.C outcc0_0_.CE \
+outcc0_0_.C outcc0_1_.CE outcc0_1_.C outContRead0_1_.CE outContRead0_1_.C \
+outContRead0_2_.CE outContRead0_2_.C outContRead0_3_.CE outContRead0_3_.C \
+outContRead0_0_.CE outContRead0_0_.C outFlagcc0.C RA05_ENcw.CE RA05_ENcw.C \
+RA05_outFlagcw.C N_293_0_6 ra03_outflagm_0_sqmuxa_n ra02_k02_outcontce_n \
+lcd03_n_30_i_2_n k01_n_325_i_4_n k01_n_325_i_5_n lcd03_n_63_n \
+lcd06_pbuff_un2_inflagbuffwrite_n ra03_outwordm_0_sqmuxa_n k01_n_16_2_n \
+k01_n_17_1_n k01_n_17_2_n k01_n_18_1_n ra05_outcontreade_0_n \
+lcd03_un1_inflagc_9_0_n lcd03_un1_inflagc_8_0_n k01_n_15_n k01_n_8_n \
+lcd03_n_28_i_1_n lcd03_n_26_i_1_n lcd03_n_42_i_n lcd03_n_71_i_n lcd03_n_46_i_n \
+lcd03_un1_inflagc_6_n lcd03_un1_inflagc_10_0_n ra03_n_34_0_n \
+ra02_k02_n_118_i_n oscdis0_c ra02_k02_n_117_i_n tmrrst0_c ra02_k02_n_122_i_n \
+k01_n_4_i_n k01_n_59_i_n k01_n_63_i_n ra05_rscw_0_sqmuxa_n.X1 \
+ra05_rscw_0_sqmuxa_n.X2 RA03_sram_sram_ram14__7_.D RA03_sram_sram_ram15__0_.D \
+RA03_sram_sram_ram15__1_.D RA03_sram_sram_ram15__2_.D \
+RA03_sram_sram_ram15__3_.D RA03_sram_sram_ram15__4_.D \
+RA03_sram_sram_ram15__5_.D RA02_K02_out7segc_1_0_.D RA03_sram_sram_ram15__6_.D \
+RA02_K02_out7segc_1_1_.D RA02_K02_out7segc_1_2_.D RA03_sram_sram_ram15__7_.D \
+RA02_K02_out7segc_1_3_.D RA02_K02_aux01.D RA02_K02_out7segc_1_4_.D \
+RA02_K02_aux02.T RA02_K02_out7segc_1_5_.D RA02_K02_aux03.T \
+RA02_K02_out7segc_1_7_.D RA02_K02_aux04.D RA05_outFlagcw.D RA03_outWordm_0_.D \
+RA03_outWordm_1_.D RA03_outWordm_2_.D RA03_outWordm_3_.D RA03_outWordm_4_.D \
+RA03_outWordm_5_.D RA03_outWordm_6_.D RA03_outWordm_7_.D RA05_ENcw.D \
+LCD03_outWordc_1_0_.D LCD03_outWordc_1_1_.D LCD03_outWordc_1_2_.D \
+LCD03_outWordc_1_3_.D LCD03_outWordc_1_4_.D LCD03_outWordc_1_5_.D \
+LCD03_outWordc_1_7_.D LCD03_ENc.D K01_sdiv_0_.D K01_sdiv_1_.D K01_sdiv_2_.D \
+K01_sdiv_3_.D K01_sdiv_4_.D RA03_aux.D K01_sdiv_5_.D K01_sdiv_6_.D \
+K01_sdiv_7_.D K01_sdiv_8_.D K01_sdiv_9_.D K01_sdiv_10_.D K01_sdiv_11_.D \
+RA02_K01_sring_3_.D RA03_sram_sram_ram0__0_.D RA03_sram_sram_ram0__1_.D \
+RA03_sram_sram_ram0__2_.D RA03_sram_sram_ram0__3_.D RA03_sram_sram_ram0__4_.D \
+RA03_sram_sram_ram0__5_.D RA03_sram_sram_ram0__6_.D RA03_sram_sram_ram0__7_.D \
+RA03_sram_sram_ram1__0_.D RA03_sram_sram_ram1__1_.D RA03_sram_sram_ram1__2_.D \
+RA03_sram_sram_ram1__3_.D RA03_sram_sram_ram1__4_.D RA03_sram_sram_ram1__5_.D \
+RA03_sram_sram_ram1__6_.D RA03_sram_sram_ram1__7_.D RA03_sram_sram_ram2__0_.D \
+RA03_sram_sram_ram2__1_.D RA03_sram_sram_ram2__2_.D RA03_sram_sram_ram2__3_.D \
+RA03_sram_sram_ram2__4_.D RA03_sram_sram_ram2__5_.D RA03_sram_sram_ram2__6_.D \
+RA03_sram_sram_ram2__7_.D RA03_sram_sram_ram3__0_.D clk0.T \
+RA03_sram_sram_ram3__1_.D RA03_sram_sram_ram3__2_.D RA03_sram_sram_ram3__3_.D \
+RA03_sram_sram_ram3__4_.D RA03_sram_sram_ram3__5_.D RA03_sram_sram_ram3__6_.D \
+RA03_sram_sram_ram3__7_.D RA03_sram_sram_ram4__0_.D RA03_sram_sram_ram4__1_.D \
+RA03_sram_sram_ram4__2_.D RA03_sram_sram_ram4__3_.D RA03_sram_sram_ram4__4_.D \
+inFlagk0.D RA03_sram_sram_ram4__5_.D RA03_sram_sram_ram4__6_.D outFlagk0.D \
+RA03_sram_sram_ram4__7_.D RA03_sram_sram_ram5__0_.D RA03_sram_sram_ram5__1_.D \
+RA03_sram_sram_ram5__2_.D RA03_sram_sram_ram5__3_.D RA03_sram_sram_ram5__4_.D \
+RA03_sram_sram_ram5__5_.D RA03_sram_sram_ram5__6_.D outr0_0_.D \
+RA03_sram_sram_ram5__7_.D outr0_1_.D RA03_sram_sram_ram6__0_.D outr0_2_.D \
+RA03_sram_sram_ram6__1_.D RA03_sram_sram_ram6__2_.D outr0_3_.D \
+RA03_sram_sram_ram6__3_.D RA03_sram_sram_ram6__4_.D outContWrite0_0_.D \
+RA03_sram_sram_ram6__5_.D RA03_sram_sram_ram6__6_.D outContWrite0_1_.D \
+RA03_sram_sram_ram6__7_.D outContWrite0_2_.D RA03_sram_sram_ram7__0_.D \
+outContWrite0_3_.D RA03_sram_sram_ram7__1_.D RA03_sram_sram_ram7__2_.D \
+outContRead0_0_.D RA03_sram_sram_ram7__3_.D RA03_sram_sram_ram7__4_.D \
+outContRead0_1_.D RA03_sram_sram_ram7__5_.D RA03_sram_sram_ram7__6_.D \
+outContRead0_2_.D RA03_sram_sram_ram7__7_.D outContRead0_3_.D \
+RA03_sram_sram_ram8__0_.D RA03_sram_sram_ram8__1_.D RA03_sram_sram_ram8__2_.D \
+RA03_sram_sram_ram8__3_.D RA03_sram_sram_ram8__4_.D RA03_sram_sram_ram8__5_.D \
+RA03_sram_sram_ram8__6_.D inFlagcc0.D RA03_sram_sram_ram8__7_.D outcc0_0_.D \
+RA03_sram_sram_ram9__0_.D outcc0_1_.D RA03_sram_sram_ram9__1_.D \
+RA03_sram_sram_ram9__2_.D outcc0_2_.D RA03_sram_sram_ram9__3_.D \
+RA03_sram_sram_ram9__4_.D outcc0_3_.D RA03_sram_sram_ram9__5_.D \
+RA03_sram_sram_ram9__6_.D outcc0_4_.D RA03_sram_sram_ram9__7_.D outcc0_5_.T \
+RA03_sram_sram_ram10__0_.D outFlagcc0.D RA03_sram_sram_ram10__1_.D \
+RA03_sram_sram_ram10__2_.D outFlagw0.D RA03_sram_sram_ram10__3_.D \
+RA03_sram_sram_ram10__4_.D outword0_0_.D RA03_sram_sram_ram10__5_.D \
+RA03_sram_sram_ram10__6_.D outword0_1_.D RA03_sram_sram_ram10__7_.D \
+outword0_2_.D RA03_sram_sram_ram11__0_.D outword0_3_.D \
+RA03_sram_sram_ram11__1_.D RA03_sram_sram_ram11__2_.D outword0_4_.D \
+RA03_sram_sram_ram11__3_.D RA03_sram_sram_ram11__4_.D outword0_5_.D \
+RA03_sram_sram_ram11__5_.D RA03_sram_sram_ram11__6_.D outword0_6_.D \
+RA03_sram_sram_ram11__7_.D outword0_7_.D RA03_sram_sram_ram12__0_.D \
+RA03_sram_sram_ram12__1_.D RS0.D RA03_sram_sram_ram12__2_.D \
+RA03_sram_sram_ram12__3_.D EN0.D RA03_sram_sram_ram12__4_.D \
+RA03_sram_sram_ram12__5_.D RA03_sram_sram_ram12__6_.D \
+RA03_sram_sram_ram12__7_.D RA03_sram_sram_ram13__0_.D \
+RA03_sram_sram_ram13__1_.D RA03_sram_sram_ram13__2_.D \
+RA03_sram_sram_ram13__3_.D RA03_sram_sram_ram13__4_.D \
+RA03_sram_sram_ram13__5_.D RA03_sram_sram_ram13__6_.D \
+RA03_sram_sram_ram13__7_.D RA03_sram_sram_ram14__0_.D \
+RA03_sram_sram_ram14__1_.D RA03_sram_sram_ram14__2_.D \
+RA03_sram_sram_ram14__3_.D RA03_sram_sram_ram14__4_.D \
+RA03_sram_sram_ram14__5_.D RA03_sram_sram_ram14__6_.D
+.names RW0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__2_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__3_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__4_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__5_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__7_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__5_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__7_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__0_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__1_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__2_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__3_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__4_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__5_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__7_.CE
+10111 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__0_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram15__1_.CE
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__0_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__1_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__2_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__3_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__4_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__5_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__7_.CE
+10011 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__0_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__1_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__2_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__3_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__4_.CE
+11011 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__2_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__3_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__4_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__5_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__7_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__0_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__1_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__2_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__3_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__4_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__5_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__7_.CE
+11101 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__5_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__7_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__0_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__1_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__2_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__3_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__4_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__5_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__7_.CE
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__0_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__1_.CE
+10101 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__0_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__1_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__2_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__3_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__4_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__5_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__7_.CE
+11110 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__0_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__1_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__2_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__3_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__4_.CE
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__2_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__3_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__4_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__5_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__7_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__0_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__1_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__2_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__3_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__4_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__5_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram6__7_.CE
+10110 1
+---0- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__5_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__7_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__0_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__1_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__2_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__3_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__4_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__5_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram4__7_.CE
+10010 1
+---0- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__0_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram5__1_.CE
+11010 1
+---0- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__0_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__1_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__2_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__3_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__4_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__5_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram2__7_.CE
+10100 1
+---1- 0
+--0-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__0_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__1_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__2_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__3_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram3__4_.CE
+11100 1
+---1- 0
+--0-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__2_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__3_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__4_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__5_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__7_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__0_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__1_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__2_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__3_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__4_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__5_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names reset0.BLIF outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q outcc0_5_.Q \
+outFlagcc0.Q LCD03_outWordc_1_7_.LH
+1111001 1
+-----1- 0
+----1-- 0
+---0--- 0
+--0---- 0
+-0----- 0
+0------ 0
+------0 0
+.names reset0.BLIF lcd03_n_28_i_1_n.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q \
+outcc0_3_.Q LCD03_outWordc_1_7_.AR
+-1--1- 1
+-1-1-- 1
+-10--- 1
+01---- 1
+-1---1 1
+1-1000 0
+-0---- 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram1__7_.CE
+11000 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----1 0
+.names reset0.BLIF lcd03_n_42_i_n.BLIF outcc0_1_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_5_.Q outFlagcc0.Q LCD03_outWordc_1_0_.LH
+11-0001 1
+111-001 1
+--01--- 0
+-----1- 0
+----1-- 0
+-0----- 0
+0------ 0
+------0 0
+.names reset0.BLIF lcd03_n_26_i_1_n.BLIF outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q \
+LCD03_outWordc_1_0_.AR
+-1-1- 1
+-10-- 1
+01--- 1
+-1--0 1
+1-101 0
+-0--- 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__0_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names lcd03_un1_inflagc_9_0_n.BLIF LCD03_outWordc_1_3_.LH
+0 1
+1 0
+.names lcd03_n_63_n.BLIF lcd03_n_46_i_n.BLIF LCD03_outWordc_1_3_.AR
+01 1
+1- 0
+-0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram0__1_.CE
+10000 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----1 0
+.names reset0.BLIF lcd03_n_42_i_n.BLIF outcc0_1_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_5_.Q outFlagcc0.Q LCD03_outWordc_1_1_.LH
+11-1001 1
+111-001 1
+--00--- 0
+-----1- 0
+----1-- 0
+-0----- 0
+0------ 0
+------0 0
+.names reset0.BLIF lcd03_n_30_i_2_n.BLIF lcd03_n_71_i_n.BLIF outcc0_2_.Q \
+outcc0_3_.Q LCD03_outWordc_1_1_.AR
+-111- 1
+011-- 1
+-11-0 1
+1--01 0
+--0-- 0
+-0--- 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_0_.CE
+0 1
+1 0
+.names reset0.BLIF outcc0_0_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q outcc0_5_.Q \
+outFlagcc0.Q inFlagcc0.LH
+1111001 1
+-----1- 0
+----1-- 0
+---0--- 0
+--0---- 0
+-0----- 0
+0------ 0
+------0 0
+.names lcd03_un1_inflagc_10_0_n.BLIF inFlagcc0.AR
+0 1
+1 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_1_.CE
+0 1
+1 0
+.names reset0.BLIF lcd03_un1_inflagc_6_n.BLIF outcc0_2_.Q outcc0_3_.Q \
+outcc0_4_.Q outcc0_5_.Q outFlagcc0.Q LCD03_outWordc_1_4_.LH
+1-11001 1
+-1----- 1
+-0---1- 0
+-0--1-- 0
+-0-0--- 0
+-00---- 0
+00----- 0
+-0----0 0
+.names reset0.BLIF lcd03_n_42_i_n.BLIF outcc0_4_.Q outcc0_5_.Q outFlagcc0.Q \
+LCD03_outWordc_1_4_.AR
+-1001 1
+0---- 1
+1--1- 0
+1-1-- 0
+10--- 0
+1---0 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_2_.CE
+0 1
+1 0
+.names lcd03_un1_inflagc_8_0_n.BLIF LCD03_outWordc_1_2_.LH
+0 1
+1 0
+.names reset0.BLIF outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q outcc0_5_.Q \
+outFlagcc0.Q LCD03_outWordc_1_2_.AR
+-10001 1
+0----- 1
+1---1- 0
+1--1-- 0
+1-1--- 0
+10---- 0
+1----0 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_3_.CE
+0 1
+1 0
+.names reset0.BLIF outcc0_0_.Q outcc0_4_.Q outcc0_5_.Q outFlagcc0.Q \
+LCD03_ENc.LH
+10001 1
+---1- 0
+--1-- 0
+-1--- 0
+0---- 0
+----0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_5_.Q outFlagcc0.Q LCD03_ENc.AR
+-1--1001 1
+-1-1-001 1
+-11--001 1
+0------- 1
+1-000--- 0
+1-----1- 0
+1----1-- 0
+10------ 0
+1------0 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_4_.CE
+0 1
+1 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_5_.CE
+0 1
+1 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_6_.CE
+0 1
+1 0
+.names ra03_outwordm_0_sqmuxa_n.BLIF RA03_outWordm_7_.CE
+0 1
+1 0
+.names reset0.BLIF inFlagcc0.Q outcc0_5_.CE
+0- 1
+-0 1
+11 0
+.names reset0.BLIF inFlagcc0.Q outcc0_2_.CE
+0- 1
+-0 1
+11 0
+.names reset0.BLIF inFlagcc0.Q outcc0_3_.CE
+0- 1
+-0 1
+11 0
+.names reset0.BLIF inFlagcc0.Q outcc0_4_.CE
+0- 1
+-0 1
+11 0
+.names reset0.BLIF inFlagcc0.Q outcc0_0_.CE
+0- 1
+-0 1
+11 0
+.names reset0.BLIF inFlagcc0.Q outcc0_1_.CE
+0- 1
+-0 1
+11 0
+.names ra05_outcontreade_0_n.BLIF outContRead0_1_.CE
+0 1
+1 0
+.names ra05_outcontreade_0_n.BLIF outContRead0_2_.CE
+0 1
+1 0
+.names ra05_outcontreade_0_n.BLIF outContRead0_3_.CE
+0 1
+1 0
+.names ra05_outcontreade_0_n.BLIF outContRead0_0_.CE
+0 1
+1 0
+.names inkey0_3_.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF \
+RA02_K02_aux01.Q RA02_K02_aux02.Q RA02_K02_aux03.Q inFlagk0.Q outr0_0_.Q \
+outr0_1_.Q outr0_3_.Q N_293_0_6
+1---0-0---1 1
+-1--0-0---1 1
+--1-0-0---1 1
+---10-0---1 1
+---10----01 1
+--1-0----01 1
+-1--0----01 1
+1---0----01 1
+---1----100 1
+--1-----100 1
+-1------100 1
+1-------100 1
+---1-0---00 1
+--1--0---00 1
+-1---0---00 1
+1----0---00 1
+---1--0--10 1
+--1---0--10 1
+-1----0--10 1
+1-----0--10 1
+---1---1--- 1
+--1----1--- 1
+-1-----1--- 1
+1------1--- 1
+-----1-0000 0
+0000------- 0
+------10-1- 0
+----1--0--1 0
+.names reset0.BLIF wr0.BLIF RA03_aux.Q outFlagk0.Q ra03_outflagm_0_sqmuxa_n
+100- 1
+10-1 1
+--10 0
+-1-- 0
+0--- 0
+.names reset0.BLIF RA02_K02_aux04.Q N_293_0_6.BLIF inFlagk0.Q \
+ra02_k02_n_118_i_n.BLIF outr0_0_.Q outr0_3_.Q ra02_k02_n_117_i_n.BLIF \
+ra02_k02_n_122_i_n.BLIF ra02_k02_outcontce_n
+--1-00011 1
+--1-10111 1
+--1111-11 1
+-01-11-11 1
+0-------- 1
+1---100-- 0
+11-0-1--- 0
+1---0-1-- 0
+1---01--- 0
+1------0- 0
+1-0------ 0
+1-------0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q \
+lcd03_n_30_i_2_n
+---11 1
+-0-0- 1
+--10- 1
+--01- 1
+0---- 1
+1-110 0
+1100- 0
+.names cdiv00_3_.BLIF cdiv00_2_.BLIF cdiv00_1_.BLIF cdiv00_0_.BLIF \
+K01_sdiv_5_.Q K01_sdiv_6_.Q K01_sdiv_7_.Q K01_sdiv_8_.Q K01_sdiv_9_.Q \
+K01_sdiv_10_.Q K01_sdiv_11_.Q k01_n_325_i_4_n
+01-1------- 1
+-1-0-1----- 1
+--001------ 1
+--00-1----- 1
+-1-----1--- 1
+-1----1---- 1
+--0----1--- 1
+--0---1---- 1
+0-0-------- 1
+---------1- 1
+--------1-- 1
+----------1 1
+1---0000000 0
+--10-000000 0
+1--1--00000 0
+-01-----000 0
+.names cdiv00_3_.BLIF cdiv00_2_.BLIF cdiv00_1_.BLIF cdiv00_0_.BLIF \
+K01_sdiv_8_.Q K01_sdiv_9_.Q K01_sdiv_10_.Q K01_sdiv_11_.Q k01_n_325_i_5_n
+--11-1-- 1
+--111--- 1
+-011---- 1
+1--0---- 1
+---1--1- 1
+1-1----- 1
+-------1 1
+01--0000 0
+--01--00 0
+0--0---0 0
+.names reset0.BLIF outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q outcc0_5_.Q \
+outFlagcc0.Q lcd03_n_63_n
+1011001 1
+110-001 1
+--10--- 0
+-11---- 0
+-00---- 0
+-----1- 0
+----1-- 0
+0------ 0
+------0 0
+.names inFlagcc0.Q outFlagw0.Q lcd06_pbuff_un2_inflagbuffwrite_n
+0- 1
+-1 1
+10 0
+.names reset0.BLIF wr0.BLIF RA05_outFlagcw.Q ra03_n_34_0_n.BLIF \
+outContWrite0_3_.Q outContRead0_3_.Q inFlagcc0.Q ra03_outwordm_0_sqmuxa_n
+1---01- 1
+1--0-1- 1
+1--00-- 1
+1-1---- 1
+10----- 1
+1-----0 1
+-10-101 0
+-101-01 0
+-1011-1 0
+0------ 0
+.names cdiv00_3_.BLIF cdiv00_1_.BLIF k01_n_16_2_n
+01 1
+1- 0
+-0 0
+.names cdiv00_1_.BLIF cdiv00_0_.BLIF K01_sdiv_6_.Q K01_sdiv_7_.Q K01_sdiv_8_.Q \
+K01_sdiv_9_.Q K01_sdiv_10_.Q K01_sdiv_11_.Q k01_n_17_1_n
+101----- 1
+1-----1- 1
+1----1-- 1
+1---1--- 1
+1--1---- 1
+1------1 1
+--000000 0
+-1-00000 0
+0------- 0
+.names cdiv00_3_.BLIF cdiv00_2_.BLIF k01_n_17_2_n
+11 1
+0- 0
+-0 0
+.names cdiv00_3_.BLIF cdiv00_1_.BLIF K01_sdiv_5_.Q K01_sdiv_6_.Q K01_sdiv_7_.Q \
+K01_sdiv_8_.Q K01_sdiv_9_.Q K01_sdiv_10_.Q K01_sdiv_11_.Q k01_n_18_1_n
+10-----1- 1
+10----1-- 1
+10---1--- 1
+10--1---- 1
+10-1----- 1
+101------ 1
+10------1 1
+--0000000 0
+-1------- 0
+0-------- 0
+.names wr0.BLIF outFlagw0.Q ra05_rscw_0_sqmuxa_n.BLIF ra05_outcontreade_0_n
+10- 1
+1-0 1
+0-- 0
+-11 0
+.names reset0.BLIF lcd03_n_63_n.BLIF outcc0_0_.Q outcc0_2_.Q outcc0_3_.Q \
+outcc0_4_.Q outcc0_5_.Q outFlagcc0.Q lcd03_un1_inflagc_9_0_n
+-0----1- 1
+-0---1-- 1
+-0--1--- 1
+-0-1---- 1
+-01----- 1
+00------ 1
+-0-----0 1
+1-000001 0
+-1------ 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_5_.Q outFlagcc0.Q lcd03_un1_inflagc_8_0_n
+-10-0--- 1
+---10--- 1
+------1- 1
+-----1-- 1
+0------- 1
+-------0 1
+1-10-001 0
+10-0-001 0
+1---1001 0
+.names cdiv00_3_.BLIF cdiv00_2_.BLIF cdiv00_1_.BLIF cdiv00_0_.BLIF \
+K01_sdiv_10_.Q K01_sdiv_11_.Q k01_n_15_n
+00011- 1
+000--1 1
+--1--- 0
+-1---- 0
+1----- 0
+----00 0
+---0-0 0
+.names cdiv00_2_.BLIF K01_sdiv_8_.Q K01_sdiv_9_.Q K01_sdiv_10_.Q \
+K01_sdiv_11_.Q k01_n_8_n
+---1- 1
+--1-- 1
+11--- 1
+----1 1
+-0000 0
+0-000 0
+.names reset0.BLIF lcd03_n_71_i_n.BLIF outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q \
+lcd03_n_28_i_1_n
+-1-0- 1
+-10-- 1
+01--- 1
+-1--0 1
+1-111 0
+-0--- 0
+.names reset0.BLIF lcd03_n_71_i_n.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q \
+outcc0_3_.Q lcd03_n_26_i_1_n
+-1-10- 1
+-10-0- 1
+01---- 1
+-1---1 1
+1-10-0 0
+1---10 0
+-0---- 0
+.names outcc0_2_.Q outcc0_3_.Q lcd03_n_42_i_n
+10 1
+01 1
+00 0
+11 0
+.names reset0.BLIF outcc0_4_.Q outcc0_5_.Q outFlagcc0.Q lcd03_n_71_i_n
+-001 1
+0--- 1
+1-1- 0
+11-- 0
+1--0 0
+.names reset0.BLIF lcd03_n_71_i_n.BLIF outcc0_2_.Q outcc0_3_.Q lcd03_n_46_i_n
+-11- 1
+01-- 1
+-1-1 1
+1-00 0
+-0-- 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_5_.Q outFlagcc0.Q lcd03_un1_inflagc_6_n
+1-100001 1
+10-00001 1
+-10----- 0
+------1- 0
+-----1-- 0
+----1--- 0
+---1---- 0
+0------- 0
+-------0 0
+.names reset0.BLIF lcd03_n_42_i_n.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_3_.Q \
+outcc0_4_.Q outcc0_5_.Q outFlagcc0.Q lcd03_un1_inflagc_10_0_n
+101-1--1 1
+1010---1 1
+1-----11 1
+1----1-1 1
+---1000- 0
+--0--00- 0
+-1---00- 0
+0------- 0
+-------0 0
+.names outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q \
+outContRead0_0_.Q outContRead0_1_.Q outContRead0_2_.Q ra03_n_34_0_n
+--100- 1
+1-1-0- 1
+-110-- 1
+111--- 1
+-11-0- 1
+---000 1
+1---00 1
+-1-0-0 1
+11---0 1
+-1--00 1
+--1--0 1
+0-011- 0
+0001-- 0
+-00-1- 0
+0--111 0
+00-1-1 0
+-0--11 0
+--0--1 0
+.names outr0_1_.Q outr0_2_.Q ra02_k02_n_118_i_n
+00 1
+1- 0
+-1 0
+.names inkey0_3_.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF \
+ra02_k02_n_117_i_n
+000- 1
+-000 1
+0-00 1
+00-0 1
+-11- 0
+1-1- 0
+11-- 0
+--11 0
+-1-1 0
+1--1 0
+.names outr0_0_.Q outr0_1_.Q outr0_2_.Q outr0_3_.Q ra02_k02_n_122_i_n
+0-0- 1
+00-- 1
+--00 1
+-0-0 1
+-11- 0
+1--1 0
+.names cdiv00_3_.BLIF cdiv00_2_.BLIF cdiv00_1_.BLIF cdiv00_0_.BLIF k01_n_4_i_n
+00-1 1
+-111 1
+000- 1
+11-0 1
+010- 0
+0-10 0
+-101 0
+10-- 0
+.names K01_sdiv_0_.Q K01_sdiv_1_.Q K01_sdiv_2_.Q K01_sdiv_3_.Q K01_sdiv_4_.Q \
+k01_n_59_i_n
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names K01_sdiv_5_.Q K01_sdiv_6_.Q K01_sdiv_7_.Q K01_sdiv_8_.Q \
+k01_n_59_i_n.BLIF k01_n_63_i_n
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names outContWrite0_3_.Q outContRead0_3_.Q ra05_rscw_0_sqmuxa_n.X1
+01 1
+1- 0
+-0 0
+.names outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q \
+outContWrite0_3_.Q outContRead0_0_.Q outContRead0_1_.Q outContRead0_2_.Q \
+outContRead0_3_.Q inFlagcc0.Q ra05_rscw_0_sqmuxa_n.X2
+--1---0-1 1
+-11--0--1 1
+-1---00-1 1
+111-0---1 1
+1-1-00--1 1
+11--0-0-1 1
+1---000-1 1
+---0---1- 1
+---1---01 1
+---1----0 0
+-------00 0
+--01--11- 0
+--00--10- 0
+0001---1- 0
+-0011--1- 0
+0-01-1-1- 0
+-001-1-1- 0
+--0111-1- 0
+00-1--11- 0
+-0-11-11- 0
+0--1-111- 0
+-0-1-111- 0
+---11111- 0
+0000---0- 0
+-0001--0- 0
+0-00-1-0- 0
+-000-1-0- 0
+--0011-0- 0
+00-0--10- 0
+-0-01-10- 0
+0--0-110- 0
+-0-0-110- 0
+---01110- 0
+.names oscout0_c.BLIF oscout0
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_0_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_1_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_2_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_3_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_4_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_5_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_6_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF outword0_7_.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF EN0.LH
+1 1
+0 0
+.names lcd06_pbuff_un2_inflagbuffwrite_n.BLIF RS0.LH
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_9_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_9_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_10_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_10_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_11_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_11_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_7_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_7_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_8_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_8_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_4_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_4_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_5_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_5_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_6_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_6_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_2_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_2_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_3_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_3_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_0_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_0_.C
+1 1
+0 0
+.names k01_n_4_i_n.BLIF K01_sdiv_1_.CE
+1 1
+0 0
+.names tmrout.BLIF K01_sdiv_1_.C
+1 1
+0 0
+.names tmrout.BLIF clk0.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF outContWrite0_2_.CE
+1 1
+0 0
+.names clk0.Q outContWrite0_2_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF outContWrite0_3_.CE
+1 1
+0 0
+.names clk0.Q outContWrite0_3_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF RA02_K02_out7segc_1_0_.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_0_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF RA02_K02_out7segc_1_1_.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_1_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF RA02_K02_out7segc_1_2_.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_2_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF RA02_K02_out7segc_1_3_.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_3_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF RA02_K02_out7segc_1_4_.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_4_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF RA02_K02_out7segc_1_5_.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_5_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF outContWrite0_0_.CE
+1 1
+0 0
+.names clk0.Q outContWrite0_0_.C
+1 1
+0 0
+.names ra02_k02_outcontce_n.BLIF outContWrite0_1_.CE
+1 1
+0 0
+.names clk0.Q outContWrite0_1_.C
+1 1
+0 0
+.names clk0.Q RA02_K02_out7segc_1_7_.C
+1 1
+0 0
+.names clk0.Q outFlagk0.C
+1 1
+0 0
+.names reset0.BLIF RA02_K02_aux04.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_aux04.C
+1 1
+0 0
+.names reset0.BLIF RA02_K02_aux03.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_aux03.C
+1 1
+0 0
+.names reset0.BLIF RA02_K02_aux02.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_aux02.C
+1 1
+0 0
+.names reset0.BLIF RA02_K02_aux01.CE
+1 1
+0 0
+.names clk0.Q RA02_K02_aux01.C
+1 1
+0 0
+.names clk0.Q RA02_K01_sring_3_.C
+1 1
+0 0
+.names clk0.Q outr0_0_.C
+1 1
+0 0
+.names clk0.Q outr0_1_.C
+1 1
+0 0
+.names clk0.Q outr0_2_.C
+1 1
+0 0
+.names clk0.Q outr0_3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram14__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram15__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram12__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram13__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram11__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram9__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram10__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram7__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram8__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram6__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram4__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram5__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram2__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram3__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__1_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__2_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__3_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__4_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__5_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__6_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram1__7_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__0_.C
+1 1
+0 0
+.names clk0.Q RA03_sram_sram_ram0__1_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_0_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_1_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_2_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_3_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_4_.C
+1 1
+0 0
+.names lcd03_un1_inflagc_6_n.BLIF LCD03_outWordc_1_5_.LH
+1 1
+0 0
+.names lcd03_n_46_i_n.BLIF LCD03_outWordc_1_5_.AR
+1 1
+0 0
+.names clk0.Q RA03_outWordm_5_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_6_.C
+1 1
+0 0
+.names clk0.Q RA03_outWordm_7_.C
+1 1
+0 0
+.names clk0.Q inFlagk0.C
+1 1
+0 0
+.names clk0.Q RA03_aux.C
+1 1
+0 0
+.names clk0.Q outFlagw0.C
+1 1
+0 0
+.names clk0.Q outcc0_5_.C
+1 1
+0 0
+.names clk0.Q outcc0_2_.C
+1 1
+0 0
+.names clk0.Q outcc0_3_.C
+1 1
+0 0
+.names clk0.Q outcc0_4_.C
+1 1
+0 0
+.names clk0.Q outcc0_0_.C
+1 1
+0 0
+.names clk0.Q outcc0_1_.C
+1 1
+0 0
+.names clk0.Q outContRead0_1_.C
+1 1
+0 0
+.names clk0.Q outContRead0_2_.C
+1 1
+0 0
+.names clk0.Q outContRead0_3_.C
+1 1
+0 0
+.names clk0.Q outContRead0_0_.C
+1 1
+0 0
+.names clk0.Q outFlagcc0.C
+1 1
+0 0
+.names wr0.BLIF RA05_ENcw.CE
+1 1
+0 0
+.names clk0.Q RA05_ENcw.C
+1 1
+0 0
+.names clk0.Q RA05_outFlagcw.C
+1 1
+0 0
+.names oscdis0.BLIF oscdis0_c
+1 1
+0 0
+.names tmrrst0.BLIF tmrrst0_c
+1 1
+0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram14__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram15__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram15__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram15__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram15__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram15__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram15__5_.D
+1 1
+0 0
+.names reset0.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF outr0_1_.Q \
+outr0_3_.Q RA02_K02_out7segc_1_0_.D
+-000-- 1
+-1---0 1
+---1-1 1
+----1- 1
+0----- 1
+10100- 0
+10-100 0
+11-001 0
+.names RA03_sram_sram_ram15__6_.Q ra03_outflagm_0_sqmuxa_n.BLIF \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram15__6_.D
+-11111 1
+1----- 1
+0---0- 0
+0--0-- 0
+0-0--- 0
+00---- 0
+0----0 0
+.names reset0.BLIF inkey0_1_.BLIF outr0_0_.Q outr0_1_.Q outr0_3_.Q \
+RA02_K02_out7segc_1_1_.D
+-00-0 1
+-1--1 1
+---1- 1
+0---- 1
+1010- 0
+11-00 0
+10-01 0
+.names reset0.BLIF inkey0_1_.BLIF inkey0_0_.BLIF outr0_0_.Q outr0_1_.Q \
+outr0_3_.Q RA02_K02_out7segc_1_2_.D
+-0000- 1
+--1-1- 1
+-1-0-0 1
+0----- 1
+1-0-11 0
+11--01 0
+100-1- 0
+101-0- 0
+1-01-- 0
+1--10- 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram15__7_.D
+1 1
+0 0
+.names inkey0_3_.BLIF reset0.BLIF inkey0_2_.BLIF outr0_0_.Q outr0_1_.Q \
+outr0_2_.Q RA02_K02_out7segc_1_3_.D
+0-0-1- 1
+--1-0- 1
+1---01 1
+---1-- 1
+-0---- 1
+-10000 0
+01000- 0
+-1101- 0
+11-01- 0
+.names inkey0_3_.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF \
+RA02_K02_aux01.Q ra02_k02_n_118_i_n.BLIF outr0_0_.Q outr0_3_.Q \
+ra02_k02_n_117_i_n.BLIF RA02_K02_aux01.D
+---1-1011 1
+--1--1011 1
+-1---1011 1
+1----1011 1
+----1--0- 1
+----1-1-- 1
+----10--- 1
+---11---- 1
+--1-1---- 1
+-1--1---- 1
+1---1---- 1
+0000-101- 0
+----0--0- 0
+----0-1-- 0
+----00--- 0
+----0---0 0
+.names reset0.BLIF inkey0_1_.BLIF inkey0_0_.BLIF outr0_0_.Q outr0_1_.Q \
+outr0_3_.Q RA02_K02_out7segc_1_4_.D
+-00-1- 1
+--1-00 1
+-1--00 1
+---1-- 1
+0----- 1
+1--001 0
+10000- 0
+1-101- 0
+11-01- 0
+.names inkey0_3_.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF \
+RA02_K02_aux02.Q outr0_0_.Q outr0_1_.Q outr0_2_.Q outr0_3_.Q \
+ra02_k02_n_117_i_n.BLIF RA02_K02_aux02.T
+000010010- 1
+---1000101 1
+--1-000101 1
+-1--000101 1
+1---000101 1
+----0----0 0
+00000----- 0
+---11----- 0
+--1-1----- 0
+-1--1----- 0
+1---1----- 0
+--------1- 0
+-------0-- 0
+------1--- 0
+-----1---- 0
+.names reset0.BLIF RA02_K02_out7segc_1_5_.D
+0 1
+1 0
+.names inkey0_3_.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF \
+RA02_K02_aux03.Q outr0_0_.Q outr0_1_.Q outr0_2_.Q outr0_3_.Q \
+ra02_k02_n_117_i_n.BLIF RA02_K02_aux03.T
+000010100- 1
+---1001001 1
+--1-001001 1
+-1--001001 1
+1---001001 1
+----0----0 0
+00000----- 0
+---11----- 0
+--1-1----- 0
+-1--1----- 0
+1---1----- 0
+--------1- 0
+-------1-- 0
+------0--- 0
+-----1---- 0
+.names reset0.BLIF RA02_K02_out7segc_1_7_.Q RA02_K02_aux04.Q N_293_0_6.BLIF \
+inFlagk0.Q ra02_k02_n_118_i_n.BLIF outr0_0_.Q outr0_3_.Q \
+ra02_k02_n_117_i_n.BLIF ra02_k02_n_122_i_n.BLIF RA02_K02_out7segc_1_7_.D
+-1---100-- 1
+-11-0-1--- 1
+-1---0-1-- 1
+-1---01--- 1
+0--------- 1
+-1------0- 1
+-1-0------ 1
+-1-------0 1
+1--1-00011 0
+1--1-10111 0
+1--1111-11 0
+1-01-11-11 0
+10-------- 0
+.names inkey0_3_.BLIF inkey0_2_.BLIF inkey0_1_.BLIF inkey0_0_.BLIF \
+RA02_K02_aux04.Q ra02_k02_n_118_i_n.BLIF outr0_0_.Q outr0_3_.Q \
+ra02_k02_n_117_i_n.BLIF RA02_K02_aux04.D
+---1-1101 1
+--1--1101 1
+-1---1101 1
+1----1101 1
+----1--1- 1
+----1-0-- 1
+----10--- 1
+---11---- 1
+--1-1---- 1
+-1--1---- 1
+1---1---- 1
+0000-110- 0
+----0--1- 0
+----0-0-- 0
+----00--- 0
+----0---0 0
+.names wr0.BLIF RA05_outFlagcw.Q outFlagw0.Q ra05_rscw_0_sqmuxa_n.BLIF \
+RA05_outFlagcw.D
+-1-0 1
+--11 1
+0--- 1
+10-0 0
+1-01 0
+.names reset0.BLIF RA03_sram_sram_ram15__0_.Q RA03_sram_sram_ram0__0_.Q \
+RA03_sram_sram_ram1__0_.Q RA03_sram_sram_ram2__0_.Q RA03_sram_sram_ram3__0_.Q \
+RA03_sram_sram_ram4__0_.Q RA03_sram_sram_ram5__0_.Q RA03_sram_sram_ram6__0_.Q \
+RA03_sram_sram_ram7__0_.Q outContRead0_0_.Q outContRead0_1_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__0_.Q \
+RA03_sram_sram_ram9__0_.Q RA03_sram_sram_ram10__0_.Q \
+RA03_sram_sram_ram11__0_.Q RA03_sram_sram_ram12__0_.Q \
+RA03_sram_sram_ram13__0_.Q RA03_sram_sram_ram14__0_.Q RA03_outWordm_0_.D
+----------0011----1-- 1
+----------0101--1---- 1
+--------1-0110------- 1
+-1--------1111------- 1
+----------1011-----1- 1
+----------1101---1--- 1
+----------00011------ 1
+----1-----0100------- 1
+------1---0010------- 1
+---------11110------- 1
+----------1001-1----- 1
+--1-------0000------- 1
+-----1----1100------- 1
+-------1--1010------- 1
+---1------1000------- 1
+----------0111------1 1
+0-------------------- 1
+1---------0011----0-- 0
+1---------0101--0---- 0
+1-------0-0110------- 0
+10--------1111------- 0
+1---------1011-----0- 0
+1---------1101---0--- 0
+1---------00010------ 0
+1---0-----0100------- 0
+1-----0---0010------- 0
+1--------01110------- 0
+1---------1001-0----- 0
+1-0-------0000------- 0
+1----0----1100------- 0
+1------0--1010------- 0
+1--0------1000------- 0
+1---------0111------0 0
+.names reset0.BLIF RA03_sram_sram_ram15__1_.Q RA03_sram_sram_ram0__1_.Q \
+RA03_sram_sram_ram1__1_.Q RA03_sram_sram_ram2__1_.Q RA03_sram_sram_ram3__1_.Q \
+RA03_sram_sram_ram4__1_.Q RA03_sram_sram_ram5__1_.Q RA03_sram_sram_ram6__1_.Q \
+RA03_sram_sram_ram7__1_.Q outContRead0_0_.Q outContRead0_1_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__1_.Q \
+RA03_sram_sram_ram9__1_.Q RA03_sram_sram_ram10__1_.Q \
+RA03_sram_sram_ram11__1_.Q RA03_sram_sram_ram12__1_.Q \
+RA03_sram_sram_ram13__1_.Q RA03_sram_sram_ram14__1_.Q RA03_outWordm_1_.D
+1---------0011----1-- 1
+1---------0101--1---- 1
+1-------1-0110------- 1
+11--------1111------- 1
+1---------1011-----1- 1
+1---------1101---1--- 1
+1---------00011------ 1
+1---1-----0100------- 1
+1-----1---0010------- 1
+1--------11110------- 1
+1---------1001-1----- 1
+1-1-------0000------- 1
+1----1----1100------- 1
+1------1--1010------- 1
+1--1------1000------- 1
+1---------0111------1 1
+----------0011----0-- 0
+----------0101--0---- 0
+--------0-0110------- 0
+-0--------1111------- 0
+----------1011-----0- 0
+----------1101---0--- 0
+----------00010------ 0
+----0-----0100------- 0
+------0---0010------- 0
+---------01110------- 0
+----------1001-0----- 0
+--0-------0000------- 0
+-----0----1100------- 0
+-------0--1010------- 0
+---0------1000------- 0
+----------0111------0 0
+0-------------------- 0
+.names reset0.BLIF RA03_sram_sram_ram15__2_.Q RA03_sram_sram_ram0__2_.Q \
+RA03_sram_sram_ram1__2_.Q RA03_sram_sram_ram2__2_.Q RA03_sram_sram_ram3__2_.Q \
+RA03_sram_sram_ram4__2_.Q RA03_sram_sram_ram5__2_.Q RA03_sram_sram_ram6__2_.Q \
+RA03_sram_sram_ram7__2_.Q outContRead0_0_.Q outContRead0_1_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__2_.Q \
+RA03_sram_sram_ram9__2_.Q RA03_sram_sram_ram10__2_.Q \
+RA03_sram_sram_ram11__2_.Q RA03_sram_sram_ram12__2_.Q \
+RA03_sram_sram_ram13__2_.Q RA03_sram_sram_ram14__2_.Q RA03_outWordm_2_.D
+1---------0011----1-- 1
+1---------0101--1---- 1
+1-------1-0110------- 1
+11--------1111------- 1
+1---------1011-----1- 1
+1---------1101---1--- 1
+1---------00011------ 1
+1---1-----0100------- 1
+1-----1---0010------- 1
+1--------11110------- 1
+1---------1001-1----- 1
+1-1-------0000------- 1
+1----1----1100------- 1
+1------1--1010------- 1
+1--1------1000------- 1
+1---------0111------1 1
+----------0011----0-- 0
+----------0101--0---- 0
+--------0-0110------- 0
+-0--------1111------- 0
+----------1011-----0- 0
+----------1101---0--- 0
+----------00010------ 0
+----0-----0100------- 0
+------0---0010------- 0
+---------01110------- 0
+----------1001-0----- 0
+--0-------0000------- 0
+-----0----1100------- 0
+-------0--1010------- 0
+---0------1000------- 0
+----------0111------0 0
+0-------------------- 0
+.names reset0.BLIF RA03_sram_sram_ram15__3_.Q RA03_sram_sram_ram0__3_.Q \
+RA03_sram_sram_ram1__3_.Q RA03_sram_sram_ram2__3_.Q RA03_sram_sram_ram3__3_.Q \
+RA03_sram_sram_ram4__3_.Q RA03_sram_sram_ram5__3_.Q RA03_sram_sram_ram6__3_.Q \
+outContRead0_0_.Q RA03_sram_sram_ram7__3_.Q outContRead0_1_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__3_.Q \
+RA03_sram_sram_ram9__3_.Q RA03_sram_sram_ram10__3_.Q \
+RA03_sram_sram_ram11__3_.Q RA03_sram_sram_ram12__3_.Q \
+RA03_sram_sram_ram13__3_.Q RA03_sram_sram_ram14__3_.Q RA03_outWordm_3_.D
+1--------0-011----1-- 1
+1--------0-101--1---- 1
+1-------10-110------- 1
+11-------1-111------- 1
+1--------1-011-----1- 1
+1--------1-101---1--- 1
+1--------0-0011------ 1
+1---1----0-100------- 1
+1-----1--0-010------- 1
+1--------11110------- 1
+1--------1-001-1----- 1
+1-1------0-000------- 1
+1----1---1-100------- 1
+1------1-1-010------- 1
+1--1-----1-000------- 1
+1--------0-111------1 1
+---------0-011----0-- 0
+---------0-101--0---- 0
+--------00-110------- 0
+-0-------1-111------- 0
+---------1-011-----0- 0
+---------1-101---0--- 0
+---------0-0010------ 0
+----0----0-100------- 0
+------0--0-010------- 0
+---------10110------- 0
+---------1-001-0----- 0
+--0------0-000------- 0
+-----0---1-100------- 0
+-------0-1-010------- 0
+---0-----1-000------- 0
+---------0-111------0 0
+0-------------------- 0
+.names reset0.BLIF RA03_sram_sram_ram15__4_.Q RA03_sram_sram_ram0__4_.Q \
+RA03_sram_sram_ram1__4_.Q RA03_sram_sram_ram2__4_.Q RA03_sram_sram_ram3__4_.Q \
+RA03_sram_sram_ram4__4_.Q RA03_sram_sram_ram5__4_.Q RA03_sram_sram_ram6__4_.Q \
+outContRead0_0_.Q RA03_sram_sram_ram7__4_.Q outContRead0_1_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__4_.Q \
+RA03_sram_sram_ram9__4_.Q RA03_sram_sram_ram10__4_.Q \
+RA03_sram_sram_ram11__4_.Q RA03_sram_sram_ram12__4_.Q \
+RA03_sram_sram_ram13__4_.Q RA03_sram_sram_ram14__4_.Q RA03_outWordm_4_.D
+1--------0-011----1-- 1
+1--------0-101--1---- 1
+1-------10-110------- 1
+11-------1-111------- 1
+1--------1-011-----1- 1
+1--------1-101---1--- 1
+1--------0-0011------ 1
+1---1----0-100------- 1
+1-----1--0-010------- 1
+1--------11110------- 1
+1--------1-001-1----- 1
+1-1------0-000------- 1
+1----1---1-100------- 1
+1------1-1-010------- 1
+1--1-----1-000------- 1
+1--------0-111------1 1
+---------0-011----0-- 0
+---------0-101--0---- 0
+--------00-110------- 0
+-0-------1-111------- 0
+---------1-011-----0- 0
+---------1-101---0--- 0
+---------0-0010------ 0
+----0----0-100------- 0
+------0--0-010------- 0
+---------10110------- 0
+---------1-001-0----- 0
+--0------0-000------- 0
+-----0---1-100------- 0
+-------0-1-010------- 0
+---0-----1-000------- 0
+---------0-111------0 0
+0-------------------- 0
+.names reset0.BLIF RA03_sram_sram_ram15__5_.Q RA03_sram_sram_ram0__5_.Q \
+RA03_sram_sram_ram1__5_.Q RA03_sram_sram_ram2__5_.Q RA03_sram_sram_ram3__5_.Q \
+RA03_sram_sram_ram4__5_.Q RA03_sram_sram_ram5__5_.Q RA03_sram_sram_ram6__5_.Q \
+outContRead0_0_.Q outContRead0_1_.Q RA03_sram_sram_ram7__5_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__5_.Q \
+RA03_sram_sram_ram9__5_.Q RA03_sram_sram_ram10__5_.Q \
+RA03_sram_sram_ram11__5_.Q RA03_sram_sram_ram12__5_.Q \
+RA03_sram_sram_ram13__5_.Q RA03_sram_sram_ram14__5_.Q RA03_outWordm_5_.D
+1--------00-11----1-- 1
+1--------01-01--1---- 1
+1-------101-10------- 1
+11-------11-11------- 1
+1--------10-11-----1- 1
+1--------11-01---1--- 1
+1--------00-011------ 1
+1---1----01-00------- 1
+1--------11110------- 1
+1-----1--00-10------- 1
+1--------10-01-1----- 1
+1-1------00-00------- 1
+1----1---11-00------- 1
+1------1-10-10------- 1
+1--1-----10-00------- 1
+1--------01-11------1 1
+---------00-11----0-- 0
+---------01-01--0---- 0
+--------001-10------- 0
+-0-------11-11------- 0
+---------10-11-----0- 0
+---------11-01---0--- 0
+---------00-010------ 0
+----0----01-00------- 0
+---------11010------- 0
+------0--00-10------- 0
+---------10-01-0----- 0
+--0------00-00------- 0
+-----0---11-00------- 0
+-------0-10-10------- 0
+---0-----10-00------- 0
+---------01-11------0 0
+0-------------------- 0
+.names reset0.BLIF RA03_sram_sram_ram15__6_.Q RA03_sram_sram_ram0__6_.Q \
+RA03_sram_sram_ram1__6_.Q RA03_sram_sram_ram2__6_.Q RA03_sram_sram_ram3__6_.Q \
+RA03_sram_sram_ram4__6_.Q RA03_sram_sram_ram5__6_.Q RA03_sram_sram_ram6__6_.Q \
+outContRead0_0_.Q outContRead0_1_.Q RA03_sram_sram_ram7__6_.Q \
+outContRead0_2_.Q outContRead0_3_.Q RA03_sram_sram_ram8__6_.Q \
+RA03_sram_sram_ram9__6_.Q RA03_sram_sram_ram10__6_.Q \
+RA03_sram_sram_ram11__6_.Q RA03_sram_sram_ram12__6_.Q \
+RA03_sram_sram_ram13__6_.Q RA03_sram_sram_ram14__6_.Q RA03_outWordm_6_.D
+---------00-11----1-- 1
+---------01-01--1---- 1
+--------101-10------- 1
+-1-------11-11------- 1
+---------10-11-----1- 1
+---------11-01---1--- 1
+---------00-011------ 1
+----1----01-00------- 1
+---------11110------- 1
+------1--00-10------- 1
+---------10-01-1----- 1
+--1------00-00------- 1
+-----1---11-00------- 1
+-------1-10-10------- 1
+---1-----10-00------- 1
+---------01-11------1 1
+0-------------------- 1
+1--------00-11----0-- 0
+1--------01-01--0---- 0
+1-------001-10------- 0
+10-------11-11------- 0
+1--------10-11-----0- 0
+1--------11-01---0--- 0
+1--------00-010------ 0
+1---0----01-00------- 0
+1--------11010------- 0
+1-----0--00-10------- 0
+1--------10-01-0----- 0
+1-0------00-00------- 0
+1----0---11-00------- 0
+1------0-10-10------- 0
+1--0-----10-00------- 0
+1--------01-11------0 0
+.names reset0.BLIF RA03_sram_sram_ram14__7_.Q RA03_sram_sram_ram15__7_.Q \
+RA03_sram_sram_ram0__7_.Q RA03_sram_sram_ram1__7_.Q RA03_sram_sram_ram2__7_.Q \
+RA03_sram_sram_ram3__7_.Q RA03_sram_sram_ram4__7_.Q RA03_sram_sram_ram5__7_.Q \
+RA03_sram_sram_ram6__7_.Q outContRead0_0_.Q outContRead0_1_.Q \
+outContRead0_2_.Q RA03_sram_sram_ram7__7_.Q outContRead0_3_.Q \
+RA03_sram_sram_ram8__7_.Q RA03_sram_sram_ram9__7_.Q RA03_sram_sram_ram10__7_.Q \
+RA03_sram_sram_ram11__7_.Q RA03_sram_sram_ram12__7_.Q \
+RA03_sram_sram_ram13__7_.Q RA03_outWordm_7_.D
+1---------001-1----1- 1
+1---------100-1-1---- 1
+1-------1-101-0------ 1
+1-1-------111-1------ 1
+1---------110-1---1-- 1
+1---------000-11----- 1
+1---------11110------ 1
+1---1-----100-0------ 1
+1------1--001-0------ 1
+11--------011-1------ 1
+1---------010-1--1--- 1
+1--1------000-0------ 1
+1-----1---110-0------ 1
+1--------1011-0------ 1
+1----1----010-0------ 1
+1---------101-1-----1 1
+----------001-1----0- 0
+----------100-1-0---- 0
+--------0-101-0------ 0
+--0-------111-1------ 0
+----------110-1---0-- 0
+----------000-10----- 0
+----------11100------ 0
+----0-----100-0------ 0
+-------0--001-0------ 0
+-0--------011-1------ 0
+----------010-1--0--- 0
+---0------000-0------ 0
+------0---110-0------ 0
+---------0011-0------ 0
+-----0----010-0------ 0
+----------101-1-----0 0
+0-------------------- 0
+.names RA05_ENcw.Q outFlagw0.Q ra05_rscw_0_sqmuxa_n.BLIF RA05_ENcw.D
+1-0 1
+-01 1
+0-0 0
+-11 0
+.names LCD03_outWordc_1_0_.D
+ 1
+.names LCD03_outWordc_1_1_.D
+ 1
+.names LCD03_outWordc_1_2_.D
+ 1
+.names LCD03_outWordc_1_3_.D
+ 1
+.names LCD03_outWordc_1_4_.D
+ 1
+.names LCD03_outWordc_1_5_.D
+ 1
+.names LCD03_outWordc_1_7_.D
+ 1
+.names LCD03_ENc.D
+ 1
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_0_.Q K01_sdiv_0_.D
+-00 1
+0-0 1
+11- 0
+--1 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_0_.Q K01_sdiv_1_.Q \
+K01_sdiv_1_.D
+-010 1
+0-10 1
+-001 1
+0-01 1
+11-- 0
+--00 0
+--11 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_0_.Q K01_sdiv_1_.Q \
+K01_sdiv_2_.Q K01_sdiv_2_.D
+-0110 1
+0-110 1
+-0-01 1
+0--01 1
+-00-1 1
+0-0-1 1
+--111 0
+11--- 0
+---00 0
+--0-0 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_0_.Q K01_sdiv_1_.Q \
+K01_sdiv_2_.Q K01_sdiv_3_.Q K01_sdiv_3_.D
+-01110 1
+0-1110 1
+-0--01 1
+0---01 1
+-0-0-1 1
+0--0-1 1
+-00--1 1
+0-0--1 1
+--1111 0
+11---- 0
+----00 0
+---0-0 0
+--0--0 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_0_.Q K01_sdiv_1_.Q \
+K01_sdiv_2_.Q K01_sdiv_3_.Q K01_sdiv_4_.Q k01_n_59_i_n.BLIF K01_sdiv_4_.D
+-01111-0 1
+0-1111-0 1
+-0----10 1
+0-----10 1
+11------ 0
+-----00- 0
+----0-0- 0
+---0--0- 0
+--0---0- 0
+-------1 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_aux.Q RA03_aux.D
+1- 1
+-1 1
+00 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_5_.Q \
+k01_n_59_i_n.BLIF K01_sdiv_5_.D
+-010 1
+0-10 1
+-001 1
+0-01 1
+11-- 0
+--00 0
+--11 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_5_.Q K01_sdiv_6_.Q \
+k01_n_59_i_n.BLIF K01_sdiv_6_.D
+-0101 1
+0-101 1
+-001- 1
+0-01- 1
+-0-10 1
+0--10 1
+--111 0
+11--- 0
+--00- 0
+---00 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_5_.Q K01_sdiv_6_.Q \
+K01_sdiv_7_.Q k01_n_59_i_n.BLIF K01_sdiv_7_.D
+-01101 1
+0-1101 1
+-0-01- 1
+0--01- 1
+-00-1- 1
+0-0-1- 1
+-0--10 1
+0---10 1
+--1111 0
+11---- 0
+---00- 0
+--0-0- 0
+----00 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_5_.Q K01_sdiv_6_.Q \
+K01_sdiv_7_.Q K01_sdiv_8_.Q k01_n_59_i_n.BLIF k01_n_63_i_n.BLIF K01_sdiv_8_.D
+-0111-10 1
+0-111-10 1
+-0---1-0 1
+0----1-0 1
+11------ 0
+-----00- 0
+----00-- 0
+---0-0-- 0
+--0--0-- 0
+-------1 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_9_.Q \
+k01_n_63_i_n.BLIF K01_sdiv_9_.D
+-010 1
+0-10 1
+-001 1
+0-01 1
+11-- 0
+--00 0
+--11 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_9_.Q K01_sdiv_10_.Q \
+k01_n_63_i_n.BLIF K01_sdiv_10_.D
+-0101 1
+0-101 1
+-001- 1
+0-01- 1
+-0-10 1
+0--10 1
+--111 0
+11--- 0
+--00- 0
+---00 0
+.names k01_n_325_i_4_n.BLIF k01_n_325_i_5_n.BLIF K01_sdiv_9_.Q K01_sdiv_10_.Q \
+K01_sdiv_11_.Q k01_n_63_i_n.BLIF K01_sdiv_11_.D
+-01101 1
+0-1101 1
+-0-01- 1
+0--01- 1
+-00-1- 1
+0-0-1- 1
+-0--10 1
+0---10 1
+--1111 0
+11---- 0
+---00- 0
+--0-0- 0
+----00 0
+.names reset0.BLIF outr0_1_.Q RA02_K01_sring_3_.D
+0- 1
+-1 1
+10 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram0__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram0__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram0__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram0__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram0__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram0__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_sram_sram_ram0__6_.Q \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram0__6_.D
+1-0000 1
+-1---- 1
+-0--1- 0
+-0-1-- 0
+-01--- 0
+00---- 0
+-0---1 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram0__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram1__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram1__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram1__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram1__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram1__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram1__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_sram_sram_ram1__6_.Q \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram1__6_.D
+1-1000 1
+-1---- 1
+-0--1- 0
+-0-1-- 0
+-00--- 0
+00---- 0
+-0---1 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram1__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram2__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram2__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram2__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram2__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram2__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram2__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_sram_sram_ram2__6_.Q \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram2__6_.D
+1-0100 1
+-1---- 1
+-0--1- 0
+-0-0-- 0
+-01--- 0
+00---- 0
+-0---1 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram2__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram3__0_.D
+1 1
+0 0
+.names cdiv00_2_.BLIF cdiv00_0_.BLIF k01_n_16_2_n.BLIF k01_n_17_1_n.BLIF \
+k01_n_17_2_n.BLIF k01_n_18_1_n.BLIF k01_n_15_n.BLIF k01_n_8_n.BLIF clk0.T
+10---1-- 1
+-11----1 1
+---11--- 1
+------1- 1
+-10-0-0- 0
+-100--0- 0
+-0--000- 0
+-0-0-00- 0
+00--0-0- 0
+00-0--0- 0
+-1--0-00 0
+-1-0--00 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram3__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram3__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram3__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram3__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram3__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_sram_sram_ram3__6_.Q \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram3__6_.D
+1-1100 1
+-1---- 1
+-0--1- 0
+-0-0-- 0
+-00--- 0
+00---- 0
+-0---1 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram3__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram4__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram4__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram4__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram4__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram4__4_.D
+1 1
+0 0
+.names reset0.BLIF wr0.BLIF RA03_aux.Q inFlagk0.Q outFlagk0.Q inFlagk0.D
+-00-- 1
+-1-1- 1
+0---- 1
+-0--1 1
+101-0 0
+11-0- 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram4__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_sram_sram_ram4__6_.Q \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram4__6_.D
+1-0010 1
+-1---- 1
+-0--0- 0
+-0-1-- 0
+-01--- 0
+00---- 0
+-0---1 0
+.names reset0.BLIF RA02_K02_aux04.Q N_293_0_6.BLIF inFlagk0.Q \
+ra02_k02_n_118_i_n.BLIF outFlagk0.Q outr0_0_.Q outr0_3_.Q \
+ra02_k02_n_117_i_n.BLIF ra02_k02_n_122_i_n.BLIF outFlagk0.D
+1-1-0-0011 1
+1-111-1-11 1
+101-1-1-11 1
+1-1-1-0111 1
+1---1100-- 1
+1---01-1-- 1
+1---011--- 1
+1----1--0- 1
+1----1---0 1
+-1-01-1-11 0
+--0-0-0011 0
+--0-1--111 0
+----1000-- 0
+--0-1-1-11 0
+----00-1-- 0
+----001--- 0
+0--------- 0
+-----0--0- 0
+-----0---0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram4__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram5__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram5__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram5__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram5__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram5__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram5__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF RA03_sram_sram_ram5__6_.Q \
+outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q outContWrite0_3_.Q \
+RA03_sram_sram_ram5__6_.D
+1-1010 1
+-1---- 1
+-0--0- 0
+-0-1-- 0
+-00--- 0
+00---- 0
+-0---1 0
+.names reset0.BLIF outr0_3_.Q outr0_0_.D
+11 1
+0- 0
+-0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram5__7_.D
+1 1
+0 0
+.names reset0.BLIF outr0_0_.Q outr0_1_.D
+11 1
+0- 0
+-0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram6__0_.D
+1 1
+0 0
+.names reset0.BLIF outr0_1_.Q outr0_2_.D
+11 1
+0- 0
+-0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram6__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram6__2_.D
+1 1
+0 0
+.names reset0.BLIF RA02_K01_sring_3_.Q outr0_3_.D
+11 1
+0- 0
+-0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram6__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram6__4_.D
+1 1
+0 0
+.names reset0.BLIF outContWrite0_0_.Q outContWrite0_0_.D
+0- 1
+-0 1
+11 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram6__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q \
+RA03_sram_sram_ram6__6_.Q outContWrite0_1_.Q outContWrite0_2_.Q \
+outContWrite0_3_.Q RA03_sram_sram_ram6__6_.D
+10-110 1
+--1--- 1
+--0-0- 0
+--00-- 0
+-10--- 0
+0-0--- 0
+--0--1 0
+.names reset0.BLIF outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_1_.D
+-10 1
+-01 1
+0-- 1
+100 0
+111 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram6__7_.D
+1 1
+0 0
+.names reset0.BLIF outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q \
+outContWrite0_2_.D
+-110 1
+0--- 1
+--01 1
+-0-1 1
+1111 0
+1-00 0
+10-0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram7__0_.D
+1 1
+0 0
+.names reset0.BLIF outContWrite0_0_.Q outContWrite0_1_.Q outContWrite0_2_.Q \
+outContWrite0_3_.Q outContWrite0_3_.D
+-1110 1
+0---- 1
+---01 1
+--0-1 1
+-0--1 1
+11111 0
+1--00 0
+1-0-0 0
+10--0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram7__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram7__2_.D
+1 1
+0 0
+.names wr0.BLIF outContRead0_0_.Q outContRead0_0_.D
+10 1
+0- 0
+-1 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram7__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram7__4_.D
+1 1
+0 0
+.names wr0.BLIF outContRead0_0_.Q outContRead0_1_.Q outContRead0_1_.D
+110 1
+101 1
+-00 0
+-11 0
+0-- 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram7__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram7__6_.Q \
+RA03_sram_sram_ram7__6_.D
+11110- 1
+-----1 1
+----10 0
+---0-0 0
+--0--0 0
+-0---0 0
+0----0 0
+.names wr0.BLIF outContRead0_0_.Q outContRead0_1_.Q outContRead0_2_.Q \
+outContRead0_2_.D
+1110 1
+1-01 1
+10-1 1
+-111 0
+--00 0
+-0-0 0
+0--- 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram7__7_.D
+1 1
+0 0
+.names wr0.BLIF outContRead0_0_.Q outContRead0_1_.Q outContRead0_2_.Q \
+outContRead0_3_.Q outContRead0_3_.D
+11110 1
+1--01 1
+1-0-1 1
+10--1 1
+-1111 0
+0---- 0
+---00 0
+--0-0 0
+-0--0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram8__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram8__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram8__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram8__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram8__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram8__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram8__6_.Q \
+RA03_sram_sram_ram8__6_.D
+10001- 1
+-----1 1
+----00 0
+---1-0 0
+--1--0 0
+-1---0 0
+0----0 0
+.names inFlagcc0.D
+ 1
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram8__7_.D
+1 1
+0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_0_.D
+10 1
+0- 0
+-1 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram9__0_.D
+1 1
+0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_1_.D
+110 1
+101 1
+-00 0
+-11 0
+0-- 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram9__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram9__2_.D
+1 1
+0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_2_.D
+1110 1
+1-01 1
+10-1 1
+-111 0
+--00 0
+-0-0 0
+0--- 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram9__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram9__4_.D
+1 1
+0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_3_.D
+11110 1
+1--01 1
+1-0-1 1
+10--1 1
+-1111 0
+0---- 0
+---00 0
+--0-0 0
+-0--0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram9__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram9__6_.Q \
+RA03_sram_sram_ram9__6_.D
+11001- 1
+-----1 1
+----00 0
+---1-0 0
+--1--0 0
+-0---0 0
+0----0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_4_.D
+111110 1
+1---01 1
+1--0-1 1
+1-0--1 1
+10---1 1
+-11111 0
+0----- 0
+----00 0
+---0-0 0
+--0--0 0
+-0---0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram9__7_.D
+1 1
+0 0
+.names reset0.BLIF outcc0_0_.Q outcc0_1_.Q outcc0_2_.Q outcc0_3_.Q outcc0_4_.Q \
+outcc0_5_.Q outcc0_5_.T
+111111- 1
+0-----1 1
+1----0- 0
+1---0-- 0
+1--0--- 0
+1-0---- 0
+10----- 0
+0-----0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram10__0_.D
+1 1
+0 0
+.names reset0.BLIF outFlagcc0.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram10__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram10__2_.D
+1 1
+0 0
+.names reset0.BLIF wr0.BLIF RA05_outFlagcw.Q ra03_n_34_0_n.BLIF \
+outContWrite0_3_.Q outContRead0_3_.Q inFlagcc0.Q outFlagw0.Q outFlagw0.D
+-10-101- 1
+-101-01- 1
+-1011-1- 1
+----01-1 1
+---0-1-1 1
+---00--1 1
+0------- 1
+------01 1
+-0-----1 1
+111-101- 0
+1111-01- 0
+11111-1- 0
+1---01-0 0
+1--0-1-0 0
+1--00--0 0
+1-----00 0
+10-----0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram10__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram10__4_.D
+1 1
+0 0
+.names RA03_outWordm_0_.Q LCD03_outWordc_1_0_.Q inFlagcc0.Q outword0_0_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram10__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram10__6_.Q \
+RA03_sram_sram_ram10__6_.D
+10101- 1
+-----1 1
+----00 0
+---1-0 0
+--0--0 0
+-1---0 0
+0----0 0
+.names RA03_outWordm_1_.Q LCD03_outWordc_1_1_.Q inFlagcc0.Q outword0_1_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram10__7_.D
+1 1
+0 0
+.names RA03_outWordm_2_.Q LCD03_outWordc_1_2_.Q inFlagcc0.Q outword0_2_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram11__0_.D
+1 1
+0 0
+.names RA03_outWordm_3_.Q LCD03_outWordc_1_3_.Q inFlagcc0.Q outword0_3_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram11__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram11__2_.D
+1 1
+0 0
+.names RA03_outWordm_4_.Q LCD03_outWordc_1_4_.Q inFlagcc0.Q outword0_4_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram11__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram11__4_.D
+1 1
+0 0
+.names RA03_outWordm_5_.Q LCD03_outWordc_1_5_.Q inFlagcc0.Q outword0_5_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram11__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram11__6_.Q \
+RA03_sram_sram_ram11__6_.D
+11101- 1
+-----1 1
+----00 0
+---1-0 0
+--0--0 0
+-0---0 0
+0----0 0
+.names inFlagcc0.Q RA03_outWordm_6_.Q outword0_6_.D
+11 1
+0- 0
+-0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram11__7_.D
+1 1
+0 0
+.names RA03_outWordm_7_.Q LCD03_outWordc_1_7_.Q inFlagcc0.Q outword0_7_.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram12__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram12__1_.D
+1 1
+0 0
+.names inFlagcc0.Q RS0.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram12__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram12__3_.D
+1 1
+0 0
+.names RA05_ENcw.Q LCD03_ENc.Q inFlagcc0.Q EN0.D
+-10 1
+1-1 1
+-00 0
+0-1 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram12__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram12__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram12__6_.Q \
+RA03_sram_sram_ram12__6_.D
+10011- 1
+-----1 1
+----00 0
+---0-0 0
+--1--0 0
+-1---0 0
+0----0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram12__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram13__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram13__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram13__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram13__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram13__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram13__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram13__6_.Q \
+RA03_sram_sram_ram13__6_.D
+11011- 1
+-----1 1
+----00 0
+---0-0 0
+--1--0 0
+-0---0 0
+0----0 0
+.names RA02_K02_out7segc_1_7_.Q RA03_sram_sram_ram13__7_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_0_.Q RA03_sram_sram_ram14__0_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_1_.Q RA03_sram_sram_ram14__1_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_2_.Q RA03_sram_sram_ram14__2_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_3_.Q RA03_sram_sram_ram14__3_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_4_.Q RA03_sram_sram_ram14__4_.D
+1 1
+0 0
+.names RA02_K02_out7segc_1_5_.Q RA03_sram_sram_ram14__5_.D
+1 1
+0 0
+.names ra03_outflagm_0_sqmuxa_n.BLIF outContWrite0_0_.Q outContWrite0_1_.Q \
+outContWrite0_2_.Q outContWrite0_3_.Q RA03_sram_sram_ram14__6_.Q \
+RA03_sram_sram_ram14__6_.D
+10111- 1
+-----1 1
+----00 0
+---0-0 0
+--0--0 0
+-1---0 0
+0----0 0
+.end

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:weightSum="1"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/fab_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ubicación actual"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtLatitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitud:"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/fab_margin"
+                android:id="@+id/txtLongitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitud:"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/fab_margin"
+                android:id="@+id/txtPrecision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precisión:"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Activar"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="activar"/>
+
+            <Button
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Desactivar"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="desactivar"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/fab_margin"
+                android:id="@+id/txtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado proveedor:"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

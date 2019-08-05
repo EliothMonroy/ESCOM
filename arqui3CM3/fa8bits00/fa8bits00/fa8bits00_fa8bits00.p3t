@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "fa8bits00_fa8bits00.log"
+-o "fa8bits00_fa8bits00.csv"
+-pr "fa8bits00_fa8bits00.prf"

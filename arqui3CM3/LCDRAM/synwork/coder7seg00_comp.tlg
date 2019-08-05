@@ -1,0 +1,6 @@
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder7seg00.vhd":6:7:6:17|Synthesizing work.coder7seg00.coder7seg0 
+@W: CG296 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder7seg00.vhd":15:9:15:15|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder7seg00.vhd":19:21:19:29|Referenced variable inwordkey is not in sensitivity list
+Post processing for work.coder7seg00.coder7seg0
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder7seg00.vhd":17:4:17:7|Latch generated from process for signal outWordBuff(6 downto 0); possible missing assignment in an if or case statement.
+@W: CL159 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder7seg00.vhd":9:7:9:15|Input inWordmem is unused

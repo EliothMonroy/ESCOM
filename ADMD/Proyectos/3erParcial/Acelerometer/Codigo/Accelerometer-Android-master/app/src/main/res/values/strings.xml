@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Accelerometer</string>
+    <string name="Refresh">Refresh</string>
+    <string name="X">X axis: %1s</string>
+    <string name="Y">Y axis: %1s</string>
+    <string name="Z">Z axis: %1s</string>
+    <string name="Bt">Bluetooth value: %1s</string>
+</resources>

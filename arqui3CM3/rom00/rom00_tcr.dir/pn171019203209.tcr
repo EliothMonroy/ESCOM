@@ -1,0 +1,13 @@
+#Start recording tcl command: 10/19/2017 19:40:40
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00; Project name: rom00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00/rom00.ldf"
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00/rom00/rom00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00/rom00/rom00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 10/19/2017 20:32:09

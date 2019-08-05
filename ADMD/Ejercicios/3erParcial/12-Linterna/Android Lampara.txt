@@ -1,0 +1,104 @@
+//////////////////////////////////////////////
+// Lámpara.
+// FlahLightActivity.java
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.hardware.Camera;
+import android.hardware.Camera.Parameters;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+public class FlashLightActivity extends Activity {
+	private boolean isLighOn = false;
+	private Camera camera;
+	private Button button;
+	@Override
+	protected void onStop() {
+		super.onStop();
+		if (camera != null) camera.release();
+	}
+	@Override
+	public void onCreate(Bundle b) {
+		super.onCreate(b);
+		setContentView(R.layout.activity_flash_light);
+		button = (Button) findViewById(R.id.buttonFlashlight);
+		Context context = this;
+		PackageManager pm = context.getPackageManager();
+		if (!pm.hasSystemFeature(PackageManager.FEATURE_CAMERA)) {
+			Log.e("err", "Device has no camera!");
+			return;
+		}
+		camera = Camera.open();
+		final Parameters p = camera.getParameters();
+		button.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				if (isLighOn) {
+					Log.i("info", "torch is turn off!");
+					p.setFlashMode(Parameters.FLASH_MODE_OFF);
+					camera.setParameters(p);
+					camera.stopPreview();
+					isLighOn = false;
+
+				} else {
+					Log.i("info", "torch is turn on!");
+					p.setFlashMode(Parameters.FLASH_MODE_TORCH);
+					camera.setParameters(p);
+					camera.startPreview();
+					isLighOn = true;
+				}
+			}
+		});
+	}
+}
+
+//////////////////////////////////////////////
+// activity_flash_light.xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <Button
+        android:id="@+id/buttonFlashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_centerVertical="true"
+       	android:layout_centerHorizontal="true"
+        android:text="Torch" />
+</RelativeLayout>
+
+
+//////////////////////////////////////////////
+// AndroidManifest.xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.escom.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk android:minSdkVersion="10" />
+   <!--  <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" /> -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".FlashLightActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

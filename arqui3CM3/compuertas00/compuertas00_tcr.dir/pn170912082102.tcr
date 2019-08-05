@@ -1,0 +1,8 @@
+#Start recording tcl command: 9/12/2017 08:11:56
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/compuertas00; Project name: compuertas00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/compuertas00/compuertas00.ldf"
+prj_run Export -impl compuertas00 -task Jedecgen
+prj_run Export -impl compuertas00 -task Jedecgen
+prj_run Export -impl compuertas00 -task Jedecgen
+prj_run Export -impl compuertas00 -task Jedecgen
+#Stop recording: 9/12/2017 08:21:02

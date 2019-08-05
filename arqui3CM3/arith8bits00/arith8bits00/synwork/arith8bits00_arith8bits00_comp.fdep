@@ -1,0 +1,25 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\arith8bits00\\arith8bits00\\synwork\\arith8bits00_arith8bits00_comp.srs|-top|arith00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\arith8bits00\\arith8bits00.vhdl":1506483262
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\cpld\\lattice.vhd":1489047246
+0			"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\eliot\Documents\Github\arqui3CM3\arith8bits00\arith8bits00.vhdl" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+#Dependency Lists(Users Of)
+0 -1
+1 -1
+#Design Unit to File Association
+module work arith00 1
+arch work arith00 arith0 1

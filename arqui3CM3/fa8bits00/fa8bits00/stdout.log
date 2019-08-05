@@ -1,0 +1,132 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.9_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.9_x64\synpbase
+Hostname:    ELIOTHLAPTOP
+Date:        Tue Sep 26 07:21:30 2017
+Version:     L-2016.09L-1
+
+Arguments:   -product synplify_pro -batch fa8bits00_fa8bits00_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+Technology initialized from device list to: LATTICE-XP
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\backup\fa8bits00_fa8bits00.srr
+
+log file: "C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srr"
+
+Running: hdl_info_gen in foreground
+
+
+
+Generating HDL info...
+
+
+hdl_info_gen completed
+# Tue Sep 26 07:21:30 2017
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srf
+
+log file: "C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srr"
+
+Running: fa8bits00 in foreground
+
+
+
+Running proj_1|fa8bits00
+
+
+Running: compile (Compile) on proj_1|fa8bits00
+# Tue Sep 26 07:21:30 2017
+
+
+Running: compile_flow (Compile Process) on proj_1|fa8bits00
+# Tue Sep 26 07:21:30 2017
+
+
+Running: compiler (Compile Input) on proj_1|fa8bits00
+# Tue Sep 26 07:21:30 2017
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\synwork\fa8bits00_fa8bits00_comp.srs to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srs
+
+
+compiler completed
+# Tue Sep 26 07:21:32 2017
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|fa8bits00
+# Tue Sep 26 07:21:32 2017
+
+
+multi_srs_gen completed
+# Tue Sep 26 07:21:32 2017
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\synwork\fa8bits00_fa8bits00_mult.srs to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srs
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srf
+
+Complete: Compile Process on proj_1|fa8bits00
+
+
+Running: premap (Pre-mapping) on proj_1|fa8bits00
+# Tue Sep 26 07:21:32 2017
+
+
+premap completed
+# Tue Sep 26 07:21:33 2017
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Complete: Compile on proj_1|fa8bits00
+
+
+Running: map (Map) on proj_1|fa8bits00
+# Tue Sep 26 07:21:33 2017
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on proj_1|fa8bits00
+# Tue Sep 26 07:21:33 2017
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\synwork\fa8bits00_fa8bits00_m.srm to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srm
+
+
+fpga_mapper completed
+# Tue Sep 26 07:21:34 2017
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Complete: Map on proj_1|fa8bits00
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\fa8bits00_fa8bits00.srf
+
+Complete: Logic Synthesis on proj_1|fa8bits00
+
+TCL script complete: "fa8bits00_fa8bits00_synplify.tcl"
+
+exit status=0
+
+exit status=0
+
+Save changes for project:
+C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\proj_1.prj
+
+batch mode default:no
+

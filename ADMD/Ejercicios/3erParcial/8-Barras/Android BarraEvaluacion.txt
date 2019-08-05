@@ -1,0 +1,82 @@
+////////////////////////////////////
+// Barra de Evaluacion.
+// MainActivity.java
+import android.app.*;
+import android.os.*;
+import android.view.*;
+import android.view.View.*;
+import android.widget.*;
+import android.widget.RatingBar.*;
+public class MainActivity extends Activity {
+    RatingBar   jrb1;
+    TextView    jtv3;
+    Button      jbn1;
+    @Override
+    public void onCreate(Bundle b) {
+        super.onCreate(b);
+        setContentView(R.layout.activity_main);
+        addListenerOnRatingBar();
+        addListenerOnButton();
+    }
+    public void addListenerOnRatingBar() {
+        jrb1 = (RatingBar) findViewById(R.id.xrb1);
+        jtv3 = (TextView) findViewById(R.id.xtv3);
+        jrb1.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+            public void onRatingChanged(RatingBar rb, float f, boolean bo) {
+                jtv3.setText(String.valueOf(f));
+            }
+        });
+    }
+    public void addListenerOnButton() {
+        jrb1 = (RatingBar) findViewById(R.id.xrb1);
+        jbn1 = (Button) findViewById(R.id.xbn1); jbn1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Evaluación: " + jrb1.getRating(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}
+
+/////////////////////////////////////////////////////
+// activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/xtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu calificación?:" />
+    <RatingBar
+        android:id="@+id/xrb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:stepSize="1.0"
+        android:rating="2.0" />
+    <Button
+        android:id="@+id/xbn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+    <LinearLayout
+        android:id="@+id/xll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/xtv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: " />
+        <TextView
+            android:id="@+id/xtv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>
+//////////////////////////////////////////

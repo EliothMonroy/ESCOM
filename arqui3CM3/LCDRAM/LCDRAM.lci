@@ -1,0 +1,165 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4256ZE-5TN144C;
+Package = 144TQFP;
+PartType = LC4256ZE;
+Speed = -5.8;
+Operating_condition = COM;
+Status = Production;
+
+[Revision]
+Parent = lc4k256e.lci;
+DATE = 2002;
+TIME = 0:00:00;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+cdiv00_3_ = pin, 100, -, -, -;
+inkey0_3_ = pin, 53, -, -, -;
+outr0_3_ = pin, 43, -, -, -;
+outContWrite0_3_ = pin, 28, -, -, -;
+outContRead0_3_ = pin, 4, -, -, -;
+outcc0_5_ = pin, 122, -, -, -;
+outword0_7_ = pin, 142, -, -, -;
+clk0 = pin, 98, -, -, -;
+reset0 = pin, 81, -, -, -;
+wr0 = pin, 87, -, -, -;
+inFlagk0 = pin, 59, -, -, -;
+outFlagk0 = pin, 60, -, -, -;
+oscdis0 = pin, 38, -, -, -;
+oscout0 = pin, 104, -, -, -;
+tmrrst0 = pin, 45, -, -, -;
+inFlagcc0 = pin, 58, -, -, -;
+cdiv00_2_ = pin, 76, -, -, -;
+outFlagcc0 = pin, 61, -, -, -;
+cdiv00_1_ = pin, 101, -, -, -;
+outFlagw0 = pin, 13, -, -, -;
+cdiv00_0_ = pin, 77, -, -, -;
+RW0 = pin, 32, -, -, -;
+inkey0_2_ = pin, 52, -, -, -;
+RS0 = pin, 134, -, -, -;
+inkey0_1_ = pin, 51, -, -, -;
+EN0 = pin, 135, -, -, -;
+inkey0_0_ = pin, 50, -, -, -;
+outr0_2_ = pin, 44, -, -, -;
+outr0_1_ = pin, 48, -, -, -;
+outr0_0_ = pin, 49, -, -, -;
+outContWrite0_2_ = pin, 130, -, -, -;
+outContWrite0_1_ = pin, 29, -, -, -;
+outContWrite0_0_ = pin, 131, -, -, -;
+outContRead0_2_ = pin, 5, -, -, -;
+outContRead0_1_ = pin, 6, -, -, -;
+outContRead0_0_ = pin, 7, -, -, -;
+outcc0_4_ = pin, 95, -, -, -;
+outcc0_3_ = pin, 123, -, -, -;
+outcc0_2_ = pin, 96, -, -, -;
+outcc0_1_ = pin, 124, -, -, -;
+outcc0_0_ = pin, 97, -, -, -;
+outword0_6_ = pin, 141, -, -, -;
+outword0_5_ = pin, 140, -, -, -;
+outword0_4_ = pin, 42, -, -, -;
+outword0_3_ = pin, 139, -, -, -;
+outword0_2_ = pin, 138, -, -, -;
+outword0_1_ = pin, 39, -, -, -;
+outword0_0_ = pin, 33, -, -, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Power Guard]
+
+[ORP Bypass]
+
+[Register Powerup]
+
+[OSCTIMER Assignments]
+layer = OFF;
+OSCTIMER = oscdis0_c, tmrrst0_c, oscout0_c, tmrout, 1024;

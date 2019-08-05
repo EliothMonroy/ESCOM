@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD276 :&quot;C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd&quot;:2297:8:2297:15|Map for port sedstdby of component osch not found</Dynamic>
+            <Navigation>CD276</Navigation>
+            <Navigation>C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Map for port sedstdby of component osch not found</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

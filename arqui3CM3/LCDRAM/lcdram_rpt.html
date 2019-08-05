@@ -1,0 +1,2345 @@
+<HTML>
+<HEAD><TITLE>HTML_REPORT_FILE</TITLE>
+<STYLE TYPE="text/css">
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 10pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 10pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+</HEAD>
+<PRE>
+<A name="Top"></A><H2 align=center> ispLEVER Classic 2.0.00.17.20.15 Fitter Report File </H2>
+<H2 align=center>Copyright(C), 1992-2012, Lattice Semiconductor Corporation</H2>
+<H2 align=center>All Rights Reserved</H2>
+
+
+The Basic/Detailed Report Format can be selected in the dialog box
+Tools->Fitter Report File Format...
+
+<A name="Project_Summary"></A><FONT COLOR=maroon><U><B><big>Project_Summary</big></B></U></FONT>
+<BR>
+Project Name         :  lcdram
+Project Path         :  C:\Users\Alberto Rios\Documents\IPN\ESCOM\5semestre\Arquitectura\VHDL\LCDRAM
+Project Fitted on    :  Wed May 18 22:06:40 2016
+
+Device               :  M4256_96
+Package              :  144
+GLB Input Mux Size   :  33
+Available Blocks     :  16
+Speed                :  -5.8
+Part Number          :  LC4256ZE-5TN144C
+Source Format        :  Pure_VHDL
+
+
+<font color=green size=4><span class=blink><strong><B>Project 'lcdram' Fit Successfully!</B></strong></span></font>
+
+
+<A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
+<BR>
+Prefit Time                     0 secs
+Load Design Time                0.03 secs
+Partition Time                  1.16 secs
+Place Time                      5.16 secs
+Route Time                      0.00 secs
+Total Fit Time                  00:00:06
+
+
+<A name="Design_Summary"></A><FONT COLOR=maroon><U><B><big>Design_Summary</big></B></U></FONT>
+<BR>
+Total Input Pins                12
+Total Logic Functions           253
+  Total Output Pins             36
+  Total Bidir I/O Pins          0
+  Total Buried Nodes            217
+Total Flip-Flops                205
+  Total D Flip-Flops            182
+  Total T Flip-Flops            4
+  Total Latches                 19
+Total Product Terms             936
+
+Total Reserved Pins             0
+Total Locked Pins               48
+Total Locked Nodes              2
+
+Total Unique Output Enables     0
+Total Unique Clocks             12
+Total Unique Clock Enables      23
+Total Unique Resets             9
+Total Unique Presets            0
+
+Fmax Logic Levels               3
+
+
+<A name="Device_Resource_Summary"></A><FONT COLOR=maroon><U><B><big>Device_Resource_Summary</big></B></U></FONT>
+<BR>
+<B>                                 Device
+                                 Total    Used   Not Used   Utilization
+-----------------------------------------------------------------------
+</B>Dedicated Pins
+  Clock/Input Pins                  4        0      4    -->     0
+  Input-Only Pins                  10        2      8    -->    20
+  I/O / Enable Pins                 2        1      1    -->    50
+I/O Pins                           94       45     49    -->    47
+Logic Functions                   256      251      5    -->    98
+  Input Registers                  96        0     96    -->     0
+
+GLB Inputs                        576      456    120    -->    79
+Logical Product Terms            1280      756    524    -->    59
+Occupied GLBs                      16       16      0    -->   100
+Macrocells                        256      251      5    -->    98
+
+Control Product Terms:
+  GLB Clock/Clock Enables          16       16      0    -->   100
+  GLB Reset/Presets                16        0     16    -->     0
+  Macrocell Clocks                256       24    232    -->     9
+  Macrocell Clock Enables         256      157     99    -->    61
+  Macrocell Enables               256        0    256    -->     0
+  Macrocell Resets                256        8    248    -->     3
+  Macrocell Presets               256        0    256    -->     0
+
+Global Routing Pool               356      251    105    -->    70
+  GRP from IFB                     ..       10     ..    -->    ..
+    (from input signals)           ..       10     ..    -->    ..
+    (from output signals)          ..        0     ..    -->    ..
+    (from bidir signals)           ..        0     ..    -->    ..
+  GRP from MFB                     ..      241     ..    -->    ..
+----------------------------------------------------------------------
+
+&lt;Note&gt; 1 : The available PT is the product term that has not been used.
+&lt;Note&gt; 2 : IFB is I/O feedback.
+&lt;Note&gt; 3 : MFB is macrocell feedback.
+
+
+<A name="GLB_Resource_Summary"></A><FONT COLOR=maroon><U><B><big>GLB_Resource_Summary</big></B></U></FONT>
+<BR>
+<B>                                                                                     # of PT
+               ---  Fanin  ---    I/O    Input  Macrocells       Macrocells   Logic  clusters
+             Unique Shared Total  Pins    Regs Used Inaccessible  available    PTs   used
+-------------------------------------------------------------------------------------------
+Maximum
+  GLB                      36      *(1)     8   --     --             16       80       16
+</B>-------------------------------------------------------------------------------------------
+  GLB    A      6    19    25      3/6      0   16      0              0       55       16
+  GLB    B     19    10    29      5/6      0   16      0              0       37       16
+  GLB    C     19    14    33      4/6      0   15      1              0       50       15
+  GLB    D     20    15    35      1/6      0   15      0              1       52       14
+-------------------------------------------------------------------------------------------
+  GLB    E     26     8    34      0/6      0   15      1              0       46       16
+  GLB    F     26    10    36      4/6      0   15      1              0       47       15
+  GLB    G      6    11    17      4/6      0   16      0              0       32       16
+  GLB    H     24     9    33      6/6      0   16      0              0       44       16
+-------------------------------------------------------------------------------------------
+  GLB    I      7    24    31      4/6      0   16      0              0       55       16
+  GLB    J      0    17    17      0/6      0   16      0              0       56       16
+  GLB    K     24     7    31      3/6      0   16      0              0       47       16
+  GLB    L      7    12    19      1/6      0   16      0              0       38       16
+-------------------------------------------------------------------------------------------
+  GLB    M     15    14    29      4/6      0   16      0              0       38       16
+  GLB    N      3    16    19      3/6      0   16      0              0       48       15
+  GLB    O     14    18    32      0/6      0   16      0              0       48       15
+  GLB    P     19    17    36      3/6      0   15      0              1       63       16
+-------------------------------------------------------------------------------------------
+TOTALS:       235   221   456     45/96     0  251      3              2      756      250
+
+&lt;Note&gt; 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
+&lt;Note&gt; 2 : Four rightmost columns above reflect last status of the placement process.
+
+
+<A name="GLB_Control_Summary"></A><FONT COLOR=maroon><U><B><big>GLB_Control_Summary</big></B></U></FONT>
+<BR>
+<B>           Shared Shared | Mcell  Mcell  Mcell  Mcell  Mcell 
+           Clk/CE Rst/Pr | Clock  CE     Enable Reset  Preset
+------------------------------------------------------------------------------
+Maximum
+  GLB        1      1        16     16     16     16     16  
+==============================================================================
+</B>  GLB    A   1      0         2     10      0      0      0
+  GLB    B   1      0         5      8      0      0      0
+  GLB    C   1      0         0     14      0      0      0
+  GLB    D   1      0         0     10      0      0      0
+------------------------------------------------------------------------------
+  GLB    E   1      0         0     15      0      0      0
+  GLB    F   1      0         1     12      0      0      0
+  GLB    G   1      0         2     12      0      0      0
+  GLB    H   1      0         0     13      0      0      0
+------------------------------------------------------------------------------
+  GLB    I   1      0         4      2      0      4      0
+  GLB    J   1      0         0      7      0      0      0
+  GLB    K   1      0         0     15      0      0      0
+  GLB    L   1      0         3      0      0      3      0
+------------------------------------------------------------------------------
+  GLB    M   1      0         1      8      0      0      0
+  GLB    N   1      0         5     14      0      0      0
+  GLB    O   1      0         1      5      0      1      0
+  GLB    P   1      0         0     12      0      0      0
+------------------------------------------------------------------------------
+
+&lt;Note&gt; 1 : For ispMACH 4000 devices, the number of output enables depends on the GLB.
+
+
+<A name="Optimizer_and_Fitter_Options"></A><FONT COLOR=maroon><U><B><big>Optimizer_and_Fitter_Options</big></B></U></FONT>
+<BR>
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              No
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    FMAX
+  Fmax_Logic_Level :                   1
+  D/T Synthesis :                      Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          80
+  Max Symbols :                        24
+
+@Utilization_options
+  Max. % of Macrocells used :          100
+@Usercode                               (HEX)
+@IO_Types                              Default = LVCMOS18 (2)
+@Output_Slew_Rate                      Default = FAST (2)
+@Power                                 Default = HIGH (2)
+@Pull                                  Default = PULLUP_DOWN (2)
+@Input_Registers                       Default = None (2)
+@Register_Powerup                      Default = None
+
+Device Options:
+&lt;Note&gt; 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+&lt;Note&gt; 2 : For user-specified constraints on individual signals, refer to the Output,
+           Bidir and Buried Signal Lists.
+
+
+<A name="OSCTIMER_Summary"></A><FONT COLOR=maroon><U><B><big>OSCTIMER_Summary</big></B></U></FONT>
+<BR>
+OSCTIMER:                         Pin/Node
+  OSCTIMER Instance Name                    K00_inst11
+  Dynamic Disable Signal                    osc_oscdis0
+  Timer Reset Signal                        osc_tmrrst0
+  Oscillator Output Clock         mfb C-15  oscout0_c
+  Timer Output Clock              mfb F-15  tmrout
+
+  Oscillator Output Clock Frequency         5.0000 MHz
+  Timer Output Clock Frequency              4.8828 KHz
+  Timer Divider                             1024
+
+
+<A name="Pinout_Listing"></A><FONT COLOR=maroon><U><B><big>Pinout_Listing</big></B></U></FONT>
+<BR>
+<B>      | Pin   | Bank |GLB |Assigned|                 | Signal|            | PG
+Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enable
+</B>--------------------------------------------------------------------------------------------------------
+1     | GND   |   -  |    |        |                 |       |            |
+2     | TDI   |   -  |    |        |                 |       |            |
+3     |VCCIO0 |   -  |    |        |                 |       |            |
+4     |  I_O  |   0  |C12 |    *   |LVCMOS18         | Output|<A href=#22>outContRead0_3_</A>|
+5     |  I_O  |   0  |C10 |    *   |LVCMOS18         | Output|<A href=#39>outContRead0_2_</A>|
+6     |  I_O  |   0  |C8  |    *   |LVCMOS18         | Output|<A href=#40>outContRead0_1_</A>|
+7     |  I_O  |   0  |C6  |    *   |LVCMOS18         | Output|<A href=#41>outContRead0_0_</A>|
+8     |  I_O  |   0  |C4  |        |                 |       |            |
+9     |  I_O  |   0  |C2  |        |                 |       |            |
+10    |GNDIO0 |   -  |    |        |                 |       |            |
+11    |  I_O  |   0  |D14 |        |                 |       |            |
+12    |  I_O  |   0  |D12 |        |                 |       |            |
+13    |  I_O  |   0  |D10 |    *   |LVCMOS18         | Output|<A href=#30>outFlagw0</A>|
+14    |  I_O  |   0  |D8  |        |                 |       |            |
+15    |  I_O  |   0  |D6  |        |                 |       |            |
+16    |  I_O  |   0  |D4  |        |                 |       |            |
+17    | IN0   |   0  |    |        |                 |       |            |
+18    | NC    |   -  |    |        |                 |       |            |
+19    |VCCIO0 |   -  |    |        |                 |       |            |
+20    | IN1   |   0  |    |        |                 |       |            |
+21    |  I_O  |   0  |E2  |        |                 |       |            |
+22    |  I_O  |   0  |E4  |        |                 |       |            |
+23    |  I_O  |   0  |E6  |        |                 |       |            |
+24    |  I_O  |   0  |E8  |        |                 |       |            |
+25    |  I_O  |   0  |E10 |        |                 |       |            |
+26    |  I_O  |   0  |E12 |        |                 |       |            |
+27    |GNDIO0 |   -  |    |        |                 |       |            |
+28    |  I_O  |   0  |F2  |    *   |LVCMOS18         | Output|<A href=#21>outContWrite0_3_</A>|
+29    |  I_O  |   0  |F4  |    *   |LVCMOS18         | Output|<A href=#37>outContWrite0_1_</A>|
+30    |  I_O  |   0  |F6  |        |                 |       |            |
+31    |  I_O  |   0  |F8  |        |                 |       |            |
+32    |  I_O  |   0  |F10 |    *   |LVCMOS18         | Output|<A href=#16>RW0</A>|
+33    |  I_O  |   0  |F12 |    *   |LVCMOS18         | Output|<A href=#53>outword0_0_</A>|
+34    |VCCIO0 |   -  |    |        |                 |       |            |
+35    | TCK   |   -  |    |        |                 |       |            |
+36    | VCC   |   -  |    |        |                 |       |            |
+37    | GND   |   -  |    |        |                 |       |            |
+38    | IN2   |   0  |    |    *   |LVCMOS18         | Input |<A href=#10>oscdis0</A>|
+39    |  I_O  |   0  |G12 |    *   |LVCMOS18         | Output|<A href=#52>outword0_1_</A>|
+40    |  I_O  |   0  |G10 |        |                 |       |            |
+41    |  I_O  |   0  |G8  |        |                 |       |            |
+42    |  I_O  |   0  |G6  |    *   |LVCMOS18         | Output|<A href=#49>outword0_4_</A>|
+43    |  I_O  |   0  |G4  |    *   |LVCMOS18         | Output|<A href=#20>outr0_3_</A>|
+44    |  I_O  |   0  |G2  |    *   |LVCMOS18         | Output|<A href=#33>outr0_2_</A>|
+45    | IN3   |   0  |    |    *   |LVCMOS18         | Input |<A href=#12>tmrrst0</A>|
+46    |GNDIO0 |   -  |    |        |                 |       |            |
+47    |VCCIO0 |   -  |    |        |                 |       |            |
+48    |  I_O  |   0  |H12 |    *   |LVCMOS18         | Output|<A href=#34>outr0_1_</A>|
+49    |  I_O  |   0  |H10 |    *   |LVCMOS18         | Output|<A href=#35>outr0_0_</A>|
+50    |  I_O  |   0  |H8  |    *   |LVCMOS18         | Input |<A href=#19>inkey0_0_</A>|
+51    |  I_O  |   0  |H6  |    *   |LVCMOS18         | Input |<A href=#18>inkey0_1_</A>|
+52    |  I_O  |   0  |H4  |    *   |LVCMOS18         | Input |<A href=#17>inkey0_2_</A>|
+53    |  I_O  |   0  |H2  |    *   |LVCMOS18         | Input |<A href=#7>inkey0_3_</A>|
+54    |INCLK1 |   0  |    |        |                 |       |            |
+55    |GNDIO1 |   -  |    |        |                 |       |            |
+56    |INCLK2 |   1  |    |        |                 |       |            |
+57    | VCC   |   -  |    |        |                 |       |            |
+58    |  I_O  |   1  |I2  |    *   |LVCMOS18         | Output|<A href=#28>inFlagcc0</A>|
+59    |  I_O  |   1  |I4  |    *   |LVCMOS18         | Output|<A href=#26>inFlagk0</A>|
+60    |  I_O  |   1  |I6  |    *   |LVCMOS18         | Output|<A href=#27>outFlagk0</A>|
+61    |  I_O  |   1  |I8  |    *   |LVCMOS18         | Output|<A href=#29>outFlagcc0</A>|
+62    |  I_O  |   1  |I10 |        |                 |       |            |
+63    |  I_O  |   1  |I12 |        |                 |       |            |
+64    |VCCIO1 |   -  |    |        |                 |       |            |
+65    |GNDIO1 |   -  |    |        |                 |       |            |
+66    |  I_O  |   1  |J2  |        |                 |       |            |
+67    |  I_O  |   1  |J4  |        |                 |       |            |
+68    |  I_O  |   1  |J6  |        |                 |       |            |
+69    |  I_O  |   1  |J8  |        |                 |       |            |
+70    |  I_O  |   1  |J10 |        |                 |       |            |
+71    |  I_O  |   1  |J12 |        |                 |       |            |
+72    | IN4   |   0  |    |        |                 |       |            |
+73    | GND   |   -  |    |        |                 |       |            |
+74    | TMS   |   -  |    |        |                 |       |            |
+75    |VCCIO1 |   -  |    |        |                 |       |            |
+76    |  I_O  |   1  |K12 |    *   |LVCMOS18         | Input |<A href=#13>cdiv00_2_</A>|
+77    |  I_O  |   1  |K10 |    *   |LVCMOS18         | Input |<A href=#15>cdiv00_0_</A>|
+78    |  I_O  |   1  |K8  |        |                 |       |            |
+79    |  I_O  |   1  |K6  |        |                 |       |            |
+80    |  I_O  |   1  |K4  |        |                 |       |            |
+81    |  I_O  |   1  |K2  |    *   |LVCMOS18         | Input |<A href=#8>reset0</A>|
+82    |GNDIO1 |   -  |    |        |                 |       |            |
+83    |  I_O  |   1  |L14 |        |                 |       |            |
+84    |  I_O  |   1  |L12 |        |                 |       |            |
+85    |  I_O  |   1  |L10 |        |                 |       |            |
+86    |  I_O  |   1  |L8  |        |                 |       |            |
+87    |  I_O  |   1  |L6  |    *   |LVCMOS18         | Input |<A href=#9>wr0</A>|
+88    |  I_O  |   1  |L4  |        |                 |       |            |
+89    | IN5   |   1  |    |        |                 |       |            |
+90    | NC    |   -  |    |        |                 |       |            |
+91    |VCCIO1 |   -  |    |        |                 |       |            |
+92    | IN6   |   1  |    |        |                 |       |            |
+93    |  I_O  |   1  |M2  |        |                 |       |            |
+94    |  I_O  |   1  |M4  |        |                 |       |            |
+95    |  I_O  |   1  |M6  |    *   |LVCMOS18         | Output|<A href=#42>outcc0_4_</A>|
+96    |  I_O  |   1  |M8  |    *   |LVCMOS18         | Output|<A href=#44>outcc0_2_</A>|
+97    |  I_O  |   1  |M10 |    *   |LVCMOS18         | Output|<A href=#46>outcc0_0_</A>|
+98    |  I_O  |   1  |M12 |    *   |LVCMOS18         | Output|<A href=#25>clk0</A>|
+99    |GNDIO1 |   -  |    |        |                 |       |            |
+100   |  I_O  |   1  |N2  |    *   |LVCMOS18         | Input |<A href=#6>cdiv00_3_</A>|
+101   |  I_O  |   1  |N4  |    *   |LVCMOS18         | Input |<A href=#14>cdiv00_1_</A>|
+102   |  I_O  |   1  |N6  |        |                 |       |            |
+103   |  I_O  |   1  |N8  |        |                 |       |            |
+104   |  I_O  |   1  |N10 |    *   |LVCMOS18         | Output|<A href=#11>oscout0</A>|
+105   |  I_O  |   1  |N12 |        |                 |       |            |
+106   |VCCIO1 |   -  |    |        |                 |       |            |
+107   | TDO   |   -  |    |        |                 |       |            |
+108   | VCC   |   -  |    |        |                 |       |            |
+109   | GND   |   -  |    |        |                 |       |            |
+110   | IN7   |   1  |    |        |                 |       |            |
+111   |  I_O  |   1  |O12 |        |                 |       |            |
+112   |  I_O  |   1  |O10 |        |                 |       |            |
+113   |  I_O  |   1  |O8  |        |                 |       |            |
+114   |  I_O  |   1  |O6  |        |                 |       |            |
+115   |  I_O  |   1  |O4  |        |                 |       |            |
+116   |  I_O  |   1  |O2  |        |                 |       |            |
+117   | IN8   |   1  |    |        |                 |       |            |
+118   |GNDIO1 |   -  |    |        |                 |       |            |
+119   |VCCIO1 |   -  |    |        |                 |       |            |
+120   |  I_O  |   1  |P12 |        |                 |       |            |
+121   |  I_O  |   1  |P10 |        |                 |       |            |
+122   |  I_O  |   1  |P8  |    *   |LVCMOS18         | Output|<A href=#23>outcc0_5_</A>|
+123   |  I_O  |   1  |P6  |    *   |LVCMOS18         | Output|<A href=#43>outcc0_3_</A>|
+124   |  I_O  |   1  |P4  |    *   |LVCMOS18         | Output|<A href=#45>outcc0_1_</A>|
+125   | I_O/OE|   1  |P2  |        |                 |       |            |
+126   |INCLK3 |   1  |    |        |                 |       |            |
+127   |GNDIO0 |   -  |    |        |                 |       |            |
+128   |INCLK0 |   0  |    |        |                 |       |            |
+129   | VCC   |   -  |    |        |                 |       |            |
+130   | I_O/OE|   0  |A2  |    *   |LVCMOS18         | Output|<A href=#36>outContWrite0_2_</A>|
+131   |  I_O  |   0  |A4  |    *   |LVCMOS18         | Output|<A href=#38>outContWrite0_0_</A>|
+132   |  I_O  |   0  |A6  |        |                 |       |            |
+133   |  I_O  |   0  |A8  |        |                 |       |            |
+134   |  I_O  |   0  |A10 |    *   |LVCMOS18         | Output|<A href=#31>RS0</A>|
+135   |  I_O  |   0  |A12 |    *   |LVCMOS18         | Output|<A href=#32>EN0</A>|
+136   |VCCIO0 |   -  |    |        |                 |       |            |
+137   |GNDIO0 |   -  |    |        |                 |       |            |
+138   |  I_O  |   0  |B2  |    *   |LVCMOS18         | Output|<A href=#51>outword0_2_</A>|
+139   |  I_O  |   0  |B4  |    *   |LVCMOS18         | Output|<A href=#50>outword0_3_</A>|
+140   |  I_O  |   0  |B6  |    *   |LVCMOS18         | Output|<A href=#48>outword0_5_</A>|
+141   |  I_O  |   0  |B8  |    *   |LVCMOS18         | Output|<A href=#47>outword0_6_</A>|
+142   |  I_O  |   0  |B10 |    *   |LVCMOS18         | Output|<A href=#24>outword0_7_</A>|
+143   |  I_O  |   0  |B12 |        |                 |       |            |
+144   | IN9   |   0  |    |        |                 |       |            |
+--------------------------------------------------------------------------------------------------------
+
+&lt;Note&gt; GLB Pad : This notation refers to the GLB I/O pad number in the device.
+&lt;Note&gt; Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+&lt;Note&gt; Pin Type : 
+          ClkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           I_O  : Input/Output pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+<A name="Input_Signal_List"></A><FONT COLOR=maroon><U><B><big>Input_Signal_List</big></B></U></FONT>
+<BR>
+<B>                Input
+         Pin    Fanout
+ Pin GLB Type                       Pullup Signal
+</B>----------------------------------------------------
+  77   K  I/O   3  -B-------J--M---    Down <A name=15>cdiv00_0_</A>
+ 101   N  I/O   2  -B-------J------    Down <A name=14>cdiv00_1_</A>
+  76   K  I/O   2  ---------J--M---    Down <A name=13>cdiv00_2_</A>
+ 100   N  I/O   1  ---------J------    Down <A name=6>cdiv00_3_</A>
+  50   H  I/O   2  A-------I-------    Down <A name=19>inkey0_0_</A>
+  51   H  I/O   2  A-------I-------    Down <A name=18>inkey0_1_</A>
+  52   H  I/O   1  A---------------    Down <A name=17>inkey0_2_</A>
+  53   H  I/O   1  A---------------    Down <A name=7>inkey0_3_</A>
+  38  --  IN       ----------------    Down <A name=10>oscdis0</A>
+  81   K  I/O   13 A-CDEFGHI-KLM-OP    Down <A name=8>reset0</A>
+  45  --  IN       ----------------    Down <A name=12>tmrrst0</A>
+  87   L  I/O   4  --CDE---I-------    Down <A name=9>wr0</A>
+----------------------------------------------------
+
+
+<A name="Output_Signal_List"></A><FONT COLOR=maroon><U><B><big>Output_Signal_List</big></B></U></FONT>
+<BR>
+<B>          I         C      P R P       O Output
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
+</B>-----------------------------------------------------------------------------------------
+ 135   A  4  1   3  2 LAT      R            ----------------  Fast   Down <A href=#32>EN0</A>
+ 134   A  2  1   2  2 LAT      R            ----------------  Fast   Down <A href=#31>RS0</A>
+  32   F  0  -   0  1 COM                   ----------------  Fast   Down <A href=#16>RW0</A>
+  98   M  9  2   5  1 TFF      R         14 ABCDEFGHI-K-MNOP  Fast   Down <A href=#25>clk0</A>
+  58   I  8  -   3  1 LAT    * R         7  AB-D-FG-----M--P  Fast   Down <A href=#28>inFlagcc0</A>
+  59   I  6  1   2  1 DFF      R         2  A-------I-------  Fast   Down <A href=#26>inFlagk0</A>
+ 104   N  1  2   1  1 COM                   ----------------  Fast   Down <A href=#11>oscout0</A>
+   7   C  4  1   2  1 DFF      R *       8  --CDEF-H--K---OP  Fast   Down <A href=#41>outContRead0_0_</A>
+   6   C  5  1   3  1 DFF      R *       8  --CDEF-H--K---OP  Fast   Down <A href=#40>outContRead0_1_</A>
+   5   C  6  1   4  2 DFF      R *       8  --CDEF-H--K---OP  Fast   Down <A href=#39>outContRead0_2_</A>
+   4   C  7  1   5  1 DFF      R *       8  --CDEF-H--K---OP  Fast   Down <A href=#22>outContRead0_3_</A>
+ 131   A  4  1   2  2 DFF      R *       13 ABCDEFGH--K-MNOP  Fast   Down <A href=#38>outContWrite0_0_</A>
+  29   F  5  1   3  1 DFF      R *       13 ABCDEFGH--K-MNOP  Fast   Down <A href=#37>outContWrite0_1_</A>
+ 130   A  6  1   4  1 DFF      R *       13 ABCDEFGH--K-MNOP  Fast   Down <A href=#36>outContWrite0_2_</A>
+  28   F  7  1   5  2 DFF      R *       12 -BCDEFGH--K-MNOP  Fast   Down <A href=#21>outContWrite0_3_</A>
+  61   I  2  -   1  1 DFF      R         2  --------I--L----  Fast   Down <A href=#29>outFlagcc0</A>
+  60   I 11  2   9  2 DFF      R         1  --------I-------  Fast   Down <A href=#27>outFlagk0</A>
+  13   D  9  2   8  2 DFF      R         2  ---DE-----------  Fast   Down <A href=#30>outFlagw0</A>
+  97   M  4  1   2  1 DFF      R *       4  --------I--LM--P  Fast   Down <A href=#46>outcc0_0_</A>
+ 124   P  5  1   3  1 DFF      R *       4  --------I--LM--P  Fast   Down <A href=#45>outcc0_1_</A>
+  96   M  6  1   4  1 DFF      R *       4  --------I--LM--P  Fast   Down <A href=#44>outcc0_2_</A>
+ 123   P  7  1   5  1 DFF      R *       4  --------I--LM--P  Fast   Down <A href=#43>outcc0_3_</A>
+  95   M  8  1   3  1 DFF      R *       4  --------I--LM--P  Fast   Down <A href=#42>outcc0_4_</A>
+ 122   P  9  1   3  1 TFF      R *       3  --------I--L---P  Fast   Down <A href=#23>outcc0_5_</A>
+  49   H  3  1   1  1 DFF      R         3  A------HI-------  Fast   Down <A href=#35>outr0_0_</A>
+  48   H  3  1   1  1 DFF      R         4  A-----G-I---M---  Fast   Down <A href=#34>outr0_1_</A>
+  44   G  3  1   1  1 DFF      R         1  A---------------  Fast   Down <A href=#33>outr0_2_</A>
+  43   G  3  1   1  1 DFF      R         3  A------HI-------  Fast   Down <A href=#20>outr0_3_</A>
+  33   F  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#53>outword0_0_</A>
+  39   G  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#52>outword0_1_</A>
+ 138   B  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#51>outword0_2_</A>
+ 139   B  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#50>outword0_3_</A>
+  42   G  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#49>outword0_4_</A>
+ 140   B  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#48>outword0_5_</A>
+ 141   B  3  1   2  2 LAT      R            ----------------  Fast   Down <A href=#47>outword0_6_</A>
+ 142   B  4  1   3  1 LAT      R            ----------------  Fast   Down <A href=#24>outword0_7_</A>
+-----------------------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="Bidir_Signal_List"></A><FONT COLOR=maroon><U><B><big>Bidir_Signal_List</big></B></U></FONT>
+<BR>
+<B>          I         C      P R P       O Bidir
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
+</B>-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="Buried_Signal_List"></A><FONT COLOR=maroon><U><B><big>Buried_Signal_List</big></B></U></FONT>
+<BR>
+<B>        I         C      P R P       Node
+        N         L Mc   R E U C I F Fanout
+Mc GLB  P LL PTs  S Type E S P E R P                     Signal
+</B>------------------------------------------------------------------------------------------
+14   N  5  2   4  2 DFF      R *     1  -------------N--  <A href=#101>K01_sdiv_0_</A>
+ 2   J  7  3   5  2 DFF      R *     2  -B-------J------  <A href=#113>K01_sdiv_10_</A>
+ 0   J  8  3   6  2 DFF      R *     2  -B-------J------  <A href=#114>K01_sdiv_11_</A>
+ 8   N  6  2   5  1 DFF      R *     1  -------------N--  <A href=#102>K01_sdiv_1_</A>
+11   N  7  2   6  2 DFF      R *     1  -------------N--  <A href=#103>K01_sdiv_2_</A>
+ 9   N  8  2   7  2 DFF      R *     1  -------------N--  <A href=#104>K01_sdiv_3_</A>
+12   N 10  2   6  2 DFF      R *     1  -------------N--  <A href=#105>K01_sdiv_4_</A>
+ 3   J  6  2   4  2 DFF      R *     1  ---------J------  <A href=#107>K01_sdiv_5_</A>
+13   J  7  2   5  1 DFF      R *     2  -B-------J------  <A href=#109>K01_sdiv_6_</A>
+14   J  8  2   6  2 DFF      R *     2  -B-------J------  <A href=#110>K01_sdiv_7_</A>
+ 1   J 10  3   5  2 DFF      R *     2  -B-------J------  <A href=#111>K01_sdiv_8_</A>
+ 4   J  6  3   4  2 DFF      R *     2  -B-------J------  <A href=#112>K01_sdiv_9_</A>
+15   I  6  -   3  1 LAT    * R       1  A---------------  <A href=#99>LCD03_ENc</A>
+12   I  8  -   4  1 COM              1  --------I-------  <A href=#268>LCD03_ENc_0</A>
+ 0   L  2  -   2  1 LAT    * R       1  -----F----------  <A href=#88>LCD03_outWordc_1_0_</A>
+ 5   L  7  -   2  1 COM              1  -----------L----  <A href=#260>LCD03_outWordc_1_0__0</A>
+ 6   L  5  -   2  1 COM              1  -----------L----  <A href=#261>LCD03_outWordc_1_0__1</A>
+ 9   O  2  -   3  1 LAT    * R       1  ------G---------  <A href=#90>LCD03_outWordc_1_1_</A>
+ 7   L  7  -   2  1 COM              1  --------------O-  <A href=#262>LCD03_outWordc_1_1__0</A>
+ 7   M  5  -   3  1 COM              1  --------------O-  <A href=#263>LCD03_outWordc_1_1__1</A>
+13   I  2  -   3  1 LAT    * R       1  -B--------------  <A href=#91>LCD03_outWordc_1_2_</A>
+ 8   L  6  -   2  1 COM              1  --------I-------  <A href=#264>LCD03_outWordc_1_2__0</A>
+ 1   L  3  -   2  1 LAT    * R       1  -B--------------  <A href=#92>LCD03_outWordc_1_3_</A>
+12   L  2  -   3  1 LAT    * R       1  ------G---------  <A href=#93>LCD03_outWordc_1_4_</A>
+ 9   L  7  -   2  1 COM              1  -----------L----  <A href=#265>LCD03_outWordc_1_4__0</A>
+10   L  5  -   2  1 COM              1  -----------L----  <A href=#266>LCD03_outWordc_1_4__1</A>
+13   L  2  -   3  1 LAT    * R       1  -B--------------  <A href=#95>LCD03_outWordc_1_5_</A>
+14   I  8  -   3  1 LAT    * R       1  -B--------------  <A href=#97>LCD03_outWordc_1_7_</A>
+ 3   I  6  -   2  1 COM              1  --------I-------  <A href=#267>LCD03_outWordc_1_7__0</A>
+ 5   A 11  -   4  1 COM              1  --------I-------  <A href=#76>N_293_0_6</A>
+ 5   M  3  1   1  1 DFF      R       1  ------G---------  <A href=#115>RA02_K01_sring_3_</A>
+13   A 11  2   5  2 DFF      R *     1  A---------------  <A href=#68>RA02_K02_aux01</A>
+ 0   A 12  1   4  1 TFF      R *     1  A---------------  <A href=#70>RA02_K02_aux02</A>
+ 1   A 12  1   4  1 TFF      R *     1  A---------------  <A href=#72>RA02_K02_aux03</A>
+14   A 11  2   5  2 DFF      R *     2  A-------I-------  <A href=#74>RA02_K02_aux04</A>
+ 3   A  8  1   4  1 DFF      R *     2  -------------N-P  <A href=#62>RA02_K02_out7segc_1_0_</A>
+ 4   A  7  1   4  1 DFF      R *     4  ----E-G---K--N--  <A href=#64>RA02_K02_out7segc_1_1_</A>
+ 7   I  8  1   5  1 DFF      R *     3  -B---F-H--------  <A href=#65>RA02_K02_out7segc_1_2_</A>
+15   A  8  1   5  2 DFF      R *     2  --C-------K-----  <A href=#67>RA02_K02_out7segc_1_3_</A>
+ 9   I  8  1   5  2 DFF      R *     3  ---D--------M-O-  <A href=#69>RA02_K02_out7segc_1_4_</A>
+ 7   A  3  -   2  1 DFF      R *     3  ----E-GH--------  <A href=#71>RA02_K02_out7segc_1_5_</A>
+10   I 11  2   5  2 DFF      R       5  -BC--F--I-----O-  <A href=#73>RA02_K02_out7segc_1_7_</A>
+ 8   H  3  2   1  1 DFF      R       2  -------HI-------  <A href=#106>RA03_aux</A>
+ 1   P 23  1  17  4 DFF      R *     1  -----F----------  <A href=#77>RA03_outWordm_0_</A>
+12   D 23  1  17  4 DFF      R *     1  ------G---------  <A href=#78>RA03_outWordm_1_</A>
+11   H 23  1  17  4 DFF      R *     1  -B--------------  <A href=#80>RA03_outWordm_2_</A>
+ 1   E 23  1  17  4 DFF      R *     1  -B--------------  <A href=#82>RA03_outWordm_3_</A>
+10   K 23  1  17  4 DFF      R *     1  ------G---------  <A href=#83>RA03_outWordm_4_</A>
+ 1   F 23  1  17  4 DFF      R *     1  -B--------------  <A href=#84>RA03_outWordm_5_</A>
+10   O 23  1  17  4 DFF      R *     1  -B--------------  <A href=#85>RA03_outWordm_6_</A>
+ 1   C 23  1  17  4 DFF      R *     1  -B--------------  <A href=#86>RA03_outWordm_7_</A>
+15   N  7  1   2  1 DFF      R *     1  ---------------P  <A href=#132>RA03_sram_sram_ram0__0_</A>
+ 3   E  7  1   2  2 DFF      R *     1  ---D------------  <A href=#133>RA03_sram_sram_ram0__1_</A>
+13   H  7  1   2  1 DFF      R *     1  -------H--------  <A href=#134>RA03_sram_sram_ram0__2_</A>
+11   K  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#135>RA03_sram_sram_ram0__3_</A>
+ 9   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#136>RA03_sram_sram_ram0__4_</A>
+15   G  7  1   2  1 DFF      R *     1  -----F----------  <A href=#137>RA03_sram_sram_ram0__5_</A>
+13   B  7  2   2  1 DFF      R       2  -B------------O-  <A href=#138>RA03_sram_sram_ram0__6_</A>
+ 3   C  7  1   2  2 DFF      R *     1  --C-------------  <A href=#139>RA03_sram_sram_ram0__7_</A>
+15   P  7  1   2  2 DFF      R *     1  ---------------P  <A href=#217>RA03_sram_sram_ram10__0_</A>
+ 5   N  7  1   2  2 DFF      R *     1  ---D------------  <A href=#218>RA03_sram_sram_ram10__1_</A>
+ 4   H  7  1   2  1 DFF      R *     1  -------H--------  <A href=#219>RA03_sram_sram_ram10__2_</A>
+ 2   K  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#220>RA03_sram_sram_ram10__3_</A>
+ 5   D  7  1   2  2 DFF      R *     1  ----------K-----  <A href=#221>RA03_sram_sram_ram10__4_</A>
+11   E  7  1   2  1 DFF      R *     1  -----F----------  <A href=#222>RA03_sram_sram_ram10__5_</A>
+ 4   M  7  2   2  1 DFF      R       2  ------------M-O-  <A href=#223>RA03_sram_sram_ram10__6_</A>
+10   C  7  1   2  1 DFF      R *     1  --C-------------  <A href=#224>RA03_sram_sram_ram10__7_</A>
+ 0   P  7  1   2  1 DFF      R *     1  ---------------P  <A href=#225>RA03_sram_sram_ram11__0_</A>
+12   E  7  1   2  1 DFF      R *     1  ---D------------  <A href=#226>RA03_sram_sram_ram11__1_</A>
+ 5   H  7  1   2  1 DFF      R *     1  -------H--------  <A href=#227>RA03_sram_sram_ram11__2_</A>
+ 3   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#228>RA03_sram_sram_ram11__3_</A>
+ 0   O  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#229>RA03_sram_sram_ram11__4_</A>
+ 6   H  7  1   2  2 DFF      R *     1  -----F----------  <A href=#230>RA03_sram_sram_ram11__5_</A>
+14   B  7  2   2  1 DFF      R       2  -B------------O-  <A href=#231>RA03_sram_sram_ram11__6_</A>
+11   B  7  1   2  1 DFF      R *     1  --C-------------  <A href=#232>RA03_sram_sram_ram11__7_</A>
+ 6   N  7  1   2  2 DFF      R *     1  ---------------P  <A href=#233>RA03_sram_sram_ram12__0_</A>
+10   G  7  1   2  2 DFF      R *     1  ---D------------  <A href=#234>RA03_sram_sram_ram12__1_</A>
+ 8   F  7  1   2  1 DFF      R *     1  -------H--------  <A href=#235>RA03_sram_sram_ram12__2_</A>
+ 4   K  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#236>RA03_sram_sram_ram12__3_</A>
+13   M  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#237>RA03_sram_sram_ram12__4_</A>
+11   G  7  1   2  2 DFF      R *     1  -----F----------  <A href=#238>RA03_sram_sram_ram12__5_</A>
+ 6   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#239>RA03_sram_sram_ram12__6_</A>
+ 9   F  7  1   2  1 DFF      R *     1  --C-------------  <A href=#240>RA03_sram_sram_ram12__7_</A>
+ 3   P  7  1   2  2 DFF      R *     1  ---------------P  <A href=#241>RA03_sram_sram_ram13__0_</A>
+13   E  7  1   2  2 DFF      R *     1  ---D------------  <A href=#242>RA03_sram_sram_ram13__1_</A>
+12   B  7  1   2  2 DFF      R *     1  -------H--------  <A href=#243>RA03_sram_sram_ram13__2_</A>
+ 5   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#244>RA03_sram_sram_ram13__3_</A>
+14   M  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#245>RA03_sram_sram_ram13__4_</A>
+14   E  7  1   2  2 DFF      R *     1  -----F----------  <A href=#246>RA03_sram_sram_ram13__5_</A>
+ 7   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#247>RA03_sram_sram_ram13__6_</A>
+11   C  7  1   2  2 DFF      R *     1  --C-------------  <A href=#249>RA03_sram_sram_ram13__7_</A>
+ 4   P  7  1   2  1 DFF      R *     1  ---------------P  <A href=#250>RA03_sram_sram_ram14__0_</A>
+ 6   K  7  1   2  2 DFF      R *     1  ---D------------  <A href=#252>RA03_sram_sram_ram14__1_</A>
+10   F  7  1   2  2 DFF      R *     1  -------H--------  <A href=#253>RA03_sram_sram_ram14__2_</A>
+ 7   K  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#254>RA03_sram_sram_ram14__3_</A>
+15   M  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#257>RA03_sram_sram_ram14__4_</A>
+ 7   H  7  1   2  2 DFF      R *     1  -----F----------  <A href=#258>RA03_sram_sram_ram14__5_</A>
+ 8   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#259>RA03_sram_sram_ram14__6_</A>
+ 0   C  7  1   2  1 DFF      R *     1  --C-------------  <A href=#54>RA03_sram_sram_ram14__7_</A>
+13   N  7  1   2  2 DFF      R *     1  ---------------P  <A href=#55>RA03_sram_sram_ram15__0_</A>
+ 0   E  7  1   2  1 DFF      R *     1  ---D------------  <A href=#56>RA03_sram_sram_ram15__1_</A>
+ 9   H  7  1   2  2 DFF      R *     1  -------H--------  <A href=#57>RA03_sram_sram_ram15__2_</A>
+ 9   K  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#58>RA03_sram_sram_ram15__3_</A>
+ 9   M  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#59>RA03_sram_sram_ram15__4_</A>
+14   G  7  1   2  1 DFF      R *     1  -----F----------  <A href=#61>RA03_sram_sram_ram15__5_</A>
+ 8   K  7  2   2  1 DFF      R       2  ----------K---O-  <A href=#63>RA03_sram_sram_ram15__6_</A>
+14   F  7  1   2  2 DFF      R *     1  --C-------------  <A href=#66>RA03_sram_sram_ram15__7_</A>
+ 0   N  7  1   2  1 DFF      R *     1  ---------------P  <A href=#140>RA03_sram_sram_ram1__0_</A>
+ 0   G  7  1   2  1 DFF      R *     1  ---D------------  <A href=#141>RA03_sram_sram_ram1__1_</A>
+14   H  7  1   2  1 DFF      R *     1  -------H--------  <A href=#142>RA03_sram_sram_ram1__2_</A>
+12   K  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#143>RA03_sram_sram_ram1__3_</A>
+11   M  7  1   2  2 DFF      R *     1  ----------K-----  <A href=#144>RA03_sram_sram_ram1__4_</A>
+ 4   E  7  1   2  1 DFF      R *     1  -----F----------  <A href=#145>RA03_sram_sram_ram1__5_</A>
+11   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#146>RA03_sram_sram_ram1__6_</A>
+ 3   B  7  1   2  1 DFF      R *     1  --C-------------  <A href=#147>RA03_sram_sram_ram1__7_</A>
+11   P  7  1   2  2 DFF      R *     1  ---------------P  <A href=#148>RA03_sram_sram_ram2__0_</A>
+ 1   G  7  1   2  1 DFF      R *     1  ---D------------  <A href=#149>RA03_sram_sram_ram2__1_</A>
+15   H  7  1   2  1 DFF      R *     1  -------H--------  <A href=#151>RA03_sram_sram_ram2__2_</A>
+13   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#152>RA03_sram_sram_ram2__3_</A>
+11   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#153>RA03_sram_sram_ram2__4_</A>
+ 3   G  7  1   2  1 DFF      R *     1  -----F----------  <A href=#154>RA03_sram_sram_ram2__5_</A>
+12   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#155>RA03_sram_sram_ram2__6_</A>
+ 4   C  7  1   2  1 DFF      R *     1  --C-------------  <A href=#156>RA03_sram_sram_ram2__7_</A>
+12   P  7  1   2  1 DFF      R *     1  ---------------P  <A href=#157>RA03_sram_sram_ram3__0_</A>
+ 5   G  7  1   2  1 DFF      R *     1  ---D------------  <A href=#158>RA03_sram_sram_ram3__1_</A>
+ 0   F  7  1   2  1 DFF      R *     1  -------H--------  <A href=#159>RA03_sram_sram_ram3__2_</A>
+ 5   C  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#160>RA03_sram_sram_ram3__3_</A>
+15   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#161>RA03_sram_sram_ram3__4_</A>
+ 0   H  7  1   2  1 DFF      R *     1  -----F----------  <A href=#162>RA03_sram_sram_ram3__5_</A>
+ 1   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#163>RA03_sram_sram_ram3__6_</A>
+ 5   B  7  1   2  1 DFF      R *     1  --C-------------  <A href=#164>RA03_sram_sram_ram3__7_</A>
+ 1   N  7  1   2  1 DFF      R *     1  ---------------P  <A href=#165>RA03_sram_sram_ram4__0_</A>
+ 5   E  7  1   2  1 DFF      R *     1  ---D------------  <A href=#166>RA03_sram_sram_ram4__1_</A>
+ 4   F  7  1   2  2 DFF      R *     1  -------H--------  <A href=#167>RA03_sram_sram_ram4__2_</A>
+ 6   C  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#168>RA03_sram_sram_ram4__3_</A>
+13   O  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#169>RA03_sram_sram_ram4__4_</A>
+ 6   G  7  1   2  1 DFF      R *     1  -----F----------  <A href=#171>RA03_sram_sram_ram4__5_</A>
+ 2   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#172>RA03_sram_sram_ram4__6_</A>
+14   O  7  1   2  1 DFF      R *     1  --C-------------  <A href=#173>RA03_sram_sram_ram4__7_</A>
+13   P  7  1   2  1 DFF      R *     1  ---------------P  <A href=#174>RA03_sram_sram_ram5__0_</A>
+ 6   E  7  1   2  1 DFF      R *     1  ---D------------  <A href=#175>RA03_sram_sram_ram5__1_</A>
+ 5   F  7  1   2  1 DFF      R *     1  -------H--------  <A href=#176>RA03_sram_sram_ram5__2_</A>
+14   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#177>RA03_sram_sram_ram5__3_</A>
+ 0   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#178>RA03_sram_sram_ram5__4_</A>
+ 7   G  7  1   2  2 DFF      R *     1  -----F----------  <A href=#179>RA03_sram_sram_ram5__5_</A>
+ 3   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#180>RA03_sram_sram_ram5__6_</A>
+15   O  7  1   2  1 DFF      R *     1  --C-------------  <A href=#181>RA03_sram_sram_ram5__7_</A>
+ 2   N  7  1   2  1 DFF      R *     1  ---------------P  <A href=#182>RA03_sram_sram_ram6__0_</A>
+ 7   E  7  1   2  1 DFF      R *     1  ---D------------  <A href=#183>RA03_sram_sram_ram6__1_</A>
+ 1   H  7  1   2  1 DFF      R *     1  -------H--------  <A href=#184>RA03_sram_sram_ram6__2_</A>
+15   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#185>RA03_sram_sram_ram6__3_</A>
+ 1   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#186>RA03_sram_sram_ram6__4_</A>
+ 2   H  7  1   2  1 DFF      R *     1  -----F----------  <A href=#187>RA03_sram_sram_ram6__5_</A>
+ 4   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#188>RA03_sram_sram_ram6__6_</A>
+ 7   B  7  1   2  1 DFF      R *     1  --C-------------  <A href=#189>RA03_sram_sram_ram6__7_</A>
+ 3   N  7  1   2  1 DFF      R *     1  ---------------P  <A href=#190>RA03_sram_sram_ram7__0_</A>
+ 8   E  7  1   2  1 DFF      R *     1  ---D------------  <A href=#191>RA03_sram_sram_ram7__1_</A>
+ 8   B  7  1   2  1 DFF      R *     1  -------H--------  <A href=#192>RA03_sram_sram_ram7__2_</A>
+ 0   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#193>RA03_sram_sram_ram7__3_</A>
+ 2   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#194>RA03_sram_sram_ram7__4_</A>
+ 3   H  7  1   2  1 DFF      R *     1  -----F----------  <A href=#195>RA03_sram_sram_ram7__5_</A>
+ 5   O  7  2   2  1 DFF      R       1  --------------O-  <A href=#196>RA03_sram_sram_ram7__6_</A>
+ 9   B  7  1   2  1 DFF      R *     1  --C-------------  <A href=#197>RA03_sram_sram_ram7__7_</A>
+ 4   N  7  1   2  1 DFF      R *     1  ---------------P  <A href=#198>RA03_sram_sram_ram8__0_</A>
+ 8   G  7  1   2  1 DFF      R *     1  ---D------------  <A href=#199>RA03_sram_sram_ram8__1_</A>
+ 6   F  7  1   2  1 DFF      R *     1  -------H--------  <A href=#200>RA03_sram_sram_ram8__2_</A>
+ 7   C  7  1   2  2 DFF      R *     1  ----E-----------  <A href=#203>RA03_sram_sram_ram8__3_</A>
+ 3   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#204>RA03_sram_sram_ram8__4_</A>
+ 9   E  7  1   2  1 DFF      R *     1  -----F----------  <A href=#205>RA03_sram_sram_ram8__5_</A>
+ 2   M  7  2   2  1 DFF      R       2  ------------M-O-  <A href=#206>RA03_sram_sram_ram8__6_</A>
+10   B  7  1   2  1 DFF      R *     1  --C-------------  <A href=#207>RA03_sram_sram_ram8__7_</A>
+14   P  7  1   2  1 DFF      R *     1  ---------------P  <A href=#208>RA03_sram_sram_ram9__0_</A>
+ 9   G  7  1   2  2 DFF      R *     1  ---D------------  <A href=#209>RA03_sram_sram_ram9__1_</A>
+ 7   F  7  1   2  1 DFF      R *     1  -------H--------  <A href=#211>RA03_sram_sram_ram9__2_</A>
+ 1   K  7  1   2  1 DFF      R *     1  ----E-----------  <A href=#212>RA03_sram_sram_ram9__3_</A>
+ 4   D  7  1   2  1 DFF      R *     1  ----------K-----  <A href=#213>RA03_sram_sram_ram9__4_</A>
+10   E  7  1   2  1 DFF      R *     1  -----F----------  <A href=#214>RA03_sram_sram_ram9__5_</A>
+ 3   M  7  2   2  1 DFF      R       2  ------------M-O-  <A href=#215>RA03_sram_sram_ram9__6_</A>
+ 9   C  7  1   2  1 DFF      R *     1  --C-------------  <A href=#216>RA03_sram_sram_ram9__7_</A>
+15   E  5  2   3  1 DFF      R *     2  A---E-----------  <A href=#87>RA05_ENcw</A>
+13   D  5  2   2  1 DFF      R       1  ---D------------  <A href=#75>RA05_outFlagcw</A>
+10   J  6  -   2  1 COM              1  ------------M---  <A href=#123>k01_n_15_n</A>
+15   J  2  -   1  1 COM              1  ------------M---  <A href=#116>k01_n_16_2_n</A>
+ 1   B  8  -   3  1 COM              1  ------------M---  <A href=#117>k01_n_17_1_n</A>
+ 5   J  2  -   1  1 COM              1  ------------M---  <A href=#118>k01_n_17_2_n</A>
+ 9   J  9  -   3  1 COM              1  ------------M---  <A href=#119>k01_n_18_1_n</A>
+ 6   J 11  -   4  1 COM              2  ---------J---N--  <A href=#94>k01_n_325_i_4_n</A>
+ 8   J  8  -   3  1 COM              2  ---------J---N--  <A href=#96>k01_n_325_i_5_n</A>
+ 7   J  4  -   4  1 COM              2  ---------J---N--  <A href=#248>k01_n_4_i_n</A>
+ 7   N  5  -   1  1 COM              2  ---------J---N--  <A href=#251>k01_n_59_i_n</A>
+12   J  5  -   1  1 COM              1  ---------J------  <A href=#256>k01_n_63_i_n</A>
+11   J  5  -   2  1 COM              1  ------------M---  <A href=#124>k01_n_8_n</A>
+15   L  6  -   3  1 COM              1  -----------L----  <A href=#126>lcd03_n_26_i_1_n</A>
+ 0   M  5  -   2  1 COM              1  --------I-------  <A href=#125>lcd03_n_28_i_1_n</A>
+ 2   P  5  -   2  1 COM              1  ------------M---  <A href=#89>lcd03_n_30_i_2_n</A>
+ 1   I  2  -   2  1 COM              1  -----------L----  <A href=#127>lcd03_n_42_i_n</A>
+ 1   M  4  -   2  1 COM              1  -----------L----  <A href=#129>lcd03_n_46_i_n</A>
+ 2   L  7  -   2  1 COM              1  -----------L----  <A href=#98>lcd03_n_63_n</A>
+ 4   L  4  -   2  1 COM              2  -----------LM---  <A href=#128>lcd03_n_71_i_n</A>
+11   L  8  -   4  1 COM              1  --------I-------  <A href=#131>lcd03_un1_inflagc_10_0_n</A>
+ 2   I  8  -   2  1 COM              1  -----------L----  <A href=#130>lcd03_un1_inflagc_6_n</A>
+14   L  8  -   3  1 COM              1  --------I-------  <A href=#122>lcd03_un1_inflagc_8_0_n</A>
+ 3   L  8  -   2  1 COM              1  -----------L----  <A href=#121>lcd03_un1_inflagc_9_0_n</A>
+14   D  2  -   1  1 COM              4  AB---FG---------  <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A>
+15   C  1  -   1  1 COM              1  -------------N--  <A href=#269>osc_oscdis0</A>
+15   F  1  -   1  1 COM              3  ---------J--MN--  <A href=#270>osc_tmrrst0</A>
+15   C  0  -   0  0 COM              1  -------------N--  <A href=#201>oscout0_c</A>
+ 6   A  4  -   4  1 COM              2  A-------I-------  <A href=#202>ra02_k02_n_117_i_n</A>
+ 9   A  2  -   1  1 COM              2  A-------I-------  <A href=#170>ra02_k02_n_118_i_n</A>
+ 8   A  4  -   2  1 COM              1  --------I-------  <A href=#210>ra02_k02_n_122_i_n</A>
+11   I  9  -   4  1 COM              3  A----F--I-------  <A href=#81>ra02_k02_outcontce_n</A>
+10   P  6  -   7  2 COM              1  ---D------------  <A href=#150>ra03_n_34_0_n</A>
+ 0   I  4  -   2  1 COM              12 -BCDEFGH--K-MNOP  <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+ 8   D  7  -   4  1 COM              8  --CDEF-H--K---OP  <A href=#108>ra03_outwordm_0_sqmuxa_n</A>
+ 6   D  3  -   2  1 COM              1  --C-------------  <A href=#120>ra05_outcontreade_0_n</A>
+ 9   P  9  -  10  2 COM              2  ---DE-----------  <A href=#255>ra05_rscw_0_sqmuxa_n</A>
+15   F  0  -   0  0 COM              3  ---------J--MN--  <A href=#60>tmrout</A>
+------------------------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        IR = Input register
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="PostFit_Equations"></A><FONT COLOR=maroon><U><B><big>PostFit_Equations</big></B></U></FONT>
+<BR>
+
+<A name=32>EN0.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#99>LCD03_ENc.Q</A>
+    # inFlagcc0.Q & <A href=#87>RA05_ENcw.Q</A> ; (2 pterms, 3 signals)
+EN0.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=101>K01_sdiv_0_.D</A> = !<A href=#96>k01_n_325_i_5_n</A> & !<A href=#101>K01_sdiv_0_.Q</A>
+    # !<A href=#94>k01_n_325_i_4_n</A> & !K01_sdiv_0_.Q ; (2 pterms, 3 signals)
+K01_sdiv_0_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_0_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=113>K01_sdiv_10_.D</A> = !( <A href=#112>K01_sdiv_9_.Q</A> & <A href=#113>K01_sdiv_10_.Q</A> & <A href=#256>k01_n_63_i_n</A>
+    # <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+    # !K01_sdiv_10_.Q & !k01_n_63_i_n ) ; (4 pterms, 5 signals)
+K01_sdiv_10_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_10_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=114>K01_sdiv_11_.D</A> = !( <A href=#112>K01_sdiv_9_.Q</A> & <A href=#113>K01_sdiv_10_.Q</A> & <A href=#114>K01_sdiv_11_.Q</A>
+       & <A href=#256>k01_n_63_i_n</A>
+    # <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !K01_sdiv_9_.Q & !K01_sdiv_11_.Q
+    # !K01_sdiv_11_.Q & !k01_n_63_i_n ) ; (5 pterms, 6 signals)
+K01_sdiv_11_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_11_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=102>K01_sdiv_1_.D</A> = !( <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !<A href=#101>K01_sdiv_0_.Q</A> & !<A href=#102>K01_sdiv_1_.Q</A>
+    # K01_sdiv_0_.Q & K01_sdiv_1_.Q ) ; (3 pterms, 4 signals)
+K01_sdiv_1_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_1_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=103>K01_sdiv_2_.D</A> = !( <A href=#101>K01_sdiv_0_.Q</A> & <A href=#102>K01_sdiv_1_.Q</A> & <A href=#103>K01_sdiv_2_.Q</A>
+    # <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !K01_sdiv_1_.Q & !K01_sdiv_2_.Q
+    # !K01_sdiv_0_.Q & !K01_sdiv_2_.Q ) ; (4 pterms, 5 signals)
+K01_sdiv_2_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_2_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=104>K01_sdiv_3_.D</A> = !( <A href=#101>K01_sdiv_0_.Q</A> & <A href=#102>K01_sdiv_1_.Q</A> & <A href=#103>K01_sdiv_2_.Q</A>
+       & <A href=#104>K01_sdiv_3_.Q</A>
+    # <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !K01_sdiv_2_.Q & !K01_sdiv_3_.Q
+    # !K01_sdiv_1_.Q & !K01_sdiv_3_.Q
+    # !K01_sdiv_0_.Q & !K01_sdiv_3_.Q ) ; (5 pterms, 6 signals)
+K01_sdiv_3_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_3_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=105>K01_sdiv_4_.D</A> = !<A href=#96>k01_n_325_i_5_n</A> & <A href=#101>K01_sdiv_0_.Q</A> & <A href=#102>K01_sdiv_1_.Q</A>
+       & <A href=#103>K01_sdiv_2_.Q</A> & <A href=#104>K01_sdiv_3_.Q</A> & !<A href=#251>k01_n_59_i_n</A>
+    # !<A href=#94>k01_n_325_i_4_n</A> & K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+       & K01_sdiv_3_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_5_n & <A href=#105>K01_sdiv_4_.Q</A> & !k01_n_59_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_4_.Q & !k01_n_59_i_n ; (4 pterms, 8 signals)
+K01_sdiv_4_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_4_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=107>K01_sdiv_5_.D</A> = !( <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !<A href=#107>K01_sdiv_5_.Q</A> & !<A href=#251>k01_n_59_i_n</A>
+    # K01_sdiv_5_.Q & k01_n_59_i_n ) ; (3 pterms, 4 signals)
+K01_sdiv_5_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_5_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=109>K01_sdiv_6_.D</A> = !( <A href=#107>K01_sdiv_5_.Q</A> & <A href=#109>K01_sdiv_6_.Q</A> & <A href=#251>k01_n_59_i_n</A>
+    # <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !K01_sdiv_5_.Q & !K01_sdiv_6_.Q
+    # !K01_sdiv_6_.Q & !k01_n_59_i_n ) ; (4 pterms, 5 signals)
+K01_sdiv_6_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_6_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=110>K01_sdiv_7_.D</A> = !( <A href=#107>K01_sdiv_5_.Q</A> & <A href=#109>K01_sdiv_6_.Q</A> & <A href=#110>K01_sdiv_7_.Q</A>
+       & <A href=#251>k01_n_59_i_n</A>
+    # <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+    # !K01_sdiv_5_.Q & !K01_sdiv_7_.Q
+    # !K01_sdiv_7_.Q & !k01_n_59_i_n ) ; (5 pterms, 6 signals)
+K01_sdiv_7_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_7_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=111>K01_sdiv_8_.D</A> = !<A href=#96>k01_n_325_i_5_n</A> & <A href=#107>K01_sdiv_5_.Q</A> & <A href=#109>K01_sdiv_6_.Q</A>
+       & <A href=#110>K01_sdiv_7_.Q</A> & <A href=#251>k01_n_59_i_n</A> & !<A href=#256>k01_n_63_i_n</A>
+    # !<A href=#94>k01_n_325_i_4_n</A> & K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q
+       & k01_n_59_i_n & !k01_n_63_i_n
+    # !k01_n_325_i_5_n & <A href=#111>K01_sdiv_8_.Q</A> & !k01_n_63_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_8_.Q & !k01_n_63_i_n ; (4 pterms, 8 signals)
+K01_sdiv_8_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_8_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=112>K01_sdiv_9_.D</A> = !( <A href=#94>k01_n_325_i_4_n</A> & <A href=#96>k01_n_325_i_5_n</A>
+    # !<A href=#112>K01_sdiv_9_.Q</A> & !<A href=#256>k01_n_63_i_n</A>
+    # K01_sdiv_9_.Q & k01_n_63_i_n ) ; (3 pterms, 4 signals)
+K01_sdiv_9_.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+K01_sdiv_9_.CE = <A href=#248>k01_n_4_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=99>LCD03_ENc.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_ENc.LH = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & !<A href=#46>outcc0_0_.Q</A> ; (1 pterm, 5 signals)
+LCD03_ENc.AR = <A href=#268>LCD03_ENc_0</A> ; (1 pterm, 1 signal)
+
+<A name=268>LCD03_ENc_0</A> = !<A href=#8>reset0</A>
+    # !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A> & <A href=#45>outcc0_1_.Q</A> & <A href=#46>outcc0_0_.Q</A>
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & <A href=#44>outcc0_2_.Q</A> & outcc0_0_.Q
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & <A href=#43>outcc0_3_.Q</A> & outcc0_0_.Q ; (4 pterms, 8 signals)
+
+<A name=88>LCD03_outWordc_1_0_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_0_.LH = <A href=#260>LCD03_outWordc_1_0__0</A> ; (1 pterm, 1 signal)
+LCD03_outWordc_1_0_.AR = <A href=#261>LCD03_outWordc_1_0__1</A> ; (1 pterm, 1 signal)
+
+<A name=260>LCD03_outWordc_1_0__0</A> = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & <A href=#45>outcc0_1_.Q</A> & <A href=#127>lcd03_n_42_i_n</A>
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !<A href=#43>outcc0_3_.Q</A>
+       & lcd03_n_42_i_n ; (2 pterms, 7 signals)
+
+<A name=261>LCD03_outWordc_1_0__1</A> = !( !<A href=#126>lcd03_n_26_i_1_n</A>
+    # <A href=#8>reset0</A> & <A href=#43>outcc0_3_.Q</A> & !<A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A> ) ; (2 pterms, 5 signals)
+
+<A name=90>LCD03_outWordc_1_1_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_1_.LH = <A href=#262>LCD03_outWordc_1_1__0</A> ; (1 pterm, 1 signal)
+LCD03_outWordc_1_1_.AR = <A href=#263>LCD03_outWordc_1_1__1</A> ; (1 pterm, 1 signal)
+
+<A name=262>LCD03_outWordc_1_1__0</A> = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & <A href=#45>outcc0_1_.Q</A> & <A href=#127>lcd03_n_42_i_n</A>
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & <A href=#43>outcc0_3_.Q</A>
+       & lcd03_n_42_i_n ; (2 pterms, 7 signals)
+
+<A name=263>LCD03_outWordc_1_1__1</A> = !<A href=#43>outcc0_3_.Q</A> & <A href=#89>lcd03_n_30_i_2_n</A> & <A href=#128>lcd03_n_71_i_n</A>
+    # !<A href=#8>reset0</A> & lcd03_n_30_i_2_n & lcd03_n_71_i_n
+    # <A href=#44>outcc0_2_.Q</A> & lcd03_n_30_i_2_n & lcd03_n_71_i_n ; (3 pterms, 5 signals)
+
+<A name=91>LCD03_outWordc_1_2_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_2_.LH = !<A href=#122>lcd03_un1_inflagc_8_0_n</A> ; (1 pterm, 1 signal)
+LCD03_outWordc_1_2_.AR = <A href=#264>LCD03_outWordc_1_2__0</A> ; (1 pterm, 1 signal)
+
+<A name=264>LCD03_outWordc_1_2__0</A> = !<A href=#8>reset0</A>
+    # !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A> & !<A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> ; (2 pterms, 6 signals)
+
+<A name=92>LCD03_outWordc_1_3_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_3_.LH = !<A href=#121>lcd03_un1_inflagc_9_0_n</A> ; (1 pterm, 1 signal)
+LCD03_outWordc_1_3_.AR = !<A href=#98>lcd03_n_63_n</A> & <A href=#129>lcd03_n_46_i_n</A> ; (1 pterm, 2 signals)
+
+<A name=93>LCD03_outWordc_1_4_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_4_.LH = <A href=#265>LCD03_outWordc_1_4__0</A> ; (1 pterm, 1 signal)
+LCD03_outWordc_1_4_.AR = <A href=#266>LCD03_outWordc_1_4__1</A> ; (1 pterm, 1 signal)
+
+<A name=265>LCD03_outWordc_1_4__0</A> = <A href=#130>lcd03_un1_inflagc_6_n</A>
+    # <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A> & <A href=#43>outcc0_3_.Q</A>
+       & <A href=#44>outcc0_2_.Q</A> ; (2 pterms, 7 signals)
+
+<A name=266>LCD03_outWordc_1_4__1</A> = !<A href=#8>reset0</A>
+    # !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A> & <A href=#127>lcd03_n_42_i_n</A> ; (2 pterms, 5 signals)
+
+<A name=95>LCD03_outWordc_1_5_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_5_.LH = <A href=#130>lcd03_un1_inflagc_6_n</A> ; (1 pterm, 1 signal)
+LCD03_outWordc_1_5_.AR = <A href=#129>lcd03_n_46_i_n</A> ; (1 pterm, 1 signal)
+
+<A name=97>LCD03_outWordc_1_7_.D</A> = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_7_.LH = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & <A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A> ; (1 pterm, 7 signals)
+LCD03_outWordc_1_7_.AR = <A href=#267>LCD03_outWordc_1_7__0</A> ; (1 pterm, 1 signal)
+
+<A name=267>LCD03_outWordc_1_7__0</A> = !( !<A href=#125>lcd03_n_28_i_1_n</A>
+    # <A href=#8>reset0</A> & !<A href=#43>outcc0_3_.Q</A> & !<A href=#44>outcc0_2_.Q</A> & !<A href=#45>outcc0_1_.Q</A> & <A href=#46>outcc0_0_.Q</A> ) ; (2 pterms, 6 signals)
+
+<A name=76>N_293_0_6</A> = !( !<A href=#20>outr0_3_.Q</A> & !<A href=#26>inFlagk0.Q</A> & !<A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A>
+       & <A href=#70>RA02_K02_aux02.Q</A>
+    # !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A>
+    # !inFlagk0.Q & outr0_1_.Q & <A href=#72>RA02_K02_aux03.Q</A>
+    # outr0_3_.Q & !inFlagk0.Q & <A href=#68>RA02_K02_aux01.Q</A> ) ; (4 pterms, 11 signals)
+
+<A name=115>RA02_K01_sring_3_.D</A> = !( <A href=#8>reset0</A> & !<A href=#34>outr0_1_.Q</A> ) ; (1 pterm, 2 signals)
+RA02_K01_sring_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=68>RA02_K02_aux01.D.X1</A> = <A href=#68>RA02_K02_aux01.Q</A>
+    # <A href=#20>outr0_3_.Q</A> & !<A href=#35>outr0_0_.Q</A> & !RA02_K02_aux01.Q & <A href=#170>ra02_k02_n_118_i_n</A>
+       & <A href=#202>ra02_k02_n_117_i_n</A>
+    # !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A> & outr0_3_.Q
+       & !outr0_0_.Q & !RA02_K02_aux01.Q & ra02_k02_n_118_i_n
+       & !ra02_k02_n_117_i_n ; (3 pterms, 9 signals)
+RA02_K02_aux01.D.X2 = !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A>
+       & <A href=#20>outr0_3_.Q</A> & !<A href=#35>outr0_0_.Q</A> & <A href=#170>ra02_k02_n_118_i_n</A> ; (1 pterm, 7 signals)
+RA02_K02_aux01.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_aux01.CE = <A href=#8>reset0</A> ; (1 pterm, 1 signal)
+
+<A name=70>RA02_K02_aux02.T.X1</A> = !<A href=#20>outr0_3_.Q</A> & <A href=#33>outr0_2_.Q</A> & !<A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A>
+       & !<A href=#70>RA02_K02_aux02.Q</A> & <A href=#202>ra02_k02_n_117_i_n</A>
+    # !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A> & !outr0_3_.Q
+       & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q & !RA02_K02_aux02.Q
+       & !ra02_k02_n_117_i_n ; (2 pterms, 10 signals)
+RA02_K02_aux02.T.X2 = !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A>
+       & !<A href=#20>outr0_3_.Q</A> & <A href=#33>outr0_2_.Q</A> & !<A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A> ; (1 pterm, 8 signals)
+RA02_K02_aux02.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_aux02.CE = <A href=#8>reset0</A> ; (1 pterm, 1 signal)
+
+<A name=72>RA02_K02_aux03.T.X1</A> = !<A href=#20>outr0_3_.Q</A> & !<A href=#33>outr0_2_.Q</A> & <A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A>
+       & !<A href=#72>RA02_K02_aux03.Q</A> & <A href=#202>ra02_k02_n_117_i_n</A>
+    # !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A> & !outr0_3_.Q
+       & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q & !RA02_K02_aux03.Q
+       & !ra02_k02_n_117_i_n ; (2 pterms, 10 signals)
+RA02_K02_aux03.T.X2 = !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A>
+       & !<A href=#20>outr0_3_.Q</A> & !<A href=#33>outr0_2_.Q</A> & <A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A> ; (1 pterm, 8 signals)
+RA02_K02_aux03.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_aux03.CE = <A href=#8>reset0</A> ; (1 pterm, 1 signal)
+
+<A name=74>RA02_K02_aux04.D.X1</A> = <A href=#74>RA02_K02_aux04.Q</A>
+    # !<A href=#20>outr0_3_.Q</A> & <A href=#35>outr0_0_.Q</A> & !RA02_K02_aux04.Q & <A href=#170>ra02_k02_n_118_i_n</A>
+       & <A href=#202>ra02_k02_n_117_i_n</A>
+    # !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A> & !outr0_3_.Q
+       & outr0_0_.Q & !RA02_K02_aux04.Q & ra02_k02_n_118_i_n
+       & !ra02_k02_n_117_i_n ; (3 pterms, 9 signals)
+RA02_K02_aux04.D.X2 = !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A>
+       & !<A href=#20>outr0_3_.Q</A> & <A href=#35>outr0_0_.Q</A> & <A href=#170>ra02_k02_n_118_i_n</A> ; (1 pterm, 7 signals)
+RA02_K02_aux04.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_aux04.CE = <A href=#8>reset0</A> ; (1 pterm, 1 signal)
+
+<A name=62>RA02_K02_out7segc_1_0_.D</A> = !( <A href=#8>reset0</A> & !<A href=#17>inkey0_2_</A> & <A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A>
+       & !<A href=#34>outr0_1_.Q</A>
+    # reset0 & !inkey0_2_ & inkey0_0_ & !<A href=#20>outr0_3_.Q</A> & !outr0_1_.Q
+    # reset0 & inkey0_2_ & !inkey0_0_ & outr0_3_.Q & !outr0_1_.Q ) ; (3 pterms, 6 signals)
+RA02_K02_out7segc_1_0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_0_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=64>RA02_K02_out7segc_1_1_.D</A> = !( <A href=#8>reset0</A> & !<A href=#18>inkey0_1_</A> & !<A href=#34>outr0_1_.Q</A> & <A href=#35>outr0_0_.Q</A>
+    # reset0 & inkey0_1_ & !<A href=#20>outr0_3_.Q</A> & !outr0_1_.Q
+    # reset0 & !inkey0_1_ & outr0_3_.Q & !outr0_1_.Q ) ; (3 pterms, 5 signals)
+RA02_K02_out7segc_1_1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_1_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=65>RA02_K02_out7segc_1_2_.D</A> = !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A> & !<A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A>
+    # inkey0_0_ & outr0_1_.Q
+    # inkey0_1_ & !<A href=#20>outr0_3_.Q</A> & !outr0_0_.Q
+    # !<A href=#8>reset0</A> ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_2_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=67>RA02_K02_out7segc_1_3_.D</A> = !( <A href=#8>reset0</A> & !<A href=#17>inkey0_2_</A> & !<A href=#33>outr0_2_.Q</A> & !<A href=#34>outr0_1_.Q</A>
+       & !<A href=#35>outr0_0_.Q</A>
+    # !<A href=#7>inkey0_3_</A> & reset0 & !inkey0_2_ & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_2_ & outr0_1_.Q & !outr0_0_.Q
+    # inkey0_3_ & reset0 & outr0_1_.Q & !outr0_0_.Q ) ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_3_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=69>RA02_K02_out7segc_1_4_.D</A> = !( <A href=#8>reset0</A> & <A href=#20>outr0_3_.Q</A> & !<A href=#34>outr0_1_.Q</A> & !<A href=#35>outr0_0_.Q</A>
+    # reset0 & !<A href=#18>inkey0_1_</A> & !<A href=#19>inkey0_0_</A> & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_0_ & outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_1_ & outr0_1_.Q & !outr0_0_.Q ) ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_4_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=71>RA02_K02_out7segc_1_5_.D</A> = !<A href=#8>reset0</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_5_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=73>RA02_K02_out7segc_1_7_.D</A> = !( <A href=#8>reset0</A> & !<A href=#20>outr0_3_.Q</A> & !<A href=#35>outr0_0_.Q</A> & <A href=#76>N_293_0_6</A>
+       & !<A href=#170>ra02_k02_n_118_i_n</A> & <A href=#202>ra02_k02_n_117_i_n</A> & <A href=#210>ra02_k02_n_122_i_n</A>
+    # reset0 & outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & <A href=#26>inFlagk0.Q</A> & outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_0_.Q & !<A href=#74>RA02_K02_aux04.Q</A> & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & !<A href=#73>RA02_K02_out7segc_1_7_.Q</A> ) ; (5 pterms, 10 signals)
+RA02_K02_out7segc_1_7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=106>RA03_aux.D</A> = !( !<A href=#79>ra03_outflagm_0_sqmuxa_n</A> & !<A href=#106>RA03_aux.Q</A> ) ; (1 pterm, 2 signals)
+RA03_aux.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=77>RA03_outWordm_0_.D</A> = !( <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & !<A href=#233>RA03_sram_sram_ram12__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#217>RA03_sram_sram_ram10__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#182>RA03_sram_sram_ram6__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#55>RA03_sram_sram_ram15__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#241>RA03_sram_sram_ram13__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#225>RA03_sram_sram_ram11__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#198>RA03_sram_sram_ram8__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#148>RA03_sram_sram_ram2__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#165>RA03_sram_sram_ram4__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#190>RA03_sram_sram_ram7__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#208>RA03_sram_sram_ram9__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#132>RA03_sram_sram_ram0__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#157>RA03_sram_sram_ram3__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#174>RA03_sram_sram_ram5__0_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#140>RA03_sram_sram_ram1__0_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#250>RA03_sram_sram_ram14__0_.Q</A> ) ; (16 pterms, 21 signals)
+RA03_outWordm_0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_0_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=78>RA03_outWordm_1_.D</A> = <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & <A href=#234>RA03_sram_sram_ram12__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#218>RA03_sram_sram_ram10__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#183>RA03_sram_sram_ram6__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#56>RA03_sram_sram_ram15__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#242>RA03_sram_sram_ram13__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#226>RA03_sram_sram_ram11__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#199>RA03_sram_sram_ram8__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#149>RA03_sram_sram_ram2__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#166>RA03_sram_sram_ram4__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#191>RA03_sram_sram_ram7__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#209>RA03_sram_sram_ram9__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#133>RA03_sram_sram_ram0__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#158>RA03_sram_sram_ram3__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#175>RA03_sram_sram_ram5__1_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#141>RA03_sram_sram_ram1__1_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#252>RA03_sram_sram_ram14__1_.Q</A> ; (16 pterms, 21 signals)
+RA03_outWordm_1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_1_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=80>RA03_outWordm_2_.D</A> = <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & <A href=#235>RA03_sram_sram_ram12__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#219>RA03_sram_sram_ram10__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#184>RA03_sram_sram_ram6__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#57>RA03_sram_sram_ram15__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#243>RA03_sram_sram_ram13__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#227>RA03_sram_sram_ram11__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#200>RA03_sram_sram_ram8__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#151>RA03_sram_sram_ram2__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#167>RA03_sram_sram_ram4__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#192>RA03_sram_sram_ram7__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#211>RA03_sram_sram_ram9__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#134>RA03_sram_sram_ram0__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#159>RA03_sram_sram_ram3__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#176>RA03_sram_sram_ram5__2_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#142>RA03_sram_sram_ram1__2_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#253>RA03_sram_sram_ram14__2_.Q</A> ; (16 pterms, 21 signals)
+RA03_outWordm_2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_2_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=82>RA03_outWordm_3_.D</A> = <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & <A href=#236>RA03_sram_sram_ram12__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#220>RA03_sram_sram_ram10__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#185>RA03_sram_sram_ram6__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#58>RA03_sram_sram_ram15__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#244>RA03_sram_sram_ram13__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#228>RA03_sram_sram_ram11__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#203>RA03_sram_sram_ram8__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#152>RA03_sram_sram_ram2__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#168>RA03_sram_sram_ram4__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#193>RA03_sram_sram_ram7__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#212>RA03_sram_sram_ram9__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#135>RA03_sram_sram_ram0__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#160>RA03_sram_sram_ram3__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#177>RA03_sram_sram_ram5__3_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#143>RA03_sram_sram_ram1__3_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#254>RA03_sram_sram_ram14__3_.Q</A> ; (16 pterms, 21 signals)
+RA03_outWordm_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_3_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=83>RA03_outWordm_4_.D</A> = <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & <A href=#237>RA03_sram_sram_ram12__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#221>RA03_sram_sram_ram10__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#186>RA03_sram_sram_ram6__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#59>RA03_sram_sram_ram15__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#245>RA03_sram_sram_ram13__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#229>RA03_sram_sram_ram11__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#204>RA03_sram_sram_ram8__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#153>RA03_sram_sram_ram2__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#169>RA03_sram_sram_ram4__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#194>RA03_sram_sram_ram7__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#213>RA03_sram_sram_ram9__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#136>RA03_sram_sram_ram0__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#161>RA03_sram_sram_ram3__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#178>RA03_sram_sram_ram5__4_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#144>RA03_sram_sram_ram1__4_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#257>RA03_sram_sram_ram14__4_.Q</A> ; (16 pterms, 21 signals)
+RA03_outWordm_4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_4_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=84>RA03_outWordm_5_.D</A> = <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & <A href=#238>RA03_sram_sram_ram12__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#222>RA03_sram_sram_ram10__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#187>RA03_sram_sram_ram6__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#61>RA03_sram_sram_ram15__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#246>RA03_sram_sram_ram13__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#230>RA03_sram_sram_ram11__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#205>RA03_sram_sram_ram8__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#154>RA03_sram_sram_ram2__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#195>RA03_sram_sram_ram7__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#171>RA03_sram_sram_ram4__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#214>RA03_sram_sram_ram9__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#137>RA03_sram_sram_ram0__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#162>RA03_sram_sram_ram3__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#179>RA03_sram_sram_ram5__5_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#145>RA03_sram_sram_ram1__5_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#258>RA03_sram_sram_ram14__5_.Q</A> ; (16 pterms, 21 signals)
+RA03_outWordm_5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_5_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=85>RA03_outWordm_6_.D</A> = !( <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & !<A href=#239>RA03_sram_sram_ram12__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#223>RA03_sram_sram_ram10__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#188>RA03_sram_sram_ram6__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#63>RA03_sram_sram_ram15__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#247>RA03_sram_sram_ram13__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#231>RA03_sram_sram_ram11__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#206>RA03_sram_sram_ram8__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#155>RA03_sram_sram_ram2__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#196>RA03_sram_sram_ram7__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#172>RA03_sram_sram_ram4__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#215>RA03_sram_sram_ram9__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#138>RA03_sram_sram_ram0__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#163>RA03_sram_sram_ram3__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#180>RA03_sram_sram_ram5__6_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !<A href=#146>RA03_sram_sram_ram1__6_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !<A href=#259>RA03_sram_sram_ram14__6_.Q</A> ) ; (16 pterms, 21 signals)
+RA03_outWordm_6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_6_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=86>RA03_outWordm_7_.D</A> = <A href=#8>reset0</A> & <A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A> & !<A href=#41>outContRead0_0_.Q</A> & <A href=#240>RA03_sram_sram_ram12__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#216>RA03_sram_sram_ram9__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#181>RA03_sram_sram_ram5__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#66>RA03_sram_sram_ram15__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#232>RA03_sram_sram_ram11__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#207>RA03_sram_sram_ram8__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#197>RA03_sram_sram_ram7__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#147>RA03_sram_sram_ram1__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#173>RA03_sram_sram_ram4__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#54>RA03_sram_sram_ram14__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#224>RA03_sram_sram_ram10__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#139>RA03_sram_sram_ram0__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#164>RA03_sram_sram_ram3__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#189>RA03_sram_sram_ram6__7_.Q</A>
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & <A href=#156>RA03_sram_sram_ram2__7_.Q</A>
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & <A href=#249>RA03_sram_sram_ram13__7_.Q</A> ; (16 pterms, 21 signals)
+RA03_outWordm_7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_outWordm_7_.CE = !<A href=#108>ra03_outwordm_0_sqmuxa_n</A> ; (1 pterm, 1 signal)
+
+<A name=132>RA03_sram_sram_ram0__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=133>RA03_sram_sram_ram0__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=134>RA03_sram_sram_ram0__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=135>RA03_sram_sram_ram0__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=136>RA03_sram_sram_ram0__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=137>RA03_sram_sram_ram0__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=138>RA03_sram_sram_ram0__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#138>RA03_sram_sram_ram0__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram0__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=139>RA03_sram_sram_ram0__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=217>RA03_sram_sram_ram10__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=218>RA03_sram_sram_ram10__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=219>RA03_sram_sram_ram10__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=220>RA03_sram_sram_ram10__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=221>RA03_sram_sram_ram10__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=222>RA03_sram_sram_ram10__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=223>RA03_sram_sram_ram10__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#223>RA03_sram_sram_ram10__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram10__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=224>RA03_sram_sram_ram10__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=225>RA03_sram_sram_ram11__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=226>RA03_sram_sram_ram11__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=227>RA03_sram_sram_ram11__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=228>RA03_sram_sram_ram11__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=229>RA03_sram_sram_ram11__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=230>RA03_sram_sram_ram11__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=231>RA03_sram_sram_ram11__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#231>RA03_sram_sram_ram11__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram11__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=232>RA03_sram_sram_ram11__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=233>RA03_sram_sram_ram12__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=234>RA03_sram_sram_ram12__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=235>RA03_sram_sram_ram12__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=236>RA03_sram_sram_ram12__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=237>RA03_sram_sram_ram12__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=238>RA03_sram_sram_ram12__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=239>RA03_sram_sram_ram12__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#239>RA03_sram_sram_ram12__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram12__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=240>RA03_sram_sram_ram12__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=241>RA03_sram_sram_ram13__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=242>RA03_sram_sram_ram13__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=243>RA03_sram_sram_ram13__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=244>RA03_sram_sram_ram13__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=245>RA03_sram_sram_ram13__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=246>RA03_sram_sram_ram13__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=247>RA03_sram_sram_ram13__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#247>RA03_sram_sram_ram13__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram13__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=249>RA03_sram_sram_ram13__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=250>RA03_sram_sram_ram14__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=252>RA03_sram_sram_ram14__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=253>RA03_sram_sram_ram14__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=254>RA03_sram_sram_ram14__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=257>RA03_sram_sram_ram14__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=258>RA03_sram_sram_ram14__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=259>RA03_sram_sram_ram14__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#259>RA03_sram_sram_ram14__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram14__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=54>RA03_sram_sram_ram14__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=55>RA03_sram_sram_ram15__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=56>RA03_sram_sram_ram15__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=57>RA03_sram_sram_ram15__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=58>RA03_sram_sram_ram15__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=59>RA03_sram_sram_ram15__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=61>RA03_sram_sram_ram15__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=63>RA03_sram_sram_ram15__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#63>RA03_sram_sram_ram15__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram15__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=66>RA03_sram_sram_ram15__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=140>RA03_sram_sram_ram1__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=141>RA03_sram_sram_ram1__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=142>RA03_sram_sram_ram1__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=143>RA03_sram_sram_ram1__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=144>RA03_sram_sram_ram1__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=145>RA03_sram_sram_ram1__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=146>RA03_sram_sram_ram1__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#146>RA03_sram_sram_ram1__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram1__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=147>RA03_sram_sram_ram1__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=148>RA03_sram_sram_ram2__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=149>RA03_sram_sram_ram2__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=151>RA03_sram_sram_ram2__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=152>RA03_sram_sram_ram2__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=153>RA03_sram_sram_ram2__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=154>RA03_sram_sram_ram2__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=155>RA03_sram_sram_ram2__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#155>RA03_sram_sram_ram2__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram2__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=156>RA03_sram_sram_ram2__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=157>RA03_sram_sram_ram3__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=158>RA03_sram_sram_ram3__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=159>RA03_sram_sram_ram3__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=160>RA03_sram_sram_ram3__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=161>RA03_sram_sram_ram3__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=162>RA03_sram_sram_ram3__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=163>RA03_sram_sram_ram3__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#163>RA03_sram_sram_ram3__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram3__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=164>RA03_sram_sram_ram3__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=165>RA03_sram_sram_ram4__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=166>RA03_sram_sram_ram4__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=167>RA03_sram_sram_ram4__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=168>RA03_sram_sram_ram4__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=169>RA03_sram_sram_ram4__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=171>RA03_sram_sram_ram4__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=172>RA03_sram_sram_ram4__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#172>RA03_sram_sram_ram4__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram4__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=173>RA03_sram_sram_ram4__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=174>RA03_sram_sram_ram5__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=175>RA03_sram_sram_ram5__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=176>RA03_sram_sram_ram5__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=177>RA03_sram_sram_ram5__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=178>RA03_sram_sram_ram5__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=179>RA03_sram_sram_ram5__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=180>RA03_sram_sram_ram5__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#180>RA03_sram_sram_ram5__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram5__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=181>RA03_sram_sram_ram5__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=182>RA03_sram_sram_ram6__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=183>RA03_sram_sram_ram6__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=184>RA03_sram_sram_ram6__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=185>RA03_sram_sram_ram6__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=186>RA03_sram_sram_ram6__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=187>RA03_sram_sram_ram6__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=188>RA03_sram_sram_ram6__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#188>RA03_sram_sram_ram6__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram6__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=189>RA03_sram_sram_ram6__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=190>RA03_sram_sram_ram7__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__0_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=191>RA03_sram_sram_ram7__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__1_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=192>RA03_sram_sram_ram7__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__2_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=193>RA03_sram_sram_ram7__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__3_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=194>RA03_sram_sram_ram7__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__4_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=195>RA03_sram_sram_ram7__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__5_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=196>RA03_sram_sram_ram7__6_.D</A> = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#196>RA03_sram_sram_ram7__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram7__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=197>RA03_sram_sram_ram7__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__7_.CE = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=198>RA03_sram_sram_ram8__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=199>RA03_sram_sram_ram8__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=200>RA03_sram_sram_ram8__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=203>RA03_sram_sram_ram8__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=204>RA03_sram_sram_ram8__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=205>RA03_sram_sram_ram8__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=206>RA03_sram_sram_ram8__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#206>RA03_sram_sram_ram8__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram8__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=207>RA03_sram_sram_ram8__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=208>RA03_sram_sram_ram9__0_.D</A> = <A href=#62>RA02_K02_out7segc_1_0_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__0_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=209>RA03_sram_sram_ram9__1_.D</A> = <A href=#64>RA02_K02_out7segc_1_1_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__1_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=211>RA03_sram_sram_ram9__2_.D</A> = <A href=#65>RA02_K02_out7segc_1_2_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__2_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=212>RA03_sram_sram_ram9__3_.D</A> = <A href=#67>RA02_K02_out7segc_1_3_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__3_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=213>RA03_sram_sram_ram9__4_.D</A> = <A href=#69>RA02_K02_out7segc_1_4_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__4_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=214>RA03_sram_sram_ram9__5_.D</A> = <A href=#71>RA02_K02_out7segc_1_5_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__5_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=215>RA03_sram_sram_ram9__6_.D</A> = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A>
+    # <A href=#215>RA03_sram_sram_ram9__6_.Q</A> ; (2 pterms, 6 signals)
+RA03_sram_sram_ram9__6_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=216>RA03_sram_sram_ram9__7_.D</A> = <A href=#73>RA02_K02_out7segc_1_7_.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__7_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__7_.CE = <A href=#21>outContWrite0_3_.Q</A> & !<A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A> & <A href=#79>ra03_outflagm_0_sqmuxa_n</A> ; (1 pterm, 5 signals)
+
+<A name=87>RA05_ENcw.D</A> = <A href=#87>RA05_ENcw.Q</A> & !<A href=#255>ra05_rscw_0_sqmuxa_n</A>
+    # !<A href=#30>outFlagw0.Q</A> & ra05_rscw_0_sqmuxa_n ; (2 pterms, 3 signals)
+RA05_ENcw.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+RA05_ENcw.CE = <A href=#9>wr0</A> ; (1 pterm, 1 signal)
+
+<A name=75>RA05_outFlagcw.D</A> = !( <A href=#9>wr0</A> & !<A href=#75>RA05_outFlagcw.Q</A> & !<A href=#255>ra05_rscw_0_sqmuxa_n</A>
+    # wr0 & !<A href=#30>outFlagw0.Q</A> & ra05_rscw_0_sqmuxa_n ) ; (2 pterms, 4 signals)
+RA05_outFlagcw.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=31>RS0.D</A> = <A href=#28>inFlagcc0.Q</A> ; (1 pterm, 1 signal)
+RS0.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=16>RW0</A> = 0 ; (0 pterm, 0 signal)
+
+<A name=25>clk0.T</A> = <A href=#13>cdiv00_2_</A> & !<A href=#15>cdiv00_0_</A> & <A href=#119>k01_n_18_1_n</A>
+    # cdiv00_0_ & <A href=#116>k01_n_16_2_n</A> & <A href=#124>k01_n_8_n</A>
+    # <A href=#117>k01_n_17_1_n</A> & <A href=#118>k01_n_17_2_n</A>
+    # <A href=#123>k01_n_15_n</A> ; (4 pterms, 8 signals)
+clk0.C = <A href=#60>tmrout</A> ; (1 pterm, 1 signal)
+
+<A name=28>inFlagcc0.D</A> = 1 ; (1 pterm, 0 signal)
+inFlagcc0.LH = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & <A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#46>outcc0_0_.Q</A> ; (1 pterm, 7 signals)
+inFlagcc0.AR = !<A href=#131>lcd03_un1_inflagc_10_0_n</A> ; (1 pterm, 1 signal)
+
+<A name=26>inFlagk0.D</A> = !( <A href=#8>reset0</A> & !<A href=#9>wr0</A> & !<A href=#27>outFlagk0.Q</A> & <A href=#106>RA03_aux.Q</A>
+    # reset0 & wr0 & !<A href=#26>inFlagk0.Q</A> ) ; (2 pterms, 5 signals)
+inFlagk0.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=123>k01_n_15_n</A> = !<A href=#6>cdiv00_3_</A> & !<A href=#13>cdiv00_2_</A> & !<A href=#14>cdiv00_1_</A> & <A href=#15>cdiv00_0_</A> & <A href=#113>K01_sdiv_10_.Q</A>
+    # !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_ & <A href=#114>K01_sdiv_11_.Q</A> ; (2 pterms, 6 signals)
+
+<A name=116>k01_n_16_2_n</A> = !<A href=#6>cdiv00_3_</A> & <A href=#14>cdiv00_1_</A> ; (1 pterm, 2 signals)
+
+<A name=117>k01_n_17_1_n</A> = !( !<A href=#109>K01_sdiv_6_.Q</A> & !<A href=#110>K01_sdiv_7_.Q</A> & !<A href=#111>K01_sdiv_8_.Q</A>
+       & !<A href=#112>K01_sdiv_9_.Q</A> & !<A href=#113>K01_sdiv_10_.Q</A> & !<A href=#114>K01_sdiv_11_.Q</A>
+    # <A href=#15>cdiv00_0_</A> & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !<A href=#14>cdiv00_1_</A> ) ; (3 pterms, 8 signals)
+
+<A name=118>k01_n_17_2_n</A> = <A href=#6>cdiv00_3_</A> & <A href=#13>cdiv00_2_</A> ; (1 pterm, 2 signals)
+
+<A name=119>k01_n_18_1_n</A> = !( !<A href=#107>K01_sdiv_5_.Q</A> & !<A href=#109>K01_sdiv_6_.Q</A> & !<A href=#110>K01_sdiv_7_.Q</A>
+       & !<A href=#111>K01_sdiv_8_.Q</A> & !<A href=#112>K01_sdiv_9_.Q</A> & !<A href=#113>K01_sdiv_10_.Q</A> & !<A href=#114>K01_sdiv_11_.Q</A>
+    # <A href=#14>cdiv00_1_</A>
+    # !<A href=#6>cdiv00_3_</A> ) ; (3 pterms, 9 signals)
+
+<A name=94>k01_n_325_i_4_n</A> = !( <A href=#6>cdiv00_3_</A> & !<A href=#107>K01_sdiv_5_.Q</A> & !<A href=#109>K01_sdiv_6_.Q</A>
+       & !<A href=#110>K01_sdiv_7_.Q</A> & !<A href=#111>K01_sdiv_8_.Q</A> & !<A href=#112>K01_sdiv_9_.Q</A> & !<A href=#113>K01_sdiv_10_.Q</A>
+       & !<A href=#114>K01_sdiv_11_.Q</A>
+    # <A href=#14>cdiv00_1_</A> & !<A href=#15>cdiv00_0_</A> & !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+       & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_3_ & cdiv00_0_ & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !<A href=#13>cdiv00_2_</A> & cdiv00_1_ & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q ) ; (4 pterms, 11 signals)
+
+<A name=96>k01_n_325_i_5_n</A> = !( !<A href=#6>cdiv00_3_</A> & <A href=#13>cdiv00_2_</A> & !<A href=#111>K01_sdiv_8_.Q</A> & !<A href=#112>K01_sdiv_9_.Q</A>
+       & !<A href=#113>K01_sdiv_10_.Q</A> & !<A href=#114>K01_sdiv_11_.Q</A>
+    # !<A href=#14>cdiv00_1_</A> & <A href=#15>cdiv00_0_</A> & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_3_ & !cdiv00_0_ & !K01_sdiv_11_.Q ) ; (3 pterms, 8 signals)
+
+<A name=248>k01_n_4_i_n</A> = !<A href=#6>cdiv00_3_</A> & !<A href=#13>cdiv00_2_</A> & <A href=#15>cdiv00_0_</A>
+    # cdiv00_2_ & <A href=#14>cdiv00_1_</A> & cdiv00_0_
+    # !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_
+    # cdiv00_3_ & cdiv00_2_ & !cdiv00_0_ ; (4 pterms, 4 signals)
+
+<A name=251>k01_n_59_i_n</A> = <A href=#101>K01_sdiv_0_.Q</A> & <A href=#102>K01_sdiv_1_.Q</A> & <A href=#103>K01_sdiv_2_.Q</A> & <A href=#104>K01_sdiv_3_.Q</A>
+       & <A href=#105>K01_sdiv_4_.Q</A> ; (1 pterm, 5 signals)
+
+<A name=256>k01_n_63_i_n</A> = <A href=#107>K01_sdiv_5_.Q</A> & <A href=#109>K01_sdiv_6_.Q</A> & <A href=#110>K01_sdiv_7_.Q</A> & <A href=#111>K01_sdiv_8_.Q</A>
+       & <A href=#251>k01_n_59_i_n</A> ; (1 pterm, 5 signals)
+
+<A name=124>k01_n_8_n</A> = !( !<A href=#111>K01_sdiv_8_.Q</A> & !<A href=#112>K01_sdiv_9_.Q</A> & !<A href=#113>K01_sdiv_10_.Q</A>
+       & !<A href=#114>K01_sdiv_11_.Q</A>
+    # !<A href=#13>cdiv00_2_</A> & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q ) ; (2 pterms, 5 signals)
+
+<A name=126>lcd03_n_26_i_1_n</A> = !( <A href=#8>reset0</A> & !<A href=#43>outcc0_3_.Q</A> & !<A href=#45>outcc0_1_.Q</A> & <A href=#46>outcc0_0_.Q</A>
+    # reset0 & !outcc0_3_.Q & <A href=#44>outcc0_2_.Q</A>
+    # !<A href=#128>lcd03_n_71_i_n</A> ) ; (3 pterms, 6 signals)
+
+<A name=125>lcd03_n_28_i_1_n</A> = !( <A href=#8>reset0</A> & <A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A>
+    # !<A href=#128>lcd03_n_71_i_n</A> ) ; (2 pterms, 5 signals)
+
+<A name=89>lcd03_n_30_i_2_n</A> = !( <A href=#8>reset0</A> & !<A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A>
+    # reset0 & !outcc0_2_.Q & !outcc0_1_.Q & <A href=#46>outcc0_0_.Q</A> ) ; (2 pterms, 5 signals)
+
+<A name=127>lcd03_n_42_i_n</A> = !<A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A>
+    # outcc0_3_.Q & !outcc0_2_.Q ; (2 pterms, 2 signals)
+
+<A name=129>lcd03_n_46_i_n</A> = !( <A href=#8>reset0</A> & !<A href=#43>outcc0_3_.Q</A> & !<A href=#44>outcc0_2_.Q</A>
+    # !<A href=#128>lcd03_n_71_i_n</A> ) ; (2 pterms, 4 signals)
+
+<A name=98>lcd03_n_63_n</A> = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & <A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & !<A href=#45>outcc0_1_.Q</A>
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_2_.Q
+       & outcc0_1_.Q ; (2 pterms, 7 signals)
+
+<A name=128>lcd03_n_71_i_n</A> = !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+    # !<A href=#8>reset0</A> ; (2 pterms, 4 signals)
+
+<A name=131>lcd03_un1_inflagc_10_0_n</A> = <A href=#8>reset0</A> & <A href=#29>outFlagcc0.Q</A> & <A href=#43>outcc0_3_.Q</A> & <A href=#46>outcc0_0_.Q</A>
+       & !<A href=#127>lcd03_n_42_i_n</A>
+    # reset0 & outFlagcc0.Q & !<A href=#45>outcc0_1_.Q</A> & outcc0_0_.Q & !lcd03_n_42_i_n
+    # reset0 & <A href=#23>outcc0_5_.Q</A> & outFlagcc0.Q
+    # reset0 & outFlagcc0.Q & <A href=#42>outcc0_4_.Q</A> ; (4 pterms, 8 signals)
+
+<A name=130>lcd03_un1_inflagc_6_n</A> = <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A> & !<A href=#42>outcc0_4_.Q</A>
+       & !<A href=#43>outcc0_3_.Q</A> & !<A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A>
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q
+       & !outcc0_2_.Q & !<A href=#46>outcc0_0_.Q</A> ; (2 pterms, 8 signals)
+
+<A name=122>lcd03_un1_inflagc_8_0_n</A> = !( <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A>
+       & !<A href=#42>outcc0_4_.Q</A> & !<A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A>
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_2_.Q
+       & !<A href=#46>outcc0_0_.Q</A>
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & <A href=#43>outcc0_3_.Q</A> ) ; (3 pterms, 8 signals)
+
+<A name=121>lcd03_un1_inflagc_9_0_n</A> = !( <A href=#8>reset0</A> & !<A href=#23>outcc0_5_.Q</A> & <A href=#29>outFlagcc0.Q</A>
+       & !<A href=#42>outcc0_4_.Q</A> & !<A href=#43>outcc0_3_.Q</A> & !<A href=#44>outcc0_2_.Q</A> & !<A href=#46>outcc0_0_.Q</A>
+    # <A href=#98>lcd03_n_63_n</A> ) ; (2 pterms, 8 signals)
+
+<A name=100>lcd06_pbuff_un2_inflagbuffwrite_n</A> = !( <A href=#28>inFlagcc0.Q</A> & !<A href=#30>outFlagw0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=269>osc_oscdis0</A> = <A href=#10>oscdis0</A> ; (1 pterm, 1 signal)
+
+<A name=270>osc_tmrrst0</A> = <A href=#12>tmrrst0</A> ; (1 pterm, 1 signal)
+
+<A name=11>oscout0</A> = <A href=#201>oscout0_c</A> ; (1 pterm, 1 signal)
+
+<A name=41>outContRead0_0_.D</A> = <A href=#9>wr0</A> & !<A href=#41>outContRead0_0_.Q</A> ; (1 pterm, 2 signals)
+outContRead0_0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContRead0_0_.CE = !<A href=#120>ra05_outcontreade_0_n</A> ; (1 pterm, 1 signal)
+
+<A name=40>outContRead0_1_.D</A> = <A href=#9>wr0</A> & !<A href=#40>outContRead0_1_.Q</A> & <A href=#41>outContRead0_0_.Q</A>
+    # wr0 & outContRead0_1_.Q & !outContRead0_0_.Q ; (2 pterms, 3 signals)
+outContRead0_1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContRead0_1_.CE = !<A href=#120>ra05_outcontreade_0_n</A> ; (1 pterm, 1 signal)
+
+<A name=39>outContRead0_2_.D</A> = <A href=#9>wr0</A> & !<A href=#39>outContRead0_2_.Q</A> & <A href=#40>outContRead0_1_.Q</A>
+       & <A href=#41>outContRead0_0_.Q</A>
+    # wr0 & outContRead0_2_.Q & !outContRead0_1_.Q
+    # wr0 & outContRead0_2_.Q & !outContRead0_0_.Q ; (3 pterms, 4 signals)
+outContRead0_2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContRead0_2_.CE = !<A href=#120>ra05_outcontreade_0_n</A> ; (1 pterm, 1 signal)
+
+<A name=22>outContRead0_3_.D</A> = <A href=#9>wr0</A> & !<A href=#22>outContRead0_3_.Q</A> & <A href=#39>outContRead0_2_.Q</A>
+       & <A href=#40>outContRead0_1_.Q</A> & <A href=#41>outContRead0_0_.Q</A>
+    # wr0 & outContRead0_3_.Q & !outContRead0_2_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_1_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_0_.Q ; (4 pterms, 5 signals)
+outContRead0_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContRead0_3_.CE = !<A href=#120>ra05_outcontreade_0_n</A> ; (1 pterm, 1 signal)
+
+<A name=38>outContWrite0_0_.D</A> = !( <A href=#8>reset0</A> & <A href=#38>outContWrite0_0_.Q</A> ) ; (1 pterm, 2 signals)
+outContWrite0_0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContWrite0_0_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=37>outContWrite0_1_.D</A> = !( <A href=#8>reset0</A> & !<A href=#37>outContWrite0_1_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A>
+    # reset0 & outContWrite0_1_.Q & outContWrite0_0_.Q ) ; (2 pterms, 3 signals)
+outContWrite0_1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContWrite0_1_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=36>outContWrite0_2_.D</A> = !( <A href=#8>reset0</A> & <A href=#36>outContWrite0_2_.Q</A> & <A href=#37>outContWrite0_1_.Q</A>
+       & <A href=#38>outContWrite0_0_.Q</A>
+    # reset0 & !outContWrite0_2_.Q & !outContWrite0_1_.Q
+    # reset0 & !outContWrite0_2_.Q & !outContWrite0_0_.Q ) ; (3 pterms, 4 signals)
+outContWrite0_2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContWrite0_2_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=21>outContWrite0_3_.D</A> = !( <A href=#8>reset0</A> & <A href=#21>outContWrite0_3_.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & <A href=#37>outContWrite0_1_.Q</A> & <A href=#38>outContWrite0_0_.Q</A>
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_2_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_1_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_0_.Q ) ; (4 pterms, 5 signals)
+outContWrite0_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outContWrite0_3_.CE = <A href=#81>ra02_k02_outcontce_n</A> ; (1 pterm, 1 signal)
+
+<A name=29>outFlagcc0.D</A> = <A href=#8>reset0</A> ; (1 pterm, 1 signal)
+outFlagcc0.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=27>outFlagk0.D</A> = <A href=#8>reset0</A> & !<A href=#20>outr0_3_.Q</A> & !<A href=#35>outr0_0_.Q</A> & <A href=#76>N_293_0_6</A>
+       & !<A href=#170>ra02_k02_n_118_i_n</A> & <A href=#202>ra02_k02_n_117_i_n</A> & <A href=#210>ra02_k02_n_122_i_n</A>
+    # reset0 & <A href=#26>inFlagk0.Q</A> & outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_0_.Q & !<A href=#74>RA02_K02_aux04.Q</A> & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & !outr0_3_.Q & <A href=#27>outFlagk0.Q</A> & !outr0_0_.Q & ra02_k02_n_118_i_n
+    # reset0 & outr0_3_.Q & outFlagk0.Q & !ra02_k02_n_118_i_n
+    # reset0 & outFlagk0.Q & outr0_0_.Q & !ra02_k02_n_118_i_n
+    # reset0 & outFlagk0.Q & !ra02_k02_n_117_i_n
+    # reset0 & outFlagk0.Q & !ra02_k02_n_122_i_n ; (9 pterms, 10 signals)
+outFlagk0.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=30>outFlagw0.D</A> = !( <A href=#8>reset0</A> & <A href=#9>wr0</A> & <A href=#21>outContWrite0_3_.Q</A> & !<A href=#22>outContRead0_3_.Q</A>
+       & <A href=#28>inFlagcc0.Q</A> & <A href=#75>RA05_outFlagcw.Q</A>
+    # reset0 & wr0 & !outContRead0_3_.Q & inFlagcc0.Q & RA05_outFlagcw.Q
+       & <A href=#150>ra03_n_34_0_n</A>
+    # reset0 & wr0 & outContWrite0_3_.Q & inFlagcc0.Q & RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # reset0 & !outContWrite0_3_.Q & outContRead0_3_.Q & !<A href=#30>outFlagw0.Q</A>
+    # reset0 & outContRead0_3_.Q & !outFlagw0.Q & !ra03_n_34_0_n
+    # reset0 & !outContWrite0_3_.Q & !outFlagw0.Q & !ra03_n_34_0_n
+    # reset0 & !inFlagcc0.Q & !outFlagw0.Q
+    # reset0 & !wr0 & !outFlagw0.Q ) ; (8 pterms, 8 signals)
+outFlagw0.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=46>outcc0_0_.D</A> = <A href=#8>reset0</A> & !<A href=#46>outcc0_0_.Q</A> ; (1 pterm, 2 signals)
+outcc0_0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outcc0_0_.CE = !( <A href=#8>reset0</A> & <A href=#28>inFlagcc0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=45>outcc0_1_.D</A> = <A href=#8>reset0</A> & !<A href=#45>outcc0_1_.Q</A> & <A href=#46>outcc0_0_.Q</A>
+    # reset0 & outcc0_1_.Q & !outcc0_0_.Q ; (2 pterms, 3 signals)
+outcc0_1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outcc0_1_.CE = !( <A href=#8>reset0</A> & <A href=#28>inFlagcc0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=44>outcc0_2_.D</A> = <A href=#8>reset0</A> & !<A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A> & <A href=#46>outcc0_0_.Q</A>
+    # reset0 & outcc0_2_.Q & !outcc0_1_.Q
+    # reset0 & outcc0_2_.Q & !outcc0_0_.Q ; (3 pterms, 4 signals)
+outcc0_2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outcc0_2_.CE = !( <A href=#8>reset0</A> & <A href=#28>inFlagcc0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=43>outcc0_3_.D</A> = <A href=#8>reset0</A> & !<A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A> & <A href=#46>outcc0_0_.Q</A>
+    # reset0 & outcc0_3_.Q & !outcc0_2_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_1_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_0_.Q ; (4 pterms, 5 signals)
+outcc0_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outcc0_3_.CE = !( <A href=#8>reset0</A> & <A href=#28>inFlagcc0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=42>outcc0_4_.D.X1</A> = <A href=#8>reset0</A> & <A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A>
+       & <A href=#46>outcc0_0_.Q</A> ; (1 pterm, 5 signals)
+outcc0_4_.D.X2 = <A href=#8>reset0</A> & <A href=#42>outcc0_4_.Q</A> ; (1 pterm, 2 signals)
+outcc0_4_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outcc0_4_.CE = !( <A href=#8>reset0</A> & <A href=#28>inFlagcc0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=23>outcc0_5_.T</A> = <A href=#8>reset0</A> & <A href=#42>outcc0_4_.Q</A> & <A href=#43>outcc0_3_.Q</A> & <A href=#44>outcc0_2_.Q</A> & <A href=#45>outcc0_1_.Q</A>
+       & <A href=#46>outcc0_0_.Q</A>
+    # !reset0 & <A href=#23>outcc0_5_.Q</A> ; (2 pterms, 7 signals)
+outcc0_5_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+outcc0_5_.CE = !( <A href=#8>reset0</A> & <A href=#28>inFlagcc0.Q</A> ) ; (1 pterm, 2 signals)
+
+<A name=35>outr0_0_.D</A> = <A href=#8>reset0</A> & <A href=#20>outr0_3_.Q</A> ; (1 pterm, 2 signals)
+outr0_0_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=34>outr0_1_.D</A> = <A href=#8>reset0</A> & <A href=#35>outr0_0_.Q</A> ; (1 pterm, 2 signals)
+outr0_1_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=33>outr0_2_.D</A> = <A href=#8>reset0</A> & <A href=#34>outr0_1_.Q</A> ; (1 pterm, 2 signals)
+outr0_2_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=20>outr0_3_.D</A> = <A href=#8>reset0</A> & <A href=#115>RA02_K01_sring_3_.Q</A> ; (1 pterm, 2 signals)
+outr0_3_.C = <A href=#25>clk0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=53>outword0_0_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#88>LCD03_outWordc_1_0_.Q</A>
+    # inFlagcc0.Q & <A href=#77>RA03_outWordm_0_.Q</A> ; (2 pterms, 3 signals)
+outword0_0_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=52>outword0_1_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#90>LCD03_outWordc_1_1_.Q</A>
+    # inFlagcc0.Q & <A href=#78>RA03_outWordm_1_.Q</A> ; (2 pterms, 3 signals)
+outword0_1_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=51>outword0_2_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#91>LCD03_outWordc_1_2_.Q</A>
+    # inFlagcc0.Q & <A href=#80>RA03_outWordm_2_.Q</A> ; (2 pterms, 3 signals)
+outword0_2_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=50>outword0_3_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#92>LCD03_outWordc_1_3_.Q</A>
+    # inFlagcc0.Q & <A href=#82>RA03_outWordm_3_.Q</A> ; (2 pterms, 3 signals)
+outword0_3_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=49>outword0_4_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#93>LCD03_outWordc_1_4_.Q</A>
+    # inFlagcc0.Q & <A href=#83>RA03_outWordm_4_.Q</A> ; (2 pterms, 3 signals)
+outword0_4_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=48>outword0_5_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#95>LCD03_outWordc_1_5_.Q</A>
+    # inFlagcc0.Q & <A href=#84>RA03_outWordm_5_.Q</A> ; (2 pterms, 3 signals)
+outword0_5_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=47>outword0_6_.D</A> = <A href=#28>inFlagcc0.Q</A> & <A href=#85>RA03_outWordm_6_.Q</A> ; (1 pterm, 2 signals)
+outword0_6_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=24>outword0_7_.D</A> = !<A href=#28>inFlagcc0.Q</A> & <A href=#97>LCD03_outWordc_1_7_.Q</A>
+    # inFlagcc0.Q & <A href=#86>RA03_outWordm_7_.Q</A> ; (2 pterms, 3 signals)
+outword0_7_.LH = <A href=#100>lcd06_pbuff_un2_inflagbuffwrite_n</A> ; (1 pterm, 1 signal)
+
+<A name=202>ra02_k02_n_117_i_n</A> = !<A href=#7>inkey0_3_</A> & !<A href=#17>inkey0_2_</A> & !<A href=#18>inkey0_1_</A>
+    # !inkey0_2_ & !inkey0_1_ & !<A href=#19>inkey0_0_</A>
+    # !inkey0_3_ & !inkey0_1_ & !inkey0_0_
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_0_ ; (4 pterms, 4 signals)
+
+<A name=170>ra02_k02_n_118_i_n</A> = !<A href=#33>outr0_2_.Q</A> & !<A href=#34>outr0_1_.Q</A> ; (1 pterm, 2 signals)
+
+<A name=210>ra02_k02_n_122_i_n</A> = !( <A href=#33>outr0_2_.Q</A> & <A href=#34>outr0_1_.Q</A>
+    # <A href=#20>outr0_3_.Q</A> & <A href=#35>outr0_0_.Q</A> ) ; (2 pterms, 4 signals)
+
+<A name=81>ra02_k02_outcontce_n.X1</A> = !<A href=#8>reset0</A>
+    # reset0 & !<A href=#20>outr0_3_.Q</A> & !<A href=#35>outr0_0_.Q</A> & <A href=#76>N_293_0_6</A> & <A href=#202>ra02_k02_n_117_i_n</A>
+       & <A href=#210>ra02_k02_n_122_i_n</A>
+    # reset0 & !<A href=#26>inFlagk0.Q</A> & outr0_0_.Q & <A href=#74>RA02_K02_aux04.Q</A> & N_293_0_6
+       & <A href=#170>ra02_k02_n_118_i_n</A> & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n ; (3 pterms, 9 signals)
+ra02_k02_outcontce_n.X2 = <A href=#8>reset0</A> & <A href=#76>N_293_0_6</A> & <A href=#170>ra02_k02_n_118_i_n</A>
+       & <A href=#202>ra02_k02_n_117_i_n</A> & <A href=#210>ra02_k02_n_122_i_n</A> ; (1 pterm, 5 signals)
+
+<A name=150>ra03_n_34_0_n</A> = !( !<A href=#36>outContWrite0_2_.Q</A> & !<A href=#38>outContWrite0_0_.Q</A>
+       & <A href=#40>outContRead0_1_.Q</A> & <A href=#41>outContRead0_0_.Q</A>
+    # !outContWrite0_2_.Q & !<A href=#37>outContWrite0_1_.Q</A> & !outContWrite0_0_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_2_.Q & !outContWrite0_1_.Q & outContRead0_1_.Q
+    # !outContWrite0_0_.Q & <A href=#39>outContRead0_2_.Q</A> & outContRead0_1_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_1_.Q & !outContWrite0_0_.Q & outContRead0_2_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_1_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+    # !outContWrite0_2_.Q & outContRead0_2_.Q ) ; (7 pterms, 6 signals)
+
+<A name=79>ra03_outflagm_0_sqmuxa_n</A> = <A href=#8>reset0</A> & !<A href=#9>wr0</A> & !<A href=#106>RA03_aux.Q</A>
+    # reset0 & !wr0 & <A href=#27>outFlagk0.Q</A> ; (2 pterms, 4 signals)
+
+<A name=108>ra03_outwordm_0_sqmuxa_n</A> = !( <A href=#9>wr0</A> & <A href=#21>outContWrite0_3_.Q</A> & !<A href=#22>outContRead0_3_.Q</A>
+       & <A href=#28>inFlagcc0.Q</A> & !<A href=#75>RA05_outFlagcw.Q</A>
+    # wr0 & !outContRead0_3_.Q & inFlagcc0.Q & !RA05_outFlagcw.Q
+       & <A href=#150>ra03_n_34_0_n</A>
+    # wr0 & outContWrite0_3_.Q & inFlagcc0.Q & !RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # !<A href=#8>reset0</A> ) ; (4 pterms, 7 signals)
+
+<A name=120>ra05_outcontreade_0_n</A> = <A href=#9>wr0</A> & !<A href=#30>outFlagw0.Q</A>
+    # wr0 & !<A href=#255>ra05_rscw_0_sqmuxa_n</A> ; (2 pterms, 3 signals)
+
+<A name=255>ra05_rscw_0_sqmuxa_n.X1</A> = <A href=#28>inFlagcc0.Q</A> & <A href=#36>outContWrite0_2_.Q</A>
+       & !<A href=#39>outContRead0_2_.Q</A>
+    # inFlagcc0.Q & outContWrite0_2_.Q & <A href=#37>outContWrite0_1_.Q</A>
+       & !<A href=#40>outContRead0_1_.Q</A>
+    # inFlagcc0.Q & outContWrite0_1_.Q & !outContRead0_2_.Q
+       & !outContRead0_1_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & <A href=#38>outContWrite0_0_.Q</A> & !<A href=#41>outContRead0_0_.Q</A>
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_0_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_1_.Q & outContWrite0_0_.Q
+       & !outContRead0_2_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_0_.Q & !outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q
+    # !<A href=#21>outContWrite0_3_.Q</A> & <A href=#22>outContRead0_3_.Q</A>
+    # outContWrite0_3_.Q & !outContRead0_3_.Q & inFlagcc0.Q ; (9 pterms, 9 signals)
+ra05_rscw_0_sqmuxa_n.X2 = !<A href=#21>outContWrite0_3_.Q</A> & <A href=#22>outContRead0_3_.Q</A> ; (1 pterm, 2 signals)
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+

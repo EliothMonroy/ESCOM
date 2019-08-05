@@ -1,0 +1,35 @@
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":8:7:8:14|Synthesizing work.toplcd00.arch.
+@W: CD638 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":50:7:50:10|Signal srwc is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":7:7:7:14|Synthesizing work.lcdmux00.arch.
+Post processing for work.lcdmux00.arch
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":7:7:7:15|Synthesizing work.lcddata00.arch.
+Post processing for work.lcddata00.arch
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":47:2:47:3|Register bit outFlagdd is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":47:2:47:3|Register bit outworddd(7) is always 0.
+@W: CL260 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":47:2:47:3|Pruning register bit 7 of outworddd(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl":7:7:7:19|Synthesizing work.lcdcontdata00.arch.
+Post processing for work.lcdcontdata00.arch
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl":24:2:24:3|Register bit RScd is always 1.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl":24:2:24:3|Register bit RWcd is always 0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":7:7:7:17|Synthesizing work.lcdconfig00.arch.
+Post processing for work.lcdconfig00.arch
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontconfig00.vhdl":7:7:7:21|Synthesizing work.lcdcontconfig00.arch.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontconfig00.vhdl":31:7:31:15|Removing redundant assignment.
+Post processing for work.lcdcontconfig00.arch
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.toplcd00.arch
+@W: CL240 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":50:7:50:10|Signal sRWc is floating; a simulation mismatch is possible.
+@W: CL167 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":97:1:97:3|Input rwc of instance L05 is floating
+@W: CL138 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Removing register 'RSc' because it is only assigned 0 or its original value.
+@W: CL138 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Removing register 'RWc' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Register bit comandoc(6) is always 0.
+@W: CL260 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Pruning register bit 6 of comandoc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL159 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":12:2:12:10|Input inflagdlm is unused.

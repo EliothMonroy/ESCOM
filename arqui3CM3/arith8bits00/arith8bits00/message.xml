@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001104</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>24</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103737</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>LOCATE COMP &quot;LED&quot; SITE &quot;24&quot; ;
+</Dynamic>
+            <Dynamic>LOCATE COMP &quot;So[7]&quot; SITE &quot;24&quot; ;
+</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>So_cry_0_0_S0</Dynamic>
+            <Navigation>So_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>So_s_7_0_S1</Dynamic>
+            <Navigation>So_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>So_s_7_0_COUT</Dynamic>
+            <Navigation>So_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\arith8bits00\arith8bits00.vhdl&quot;:13:2:13:4|Signal LED is floating; a simulation mismatch is possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\arith8bits00\arith8bits00.vhdl</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Signal LED is floating; a simulation mismatch is possible.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,7 @@
+MESSAGE "File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl" 
+MESSAGE "Compile Entity "toplcdram00"" 
+ERROR COMP96_0078: "Unknown identifier "packagelcdram00"." "C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl" 5 5
+ERROR VLM_0030: "Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed." "C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl" 7 13
+MESSAGE "Compile Architecture "toplcdram0" of Entity "toplcdram00"" 
+ERROR COMP96_0056: "Cannot find referenced entity declaration "toplcdram00"." "C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl" 35 1
+FAILURE "Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]" 

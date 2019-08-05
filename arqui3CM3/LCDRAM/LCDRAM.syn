@@ -1,0 +1,35 @@
+JDF B
+// Created by Version 2.0 
+PROJECT LCDRAM
+DESIGN lcdram Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure VHDL
+MODULE contring00.vhd
+MODSTYLE contring00 Normal
+MODULE config00.vhd
+MODSTYLE config00 Normal
+MODULE contconfig00.vhd
+MODSTYLE contconfig00 Normal
+MODULE div00.vhd
+MODSTYLE div00 Normal
+MODULE toplcdram00.vhd
+MODSTYLE toplcdram00 Normal
+MODULE packagelcdram00.vhd
+MODSTYLE packageLCDRAM00 Normal
+MODULE coder00.vhd
+MODSTYLE coder00 Normal
+MODULE ram00.vhd
+MODSTYLE ram00 Normal
+MODULE topkey00.vhd
+MODSTYLE topkey00 Normal
+MODULE packagekey00.vhd
+MODSTYLE packagekey00 Normal
+MODULE contread00.vhd
+MODSTYLE contRead00 Normal
+MODULE bufferlcd00.vhd
+MODSTYLE bufferlcd00 Normal
+MODULE osc00.vhd
+MODSTYLE osc00 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE toplcdram00

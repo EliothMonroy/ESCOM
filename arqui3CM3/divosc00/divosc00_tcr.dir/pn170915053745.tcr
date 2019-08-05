@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/15/2017 05:27:52
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00; Project name: divosc00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00/divosc00.ldf"
+prj_run Export -impl divosc00 -task Jedecgen
+prj_project save
+#Stop recording: 9/15/2017 05:37:45

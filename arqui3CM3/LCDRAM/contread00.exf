@@ -1,0 +1,97 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      inContKey(3:0)                inContKey                  3          4            -1
+      Port          2      outContRead(3:0)               outContRead                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      inContKey_3_                inContKey[3]                       1            0            
+        Port      inContKey_2_                inContKey[2]                       1            1            
+        Port      inContKey_1_                inContKey[1]                       1            2            
+        Port      inContKey_0_                inContKey[0]                       1            3            
+        Port      outContRead_3_               outContRead[3]                       2            0            
+        Port      outContRead_2_               outContRead[2]                       2            1            
+        Port      outContRead_1_               outContRead[1]                       2            2            
+        Port      outContRead_0_               outContRead[0]                       2            3            
+End
+Section Cross Reference File
+Design 'contRead00' created Wed May 18 21:58:03 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst     outContReadDFFC_1_                        outContReadDFFC[1]
+   Inst     outContReadDFFC_2_                        outContReadDFFC[2]
+   Inst     outContReadDFFC_3_                        outContReadDFFC[3]
+   Inst     outContReadDFFC_0_                        outContReadDFFC[0]
+   Inst           inContKey_0_                              inContKey[0]
+   Inst           inContKey_1_                              inContKey[1]
+   Inst           inContKey_2_                              inContKey[2]
+   Inst           inContKey_3_                              inContKey[3]
+   Inst         outContRead_0_                            outContRead[0]
+   Inst         outContRead_1_                            outContRead[1]
+   Inst         outContRead_2_                            outContRead[2]
+   Inst         outContRead_3_                            outContRead[3]
+   Inst    pcont_ENcw_3_iv_0_i                       pcont.ENcw_3_iv_0_i
+   Inst       inContKey_c_i_2_                          inContKey_c_i[2]
+   Inst       inContKey_c_i_1_                          inContKey_c_i[1]
+   Inst       inContKey_c_i_3_                          inContKey_c_i[3]
+   Inst       outContRead_i_2_                          outContRead_i[2]
+   Inst       outContRead_i_3_                          outContRead_i[3]
+   Inst          outFlagcw_0_r                             outFlagcw_0.r
+   Inst          outFlagcw_0_m                             outFlagcw_0.m
+   Inst          outFlagcw_0_n                             outFlagcw_0.n
+   Inst          outFlagcw_0_p                             outFlagcw_0.p
+   Inst       outContRead_i_0_                          outContRead_i[0]
+   Inst       outContRead_i_1_                          outContRead_i[1]
+   Inst      pcont_ENcw_3_iv_0                         pcont.ENcw_3_iv_0
+   Inst   pcont_ENcw_3_iv_0_a3_0                    pcont.ENcw_3_iv_0_a3_0
+   Inst   pcont_ENcw_3_iv_0_a3                      pcont.ENcw_3_iv_0_a3
+   Net                 gnd_n_n                                       GND
+   Net                 vcc_n_n                                       VCC
+   Net    pcont_un1_outcontread_n                     pcont.un1_outcontread
+   Net          pcont_encw_3_n                              pcont.ENcw_3
+   Net      outcontread_i_3__n                          outContRead_i[3]
+   Net      outcontread_i_2__n                          outContRead_i[2]
+   Net      outcontread_i_1__n                          outContRead_i[1]
+   Net      outcontread_i_0__n                          outContRead_i[0]
+   Net        incontkey_c_0__n                            inContKey_c[0]
+   Net          incontkey_0__n                              inContKey[0]
+   Net        incontkey_c_1__n                            inContKey_c[1]
+   Net          incontkey_1__n                              inContKey[1]
+   Net        incontkey_c_2__n                            inContKey_c[2]
+   Net          incontkey_2__n                              inContKey[2]
+   Net        incontkey_c_3__n                            inContKey_c[3]
+   Net      outcontread_c_0__n                          outContRead_c[0]
+   Net        outcontread_0__n                            outContRead[0]
+   Net      outcontread_c_1__n                          outContRead_c[1]
+   Net        outcontread_1__n                            outContRead[1]
+   Net      outcontread_c_2__n                          outContRead_c[2]
+   Net        outcontread_2__n                            outContRead[2]
+   Net      outcontread_c_3__n                          outContRead_c[3]
+   Net      incontkey_c_i_3__n                          inContKey_c_i[3]
+   Net      incontkey_c_i_2__n                          inContKey_c_i[2]
+   Net      incontkey_c_i_1__n                          inContKey_c_i[1]
+   Net    pcont_un1_outcontread_i_n                   pcont.un1_outcontread_i
+   Net        pcont_encw_3_0_n                            pcont.ENcw_3_0
+   Net       outflagcw_0_un3_n                           outFlagcw_0.un3
+   Net       outflagcw_0_un1_n                           outFlagcw_0.un1
+   Net       outflagcw_0_un0_n                           outFlagcw_0.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     inContKey_3_
+        Input     clkcont
+        Input     wrCont
+        Input     inFlagcw
+        Input     inFlagx
+        Input     inContKey_2_
+        Input     inContKey_1_
+        Input     inContKey_0_
+        Output     outContRead_3_
+        Output     RWcw
+        Output     RScw
+        Output     ENcw
+        Output     outFlagcw
+        Output     outContRead_2_
+        Output     outContRead_1_
+        Output     outContRead_0_
+End

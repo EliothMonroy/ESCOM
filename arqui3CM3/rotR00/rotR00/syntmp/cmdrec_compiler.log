@@ -1,0 +1,14 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe  -osyn  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\synwork\rotR00_rotR00_comp.srs  -top  toprotR00  -hdllog  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\synlog\rotR00_rotR00_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\div00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\osc00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\packagediv00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\packagerotR00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\toposcdiv00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\toprotR00.vhdl 
+rc:0 success:1 runtime:2
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\synwork\rotR00_rotR00_comp.srs|io:o|time:1505791913|size:7023|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\synlog\rotR00_rotR00_compiler.srr|io:o|time:1505791913|size:3435|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\div00.vhdl|io:i|time:1505519415|size:2058|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\osc00.vhdl|io:i|time:1504638028|size:523|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\packagediv00.vhdl|io:i|time:1505519415|size:402|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\packagerotR00.vhdl|io:i|time:1505791823|size:573|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\toposcdiv00.vhdl|io:i|time:1505519415|size:507|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00.vhdl|io:i|time:1505791771|size:1072|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\toprotR00.vhdl|io:i|time:1505791904|size:982|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_hdl.exe|io:i|time:1489222768|size:1338368|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe|io:i|time:1489222974|size:1754112|exec:1

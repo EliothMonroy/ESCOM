@@ -1,0 +1,270 @@
+
+         Lattice Mapping Report File for Design Module 'compuertas00'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     compuertas00_compuertas00.ngd -o compuertas00_compuertas00_map.ncd -pr
+     compuertas00_compuertas00.prf -mp compuertas00_compuertas00.mrp -lpf C:/Use
+     rs/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00/compuertas00_
+     compuertas00_synplify.lpf -lpf
+     C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00.lpf -c
+     0 -gui -msgset
+     C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  09/12/17  22:47:33
+
+Design Summary
+--------------
+
+   Number of registers:      8 out of  7209 (0%)
+      PFU registers:            8 out of  6864 (0%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        16 out of  3432 (0%)
+      SLICEs as Logic/ROM:     16 out of  3432 (0%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:         17 out of  6864 (0%)
+      Number used as logic LUTs:         17
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 27 + 4(JTAG) out of 115 (27%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+
+                                    Page 1
+
+
+
+
+Design:  compuertas00                                  Date:  09/12/17  22:47:33
+
+Design Summary (cont)
+---------------------
+     Net pcom.un1_selector_i: 8 loads, 8 rising, 0 falling (Driver:
+     selector_pad_RNIQT3R[1] )
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net selector_c[0]: 17 loads
+     Net selector_c[2]: 17 loads
+     Net selector_c[1]: 9 loads
+     Net A_c[7]: 2 loads
+     Net B_c[2]: 2 loads
+     Net B_c[3]: 2 loads
+     Net B_c[4]: 2 loads
+     Net B_c[5]: 2 loads
+     Net B_c[6]: 2 loads
+     Net B_c[7]: 2 loads
+
+
+
+
+   Number of warnings:  8
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_0" SITE "13" ;
+        Keeping LOCATE COMP "Y[0]" SITE "13" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_1" SITE "14" ;
+        Keeping LOCATE COMP "Y[1]" SITE "14" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_2" SITE "19" ;
+        Keeping LOCATE COMP "Y[2]" SITE "19" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_3" SITE "20" ;
+        Keeping LOCATE COMP "Y[3]" SITE "20" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_4" SITE "21" ;
+        Keeping LOCATE COMP "Y[4]" SITE "21" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_5" SITE "22" ;
+        Keeping LOCATE COMP "Y[5]" SITE "22" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_6" SITE "23" ;
+        Keeping LOCATE COMP "Y[6]" SITE "23" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+
+                                    Page 2
+
+
+
+
+Design:  compuertas00                                  Date:  09/12/17  22:47:33
+
+Design Errors/Warnings (cont)
+-----------------------------
+     "SLICE_7" SITE "24" ;
+        Keeping LOCATE COMP "Y[7]" SITE "24" ;
+     .
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| Y[0]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| selector[0]         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[7]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[6]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[5]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[4]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[3]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[2]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| Y[1]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[7]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[6]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[5]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[4]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[3]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[2]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[1]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B[0]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[7]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[6]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[5]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[4]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[3]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[2]                | INPUT     | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  compuertas00                                  Date:  09/12/17  22:47:33
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| A[1]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A[0]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| selector[2]         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| selector[1]         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+
+Memory Usage
+------------
+
+
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 58 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

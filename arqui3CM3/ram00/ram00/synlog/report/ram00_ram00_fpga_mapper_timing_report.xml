@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synlog\ram00_ram00_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>div00|outdiv_derived_clock</data>
+<data>2.1 MHz</data>
+<data>440.8 MHz</data>
+<data>479.269</data>
+</row>
+<row>
+<data>osc00|osc_int_inferred_clock</data>
+<data>2.1 MHz</data>
+<data>91.6 MHz</data>
+<data>469.852</data>
+</row>
+</report_table>

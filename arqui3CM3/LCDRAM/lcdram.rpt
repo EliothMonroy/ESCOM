@@ -1,0 +1,2298 @@
+|--------------------------------------------------------------|
+|- ispLEVER Classic 2.0.00.17.20.15 Fitter Report File        -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+
+
+The Basic/Detailed Report Format can be selected in the dialog box
+Tools->Fitter Report File Format...
+
+Project_Summary
+~~~~~~~~~~~~~~~
+Project Name         :  lcdram
+Project Path         :  C:\Users\Alberto Rios\Documents\IPN\ESCOM\5semestre\Arquitectura\VHDL\LCDRAM
+Project Fitted on    :  Wed May 18 22:06:40 2016
+
+Device               :  M4256_96
+Package              :  144
+GLB Input Mux Size   :  33
+Available Blocks     :  16
+Speed                :  -5.8
+Part Number          :  LC4256ZE-5TN144C
+Source Format        :  Pure_VHDL
+
+
+// Project 'lcdram' Fit Successfully! //
+
+
+Compilation_Times
+~~~~~~~~~~~~~~~~~
+Prefit Time                     0 secs
+Load Design Time                0.03 secs
+Partition Time                  1.16 secs
+Place Time                      5.16 secs
+Route Time                      0.00 secs
+Total Fit Time                  00:00:06
+
+
+Design_Summary
+~~~~~~~~~~~~~~
+Total Input Pins                12
+Total Logic Functions           253
+  Total Output Pins             36
+  Total Bidir I/O Pins          0
+  Total Buried Nodes            217
+Total Flip-Flops                205
+  Total D Flip-Flops            182
+  Total T Flip-Flops            4
+  Total Latches                 19
+Total Product Terms             936
+
+Total Reserved Pins             0
+Total Locked Pins               48
+Total Locked Nodes              2
+
+Total Unique Output Enables     0
+Total Unique Clocks             12
+Total Unique Clock Enables      23
+Total Unique Resets             9
+Total Unique Presets            0
+
+Fmax Logic Levels               3
+
+
+Device_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                 Device
+                                 Total    Used   Not Used   Utilization
+-----------------------------------------------------------------------
+Dedicated Pins
+  Clock/Input Pins                  4        0      4    -->     0
+  Input-Only Pins                  10        2      8    -->    20
+  I/O / Enable Pins                 2        1      1    -->    50
+I/O Pins                           94       45     49    -->    47
+Logic Functions                   256      251      5    -->    98
+  Input Registers                  96        0     96    -->     0
+
+GLB Inputs                        576      456    120    -->    79
+Logical Product Terms            1280      756    524    -->    59
+Occupied GLBs                      16       16      0    -->   100
+Macrocells                        256      251      5    -->    98
+
+Control Product Terms:
+  GLB Clock/Clock Enables          16       16      0    -->   100
+  GLB Reset/Presets                16        0     16    -->     0
+  Macrocell Clocks                256       24    232    -->     9
+  Macrocell Clock Enables         256      157     99    -->    61
+  Macrocell Enables               256        0    256    -->     0
+  Macrocell Resets                256        8    248    -->     3
+  Macrocell Presets               256        0    256    -->     0
+
+Global Routing Pool               356      251    105    -->    70
+  GRP from IFB                     ..       10     ..    -->    ..
+    (from input signals)           ..       10     ..    -->    ..
+    (from output signals)          ..        0     ..    -->    ..
+    (from bidir signals)           ..        0     ..    -->    ..
+  GRP from MFB                     ..      241     ..    -->    ..
+----------------------------------------------------------------------
+
+<Note> 1 : The available PT is the product term that has not been used.
+<Note> 2 : IFB is I/O feedback.
+<Note> 3 : MFB is macrocell feedback.
+
+
+
+GLB_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~
+                                                                                     # of PT
+               ---  Fanin  ---    I/O    Input  Macrocells       Macrocells   Logic  clusters
+             Unique Shared Total  Pins    Regs Used Inaccessible  available    PTs   used
+-------------------------------------------------------------------------------------------
+Maximum
+  GLB                      36      *(1)     8   --     --             16       80       16
+-------------------------------------------------------------------------------------------
+  GLB    A      6    19    25      3/6      0   16      0              0       55       16
+  GLB    B     19    10    29      5/6      0   16      0              0       37       16
+  GLB    C     19    14    33      4/6      0   15      1              0       50       15
+  GLB    D     20    15    35      1/6      0   15      0              1       52       14
+-------------------------------------------------------------------------------------------
+  GLB    E     26     8    34      0/6      0   15      1              0       46       16
+  GLB    F     26    10    36      4/6      0   15      1              0       47       15
+  GLB    G      6    11    17      4/6      0   16      0              0       32       16
+  GLB    H     24     9    33      6/6      0   16      0              0       44       16
+-------------------------------------------------------------------------------------------
+  GLB    I      7    24    31      4/6      0   16      0              0       55       16
+  GLB    J      0    17    17      0/6      0   16      0              0       56       16
+  GLB    K     24     7    31      3/6      0   16      0              0       47       16
+  GLB    L      7    12    19      1/6      0   16      0              0       38       16
+-------------------------------------------------------------------------------------------
+  GLB    M     15    14    29      4/6      0   16      0              0       38       16
+  GLB    N      3    16    19      3/6      0   16      0              0       48       15
+  GLB    O     14    18    32      0/6      0   16      0              0       48       15
+  GLB    P     19    17    36      3/6      0   15      0              1       63       16
+-------------------------------------------------------------------------------------------
+TOTALS:       235   221   456     45/96     0  251      3              2      756      250
+
+<Note> 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
+<Note> 2 : Four rightmost columns above reflect last status of the placement process.
+
+
+
+GLB_Control_Summary
+~~~~~~~~~~~~~~~~~~~
+           Shared Shared | Mcell  Mcell  Mcell  Mcell  Mcell 
+           Clk/CE Rst/Pr | Clock  CE     Enable Reset  Preset
+------------------------------------------------------------------------------
+Maximum
+  GLB        1      1        16     16     16     16     16  
+==============================================================================
+  GLB    A   1      0         2     10      0      0      0
+  GLB    B   1      0         5      8      0      0      0
+  GLB    C   1      0         0     14      0      0      0
+  GLB    D   1      0         0     10      0      0      0
+------------------------------------------------------------------------------
+  GLB    E   1      0         0     15      0      0      0
+  GLB    F   1      0         1     12      0      0      0
+  GLB    G   1      0         2     12      0      0      0
+  GLB    H   1      0         0     13      0      0      0
+------------------------------------------------------------------------------
+  GLB    I   1      0         4      2      0      4      0
+  GLB    J   1      0         0      7      0      0      0
+  GLB    K   1      0         0     15      0      0      0
+  GLB    L   1      0         3      0      0      3      0
+------------------------------------------------------------------------------
+  GLB    M   1      0         1      8      0      0      0
+  GLB    N   1      0         5     14      0      0      0
+  GLB    O   1      0         1      5      0      1      0
+  GLB    P   1      0         0     12      0      0      0
+------------------------------------------------------------------------------
+
+<Note> 1 : For ispMACH 4000 devices, the number of output enables depends on the GLB.
+
+
+
+Optimizer_and_Fitter_Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              No
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    FMAX
+  Fmax_Logic_Level :                   1
+  D/T Synthesis :                      Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          80
+  Max Symbols :                        24
+
+@Utilization_options
+  Max. % of Macrocells used :          100
+@Usercode                               (HEX)
+@IO_Types                              Default = LVCMOS18 (2)
+@Output_Slew_Rate                      Default = FAST (2)
+@Power                                 Default = HIGH (2)
+@Pull                                  Default = PULLUP_DOWN (2)
+@Input_Registers                       Default = None (2)
+@Register_Powerup                      Default = None
+
+Device Options:
+<Note> 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+<Note> 2 : For user-specified constraints on individual signals, refer to the Output,
+           Bidir and Buried Signal Lists.
+
+
+
+OSCTIMER_Summary
+~~~~~~~~~~~~~~~~
+OSCTIMER:                         Pin/Node
+  OSCTIMER Instance Name                    K00_inst11
+  Dynamic Disable Signal                    osc_oscdis0
+  Timer Reset Signal                        osc_tmrrst0
+  Oscillator Output Clock         mfb C-15  oscout0_c
+  Timer Output Clock              mfb F-15  tmrout
+
+  Oscillator Output Clock Frequency         5.0000 MHz
+  Timer Output Clock Frequency              4.8828 KHz
+  Timer Divider                             1024
+
+
+Pinout_Listing
+~~~~~~~~~~~~~~
+      | Pin   | Bank |GLB |Assigned|                 | Signal|            | PG
+Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enable
+--------------------------------------------------------------------------------------------------------
+1     | GND   |   -  |    |        |                 |       |            |
+2     | TDI   |   -  |    |        |                 |       |            |
+3     |VCCIO0 |   -  |    |        |                 |       |            |
+4     |  I_O  |   0  |C12 |    *   |LVCMOS18         | Output|outContRead0|
+5     |  I_O  |   0  |C10 |    *   |LVCMOS18         | Output|outContRead0|
+6     |  I_O  |   0  |C8  |    *   |LVCMOS18         | Output|outContRead0|
+7     |  I_O  |   0  |C6  |    *   |LVCMOS18         | Output|outContRead0|
+8     |  I_O  |   0  |C4  |        |                 |       |            |
+9     |  I_O  |   0  |C2  |        |                 |       |            |
+10    |GNDIO0 |   -  |    |        |                 |       |            |
+11    |  I_O  |   0  |D14 |        |                 |       |            |
+12    |  I_O  |   0  |D12 |        |                 |       |            |
+13    |  I_O  |   0  |D10 |    *   |LVCMOS18         | Output|outFlagw0   |
+14    |  I_O  |   0  |D8  |        |                 |       |            |
+15    |  I_O  |   0  |D6  |        |                 |       |            |
+16    |  I_O  |   0  |D4  |        |                 |       |            |
+17    | IN0   |   0  |    |        |                 |       |            |
+18    | NC    |   -  |    |        |                 |       |            |
+19    |VCCIO0 |   -  |    |        |                 |       |            |
+20    | IN1   |   0  |    |        |                 |       |            |
+21    |  I_O  |   0  |E2  |        |                 |       |            |
+22    |  I_O  |   0  |E4  |        |                 |       |            |
+23    |  I_O  |   0  |E6  |        |                 |       |            |
+24    |  I_O  |   0  |E8  |        |                 |       |            |
+25    |  I_O  |   0  |E10 |        |                 |       |            |
+26    |  I_O  |   0  |E12 |        |                 |       |            |
+27    |GNDIO0 |   -  |    |        |                 |       |            |
+28    |  I_O  |   0  |F2  |    *   |LVCMOS18         | Output|outContWrite|
+29    |  I_O  |   0  |F4  |    *   |LVCMOS18         | Output|outContWrite|
+30    |  I_O  |   0  |F6  |        |                 |       |            |
+31    |  I_O  |   0  |F8  |        |                 |       |            |
+32    |  I_O  |   0  |F10 |    *   |LVCMOS18         | Output|RW0         |
+33    |  I_O  |   0  |F12 |    *   |LVCMOS18         | Output|outword0_0_ |
+34    |VCCIO0 |   -  |    |        |                 |       |            |
+35    | TCK   |   -  |    |        |                 |       |            |
+36    | VCC   |   -  |    |        |                 |       |            |
+37    | GND   |   -  |    |        |                 |       |            |
+38    | IN2   |   0  |    |    *   |LVCMOS18         | Input |oscdis0     |
+39    |  I_O  |   0  |G12 |    *   |LVCMOS18         | Output|outword0_1_ |
+40    |  I_O  |   0  |G10 |        |                 |       |            |
+41    |  I_O  |   0  |G8  |        |                 |       |            |
+42    |  I_O  |   0  |G6  |    *   |LVCMOS18         | Output|outword0_4_ |
+43    |  I_O  |   0  |G4  |    *   |LVCMOS18         | Output|outr0_3_    |
+44    |  I_O  |   0  |G2  |    *   |LVCMOS18         | Output|outr0_2_    |
+45    | IN3   |   0  |    |    *   |LVCMOS18         | Input |tmrrst0     |
+46    |GNDIO0 |   -  |    |        |                 |       |            |
+47    |VCCIO0 |   -  |    |        |                 |       |            |
+48    |  I_O  |   0  |H12 |    *   |LVCMOS18         | Output|outr0_1_    |
+49    |  I_O  |   0  |H10 |    *   |LVCMOS18         | Output|outr0_0_    |
+50    |  I_O  |   0  |H8  |    *   |LVCMOS18         | Input |inkey0_0_   |
+51    |  I_O  |   0  |H6  |    *   |LVCMOS18         | Input |inkey0_1_   |
+52    |  I_O  |   0  |H4  |    *   |LVCMOS18         | Input |inkey0_2_   |
+53    |  I_O  |   0  |H2  |    *   |LVCMOS18         | Input |inkey0_3_   |
+54    |INCLK1 |   0  |    |        |                 |       |            |
+55    |GNDIO1 |   -  |    |        |                 |       |            |
+56    |INCLK2 |   1  |    |        |                 |       |            |
+57    | VCC   |   -  |    |        |                 |       |            |
+58    |  I_O  |   1  |I2  |    *   |LVCMOS18         | Output|inFlagcc0   |
+59    |  I_O  |   1  |I4  |    *   |LVCMOS18         | Output|inFlagk0    |
+60    |  I_O  |   1  |I6  |    *   |LVCMOS18         | Output|outFlagk0   |
+61    |  I_O  |   1  |I8  |    *   |LVCMOS18         | Output|outFlagcc0  |
+62    |  I_O  |   1  |I10 |        |                 |       |            |
+63    |  I_O  |   1  |I12 |        |                 |       |            |
+64    |VCCIO1 |   -  |    |        |                 |       |            |
+65    |GNDIO1 |   -  |    |        |                 |       |            |
+66    |  I_O  |   1  |J2  |        |                 |       |            |
+67    |  I_O  |   1  |J4  |        |                 |       |            |
+68    |  I_O  |   1  |J6  |        |                 |       |            |
+69    |  I_O  |   1  |J8  |        |                 |       |            |
+70    |  I_O  |   1  |J10 |        |                 |       |            |
+71    |  I_O  |   1  |J12 |        |                 |       |            |
+72    | IN4   |   0  |    |        |                 |       |            |
+73    | GND   |   -  |    |        |                 |       |            |
+74    | TMS   |   -  |    |        |                 |       |            |
+75    |VCCIO1 |   -  |    |        |                 |       |            |
+76    |  I_O  |   1  |K12 |    *   |LVCMOS18         | Input |cdiv00_2_   |
+77    |  I_O  |   1  |K10 |    *   |LVCMOS18         | Input |cdiv00_0_   |
+78    |  I_O  |   1  |K8  |        |                 |       |            |
+79    |  I_O  |   1  |K6  |        |                 |       |            |
+80    |  I_O  |   1  |K4  |        |                 |       |            |
+81    |  I_O  |   1  |K2  |    *   |LVCMOS18         | Input |reset0      |
+82    |GNDIO1 |   -  |    |        |                 |       |            |
+83    |  I_O  |   1  |L14 |        |                 |       |            |
+84    |  I_O  |   1  |L12 |        |                 |       |            |
+85    |  I_O  |   1  |L10 |        |                 |       |            |
+86    |  I_O  |   1  |L8  |        |                 |       |            |
+87    |  I_O  |   1  |L6  |    *   |LVCMOS18         | Input |wr0         |
+88    |  I_O  |   1  |L4  |        |                 |       |            |
+89    | IN5   |   1  |    |        |                 |       |            |
+90    | NC    |   -  |    |        |                 |       |            |
+91    |VCCIO1 |   -  |    |        |                 |       |            |
+92    | IN6   |   1  |    |        |                 |       |            |
+93    |  I_O  |   1  |M2  |        |                 |       |            |
+94    |  I_O  |   1  |M4  |        |                 |       |            |
+95    |  I_O  |   1  |M6  |    *   |LVCMOS18         | Output|outcc0_4_   |
+96    |  I_O  |   1  |M8  |    *   |LVCMOS18         | Output|outcc0_2_   |
+97    |  I_O  |   1  |M10 |    *   |LVCMOS18         | Output|outcc0_0_   |
+98    |  I_O  |   1  |M12 |    *   |LVCMOS18         | Output|clk0        |
+99    |GNDIO1 |   -  |    |        |                 |       |            |
+100   |  I_O  |   1  |N2  |    *   |LVCMOS18         | Input |cdiv00_3_   |
+101   |  I_O  |   1  |N4  |    *   |LVCMOS18         | Input |cdiv00_1_   |
+102   |  I_O  |   1  |N6  |        |                 |       |            |
+103   |  I_O  |   1  |N8  |        |                 |       |            |
+104   |  I_O  |   1  |N10 |    *   |LVCMOS18         | Output|oscout0     |
+105   |  I_O  |   1  |N12 |        |                 |       |            |
+106   |VCCIO1 |   -  |    |        |                 |       |            |
+107   | TDO   |   -  |    |        |                 |       |            |
+108   | VCC   |   -  |    |        |                 |       |            |
+109   | GND   |   -  |    |        |                 |       |            |
+110   | IN7   |   1  |    |        |                 |       |            |
+111   |  I_O  |   1  |O12 |        |                 |       |            |
+112   |  I_O  |   1  |O10 |        |                 |       |            |
+113   |  I_O  |   1  |O8  |        |                 |       |            |
+114   |  I_O  |   1  |O6  |        |                 |       |            |
+115   |  I_O  |   1  |O4  |        |                 |       |            |
+116   |  I_O  |   1  |O2  |        |                 |       |            |
+117   | IN8   |   1  |    |        |                 |       |            |
+118   |GNDIO1 |   -  |    |        |                 |       |            |
+119   |VCCIO1 |   -  |    |        |                 |       |            |
+120   |  I_O  |   1  |P12 |        |                 |       |            |
+121   |  I_O  |   1  |P10 |        |                 |       |            |
+122   |  I_O  |   1  |P8  |    *   |LVCMOS18         | Output|outcc0_5_   |
+123   |  I_O  |   1  |P6  |    *   |LVCMOS18         | Output|outcc0_3_   |
+124   |  I_O  |   1  |P4  |    *   |LVCMOS18         | Output|outcc0_1_   |
+125   | I_O/OE|   1  |P2  |        |                 |       |            |
+126   |INCLK3 |   1  |    |        |                 |       |            |
+127   |GNDIO0 |   -  |    |        |                 |       |            |
+128   |INCLK0 |   0  |    |        |                 |       |            |
+129   | VCC   |   -  |    |        |                 |       |            |
+130   | I_O/OE|   0  |A2  |    *   |LVCMOS18         | Output|outContWrite|
+131   |  I_O  |   0  |A4  |    *   |LVCMOS18         | Output|outContWrite|
+132   |  I_O  |   0  |A6  |        |                 |       |            |
+133   |  I_O  |   0  |A8  |        |                 |       |            |
+134   |  I_O  |   0  |A10 |    *   |LVCMOS18         | Output|RS0         |
+135   |  I_O  |   0  |A12 |    *   |LVCMOS18         | Output|EN0         |
+136   |VCCIO0 |   -  |    |        |                 |       |            |
+137   |GNDIO0 |   -  |    |        |                 |       |            |
+138   |  I_O  |   0  |B2  |    *   |LVCMOS18         | Output|outword0_2_ |
+139   |  I_O  |   0  |B4  |    *   |LVCMOS18         | Output|outword0_3_ |
+140   |  I_O  |   0  |B6  |    *   |LVCMOS18         | Output|outword0_5_ |
+141   |  I_O  |   0  |B8  |    *   |LVCMOS18         | Output|outword0_6_ |
+142   |  I_O  |   0  |B10 |    *   |LVCMOS18         | Output|outword0_7_ |
+143   |  I_O  |   0  |B12 |        |                 |       |            |
+144   | IN9   |   0  |    |        |                 |       |            |
+--------------------------------------------------------------------------------------------------------
+
+<Note> GLB Pad : This notation refers to the GLB I/O pad number in the device.
+<Note> Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+<Note> Pin Type : 
+          ClkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           I_O  : Input/Output pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+
+Input_Signal_List
+~~~~~~~~~~~~~~~~~
+                Input
+         Pin    Fanout
+ Pin GLB Type                       Pullup Signal
+----------------------------------------------------
+  77   K  I/O   3  -B-------J--M---    Down cdiv00_0_
+ 101   N  I/O   2  -B-------J------    Down cdiv00_1_
+  76   K  I/O   2  ---------J--M---    Down cdiv00_2_
+ 100   N  I/O   1  ---------J------    Down cdiv00_3_
+  50   H  I/O   2  A-------I-------    Down inkey0_0_
+  51   H  I/O   2  A-------I-------    Down inkey0_1_
+  52   H  I/O   1  A---------------    Down inkey0_2_
+  53   H  I/O   1  A---------------    Down inkey0_3_
+  38  --  IN       ----------------    Down oscdis0
+  81   K  I/O   13 A-CDEFGHI-KLM-OP    Down reset0
+  45  --  IN       ----------------    Down tmrrst0
+  87   L  I/O   4  --CDE---I-------    Down wr0
+----------------------------------------------------
+
+
+
+Output_Signal_List
+~~~~~~~~~~~~~~~~~~
+          I         C      P R P       O Output
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
+-----------------------------------------------------------------------------------------
+ 135   A  4  1   3  2 LAT      R            ----------------  Fast   Down EN0
+ 134   A  2  1   2  2 LAT      R            ----------------  Fast   Down RS0
+  32   F  0  -   0  1 COM                   ----------------  Fast   Down RW0
+  98   M  9  2   5  1 TFF      R         14 ABCDEFGHI-K-MNOP  Fast   Down clk0
+  58   I  8  -   3  1 LAT    * R         7  AB-D-FG-----M--P  Fast   Down inFlagcc0
+  59   I  6  1   2  1 DFF      R         2  A-------I-------  Fast   Down inFlagk0
+ 104   N  1  2   1  1 COM                   ----------------  Fast   Down oscout0
+   7   C  4  1   2  1 DFF      R *       8  --CDEF-H--K---OP  Fast   Down outContRead0_0_
+   6   C  5  1   3  1 DFF      R *       8  --CDEF-H--K---OP  Fast   Down outContRead0_1_
+   5   C  6  1   4  2 DFF      R *       8  --CDEF-H--K---OP  Fast   Down outContRead0_2_
+   4   C  7  1   5  1 DFF      R *       8  --CDEF-H--K---OP  Fast   Down outContRead0_3_
+ 131   A  4  1   2  2 DFF      R *       13 ABCDEFGH--K-MNOP  Fast   Down outContWrite0_0_
+  29   F  5  1   3  1 DFF      R *       13 ABCDEFGH--K-MNOP  Fast   Down outContWrite0_1_
+ 130   A  6  1   4  1 DFF      R *       13 ABCDEFGH--K-MNOP  Fast   Down outContWrite0_2_
+  28   F  7  1   5  2 DFF      R *       12 -BCDEFGH--K-MNOP  Fast   Down outContWrite0_3_
+  61   I  2  -   1  1 DFF      R         2  --------I--L----  Fast   Down outFlagcc0
+  60   I 11  2   9  2 DFF      R         1  --------I-------  Fast   Down outFlagk0
+  13   D  9  2   8  2 DFF      R         2  ---DE-----------  Fast   Down outFlagw0
+  97   M  4  1   2  1 DFF      R *       4  --------I--LM--P  Fast   Down outcc0_0_
+ 124   P  5  1   3  1 DFF      R *       4  --------I--LM--P  Fast   Down outcc0_1_
+  96   M  6  1   4  1 DFF      R *       4  --------I--LM--P  Fast   Down outcc0_2_
+ 123   P  7  1   5  1 DFF      R *       4  --------I--LM--P  Fast   Down outcc0_3_
+  95   M  8  1   3  1 DFF      R *       4  --------I--LM--P  Fast   Down outcc0_4_
+ 122   P  9  1   3  1 TFF      R *       3  --------I--L---P  Fast   Down outcc0_5_
+  49   H  3  1   1  1 DFF      R         3  A------HI-------  Fast   Down outr0_0_
+  48   H  3  1   1  1 DFF      R         4  A-----G-I---M---  Fast   Down outr0_1_
+  44   G  3  1   1  1 DFF      R         1  A---------------  Fast   Down outr0_2_
+  43   G  3  1   1  1 DFF      R         3  A------HI-------  Fast   Down outr0_3_
+  33   F  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_0_
+  39   G  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_1_
+ 138   B  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_2_
+ 139   B  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_3_
+  42   G  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_4_
+ 140   B  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_5_
+ 141   B  3  1   2  2 LAT      R            ----------------  Fast   Down outword0_6_
+ 142   B  4  1   3  1 LAT      R            ----------------  Fast   Down outword0_7_
+-----------------------------------------------------------------------------------------
+
+<Note> CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+
+Bidir_Signal_List
+~~~~~~~~~~~~~~~~~
+          I         C      P R P       O Bidir
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+<Note> CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+
+Buried_Signal_List
+~~~~~~~~~~~~~~~~~~
+        I         C      P R P       Node
+        N         L Mc   R E U C I F Fanout
+Mc GLB  P LL PTs  S Type E S P E R P                     Signal
+------------------------------------------------------------------------------------------
+14   N  5  2   4  2 DFF      R *     1  -------------N--  K01_sdiv_0_
+ 2   J  7  3   5  2 DFF      R *     2  -B-------J------  K01_sdiv_10_
+ 0   J  8  3   6  2 DFF      R *     2  -B-------J------  K01_sdiv_11_
+ 8   N  6  2   5  1 DFF      R *     1  -------------N--  K01_sdiv_1_
+11   N  7  2   6  2 DFF      R *     1  -------------N--  K01_sdiv_2_
+ 9   N  8  2   7  2 DFF      R *     1  -------------N--  K01_sdiv_3_
+12   N 10  2   6  2 DFF      R *     1  -------------N--  K01_sdiv_4_
+ 3   J  6  2   4  2 DFF      R *     1  ---------J------  K01_sdiv_5_
+13   J  7  2   5  1 DFF      R *     2  -B-------J------  K01_sdiv_6_
+14   J  8  2   6  2 DFF      R *     2  -B-------J------  K01_sdiv_7_
+ 1   J 10  3   5  2 DFF      R *     2  -B-------J------  K01_sdiv_8_
+ 4   J  6  3   4  2 DFF      R *     2  -B-------J------  K01_sdiv_9_
+15   I  6  -   3  1 LAT    * R       1  A---------------  LCD03_ENc
+12   I  8  -   4  1 COM              1  --------I-------  LCD03_ENc_0
+ 0   L  2  -   2  1 LAT    * R       1  -----F----------  LCD03_outWordc_1_0_
+ 5   L  7  -   2  1 COM              1  -----------L----  LCD03_outWordc_1_0__0
+ 6   L  5  -   2  1 COM              1  -----------L----  LCD03_outWordc_1_0__1
+ 9   O  2  -   3  1 LAT    * R       1  ------G---------  LCD03_outWordc_1_1_
+ 7   L  7  -   2  1 COM              1  --------------O-  LCD03_outWordc_1_1__0
+ 7   M  5  -   3  1 COM              1  --------------O-  LCD03_outWordc_1_1__1
+13   I  2  -   3  1 LAT    * R       1  -B--------------  LCD03_outWordc_1_2_
+ 8   L  6  -   2  1 COM              1  --------I-------  LCD03_outWordc_1_2__0
+ 1   L  3  -   2  1 LAT    * R       1  -B--------------  LCD03_outWordc_1_3_
+12   L  2  -   3  1 LAT    * R       1  ------G---------  LCD03_outWordc_1_4_
+ 9   L  7  -   2  1 COM              1  -----------L----  LCD03_outWordc_1_4__0
+10   L  5  -   2  1 COM              1  -----------L----  LCD03_outWordc_1_4__1
+13   L  2  -   3  1 LAT    * R       1  -B--------------  LCD03_outWordc_1_5_
+14   I  8  -   3  1 LAT    * R       1  -B--------------  LCD03_outWordc_1_7_
+ 3   I  6  -   2  1 COM              1  --------I-------  LCD03_outWordc_1_7__0
+ 5   A 11  -   4  1 COM              1  --------I-------  N_293_0_6
+ 5   M  3  1   1  1 DFF      R       1  ------G---------  RA02_K01_sring_3_
+13   A 11  2   5  2 DFF      R *     1  A---------------  RA02_K02_aux01
+ 0   A 12  1   4  1 TFF      R *     1  A---------------  RA02_K02_aux02
+ 1   A 12  1   4  1 TFF      R *     1  A---------------  RA02_K02_aux03
+14   A 11  2   5  2 DFF      R *     2  A-------I-------  RA02_K02_aux04
+ 3   A  8  1   4  1 DFF      R *     2  -------------N-P  RA02_K02_out7segc_1_0_
+ 4   A  7  1   4  1 DFF      R *     4  ----E-G---K--N--  RA02_K02_out7segc_1_1_
+ 7   I  8  1   5  1 DFF      R *     3  -B---F-H--------  RA02_K02_out7segc_1_2_
+15   A  8  1   5  2 DFF      R *     2  --C-------K-----  RA02_K02_out7segc_1_3_
+ 9   I  8  1   5  2 DFF      R *     3  ---D--------M-O-  RA02_K02_out7segc_1_4_
+ 7   A  3  -   2  1 DFF      R *     3  ----E-GH--------  RA02_K02_out7segc_1_5_
+10   I 11  2   5  2 DFF      R       5  -BC--F--I-----O-  RA02_K02_out7segc_1_7_
+ 8   H  3  2   1  1 DFF      R       2  -------HI-------  RA03_aux
+ 1   P 23  1  17  4 DFF      R *     1  -----F----------  RA03_outWordm_0_
+12   D 23  1  17  4 DFF      R *     1  ------G---------  RA03_outWordm_1_
+11   H 23  1  17  4 DFF      R *     1  -B--------------  RA03_outWordm_2_
+ 1   E 23  1  17  4 DFF      R *     1  -B--------------  RA03_outWordm_3_
+10   K 23  1  17  4 DFF      R *     1  ------G---------  RA03_outWordm_4_
+ 1   F 23  1  17  4 DFF      R *     1  -B--------------  RA03_outWordm_5_
+10   O 23  1  17  4 DFF      R *     1  -B--------------  RA03_outWordm_6_
+ 1   C 23  1  17  4 DFF      R *     1  -B--------------  RA03_outWordm_7_
+15   N  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram0__0_
+ 3   E  7  1   2  2 DFF      R *     1  ---D------------  RA03_sram_sram_ram0__1_
+13   H  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram0__2_
+11   K  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram0__3_
+ 9   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram0__4_
+15   G  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram0__5_
+13   B  7  2   2  1 DFF      R       2  -B------------O-  RA03_sram_sram_ram0__6_
+ 3   C  7  1   2  2 DFF      R *     1  --C-------------  RA03_sram_sram_ram0__7_
+15   P  7  1   2  2 DFF      R *     1  ---------------P  RA03_sram_sram_ram10__0_
+ 5   N  7  1   2  2 DFF      R *     1  ---D------------  RA03_sram_sram_ram10__1_
+ 4   H  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram10__2_
+ 2   K  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram10__3_
+ 5   D  7  1   2  2 DFF      R *     1  ----------K-----  RA03_sram_sram_ram10__4_
+11   E  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram10__5_
+ 4   M  7  2   2  1 DFF      R       2  ------------M-O-  RA03_sram_sram_ram10__6_
+10   C  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram10__7_
+ 0   P  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram11__0_
+12   E  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram11__1_
+ 5   H  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram11__2_
+ 3   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram11__3_
+ 0   O  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram11__4_
+ 6   H  7  1   2  2 DFF      R *     1  -----F----------  RA03_sram_sram_ram11__5_
+14   B  7  2   2  1 DFF      R       2  -B------------O-  RA03_sram_sram_ram11__6_
+11   B  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram11__7_
+ 6   N  7  1   2  2 DFF      R *     1  ---------------P  RA03_sram_sram_ram12__0_
+10   G  7  1   2  2 DFF      R *     1  ---D------------  RA03_sram_sram_ram12__1_
+ 8   F  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram12__2_
+ 4   K  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram12__3_
+13   M  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram12__4_
+11   G  7  1   2  2 DFF      R *     1  -----F----------  RA03_sram_sram_ram12__5_
+ 6   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram12__6_
+ 9   F  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram12__7_
+ 3   P  7  1   2  2 DFF      R *     1  ---------------P  RA03_sram_sram_ram13__0_
+13   E  7  1   2  2 DFF      R *     1  ---D------------  RA03_sram_sram_ram13__1_
+12   B  7  1   2  2 DFF      R *     1  -------H--------  RA03_sram_sram_ram13__2_
+ 5   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram13__3_
+14   M  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram13__4_
+14   E  7  1   2  2 DFF      R *     1  -----F----------  RA03_sram_sram_ram13__5_
+ 7   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram13__6_
+11   C  7  1   2  2 DFF      R *     1  --C-------------  RA03_sram_sram_ram13__7_
+ 4   P  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram14__0_
+ 6   K  7  1   2  2 DFF      R *     1  ---D------------  RA03_sram_sram_ram14__1_
+10   F  7  1   2  2 DFF      R *     1  -------H--------  RA03_sram_sram_ram14__2_
+ 7   K  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram14__3_
+15   M  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram14__4_
+ 7   H  7  1   2  2 DFF      R *     1  -----F----------  RA03_sram_sram_ram14__5_
+ 8   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram14__6_
+ 0   C  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram14__7_
+13   N  7  1   2  2 DFF      R *     1  ---------------P  RA03_sram_sram_ram15__0_
+ 0   E  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram15__1_
+ 9   H  7  1   2  2 DFF      R *     1  -------H--------  RA03_sram_sram_ram15__2_
+ 9   K  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram15__3_
+ 9   M  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram15__4_
+14   G  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram15__5_
+ 8   K  7  2   2  1 DFF      R       2  ----------K---O-  RA03_sram_sram_ram15__6_
+14   F  7  1   2  2 DFF      R *     1  --C-------------  RA03_sram_sram_ram15__7_
+ 0   N  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram1__0_
+ 0   G  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram1__1_
+14   H  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram1__2_
+12   K  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram1__3_
+11   M  7  1   2  2 DFF      R *     1  ----------K-----  RA03_sram_sram_ram1__4_
+ 4   E  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram1__5_
+11   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram1__6_
+ 3   B  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram1__7_
+11   P  7  1   2  2 DFF      R *     1  ---------------P  RA03_sram_sram_ram2__0_
+ 1   G  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram2__1_
+15   H  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram2__2_
+13   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram2__3_
+11   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram2__4_
+ 3   G  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram2__5_
+12   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram2__6_
+ 4   C  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram2__7_
+12   P  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram3__0_
+ 5   G  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram3__1_
+ 0   F  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram3__2_
+ 5   C  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram3__3_
+15   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram3__4_
+ 0   H  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram3__5_
+ 1   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram3__6_
+ 5   B  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram3__7_
+ 1   N  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram4__0_
+ 5   E  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram4__1_
+ 4   F  7  1   2  2 DFF      R *     1  -------H--------  RA03_sram_sram_ram4__2_
+ 6   C  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram4__3_
+13   O  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram4__4_
+ 6   G  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram4__5_
+ 2   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram4__6_
+14   O  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram4__7_
+13   P  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram5__0_
+ 6   E  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram5__1_
+ 5   F  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram5__2_
+14   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram5__3_
+ 0   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram5__4_
+ 7   G  7  1   2  2 DFF      R *     1  -----F----------  RA03_sram_sram_ram5__5_
+ 3   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram5__6_
+15   O  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram5__7_
+ 2   N  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram6__0_
+ 7   E  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram6__1_
+ 1   H  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram6__2_
+15   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram6__3_
+ 1   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram6__4_
+ 2   H  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram6__5_
+ 4   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram6__6_
+ 7   B  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram6__7_
+ 3   N  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram7__0_
+ 8   E  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram7__1_
+ 8   B  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram7__2_
+ 0   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram7__3_
+ 2   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram7__4_
+ 3   H  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram7__5_
+ 5   O  7  2   2  1 DFF      R       1  --------------O-  RA03_sram_sram_ram7__6_
+ 9   B  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram7__7_
+ 4   N  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram8__0_
+ 8   G  7  1   2  1 DFF      R *     1  ---D------------  RA03_sram_sram_ram8__1_
+ 6   F  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram8__2_
+ 7   C  7  1   2  2 DFF      R *     1  ----E-----------  RA03_sram_sram_ram8__3_
+ 3   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram8__4_
+ 9   E  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram8__5_
+ 2   M  7  2   2  1 DFF      R       2  ------------M-O-  RA03_sram_sram_ram8__6_
+10   B  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram8__7_
+14   P  7  1   2  1 DFF      R *     1  ---------------P  RA03_sram_sram_ram9__0_
+ 9   G  7  1   2  2 DFF      R *     1  ---D------------  RA03_sram_sram_ram9__1_
+ 7   F  7  1   2  1 DFF      R *     1  -------H--------  RA03_sram_sram_ram9__2_
+ 1   K  7  1   2  1 DFF      R *     1  ----E-----------  RA03_sram_sram_ram9__3_
+ 4   D  7  1   2  1 DFF      R *     1  ----------K-----  RA03_sram_sram_ram9__4_
+10   E  7  1   2  1 DFF      R *     1  -----F----------  RA03_sram_sram_ram9__5_
+ 3   M  7  2   2  1 DFF      R       2  ------------M-O-  RA03_sram_sram_ram9__6_
+ 9   C  7  1   2  1 DFF      R *     1  --C-------------  RA03_sram_sram_ram9__7_
+15   E  5  2   3  1 DFF      R *     2  A---E-----------  RA05_ENcw
+13   D  5  2   2  1 DFF      R       1  ---D------------  RA05_outFlagcw
+10   J  6  -   2  1 COM              1  ------------M---  k01_n_15_n
+15   J  2  -   1  1 COM              1  ------------M---  k01_n_16_2_n
+ 1   B  8  -   3  1 COM              1  ------------M---  k01_n_17_1_n
+ 5   J  2  -   1  1 COM              1  ------------M---  k01_n_17_2_n
+ 9   J  9  -   3  1 COM              1  ------------M---  k01_n_18_1_n
+ 6   J 11  -   4  1 COM              2  ---------J---N--  k01_n_325_i_4_n
+ 8   J  8  -   3  1 COM              2  ---------J---N--  k01_n_325_i_5_n
+ 7   J  4  -   4  1 COM              2  ---------J---N--  k01_n_4_i_n
+ 7   N  5  -   1  1 COM              2  ---------J---N--  k01_n_59_i_n
+12   J  5  -   1  1 COM              1  ---------J------  k01_n_63_i_n
+11   J  5  -   2  1 COM              1  ------------M---  k01_n_8_n
+15   L  6  -   3  1 COM              1  -----------L----  lcd03_n_26_i_1_n
+ 0   M  5  -   2  1 COM              1  --------I-------  lcd03_n_28_i_1_n
+ 2   P  5  -   2  1 COM              1  ------------M---  lcd03_n_30_i_2_n
+ 1   I  2  -   2  1 COM              1  -----------L----  lcd03_n_42_i_n
+ 1   M  4  -   2  1 COM              1  -----------L----  lcd03_n_46_i_n
+ 2   L  7  -   2  1 COM              1  -----------L----  lcd03_n_63_n
+ 4   L  4  -   2  1 COM              2  -----------LM---  lcd03_n_71_i_n
+11   L  8  -   4  1 COM              1  --------I-------  lcd03_un1_inflagc_10_0_n
+ 2   I  8  -   2  1 COM              1  -----------L----  lcd03_un1_inflagc_6_n
+14   L  8  -   3  1 COM              1  --------I-------  lcd03_un1_inflagc_8_0_n
+ 3   L  8  -   2  1 COM              1  -----------L----  lcd03_un1_inflagc_9_0_n
+14   D  2  -   1  1 COM              4  AB---FG---------  lcd06_pbuff_un2_inflagbuffwrite_n
+15   C  1  -   1  1 COM              1  -------------N--  osc_oscdis0
+15   F  1  -   1  1 COM              3  ---------J--MN--  osc_tmrrst0
+15   C  0  -   0  0 COM              1  -------------N--  oscout0_c
+ 6   A  4  -   4  1 COM              2  A-------I-------  ra02_k02_n_117_i_n
+ 9   A  2  -   1  1 COM              2  A-------I-------  ra02_k02_n_118_i_n
+ 8   A  4  -   2  1 COM              1  --------I-------  ra02_k02_n_122_i_n
+11   I  9  -   4  1 COM              3  A----F--I-------  ra02_k02_outcontce_n
+10   P  6  -   7  2 COM              1  ---D------------  ra03_n_34_0_n
+ 0   I  4  -   2  1 COM              12 -BCDEFGH--K-MNOP  ra03_outflagm_0_sqmuxa_n
+ 8   D  7  -   4  1 COM              8  --CDEF-H--K---OP  ra03_outwordm_0_sqmuxa_n
+ 6   D  3  -   2  1 COM              1  --C-------------  ra05_outcontreade_0_n
+ 9   P  9  -  10  2 COM              2  ---DE-----------  ra05_rscw_0_sqmuxa_n
+15   F  0  -   0  0 COM              3  ---------J--MN--  tmrout
+------------------------------------------------------------------------------------------
+
+<Note> CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        IR = Input register
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+
+PostFit_Equations
+~~~~~~~~~~~~~~~~~
+
+EN0.D = !inFlagcc0.Q & LCD03_ENc.Q
+    # inFlagcc0.Q & RA05_ENcw.Q ; (2 pterms, 3 signals)
+EN0.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+K01_sdiv_0_.D = !k01_n_325_i_5_n & !K01_sdiv_0_.Q
+    # !k01_n_325_i_4_n & !K01_sdiv_0_.Q ; (2 pterms, 3 signals)
+K01_sdiv_0_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_0_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_10_.D = !( K01_sdiv_9_.Q & K01_sdiv_10_.Q & k01_n_63_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+    # !K01_sdiv_10_.Q & !k01_n_63_i_n ) ; (4 pterms, 5 signals)
+K01_sdiv_10_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_10_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_11_.D = !( K01_sdiv_9_.Q & K01_sdiv_10_.Q & K01_sdiv_11_.Q
+       & k01_n_63_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !K01_sdiv_9_.Q & !K01_sdiv_11_.Q
+    # !K01_sdiv_11_.Q & !k01_n_63_i_n ) ; (5 pterms, 6 signals)
+K01_sdiv_11_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_11_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_1_.D = !( k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_0_.Q & !K01_sdiv_1_.Q
+    # K01_sdiv_0_.Q & K01_sdiv_1_.Q ) ; (3 pterms, 4 signals)
+K01_sdiv_1_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_1_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_2_.D = !( K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_1_.Q & !K01_sdiv_2_.Q
+    # !K01_sdiv_0_.Q & !K01_sdiv_2_.Q ) ; (4 pterms, 5 signals)
+K01_sdiv_2_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_2_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_3_.D = !( K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+       & K01_sdiv_3_.Q
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_2_.Q & !K01_sdiv_3_.Q
+    # !K01_sdiv_1_.Q & !K01_sdiv_3_.Q
+    # !K01_sdiv_0_.Q & !K01_sdiv_3_.Q ) ; (5 pterms, 6 signals)
+K01_sdiv_3_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_3_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_4_.D = !k01_n_325_i_5_n & K01_sdiv_0_.Q & K01_sdiv_1_.Q
+       & K01_sdiv_2_.Q & K01_sdiv_3_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+       & K01_sdiv_3_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_5_n & K01_sdiv_4_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_4_.Q & !k01_n_59_i_n ; (4 pterms, 8 signals)
+K01_sdiv_4_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_4_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_5_.D = !( k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_5_.Q & !k01_n_59_i_n
+    # K01_sdiv_5_.Q & k01_n_59_i_n ) ; (3 pterms, 4 signals)
+K01_sdiv_5_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_5_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_6_.D = !( K01_sdiv_5_.Q & K01_sdiv_6_.Q & k01_n_59_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_5_.Q & !K01_sdiv_6_.Q
+    # !K01_sdiv_6_.Q & !k01_n_59_i_n ) ; (4 pterms, 5 signals)
+K01_sdiv_6_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_6_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_7_.D = !( K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q
+       & k01_n_59_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+    # !K01_sdiv_5_.Q & !K01_sdiv_7_.Q
+    # !K01_sdiv_7_.Q & !k01_n_59_i_n ) ; (5 pterms, 6 signals)
+K01_sdiv_7_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_7_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_8_.D = !k01_n_325_i_5_n & K01_sdiv_5_.Q & K01_sdiv_6_.Q
+       & K01_sdiv_7_.Q & k01_n_59_i_n & !k01_n_63_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q
+       & k01_n_59_i_n & !k01_n_63_i_n
+    # !k01_n_325_i_5_n & K01_sdiv_8_.Q & !k01_n_63_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_8_.Q & !k01_n_63_i_n ; (4 pterms, 8 signals)
+K01_sdiv_8_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_8_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_9_.D = !( k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_9_.Q & !k01_n_63_i_n
+    # K01_sdiv_9_.Q & k01_n_63_i_n ) ; (3 pterms, 4 signals)
+K01_sdiv_9_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_9_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+LCD03_ENc.D = 1 ; (1 pterm, 0 signal)
+LCD03_ENc.LH = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & !outcc0_0_.Q ; (1 pterm, 5 signals)
+LCD03_ENc.AR = LCD03_ENc_0 ; (1 pterm, 1 signal)
+
+LCD03_ENc_0 = !reset0
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_1_.Q & outcc0_0_.Q
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_2_.Q & outcc0_0_.Q
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q & outcc0_0_.Q ; (4 pterms, 8 signals)
+
+LCD03_outWordc_1_0_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_0_.LH = LCD03_outWordc_1_0__0 ; (1 pterm, 1 signal)
+LCD03_outWordc_1_0_.AR = LCD03_outWordc_1_0__1 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_0__0 = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_1_.Q & lcd03_n_42_i_n
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q
+       & lcd03_n_42_i_n ; (2 pterms, 7 signals)
+
+LCD03_outWordc_1_0__1 = !( !lcd03_n_26_i_1_n
+    # reset0 & outcc0_3_.Q & !outcc0_2_.Q & outcc0_1_.Q ) ; (2 pterms, 5 signals)
+
+LCD03_outWordc_1_1_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_1_.LH = LCD03_outWordc_1_1__0 ; (1 pterm, 1 signal)
+LCD03_outWordc_1_1_.AR = LCD03_outWordc_1_1__1 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_1__0 = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_1_.Q & lcd03_n_42_i_n
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q
+       & lcd03_n_42_i_n ; (2 pterms, 7 signals)
+
+LCD03_outWordc_1_1__1 = !outcc0_3_.Q & lcd03_n_30_i_2_n & lcd03_n_71_i_n
+    # !reset0 & lcd03_n_30_i_2_n & lcd03_n_71_i_n
+    # outcc0_2_.Q & lcd03_n_30_i_2_n & lcd03_n_71_i_n ; (3 pterms, 5 signals)
+
+LCD03_outWordc_1_2_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_2_.LH = !lcd03_un1_inflagc_8_0_n ; (1 pterm, 1 signal)
+LCD03_outWordc_1_2_.AR = LCD03_outWordc_1_2__0 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_2__0 = !reset0
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q & outcc0_2_.Q ; (2 pterms, 6 signals)
+
+LCD03_outWordc_1_3_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_3_.LH = !lcd03_un1_inflagc_9_0_n ; (1 pterm, 1 signal)
+LCD03_outWordc_1_3_.AR = !lcd03_n_63_n & lcd03_n_46_i_n ; (1 pterm, 2 signals)
+
+LCD03_outWordc_1_4_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_4_.LH = LCD03_outWordc_1_4__0 ; (1 pterm, 1 signal)
+LCD03_outWordc_1_4_.AR = LCD03_outWordc_1_4__1 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_4__0 = lcd03_un1_inflagc_6_n
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q
+       & outcc0_2_.Q ; (2 pterms, 7 signals)
+
+LCD03_outWordc_1_4__1 = !reset0
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & lcd03_n_42_i_n ; (2 pterms, 5 signals)
+
+LCD03_outWordc_1_5_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_5_.LH = lcd03_un1_inflagc_6_n ; (1 pterm, 1 signal)
+LCD03_outWordc_1_5_.AR = lcd03_n_46_i_n ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_7_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_7_.LH = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q ; (1 pterm, 7 signals)
+LCD03_outWordc_1_7_.AR = LCD03_outWordc_1_7__0 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_7__0 = !( !lcd03_n_28_i_1_n
+    # reset0 & !outcc0_3_.Q & !outcc0_2_.Q & !outcc0_1_.Q & outcc0_0_.Q ) ; (2 pterms, 6 signals)
+
+N_293_0_6 = !( !outr0_3_.Q & !inFlagk0.Q & !outr0_1_.Q & !outr0_0_.Q
+       & RA02_K02_aux02.Q
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+    # !inFlagk0.Q & outr0_1_.Q & RA02_K02_aux03.Q
+    # outr0_3_.Q & !inFlagk0.Q & RA02_K02_aux01.Q ) ; (4 pterms, 11 signals)
+
+RA02_K01_sring_3_.D = !( reset0 & !outr0_1_.Q ) ; (1 pterm, 2 signals)
+RA02_K01_sring_3_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA02_K02_aux01.D.X1 = RA02_K02_aux01.Q
+    # outr0_3_.Q & !outr0_0_.Q & !RA02_K02_aux01.Q & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & outr0_3_.Q
+       & !outr0_0_.Q & !RA02_K02_aux01.Q & ra02_k02_n_118_i_n
+       & !ra02_k02_n_117_i_n ; (3 pterms, 9 signals)
+RA02_K02_aux01.D.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & outr0_3_.Q & !outr0_0_.Q & ra02_k02_n_118_i_n ; (1 pterm, 7 signals)
+RA02_K02_aux01.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux01.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_aux02.T.X1 = !outr0_3_.Q & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q
+       & !RA02_K02_aux02.Q & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & !outr0_3_.Q
+       & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q & !RA02_K02_aux02.Q
+       & !ra02_k02_n_117_i_n ; (2 pterms, 10 signals)
+RA02_K02_aux02.T.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & !outr0_3_.Q & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q ; (1 pterm, 8 signals)
+RA02_K02_aux02.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux02.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_aux03.T.X1 = !outr0_3_.Q & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q
+       & !RA02_K02_aux03.Q & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & !outr0_3_.Q
+       & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q & !RA02_K02_aux03.Q
+       & !ra02_k02_n_117_i_n ; (2 pterms, 10 signals)
+RA02_K02_aux03.T.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & !outr0_3_.Q & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q ; (1 pterm, 8 signals)
+RA02_K02_aux03.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux03.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_aux04.D.X1 = RA02_K02_aux04.Q
+    # !outr0_3_.Q & outr0_0_.Q & !RA02_K02_aux04.Q & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & !outr0_3_.Q
+       & outr0_0_.Q & !RA02_K02_aux04.Q & ra02_k02_n_118_i_n
+       & !ra02_k02_n_117_i_n ; (3 pterms, 9 signals)
+RA02_K02_aux04.D.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & !outr0_3_.Q & outr0_0_.Q & ra02_k02_n_118_i_n ; (1 pterm, 7 signals)
+RA02_K02_aux04.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux04.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_0_.D = !( reset0 & !inkey0_2_ & inkey0_1_ & !inkey0_0_
+       & !outr0_1_.Q
+    # reset0 & !inkey0_2_ & inkey0_0_ & !outr0_3_.Q & !outr0_1_.Q
+    # reset0 & inkey0_2_ & !inkey0_0_ & outr0_3_.Q & !outr0_1_.Q ) ; (3 pterms, 6 signals)
+RA02_K02_out7segc_1_0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_0_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_1_.D = !( reset0 & !inkey0_1_ & !outr0_1_.Q & outr0_0_.Q
+    # reset0 & inkey0_1_ & !outr0_3_.Q & !outr0_1_.Q
+    # reset0 & !inkey0_1_ & outr0_3_.Q & !outr0_1_.Q ) ; (3 pterms, 5 signals)
+RA02_K02_out7segc_1_1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_1_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_2_.D = !inkey0_1_ & !inkey0_0_ & !outr0_1_.Q & !outr0_0_.Q
+    # inkey0_0_ & outr0_1_.Q
+    # inkey0_1_ & !outr0_3_.Q & !outr0_0_.Q
+    # !reset0 ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_2_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_3_.D = !( reset0 & !inkey0_2_ & !outr0_2_.Q & !outr0_1_.Q
+       & !outr0_0_.Q
+    # !inkey0_3_ & reset0 & !inkey0_2_ & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_2_ & outr0_1_.Q & !outr0_0_.Q
+    # inkey0_3_ & reset0 & outr0_1_.Q & !outr0_0_.Q ) ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_3_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_4_.D = !( reset0 & outr0_3_.Q & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & !inkey0_1_ & !inkey0_0_ & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_0_ & outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_1_ & outr0_1_.Q & !outr0_0_.Q ) ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_4_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_5_.D = !reset0 ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_5_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_7_.D = !( reset0 & !outr0_3_.Q & !outr0_0_.Q & N_293_0_6
+       & !ra02_k02_n_118_i_n & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & inFlagk0.Q & outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_0_.Q & !RA02_K02_aux04.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & !RA02_K02_out7segc_1_7_.Q ) ; (5 pterms, 10 signals)
+RA02_K02_out7segc_1_7_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_aux.D = !( !ra03_outflagm_0_sqmuxa_n & !RA03_aux.Q ) ; (1 pterm, 2 signals)
+RA03_aux.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_outWordm_0_.D = !( reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & !RA03_sram_sram_ram12__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram10__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram6__0_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram15__0_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram13__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram11__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram8__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram2__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram4__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram7__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram9__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram0__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram3__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram5__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram1__0_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram14__0_.Q ) ; (16 pterms, 21 signals)
+RA03_outWordm_0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_0_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_1_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__1_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__1_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__1_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__1_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_1_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_2_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__2_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__2_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__2_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__2_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_2_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_3_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__3_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__3_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__3_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__3_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_3_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_4_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__4_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__4_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__4_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__4_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_4_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_5_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__5_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__5_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__5_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__5_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_5_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_6_.D = !( reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & !RA03_sram_sram_ram12__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram10__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram6__6_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram15__6_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram13__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram11__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram8__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram2__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram7__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram4__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram9__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram0__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram3__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram5__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram1__6_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram14__6_.Q ) ; (16 pterms, 21 signals)
+RA03_outWordm_6_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_6_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_7_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__7_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__7_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__7_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__7_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_7_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram0__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram0__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram0__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram0__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram10__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram10__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram10__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram11__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram11__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram11__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram12__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram12__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram12__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram13__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram13__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram13__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram14__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram14__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram14__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram15__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram15__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram15__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram1__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram1__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram1__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram2__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram2__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram2__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram3__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram3__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram3__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram4__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram4__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram4__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram5__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram5__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram5__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram6__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram6__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram6__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram7__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram7__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram7__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram8__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram8__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram8__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram9__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram9__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram9__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA05_ENcw.D = RA05_ENcw.Q & !ra05_rscw_0_sqmuxa_n
+    # !outFlagw0.Q & ra05_rscw_0_sqmuxa_n ; (2 pterms, 3 signals)
+RA05_ENcw.C = clk0.Q ; (1 pterm, 1 signal)
+RA05_ENcw.CE = wr0 ; (1 pterm, 1 signal)
+
+RA05_outFlagcw.D = !( wr0 & !RA05_outFlagcw.Q & !ra05_rscw_0_sqmuxa_n
+    # wr0 & !outFlagw0.Q & ra05_rscw_0_sqmuxa_n ) ; (2 pterms, 4 signals)
+RA05_outFlagcw.C = clk0.Q ; (1 pterm, 1 signal)
+
+RS0.D = inFlagcc0.Q ; (1 pterm, 1 signal)
+RS0.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+RW0 = 0 ; (0 pterm, 0 signal)
+
+clk0.T = cdiv00_2_ & !cdiv00_0_ & k01_n_18_1_n
+    # cdiv00_0_ & k01_n_16_2_n & k01_n_8_n
+    # k01_n_17_1_n & k01_n_17_2_n
+    # k01_n_15_n ; (4 pterms, 8 signals)
+clk0.C = tmrout ; (1 pterm, 1 signal)
+
+inFlagcc0.D = 1 ; (1 pterm, 0 signal)
+inFlagcc0.LH = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_3_.Q & outcc0_2_.Q & outcc0_0_.Q ; (1 pterm, 7 signals)
+inFlagcc0.AR = !lcd03_un1_inflagc_10_0_n ; (1 pterm, 1 signal)
+
+inFlagk0.D = !( reset0 & !wr0 & !outFlagk0.Q & RA03_aux.Q
+    # reset0 & wr0 & !inFlagk0.Q ) ; (2 pterms, 5 signals)
+inFlagk0.C = clk0.Q ; (1 pterm, 1 signal)
+
+k01_n_15_n = !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_ & cdiv00_0_ & K01_sdiv_10_.Q
+    # !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_ & K01_sdiv_11_.Q ; (2 pterms, 6 signals)
+
+k01_n_16_2_n = !cdiv00_3_ & cdiv00_1_ ; (1 pterm, 2 signals)
+
+k01_n_17_1_n = !( !K01_sdiv_6_.Q & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q
+       & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_0_ & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_1_ ) ; (3 pterms, 8 signals)
+
+k01_n_17_2_n = cdiv00_3_ & cdiv00_2_ ; (1 pterm, 2 signals)
+
+k01_n_18_1_n = !( !K01_sdiv_5_.Q & !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+       & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_1_
+    # !cdiv00_3_ ) ; (3 pterms, 9 signals)
+
+k01_n_325_i_4_n = !( cdiv00_3_ & !K01_sdiv_5_.Q & !K01_sdiv_6_.Q
+       & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q
+    # cdiv00_1_ & !cdiv00_0_ & !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+       & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_3_ & cdiv00_0_ & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_2_ & cdiv00_1_ & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q ) ; (4 pterms, 11 signals)
+
+k01_n_325_i_5_n = !( !cdiv00_3_ & cdiv00_2_ & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_1_ & cdiv00_0_ & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_3_ & !cdiv00_0_ & !K01_sdiv_11_.Q ) ; (3 pterms, 8 signals)
+
+k01_n_4_i_n = !cdiv00_3_ & !cdiv00_2_ & cdiv00_0_
+    # cdiv00_2_ & cdiv00_1_ & cdiv00_0_
+    # !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_
+    # cdiv00_3_ & cdiv00_2_ & !cdiv00_0_ ; (4 pterms, 4 signals)
+
+k01_n_59_i_n = K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q & K01_sdiv_3_.Q
+       & K01_sdiv_4_.Q ; (1 pterm, 5 signals)
+
+k01_n_63_i_n = K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q & K01_sdiv_8_.Q
+       & k01_n_59_i_n ; (1 pterm, 5 signals)
+
+k01_n_8_n = !( !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q
+    # !cdiv00_2_ & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q ) ; (2 pterms, 5 signals)
+
+lcd03_n_26_i_1_n = !( reset0 & !outcc0_3_.Q & !outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & !outcc0_3_.Q & outcc0_2_.Q
+    # !lcd03_n_71_i_n ) ; (3 pterms, 6 signals)
+
+lcd03_n_28_i_1_n = !( reset0 & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+    # !lcd03_n_71_i_n ) ; (2 pterms, 5 signals)
+
+lcd03_n_30_i_2_n = !( reset0 & !outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+    # reset0 & !outcc0_2_.Q & !outcc0_1_.Q & outcc0_0_.Q ) ; (2 pterms, 5 signals)
+
+lcd03_n_42_i_n = !outcc0_3_.Q & outcc0_2_.Q
+    # outcc0_3_.Q & !outcc0_2_.Q ; (2 pterms, 2 signals)
+
+lcd03_n_46_i_n = !( reset0 & !outcc0_3_.Q & !outcc0_2_.Q
+    # !lcd03_n_71_i_n ) ; (2 pterms, 4 signals)
+
+lcd03_n_63_n = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_3_.Q & outcc0_2_.Q & !outcc0_1_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_2_.Q
+       & outcc0_1_.Q ; (2 pterms, 7 signals)
+
+lcd03_n_71_i_n = !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+    # !reset0 ; (2 pterms, 4 signals)
+
+lcd03_un1_inflagc_10_0_n = reset0 & outFlagcc0.Q & outcc0_3_.Q & outcc0_0_.Q
+       & !lcd03_n_42_i_n
+    # reset0 & outFlagcc0.Q & !outcc0_1_.Q & outcc0_0_.Q & !lcd03_n_42_i_n
+    # reset0 & outcc0_5_.Q & outFlagcc0.Q
+    # reset0 & outFlagcc0.Q & outcc0_4_.Q ; (4 pterms, 8 signals)
+
+lcd03_un1_inflagc_6_n = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & !outcc0_3_.Q & !outcc0_2_.Q & outcc0_1_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q
+       & !outcc0_2_.Q & !outcc0_0_.Q ; (2 pterms, 8 signals)
+
+lcd03_un1_inflagc_8_0_n = !( reset0 & !outcc0_5_.Q & outFlagcc0.Q
+       & !outcc0_4_.Q & !outcc0_2_.Q & outcc0_1_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_2_.Q
+       & !outcc0_0_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q ) ; (3 pterms, 8 signals)
+
+lcd03_un1_inflagc_9_0_n = !( reset0 & !outcc0_5_.Q & outFlagcc0.Q
+       & !outcc0_4_.Q & !outcc0_3_.Q & !outcc0_2_.Q & !outcc0_0_.Q
+    # lcd03_n_63_n ) ; (2 pterms, 8 signals)
+
+lcd06_pbuff_un2_inflagbuffwrite_n = !( inFlagcc0.Q & !outFlagw0.Q ) ; (1 pterm, 2 signals)
+
+osc_oscdis0 = oscdis0 ; (1 pterm, 1 signal)
+
+osc_tmrrst0 = tmrrst0 ; (1 pterm, 1 signal)
+
+oscout0 = oscout0_c ; (1 pterm, 1 signal)
+
+outContRead0_0_.D = wr0 & !outContRead0_0_.Q ; (1 pterm, 2 signals)
+outContRead0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_0_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContRead0_1_.D = wr0 & !outContRead0_1_.Q & outContRead0_0_.Q
+    # wr0 & outContRead0_1_.Q & !outContRead0_0_.Q ; (2 pterms, 3 signals)
+outContRead0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_1_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContRead0_2_.D = wr0 & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q
+    # wr0 & outContRead0_2_.Q & !outContRead0_1_.Q
+    # wr0 & outContRead0_2_.Q & !outContRead0_0_.Q ; (3 pterms, 4 signals)
+outContRead0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_2_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContRead0_3_.D = wr0 & !outContRead0_3_.Q & outContRead0_2_.Q
+       & outContRead0_1_.Q & outContRead0_0_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_2_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_1_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_0_.Q ; (4 pterms, 5 signals)
+outContRead0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_3_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContWrite0_0_.D = !( reset0 & outContWrite0_0_.Q ) ; (1 pterm, 2 signals)
+outContWrite0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_0_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outContWrite0_1_.D = !( reset0 & !outContWrite0_1_.Q & !outContWrite0_0_.Q
+    # reset0 & outContWrite0_1_.Q & outContWrite0_0_.Q ) ; (2 pterms, 3 signals)
+outContWrite0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_1_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outContWrite0_2_.D = !( reset0 & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & outContWrite0_0_.Q
+    # reset0 & !outContWrite0_2_.Q & !outContWrite0_1_.Q
+    # reset0 & !outContWrite0_2_.Q & !outContWrite0_0_.Q ) ; (3 pterms, 4 signals)
+outContWrite0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_2_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outContWrite0_3_.D = !( reset0 & outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_2_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_1_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_0_.Q ) ; (4 pterms, 5 signals)
+outContWrite0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_3_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outFlagcc0.D = reset0 ; (1 pterm, 1 signal)
+outFlagcc0.C = clk0.Q ; (1 pterm, 1 signal)
+
+outFlagk0.D = reset0 & !outr0_3_.Q & !outr0_0_.Q & N_293_0_6
+       & !ra02_k02_n_118_i_n & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & inFlagk0.Q & outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_0_.Q & !RA02_K02_aux04.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & !outr0_3_.Q & outFlagk0.Q & !outr0_0_.Q & ra02_k02_n_118_i_n
+    # reset0 & outr0_3_.Q & outFlagk0.Q & !ra02_k02_n_118_i_n
+    # reset0 & outFlagk0.Q & outr0_0_.Q & !ra02_k02_n_118_i_n
+    # reset0 & outFlagk0.Q & !ra02_k02_n_117_i_n
+    # reset0 & outFlagk0.Q & !ra02_k02_n_122_i_n ; (9 pterms, 10 signals)
+outFlagk0.C = clk0.Q ; (1 pterm, 1 signal)
+
+outFlagw0.D = !( reset0 & wr0 & outContWrite0_3_.Q & !outContRead0_3_.Q
+       & inFlagcc0.Q & RA05_outFlagcw.Q
+    # reset0 & wr0 & !outContRead0_3_.Q & inFlagcc0.Q & RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # reset0 & wr0 & outContWrite0_3_.Q & inFlagcc0.Q & RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # reset0 & !outContWrite0_3_.Q & outContRead0_3_.Q & !outFlagw0.Q
+    # reset0 & outContRead0_3_.Q & !outFlagw0.Q & !ra03_n_34_0_n
+    # reset0 & !outContWrite0_3_.Q & !outFlagw0.Q & !ra03_n_34_0_n
+    # reset0 & !inFlagcc0.Q & !outFlagw0.Q
+    # reset0 & !wr0 & !outFlagw0.Q ) ; (8 pterms, 8 signals)
+outFlagw0.C = clk0.Q ; (1 pterm, 1 signal)
+
+outcc0_0_.D = reset0 & !outcc0_0_.Q ; (1 pterm, 2 signals)
+outcc0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_0_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_1_.D = reset0 & !outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & outcc0_1_.Q & !outcc0_0_.Q ; (2 pterms, 3 signals)
+outcc0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_1_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_2_.D = reset0 & !outcc0_2_.Q & outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & outcc0_2_.Q & !outcc0_1_.Q
+    # reset0 & outcc0_2_.Q & !outcc0_0_.Q ; (3 pterms, 4 signals)
+outcc0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_2_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_3_.D = reset0 & !outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_2_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_1_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_0_.Q ; (4 pterms, 5 signals)
+outcc0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_3_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_4_.D.X1 = reset0 & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+       & outcc0_0_.Q ; (1 pterm, 5 signals)
+outcc0_4_.D.X2 = reset0 & outcc0_4_.Q ; (1 pterm, 2 signals)
+outcc0_4_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_4_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_5_.T = reset0 & outcc0_4_.Q & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+       & outcc0_0_.Q
+    # !reset0 & outcc0_5_.Q ; (2 pterms, 7 signals)
+outcc0_5_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_5_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outr0_0_.D = reset0 & outr0_3_.Q ; (1 pterm, 2 signals)
+outr0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outr0_1_.D = reset0 & outr0_0_.Q ; (1 pterm, 2 signals)
+outr0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outr0_2_.D = reset0 & outr0_1_.Q ; (1 pterm, 2 signals)
+outr0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outr0_3_.D = reset0 & RA02_K01_sring_3_.Q ; (1 pterm, 2 signals)
+outr0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outword0_0_.D = !inFlagcc0.Q & LCD03_outWordc_1_0_.Q
+    # inFlagcc0.Q & RA03_outWordm_0_.Q ; (2 pterms, 3 signals)
+outword0_0_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_1_.D = !inFlagcc0.Q & LCD03_outWordc_1_1_.Q
+    # inFlagcc0.Q & RA03_outWordm_1_.Q ; (2 pterms, 3 signals)
+outword0_1_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_2_.D = !inFlagcc0.Q & LCD03_outWordc_1_2_.Q
+    # inFlagcc0.Q & RA03_outWordm_2_.Q ; (2 pterms, 3 signals)
+outword0_2_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_3_.D = !inFlagcc0.Q & LCD03_outWordc_1_3_.Q
+    # inFlagcc0.Q & RA03_outWordm_3_.Q ; (2 pterms, 3 signals)
+outword0_3_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_4_.D = !inFlagcc0.Q & LCD03_outWordc_1_4_.Q
+    # inFlagcc0.Q & RA03_outWordm_4_.Q ; (2 pterms, 3 signals)
+outword0_4_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_5_.D = !inFlagcc0.Q & LCD03_outWordc_1_5_.Q
+    # inFlagcc0.Q & RA03_outWordm_5_.Q ; (2 pterms, 3 signals)
+outword0_5_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_6_.D = inFlagcc0.Q & RA03_outWordm_6_.Q ; (1 pterm, 2 signals)
+outword0_6_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_7_.D = !inFlagcc0.Q & LCD03_outWordc_1_7_.Q
+    # inFlagcc0.Q & RA03_outWordm_7_.Q ; (2 pterms, 3 signals)
+outword0_7_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+ra02_k02_n_117_i_n = !inkey0_3_ & !inkey0_2_ & !inkey0_1_
+    # !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+    # !inkey0_3_ & !inkey0_1_ & !inkey0_0_
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_0_ ; (4 pterms, 4 signals)
+
+ra02_k02_n_118_i_n = !outr0_2_.Q & !outr0_1_.Q ; (1 pterm, 2 signals)
+
+ra02_k02_n_122_i_n = !( outr0_2_.Q & outr0_1_.Q
+    # outr0_3_.Q & outr0_0_.Q ) ; (2 pterms, 4 signals)
+
+ra02_k02_outcontce_n.X1 = !reset0
+    # reset0 & !outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_117_i_n
+       & ra02_k02_n_122_i_n
+    # reset0 & !inFlagk0.Q & outr0_0_.Q & RA02_K02_aux04.Q & N_293_0_6
+       & ra02_k02_n_118_i_n & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n ; (3 pterms, 9 signals)
+ra02_k02_outcontce_n.X2 = reset0 & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n ; (1 pterm, 5 signals)
+
+ra03_n_34_0_n = !( !outContWrite0_2_.Q & !outContWrite0_0_.Q
+       & outContRead0_1_.Q & outContRead0_0_.Q
+    # !outContWrite0_2_.Q & !outContWrite0_1_.Q & !outContWrite0_0_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_2_.Q & !outContWrite0_1_.Q & outContRead0_1_.Q
+    # !outContWrite0_0_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_1_.Q & !outContWrite0_0_.Q & outContRead0_2_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_1_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+    # !outContWrite0_2_.Q & outContRead0_2_.Q ) ; (7 pterms, 6 signals)
+
+ra03_outflagm_0_sqmuxa_n = reset0 & !wr0 & !RA03_aux.Q
+    # reset0 & !wr0 & outFlagk0.Q ; (2 pterms, 4 signals)
+
+ra03_outwordm_0_sqmuxa_n = !( wr0 & outContWrite0_3_.Q & !outContRead0_3_.Q
+       & inFlagcc0.Q & !RA05_outFlagcw.Q
+    # wr0 & !outContRead0_3_.Q & inFlagcc0.Q & !RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # wr0 & outContWrite0_3_.Q & inFlagcc0.Q & !RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # !reset0 ) ; (4 pterms, 7 signals)
+
+ra05_outcontreade_0_n = wr0 & !outFlagw0.Q
+    # wr0 & !ra05_rscw_0_sqmuxa_n ; (2 pterms, 3 signals)
+
+ra05_rscw_0_sqmuxa_n.X1 = inFlagcc0.Q & outContWrite0_2_.Q
+       & !outContRead0_2_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & !outContRead0_1_.Q
+    # inFlagcc0.Q & outContWrite0_1_.Q & !outContRead0_2_.Q
+       & !outContRead0_1_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & outContWrite0_0_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_0_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_1_.Q & outContWrite0_0_.Q
+       & !outContRead0_2_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_0_.Q & !outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q
+    # !outContWrite0_3_.Q & outContRead0_3_.Q
+    # outContWrite0_3_.Q & !outContRead0_3_.Q & inFlagcc0.Q ; (9 pterms, 9 signals)
+ra05_rscw_0_sqmuxa_n.X2 = !outContWrite0_3_.Q & outContRead0_3_.Q ; (1 pterm, 2 signals)
+
+
+
+

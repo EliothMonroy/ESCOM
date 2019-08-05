@@ -1,0 +1,11 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00   -part LCMXO2_7000HE  -package TG144C  -grade -5    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synlog\report\lcdram00_lcdram00_fpga_mapper.xml  -top_level_module  toplcdram00  -flow mapping  -multisrs  -oedif  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00.edi   -freq 1.000   C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_prem.srd  -devicelib  C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\syntmp\lcdram00_lcdram00.plg  -osyn  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00.srm  -prjdir  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\  -prjname  proj_1  -log  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synlog\lcdram00_lcdram00_fpga_mapper.srr 
+rc:1 success:1 runtime:6
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00.edi|o|1481495996|203072
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_prem.srd|i|1481495992|29471
+C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\machxo2.v|i|1449730182|54295
+C:\lscc\diamond\3.7_x64\synpbase\lib\lucent\pmi_def.v|i|1449730182|40584
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\syntmp\lcdram00_lcdram00.plg|o|1481495998|2236
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00.srm|o|1481495996|11993
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synlog\lcdram00_lcdram00_fpga_mapper.srr|o|1481495998|46701
+C:\lscc\diamond\3.7_x64\synpbase\bin\m_gen_lattice.exe|i|1452320202|17846272
+C:\lscc\diamond\3.7_x64\synpbase\bin64\m_gen_lattice.exe|i|1452321578|21336576

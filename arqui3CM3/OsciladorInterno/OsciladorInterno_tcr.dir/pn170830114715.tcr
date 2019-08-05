@@ -1,0 +1,6 @@
+#Start recording tcl command: 8/30/2017 11:09:19
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/OsciladorInterno; Project name: OsciladorInterno
+prj_project new -name "OsciladorInterno" -impl "OsciladorInterno" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/OsciladorInterno/osc00.vhdl"
+#Stop recording: 8/30/2017 11:47:15

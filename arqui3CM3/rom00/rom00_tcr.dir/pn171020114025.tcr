@@ -1,0 +1,30 @@
+#Start recording tcl command: 10/20/2017 11:11:04
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/rom00; Project name: rom00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00.ldf"
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project open "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program set -port FTUSB-0
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+prj_run Export -impl rom00 -task Jedecgen
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/rom00.xcf"
+pgr_program run
+prj_project save
+pgr_project close
+#Stop recording: 10/20/2017 11:40:25

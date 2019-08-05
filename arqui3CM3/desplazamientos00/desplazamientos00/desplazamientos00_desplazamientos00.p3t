@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "desplazamientos00_desplazamientos00.log"
+-o "desplazamientos00_desplazamientos00.csv"
+-pr "desplazamientos00_desplazamientos00.prf"

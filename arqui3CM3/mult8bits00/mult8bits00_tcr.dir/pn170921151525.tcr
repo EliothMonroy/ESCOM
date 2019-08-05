@@ -1,0 +1,9 @@
+#Start recording tcl command: 9/21/2017 08:58:46
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00; Project name: mult8bits00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00.ldf"
+prj_project save
+prj_project save
+prj_project save
+prj_run Export -impl mult8bits00 -task Jedecgen
+prj_run Export -impl mult8bits00 -task Jedecgen
+#Stop recording: 9/21/2017 15:15:25

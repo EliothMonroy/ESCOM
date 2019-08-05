@@ -1,0 +1,1544 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 2.0.00.17.20.15 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+
+EN0.D = !inFlagcc0.Q & LCD03_ENc.Q
+    # inFlagcc0.Q & RA05_ENcw.Q ; (2 pterms, 3 signals)
+EN0.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+K01_sdiv_0_.D = !k01_n_325_i_5_n & !K01_sdiv_0_.Q
+    # !k01_n_325_i_4_n & !K01_sdiv_0_.Q ; (2 pterms, 3 signals)
+K01_sdiv_0_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_0_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_10_.D = !( K01_sdiv_9_.Q & K01_sdiv_10_.Q & k01_n_63_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+    # !K01_sdiv_10_.Q & !k01_n_63_i_n ) ; (4 pterms, 5 signals)
+K01_sdiv_10_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_10_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_11_.D = !( K01_sdiv_9_.Q & K01_sdiv_10_.Q & K01_sdiv_11_.Q
+       & k01_n_63_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !K01_sdiv_9_.Q & !K01_sdiv_11_.Q
+    # !K01_sdiv_11_.Q & !k01_n_63_i_n ) ; (5 pterms, 6 signals)
+K01_sdiv_11_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_11_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_1_.D = !( k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_0_.Q & !K01_sdiv_1_.Q
+    # K01_sdiv_0_.Q & K01_sdiv_1_.Q ) ; (3 pterms, 4 signals)
+K01_sdiv_1_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_1_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_2_.D = !( K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_1_.Q & !K01_sdiv_2_.Q
+    # !K01_sdiv_0_.Q & !K01_sdiv_2_.Q ) ; (4 pterms, 5 signals)
+K01_sdiv_2_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_2_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_3_.D = !( K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+       & K01_sdiv_3_.Q
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_2_.Q & !K01_sdiv_3_.Q
+    # !K01_sdiv_1_.Q & !K01_sdiv_3_.Q
+    # !K01_sdiv_0_.Q & !K01_sdiv_3_.Q ) ; (5 pterms, 6 signals)
+K01_sdiv_3_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_3_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_4_.D = !k01_n_325_i_5_n & K01_sdiv_0_.Q & K01_sdiv_1_.Q
+       & K01_sdiv_2_.Q & K01_sdiv_3_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q
+       & K01_sdiv_3_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_5_n & K01_sdiv_4_.Q & !k01_n_59_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_4_.Q & !k01_n_59_i_n ; (4 pterms, 8 signals)
+K01_sdiv_4_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_4_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_5_.D = !( k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_5_.Q & !k01_n_59_i_n
+    # K01_sdiv_5_.Q & k01_n_59_i_n ) ; (3 pterms, 4 signals)
+K01_sdiv_5_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_5_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_6_.D = !( K01_sdiv_5_.Q & K01_sdiv_6_.Q & k01_n_59_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_5_.Q & !K01_sdiv_6_.Q
+    # !K01_sdiv_6_.Q & !k01_n_59_i_n ) ; (4 pterms, 5 signals)
+K01_sdiv_6_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_6_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_7_.D = !( K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q
+       & k01_n_59_i_n
+    # k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+    # !K01_sdiv_5_.Q & !K01_sdiv_7_.Q
+    # !K01_sdiv_7_.Q & !k01_n_59_i_n ) ; (5 pterms, 6 signals)
+K01_sdiv_7_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_7_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_8_.D = !k01_n_325_i_5_n & K01_sdiv_5_.Q & K01_sdiv_6_.Q
+       & K01_sdiv_7_.Q & k01_n_59_i_n & !k01_n_63_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q
+       & k01_n_59_i_n & !k01_n_63_i_n
+    # !k01_n_325_i_5_n & K01_sdiv_8_.Q & !k01_n_63_i_n
+    # !k01_n_325_i_4_n & K01_sdiv_8_.Q & !k01_n_63_i_n ; (4 pterms, 8 signals)
+K01_sdiv_8_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_8_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+K01_sdiv_9_.D = !( k01_n_325_i_4_n & k01_n_325_i_5_n
+    # !K01_sdiv_9_.Q & !k01_n_63_i_n
+    # K01_sdiv_9_.Q & k01_n_63_i_n ) ; (3 pterms, 4 signals)
+K01_sdiv_9_.C = tmrout ; (1 pterm, 1 signal)
+K01_sdiv_9_.CE = k01_n_4_i_n ; (1 pterm, 1 signal)
+
+LCD03_ENc.D = 1 ; (1 pterm, 0 signal)
+LCD03_ENc.LH = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & !outcc0_0_.Q ; (1 pterm, 5 signals)
+LCD03_ENc.AR = LCD03_ENc_0 ; (1 pterm, 1 signal)
+
+LCD03_ENc_0 = !reset0
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_1_.Q & outcc0_0_.Q
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_2_.Q & outcc0_0_.Q
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q & outcc0_0_.Q ; (4 pterms, 8 signals)
+
+LCD03_outWordc_1_0_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_0_.LH = LCD03_outWordc_1_0__0 ; (1 pterm, 1 signal)
+LCD03_outWordc_1_0_.AR = LCD03_outWordc_1_0__1 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_0__0 = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_1_.Q & lcd03_n_42_i_n
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q
+       & lcd03_n_42_i_n ; (2 pterms, 7 signals)
+
+LCD03_outWordc_1_0__1 = !( !lcd03_n_26_i_1_n
+    # reset0 & outcc0_3_.Q & !outcc0_2_.Q & outcc0_1_.Q ) ; (2 pterms, 5 signals)
+
+LCD03_outWordc_1_1_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_1_.LH = LCD03_outWordc_1_1__0 ; (1 pterm, 1 signal)
+LCD03_outWordc_1_1_.AR = LCD03_outWordc_1_1__1 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_1__0 = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_1_.Q & lcd03_n_42_i_n
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q
+       & lcd03_n_42_i_n ; (2 pterms, 7 signals)
+
+LCD03_outWordc_1_1__1 = !outcc0_3_.Q & lcd03_n_30_i_2_n & lcd03_n_71_i_n
+    # !reset0 & lcd03_n_30_i_2_n & lcd03_n_71_i_n
+    # outcc0_2_.Q & lcd03_n_30_i_2_n & lcd03_n_71_i_n ; (3 pterms, 5 signals)
+
+LCD03_outWordc_1_2_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_2_.LH = !lcd03_un1_inflagc_8_0_n ; (1 pterm, 1 signal)
+LCD03_outWordc_1_2_.AR = LCD03_outWordc_1_2__0 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_2__0 = !reset0
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q & outcc0_2_.Q ; (2 pterms, 6 signals)
+
+LCD03_outWordc_1_3_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_3_.LH = !lcd03_un1_inflagc_9_0_n ; (1 pterm, 1 signal)
+LCD03_outWordc_1_3_.AR = !lcd03_n_63_n & lcd03_n_46_i_n ; (1 pterm, 2 signals)
+
+LCD03_outWordc_1_4_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_4_.LH = LCD03_outWordc_1_4__0 ; (1 pterm, 1 signal)
+LCD03_outWordc_1_4_.AR = LCD03_outWordc_1_4__1 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_4__0 = lcd03_un1_inflagc_6_n
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q
+       & outcc0_2_.Q ; (2 pterms, 7 signals)
+
+LCD03_outWordc_1_4__1 = !reset0
+    # !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & lcd03_n_42_i_n ; (2 pterms, 5 signals)
+
+LCD03_outWordc_1_5_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_5_.LH = lcd03_un1_inflagc_6_n ; (1 pterm, 1 signal)
+LCD03_outWordc_1_5_.AR = lcd03_n_46_i_n ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_7_.D = 1 ; (1 pterm, 0 signal)
+LCD03_outWordc_1_7_.LH = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q ; (1 pterm, 7 signals)
+LCD03_outWordc_1_7_.AR = LCD03_outWordc_1_7__0 ; (1 pterm, 1 signal)
+
+LCD03_outWordc_1_7__0 = !( !lcd03_n_28_i_1_n
+    # reset0 & !outcc0_3_.Q & !outcc0_2_.Q & !outcc0_1_.Q & outcc0_0_.Q ) ; (2 pterms, 6 signals)
+
+N_293_0_6 = !( !outr0_3_.Q & !inFlagk0.Q & !outr0_1_.Q & !outr0_0_.Q
+       & RA02_K02_aux02.Q
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+    # !inFlagk0.Q & outr0_1_.Q & RA02_K02_aux03.Q
+    # outr0_3_.Q & !inFlagk0.Q & RA02_K02_aux01.Q ) ; (4 pterms, 11 signals)
+
+RA02_K01_sring_3_.D = !( reset0 & !outr0_1_.Q ) ; (1 pterm, 2 signals)
+RA02_K01_sring_3_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA02_K02_aux01.D.X1 = RA02_K02_aux01.Q
+    # outr0_3_.Q & !outr0_0_.Q & !RA02_K02_aux01.Q & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & outr0_3_.Q
+       & !outr0_0_.Q & !RA02_K02_aux01.Q & ra02_k02_n_118_i_n
+       & !ra02_k02_n_117_i_n ; (3 pterms, 9 signals)
+RA02_K02_aux01.D.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & outr0_3_.Q & !outr0_0_.Q & ra02_k02_n_118_i_n ; (1 pterm, 7 signals)
+RA02_K02_aux01.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux01.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_aux02.T.X1 = !outr0_3_.Q & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q
+       & !RA02_K02_aux02.Q & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & !outr0_3_.Q
+       & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q & !RA02_K02_aux02.Q
+       & !ra02_k02_n_117_i_n ; (2 pterms, 10 signals)
+RA02_K02_aux02.T.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & !outr0_3_.Q & outr0_2_.Q & !outr0_1_.Q & !outr0_0_.Q ; (1 pterm, 8 signals)
+RA02_K02_aux02.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux02.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_aux03.T.X1 = !outr0_3_.Q & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q
+       & !RA02_K02_aux03.Q & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & !outr0_3_.Q
+       & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q & !RA02_K02_aux03.Q
+       & !ra02_k02_n_117_i_n ; (2 pterms, 10 signals)
+RA02_K02_aux03.T.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & !outr0_3_.Q & !outr0_2_.Q & outr0_1_.Q & !outr0_0_.Q ; (1 pterm, 8 signals)
+RA02_K02_aux03.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux03.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_aux04.D.X1 = RA02_K02_aux04.Q
+    # !outr0_3_.Q & outr0_0_.Q & !RA02_K02_aux04.Q & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_ & !outr0_3_.Q
+       & outr0_0_.Q & !RA02_K02_aux04.Q & ra02_k02_n_118_i_n
+       & !ra02_k02_n_117_i_n ; (3 pterms, 9 signals)
+RA02_K02_aux04.D.X2 = !inkey0_3_ & !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+       & !outr0_3_.Q & outr0_0_.Q & ra02_k02_n_118_i_n ; (1 pterm, 7 signals)
+RA02_K02_aux04.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_aux04.CE = reset0 ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_0_.D = !( reset0 & !inkey0_2_ & inkey0_1_ & !inkey0_0_
+       & !outr0_1_.Q
+    # reset0 & !inkey0_2_ & inkey0_0_ & !outr0_3_.Q & !outr0_1_.Q
+    # reset0 & inkey0_2_ & !inkey0_0_ & outr0_3_.Q & !outr0_1_.Q ) ; (3 pterms, 6 signals)
+RA02_K02_out7segc_1_0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_0_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_1_.D = !( reset0 & !inkey0_1_ & !outr0_1_.Q & outr0_0_.Q
+    # reset0 & inkey0_1_ & !outr0_3_.Q & !outr0_1_.Q
+    # reset0 & !inkey0_1_ & outr0_3_.Q & !outr0_1_.Q ) ; (3 pterms, 5 signals)
+RA02_K02_out7segc_1_1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_1_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_2_.D = !inkey0_1_ & !inkey0_0_ & !outr0_1_.Q & !outr0_0_.Q
+    # inkey0_0_ & outr0_1_.Q
+    # inkey0_1_ & !outr0_3_.Q & !outr0_0_.Q
+    # !reset0 ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_2_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_3_.D = !( reset0 & !inkey0_2_ & !outr0_2_.Q & !outr0_1_.Q
+       & !outr0_0_.Q
+    # !inkey0_3_ & reset0 & !inkey0_2_ & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_2_ & outr0_1_.Q & !outr0_0_.Q
+    # inkey0_3_ & reset0 & outr0_1_.Q & !outr0_0_.Q ) ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_3_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_4_.D = !( reset0 & outr0_3_.Q & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & !inkey0_1_ & !inkey0_0_ & !outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_0_ & outr0_1_.Q & !outr0_0_.Q
+    # reset0 & inkey0_1_ & outr0_1_.Q & !outr0_0_.Q ) ; (4 pterms, 6 signals)
+RA02_K02_out7segc_1_4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_4_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_5_.D = !reset0 ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA02_K02_out7segc_1_5_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+RA02_K02_out7segc_1_7_.D = !( reset0 & !outr0_3_.Q & !outr0_0_.Q & N_293_0_6
+       & !ra02_k02_n_118_i_n & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & inFlagk0.Q & outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_0_.Q & !RA02_K02_aux04.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & !RA02_K02_out7segc_1_7_.Q ) ; (5 pterms, 10 signals)
+RA02_K02_out7segc_1_7_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_aux.D = !( !ra03_outflagm_0_sqmuxa_n & !RA03_aux.Q ) ; (1 pterm, 2 signals)
+RA03_aux.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_outWordm_0_.D = !( reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & !RA03_sram_sram_ram12__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram10__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram6__0_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram15__0_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram13__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram11__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram8__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram2__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram4__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram7__0_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram9__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram0__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram3__0_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram5__0_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram1__0_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram14__0_.Q ) ; (16 pterms, 21 signals)
+RA03_outWordm_0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_0_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_1_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__1_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__1_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__1_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__1_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__1_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__1_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__1_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_1_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_2_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__2_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__2_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__2_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__2_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__2_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__2_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__2_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_2_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_3_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__3_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__3_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__3_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__3_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__3_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__3_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__3_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_3_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_4_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__4_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__4_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__4_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__4_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__4_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__4_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__4_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_4_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_5_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__5_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__5_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__5_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__5_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__5_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__5_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__5_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_5_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_6_.D = !( reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & !RA03_sram_sram_ram12__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram10__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram6__6_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram15__6_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram13__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram11__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram8__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram2__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram7__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram4__6_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram9__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram0__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram3__6_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram5__6_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & !RA03_sram_sram_ram1__6_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & !RA03_sram_sram_ram14__6_.Q ) ; (16 pterms, 21 signals)
+RA03_outWordm_6_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_6_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_outWordm_7_.D = reset0 & outContRead0_3_.Q & outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q & RA03_sram_sram_ram12__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram9__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram5__7_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram15__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram11__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram8__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram7__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram1__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram4__7_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram14__7_.Q
+    # reset0 & outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram10__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & !outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram0__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram3__7_.Q
+    # reset0 & !outContRead0_3_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram6__7_.Q
+    # reset0 & !outContRead0_3_.Q & !outContRead0_2_.Q & outContRead0_1_.Q
+       & !outContRead0_0_.Q & RA03_sram_sram_ram2__7_.Q
+    # reset0 & outContRead0_3_.Q & outContRead0_2_.Q & !outContRead0_1_.Q
+       & outContRead0_0_.Q & RA03_sram_sram_ram13__7_.Q ; (16 pterms, 21 signals)
+RA03_outWordm_7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_outWordm_7_.CE = !ra03_outwordm_0_sqmuxa_n ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram0__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram0__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram0__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram0__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram0__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram0__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram10__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram10__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram10__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram10__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram10__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram11__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram11__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram11__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram11__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram11__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram12__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram12__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram12__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram12__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram12__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram13__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram13__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram13__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram13__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram13__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram14__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram14__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram14__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram14__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram14__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__0_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__1_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__2_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__3_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__4_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__5_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram15__6_.D = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram15__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram15__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram15__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram15__7_.CE = outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram1__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram1__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram1__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram1__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram1__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram2__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram2__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram2__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram2__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram2__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__0_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__1_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__2_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__3_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__4_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__5_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram3__6_.D = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram3__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram3__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram3__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram3__7_.CE = !outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram4__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram4__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram4__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram4__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram4__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram5__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram5__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram5__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram5__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram5__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram6__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram6__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram6__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram6__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram6__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__0_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__1_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__2_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__3_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__4_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__5_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram7__6_.D = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram7__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram7__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram7__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram7__7_.CE = !outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram8__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram8__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram8__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram8__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram8__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & !outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__0_.D = RA02_K02_out7segc_1_0_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__0_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__0_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__1_.D = RA02_K02_out7segc_1_1_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__1_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__1_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__2_.D = RA02_K02_out7segc_1_2_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__2_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__2_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__3_.D = RA02_K02_out7segc_1_3_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__3_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__3_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__4_.D = RA02_K02_out7segc_1_4_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__4_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__4_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__5_.D = RA02_K02_out7segc_1_5_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__5_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__5_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA03_sram_sram_ram9__6_.D = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n
+    # RA03_sram_sram_ram9__6_.Q ; (2 pterms, 6 signals)
+RA03_sram_sram_ram9__6_.C = clk0.Q ; (1 pterm, 1 signal)
+
+RA03_sram_sram_ram9__7_.D = RA02_K02_out7segc_1_7_.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__7_.C = clk0.Q ; (1 pterm, 1 signal)
+RA03_sram_sram_ram9__7_.CE = outContWrite0_3_.Q & !outContWrite0_2_.Q
+       & !outContWrite0_1_.Q & outContWrite0_0_.Q & ra03_outflagm_0_sqmuxa_n ; (1 pterm, 5 signals)
+
+RA05_ENcw.D = RA05_ENcw.Q & !ra05_rscw_0_sqmuxa_n
+    # !outFlagw0.Q & ra05_rscw_0_sqmuxa_n ; (2 pterms, 3 signals)
+RA05_ENcw.C = clk0.Q ; (1 pterm, 1 signal)
+RA05_ENcw.CE = wr0 ; (1 pterm, 1 signal)
+
+RA05_outFlagcw.D = !( wr0 & !RA05_outFlagcw.Q & !ra05_rscw_0_sqmuxa_n
+    # wr0 & !outFlagw0.Q & ra05_rscw_0_sqmuxa_n ) ; (2 pterms, 4 signals)
+RA05_outFlagcw.C = clk0.Q ; (1 pterm, 1 signal)
+
+RS0.D = inFlagcc0.Q ; (1 pterm, 1 signal)
+RS0.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+RW0 = 0 ; (0 pterm, 0 signal)
+
+clk0.T = cdiv00_2_ & !cdiv00_0_ & k01_n_18_1_n
+    # cdiv00_0_ & k01_n_16_2_n & k01_n_8_n
+    # k01_n_17_1_n & k01_n_17_2_n
+    # k01_n_15_n ; (4 pterms, 8 signals)
+clk0.C = tmrout ; (1 pterm, 1 signal)
+
+inFlagcc0.D = 1 ; (1 pterm, 0 signal)
+inFlagcc0.LH = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_3_.Q & outcc0_2_.Q & outcc0_0_.Q ; (1 pterm, 7 signals)
+inFlagcc0.AR = !lcd03_un1_inflagc_10_0_n ; (1 pterm, 1 signal)
+
+inFlagk0.D = !( reset0 & !wr0 & !outFlagk0.Q & RA03_aux.Q
+    # reset0 & wr0 & !inFlagk0.Q ) ; (2 pterms, 5 signals)
+inFlagk0.C = clk0.Q ; (1 pterm, 1 signal)
+
+k01_n_15_n = !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_ & cdiv00_0_ & K01_sdiv_10_.Q
+    # !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_ & K01_sdiv_11_.Q ; (2 pterms, 6 signals)
+
+k01_n_16_2_n = !cdiv00_3_ & cdiv00_1_ ; (1 pterm, 2 signals)
+
+k01_n_17_1_n = !( !K01_sdiv_6_.Q & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q
+       & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_0_ & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_1_ ) ; (3 pterms, 8 signals)
+
+k01_n_17_2_n = cdiv00_3_ & cdiv00_2_ ; (1 pterm, 2 signals)
+
+k01_n_18_1_n = !( !K01_sdiv_5_.Q & !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+       & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_1_
+    # !cdiv00_3_ ) ; (3 pterms, 9 signals)
+
+k01_n_325_i_4_n = !( cdiv00_3_ & !K01_sdiv_5_.Q & !K01_sdiv_6_.Q
+       & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q
+    # cdiv00_1_ & !cdiv00_0_ & !K01_sdiv_6_.Q & !K01_sdiv_7_.Q
+       & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # cdiv00_3_ & cdiv00_0_ & !K01_sdiv_7_.Q & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_2_ & cdiv00_1_ & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q ) ; (4 pterms, 11 signals)
+
+k01_n_325_i_5_n = !( !cdiv00_3_ & cdiv00_2_ & !K01_sdiv_8_.Q & !K01_sdiv_9_.Q
+       & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_1_ & cdiv00_0_ & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q
+    # !cdiv00_3_ & !cdiv00_0_ & !K01_sdiv_11_.Q ) ; (3 pterms, 8 signals)
+
+k01_n_4_i_n = !cdiv00_3_ & !cdiv00_2_ & cdiv00_0_
+    # cdiv00_2_ & cdiv00_1_ & cdiv00_0_
+    # !cdiv00_3_ & !cdiv00_2_ & !cdiv00_1_
+    # cdiv00_3_ & cdiv00_2_ & !cdiv00_0_ ; (4 pterms, 4 signals)
+
+k01_n_59_i_n = K01_sdiv_0_.Q & K01_sdiv_1_.Q & K01_sdiv_2_.Q & K01_sdiv_3_.Q
+       & K01_sdiv_4_.Q ; (1 pterm, 5 signals)
+
+k01_n_63_i_n = K01_sdiv_5_.Q & K01_sdiv_6_.Q & K01_sdiv_7_.Q & K01_sdiv_8_.Q
+       & k01_n_59_i_n ; (1 pterm, 5 signals)
+
+k01_n_8_n = !( !K01_sdiv_8_.Q & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q
+       & !K01_sdiv_11_.Q
+    # !cdiv00_2_ & !K01_sdiv_9_.Q & !K01_sdiv_10_.Q & !K01_sdiv_11_.Q ) ; (2 pterms, 5 signals)
+
+lcd03_n_26_i_1_n = !( reset0 & !outcc0_3_.Q & !outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & !outcc0_3_.Q & outcc0_2_.Q
+    # !lcd03_n_71_i_n ) ; (3 pterms, 6 signals)
+
+lcd03_n_28_i_1_n = !( reset0 & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+    # !lcd03_n_71_i_n ) ; (2 pterms, 5 signals)
+
+lcd03_n_30_i_2_n = !( reset0 & !outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+    # reset0 & !outcc0_2_.Q & !outcc0_1_.Q & outcc0_0_.Q ) ; (2 pterms, 5 signals)
+
+lcd03_n_42_i_n = !outcc0_3_.Q & outcc0_2_.Q
+    # outcc0_3_.Q & !outcc0_2_.Q ; (2 pterms, 2 signals)
+
+lcd03_n_46_i_n = !( reset0 & !outcc0_3_.Q & !outcc0_2_.Q
+    # !lcd03_n_71_i_n ) ; (2 pterms, 4 signals)
+
+lcd03_n_63_n = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & outcc0_3_.Q & outcc0_2_.Q & !outcc0_1_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_2_.Q
+       & outcc0_1_.Q ; (2 pterms, 7 signals)
+
+lcd03_n_71_i_n = !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+    # !reset0 ; (2 pterms, 4 signals)
+
+lcd03_un1_inflagc_10_0_n = reset0 & outFlagcc0.Q & outcc0_3_.Q & outcc0_0_.Q
+       & !lcd03_n_42_i_n
+    # reset0 & outFlagcc0.Q & !outcc0_1_.Q & outcc0_0_.Q & !lcd03_n_42_i_n
+    # reset0 & outcc0_5_.Q & outFlagcc0.Q
+    # reset0 & outFlagcc0.Q & outcc0_4_.Q ; (4 pterms, 8 signals)
+
+lcd03_un1_inflagc_6_n = reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q
+       & !outcc0_3_.Q & !outcc0_2_.Q & outcc0_1_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_3_.Q
+       & !outcc0_2_.Q & !outcc0_0_.Q ; (2 pterms, 8 signals)
+
+lcd03_un1_inflagc_8_0_n = !( reset0 & !outcc0_5_.Q & outFlagcc0.Q
+       & !outcc0_4_.Q & !outcc0_2_.Q & outcc0_1_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & !outcc0_2_.Q
+       & !outcc0_0_.Q
+    # reset0 & !outcc0_5_.Q & outFlagcc0.Q & !outcc0_4_.Q & outcc0_3_.Q ) ; (3 pterms, 8 signals)
+
+lcd03_un1_inflagc_9_0_n = !( reset0 & !outcc0_5_.Q & outFlagcc0.Q
+       & !outcc0_4_.Q & !outcc0_3_.Q & !outcc0_2_.Q & !outcc0_0_.Q
+    # lcd03_n_63_n ) ; (2 pterms, 8 signals)
+
+lcd06_pbuff_un2_inflagbuffwrite_n = !( inFlagcc0.Q & !outFlagw0.Q ) ; (1 pterm, 2 signals)
+
+osc_oscdis0 = oscdis0 ; (1 pterm, 1 signal)
+
+osc_tmrrst0 = tmrrst0 ; (1 pterm, 1 signal)
+
+oscout0 = oscout0_c ; (1 pterm, 1 signal)
+
+outContRead0_0_.D = wr0 & !outContRead0_0_.Q ; (1 pterm, 2 signals)
+outContRead0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_0_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContRead0_1_.D = wr0 & !outContRead0_1_.Q & outContRead0_0_.Q
+    # wr0 & outContRead0_1_.Q & !outContRead0_0_.Q ; (2 pterms, 3 signals)
+outContRead0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_1_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContRead0_2_.D = wr0 & !outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q
+    # wr0 & outContRead0_2_.Q & !outContRead0_1_.Q
+    # wr0 & outContRead0_2_.Q & !outContRead0_0_.Q ; (3 pterms, 4 signals)
+outContRead0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_2_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContRead0_3_.D = wr0 & !outContRead0_3_.Q & outContRead0_2_.Q
+       & outContRead0_1_.Q & outContRead0_0_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_2_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_1_.Q
+    # wr0 & outContRead0_3_.Q & !outContRead0_0_.Q ; (4 pterms, 5 signals)
+outContRead0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+outContRead0_3_.CE = !ra05_outcontreade_0_n ; (1 pterm, 1 signal)
+
+outContWrite0_0_.D = !( reset0 & outContWrite0_0_.Q ) ; (1 pterm, 2 signals)
+outContWrite0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_0_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outContWrite0_1_.D = !( reset0 & !outContWrite0_1_.Q & !outContWrite0_0_.Q
+    # reset0 & outContWrite0_1_.Q & outContWrite0_0_.Q ) ; (2 pterms, 3 signals)
+outContWrite0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_1_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outContWrite0_2_.D = !( reset0 & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & outContWrite0_0_.Q
+    # reset0 & !outContWrite0_2_.Q & !outContWrite0_1_.Q
+    # reset0 & !outContWrite0_2_.Q & !outContWrite0_0_.Q ) ; (3 pterms, 4 signals)
+outContWrite0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_2_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outContWrite0_3_.D = !( reset0 & outContWrite0_3_.Q & outContWrite0_2_.Q
+       & outContWrite0_1_.Q & outContWrite0_0_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_2_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_1_.Q
+    # reset0 & !outContWrite0_3_.Q & !outContWrite0_0_.Q ) ; (4 pterms, 5 signals)
+outContWrite0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+outContWrite0_3_.CE = ra02_k02_outcontce_n ; (1 pterm, 1 signal)
+
+outFlagcc0.D = reset0 ; (1 pterm, 1 signal)
+outFlagcc0.C = clk0.Q ; (1 pterm, 1 signal)
+
+outFlagk0.D = reset0 & !outr0_3_.Q & !outr0_0_.Q & N_293_0_6
+       & !ra02_k02_n_118_i_n & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & inFlagk0.Q & outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_0_.Q & !RA02_K02_aux04.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n
+    # reset0 & !outr0_3_.Q & outFlagk0.Q & !outr0_0_.Q & ra02_k02_n_118_i_n
+    # reset0 & outr0_3_.Q & outFlagk0.Q & !ra02_k02_n_118_i_n
+    # reset0 & outFlagk0.Q & outr0_0_.Q & !ra02_k02_n_118_i_n
+    # reset0 & outFlagk0.Q & !ra02_k02_n_117_i_n
+    # reset0 & outFlagk0.Q & !ra02_k02_n_122_i_n ; (9 pterms, 10 signals)
+outFlagk0.C = clk0.Q ; (1 pterm, 1 signal)
+
+outFlagw0.D = !( reset0 & wr0 & outContWrite0_3_.Q & !outContRead0_3_.Q
+       & inFlagcc0.Q & RA05_outFlagcw.Q
+    # reset0 & wr0 & !outContRead0_3_.Q & inFlagcc0.Q & RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # reset0 & wr0 & outContWrite0_3_.Q & inFlagcc0.Q & RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # reset0 & !outContWrite0_3_.Q & outContRead0_3_.Q & !outFlagw0.Q
+    # reset0 & outContRead0_3_.Q & !outFlagw0.Q & !ra03_n_34_0_n
+    # reset0 & !outContWrite0_3_.Q & !outFlagw0.Q & !ra03_n_34_0_n
+    # reset0 & !inFlagcc0.Q & !outFlagw0.Q
+    # reset0 & !wr0 & !outFlagw0.Q ) ; (8 pterms, 8 signals)
+outFlagw0.C = clk0.Q ; (1 pterm, 1 signal)
+
+outcc0_0_.D = reset0 & !outcc0_0_.Q ; (1 pterm, 2 signals)
+outcc0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_0_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_1_.D = reset0 & !outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & outcc0_1_.Q & !outcc0_0_.Q ; (2 pterms, 3 signals)
+outcc0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_1_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_2_.D = reset0 & !outcc0_2_.Q & outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & outcc0_2_.Q & !outcc0_1_.Q
+    # reset0 & outcc0_2_.Q & !outcc0_0_.Q ; (3 pterms, 4 signals)
+outcc0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_2_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_3_.D = reset0 & !outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q & outcc0_0_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_2_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_1_.Q
+    # reset0 & outcc0_3_.Q & !outcc0_0_.Q ; (4 pterms, 5 signals)
+outcc0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_3_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_4_.D.X1 = reset0 & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+       & outcc0_0_.Q ; (1 pterm, 5 signals)
+outcc0_4_.D.X2 = reset0 & outcc0_4_.Q ; (1 pterm, 2 signals)
+outcc0_4_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_4_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outcc0_5_.T = reset0 & outcc0_4_.Q & outcc0_3_.Q & outcc0_2_.Q & outcc0_1_.Q
+       & outcc0_0_.Q
+    # !reset0 & outcc0_5_.Q ; (2 pterms, 7 signals)
+outcc0_5_.C = clk0.Q ; (1 pterm, 1 signal)
+outcc0_5_.CE = !( reset0 & inFlagcc0.Q ) ; (1 pterm, 2 signals)
+
+outr0_0_.D = reset0 & outr0_3_.Q ; (1 pterm, 2 signals)
+outr0_0_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outr0_1_.D = reset0 & outr0_0_.Q ; (1 pterm, 2 signals)
+outr0_1_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outr0_2_.D = reset0 & outr0_1_.Q ; (1 pterm, 2 signals)
+outr0_2_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outr0_3_.D = reset0 & RA02_K01_sring_3_.Q ; (1 pterm, 2 signals)
+outr0_3_.C = clk0.Q ; (1 pterm, 1 signal)
+
+outword0_0_.D = !inFlagcc0.Q & LCD03_outWordc_1_0_.Q
+    # inFlagcc0.Q & RA03_outWordm_0_.Q ; (2 pterms, 3 signals)
+outword0_0_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_1_.D = !inFlagcc0.Q & LCD03_outWordc_1_1_.Q
+    # inFlagcc0.Q & RA03_outWordm_1_.Q ; (2 pterms, 3 signals)
+outword0_1_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_2_.D = !inFlagcc0.Q & LCD03_outWordc_1_2_.Q
+    # inFlagcc0.Q & RA03_outWordm_2_.Q ; (2 pterms, 3 signals)
+outword0_2_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_3_.D = !inFlagcc0.Q & LCD03_outWordc_1_3_.Q
+    # inFlagcc0.Q & RA03_outWordm_3_.Q ; (2 pterms, 3 signals)
+outword0_3_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_4_.D = !inFlagcc0.Q & LCD03_outWordc_1_4_.Q
+    # inFlagcc0.Q & RA03_outWordm_4_.Q ; (2 pterms, 3 signals)
+outword0_4_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_5_.D = !inFlagcc0.Q & LCD03_outWordc_1_5_.Q
+    # inFlagcc0.Q & RA03_outWordm_5_.Q ; (2 pterms, 3 signals)
+outword0_5_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_6_.D = inFlagcc0.Q & RA03_outWordm_6_.Q ; (1 pterm, 2 signals)
+outword0_6_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+outword0_7_.D = !inFlagcc0.Q & LCD03_outWordc_1_7_.Q
+    # inFlagcc0.Q & RA03_outWordm_7_.Q ; (2 pterms, 3 signals)
+outword0_7_.LH = lcd06_pbuff_un2_inflagbuffwrite_n ; (1 pterm, 1 signal)
+
+ra02_k02_n_117_i_n = !inkey0_3_ & !inkey0_2_ & !inkey0_1_
+    # !inkey0_2_ & !inkey0_1_ & !inkey0_0_
+    # !inkey0_3_ & !inkey0_1_ & !inkey0_0_
+    # !inkey0_3_ & !inkey0_2_ & !inkey0_0_ ; (4 pterms, 4 signals)
+
+ra02_k02_n_118_i_n = !outr0_2_.Q & !outr0_1_.Q ; (1 pterm, 2 signals)
+
+ra02_k02_n_122_i_n = !( outr0_2_.Q & outr0_1_.Q
+    # outr0_3_.Q & outr0_0_.Q ) ; (2 pterms, 4 signals)
+
+ra02_k02_outcontce_n.X1 = !reset0
+    # reset0 & !outr0_3_.Q & !outr0_0_.Q & N_293_0_6 & ra02_k02_n_117_i_n
+       & ra02_k02_n_122_i_n
+    # reset0 & !inFlagk0.Q & outr0_0_.Q & RA02_K02_aux04.Q & N_293_0_6
+       & ra02_k02_n_118_i_n & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n ; (3 pterms, 9 signals)
+ra02_k02_outcontce_n.X2 = reset0 & N_293_0_6 & ra02_k02_n_118_i_n
+       & ra02_k02_n_117_i_n & ra02_k02_n_122_i_n ; (1 pterm, 5 signals)
+
+ra03_n_34_0_n = !( !outContWrite0_2_.Q & !outContWrite0_0_.Q
+       & outContRead0_1_.Q & outContRead0_0_.Q
+    # !outContWrite0_2_.Q & !outContWrite0_1_.Q & !outContWrite0_0_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_2_.Q & !outContWrite0_1_.Q & outContRead0_1_.Q
+    # !outContWrite0_0_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_1_.Q & !outContWrite0_0_.Q & outContRead0_2_.Q
+       & outContRead0_0_.Q
+    # !outContWrite0_1_.Q & outContRead0_2_.Q & outContRead0_1_.Q
+    # !outContWrite0_2_.Q & outContRead0_2_.Q ) ; (7 pterms, 6 signals)
+
+ra03_outflagm_0_sqmuxa_n = reset0 & !wr0 & !RA03_aux.Q
+    # reset0 & !wr0 & outFlagk0.Q ; (2 pterms, 4 signals)
+
+ra03_outwordm_0_sqmuxa_n = !( wr0 & outContWrite0_3_.Q & !outContRead0_3_.Q
+       & inFlagcc0.Q & !RA05_outFlagcw.Q
+    # wr0 & !outContRead0_3_.Q & inFlagcc0.Q & !RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # wr0 & outContWrite0_3_.Q & inFlagcc0.Q & !RA05_outFlagcw.Q
+       & ra03_n_34_0_n
+    # !reset0 ) ; (4 pterms, 7 signals)
+
+ra05_outcontreade_0_n = wr0 & !outFlagw0.Q
+    # wr0 & !ra05_rscw_0_sqmuxa_n ; (2 pterms, 3 signals)
+
+ra05_rscw_0_sqmuxa_n.X1 = inFlagcc0.Q & outContWrite0_2_.Q
+       & !outContRead0_2_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & !outContRead0_1_.Q
+    # inFlagcc0.Q & outContWrite0_1_.Q & !outContRead0_2_.Q
+       & !outContRead0_1_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_1_.Q
+       & outContWrite0_0_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_2_.Q & outContWrite0_0_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_1_.Q & outContWrite0_0_.Q
+       & !outContRead0_2_.Q & !outContRead0_0_.Q
+    # inFlagcc0.Q & outContWrite0_0_.Q & !outContRead0_2_.Q
+       & !outContRead0_1_.Q & !outContRead0_0_.Q
+    # !outContWrite0_3_.Q & outContRead0_3_.Q
+    # outContWrite0_3_.Q & !outContRead0_3_.Q & inFlagcc0.Q ; (9 pterms, 9 signals)
+ra05_rscw_0_sqmuxa_n.X2 = !outContWrite0_3_.Q & outContRead0_3_.Q ; (1 pterm, 2 signals)
+

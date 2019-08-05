@@ -1,0 +1,11 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd":7:7:7:14|Top entity is set to topkey00.
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd":7:7:7:14|Synthesizing work.topkey00.topkey0 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":6:7:6:13|Synthesizing work.coder00.coder0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":42:12:42:19|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":95:5:95:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":149:5:149:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":206:11:206:18|Removed redundant assignment
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":6:7:6:16|Synthesizing work.contring00.contring0 
+

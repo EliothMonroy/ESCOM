@@ -1,0 +1,231 @@
+#$ DATE Wed May 18 20:53:23 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE bufferlcd00
+#$ PINS 35 outwordbuff_3_ outwordbuff_2_ inwordconfig_7_ outwordbuff_1_ outwordbuff_0_ inwordwrite_7_ outwordbuff_7_ inFlagbuffconfig inFlagbuffwrite RWcb RScb ENcb RWwb RSwb ENwb RWbb RSbb ENbb inwordconfig_6_ inwordconfig_5_ inwordconfig_4_ inwordconfig_3_ inwordconfig_2_ inwordconfig_1_ inwordconfig_0_ inwordwrite_6_ inwordwrite_5_ inwordwrite_4_ inwordwrite_3_ inwordwrite_2_ inwordwrite_1_ inwordwrite_0_ outwordbuff_6_ outwordbuff_5_ outwordbuff_4_
+#$ NODES 71 pbuff_un2_inflagbuffwrite_n inFlagbuffconfig_c inFlagbuffwrite_c RWcb_c RScb_c ENcb_c RWwb_c RSwb_c ENwb_c inwordconfig_c_0__n \
+#  inwordconfig_c_1__n inwordconfig_c_2__n inwordconfig_c_3__n inwordconfig_c_4__n inwordconfig_c_5__n inwordconfig_c_6__n inwordconfig_c_7__n inwordwrite_c_0__n inwordwrite_c_1__n inwordwrite_c_2__n \
+#  inwordwrite_c_3__n inwordwrite_c_4__n inwordwrite_c_5__n inwordwrite_c_6__n inwordwrite_c_7__n RWbblatreg RSbblatreg ENbblatreg outwordbufflat_0_reg outwordbufflat_1_reg \
+#  outwordbufflat_2_reg outwordbufflat_3_reg outwordbufflat_4_reg outwordbufflat_5_reg outwordbufflat_6_reg outwordbufflat_7_reg inFlagbuffwrite_c_i pbuff_un2_inflagbuffwrite_0_n enbb_1_un3_n enbb_1_un1_n \
+#  enbb_1_un0_n rsbb_1_un3_n rsbb_1_un1_n rsbb_1_un0_n rwbb_1_un3_n rwbb_1_un1_n rwbb_1_un0_n outwordbuff_1_0__un3_n outwordbuff_1_0__un1_n outwordbuff_1_0__un0_n \
+#  outwordbuff_1_1__un3_n outwordbuff_1_1__un1_n outwordbuff_1_1__un0_n outwordbuff_1_2__un3_n outwordbuff_1_2__un1_n outwordbuff_1_2__un0_n outwordbuff_1_3__un3_n outwordbuff_1_3__un1_n outwordbuff_1_3__un0_n outwordbuff_1_4__un3_n \
+#  outwordbuff_1_4__un1_n outwordbuff_1_4__un0_n outwordbuff_1_5__un3_n outwordbuff_1_5__un1_n outwordbuff_1_5__un0_n outwordbuff_1_6__un3_n outwordbuff_1_6__un1_n outwordbuff_1_6__un0_n outwordbuff_1_7__un3_n outwordbuff_1_7__un1_n \
+#  outwordbuff_1_7__un0_n 
+.model bufferlcd00
+.inputs inwordconfig_7_.BLIF inwordwrite_7_.BLIF inFlagbuffconfig.BLIF inFlagbuffwrite.BLIF RWcb.BLIF RScb.BLIF ENcb.BLIF RWwb.BLIF RSwb.BLIF \
+  ENwb.BLIF inwordconfig_6_.BLIF inwordconfig_5_.BLIF inwordconfig_4_.BLIF inwordconfig_3_.BLIF inwordconfig_2_.BLIF inwordconfig_1_.BLIF inwordconfig_0_.BLIF inwordwrite_6_.BLIF \
+  inwordwrite_5_.BLIF inwordwrite_4_.BLIF inwordwrite_3_.BLIF inwordwrite_2_.BLIF inwordwrite_1_.BLIF inwordwrite_0_.BLIF pbuff_un2_inflagbuffwrite_n.BLIF inFlagbuffconfig_c.BLIF inFlagbuffwrite_c.BLIF \
+  RWcb_c.BLIF RScb_c.BLIF ENcb_c.BLIF RWwb_c.BLIF RSwb_c.BLIF ENwb_c.BLIF inwordconfig_c_0__n.BLIF inwordconfig_c_1__n.BLIF inwordconfig_c_2__n.BLIF \
+  inwordconfig_c_3__n.BLIF inwordconfig_c_4__n.BLIF inwordconfig_c_5__n.BLIF inwordconfig_c_6__n.BLIF inwordconfig_c_7__n.BLIF inwordwrite_c_0__n.BLIF inwordwrite_c_1__n.BLIF inwordwrite_c_2__n.BLIF inwordwrite_c_3__n.BLIF \
+  inwordwrite_c_4__n.BLIF inwordwrite_c_5__n.BLIF inwordwrite_c_6__n.BLIF inwordwrite_c_7__n.BLIF RWbblatreg.BLIF RSbblatreg.BLIF ENbblatreg.BLIF outwordbufflat_0_reg.BLIF outwordbufflat_1_reg.BLIF \
+  outwordbufflat_2_reg.BLIF outwordbufflat_3_reg.BLIF outwordbufflat_4_reg.BLIF outwordbufflat_5_reg.BLIF outwordbufflat_6_reg.BLIF outwordbufflat_7_reg.BLIF inFlagbuffwrite_c_i.BLIF pbuff_un2_inflagbuffwrite_0_n.BLIF enbb_1_un3_n.BLIF \
+  enbb_1_un1_n.BLIF enbb_1_un0_n.BLIF rsbb_1_un3_n.BLIF rsbb_1_un1_n.BLIF rsbb_1_un0_n.BLIF rwbb_1_un3_n.BLIF rwbb_1_un1_n.BLIF rwbb_1_un0_n.BLIF outwordbuff_1_0__un3_n.BLIF \
+  outwordbuff_1_0__un1_n.BLIF outwordbuff_1_0__un0_n.BLIF outwordbuff_1_1__un3_n.BLIF outwordbuff_1_1__un1_n.BLIF outwordbuff_1_1__un0_n.BLIF outwordbuff_1_2__un3_n.BLIF outwordbuff_1_2__un1_n.BLIF outwordbuff_1_2__un0_n.BLIF outwordbuff_1_3__un3_n.BLIF \
+  outwordbuff_1_3__un1_n.BLIF outwordbuff_1_3__un0_n.BLIF outwordbuff_1_4__un3_n.BLIF outwordbuff_1_4__un1_n.BLIF outwordbuff_1_4__un0_n.BLIF outwordbuff_1_5__un3_n.BLIF outwordbuff_1_5__un1_n.BLIF outwordbuff_1_5__un0_n.BLIF outwordbuff_1_6__un3_n.BLIF \
+  outwordbuff_1_6__un1_n.BLIF outwordbuff_1_6__un0_n.BLIF outwordbuff_1_7__un3_n.BLIF outwordbuff_1_7__un1_n.BLIF outwordbuff_1_7__un0_n.BLIF  
+.outputs outwordbuff_7_ RWbb RSbb ENbb outwordbuff_6_ outwordbuff_5_ outwordbuff_4_ outwordbuff_3_ outwordbuff_2_ outwordbuff_1_ outwordbuff_0_ \
+  outwordbufflat_0_reg.D outwordbufflat_0_reg.LH outwordbufflat_1_reg.D outwordbufflat_1_reg.LH outwordbufflat_2_reg.D outwordbufflat_2_reg.LH outwordbufflat_3_reg.D outwordbufflat_3_reg.LH outwordbufflat_4_reg.D outwordbufflat_4_reg.LH outwordbufflat_5_reg.D \
+  outwordbufflat_5_reg.LH outwordbufflat_6_reg.D outwordbufflat_6_reg.LH outwordbufflat_7_reg.D outwordbufflat_7_reg.LH ENbblatreg.D ENbblatreg.LH RSbblatreg.D RSbblatreg.LH RWbblatreg.D RWbblatreg.LH \
+  pbuff_un2_inflagbuffwrite_n inFlagbuffconfig_c inFlagbuffwrite_c RWcb_c RScb_c ENcb_c RWwb_c RSwb_c ENwb_c inwordconfig_c_0__n inwordconfig_c_1__n \
+  inwordconfig_c_2__n inwordconfig_c_3__n inwordconfig_c_4__n inwordconfig_c_5__n inwordconfig_c_6__n inwordconfig_c_7__n inwordwrite_c_0__n inwordwrite_c_1__n inwordwrite_c_2__n inwordwrite_c_3__n inwordwrite_c_4__n \
+  inwordwrite_c_5__n inwordwrite_c_6__n inwordwrite_c_7__n inFlagbuffwrite_c_i pbuff_un2_inflagbuffwrite_0_n enbb_1_un3_n enbb_1_un1_n enbb_1_un0_n rsbb_1_un3_n rsbb_1_un1_n rsbb_1_un0_n \
+  rwbb_1_un3_n rwbb_1_un1_n rwbb_1_un0_n outwordbuff_1_0__un3_n outwordbuff_1_0__un1_n outwordbuff_1_0__un0_n outwordbuff_1_1__un3_n outwordbuff_1_1__un1_n outwordbuff_1_1__un0_n outwordbuff_1_2__un3_n outwordbuff_1_2__un1_n \
+  outwordbuff_1_2__un0_n outwordbuff_1_3__un3_n outwordbuff_1_3__un1_n outwordbuff_1_3__un0_n outwordbuff_1_4__un3_n outwordbuff_1_4__un1_n outwordbuff_1_4__un0_n outwordbuff_1_5__un3_n outwordbuff_1_5__un1_n outwordbuff_1_5__un0_n outwordbuff_1_6__un3_n \
+  outwordbuff_1_6__un1_n outwordbuff_1_6__un0_n outwordbuff_1_7__un3_n outwordbuff_1_7__un1_n outwordbuff_1_7__un0_n
+.names  inFlagbuffconfig.BLIF inFlagbuffconfig_c
+1 1
+.names  inFlagbuffwrite.BLIF inFlagbuffwrite_c
+1 1
+.names  RWcb.BLIF RWcb_c
+1 1
+.names  RScb.BLIF RScb_c
+1 1
+.names  ENcb.BLIF ENcb_c
+1 1
+.names  RWwb.BLIF RWwb_c
+1 1
+.names  RSwb.BLIF RSwb_c
+1 1
+.names  ENwb.BLIF ENwb_c
+1 1
+.names  inwordconfig_0_.BLIF inwordconfig_c_0__n
+1 1
+.names  inwordconfig_1_.BLIF inwordconfig_c_1__n
+1 1
+.names  inwordconfig_2_.BLIF inwordconfig_c_2__n
+1 1
+.names  inwordconfig_3_.BLIF inwordconfig_c_3__n
+1 1
+.names  inwordconfig_4_.BLIF inwordconfig_c_4__n
+1 1
+.names  inwordconfig_5_.BLIF inwordconfig_c_5__n
+1 1
+.names  inwordconfig_6_.BLIF inwordconfig_c_6__n
+1 1
+.names  inwordconfig_7_.BLIF inwordconfig_c_7__n
+1 1
+.names  inwordwrite_0_.BLIF inwordwrite_c_0__n
+1 1
+.names  inwordwrite_1_.BLIF inwordwrite_c_1__n
+1 1
+.names  inwordwrite_2_.BLIF inwordwrite_c_2__n
+1 1
+.names  inwordwrite_3_.BLIF inwordwrite_c_3__n
+1 1
+.names  inwordwrite_4_.BLIF inwordwrite_c_4__n
+1 1
+.names  inwordwrite_5_.BLIF inwordwrite_c_5__n
+1 1
+.names  inwordwrite_6_.BLIF inwordwrite_c_6__n
+1 1
+.names  inwordwrite_7_.BLIF inwordwrite_c_7__n
+1 1
+.names  RWbblatreg.BLIF RWbb
+1 1
+.names  RSbblatreg.BLIF RSbb
+1 1
+.names  ENbblatreg.BLIF ENbb
+1 1
+.names  outwordbufflat_0_reg.BLIF outwordbuff_0_
+1 1
+.names  outwordbufflat_1_reg.BLIF outwordbuff_1_
+1 1
+.names  outwordbufflat_2_reg.BLIF outwordbuff_2_
+1 1
+.names  outwordbufflat_3_reg.BLIF outwordbuff_3_
+1 1
+.names  outwordbufflat_4_reg.BLIF outwordbuff_4_
+1 1
+.names  outwordbufflat_5_reg.BLIF outwordbuff_5_
+1 1
+.names  outwordbufflat_6_reg.BLIF outwordbuff_6_
+1 1
+.names  outwordbufflat_7_reg.BLIF outwordbuff_7_
+1 1
+.names  inFlagbuffwrite_c.BLIF inFlagbuffwrite_c_i
+0 1
+.names  pbuff_un2_inflagbuffwrite_0_n.BLIF pbuff_un2_inflagbuffwrite_n
+0 1
+.names  inFlagbuffconfig_c.BLIF enbb_1_un3_n
+0 1
+.names  ENwb_c.BLIF inFlagbuffconfig_c.BLIF enbb_1_un1_n
+11 1
+.names  ENcb_c.BLIF enbb_1_un3_n.BLIF enbb_1_un0_n
+11 1
+.names  enbb_1_un1_n.BLIF enbb_1_un0_n.BLIF ENbblatreg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF rsbb_1_un3_n
+0 1
+.names  RSwb_c.BLIF inFlagbuffconfig_c.BLIF rsbb_1_un1_n
+11 1
+.names  RScb_c.BLIF rsbb_1_un3_n.BLIF rsbb_1_un0_n
+11 1
+.names  rsbb_1_un1_n.BLIF rsbb_1_un0_n.BLIF RSbblatreg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF rwbb_1_un3_n
+0 1
+.names  RWwb_c.BLIF inFlagbuffconfig_c.BLIF rwbb_1_un1_n
+11 1
+.names  RWcb_c.BLIF rwbb_1_un3_n.BLIF rwbb_1_un0_n
+11 1
+.names  rwbb_1_un1_n.BLIF rwbb_1_un0_n.BLIF RWbblatreg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF inFlagbuffwrite_c_i.BLIF pbuff_un2_inflagbuffwrite_0_n
+11 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_0__un3_n
+0 1
+.names  inwordwrite_c_0__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_0__un1_n
+11 1
+.names  inwordconfig_c_0__n.BLIF outwordbuff_1_0__un3_n.BLIF outwordbuff_1_0__un0_n
+11 1
+.names  outwordbuff_1_0__un1_n.BLIF outwordbuff_1_0__un0_n.BLIF outwordbufflat_0_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_1__un3_n
+0 1
+.names  inwordwrite_c_1__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_1__un1_n
+11 1
+.names  inwordconfig_c_1__n.BLIF outwordbuff_1_1__un3_n.BLIF outwordbuff_1_1__un0_n
+11 1
+.names  outwordbuff_1_1__un1_n.BLIF outwordbuff_1_1__un0_n.BLIF outwordbufflat_1_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_2__un3_n
+0 1
+.names  inwordwrite_c_2__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_2__un1_n
+11 1
+.names  inwordconfig_c_2__n.BLIF outwordbuff_1_2__un3_n.BLIF outwordbuff_1_2__un0_n
+11 1
+.names  outwordbuff_1_2__un1_n.BLIF outwordbuff_1_2__un0_n.BLIF outwordbufflat_2_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_3__un3_n
+0 1
+.names  inwordwrite_c_3__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_3__un1_n
+11 1
+.names  inwordconfig_c_3__n.BLIF outwordbuff_1_3__un3_n.BLIF outwordbuff_1_3__un0_n
+11 1
+.names  outwordbuff_1_3__un1_n.BLIF outwordbuff_1_3__un0_n.BLIF outwordbufflat_3_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_4__un3_n
+0 1
+.names  inwordwrite_c_4__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_4__un1_n
+11 1
+.names  inwordconfig_c_4__n.BLIF outwordbuff_1_4__un3_n.BLIF outwordbuff_1_4__un0_n
+11 1
+.names  outwordbuff_1_4__un1_n.BLIF outwordbuff_1_4__un0_n.BLIF outwordbufflat_4_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_5__un3_n
+0 1
+.names  inwordwrite_c_5__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_5__un1_n
+11 1
+.names  inwordconfig_c_5__n.BLIF outwordbuff_1_5__un3_n.BLIF outwordbuff_1_5__un0_n
+11 1
+.names  outwordbuff_1_5__un1_n.BLIF outwordbuff_1_5__un0_n.BLIF outwordbufflat_5_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_6__un3_n
+0 1
+.names  inwordwrite_c_6__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_6__un1_n
+11 1
+.names  inwordconfig_c_6__n.BLIF outwordbuff_1_6__un3_n.BLIF outwordbuff_1_6__un0_n
+11 1
+.names  outwordbuff_1_6__un1_n.BLIF outwordbuff_1_6__un0_n.BLIF outwordbufflat_6_reg.D
+1- 1
+-1 1
+.names  inFlagbuffconfig_c.BLIF outwordbuff_1_7__un3_n
+0 1
+.names  inwordwrite_c_7__n.BLIF inFlagbuffconfig_c.BLIF outwordbuff_1_7__un1_n
+11 1
+.names  inwordconfig_c_7__n.BLIF outwordbuff_1_7__un3_n.BLIF outwordbuff_1_7__un0_n
+11 1
+.names  outwordbuff_1_7__un1_n.BLIF outwordbuff_1_7__un0_n.BLIF outwordbufflat_7_reg.D
+1- 1
+-1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_0_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_1_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_2_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_3_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_4_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_5_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_6_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF outwordbufflat_7_reg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF ENbblatreg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF RSbblatreg.LH
+1 1
+.names  pbuff_un2_inflagbuffwrite_n.BLIF RWbblatreg.LH
+1 1
+.end

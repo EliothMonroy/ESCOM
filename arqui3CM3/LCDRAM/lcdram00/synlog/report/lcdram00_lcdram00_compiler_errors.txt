@@ -1,0 +1,3 @@
+@E: CD178 :"C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl":54:18:54:26|Can't find formal out7segk
+@E|Parse errors encountered - exiting
+

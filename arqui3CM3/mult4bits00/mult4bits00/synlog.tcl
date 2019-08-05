@@ -1,0 +1,1 @@
+run_tcl -fg mult4bits00_mult4bits00_synplify.tcl

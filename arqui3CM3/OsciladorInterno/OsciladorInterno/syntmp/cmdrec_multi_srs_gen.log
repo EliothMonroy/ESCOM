@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  osc00  -multisrs  C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\OsciladorInterno\synwork\OsciladorInterno_OsciladorInterno_comp.srs  -osyn  C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\OsciladorInterno\synwork\OsciladorInterno_OsciladorInterno_mult.srs  -log  C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\OsciladorInterno\synlog\OsciladorInterno_OsciladorInterno_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+file:C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\OsciladorInterno\synwork\OsciladorInterno_OsciladorInterno_comp.srs|io:i|time:1504281110|size:2345|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\OsciladorInterno\synwork\OsciladorInterno_OsciladorInterno_mult.srs|io:o|time:1504281112|size:2120|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\OsciladorInterno\synlog\OsciladorInterno_OsciladorInterno_multi_srs_gen.srr|io:o|time:1504281112|size:409|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1489043252|size:3128320|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1489043520|size:3947520|exec:1

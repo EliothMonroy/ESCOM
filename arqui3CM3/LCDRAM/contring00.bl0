@@ -1,0 +1,47 @@
+#$ DATE Wed May 18 20:45:53 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE contring00
+#$ PINS 6 outr_3_ clkr resetr outr_2_ outr_1_ outr_0_
+#$ NODES 9 sring_3_ clkr_c resetr_c outrDFF_0_reg outrDFF_1_reg outrDFF_2_reg outrDFF_3_reg outr_c_i_1__n N_1_0 
+.model contring00
+.inputs clkr.BLIF resetr.BLIF sring_3_.BLIF clkr_c.BLIF resetr_c.BLIF outrDFF_0_reg.BLIF outrDFF_1_reg.BLIF outrDFF_2_reg.BLIF outrDFF_3_reg.BLIF \
+  outr_c_i_1__n.BLIF N_1_0.BLIF  
+.outputs outr_3_ outr_2_ outr_1_ outr_0_ sring_3_.D sring_3_.C outrDFF_0_reg.D outrDFF_0_reg.C outrDFF_1_reg.D outrDFF_1_reg.C outrDFF_2_reg.D \
+  outrDFF_2_reg.C outrDFF_3_reg.D outrDFF_3_reg.C clkr_c resetr_c outr_c_i_1__n N_1_0
+.names  clkr.BLIF clkr_c
+1 1
+.names  resetr.BLIF resetr_c
+1 1
+.names  outrDFF_0_reg.BLIF outr_0_
+1 1
+.names  outrDFF_1_reg.BLIF outr_1_
+1 1
+.names  outrDFF_2_reg.BLIF outr_2_
+1 1
+.names  outrDFF_3_reg.BLIF outr_3_
+1 1
+.names  outrDFF_1_reg.BLIF outr_c_i_1__n
+0 1
+.names  N_1_0.BLIF sring_3_.D
+0 1
+.names  outrDFF_3_reg.BLIF resetr_c.BLIF outrDFF_0_reg.D
+11 1
+.names  outrDFF_0_reg.BLIF resetr_c.BLIF outrDFF_1_reg.D
+11 1
+.names  resetr_c.BLIF sring_3_.BLIF outrDFF_3_reg.D
+11 1
+.names  outrDFF_1_reg.BLIF resetr_c.BLIF outrDFF_2_reg.D
+11 1
+.names  outr_c_i_1__n.BLIF resetr_c.BLIF N_1_0
+11 1
+.names  clkr_c.BLIF sring_3_.C
+1 1
+.names  clkr_c.BLIF outrDFF_0_reg.C
+1 1
+.names  clkr_c.BLIF outrDFF_1_reg.C
+1 1
+.names  clkr_c.BLIF outrDFF_2_reg.C
+1 1
+.names  clkr_c.BLIF outrDFF_3_reg.C
+1 1
+.end

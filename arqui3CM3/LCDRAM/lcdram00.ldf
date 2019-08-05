@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="lcdram00" device="LCMXO2-7000HE-5TG144C" default_implementation="lcdram00">
+    <Options/>
+    <Implementation title="lcdram00" dir="lcdram00" description="lcdram00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="toplcdram00"/>
+        <Source name="osc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="div00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packageosc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="toposc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="ram00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contring00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="coder00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packagekey00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="topkey00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contread00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contconfig00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="config00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="bufferlcd00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packagelcdram00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="toplcdram00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="toplcdram00"/>
+        </Source>
+        <Source name="ASD/ASD.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="lcdram00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="lcdram00/lcdram00.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lcdram001.sty"/>
+</BaliProject>

@@ -1,0 +1,25 @@
+#Start recording tcl command: 10/13/2017 18:14:55
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00; Project name: ram00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00.ldf"
+prj_run Export -impl ram00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_program run
+prj_run Export -impl ram00 -task Jedecgen
+pgr_project close
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_program run
+prj_project save
+prj_run Export -impl ram00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/ram00.xcf"
+pgr_program run
+pgr_program run
+pgr_project close
+#Stop recording: 10/13/2017 22:14:27

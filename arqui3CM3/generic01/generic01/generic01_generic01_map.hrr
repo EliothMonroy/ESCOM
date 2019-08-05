@@ -1,0 +1,2425 @@
+---------------------------------------------------
+Report for cell topgeneric01
+   Instance path: topgeneric01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     201.00        100.0
+                                 IOLGC	      18.00        100.0
+                                  LUT4	     356.00        100.0
+                                 IOREG	         18        100.0
+                                 IOBUF	         46        100.0
+                                PFUREG	        154        100.0
+                                RIPPLE	         12        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                xorg00	          1         4.8
+                               xnorg00	          1         3.2
+                                  uc00	          1         0.7
+                         topmult8bit00	          1        27.2
+                           toposcdiv00	          1         9.5
+                          topfa8bits00	          1         3.1
+                              substg00	          1         4.1
+                                 org00	          1        18.1
+                               nandg00	          1         4.1
+                                norg00	          1         6.2
+                                notg00	          1         4.1
+                               multg00	          1         5.7
+                                andg00	          1         5.7
+                                addg00	          1         3.6
+---------------------------------------------------
+Report for cell andg00
+   Instance path: topgeneric01/G01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.42         5.7
+                                  LUT4	      21.00         5.9
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell xorg00
+   Instance path: topgeneric01/G02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.67         4.8
+                                  LUT4	      21.00         5.9
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell org00
+   Instance path: topgeneric01/G03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.33        18.1
+                                  LUT4	      71.00        19.9
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell addg00
+   Instance path: topgeneric01/G05
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.17         3.6
+                                  LUT4	       7.00         2.0
+                                PFUREG	         13         8.4
+---------------------------------------------------
+Report for cell substg00
+   Instance path: topgeneric01/G06
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.25         4.1
+                                  LUT4	      10.00         2.8
+                                PFUREG	         14         9.1
+---------------------------------------------------
+Report for cell notg00
+   Instance path: topgeneric01/G08
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.17         4.1
+                                  LUT4	      14.00         3.9
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell nandg00
+   Instance path: topgeneric01/G09
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.25         4.1
+                                  LUT4	      15.00         4.2
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell norg00
+   Instance path: topgeneric01/G10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.50         6.2
+                                  LUT4	      23.00         6.5
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell xnorg00
+   Instance path: topgeneric01/G11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.33         3.2
+                                  LUT4	       7.00         2.0
+                                PFUREG	         12         7.8
+---------------------------------------------------
+Report for cell multg00
+   Instance path: topgeneric01/G13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.50         5.7
+                                  LUT4	      14.00         3.9
+                                PFUREG	         19        12.3
+---------------------------------------------------
+Report for cell topmult8bit00
+   Instance path: topgeneric01/G12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      54.75        27.2
+                                  LUT4	     118.00        33.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              fa00_0_2	          1         0.5
+                              fa00_0_4	          1         0.5
+                                fa00_1	          1         0.4
+                                fa00_6	          1         0.4
+                               fa00_48	          1         0.2
+                                fa00_5	          1         0.4
+                                fa00_3	          1         0.4
+                                fa00_4	          1         0.4
+                                fa00_2	          1         0.4
+                             fa00_0_45	          1         0.4
+                              fa00_0_6	          1         0.5
+                              fa00_0_8	          1         0.5
+                              fa00_0_9	          1         0.5
+                              fa00_0_7	          1         0.5
+                              fa00_0_5	          1         0.5
+                             fa00_0_46	          1         0.2
+                             fa00_0_43	          1         0.4
+                             fa00_0_44	          1         0.4
+                             fa00_0_41	          1         0.4
+                             fa00_0_42	          1         0.6
+                             fa00_0_40	          1         0.9
+                              fa00_0_3	          1         0.5
+                             fa00_0_32	          1         0.5
+                             fa00_0_36	          1         0.5
+                             fa00_0_38	          1         0.5
+                             fa00_0_39	          1         0.5
+                             fa00_0_37	          1         0.5
+                             fa00_0_34	          1         0.4
+                             fa00_0_35	          1         0.4
+                             fa00_0_33	          1         0.5
+                             fa00_0_31	          1         0.5
+                             fa00_0_30	          1         0.5
+                             fa00_0_23	          1         0.5
+                             fa00_0_27	          1         0.5
+                             fa00_0_28	          1         0.5
+                             fa00_0_29	          1         0.5
+                             fa00_0_25	          1         0.5
+                             fa00_0_26	          1         0.4
+                             fa00_0_24	          1         0.5
+                             fa00_0_21	          1         0.5
+                             fa00_0_22	          1         0.2
+                             fa00_0_20	          1         0.5
+                              fa00_0_0	          1         0.5
+                             fa00_0_12	          1         0.5
+                             fa00_0_16	          1         0.5
+                             fa00_0_18	          1         0.5
+                             fa00_0_19	          1         0.5
+                             fa00_0_17	          1         0.5
+                             fa00_0_14	          1         0.5
+                             fa00_0_15	          1         0.5
+                             fa00_0_13	          1         0.5
+                             fa00_0_10	          1         0.5
+                             fa00_0_11	          1         0.5
+                              fa00_0_1	          1         0.5
+                                  fa00	          1         0.4
+                                fa00_0	          1         0.5
+                              and00_33	          1         0.2
+                              and00_36	          1         0.2
+                              and00_37	          1         0.2
+                              and00_34	          1         0.2
+                              and00_35	          1         0.2
+---------------------------------------------------
+Report for cell fa00_0_46
+   Instance path: topgeneric01/G12/M120
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_124	          1         0.1
+                             or00_0_54	          1         0.1
+---------------------------------------------------
+Report for cell or00_0_54
+   Instance path: topgeneric01/G12/M120/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_124
+   Instance path: topgeneric01/G12/M120/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_128	          1         0.1
+---------------------------------------------------
+Report for cell xor00_128
+   Instance path: topgeneric01/G12/M120/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_45
+   Instance path: topgeneric01/G12/M119
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_122	          1         0.1
+                             or00_0_53	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_53
+   Instance path: topgeneric01/G12/M119/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_122
+   Instance path: topgeneric01/G12/M119/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_126	          1         0.1
+---------------------------------------------------
+Report for cell xor00_126
+   Instance path: topgeneric01/G12/M119/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_44
+   Instance path: topgeneric01/G12/M118
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_120	          1         0.1
+                             or00_0_52	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_52
+   Instance path: topgeneric01/G12/M118/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_120
+   Instance path: topgeneric01/G12/M118/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_124	          1         0.1
+---------------------------------------------------
+Report for cell xor00_124
+   Instance path: topgeneric01/G12/M118/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_43
+   Instance path: topgeneric01/G12/M117
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_118	          1         0.1
+                             or00_0_51	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_51
+   Instance path: topgeneric01/G12/M117/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_118
+   Instance path: topgeneric01/G12/M117/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_122	          1         0.1
+---------------------------------------------------
+Report for cell xor00_122
+   Instance path: topgeneric01/G12/M117/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_42
+   Instance path: topgeneric01/G12/M116
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.25         0.6
+                                  LUT4	       3.00         0.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_116	          1         0.4
+                             or00_0_50	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_50
+   Instance path: topgeneric01/G12/M116/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_116
+   Instance path: topgeneric01/G12/M116/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_120	          1         0.4
+---------------------------------------------------
+Report for cell xor00_120
+   Instance path: topgeneric01/G12/M116/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+---------------------------------------------------
+Report for cell fa00_0_41
+   Instance path: topgeneric01/G12/M115
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_114	          1         0.1
+                             or00_0_49	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_49
+   Instance path: topgeneric01/G12/M115/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_114
+   Instance path: topgeneric01/G12/M115/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_118	          1         0.1
+---------------------------------------------------
+Report for cell xor00_118
+   Instance path: topgeneric01/G12/M115/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_40
+   Instance path: topgeneric01/G12/M114
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.75         0.9
+                                  LUT4	       4.00         1.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_112	          1         0.1
+                           topha00_111	          1         0.5
+                             or00_0_48	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_48
+   Instance path: topgeneric01/G12/M114/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_112
+   Instance path: topgeneric01/G12/M114/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_116	          1         0.1
+---------------------------------------------------
+Report for cell xor00_116
+   Instance path: topgeneric01/G12/M114/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_111
+   Instance path: topgeneric01/G12/M114/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_115	          1         0.5
+---------------------------------------------------
+Report for cell xor00_115
+   Instance path: topgeneric01/G12/M114/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+---------------------------------------------------
+Report for cell fa00_6
+   Instance path: topgeneric01/G12/M113
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_110	          1         0.4
+---------------------------------------------------
+Report for cell topha00_110
+   Instance path: topgeneric01/G12/M113/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_114	          1         0.1
+                             and00_176	          1         0.2
+---------------------------------------------------
+Report for cell xor00_114
+   Instance path: topgeneric01/G12/M113/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_176
+   Instance path: topgeneric01/G12/M113/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_39
+   Instance path: topgeneric01/G12/M104
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_109	          1         0.2
+                             or00_0_47	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_47
+   Instance path: topgeneric01/G12/M104/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_109
+   Instance path: topgeneric01/G12/M104/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_113	          1         0.2
+---------------------------------------------------
+Report for cell xor00_113
+   Instance path: topgeneric01/G12/M104/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_38
+   Instance path: topgeneric01/G12/M103
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_107	          1         0.2
+                             or00_0_46	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_46
+   Instance path: topgeneric01/G12/M103/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_107
+   Instance path: topgeneric01/G12/M103/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_111	          1         0.2
+---------------------------------------------------
+Report for cell xor00_111
+   Instance path: topgeneric01/G12/M103/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_37
+   Instance path: topgeneric01/G12/M102
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_105	          1         0.2
+                             or00_0_45	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_45
+   Instance path: topgeneric01/G12/M102/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_105
+   Instance path: topgeneric01/G12/M102/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_109	          1         0.2
+---------------------------------------------------
+Report for cell xor00_109
+   Instance path: topgeneric01/G12/M102/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_36
+   Instance path: topgeneric01/G12/M101
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_103	          1         0.2
+                             or00_0_44	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_44
+   Instance path: topgeneric01/G12/M101/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_103
+   Instance path: topgeneric01/G12/M101/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_107	          1         0.2
+---------------------------------------------------
+Report for cell xor00_107
+   Instance path: topgeneric01/G12/M101/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_35
+   Instance path: topgeneric01/G12/M100
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.83         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           topha00_101	          1         0.2
+                             or00_0_43	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_43
+   Instance path: topgeneric01/G12/M100/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_101
+   Instance path: topgeneric01/G12/M100/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_105	          1         0.2
+---------------------------------------------------
+Report for cell xor00_105
+   Instance path: topgeneric01/G12/M100/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_34
+   Instance path: topgeneric01/G12/M99
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.83         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_99	          1         0.2
+                             or00_0_42	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_42
+   Instance path: topgeneric01/G12/M99/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_99
+   Instance path: topgeneric01/G12/M99/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_103	          1         0.2
+---------------------------------------------------
+Report for cell xor00_103
+   Instance path: topgeneric01/G12/M99/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_33
+   Instance path: topgeneric01/G12/M98
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_96	          1         0.2
+                             or00_0_41	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_41
+   Instance path: topgeneric01/G12/M98/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_96
+   Instance path: topgeneric01/G12/M98/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             xor00_100	          1         0.2
+---------------------------------------------------
+Report for cell xor00_100
+   Instance path: topgeneric01/G12/M98/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_5
+   Instance path: topgeneric01/G12/M97
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_95	          1         0.4
+---------------------------------------------------
+Report for cell topha00_95
+   Instance path: topgeneric01/G12/M97/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_99	          1         0.1
+                             and00_153	          1         0.2
+---------------------------------------------------
+Report for cell xor00_99
+   Instance path: topgeneric01/G12/M97/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_153
+   Instance path: topgeneric01/G12/M97/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_32
+   Instance path: topgeneric01/G12/M88
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_94	          1         0.2
+                             or00_0_40	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_40
+   Instance path: topgeneric01/G12/M88/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_94
+   Instance path: topgeneric01/G12/M88/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_98	          1         0.2
+---------------------------------------------------
+Report for cell xor00_98
+   Instance path: topgeneric01/G12/M88/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_31
+   Instance path: topgeneric01/G12/M87
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_92	          1         0.2
+                             or00_0_39	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_39
+   Instance path: topgeneric01/G12/M87/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_92
+   Instance path: topgeneric01/G12/M87/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_96	          1         0.2
+---------------------------------------------------
+Report for cell xor00_96
+   Instance path: topgeneric01/G12/M87/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_30
+   Instance path: topgeneric01/G12/M86
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_90	          1         0.2
+                             or00_0_38	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_38
+   Instance path: topgeneric01/G12/M86/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_90
+   Instance path: topgeneric01/G12/M86/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_94	          1         0.2
+---------------------------------------------------
+Report for cell xor00_94
+   Instance path: topgeneric01/G12/M86/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_29
+   Instance path: topgeneric01/G12/M85
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_88	          1         0.2
+                             or00_0_37	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_37
+   Instance path: topgeneric01/G12/M85/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_88
+   Instance path: topgeneric01/G12/M85/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_92	          1         0.2
+---------------------------------------------------
+Report for cell xor00_92
+   Instance path: topgeneric01/G12/M85/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_28
+   Instance path: topgeneric01/G12/M84
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_86	          1         0.2
+                             or00_0_36	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_36
+   Instance path: topgeneric01/G12/M84/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_86
+   Instance path: topgeneric01/G12/M84/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_90	          1         0.2
+---------------------------------------------------
+Report for cell xor00_90
+   Instance path: topgeneric01/G12/M84/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_27
+   Instance path: topgeneric01/G12/M83
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_84	          1         0.2
+                             or00_0_35	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_35
+   Instance path: topgeneric01/G12/M83/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_84
+   Instance path: topgeneric01/G12/M83/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_88	          1         0.2
+---------------------------------------------------
+Report for cell xor00_88
+   Instance path: topgeneric01/G12/M83/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_26
+   Instance path: topgeneric01/G12/M82
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.83         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_81	          1         0.2
+                             or00_0_34	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_34
+   Instance path: topgeneric01/G12/M82/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_81
+   Instance path: topgeneric01/G12/M82/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_85	          1         0.2
+---------------------------------------------------
+Report for cell xor00_85
+   Instance path: topgeneric01/G12/M82/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_4
+   Instance path: topgeneric01/G12/M81
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_80	          1         0.4
+---------------------------------------------------
+Report for cell topha00_80
+   Instance path: topgeneric01/G12/M81/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_84	          1         0.1
+                             and00_130	          1         0.2
+---------------------------------------------------
+Report for cell xor00_84
+   Instance path: topgeneric01/G12/M81/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_130
+   Instance path: topgeneric01/G12/M81/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_25
+   Instance path: topgeneric01/G12/M72
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_79	          1         0.2
+                             or00_0_33	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_33
+   Instance path: topgeneric01/G12/M72/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_79
+   Instance path: topgeneric01/G12/M72/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_83	          1         0.2
+---------------------------------------------------
+Report for cell xor00_83
+   Instance path: topgeneric01/G12/M72/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_24
+   Instance path: topgeneric01/G12/M71
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_76	          1         0.2
+                             or00_0_32	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_32
+   Instance path: topgeneric01/G12/M71/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_76
+   Instance path: topgeneric01/G12/M71/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_80	          1         0.2
+---------------------------------------------------
+Report for cell xor00_80
+   Instance path: topgeneric01/G12/M71/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_23
+   Instance path: topgeneric01/G12/M70
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_75	          1         0.2
+                             or00_0_31	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_31
+   Instance path: topgeneric01/G12/M70/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_75
+   Instance path: topgeneric01/G12/M70/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_79	          1         0.2
+---------------------------------------------------
+Report for cell xor00_79
+   Instance path: topgeneric01/G12/M70/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_22
+   Instance path: topgeneric01/G12/M69
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             or00_0_30	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_30
+   Instance path: topgeneric01/G12/M69/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_21
+   Instance path: topgeneric01/G12/M68
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_71	          1         0.2
+                             or00_0_29	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_29
+   Instance path: topgeneric01/G12/M68/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_71
+   Instance path: topgeneric01/G12/M68/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_75	          1         0.2
+---------------------------------------------------
+Report for cell xor00_75
+   Instance path: topgeneric01/G12/M68/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_20
+   Instance path: topgeneric01/G12/M67
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_69	          1         0.2
+                             or00_0_28	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_28
+   Instance path: topgeneric01/G12/M67/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_69
+   Instance path: topgeneric01/G12/M67/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_73	          1         0.2
+---------------------------------------------------
+Report for cell xor00_73
+   Instance path: topgeneric01/G12/M67/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_19
+   Instance path: topgeneric01/G12/M66
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_66	          1         0.2
+                             or00_0_27	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_27
+   Instance path: topgeneric01/G12/M66/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_66
+   Instance path: topgeneric01/G12/M66/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_70	          1         0.2
+---------------------------------------------------
+Report for cell xor00_70
+   Instance path: topgeneric01/G12/M66/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_3
+   Instance path: topgeneric01/G12/M65
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_65	          1         0.4
+---------------------------------------------------
+Report for cell topha00_65
+   Instance path: topgeneric01/G12/M65/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_69	          1         0.1
+                             and00_107	          1         0.2
+---------------------------------------------------
+Report for cell xor00_69
+   Instance path: topgeneric01/G12/M65/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_107
+   Instance path: topgeneric01/G12/M65/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_18
+   Instance path: topgeneric01/G12/M56
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_64	          1         0.2
+                             or00_0_26	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_26
+   Instance path: topgeneric01/G12/M56/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_64
+   Instance path: topgeneric01/G12/M56/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_68	          1         0.2
+---------------------------------------------------
+Report for cell xor00_68
+   Instance path: topgeneric01/G12/M56/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_17
+   Instance path: topgeneric01/G12/M55
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_62	          1         0.2
+                             or00_0_25	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_25
+   Instance path: topgeneric01/G12/M55/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_62
+   Instance path: topgeneric01/G12/M55/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_66	          1         0.2
+---------------------------------------------------
+Report for cell xor00_66
+   Instance path: topgeneric01/G12/M55/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_16
+   Instance path: topgeneric01/G12/M54
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_60	          1         0.2
+                             or00_0_24	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_24
+   Instance path: topgeneric01/G12/M54/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_60
+   Instance path: topgeneric01/G12/M54/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_64	          1         0.2
+---------------------------------------------------
+Report for cell xor00_64
+   Instance path: topgeneric01/G12/M54/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_15
+   Instance path: topgeneric01/G12/M53
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_58	          1         0.2
+                             or00_0_23	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_23
+   Instance path: topgeneric01/G12/M53/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_58
+   Instance path: topgeneric01/G12/M53/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_62	          1         0.2
+---------------------------------------------------
+Report for cell xor00_62
+   Instance path: topgeneric01/G12/M53/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_14
+   Instance path: topgeneric01/G12/M52
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_56	          1         0.2
+                             or00_0_22	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_22
+   Instance path: topgeneric01/G12/M52/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_56
+   Instance path: topgeneric01/G12/M52/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_60	          1         0.2
+---------------------------------------------------
+Report for cell xor00_60
+   Instance path: topgeneric01/G12/M52/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_13
+   Instance path: topgeneric01/G12/M51
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_54	          1         0.2
+                             or00_0_21	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_21
+   Instance path: topgeneric01/G12/M51/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_54
+   Instance path: topgeneric01/G12/M51/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_58	          1         0.2
+---------------------------------------------------
+Report for cell xor00_58
+   Instance path: topgeneric01/G12/M51/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_12
+   Instance path: topgeneric01/G12/M50
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_51	          1         0.2
+                             or00_0_20	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_20
+   Instance path: topgeneric01/G12/M50/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_51
+   Instance path: topgeneric01/G12/M50/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_55	          1         0.2
+---------------------------------------------------
+Report for cell xor00_55
+   Instance path: topgeneric01/G12/M50/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_2
+   Instance path: topgeneric01/G12/M49
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_50	          1         0.4
+---------------------------------------------------
+Report for cell topha00_50
+   Instance path: topgeneric01/G12/M49/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_54	          1         0.1
+                              and00_84	          1         0.2
+---------------------------------------------------
+Report for cell xor00_54
+   Instance path: topgeneric01/G12/M49/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_84
+   Instance path: topgeneric01/G12/M49/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_11
+   Instance path: topgeneric01/G12/M40
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_49	          1         0.2
+                             or00_0_19	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_19
+   Instance path: topgeneric01/G12/M40/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_49
+   Instance path: topgeneric01/G12/M40/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_53	          1         0.2
+---------------------------------------------------
+Report for cell xor00_53
+   Instance path: topgeneric01/G12/M40/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_10
+   Instance path: topgeneric01/G12/M39
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_47	          1         0.2
+                             or00_0_18	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_18
+   Instance path: topgeneric01/G12/M39/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_47
+   Instance path: topgeneric01/G12/M39/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_51	          1         0.2
+---------------------------------------------------
+Report for cell xor00_51
+   Instance path: topgeneric01/G12/M39/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_9
+   Instance path: topgeneric01/G12/M38
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_45	          1         0.2
+                             or00_0_17	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_17
+   Instance path: topgeneric01/G12/M38/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_45
+   Instance path: topgeneric01/G12/M38/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_49	          1         0.2
+---------------------------------------------------
+Report for cell xor00_49
+   Instance path: topgeneric01/G12/M38/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_8
+   Instance path: topgeneric01/G12/M37
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_42	          1         0.2
+                             or00_0_16	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_16
+   Instance path: topgeneric01/G12/M37/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_42
+   Instance path: topgeneric01/G12/M37/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_46	          1         0.2
+---------------------------------------------------
+Report for cell xor00_46
+   Instance path: topgeneric01/G12/M37/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_7
+   Instance path: topgeneric01/G12/M36
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_41	          1         0.2
+                             or00_0_15	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_15
+   Instance path: topgeneric01/G12/M36/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_41
+   Instance path: topgeneric01/G12/M36/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_45	          1         0.2
+---------------------------------------------------
+Report for cell xor00_45
+   Instance path: topgeneric01/G12/M36/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_6
+   Instance path: topgeneric01/G12/M35
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_39	          1         0.2
+                             or00_0_14	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_14
+   Instance path: topgeneric01/G12/M35/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_39
+   Instance path: topgeneric01/G12/M35/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_43	          1         0.2
+---------------------------------------------------
+Report for cell xor00_43
+   Instance path: topgeneric01/G12/M35/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_5
+   Instance path: topgeneric01/G12/M34
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_37	          1         0.2
+                             or00_0_13	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_13
+   Instance path: topgeneric01/G12/M34/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_37
+   Instance path: topgeneric01/G12/M34/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_41	          1         0.2
+---------------------------------------------------
+Report for cell xor00_41
+   Instance path: topgeneric01/G12/M34/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_1
+   Instance path: topgeneric01/G12/M33
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_35	          1         0.4
+---------------------------------------------------
+Report for cell topha00_35
+   Instance path: topgeneric01/G12/M33/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_39	          1         0.1
+                              and00_61	          1         0.2
+---------------------------------------------------
+Report for cell xor00_39
+   Instance path: topgeneric01/G12/M33/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_61
+   Instance path: topgeneric01/G12/M33/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_48
+   Instance path: topgeneric01/G12/M24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_34	          1         0.2
+---------------------------------------------------
+Report for cell topha00_34
+   Instance path: topgeneric01/G12/M24/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              and00_52	          1         0.2
+---------------------------------------------------
+Report for cell and00_52
+   Instance path: topgeneric01/G12/M24/Fa02/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_4
+   Instance path: topgeneric01/G12/M23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_33	          1         0.2
+                             or00_0_12	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_12
+   Instance path: topgeneric01/G12/M23/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_33
+   Instance path: topgeneric01/G12/M23/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_37	          1         0.2
+---------------------------------------------------
+Report for cell xor00_37
+   Instance path: topgeneric01/G12/M23/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_3
+   Instance path: topgeneric01/G12/M22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_31	          1         0.2
+                             or00_0_11	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_11
+   Instance path: topgeneric01/G12/M22/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_31
+   Instance path: topgeneric01/G12/M22/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_35	          1         0.2
+---------------------------------------------------
+Report for cell xor00_35
+   Instance path: topgeneric01/G12/M22/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_2
+   Instance path: topgeneric01/G12/M21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_29	          1         0.2
+                             or00_0_10	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_10
+   Instance path: topgeneric01/G12/M21/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_29
+   Instance path: topgeneric01/G12/M21/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_33	          1         0.2
+---------------------------------------------------
+Report for cell xor00_33
+   Instance path: topgeneric01/G12/M21/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_1
+   Instance path: topgeneric01/G12/M20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_27	          1         0.2
+                              or00_0_9	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_9
+   Instance path: topgeneric01/G12/M20/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_27
+   Instance path: topgeneric01/G12/M20/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_31	          1         0.2
+---------------------------------------------------
+Report for cell xor00_31
+   Instance path: topgeneric01/G12/M20/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0_0
+   Instance path: topgeneric01/G12/M19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_25	          1         0.2
+                              or00_0_8	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_8
+   Instance path: topgeneric01/G12/M19/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_25
+   Instance path: topgeneric01/G12/M19/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_29	          1         0.2
+---------------------------------------------------
+Report for cell xor00_29
+   Instance path: topgeneric01/G12/M19/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00_0
+   Instance path: topgeneric01/G12/M18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_23	          1         0.2
+                              or00_0_7	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_7
+   Instance path: topgeneric01/G12/M18/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00_23
+   Instance path: topgeneric01/G12/M18/Fa02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_27	          1         0.2
+---------------------------------------------------
+Report for cell xor00_27
+   Instance path: topgeneric01/G12/M18/Fa02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell fa00
+   Instance path: topgeneric01/G12/M17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            topha00_21	          1         0.4
+---------------------------------------------------
+Report for cell topha00_21
+   Instance path: topgeneric01/G12/M17/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.4
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_25	          1         0.1
+                              and00_39	          1         0.2
+---------------------------------------------------
+Report for cell xor00_25
+   Instance path: topgeneric01/G12/M17/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_39
+   Instance path: topgeneric01/G12/M17/FA01/HA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_37
+   Instance path: topgeneric01/G12/M15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_36
+   Instance path: topgeneric01/G12/M14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_35
+   Instance path: topgeneric01/G12/M13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_34
+   Instance path: topgeneric01/G12/M12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_33
+   Instance path: topgeneric01/G12/M11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell uc00
+   Instance path: topgeneric01/G07
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.50         0.7
+                                  LUT4	       3.00         0.8
+                                PFUREG	          1         0.6
+---------------------------------------------------
+Report for cell topfa8bits00
+   Instance path: topgeneric01/G04
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.17         3.1
+                                  LUT4	      18.00         5.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              xor00_24	          1         0.2
+                           topfa00_7_2	          1         0.2
+                           topfa00_7_4	          1         0.2
+                           topfa00_7_5	          1         0.2
+                           topfa00_7_3	          1         0.2
+                           topfa00_7_0	          1         0.2
+                           topfa00_7_1	          1         0.2
+                             topfa00_7	          1         0.5
+                              and00_19	          1         0.1
+                              and00_21	          1         0.1
+                              and00_22	          1         0.1
+                              and00_20	          1         0.1
+                              and00_18	          1         0.1
+                              and00_16	          1         0.1
+                              and00_17	          1         0.1
+                              and00_15	          1         0.1
+---------------------------------------------------
+Report for cell and00_22
+   Instance path: topgeneric01/G04/S26
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_21
+   Instance path: topgeneric01/G04/S25
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_20
+   Instance path: topgeneric01/G04/S24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_19
+   Instance path: topgeneric01/G04/S23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_18
+   Instance path: topgeneric01/G04/S22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_17
+   Instance path: topgeneric01/G04/S21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_16
+   Instance path: topgeneric01/G04/S20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell and00_15
+   Instance path: topgeneric01/G04/S19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell xor00_24
+   Instance path: topgeneric01/G04/S17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7_5
+   Instance path: topgeneric01/G04/S15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              or00_0_5	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_5
+   Instance path: topgeneric01/G04/S15/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7_4
+   Instance path: topgeneric01/G04/S14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              or00_0_4	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_4
+   Instance path: topgeneric01/G04/S14/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7_3
+   Instance path: topgeneric01/G04/S13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              or00_0_3	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_3
+   Instance path: topgeneric01/G04/S13/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7_2
+   Instance path: topgeneric01/G04/S12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              or00_0_2	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_2
+   Instance path: topgeneric01/G04/S12/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7_1
+   Instance path: topgeneric01/G04/S11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              or00_0_1	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_1
+   Instance path: topgeneric01/G04/S11/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7_0
+   Instance path: topgeneric01/G04/S10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              or00_0_0	          1         0.2
+---------------------------------------------------
+Report for cell or00_0_0
+   Instance path: topgeneric01/G04/S10/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topfa00_7
+   Instance path: topgeneric01/G04/S09
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.5
+                                  LUT4	       3.00         0.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               topha00	          1         0.2
+                                or00_0	          1         0.2
+---------------------------------------------------
+Report for cell or00_0
+   Instance path: topgeneric01/G04/S09/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       1.00         0.3
+---------------------------------------------------
+Report for cell topha00
+   Instance path: topgeneric01/G04/S09/FA01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       2.00         0.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               xor00_8	          1         0.2
+---------------------------------------------------
+Report for cell xor00_8
+   Instance path: topgeneric01/G04/S09/FA01/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.2
+                                  LUT4	       2.00         0.6
+---------------------------------------------------
+Report for cell toposcdiv00
+   Instance path: topgeneric01/G00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      19.00         9.5
+                                  LUT4	      14.00         3.9
+                                PFUREG	         23        14.9
+                                RIPPLE	         12        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 osc00	          1         0.0
+                                 div00	          1         9.5
+---------------------------------------------------
+Report for cell div00
+   Instance path: topgeneric01/G00/DO1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      19.00         9.5
+                                  LUT4	      14.00         3.9
+                                PFUREG	         23        14.9
+                                RIPPLE	         12        100.0
+---------------------------------------------------
+Report for cell osc00
+   Instance path: topgeneric01/G00/D00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

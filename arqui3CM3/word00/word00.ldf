@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="word00" device="LCMXO2-7000HE-4TG144C" default_implementation="word00">
+    <Options/>
+    <Implementation title="word00" dir="word00" description="word00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="topword00"/>
+        <Source name="../divosc00vhdl/div00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../divosc00vhdl/osc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../divosc00vhdl/packagediv00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../divosc00vhdl/toposcdiv00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contring00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="coder00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packageword00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="topword00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="topword00"/>
+        </Source>
+        <Source name="word00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="word00/word00.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="word001.sty"/>
+</BaliProject>

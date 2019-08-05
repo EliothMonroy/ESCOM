@@ -1,0 +1,9 @@
+#Start recording tcl command: 10/11/2017 10:46:15
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/ram00; Project name: ram00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/ram00/ram00.ldf"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/ram00/contReadRa00.vhdl"
+prj_src remove "C:/Users/eliot/Documents/Github/arqui3CM3/ram00/contread00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/ram00/packageram00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/ram00/topram00.vhdl"
+prj_project save
+#Stop recording: 10/11/2017 11:55:32

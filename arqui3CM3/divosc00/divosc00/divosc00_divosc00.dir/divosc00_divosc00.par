@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Sep 15 08:06:11 2017
+
+C:/lscc/diamond/3.9_x64/ispfpga\bin\nt64\par -f divosc00_divosc00.p2t
+divosc00_divosc00_map.ncd divosc00_divosc00.dir divosc00_divosc00.prf -gui
+-msgset C:/Users/eliot/Documents/Github/arqui3CM3/divosc00/promote.xml
+
+
+Preference file: divosc00_divosc00.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            471.596      0            0.377        0            06           Complete
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 6 secs 
+
+par done!

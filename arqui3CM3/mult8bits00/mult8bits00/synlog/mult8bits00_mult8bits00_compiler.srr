@@ -1,0 +1,56 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\topmult8bits00.vhdl":6:7:6:19|Top entity is set to topmult8bit00.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\topmult8bits00.vhdl":6:7:6:19|Synthesizing work.topmult8bit00.topmult8bit0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\fa00.vhdl":7:7:7:10|Synthesizing work.fa00.fa0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\or00.vhdl":6:7:6:10|Synthesizing work.or00.or0.
+Post processing for work.or00.or0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\ha00.vhdl":7:7:7:10|Synthesizing work.ha00.ha0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\xor00.vhdl":6:7:6:11|Synthesizing work.xor00.xor0.
+Post processing for work.xor00.xor0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\and00.vhdl":6:7:6:11|Synthesizing work.and00.and0.
+Post processing for work.and00.and0
+Post processing for work.ha00.ha0
+Post processing for work.fa00.fa0
+Post processing for work.topmult8bit00.topmult8bit0
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 26 07:24:19 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\ELITH\Documents\GitHub\arqui3CM3\mult8bits00\mult8bits00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 26 07:24:19 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 26 07:24:19 2017
+
+###########################################################]

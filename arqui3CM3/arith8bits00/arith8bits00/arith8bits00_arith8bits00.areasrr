@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Report for cell arith00.arith0
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       26
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        5       100.0
+                                GSR        1       100.0
+                                 IB       17       100.0
+                                 OB        9       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL            35           

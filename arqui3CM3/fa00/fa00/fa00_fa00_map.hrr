@@ -1,0 +1,140 @@
+---------------------------------------------------
+Report for cell topsumaresta00
+   Instance path: topsumaresta00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00        100.0
+                                  LUT4	      10.00        100.0
+                                 IOBUF	         14        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               and00_7	          1        10.0
+                              xor00_11	          1        10.0
+                               topfa00	          1        10.0
+                             topfa00_0	          1        20.0
+                             topfa00_1	          1        20.0
+                               and00_9	          1        10.0
+                               and00_8	          1        10.0
+                              and00_10	          1        10.0
+---------------------------------------------------
+Report for cell and00_10
+   Instance path: topsumaresta00/S14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell and00_9
+   Instance path: topsumaresta00/S13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell and00_8
+   Instance path: topsumaresta00/S12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell and00_7
+   Instance path: topsumaresta00/S11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell xor00_11
+   Instance path: topsumaresta00/S09
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell topfa00_1
+   Instance path: topsumaresta00/S07
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00        20.0
+                                  LUT4	       2.00        20.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         topha00_1_6_4	          1        10.0
+                                or00_1	          1        10.0
+---------------------------------------------------
+Report for cell or00_1
+   Instance path: topsumaresta00/S07/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell topha00_1_6_4
+   Instance path: topsumaresta00/S07/FA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               xor00_8	          1        10.0
+---------------------------------------------------
+Report for cell xor00_8
+   Instance path: topsumaresta00/S07/FA02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell topfa00_0
+   Instance path: topsumaresta00/S06
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00        20.0
+                                  LUT4	       2.00        20.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         topha00_1_6_2	          1        10.0
+                                or00_0	          1        10.0
+---------------------------------------------------
+Report for cell or00_0
+   Instance path: topsumaresta00/S06/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell topha00_1_6_2
+   Instance path: topsumaresta00/S06/FA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               xor00_6	          1        10.0
+---------------------------------------------------
+Report for cell xor00_6
+   Instance path: topsumaresta00/S06/FA02/HA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+---------------------------------------------------
+Report for cell topfa00
+   Instance path: topsumaresta00/S05
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  or00	          1        10.0
+---------------------------------------------------
+Report for cell or00
+   Instance path: topsumaresta00/S05/FA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        10.0
+                                  LUT4	       1.00        10.0

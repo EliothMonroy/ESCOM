@@ -1,0 +1,24 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT531 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Found signal identified as System clock which controls 20 sequential elements including LCD03.outWordc_1[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\div00.vhdl":22:2:22:3|Found inferred clock osc00|osc_int_inferred_clock which controls 22 sequential elements including K01.OS01.sdiv[20:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MO171 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 

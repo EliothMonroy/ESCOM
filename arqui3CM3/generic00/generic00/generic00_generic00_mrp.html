@@ -1,0 +1,373 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+         Lattice Mapping Report File for Design Module 'topgeneric00'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     generic00_generic00.ngd -o generic00_generic00_map.ncd -pr
+     generic00_generic00.prf -mp generic00_generic00.mrp -lpf C:/Users/eliot/Doc
+     uments/Github/arqui3CM3/generic00/generic00/generic00_generic00_synplify.lp
+     f -lpf C:/Users/eliot/Documents/Github/arqui3CM3/generic00/generic00.lpf -c
+     0 -gui -msgset
+     C:/Users/eliot/Documents/Github/arqui3CM3/generic00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  11/17/17  11:13:25
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     57 out of  7209 (1%)
+      PFU registers:           48 out of  6864 (1%)
+      PIO registers:            9 out of   345 (3%)
+   Number of SLICEs:        44 out of  3432 (1%)
+      SLICEs as Logic/ROM:     44 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:         83 out of  6864 (1%)
+      Number used as logic LUTs:         59
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 37 + 4(JTAG) out of 115 (36%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net G00.sclk_0: 39 loads, 39 rising, 0 falling (Driver: G00/D00/OSCInst0 )
+
+   Number of Clock Enables:  4
+     Net aux_RNI7TFUD: 8 loads, 0 LSLICEs
+     Net G_3: 10 loads, 9 LSLICEs
+     Net G01/un1_codopga_RNIEFG2E: 4 loads, 4 LSLICEs
+     Net G02/outgx_1ce[0]: 4 loads, 4 LSLICEs
+   Number of LSRs:  2
+     Net G_10: 8 loads, 0 LSLICEs
+     Net G00/DO1/N_32_i: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net G_3: 14 loads
+     Net G00/DO1/N_32_i: 12 loads
+     Net G01/outga_cl[7]: 9 loads
+     Net G02.outgx_cl[7]: 9 loads
+     Net outFlagg0_c: 9 loads
+     Net aux_RNI7TFUD: 8 loads
+     Net cdiv0_c[3]: 8 loads
+     Net G01/N_260: 8 loads
+     Net G_10: 8 loads
+     Net cdiv0_c[1]: 7 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| inFlagg0            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[0]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outg0[7]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outg0[6]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outg0[5]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outg0[4]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outg0[3]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+
+| outg0[2]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outg0[1]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outg0[0]            | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| portgB0[7]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[6]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[5]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[4]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[3]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[2]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[1]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgB0[0]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[7]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[6]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[5]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[4]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[3]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[2]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[1]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portgA0[0]          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outFlagg0           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| codop0[4]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| codop0[3]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| codop0[2]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| codop0[1]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| codop0[0]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| enableg0            | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| cdiv0[3]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[2]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| cdiv0[1]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Block G00/DO1/VCC undriven or does not drive anything - clipped.
+Block G03/GND undriven or does not drive anything - clipped.
+Block G03/VCC undriven or does not drive anything - clipped.
+Block G02/GND undriven or does not drive anything - clipped.
+Block G02/VCC undriven or does not drive anything - clipped.
+Block G01/GND undriven or does not drive anything - clipped.
+Block G01/VCC undriven or does not drive anything - clipped.
+Signal G00/D00/GND undriven or does not drive anything - clipped.
+Signal G00/DO1/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal G00/D00/OSCInst0_SEDSTDBY undriven or does not drive anything - clipped.
+Signal G00/DO1/un2_sdiv_s_21_0_S1 undriven or does not drive anything - clipped.
+     
+Signal G00/DO1/un2_sdiv_s_21_0_COUT undriven or does not drive anything -
+     clipped.
+Signal G00/DO1/un2_sdiv_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal G00/DO1/N_1 undriven or does not drive anything - clipped.
+Block G00/D00/GND was optimized away.
+Block G00/DO1/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                G00/D00/OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     G00.sclk_0
+  OSC Nominal Frequency (MHz):                      2.08
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: G00/D00/OSCInst0
+         Type: OSCH
+
+
+
+
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 59 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

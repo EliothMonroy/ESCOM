@@ -1,0 +1,84 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|topgeneric00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\source\\div00.vhdl":1506839068
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\source\\osc00.vhdl":1504111464
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\source\\packagediv00.vhdl":1507134399
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\source\\toposcdiv00.vhdl":1507135035
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\source\\and00.vhdl":1510335480
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\generic00\\source\\xor00.vhdl":1505320787
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\andg00.vhdl":1510938788
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\xorg00.vhdl":1510938641
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\uc00.vhdl":1510937552
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\packagegeneric00.vhdl":1510678250
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\generic00\\topgeneric00.vhdl":1510682361
+0 "C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\div00.vhdl" vhdl
+2 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\osc00.vhdl" vhdl
+3 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\packagediv00.vhdl" vhdl
+4 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\toposcdiv00.vhdl" vhdl
+5 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\and00.vhdl" vhdl
+6 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\xor00.vhdl" vhdl
+7 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl" vhdl
+8 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl" vhdl
+9 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\uc00.vhdl" vhdl
+10 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\packagegeneric00.vhdl" vhdl
+11 "C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 2 1 3 
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 4 7 8 9 10 
+
+# Dependency Lists (Users Of)
+0 -1
+1 4 
+2 4 
+3 4 
+4 11 
+5 -1
+6 -1
+7 11 
+8 11 
+9 11 
+10 11 
+11 -1
+
+# Design Unit to File Association
+arch work div00 div0 1
+module work div00 1
+arch work osc00 osc0 2
+module work osc00 2
+arch work toposcdiv00 toposcdiv0 4
+module work toposcdiv00 4
+arch work and00 and0 5
+module work and00 5
+arch work xor00 xor0 6
+module work xor00 6
+arch work andg00 arch 7
+module work andg00 7
+arch work xorg00 arch 8
+module work xorg00 8
+arch work uc00 arch 9
+module work uc00 9
+arch work topgeneric00 arch 11
+module work topgeneric00 11

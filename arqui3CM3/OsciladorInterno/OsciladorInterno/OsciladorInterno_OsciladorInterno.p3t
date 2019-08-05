@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "OsciladorInterno_OsciladorInterno.log"
+-o "OsciladorInterno_OsciladorInterno.csv"
+-pr "OsciladorInterno_OsciladorInterno.prf"

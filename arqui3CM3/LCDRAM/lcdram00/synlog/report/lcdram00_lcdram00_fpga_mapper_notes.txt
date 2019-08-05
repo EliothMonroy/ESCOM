@@ -1,0 +1,26 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[0] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_2[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_1[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_1[3] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_1[1] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[1] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc_0[3] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[0] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[1] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[2] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[3] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[4] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outcc[5] (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: BN362 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\contconfig00.vhdl":22:5:22:6|Removing sequential instance LCD02.outFlagcc (in view: work.toplcdram00(toplcdram0)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FO126 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\ram00.vhdl":31:9:31:12|Generating RAM RA03.sram[7:0]
+@N: FX1056 |Writing EDF file: C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT615 |Found clock div00|outdiv_derived_clock with period 480.77ns 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

@@ -1,0 +1,8 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00\synwork\arith00_arith00_hdl_.srs  -top  arith00  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl  -log  C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00\syntax.log  -fileorder  C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00\syntmp\hdlorder.tcl 
+rc:0 success:1 runtime:1
+file:C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00\synwork\arith00_arith00_hdl_.srs|io:o|time:0|size:0|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl|io:i|time:1505732462|size:931|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00\syntax.log|io:o|time:1506428545|size:1020|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_vhdl.exe|io:i|time:1489222824|size:2416640|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe|io:i|time:1489223076|size:3082752|exec:1

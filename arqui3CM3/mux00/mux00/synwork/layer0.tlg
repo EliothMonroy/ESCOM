@@ -1,0 +1,3 @@
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00.vhdl":5:7:5:11|Synthesizing work.mux00.mux0.
+Post processing for work.mux00.mux0
+@W: CL117 :"C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00.vhdl":24:2:24:5|Latch generated from process for signal salida(2 downto 0); possible missing assignment in an if or case statement.

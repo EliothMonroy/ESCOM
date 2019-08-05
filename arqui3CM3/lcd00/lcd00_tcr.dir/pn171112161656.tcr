@@ -1,0 +1,26 @@
+#Start recording tcl command: 11/12/2017 12:41:58
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00; Project name: lcd00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00.ldf"
+prj_run Export -impl lcd00 -task Jedecgen
+prj_run Export -impl lcd00 -task Jedecgen
+launch_synplify_prj lcd00
+prj_run Export -impl lcd00 -task Jedecgen
+prj_run Export -impl lcd00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+pgr_program run
+prj_run Export -impl lcd00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+pgr_program run
+prj_run Export -impl lcd00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+pgr_program run
+prj_run Export -impl lcd00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/lcd00/lcd00/lcd00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 11/12/2017 16:16:56

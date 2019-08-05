@@ -1,0 +1,22 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1368R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "K01/OS00/soscout0_0_0_0_2" 2.1 MHz;
+#FREQUENCY NET "K01/OS01/clk0_c" 2.1 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

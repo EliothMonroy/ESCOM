@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/19/2017 11:11:31
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/shiftL00; Project name: shiftL00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/shiftL00/shiftL00.ldf"
+prj_project save
+prj_project close
+#Stop recording: 9/19/2017 11:44:26

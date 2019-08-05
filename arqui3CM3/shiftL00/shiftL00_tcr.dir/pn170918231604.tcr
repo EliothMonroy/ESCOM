@@ -1,0 +1,15 @@
+#Start recording tcl command: 9/18/2017 17:11:02
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00; Project name: shiftL00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00/shiftL00.ldf"
+prj_run Export -impl shiftL00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00/shiftL00/shiftL00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00/shiftL00/shiftL00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00/shiftL00/shiftL00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00/shiftL00/shiftL00.xcf"
+pgr_program run
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/shiftL00/shiftL00/shiftL00.xcf"
+pgr_program run
+prj_project save
+pgr_project close
+#Stop recording: 9/18/2017 23:16:04

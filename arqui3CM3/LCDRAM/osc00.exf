@@ -1,0 +1,12 @@
+Section Cross Reference File
+Design 'osc00' created Wed May 18 21:53:13 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     osc_dis
+        Input     tmr_rst
+        Output     osc_out
+        Output     tmr_out
+End

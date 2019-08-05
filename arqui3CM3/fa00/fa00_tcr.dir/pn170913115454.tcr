@@ -1,0 +1,10 @@
+#Start recording tcl command: 9/13/2017 11:36:08
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/fa00; Project name: fa00
+prj_project new -name "fa00" -impl "fa00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/fa00/and00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/fa00/xor00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/fa00/packageha00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/fa00/topha00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/fa00/or00.vhdl"
+#Stop recording: 9/13/2017 11:54:54

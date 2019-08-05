@@ -1,0 +1,98 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn170918231550"></A><B><U><big>pn170918231550</big></U></B>
+#Start recording tcl command: 9/18/2017 22:48:11
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00; Project name: desplazamientos00
+prj_project new -name "desplazamientos00" -impl "desplazamientos00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/divosc00vhdl/toposcdiv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/source"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/source/div00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/source/osc00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/source/packagediv00.vhdl" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/source/toposcdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/packagedesplazamientos00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/topdesplazamientos00.vhdl"
+prj_run Export -impl desplazamientos00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 9/18/2017 23:15:50
+
+
+
+<A name="pn170922000202"></A><B><U><big>pn170922000202</big></U></B>
+#Start recording tcl command: 9/21/2017 20:11:58
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00; Project name: desplazamientos00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00.ldf"
+prj_run Export -impl desplazamientos00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+pgr_program run
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientos00/desplazamientos00/desplazamientos00.xcf"
+pgr_project close
+prj_project save
+#Stop recording: 9/22/2017 00:02:02
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

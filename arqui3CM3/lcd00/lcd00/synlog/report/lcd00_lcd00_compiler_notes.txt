@@ -1,0 +1,23 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":8:7:8:14|Top entity is set to toplcd00.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":8:7:8:14|Synthesizing work.toplcd00.arch.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":7:7:7:14|Synthesizing work.lcdmux00.arch.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":7:7:7:15|Synthesizing work.lcddata00.arch.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":47:2:47:3|Register bit outFlagdd is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":47:2:47:3|Register bit outworddd(7) is always 0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl":7:7:7:19|Synthesizing work.lcdcontdata00.arch.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl":24:2:24:3|Register bit RScd is always 1.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl":24:2:24:3|Register bit RWcd is always 0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":7:7:7:17|Synthesizing work.lcdconfig00.arch.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontconfig00.vhdl":7:7:7:21|Synthesizing work.lcdcontconfig00.arch.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontconfig00.vhdl":31:7:31:15|Removing redundant assignment.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Register bit comandoc(6) is always 0.
+@N: CL159 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":12:2:12:10|Input inflagdlm is unused.
+@N|Running in 64-bit mode
+

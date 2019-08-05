@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram"  -part LC4064B  -package T44C  -grade -2.5   -ispmach4s -RWCheckOnRam 1 -areadelay 0 -minc -auto_constrain_io -summaryfile "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synlog\report\toplcdram00_fpga_mapper.xml" -top_level_module  toplcdram00  -multisrs  -ta_num_paths 3  -ta_num_points 0  -oedif  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.edi"  -freq 200.000  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\toplcdram00_mult.srs"  -ologparam  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\syntmp\toplcdram00.plg"  -osyn  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.srm"  -prjdir  "c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\"  -prjname  toplcdram00  -log  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synlog\toplcdram00_fpga_mapper.srr" 
+rc:1 success:1
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.edi|o|1463627179|609120
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\toplcdram00_mult.srs|i|1463627179|6916
+"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\syntmp\toplcdram00.plg"|o|0|0
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.srm|o|1463627179|217225
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synlog\toplcdram00_fpga_mapper.srr|o|1463627179|4419
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399394484|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399397322|8049664

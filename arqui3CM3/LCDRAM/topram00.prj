@@ -1,0 +1,63 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/users/alberto rios/documents/ipn/escom/5semestre/arquitectura/vhdl/lcdram\topram00.prj
+#-- Written on Tue May 17 19:02:24 2016
+
+
+#device options
+set_option -technology ispmach4000b
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler true
+set_option -map_logic false
+set_option -max_terms_per_macrocell 16
+set_option -resource_sharing true
+
+#map options
+set_option -frequency 200
+set_option -fanin_limit 20
+set_option -auto_constrain_io true
+set_option -disable_io_insertion false
+set_option -compiler_compatible true
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -num_critical_paths 3
+set_option -num_startend_points 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+set_option -areadelay 0
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "packagekey00.vhd"
+add_file -vhdl -lib work "packagelcdram00.vhd"
+add_file -vhdl -lib work "osc00.vhd"
+add_file -vhdl -lib work "div00.vhd"
+add_file -vhdl -lib work "contring00.vhd"
+add_file -vhdl -lib work "coder00.vhd"
+add_file -vhdl -lib work "topkey00.vhd"
+add_file -vhdl -lib work "ram00.vhd"
+add_file -vhdl -lib work "coder7seg00.vhd"
+add_file -vhdl -lib work "contread00.vhd"
+add_file -vhdl -lib work "contconfig00.vhd"
+add_file -vhdl -lib work "config00.vhd"
+add_file -vhdl -lib work "bufferlcd00.vhd"
+add_file -vhdl -lib work "toplcdram00.vhd"
+
+#-- top module name
+set_option -top_module topram00
+
+#-- set result format/file last
+project -result_file "topram00.edi"
+
+#-- error message log file
+project -log_file topram00.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run hdl_info_gen -fileorder
+project -run

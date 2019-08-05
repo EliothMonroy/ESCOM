@@ -1,0 +1,12 @@
+@W: CD638 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\topgeneric01.vhdl":42:7:42:13|Signal sinflag is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Pruning unused register outFlagxnor_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Pruning unused register outFlagnor_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Pruning unused register outFlagnand_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Pruning unused register outFlagnot_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\substg00.vhdl":23:2:23:3|Pruning unused register outFlagsub_cl_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\addg00.vhdl":23:2:23:3|Pruning unused register outFlagadd_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Pruning unused register outFlago_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Pruning unused register outFlagx_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Pruning unused register outFlaga_cl_7. Make sure that there are no unused intermediate registers.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

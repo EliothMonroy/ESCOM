@@ -1,0 +1,8 @@
+#Start recording tcl command: 12/5/2017 11:20:49
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/bcd00; Project name: bcd00
+prj_project new -name "bcd00" -impl "bcd00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/eliot/Documents/Github/arqui3CM3/barrilshiftL00/barrilshiftL00/source/div00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/barrilshiftL00/barrilshiftL00/source/osc00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/barrilshiftL00/barrilshiftL00/source/packagediv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/barrilshiftL00/barrilshiftL00/source/toposcdiv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/bcd00/bcd00/source"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/bcd00/bcd00/source/div00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/bcd00/bcd00/source/osc00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/bcd00/bcd00/source/packagediv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/bcd00/bcd00/source/toposcdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/bcd00/init00.vhdl"
+#Stop recording: 12/5/2017 11:42:54

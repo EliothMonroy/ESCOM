@@ -1,0 +1,12 @@
+CKID0001:@|S:K01.OS00.OSCInst0@|E:RA03.aux@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:K01.OS01.outdiv@|E:RA03.sram_ram@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:LCD06.N_18_i@|E:LCD06.ENbb@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:LCD03.un1_inflagc_2_0_a3_0@|E:LCD03.outFlagc@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:LCD03.outWordc_1_RNO[3]@|E:LCD03.outWordc_1[3]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 
+CKID0006:@|S:LCD03.outWordc_1_RNO[5]@|E:LCD03.outWordc_1[5]@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006 
+CKID0007:@|S:LCD03.outWordc_1_RNO[4]@|E:LCD03.outWordc_1[4]@|F:@syn_sample_clock_path==CKID0007@|M:ClockId0007 
+CKID0008:@|S:LCD03.outWordc_1_RNO[1]@|E:LCD03.outWordc_1[1]@|F:@syn_sample_clock_path==CKID0008@|M:ClockId0008 
+CKID0009:@|S:LCD03.outWordc_1_RNO[0]@|E:LCD03.outWordc_1[0]@|F:@syn_sample_clock_path==CKID0009@|M:ClockId0009 
+CKID0010:@|S:LCD03.outWordc_1_RNO[2]@|E:LCD03.outWordc_1[2]@|F:@syn_sample_clock_path==CKID0010@|M:ClockId0010 
+CKID0011:@|S:LCD03.outWordc_1_RNO[7]@|E:LCD03.outWordc_1[7]@|F:@syn_sample_clock_path==CKID0011@|M:ClockId0011 
+CKID0012:@|S:LCD03.ENc_RNO@|E:LCD03.ENc@|F:@syn_sample_clock_path==CKID0012@|M:ClockId0012 

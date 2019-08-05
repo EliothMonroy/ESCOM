@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell arith00
+   Instance path: arith00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00        100.0
+                                  LUT4	       2.00        100.0
+                                 IOBUF	         13        100.0
+                                RIPPLE	          3        100.0

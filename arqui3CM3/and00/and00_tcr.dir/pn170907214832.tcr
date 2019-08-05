@@ -1,0 +1,13 @@
+#Start recording tcl command: 9/7/2017 21:41:30
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/and00; Project name: and00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00.ldf"
+prj_run Export -impl and00 -task Jedecgen
+pgr_project open "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00/and00.xcf"
+pgr_program set -port FTUSB-0
+pgr_program set -port FTUSB-1
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_project save "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00/and00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 9/7/2017 21:48:32

@@ -1,0 +1,10 @@
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":6:7:6:13|Synthesizing work.coder00.coder0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":42:12:42:19|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":95:5:95:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":149:5:149:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":206:11:206:18|Removed redundant assignment
+@W: CG296 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":22:10:22:16|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:12:28:15|Referenced variable clkc is not in sensitivity list
+Post processing for work.coder00.coder0
+@W: CL189 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:8:28:9|Register bit out7segc(6) is always 1, optimizing ...
+@W: CL260 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:8:28:9|Pruning register bit 6 of out7segc(7 downto 0)  

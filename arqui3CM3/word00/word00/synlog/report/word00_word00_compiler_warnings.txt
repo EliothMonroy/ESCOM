@@ -1,0 +1,6 @@
+@W: CL117 :"C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl":16:2:16:5|Latch generated from process for signal outcoder(6 downto 0); possible missing assignment in an if or case statement.
+@W: CL279 :"C:\Users\eliot\Documents\Github\arqui3CM3\word00\contring00.vhdl":18:2:18:3|Pruning register bits 3 to 1 of soutr(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@W: CL260 :"C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl":16:2:16:5|Pruning register bit 5 of outcoder(5 downto 4). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl":16:2:16:5|Pruning register bit 2 of outcoder(2 downto 1). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

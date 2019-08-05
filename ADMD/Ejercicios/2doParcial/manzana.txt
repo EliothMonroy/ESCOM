@@ -1,0 +1,21 @@
+double raiz1;
+        double raiz2;
+
+        if (a == 0) {
+            raiz1 = -c / b;
+            return ""+raiz1;
+        } else {
+            double interior = Math.pow(b, 2) - 4*a*c;
+            if (interior < 0) {
+                interior *= -1;
+                interior = Math.sqrt(interior)/(2*a);
+                b = -b/(2*a);
+
+                return b + " + " + interior + "i \n " + b + " - " + interior + "i";
+            } else {
+                raiz1 = (-b + Math.sqrt(interior)) / (2 * a);
+                raiz2 = (-b - Math.sqrt(interior)) / (2 * a);
+
+                return ""+raiz1 +"\n"+"raiz2";
+            }
+        }

@@ -1,0 +1,22 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Sep 12 11:18:23 2017 *
+NOTE DESIGN NAME: mux00 *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS salida[0] : 13 : out *
+NOTE PINS entrada01[0] : 43 : in *
+NOTE PINS salida[2] : 19 : out *
+NOTE PINS salida[1] : 14 : out *
+NOTE PINS selector[1] : 48 : in *
+NOTE PINS selector[0] : 50 : in *
+NOTE PINS entrada03[2] : 52 : in *
+NOTE PINS entrada03[1] : 55 : in *
+NOTE PINS entrada03[0] : 54 : in *
+NOTE PINS entrada02[2] : 45 : in *
+NOTE PINS entrada02[1] : 47 : in *
+NOTE PINS entrada02[0] : 49 : in *
+NOTE PINS entrada01[2] : 42 : in *
+NOTE PINS entrada01[1] : 44 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

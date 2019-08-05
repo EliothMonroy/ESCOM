@@ -1,0 +1,84 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|topram00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\coder00.vhdl":1512166709
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\contring00.vhdl":1512163958
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\div00.vhdl":1512163958
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\osc00.vhdl":1512163958
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\packagediv00.vhdl":1512163958
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\toposcdiv00.vhdl":1512163958
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\contReadRa00.vhdl":1512163958
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\mux00.vhdl":1512167315
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\ram00.vhdl":1512166760
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\packageram00.vhdl":1512167260
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\proyecto00\\proyecto00\\source\\topram00.vhdl":1512167222
+0 "C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\coder00.vhdl" vhdl
+2 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\contring00.vhdl" vhdl
+3 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\div00.vhdl" vhdl
+4 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\osc00.vhdl" vhdl
+5 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\packagediv00.vhdl" vhdl
+6 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\toposcdiv00.vhdl" vhdl
+7 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\contReadRa00.vhdl" vhdl
+8 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\mux00.vhdl" vhdl
+9 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\ram00.vhdl" vhdl
+10 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\packageram00.vhdl" vhdl
+11 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\topram00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 4 3 5 
+7 -1
+8 -1
+9 -1
+10 -1
+11 6 2 1 9 8 7 10 
+
+# Dependency Lists (Users Of)
+0 -1
+1 11 
+2 11 
+3 6 
+4 6 
+5 6 
+6 11 
+7 11 
+8 11 
+9 11 
+10 11 
+11 -1
+
+# Design Unit to File Association
+arch work coder00 coder0 1
+module work coder00 1
+arch work contring00 contring0 2
+module work contring00 2
+arch work div00 div0 3
+module work div00 3
+arch work osc00 osc0 4
+module work osc00 4
+arch work toposcdiv00 toposcdiv0 6
+module work toposcdiv00 6
+arch work contreadra00 contreadra0 7
+module work contreadra00 7
+arch work mux00 mux0 8
+module work mux00 8
+arch work ram00 ram0 9
+module work ram00 9
+arch work topram00 topram0 11
+module work topram00 11

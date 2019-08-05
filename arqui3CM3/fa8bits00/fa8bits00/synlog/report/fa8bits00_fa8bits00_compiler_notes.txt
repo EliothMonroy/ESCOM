@@ -1,0 +1,13 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\topfa8bits00.vhdl":6:7:6:18|Top entity is set to topfa8bits00.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\topfa8bits00.vhdl":6:7:6:18|Synthesizing work.topfa8bits00.topfa8bits0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\and00.vhdl":5:7:5:11|Synthesizing work.and00.and0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\xnor00.vhdl":5:7:5:12|Synthesizing work.xnor00.xnor0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\xor00.vhdl":5:7:5:11|Synthesizing work.xor00.xor0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\topfa00.vhdl":6:7:6:13|Synthesizing work.topfa00.topfa0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\or00.vhdl":5:7:5:10|Synthesizing work.or00.or0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\topha00.vhdl":6:7:6:13|Synthesizing work.topha00.topha0.
+@N|Running in 64-bit mode
+

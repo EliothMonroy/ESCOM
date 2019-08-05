@@ -1,0 +1,14 @@
+[Version]
+Version=10.2
+[Designs]
+ASD=ASD.adf
+[Settings]
+Active=ASD
+[Expand]
+asd=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/21/2017 20:13:24
+#Project Location: D:/esli-/Documents/ArquitecturadeComputadoras/GELIPAN/ARQUITECTURA/PACK 2/Pack_Gel/LCDRAM; Project name: LCDRAM
+prj_project open "D:/esli-/Documents/ArquitecturadeComputadoras/GELIPAN/ARQUITECTURA/PACK 2/Pack_Gel/LCDRAM/LCDRAM.ldf"
+prj_project close
+#Stop recording: 11/21/2017 20:13:37

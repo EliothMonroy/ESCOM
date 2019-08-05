@@ -1,0 +1,3 @@
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\arith8bits00\arith8bits00.vhdl":7:7:7:13|Synthesizing work.arith00.arith0.
+Post processing for work.arith00.arith0
+@W: CL240 :"C:\Users\eliot\Documents\Github\arqui3CM3\arith8bits00\arith8bits00.vhdl":13:2:13:4|Signal LED is floating; a simulation mismatch is possible.

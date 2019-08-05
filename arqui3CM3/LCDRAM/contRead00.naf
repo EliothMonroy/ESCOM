@@ -1,0 +1,16 @@
+clkcont  i
+wrCont  i
+inFlagcw  i
+inFlagx  i
+RWcw  o
+RScw  o
+ENcw  o
+outFlagcw  o
+inContKey[3]  i
+inContKey[2]  i
+inContKey[1]  i
+inContKey[0]  i
+outContRead[3]  b
+outContRead[2]  b
+outContRead[1]  b
+outContRead[0]  b

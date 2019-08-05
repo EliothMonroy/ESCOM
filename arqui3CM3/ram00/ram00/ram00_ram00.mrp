@@ -1,0 +1,402 @@
+
+           Lattice Mapping Report File for Design Module 'topram00'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     ram00_ram00.ngd -o ram00_ram00_map.ncd -pr ram00_ram00.prf -mp
+     ram00_ram00.mrp -lpf C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00/
+     ram00_ram00_synplify.lpf -lpf
+     C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/ram00.lpf -c 0 -gui -msgset
+     C:/Users/ELITH/Documents/GitHub/arqui3CM3/ram00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  10/13/17  22:09:04
+
+Design Summary
+--------------
+
+   Number of registers:     57 out of  7209 (1%)
+      PFU registers:           57 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        77 out of  3432 (2%)
+      SLICEs as Logic/ROM:     65 out of  3432 (2%)
+      SLICEs as RAM:           12 out of  2574 (0%)
+      SLICEs as Carry:         16 out of  3432 (0%)
+   Number of LUT4s:        154 out of  6864 (2%)
+      Number used as logic LUTs:         98
+      Number used as distributed RAM:    24
+      Number used as ripple logic:       32
+      Number used as shift registers:     0
+   Number of PIO sites used: 41 + 4(JTAG) out of 115 (39%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net RA00.DO1.outdiv_i: 8 loads, 8 rising, 0 falling (Driver:
+     RA00/DO1/outdiv )
+
+                                    Page 1
+
+
+
+
+Design:  topram00                                      Date:  10/13/17  22:09:04
+
+Design Summary (cont)
+---------------------
+     Net RA00.sclk_0: 35 loads, 35 rising, 0 falling (Driver: RA00/D00/OSCInst0
+     )
+   Number of Clock Enables:  8
+     Net G_9: 8 loads, 8 LSLICEs
+     Net G_15: 4 loads, 4 LSLICEs
+     Net RA02/aux0_RNO: 1 loads, 1 LSLICEs
+     Net RA02/outflagcd_RNO_0: 1 loads, 1 LSLICEs
+     Net RA02/un1_enablecd_9_0_RNISIR77: 4 loads, 4 LSLICEs
+     Net RA02/aux3_RNO: 1 loads, 1 LSLICEs
+     Net RA02/aux2_RNO: 1 loads, 1 LSLICEs
+     Net RA02/aux1_RNO: 1 loads, 1 LSLICEs
+   Number of LSRs:  5
+     Net RA05/outcontRrd_42: 3 loads, 3 LSLICEs
+     Net RA03/outwordra_44: 4 loads, 4 LSLICEs
+     Net G_11: 6 loads, 6 LSLICEs
+     Net RA01/fb: 1 loads, 1 LSLICEs
+     Net RA00/DO1/N_139_i: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net enable0_c: 23 loads
+     Net outcontR0_c[0]: 20 loads
+     Net G_9: 19 loads
+     Net outcontR0_c[1]: 19 loads
+     Net outcontR0_c[2]: 19 loads
+     Net rw0_c: 19 loads
+     Net outcontR0_c[3]: 18 loads
+     Net outcrK0_c[1]: 18 loads
+     Net outcrK0_c[3]: 14 loads
+     Net outcrK0_c[2]: 13 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| clk0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| enable0             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outFlag0            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outtransist0[3]     | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  topram00                                      Date:  10/13/17  22:09:04
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| outtransist0[2]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outtransist0[1]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outtransist0[0]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[6]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[5]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[4]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[3]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[1]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[0]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontR0[4]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontR0[3]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontR0[2]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontR0[1]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontR0[0]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontW0[4]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontW0[3]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontW0[2]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontW0[1]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontW0[0]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrK0[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrK0[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrK0[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrK0[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrLed0[3]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrLed0[2]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrLed0[1]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcrLed0[0]        | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  topram00                                      Date:  10/13/17  22:09:04
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| inkey0[3]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| inkey0[2]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| inkey0[1]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| inkey0[0]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rw0                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[3]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[2]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[1]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[0]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block RA03/GND undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block RA00/DO1/VCC undriven or does not drive anything - clipped.
+Block RA01/VCC undriven or does not drive anything - clipped.
+Block RA01/GND undriven or does not drive anything - clipped.
+Block RA02/VCC undriven or does not drive anything - clipped.
+Block RA02/GND undriven or does not drive anything - clipped.
+Block RA03/VCC undriven or does not drive anything - clipped.
+Block RA05/VCC undriven or does not drive anything - clipped.
+Signal RA00/D00/GND undriven or does not drive anything - clipped.
+Signal RA00/DO1/GND undriven or does not drive anything - clipped.
+Signal RA05/GND undriven or does not drive anything - clipped.
+Signal RA00/D00/OSCInst0_SEDSTDBY undriven or does not drive anything - clipped.
+     
+Signal RA00/DO1/un2_sdiv_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal RA00/DO1/N_1 undriven or does not drive anything - clipped.
+Signal RA00/DO1/un2_sdiv_s_21_0_S1 undriven or does not drive anything -
+     clipped.
+Signal RA00/DO1/un2_sdiv_s_21_0_COUT undriven or does not drive anything -
+     clipped.
+Signal RA03/wordram_ram_0_DO3 undriven or does not drive anything - clipped.
+Signal RA03/wordram_ram_2_DO3 undriven or does not drive anything - clipped.
+Signal RA05/un1_outcontrrd_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal RA05/un1_outcontrrd_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal RA05/un1_outcontrrd_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal RA05/un1_outcontrrd_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal RA05/un1_outcontrrd_cry_4_0_S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 4
+
+
+
+
+Design:  topram00                                      Date:  10/13/17  22:09:04
+
+Removed logic (cont)
+--------------------
+Signal RA05/un1_outcontrrd_cry_4_0_COUT undriven or does not drive anything -
+     clipped.
+Signal RA05/un1_outcontrrd_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal RA05/un1_outcontrrd_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal RA05/N_1 undriven or does not drive anything - clipped.
+Block RA00/D00/GND was optimized away.
+Block RA00/DO1/GND was optimized away.
+Block RA05/GND was optimized away.
+
+Memory Usage
+------------
+
+/RA03/wordram_ram:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/RA03/wordram_ram_0:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/RA03/wordram_ram_1:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/RA03/wordram_ram_2:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                RA00/D00/OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     RA00.sclk_0
+  OSC Nominal Frequency (MHz):                      2.08
+
+ASIC Components
+---------------
+
+Instance Name: RA00/D00/OSCInst0
+         Type: OSCH
+
+
+
+
+
+                                    Page 5
+
+
+
+
+Design:  topram00                                      Date:  10/13/17  22:09:04
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 59 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

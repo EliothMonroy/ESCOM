@@ -1,0 +1,66 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\topbarrilshiftL00.vhdl":8:7:8:23|Top entity is set to topbarrilshiftL00.
+File C:\lscc\diamond\3.9_x64\synpbase\lib\cpld\lattice.vhd changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\source\osc00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\source\packagediv00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\packagebarrilshiftL00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\source\toposcdiv00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\topbarrilshiftL00.vhdl changed - recompiling
+VHDL syntax check successful!
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\packagebarrilshiftL00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\topbarrilshiftL00.vhdl changed - recompiling
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\topbarrilshiftL00.vhdl":8:7:8:23|Synthesizing work.topbarrilshiftl00.topbarrilshiftl0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00.vhdl":8:7:8:20|Synthesizing work.barrilshiftl00.barrilshiftl0.
+@N: CD364 :"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00.vhdl":36:6:36:10|Removing redundant assignment.
+Post processing for work.barrilshiftl00.barrilshiftl0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.topbarrilshiftl00.topbarrilshiftl0
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:37:36 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:37:36 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:37:36 2017
+
+###########################################################]

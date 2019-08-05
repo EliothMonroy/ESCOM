@@ -1,0 +1,9 @@
+#Start recording tcl command: 9/3/2017 21:56:37
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/and00; Project name: and00
+prj_project new -name "and00" -impl "and00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/and00/and00.vhdl"
+prj_run Synthesis -impl and00
+prj_run Synthesis -impl and00
+prj_run Export -impl and00 -task Jedecgen
+#Stop recording: 9/3/2017 23:03:59

@@ -1,0 +1,17 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\synwork\fa8bits00_fa8bits00_hdl_.srs  -top  topfa8bits00  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\and00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\or00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\packagefa00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\packageha00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\packagesumaresta00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\topfa00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\topha00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\xnor00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\xor00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\topfa8bits00.vhdl  -log  C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\syntax.log  -fileorder  C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\syntmp\hdlorder.tcl 
+rc:0 success:1 runtime:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\synwork\fa8bits00_fa8bits00_hdl_.srs|io:o|time:0|size:0|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\and00.vhdl|io:i|time:1505942982|size:253|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\or00.vhdl|io:i|time:1505942982|size:247|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\packagefa00.vhdl|io:i|time:1505942982|size:332|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\packageha00.vhdl|io:i|time:1505942982|size:339|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\packagesumaresta00.vhdl|io:i|time:1505942982|size:593|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\topfa00.vhdl|io:i|time:1505942982|size:590|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\topha00.vhdl|io:i|time:1505942982|size:482|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\xnor00.vhdl|io:i|time:1505942982|size:265|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\source\xor00.vhdl|io:i|time:1505942982|size:253|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\topfa8bits00.vhdl|io:i|time:1506179809|size:2891|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\fa8bits00\fa8bits00\syntax.log|io:o|time:1506428490|size:1032|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_vhdl.exe|io:i|time:1489222824|size:2416640|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe|io:i|time:1489223076|size:3082752|exec:1

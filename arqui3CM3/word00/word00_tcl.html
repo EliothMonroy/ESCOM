@@ -1,0 +1,199 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn170905113717"></A><B><U><big>pn170905113717</big></U></B>
+#Start recording tcl command: 9/5/2017 11:35:22
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project new -name "word00" -impl "word00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00vhdl/div00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00vhdl/osc00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00vhdl/packagediv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00vhdl/toposcdiv00.vhdl"
+prj_project save
+#Stop recording: 9/5/2017 11:37:17
+
+
+
+<A name="pn170912105122"></A><B><U><big>pn170912105122</big></U></B>
+#Start recording tcl command: 9/12/2017 10:43:35
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/word00/word00.ldf"
+prj_project close
+#Stop recording: 9/12/2017 10:51:22
+
+
+
+<A name="pn170912113352"></A><B><U><big>pn170912113352</big></U></B>
+#Start recording tcl command: 9/12/2017 11:24:53
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/word00/word00.ldf"
+prj_run Export -impl word00 -task Jedecgen
+prj_run Translate -impl word00
+prj_project close
+#Stop recording: 9/12/2017 11:33:52
+
+
+
+<A name="pn170916142114"></A><B><U><big>pn170916142114</big></U></B>
+#Start recording tcl command: 9/16/2017 14:01:28
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00.ldf"
+#Stop recording: 9/16/2017 14:21:14
+
+
+
+<A name="pn170917224958"></A><B><U><big>pn170917224958</big></U></B>
+#Start recording tcl command: 9/17/2017 12:49:19
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00.ldf"
+prj_run Export -impl word00 -task Jedecgen
+launch_synplify_prj word00
+prj_run Export -impl word00 -task Jedecgen
+prj_project save
+prj_project save
+prj_run Export -impl word00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+pgr_project close
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_project close
+prj_run Export -impl word00 -task Jedecgen
+prj_run Export -impl word00 -task Jedecgen
+launch_synplify_prj word00
+prj_run Export -impl word00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+prj_run Export -impl word00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+pgr_project close
+prj_run Export -impl word00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 9/17/2017 22:49:58
+
+
+
+<A name="pn170918082324"></A><B><U><big>pn170918082324</big></U></B>
+#Start recording tcl command: 9/18/2017 08:23:19
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/word00/word00.ldf"
+#Stop recording: 9/18/2017 08:23:24
+
+
+
+<A name="pn170918090614"></A><B><U><big>pn170918090614</big></U></B>
+#Start recording tcl command: 9/18/2017 08:49:14
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/word00/word00.ldf"
+#Stop recording: 9/18/2017 09:06:14
+
+
+
+<A name="pn170925185409"></A><B><U><big>pn170925185409</big></U></B>
+#Start recording tcl command: 9/25/2017 17:45:59
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00.ldf"
+prj_run Export -impl word00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+prj_run Export -impl word00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+prj_run Export -impl word00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+prj_run Export -impl word00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_project close
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/word00/word00/word00.xcf"
+pgr_program run
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 9/25/2017 18:54:09
+
+
+
+<A name="pn170926072929"></A><B><U><big>pn170926072929</big></U></B>
+#Start recording tcl command: 9/26/2017 07:27:17
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/word00/word00.ldf"
+prj_run Export -impl word00 -task Jedecgen
+prj_project close
+#Stop recording: 9/26/2017 07:29:29
+
+
+
+<A name="pn170930232917"></A><B><U><big>pn170930232917</big></U></B>
+#Start recording tcl command: 9/30/2017 23:26:19
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/word00; Project name: word00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/word00/word00.ldf"
+#Stop recording: 9/30/2017 23:29:17
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

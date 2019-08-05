@@ -1,0 +1,2 @@
+@W: CL159 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd":14:7:14:13|Input incontw is unused
+

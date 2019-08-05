@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  toplcdram00  -incremental_debug  -multisrs  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_comp.srs  -osyn  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_mult.srs  -log  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synlog\lcdram00_lcdram00_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_comp.srs|i|1481495985|23321
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_mult.srs|o|1481495987|7045
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synlog\lcdram00_lcdram00_multi_srs_gen.srr|o|1481495987|644
+C:\lscc\diamond\3.7_x64\synpbase\bin\syn_nfilter.exe|i|1449734274|3110400
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe|i|1449734476|4182528

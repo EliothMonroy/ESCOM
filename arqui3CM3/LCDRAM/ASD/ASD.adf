@@ -1,0 +1,69 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+ASD=.\ASD\ASD.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+asd=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\packagekey00.vhdl=-1
+/..\..\packagelcdram00.vhdl=-1
+/..\..\bufferlcd00.vhdl=-1
+/..\..\config00.vhdl=-1
+/..\..\contconfig00.vhdl=-1
+/..\..\contread00.vhdl=-1
+/..\..\ram00.vhdl=-1
+/..\..\coder00.vhdl=-1
+/..\..\contring00.vhdl=-1
+/..\..\topkey00.vhdl=-1
+/..\..\div00.vhdl=-1
+/..\..\osc00.vhdl=-1
+/..\..\toplcdram00.vhdl=-1
+[Files.Data]
+.\..\packagekey00.vhdl=VHDL Source Code
+.\..\packagelcdram00.vhdl=VHDL Source Code
+.\..\bufferlcd00.vhdl=VHDL Source Code
+.\..\config00.vhdl=VHDL Source Code
+.\..\contconfig00.vhdl=VHDL Source Code
+.\..\contread00.vhdl=VHDL Source Code
+.\..\ram00.vhdl=VHDL Source Code
+.\..\coder00.vhdl=VHDL Source Code
+.\..\contring00.vhdl=VHDL Source Code
+.\..\topkey00.vhdl=VHDL Source Code
+.\..\div00.vhdl=VHDL Source Code
+.\..\osc00.vhdl=VHDL Source Code
+.\..\toplcdram00.vhdl=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Nov 17 11:13:26 2017
+
+C:/lscc/diamond/3.9_x64/ispfpga\bin\nt64\par -f generic00_generic00.p2t
+generic00_generic00_map.ncd generic00_generic00.dir generic00_generic00.prf
+-gui -msgset C:/Users/eliot/Documents/Github/arqui3CM3/generic00/promote.xml
+
+
+Preference file: generic00_generic00.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            465.647      0            0.377        0            07           Complete
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 7 secs 
+
+par done!

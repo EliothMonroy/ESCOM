@@ -1,0 +1,9 @@
+#Start recording tcl command: 11/24/2017 10:49:17
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/generic01.ldf"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/uc00.vhdl"
+prj_src remove "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/generic01/source/uc00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/packagegeneric01.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/generic01/topgeneric01.vhdl"
+prj_project save
+#Stop recording: 11/24/2017 11:54:36

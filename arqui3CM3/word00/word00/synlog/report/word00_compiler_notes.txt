@@ -1,0 +1,15 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\topword00.vhdl":9:7:9:15|Top entity is set to topword00.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\topword00.vhdl":9:7:9:15|Synthesizing work.topword00.topword0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\coder00.vhdl":7:7:7:13|Synthesizing work.coder00.coder0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\contring00.vhdl":7:7:7:16|Synthesizing work.contring00.contring0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\divosc00vhdl\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\divosc00vhdl\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\divosc00vhdl\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\topword00.vhdl":9:7:9:15|Selected library: work cell: topword00 view topword0 as top level
+@N: NF107 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\topword00.vhdl":9:7:9:15|Selected library: work cell: topword00 view topword0 as top level
+

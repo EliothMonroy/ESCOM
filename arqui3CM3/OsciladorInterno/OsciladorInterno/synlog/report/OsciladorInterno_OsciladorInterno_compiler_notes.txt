@@ -1,0 +1,8 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\osc00.vhdl":8:7:8:11|Top entity is set to osc00.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\OsciladorInterno\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N|Running in 64-bit mode
+

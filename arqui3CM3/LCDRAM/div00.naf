@@ -1,0 +1,6 @@
+clkdiv  i
+indiv[3]  i
+indiv[2]  i
+indiv[1]  i
+indiv[0]  i
+outdiv  b

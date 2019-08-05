@@ -1,0 +1,13 @@
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+File C:\lscc\diamond\3.6_x64\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Dec 11 16:39:47 2016
+
+###########################################################]

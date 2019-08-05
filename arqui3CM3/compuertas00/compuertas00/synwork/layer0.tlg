@@ -1,0 +1,3 @@
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\compuertas00\compuertas00.vhdl":5:7:5:18|Synthesizing work.compuertas00.compuertas0.
+Post processing for work.compuertas00.compuertas0
+@W: CL117 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\compuertas00\compuertas00.vhdl":26:2:26:5|Latch generated from process for signal Y(7 downto 0); possible missing assignment in an if or case statement.

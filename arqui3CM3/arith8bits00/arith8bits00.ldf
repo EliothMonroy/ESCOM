@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="arith8bits00" device="LCMXO2-7000HE-4TG144C" default_implementation="arith8bits00">
+    <Options/>
+    <Implementation title="arith8bits00" dir="arith8bits00" description="arith8bits00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="arith00"/>
+        <Source name="arith8bits00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="arith00"/>
+        </Source>
+        <Source name="arith8bits00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="arith8bits00/arith8bits00.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="arith8bits001.sty"/>
+</BaliProject>

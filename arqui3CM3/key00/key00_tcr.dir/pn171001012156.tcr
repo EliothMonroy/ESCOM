@@ -1,0 +1,8 @@
+#Start recording tcl command: 10/1/2017 01:15:39
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/key00; Project name: key00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/key00/key00.ldf"
+prj_run Export -impl key00 -task Jedecgen
+pgr_project open "C:/Users/eliot/Documents/Github/arqui3CM3/key00/key00/key00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 10/1/2017 01:21:56

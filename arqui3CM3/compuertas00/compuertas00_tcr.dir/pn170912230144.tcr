@@ -1,0 +1,17 @@
+#Start recording tcl command: 9/12/2017 19:08:52
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00; Project name: compuertas00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00.ldf"
+prj_project save
+prj_run Export -impl compuertas00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00/compuertas00.xcf"
+pgr_program run
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00/compuertas00.xcf"
+pgr_program run
+prj_run Export -impl compuertas00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00/compuertas00.xcf"
+pgr_program run
+pgr_program run
+pgr_project close
+prj_project save
+#Stop recording: 9/12/2017 23:01:44

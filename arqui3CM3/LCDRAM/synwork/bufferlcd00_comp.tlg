@@ -1,0 +1,13 @@
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":6:7:6:17|Synthesizing work.bufferlcd00.bufferlcd0 
+@W: CG296 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":25:7:25:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":33:23:33:33|Referenced variable inwordwrite is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":28:16:28:27|Referenced variable inwordconfig is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":35:10:35:13|Referenced variable rswb is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":34:11:34:14|Referenced variable rwwb is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":30:9:30:12|Referenced variable rscb is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":29:9:29:12|Referenced variable rwcb is not in sensitivity list
+Post processing for work.bufferlcd00.bufferlcd0
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.

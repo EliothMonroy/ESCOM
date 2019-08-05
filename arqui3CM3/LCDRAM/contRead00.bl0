@@ -1,0 +1,235 @@
+#$ DATE Wed May 18 21:58:03 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE contread00
+#$ PINS 16 inContKey_3_ outContRead_3_ clkcont wrCont inFlagcw inFlagx RWcw RScw ENcw outFlagcw inContKey_2_ inContKey_1_ inContKey_0_ outContRead_2_ outContRead_1_ outContRead_0_
+#$ NODES 81 gnd_n_n vcc_n_n outContReade N_41 N_42 N_43 N_44 N_45 N_47 N_8 \
+#  pcont_un1_outcontread_n N_9 N_10 N_48 N_28 N_26 N_21 N_32 N_22 N_31 \
+#  N_23 N_30 N_24 N_29 N_25 N_2 outcontread_i_3__n outcontread_i_2__n outcontread_i_1__n outcontread_i_0__n \
+#  inFlagx_i clkcont_c wrCont_c inFlagcw_c inFlagx_c ENcwDFFCreg outFlagcwDFFreg incontkey_c_0__n incontkey_c_1__n incontkey_c_2__n \
+#  incontkey_c_3__n outContReadDFFC_0_reg outContReadDFFC_1_reg outContReadDFFC_2_reg outContReadDFFC_3_reg N_2_i N_3_0 outContReade_0 incontkey_c_i_3__n N_22_0 \
+#  incontkey_c_i_2__n N_24_0 incontkey_c_i_1__n N_26_0 N_28_i N_25_i N_29_0 N_30_i N_23_i N_31_0 \
+#  N_32_i N_21_i pcont_un1_outcontread_i_n N_41_i N_42_i N_48_i N_10_i N_9_i pcont_encw_3_0_n N_8_i \
+#  N_47_i N_45_i N_43_i N_44_i N_28_1 N_40_i_1 N_7_i_1 N_4_i_1 outflagcw_0_un3_n outflagcw_0_un1_n \
+#  outflagcw_0_un0_n 
+.model contread00
+.inputs inContKey_3_.BLIF clkcont.BLIF wrCont.BLIF inFlagcw.BLIF inFlagx.BLIF inContKey_2_.BLIF inContKey_1_.BLIF inContKey_0_.BLIF gnd_n_n.BLIF \
+  vcc_n_n.BLIF outContReade.BLIF N_41.BLIF N_42.BLIF N_43.BLIF N_44.BLIF N_45.BLIF N_47.BLIF N_8.BLIF \
+  pcont_un1_outcontread_n.BLIF N_9.BLIF N_10.BLIF N_48.BLIF N_28.BLIF N_26.BLIF N_21.BLIF N_32.BLIF N_22.BLIF \
+  N_31.BLIF N_23.BLIF N_30.BLIF N_24.BLIF N_29.BLIF N_25.BLIF N_2.BLIF outcontread_i_3__n.BLIF outcontread_i_2__n.BLIF \
+  outcontread_i_1__n.BLIF outcontread_i_0__n.BLIF inFlagx_i.BLIF clkcont_c.BLIF wrCont_c.BLIF inFlagcw_c.BLIF inFlagx_c.BLIF ENcwDFFCreg.BLIF outFlagcwDFFreg.BLIF \
+  incontkey_c_0__n.BLIF incontkey_c_1__n.BLIF incontkey_c_2__n.BLIF incontkey_c_3__n.BLIF outContReadDFFC_0_reg.BLIF outContReadDFFC_1_reg.BLIF outContReadDFFC_2_reg.BLIF outContReadDFFC_3_reg.BLIF N_2_i.BLIF \
+  N_3_0.BLIF outContReade_0.BLIF incontkey_c_i_3__n.BLIF N_22_0.BLIF incontkey_c_i_2__n.BLIF N_24_0.BLIF incontkey_c_i_1__n.BLIF N_26_0.BLIF N_28_i.BLIF \
+  N_25_i.BLIF N_29_0.BLIF N_30_i.BLIF N_23_i.BLIF N_31_0.BLIF N_32_i.BLIF N_21_i.BLIF pcont_un1_outcontread_i_n.BLIF N_41_i.BLIF \
+  N_42_i.BLIF N_48_i.BLIF N_10_i.BLIF N_9_i.BLIF pcont_encw_3_0_n.BLIF N_8_i.BLIF N_47_i.BLIF N_45_i.BLIF N_43_i.BLIF \
+  N_44_i.BLIF N_28_1.BLIF N_40_i_1.BLIF N_7_i_1.BLIF N_4_i_1.BLIF outflagcw_0_un3_n.BLIF outflagcw_0_un1_n.BLIF outflagcw_0_un0_n.BLIF  
+.outputs outContRead_3_ RWcw RScw ENcw outFlagcw outContRead_2_ outContRead_1_ outContRead_0_ outContReadDFFC_1_reg.D outContReadDFFC_1_reg.CE outContReadDFFC_1_reg.C \
+  outContReadDFFC_2_reg.D outContReadDFFC_2_reg.CE outContReadDFFC_2_reg.C outContReadDFFC_3_reg.D outContReadDFFC_3_reg.CE outContReadDFFC_3_reg.C outContReadDFFC_0_reg.D outContReadDFFC_0_reg.CE outContReadDFFC_0_reg.C ENcwDFFCreg.D ENcwDFFCreg.CE \
+  ENcwDFFCreg.C outFlagcwDFFreg.D outFlagcwDFFreg.C gnd_n_n vcc_n_n outContReade N_41 N_42 N_43 N_44 N_45 \
+  N_47 N_8 pcont_un1_outcontread_n N_9 N_10 N_48 N_28 N_26 N_21 N_32 N_22 \
+  N_31 N_23 N_30 N_24 N_29 N_25 N_2 outcontread_i_3__n outcontread_i_2__n outcontread_i_1__n outcontread_i_0__n \
+  inFlagx_i clkcont_c wrCont_c inFlagcw_c inFlagx_c incontkey_c_0__n incontkey_c_1__n incontkey_c_2__n incontkey_c_3__n N_2_i N_3_0 \
+  outContReade_0 incontkey_c_i_3__n N_22_0 incontkey_c_i_2__n N_24_0 incontkey_c_i_1__n N_26_0 N_28_i N_25_i N_29_0 N_30_i \
+  N_23_i N_31_0 N_32_i N_21_i pcont_un1_outcontread_i_n N_41_i N_42_i N_48_i N_10_i N_9_i pcont_encw_3_0_n \
+  N_8_i N_47_i N_45_i N_43_i N_44_i N_28_1 N_40_i_1 N_7_i_1 N_4_i_1 outflagcw_0_un3_n outflagcw_0_un1_n \
+  outflagcw_0_un0_n
+.names  clkcont.BLIF clkcont_c
+1 1
+.names  wrCont.BLIF wrCont_c
+1 1
+.names  inFlagcw.BLIF inFlagcw_c
+1 1
+.names  inFlagx.BLIF inFlagx_c
+1 1
+.names  gnd_n_n.BLIF RWcw
+1 1
+.names  vcc_n_n.BLIF RScw
+1 1
+.names  ENcwDFFCreg.BLIF ENcw
+1 1
+.names  outFlagcwDFFreg.BLIF outFlagcw
+1 1
+.names  inContKey_0_.BLIF incontkey_c_0__n
+1 1
+.names  inContKey_1_.BLIF incontkey_c_1__n
+1 1
+.names  inContKey_2_.BLIF incontkey_c_2__n
+1 1
+.names  inContKey_3_.BLIF incontkey_c_3__n
+1 1
+.names  outContReadDFFC_0_reg.BLIF outContRead_0_
+1 1
+.names  outContReadDFFC_1_reg.BLIF outContRead_1_
+1 1
+.names  outContReadDFFC_2_reg.BLIF outContRead_2_
+1 1
+.names  outContReadDFFC_3_reg.BLIF outContRead_3_
+1 1
+.names  N_43_i.BLIF N_44_i.BLIF N_4_i_1
+11 1
+.names  N_4_i_1.BLIF wrCont_c.BLIF outContReadDFFC_3_reg.D
+11 1
+.names  N_48_i.BLIF N_48
+0 1
+.names  N_10.BLIF N_10_i
+0 1
+.names  N_9.BLIF N_9_i
+0 1
+.names  pcont_encw_3_0_n.BLIF ENcwDFFCreg.D
+0 1
+.names  N_8_i.BLIF N_8
+0 1
+.names  N_47.BLIF N_47_i
+0 1
+.names  N_45.BLIF N_45_i
+0 1
+.names  N_43.BLIF N_43_i
+0 1
+.names  N_44.BLIF N_44_i
+0 1
+.names  N_26.BLIF incontkey_c_0__n.BLIF N_28_1
+11 1
+.names  N_28_1.BLIF outcontread_i_0__n.BLIF N_28
+11 1
+.names  N_41.BLIF N_47_i.BLIF N_40_i_1
+11 1
+.names  N_40_i_1.BLIF wrCont_c.BLIF outContReadDFFC_1_reg.D
+11 1
+.names  N_42.BLIF N_45_i.BLIF N_7_i_1
+11 1
+.names  N_7_i_1.BLIF wrCont_c.BLIF outContReadDFFC_2_reg.D
+11 1
+.names  incontkey_c_2__n.BLIF incontkey_c_i_2__n
+0 1
+.names  N_24_0.BLIF N_24
+0 1
+.names  incontkey_c_1__n.BLIF incontkey_c_i_1__n
+0 1
+.names  N_26_0.BLIF N_26
+0 1
+.names  N_28.BLIF N_28_i
+0 1
+.names  N_25.BLIF N_25_i
+0 1
+.names  N_29_0.BLIF N_29
+0 1
+.names  N_30.BLIF N_30_i
+0 1
+.names  N_23.BLIF N_23_i
+0 1
+.names  N_31_0.BLIF N_31
+0 1
+.names  N_32.BLIF N_32_i
+0 1
+.names  N_21.BLIF N_21_i
+0 1
+.names  pcont_un1_outcontread_i_n.BLIF pcont_un1_outcontread_n
+0 1
+.names  N_41_i.BLIF N_41
+0 1
+.names  N_42_i.BLIF N_42
+0 1
+.names  N_2.BLIF N_2_i
+0 1
+.names  N_3_0.BLIF outFlagcwDFFreg.D
+0 1
+.names  outContReade_0.BLIF outContReade
+0 1
+.names  incontkey_c_3__n.BLIF incontkey_c_i_3__n
+0 1
+.names  N_22_0.BLIF N_22
+0 1
+.names  incontkey_c_i_2__n.BLIF outContReadDFFC_2_reg.BLIF N_24_0
+11 1
+.names  outContReadDFFC_2_reg.BLIF outcontread_i_2__n
+0 1
+.names  incontkey_c_2__n.BLIF outcontread_i_2__n.BLIF N_23
+11 1
+.names  incontkey_c_i_3__n.BLIF outContReadDFFC_3_reg.BLIF N_22_0
+11 1
+.names  outContReadDFFC_3_reg.BLIF outcontread_i_3__n
+0 1
+.names  incontkey_c_3__n.BLIF outcontread_i_3__n.BLIF N_21
+11 1
+.names  N_48.BLIF wrCont_c.BLIF outContReade_0
+11 1
+.names  N_2_i.BLIF wrCont_c.BLIF N_3_0
+11 1
+.names  N_8.BLIF outflagcw_0_un3_n
+0 1
+.names  outFlagcwDFFreg.BLIF N_8.BLIF outflagcw_0_un1_n
+11 1
+.names  inFlagx_c.BLIF outflagcw_0_un3_n.BLIF outflagcw_0_un0_n
+11 1
+.names  outflagcw_0_un1_n.BLIF outflagcw_0_un0_n.BLIF N_2
+1- 1
+-1 1
+.names  outContReadDFFC_0_reg.BLIF outContReadDFFC_1_reg.BLIF N_41_i
+11 1
+.names  outcontread_i_0__n.BLIF outcontread_i_1__n.BLIF N_47
+11 1
+.names  outcontread_i_0__n.BLIF wrCont_c.BLIF outContReadDFFC_0_reg.D
+11 1
+.names  N_41.BLIF outcontread_i_2__n.BLIF N_45
+11 1
+.names  N_42_i.BLIF outContReadDFFC_3_reg.BLIF N_44
+11 1
+.names  N_42.BLIF outcontread_i_3__n.BLIF N_43
+11 1
+.names  outContReadDFFC_0_reg.BLIF outcontread_i_0__n
+0 1
+.names  N_21_i.BLIF N_32_i.BLIF pcont_un1_outcontread_i_n
+11 1
+.names  N_22.BLIF N_31.BLIF N_32
+11 1
+.names  N_23_i.BLIF N_30_i.BLIF N_31_0
+11 1
+.names  N_24.BLIF N_29.BLIF N_30
+11 1
+.names  N_25_i.BLIF N_28_i.BLIF N_29_0
+11 1
+.names  incontkey_c_i_1__n.BLIF outContReadDFFC_1_reg.BLIF N_26_0
+11 1
+.names  outContReadDFFC_1_reg.BLIF outcontread_i_1__n
+0 1
+.names  incontkey_c_1__n.BLIF outcontread_i_1__n.BLIF N_25
+11 1
+.names  inFlagcw_c.BLIF pcont_un1_outcontread_n.BLIF N_8_i
+11 1
+.names  N_9_i.BLIF N_10_i.BLIF pcont_encw_3_0_n
+11 1
+.names  N_8_i.BLIF inFlagx_c.BLIF N_48_i
+11 1
+.names  inFlagx_c.BLIF inFlagx_i
+0 1
+.names  N_8_i.BLIF inFlagx_i.BLIF N_10
+11 1
+.names  ENcwDFFCreg.BLIF N_8.BLIF N_9
+11 1
+.names  N_41_i.BLIF outContReadDFFC_2_reg.BLIF N_42_i
+11 1
+.names  gnd_n_n
+.names  vcc_n_n
+1
+.names  outContReade.BLIF outContReadDFFC_1_reg.CE
+1 1
+.names  clkcont_c.BLIF outContReadDFFC_1_reg.C
+1 1
+.names  outContReade.BLIF outContReadDFFC_2_reg.CE
+1 1
+.names  clkcont_c.BLIF outContReadDFFC_2_reg.C
+1 1
+.names  outContReade.BLIF outContReadDFFC_3_reg.CE
+1 1
+.names  clkcont_c.BLIF outContReadDFFC_3_reg.C
+1 1
+.names  outContReade.BLIF outContReadDFFC_0_reg.CE
+1 1
+.names  clkcont_c.BLIF outContReadDFFC_0_reg.C
+1 1
+.names  wrCont_c.BLIF ENcwDFFCreg.CE
+1 1
+.names  clkcont_c.BLIF ENcwDFFCreg.C
+1 1
+.names  clkcont_c.BLIF outFlagcwDFFreg.C
+1 1
+.end

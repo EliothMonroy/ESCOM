@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "divosc00_divosc00.log"
+-o "divosc00_divosc00.csv"
+-pr "divosc00_divosc00.prf"

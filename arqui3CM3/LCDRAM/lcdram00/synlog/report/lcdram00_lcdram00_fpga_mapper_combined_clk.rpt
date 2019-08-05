@@ -1,0 +1,31 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+12 gated/generated clock tree(s) driving 105 clock pin(s) of sequential element(s)
+0 instances converted, 105 sequential instances remain driven by gated/generated clocks
+
+======================================================================================================== Gated/Generated Clocks =========================================================================================================
+Clock Tree ID     Driving Element                Drive Element Type     Fanout     Sample Instance         Explanation                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       K01.OS00.OSCInst0              OSCH                   84         RA03.aux                Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       K01.OS01.outdiv                FD1S3AX                2          RA03.sram_ram           No gated clock conversion method for cell cell:LUCENT.DPR16X4C                                                                
+@K:CKID0003       LCD06.N_18_i                   ORCALUT4               10         LCD06.ENbb              No clocks found on inputs                                                                                                     
+@K:CKID0004       LCD03.un1_inflagc_2_0_a3_0     ORCALUT4               1          LCD03.outFlagc          No clocks found on inputs                                                                                                     
+@K:CKID0005       LCD03.outWordc_1_RNO[3]        ORCALUT4               1          LCD03.outWordc_1[3]     No clocks found on inputs                                                                                                     
+@K:CKID0006       LCD03.outWordc_1_RNO[5]        ORCALUT4               1          LCD03.outWordc_1[5]     No clocks found on inputs                                                                                                     
+@K:CKID0007       LCD03.outWordc_1_RNO[4]        ORCALUT4               1          LCD03.outWordc_1[4]     No clocks found on inputs                                                                                                     
+@K:CKID0008       LCD03.outWordc_1_RNO[1]        ORCALUT4               1          LCD03.outWordc_1[1]     No clocks found on inputs                                                                                                     
+@K:CKID0009       LCD03.outWordc_1_RNO[0]        ORCALUT4               1          LCD03.outWordc_1[0]     No clocks found on inputs                                                                                                     
+@K:CKID0010       LCD03.outWordc_1_RNO[2]        ORCALUT4               1          LCD03.outWordc_1[2]     No clocks found on inputs                                                                                                     
+@K:CKID0011       LCD03.outWordc_1_RNO[7]        ORCALUT4               1          LCD03.outWordc_1[7]     No clocks found on inputs                                                                                                     
+@K:CKID0012       LCD03.ENc_RNO                  ORCALUT4               1          LCD03.ENc               No clocks found on inputs                                                                                                     
+=========================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

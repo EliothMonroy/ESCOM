@@ -1,0 +1,1 @@
+@W: MT531 :"c:\users\eliot\documents\github\arqui3cm3\mux00\mux00.vhdl":24:2:24:5|Found signal identified as System clock which controls 3 sequential elements including salida[2:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 

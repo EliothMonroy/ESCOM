@@ -1,0 +1,2 @@
+@E: CD297 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd":45:11:45:41|Width mismatch, location has width 7, value 8
+

@@ -1,0 +1,5 @@
+#Start recording tcl command: 12/1/2017 16:46:11
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00; Project name: key00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/key00/key00.ldf"
+prj_project close
+#Stop recording: 12/1/2017 16:47:01

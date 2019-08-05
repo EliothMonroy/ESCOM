@@ -1,0 +1,255 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+            Lattice Mapping Report File for Design Module 'mux00'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     mux00_mux00.ngd -o mux00_mux00_map.ncd -pr mux00_mux00.prf -mp
+     mux00_mux00.mrp -lpf C:/Users/eliot/Documents/Github/arqui3CM3/mux00/mux00/
+     mux00_mux00_synplify.lpf -lpf
+     C:/Users/eliot/Documents/Github/arqui3CM3/mux00/mux00.lpf -c 0 -gui -msgset
+     C:/Users/eliot/Documents/Github/arqui3CM3/mux00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  09/12/17  11:18:06
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:      3 out of  7209 (0%)
+      PFU registers:            3 out of  6864 (0%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:         6 out of  3432 (0%)
+      SLICEs as Logic/ROM:      6 out of  3432 (0%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:          7 out of  6864 (0%)
+      Number used as logic LUTs:          7
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 14 + 4(JTAG) out of 115 (16%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net pmux.un1_selector_1: 3 loads, 3 rising, 0 falling (Driver:
+     pmux.un1_selector_1 )
+
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net selector_c[0]: 4 loads
+     Net selector_c[1]: 4 loads
+     Net entrada01_c[0]: 1 loads
+     Net entrada03_c[2]: 1 loads
+     Net salida_1[0]: 1 loads
+     Net salida_1[1]: 1 loads
+     Net salida_1[2]: 1 loads
+     Net salida_c[0]: 1 loads
+     Net salida_c[1]: 1 loads
+     Net salida_c[2]: 1 loads
+
+
+
+
+   Number of warnings:  3
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_0" SITE "13" ;
+        Keeping LOCATE COMP "salida[0]" SITE "13" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_1" SITE "14" ;
+        Keeping LOCATE COMP "salida[1]" SITE "14" ;
+     .
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP
+     "SLICE_2" SITE "19" ;
+        Keeping LOCATE COMP "salida[2]" SITE "19" ;
+     .
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| salida[0]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada01[0]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| salida[2]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| salida[1]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| selector[1]         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| selector[0]         | INPUT     | LVCMOS25  |            |
+
++---------------------+-----------+-----------+------------+
+| entrada03[2]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada03[1]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada03[0]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada02[2]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada02[1]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada02[0]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada01[2]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| entrada01[1]        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 57 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

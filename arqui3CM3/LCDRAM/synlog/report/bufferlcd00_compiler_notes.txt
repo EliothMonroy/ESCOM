@@ -1,0 +1,5 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":6:7:6:17|Top entity is set to bufferlcd00.
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":6:7:6:17|Synthesizing work.bufferlcd00.bufferlcd0 
+

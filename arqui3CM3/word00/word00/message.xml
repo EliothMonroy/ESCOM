@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>W02/N_13_i</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/DO1/un2_sdiv_s_21_0_COUT</Dynamic>
+            <Navigation>W00/DO1/un2_sdiv_s_21_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/DO1/un2_sdiv_s_21_0_S1</Dynamic>
+            <Navigation>W00/DO1/un2_sdiv_s_21_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/DO1/un2_sdiv_cry_0_0_S0</Dynamic>
+            <Navigation>W00/DO1/un2_sdiv_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/D00/OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>W00/D00/OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl&quot;:16:2:16:5|Latch generated from process for signal outcoder(6 downto 0); possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from process for signal outcoder(6 downto 0); possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\word00\contring00.vhdl&quot;:18:2:18:3|Pruning register bits 3 to 1 of soutr(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\word00\contring00.vhdl</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning register bits 3 to 1 of soutr(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD276 :&quot;C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd&quot;:2297:8:2297:15|Map for port sedstdby of component osch not found</Dynamic>
+            <Navigation>CD276</Navigation>
+            <Navigation>C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Map for port sedstdby of component osch not found</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl&quot;:16:2:16:5|Pruning register bit 5 of outcoder(5 downto 4). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 5 of outcoder(5 downto 4). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl&quot;:16:2:16:5|Pruning register bit 2 of outcoder(2 downto 1). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\word00\coder00.vhdl</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 2 of outcoder(2 downto 1). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\users\eliot\documents\github\arqui3cm3\word00\coder00.vhdl&quot;:16:2:16:5|Sequential instance W02.outcoder_1[1] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\users\eliot\documents\github\arqui3cm3\word00\coder00.vhdl</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Sequential instance W02.outcoder_1[1] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT531 :&quot;c:\users\eliot\documents\github\arqui3cm3\word00\coder00.vhdl&quot;:16:2:16:5|Found signal identified as System clock which controls 4 sequential elements including W02.outcoder_1[6].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance.</Dynamic>
+            <Navigation>MT531</Navigation>
+            <Navigation>c:\users\eliot\documents\github\arqui3cm3\word00\coder00.vhdl</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found signal identified as System clock which controls 4 sequential elements including W02.outcoder_1[6].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\eliot\documents\github\arqui3cm3\divosc00vhdl\div00.vhdl&quot;:21:2:21:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including W00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\eliot\documents\github\arqui3cm3\divosc00vhdl\div00.vhdl</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including W00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

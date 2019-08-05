@@ -1,0 +1,3 @@
+@W: CL138 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":27:5:27:6|Register bit RScw is always 1, optimizing ...
+

@@ -1,0 +1,97 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|topram00|-prodtype|synplify_pro|-nostructver|-encrypt|-pro|-lite|-compiler_compatible|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\bin64\\c_vhdl.exe":1401252904
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\location.map":1310486174
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std1164.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\numeric.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\umr_capim.vhd":1401252768
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\arith.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\unsigned.vhd":1401252522
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\packagekey00.vhd":1463522046
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\packagelcdram00.vhd":1463528642
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\osc00.vhd":1463522690
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\div00.vhd":1463522661
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\contring00.vhd":1463522163
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\coder00.vhd":1463522122
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\topkey00.vhd":1463522087
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\ram00.vhd":1463528887
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\coder7seg00.vhd":1463529112
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\contread00.vhd":1463527948
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\contconfig00.vhd":1463522777
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\config00.vhd":1463522737
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\bufferlcd00.vhd":1463522556
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\toplcdram00.vhd":1463529741
+0 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagekey00.vhd" vhdl
+1 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd" vhdl
+2 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd" vhdl
+3 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\div00.vhd" vhdl
+4 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd" vhdl
+5 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd" vhdl
+6 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd" vhdl
+7 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd" vhdl
+8 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder7seg00.vhd" vhdl
+9 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd" vhdl
+10 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd" vhdl
+11 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd" vhdl
+12 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd" vhdl
+13 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 4 5 0 
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 2 3 6 7 8 9 10 11 12 1 
+
+# Dependency Lists (Users Of)
+0 6 
+1 13 
+2 13 
+3 13 
+4 6 
+5 6 
+6 13 
+7 13 
+8 13 
+9 13 
+10 13 
+11 13 
+12 13 
+13 -1
+
+# Design Unit to File Association
+arch work osc00 osc0 2
+module work osc00 2
+arch work div00 div0 3
+module work div00 3
+arch work contring00 contring0 4
+module work contring00 4
+arch work coder00 coder0 5
+module work coder00 5
+arch work topkey00 topkey0 6
+module work topkey00 6
+arch work ram00 ram0 7
+module work ram00 7
+arch work coder7seg00 coder7seg0 8
+module work coder7seg00 8
+arch work contread00 contread0 9
+module work contread00 9
+arch work contconfig00 contconfig0 10
+module work contconfig00 10
+arch work config00 config0 11
+module work config00 11
+arch work bufferlcd00 bufferlcd0 12
+module work bufferlcd00 12
+arch work topram00 topram0 13
+module work toplcdram00 13

@@ -1,0 +1,26 @@
+@W: CG296 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":29:7:29:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":37:23:37:33|Referenced variable inwordwrite is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":32:16:32:27|Referenced variable inwordconfig is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":39:10:39:13|Referenced variable rswb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":38:11:38:14|Referenced variable rwwb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":34:9:34:12|Referenced variable rscb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":33:9:33:12|Referenced variable rwcb is not in sensitivity list
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to outWordc(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal outWordc(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal outFlagc; possible missing assignment in an if or case statement.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to RWc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to RSc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal ENc; possible missing assignment in an if or case statement.
+@W: CG296 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":24:10:24:16|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:12:30:15|Referenced variable clkc is not in sensitivity list
+@W: CL260 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:8:30:9|Pruning register bit 6 of out7segc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl":24:9:24:10|Pruning register bits 2 to 0 of sring(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CD276 :"C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@W: CL240 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":23:7:23:13|oscout0 is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL138 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.
+@W: CL158 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":24:7:24:13|Inout tmrrst0 is unused
+

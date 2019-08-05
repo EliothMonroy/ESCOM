@@ -1,0 +1,205 @@
+//////////////////////
+// MainActivity.java
+////////////////////////
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+import java.util.List;
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ListView;
+public class MainActivity extends Activity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        final ListView newsEntryListView = (ListView) findViewById(R.id.list);
+        final NewsEntryAdapter newsEntryAdapter = new NewsEntryAdapter(this, R.layout.news_entry_list_item);
+        newsEntryListView.setAdapter(newsEntryAdapter);
+        for(final NewsEntry entry : getNewsEntries()) {
+        	newsEntryAdapter.add(entry);
+        }
+    }
+    private List<NewsEntry> getNewsEntries() {
+    	final List<NewsEntry> entries = new ArrayList<NewsEntry>();
+    	for(int i = 1; i < 50; i++) {
+    		entries.add(
+	    		new NewsEntry(
+	    				"Test Entry " + i,
+	    				"Anonymous Author " + i,
+	    				new GregorianCalendar(2011, 11, i).getTime(),
+	    				i % 2 == 0 ? R.drawable.news_icon_1 : R.drawable.news_icon_2
+	    		)
+	    	);
+    	}
+    	return entries;
+    }
+}
+
+//////////////////////////////////////////////////
+// NewsEntry.java
+/////////////////////////////////////////////////
+import java.util.Date;
+public final class NewsEntry {
+	private final String title;
+	private final String author;
+	private final Date postDate;
+	private final int icon;
+	public NewsEntry(final String title, final String author, 
+			final Date postDate, final int icon) {
+		this.title = title;
+		this.author = author;
+		this.postDate = postDate;
+		this.icon = icon;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public Date getPostDate() {
+		return postDate;
+	}
+	public int getIcon() {
+		return icon;
+	}
+}
+
+/////////////////////////////////////
+// NewsEntryAdpter.java
+/////////////////////////////////////
+import java.text.DateFormat;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+public final class NewsEntryAdapter extends ArrayAdapter<NewsEntry> {
+	private final int newsItemLayoutResource;
+	public NewsEntryAdapter(final Context context, final int newsItemLayoutResource) {
+		super(context, 0);
+		this.newsItemLayoutResource = newsItemLayoutResource;
+	}
+	@Override
+	public View getView(final int position, final View convertView, final ViewGroup parent) {
+		final View view = getWorkingView(convertView);
+		final ViewHolder viewHolder = getViewHolder(view);
+		final NewsEntry entry = getItem(position);
+		viewHolder.titleView.setText(entry.getTitle());
+		final String formattedSubTitle = String.format("By %s on %s", 
+			entry.getAuthor(), 
+			DateFormat.getDateInstance(DateFormat.SHORT).format(entry.getPostDate())
+		);
+		viewHolder.subTitleView.setText(formattedSubTitle);
+		viewHolder.imageView.setImageResource(entry.getIcon());
+		return view;
+	}
+	private View getWorkingView(final View convertView) {
+		View workingView = null;
+		if(null == convertView) {
+			final Context context = getContext();
+			final LayoutInflater inflater = (LayoutInflater)context.getSystemService
+		      (Context.LAYOUT_INFLATER_SERVICE);
+			workingView = inflater.inflate(newsItemLayoutResource, null);
+		} else {
+			workingView = convertView;
+		}
+		return workingView;
+	}
+	private ViewHolder getViewHolder(final View workingView) {
+		final Object tag = workingView.getTag();
+		ViewHolder viewHolder = null;
+		if(null == tag || !(tag instanceof ViewHolder)) {
+			viewHolder = new ViewHolder();
+			viewHolder.titleView = (TextView) workingView.findViewById(R.id.news_entry_title);
+			viewHolder.subTitleView = (TextView) workingView.findViewById(R.id.news_entry_subtitle);
+			viewHolder.imageView = (ImageView) workingView.findViewById(R.id.news_entry_icon);
+			workingView.setTag(viewHolder);
+		} else {
+			viewHolder = (ViewHolder) tag;
+		}
+		return viewHolder;
+	}
+	private static class ViewHolder {
+		public TextView titleView;
+		public TextView subTitleView;
+		public ImageView imageView;
+	}
+}
+
+///////////////////////////////////////////
+// activity_main.xml
+//////////////////////////////////////////
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    <ListView android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
+
+////////////////////////////////////////
+// news_entry_list_item.xml
+////////////////////////////////////////
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/news_entry_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="3dp" />
+    <TextView
+        android:id="@+id/news_entry_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/news_entry_icon"
+        android:layout_alignTop="@id/news_entry_icon"
+	android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/news_entry_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/news_entry_title"
+        android:layout_below="@id/news_entry_title" 
+        android:textSize="12sp" />
+</RelativeLayout>
+
+////////////////////////////
+// strings.xml
+///////////////////////////////
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">LotsOfLists2Tutorial</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

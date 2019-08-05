@@ -1,0 +1,5 @@
+@E: CD242 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":35:29:35:29|Expecting ;
+@E: CD204 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":35:29:35:29|Expecting sequential statement
+@E: CD424 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl":59:17:59:17|Expecting architecture identifier
+@E: Parse errors encountered - exiting
+

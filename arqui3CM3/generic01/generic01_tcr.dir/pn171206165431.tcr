@@ -1,0 +1,5 @@
+#Start recording tcl command: 12/6/2017 16:35:40
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01; Project name: generic01
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/generic01/generic01.ldf"
+prj_run Export -impl generic01 -task Jedecgen
+#Stop recording: 12/6/2017 16:54:31

@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////
+// Calendario.
+// MainActivity.java
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.CalendarView;
+import android.widget.TextView;
+import android.widget.Toast;
+public class CalendarViewExample extends AppCompatActivity {
+    CalendarView calendarView;
+    TextView dateDisplay;
+    @Override
+    protected void onCreate(Bundle b{
+        super.onCreateb
+        setContentView(R.layout.android_calendar_view_example);
+        calendarView = (CalendarView) findViewById(R.id.calendarView);
+        dateDisplay = (TextView) findViewById(R.id.date_display);
+        dateDisplay.setText("Date: ");
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(CalendarView calendarView, int i, int i1, int i2) {
+                dateDisplay.setText("Date: " + i2 + " / " + i1 + " / " + i);
+                Toast.makeText(getApplicationContext(), "Selected Date:\n" + "Day = " + i2 + "\n" + "Month = " + i1 + "\n" + "Year = " + i, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+}
+
+///////////////////////////////////////////////////////
+// android_calendar_view_example.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Calendar View Example"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/date_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar View Date Display"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoLink="web"
+        android:gravity="bottom|center"
+        android:text="ViralAndroid.com"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl":7:7:7:12|Top entity is set to topp04.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl":7:7:7:12|Synthesizing work.topp04.topp0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":6:7:6:11|Synthesizing work.mux04.mux0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contring04.vhdl":6:7:6:16|Synthesizing work.contring04.contring0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\coderNibbles04.vhdl":6:7:6:20|Synthesizing work.codernibbles04.codernibbles0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contIter04.vhdl":6:7:6:16|Synthesizing work.contiter04.contiter0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":6:7:6:18|Synthesizing work.shift12bit04.shift12bit0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl":6:7:6:15|Synthesizing work.compadd04.compadd0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":6:7:6:12|Synthesizing work.sust04.sust0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac12bit04.vhdl":6:7:6:15|Synthesizing work.ac12bit04.ac12bit0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":6:7:6:17|Synthesizing work.shift8bit04.shift8bit0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl":6:7:6:15|Synthesizing work.leeinst04.leeinst0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac8bit04.vhdl":6:7:6:14|Synthesizing work.ac8bit04.ac8bit0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl":6:7:6:13|Synthesizing work.pcinc04.pcinc0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl":6:7:6:14|Synthesizing work.portab04.portab0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":6:7:6:12|Synthesizing work.init04.init0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(0) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(0) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(1) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(1) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(2) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(3) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(4) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(5) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(5) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(6) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(6) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(7) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(7) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":23:6:23:7|Register bit outACs(0) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":23:6:23:7|Register bit outACss(0) is always 0.
+@N|Running in 64-bit mode
+

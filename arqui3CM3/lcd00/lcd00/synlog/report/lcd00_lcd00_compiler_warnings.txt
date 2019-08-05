@@ -1,0 +1,9 @@
+@W: CD638 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":50:7:50:10|Signal srwc is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL260 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl":47:2:47:3|Pruning register bit 7 of outworddd(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@W: CL240 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":50:7:50:10|Signal sRWc is floating; a simulation mismatch is possible.
+@W: CL167 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl":97:1:97:3|Input rwc of instance L05 is floating
+@W: CL138 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Removing register 'RSc' because it is only assigned 0 or its original value.
+@W: CL138 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Removing register 'RWc' because it is only assigned 0 or its original value.
+@W: CL260 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl":24:2:24:3|Pruning register bit 6 of comandoc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

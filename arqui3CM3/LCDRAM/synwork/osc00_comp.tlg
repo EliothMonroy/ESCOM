@@ -1,0 +1,5 @@
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0 
+@W: CD280 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Unbound component OSCTIMER mapped to black box
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Synthesizing work.osctimer.syn_black_box 
+Post processing for work.osctimer.syn_black_box
+Post processing for work.osc00.osc0

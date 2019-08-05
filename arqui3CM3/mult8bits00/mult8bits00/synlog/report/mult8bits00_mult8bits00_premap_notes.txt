@@ -1,0 +1,10 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_0(ha0)) of type view:work.and00_64_0(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_14(ha0)) of type view:work.and00_0_13(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_15(ha0)) of type view:work.and00_0_16(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_31(ha0)) of type view:work.and00_0_32(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_47(ha0)) of type view:work.and00_0_48(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_63(ha0)) of type view:work.and00_0_64(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_79(ha0)) of type view:work.and00_0_80(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\eliot\documents\github\arqui3cm3\mult8bits00\mult8bits00\source\ha00.vhdl":16:2:16:5|Removing instance HA01 (in view: work.ha00_1_95(ha0)) of type view:work.and00_0_96(and0) because it does not drive other instances.

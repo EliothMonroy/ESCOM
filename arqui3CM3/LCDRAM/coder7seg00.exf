@@ -1,0 +1,114 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      inWordkey(6:0)                inWordkey                  6          7            -1
+      Port          2      inWordmem(6:0)                inWordmem                  6          7            -1
+      Port          3      outWordBuff(6:0)               outWordBuff                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      inWordkey_6_                inWordkey[6]                       1            0            
+        Port      inWordkey_5_                inWordkey[5]                       1            1            
+        Port      inWordkey_4_                inWordkey[4]                       1            2            
+        Port      inWordkey_3_                inWordkey[3]                       1            3            
+        Port      inWordkey_2_                inWordkey[2]                       1            4            
+        Port      inWordkey_1_                inWordkey[1]                       1            5            
+        Port      inWordkey_0_                inWordkey[0]                       1            6            
+        Port      inWordmem_6_                inWordmem[6]                       2            0            
+        Port      inWordmem_5_                inWordmem[5]                       2            1            
+        Port      inWordmem_4_                inWordmem[4]                       2            2            
+        Port      inWordmem_3_                inWordmem[3]                       2            3            
+        Port      inWordmem_2_                inWordmem[2]                       2            4            
+        Port      inWordmem_1_                inWordmem[1]                       2            5            
+        Port      inWordmem_0_                inWordmem[0]                       2            6            
+        Port      outWordBuff_6_               outWordBuff[6]                       3            0            
+        Port      outWordBuff_5_               outWordBuff[5]                       3            1            
+        Port      outWordBuff_4_               outWordBuff[4]                       3            2            
+        Port      outWordBuff_3_               outWordBuff[3]                       3            3            
+        Port      outWordBuff_2_               outWordBuff[2]                       3            4            
+        Port      outWordBuff_1_               outWordBuff[1]                       3            5            
+        Port      outWordBuff_0_               outWordBuff[0]                       3            6            
+End
+Section Cross Reference File
+Design 'coder7seg00' created Wed May 18 20:28:02 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           inWordkey_0_                              inWordkey[0]
+   Inst           inWordkey_1_                              inWordkey[1]
+   Inst           inWordkey_2_                              inWordkey[2]
+   Inst           inWordkey_3_                              inWordkey[3]
+   Inst           inWordkey_4_                              inWordkey[4]
+   Inst           inWordkey_5_                              inWordkey[5]
+   Inst           inWordkey_6_                              inWordkey[6]
+   Inst         outWordBuff_0_                            outWordBuff[0]
+   Inst         outWordBuff_1_                            outWordBuff[1]
+   Inst         outWordBuff_2_                            outWordBuff[2]
+   Inst         outWordBuff_3_                            outWordBuff[3]
+   Inst         outWordBuff_4_                            outWordBuff[4]
+   Inst         outWordBuff_5_                            outWordBuff[5]
+   Inst         outWordBuff_6_                            outWordBuff[6]
+   Inst      outWordBufflat_0_                         outWordBufflat[0]
+   Inst      outWordBufflat_1_                         outWordBufflat[1]
+   Inst      outWordBufflat_2_                         outWordBufflat[2]
+   Inst      outWordBufflat_3_                         outWordBufflat[3]
+   Inst      outWordBufflat_4_                         outWordBufflat[4]
+   Inst      outWordBufflat_5_                         outWordBufflat[5]
+   Inst      outWordBufflat_6_                         outWordBufflat[6]
+   Net        inwordkey_c_0__n                            inWordkey_c[0]
+   Net          inwordkey_0__n                              inWordkey[0]
+   Net        inwordkey_c_1__n                            inWordkey_c[1]
+   Net          inwordkey_1__n                              inWordkey[1]
+   Net        inwordkey_c_2__n                            inWordkey_c[2]
+   Net          inwordkey_2__n                              inWordkey[2]
+   Net        inwordkey_c_3__n                            inWordkey_c[3]
+   Net          inwordkey_3__n                              inWordkey[3]
+   Net        inwordkey_c_4__n                            inWordkey_c[4]
+   Net          inwordkey_4__n                              inWordkey[4]
+   Net        inwordkey_c_5__n                            inWordkey_c[5]
+   Net          inwordkey_5__n                              inWordkey[5]
+   Net        inwordkey_c_6__n                            inWordkey_c[6]
+   Net      outwordbuff_c_0__n                          outWordBuff_c[0]
+   Net        outwordbuff_0__n                            outWordBuff[0]
+   Net      outwordbuff_c_1__n                          outWordBuff_c[1]
+   Net        outwordbuff_1__n                            outWordBuff[1]
+   Net      outwordbuff_c_2__n                          outWordBuff_c[2]
+   Net        outwordbuff_2__n                            outWordBuff[2]
+   Net      outwordbuff_c_3__n                          outWordBuff_c[3]
+   Net        outwordbuff_3__n                            outWordBuff[3]
+   Net      outwordbuff_c_4__n                          outWordBuff_c[4]
+   Net        outwordbuff_4__n                            outWordBuff[4]
+   Net      outwordbuff_c_5__n                          outWordBuff_c[5]
+   Net        outwordbuff_5__n                            outWordBuff[5]
+   Net      outwordbuff_c_6__n                          outWordBuff_c[6]
+   Net          inwordmem_6__n                              inWordmem[6]
+   Net          inwordmem_5__n                              inWordmem[5]
+   Net          inwordmem_4__n                              inWordmem[4]
+   Net          inwordmem_3__n                              inWordmem[3]
+   Net          inwordmem_2__n                              inWordmem[2]
+   Net          inwordmem_1__n                              inWordmem[1]
+   Net          inwordmem_0__n                              inWordmem[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     inWordkey_6_
+        Input     inWordmem_6_
+        Input     wrbuff
+        Input     inWordkey_5_
+        Input     inWordkey_4_
+        Input     inWordkey_3_
+        Input     inWordkey_2_
+        Input     inWordkey_1_
+        Input     inWordkey_0_
+        Input     inWordmem_5_
+        Input     inWordmem_4_
+        Input     inWordmem_3_
+        Input     inWordmem_2_
+        Input     inWordmem_1_
+        Input     inWordmem_0_
+        Output     outWordBuff_6_
+        Output     outWordBuff_5_
+        Output     outWordBuff_4_
+        Output     outWordBuff_3_
+        Output     outWordBuff_2_
+        Output     outWordBuff_1_
+        Output     outWordBuff_0_
+End

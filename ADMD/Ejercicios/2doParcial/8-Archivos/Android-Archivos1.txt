@@ -1,0 +1,79 @@
+//////////////////////////////////////////////////
+// Archivos
+// ArchivosActivity.java - Abre un archivo
+// NOTA: Agregar las bibliotecas de clases necesarias.
+public class MainActivity extends Activity{ // Abre un archivo almacenado
+	TextView	tv;
+	String		s;
+	InputStream	is;
+	InputStreamReader isr;
+	BufferedReader  br;
+	public void onCreate(Bundle b){
+		super.onCreate(b);
+		setContentView(R.layout.activity_main);
+		tv	= (TextView) findViewById(R.id.xtv);
+		tv.append("\nAbriendo: res/raw/misdatos.txt");
+		is	= getResources().openRawResource(R.raw.misdatos);
+		isr	= new InputStreamReader(is);
+		br	= new BufferedReader(isr, 8192);
+		try{
+			while( null != (s=br.readLine()) )
+				tv.append("\n" + s);
+			is.close();
+			isr.close();
+			br.close();
+		} catch(Exception e){
+			tv.append("\n " + e);
+		}
+		tv.append("\nEnd of file.");
+	}
+}
+
+///////////////////////////////////////////////////
+// activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/xtv"
+        android:text="***** ALMACEN *****"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+////////////////////////////////////////////////////////
+// AndroidManifest.xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.escom.misarchivos" >
+    <application
+        :
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+		:
+        </activity>
+    </application>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+</manifest>
+
+//////////////////////////////////////////////////////////
+// strings.xml
+<resources>
+    <string name="app_name">MisArchivos</string>
+    <string name="action_settings">Settings</string>
+</resources>

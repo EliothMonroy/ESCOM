@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/26/2017 07:22:17
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/arith00; Project name: arith00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/arith00/arith00.ldf"
+prj_run Export -impl arith00 -task Jedecgen
+prj_project close
+#Stop recording: 9/26/2017 07:22:48

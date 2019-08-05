@@ -1,0 +1,6 @@
+clkr  i
+resetr  i
+outr[3]  o
+outr[2]  o
+outr[1]  o
+outr[0]  o

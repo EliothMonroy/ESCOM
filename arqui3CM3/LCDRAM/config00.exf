@@ -1,0 +1,110 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      incontc(5:0)                  incontc                  5          6            -1
+      Port          2      outWordc(7:0)                 outWordc                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      incontc_5_                  incontc[5]                       1            0            
+        Port      incontc_4_                  incontc[4]                       1            1            
+        Port      incontc_3_                  incontc[3]                       1            2            
+        Port      incontc_2_                  incontc[2]                       1            3            
+        Port      incontc_1_                  incontc[1]                       1            4            
+        Port      incontc_0_                  incontc[0]                       1            5            
+        Port      outWordc_7_                 outWordc[7]                       2            0            
+        Port      outWordc_6_                 outWordc[6]                       2            1            
+        Port      outWordc_5_                 outWordc[5]                       2            2            
+        Port      outWordc_4_                 outWordc[4]                       2            3            
+        Port      outWordc_3_                 outWordc[3]                       2            4            
+        Port      outWordc_2_                 outWordc[2]                       2            5            
+        Port      outWordc_1_                 outWordc[1]                       2            6            
+        Port      outWordc_0_                 outWordc[0]                       2            7            
+End
+Section Cross Reference File
+Design 'config00' created Wed May 18 20:53:05 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst             incontc_0_                                incontc[0]
+   Inst             incontc_1_                                incontc[1]
+   Inst             incontc_2_                                incontc[2]
+   Inst             incontc_3_                                incontc[3]
+   Inst             incontc_4_                                incontc[4]
+   Inst             incontc_5_                                incontc[5]
+   Inst            outWordc_0_                               outWordc[0]
+   Inst            outWordc_1_                               outWordc[1]
+   Inst            outWordc_2_                               outWordc[2]
+   Inst            outWordc_3_                               outWordc[3]
+   Inst            outWordc_4_                               outWordc[4]
+   Inst            outWordc_5_                               outWordc[5]
+   Inst            outWordc_6_                               outWordc[6]
+   Inst            outWordc_7_                               outWordc[7]
+   Inst          outWordc_1_2_                             outWordc_1[2]
+   Inst          outWordc_1_5_                             outWordc_1[5]
+   Inst          outWordc_1_7_                             outWordc_1[7]
+   Inst          outWordc_1_0_                             outWordc_1[0]
+   Inst          outWordc_1_3_                             outWordc_1[3]
+   Inst          outWordc_1_1_                             outWordc_1[1]
+   Inst          outWordc_1_4_                             outWordc_1[4]
+   Inst           incontc_i_5_                              incontc_i[5]
+   Inst           incontc_i_4_                              incontc_i[4]
+   Inst           incontc_i_1_                              incontc_i[1]
+   Inst           incontc_i_3_                              incontc_i[3]
+   Inst           incontc_i_0_                              incontc_i[0]
+   Inst           incontc_i_2_                              incontc_i[2]
+   Net         outwordc_1_0__n                             outWordc_1[0]
+   Net         outwordc_1_1__n                             outWordc_1[1]
+   Net         outwordc_1_2__n                             outWordc_1[2]
+   Net         outwordc_1_3__n                             outWordc_1[3]
+   Net         outwordc_1_4__n                             outWordc_1[4]
+   Net         outwordc_1_5__n                             outWordc_1[5]
+   Net                 gnd_n_n                                       GND
+   Net         outwordc_1_7__n                             outWordc_1[7]
+   Net                 vcc_n_n                                       VCC
+   Net          incontc_i_5__n                              incontc_i[5]
+   Net          incontc_i_4__n                              incontc_i[4]
+   Net          incontc_i_1__n                              incontc_i[1]
+   Net          incontc_i_3__n                              incontc_i[3]
+   Net          incontc_i_2__n                              incontc_i[2]
+   Net          incontc_i_0__n                              incontc_i[0]
+   Net          incontc_c_0__n                              incontc_c[0]
+   Net            incontc_0__n                                incontc[0]
+   Net          incontc_c_1__n                              incontc_c[1]
+   Net            incontc_1__n                                incontc[1]
+   Net          incontc_c_2__n                              incontc_c[2]
+   Net            incontc_2__n                                incontc[2]
+   Net          incontc_c_3__n                              incontc_c[3]
+   Net            incontc_3__n                                incontc[3]
+   Net          incontc_c_4__n                              incontc_c[4]
+   Net            incontc_4__n                                incontc[4]
+   Net          incontc_c_5__n                              incontc_c[5]
+   Net           outwordc_0__n                               outWordc[0]
+   Net           outwordc_1__n                               outWordc[1]
+   Net           outwordc_2__n                               outWordc[2]
+   Net           outwordc_3__n                               outWordc[3]
+   Net           outwordc_4__n                               outWordc[4]
+   Net           outwordc_5__n                               outWordc[5]
+   Net           outwordc_6__n                               outWordc[6]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     incontc_5_
+        Input     resetc
+        Input     inFlagc
+        Input     incontc_4_
+        Input     incontc_3_
+        Input     incontc_2_
+        Input     incontc_1_
+        Input     incontc_0_
+        Output     outWordc_7_
+        Output     RWc
+        Output     RSc
+        Output     ENc
+        Output     outFlagc
+        Output     outWordc_6_
+        Output     outWordc_5_
+        Output     outWordc_4_
+        Output     outWordc_3_
+        Output     outWordc_2_
+        Output     outWordc_1_
+        Output     outWordc_0_
+End

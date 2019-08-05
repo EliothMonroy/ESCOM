@@ -1,0 +1,66 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      outcc(5:0)                    outcc                  5          6            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      outcc_5_                    outcc[5]                       1            0            
+        Port      outcc_4_                    outcc[4]                       1            1            
+        Port      outcc_3_                    outcc[3]                       1            2            
+        Port      outcc_2_                    outcc[2]                       1            3            
+        Port      outcc_1_                    outcc[1]                       1            4            
+        Port      outcc_0_                    outcc[0]                       1            5            
+End
+Section Cross Reference File
+Design 'contconfig00' created Wed May 18 20:52:48 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           outccDFFC_3_                              outccDFFC[3]
+   Inst           outccDFFC_4_                              outccDFFC[4]
+   Inst           outccDFFC_5_                              outccDFFC[5]
+   Inst           outccDFFC_1_                              outccDFFC[1]
+   Inst           outccDFFC_2_                              outccDFFC[2]
+   Inst           outccDFFC_0_                              outccDFFC[0]
+   Inst               outcc_0_                                  outcc[0]
+   Inst               outcc_1_                                  outcc[1]
+   Inst               outcc_2_                                  outcc[2]
+   Inst               outcc_3_                                  outcc[3]
+   Inst               outcc_4_                                  outcc[4]
+   Inst               outcc_5_                                  outcc[5]
+   Inst             outcc_i_2_                                outcc_i[2]
+   Inst             outcc_i_3_                                outcc_i[3]
+   Inst             outcc_i_4_                                outcc_i[4]
+   Inst             outcc_i_5_                                outcc_i[5]
+   Inst             outcc_i_1_                                outcc_i[1]
+   Inst             outcc_i_0_                                outcc_i[0]
+   Net            outcc_i_5__n                                outcc_i[5]
+   Net            outcc_i_4__n                                outcc_i[4]
+   Net            outcc_i_3__n                                outcc_i[3]
+   Net            outcc_i_2__n                                outcc_i[2]
+   Net            outcc_i_0__n                                outcc_i[0]
+   Net            outcc_i_1__n                                outcc_i[1]
+   Net            outcc_c_0__n                                outcc_c[0]
+   Net              outcc_0__n                                  outcc[0]
+   Net            outcc_c_1__n                                outcc_c[1]
+   Net              outcc_1__n                                  outcc[1]
+   Net            outcc_c_2__n                                outcc_c[2]
+   Net              outcc_2__n                                  outcc[2]
+   Net            outcc_c_3__n                                outcc_c[3]
+   Net              outcc_3__n                                  outcc[3]
+   Net            outcc_c_4__n                                outcc_c[4]
+   Net              outcc_4__n                                  outcc[4]
+   Net            outcc_c_5__n                                outcc_c[5]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     clkcc
+        Input     resetcc
+        Input     inFlagcc
+        Output     outcc_5_
+        Output     outFlagcc
+        Output     outcc_4_
+        Output     outcc_3_
+        Output     outcc_2_
+        Output     outcc_1_
+        Output     outcc_0_
+End

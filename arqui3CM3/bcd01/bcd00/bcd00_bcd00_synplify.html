@@ -1,0 +1,695 @@
+<HTML>
+<HEAD><TITLE>Synthesis Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
+#install: C:\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: ELIOTH
+
+# Wed Dec 06 21:59:36 2017
+
+#Implementation: bcd00
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl":7:7:7:12|Top entity is set to topp04.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl":7:7:7:12|Synthesizing work.topp04.topp0.
+@W: CD638 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl":46:7:46:10|Signal sout is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":6:7:6:11|Synthesizing work.mux04.mux0.
+@W: CG296 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":19:8:19:14|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":27:24:27:30|Referenced variable intbcdc is not in sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":25:24:25:30|Referenced variable intbcdd is not in sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":23:24:23:30|Referenced variable intbcdu is not in sensitivity list.
+Post processing for work.mux04.mux0
+@W: CL117 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":21:7:21:10|Latch generated from process for signal outBCDmux(6 downto 0); possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contring04.vhdl":6:7:6:16|Synthesizing work.contring04.contring0.
+Post processing for work.contring04.contring0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\coderNibbles04.vhdl":6:7:6:20|Synthesizing work.codernibbles04.codernibbles0.
+Post processing for work.codernibbles04.codernibbles0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contIter04.vhdl":6:7:6:16|Synthesizing work.contiter04.contiter0.
+Post processing for work.contiter04.contiter0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":6:7:6:18|Synthesizing work.shift12bit04.shift12bit0.
+Post processing for work.shift12bit04.shift12bit0
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":23:6:23:7|Pruning unused register outFlagss_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl":6:7:6:15|Synthesizing work.compadd04.compadd0.
+Post processing for work.compadd04.compadd0
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl":24:5:24:6|Pruning unused register outFlagca_cl_6. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":6:7:6:12|Synthesizing work.sust04.sust0.
+Post processing for work.sust04.sust0
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":26:5:26:6|Pruning unused register outFlagsu_cl_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":26:5:26:6|Pruning unused register outFlagsuB_cl_1. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":27:13:27:28|Sharing sequential element outFlagsuB_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":27:13:27:28|Sharing sequential element outFlagsuB. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac12bit04.vhdl":6:7:6:15|Synthesizing work.ac12bit04.ac12bit0.
+Post processing for work.ac12bit04.ac12bit0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":6:7:6:17|Synthesizing work.shift8bit04.shift8bit0.
+Post processing for work.shift8bit04.shift8bit0
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":23:6:23:7|Pruning unused register outFlags_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl":6:7:6:15|Synthesizing work.leeinst04.leeinst0.
+Post processing for work.leeinst04.leeinst0
+@W: CL117 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl":30:9:30:10|Latch generated from process for signal outcode(3 downto 0); possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac8bit04.vhdl":6:7:6:14|Synthesizing work.ac8bit04.ac8bit0.
+Post processing for work.ac8bit04.ac8bit0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl":6:7:6:13|Synthesizing work.pcinc04.pcinc0.
+@W: CG296 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl":23:13:23:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl":25:10:25:14|Referenced variable clkpc is not in sensitivity list.
+Post processing for work.pcinc04.pcinc0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl":6:7:6:14|Synthesizing work.portab04.portab0.
+Post processing for work.portab04.portab0
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl":22:6:22:7|Pruning unused register outFlagLp_cl_6. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":6:7:6:12|Synthesizing work.init04.init0.
+Post processing for work.init04.init0
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Pruning unused register outFlag8init_cl_8. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Pruning unused register outFlag12init_cl_1. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":27:13:27:30|Sharing sequential element outFlag12init_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":27:13:27:30|Sharing sequential element outFlag12init. Add a syn_preserve attribute to the element to prevent sharing.
+Post processing for work.topp04.topp0
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(0) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(0) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(1) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(1) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(2) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(3) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(4) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(5) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(5) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(6) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(6) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA8init(7) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(7) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Register bit outACA12init(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":23:6:23:7|Register bit outACs(0) is always 0.
+@W: CL247 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":11:1:11:5|Input port bit 7 of inacs(7 downto 0) is unused 
+@W: CL246 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":11:1:11:10|Input port bits 6 to 0 of inac8bitsu(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL247 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":12:1:12:11|Input port bit 0 of inac12bitsu(11 downto 0) is unused 
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":23:6:23:7|Register bit outACss(0) is always 0.
+@W: CL247 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":11:1:11:6|Input port bit 11 of inacss(11 downto 0) is unused 
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 80MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Dec 06 21:59:36 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Dec 06 21:59:37 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Dec 06 21:59:37 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Dec 06 21:59:38 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Wed Dec 06 21:59:39 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\bcd00_bcd00_scck.rpt 
+Printing clock  summary report in "C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\bcd00_bcd00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist topp04
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+*****************
+
+Start                               Requested     Requested     Clock                                           Clock                   Clock
+Clock                               Frequency     Period        Type                                            Group                   Load 
+---------------------------------------------------------------------------------------------------------------------------------------------
+System                              1.0 MHz       1000.000      system                                          system_clkgroup         7    
+div00|outdiv_derived_clock          2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0     207  
+osc00|osc_int_inferred_clock        2.1 MHz       480.769       inferred                                        Inferred_clkgroup_0     23   
+pcinc04|outFlagpc_derived_clock     2.1 MHz       480.769       derived (from div00|outdiv_derived_clock)       Inferred_clkgroup_0     149  
+=============================================================================================================================================
+
+@W: MT531 :"c:\users\elith\documents\github\arqui3cm3\bcd01\mux04.vhdl":21:7:21:10|Found signal identified as System clock which controls 7 sequential elements including U15.outBCDmux_1[6:1].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"c:\users\elith\documents\github\arqui3cm3\bcd01\bcd00\source\div00.vhdl":21:2:21:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including U14.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Dec 06 21:59:40 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Wed Dec 06 21:59:40 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":27:13:27:28|Removing sequential instance U08.outFlagsu_1 because it is equivalent to instance U02.outFlagLp_1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\leeinst04.vhdl":31:26:31:31|ROM outcode_1[2:0] (in view: work.leeInst04(leeinst0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\leeinst04.vhdl":31:26:31:31|ROM outcode_1[2:0] (in view: work.leeInst04(leeinst0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\elith\documents\github\arqui3cm3\bcd01\leeinst04.vhdl":31:26:31:31|Found ROM .delname. (in view: work.leeInst04(leeinst0)) with 16 words by 3 bits.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":82:7:82:10|ROM outC_1[6:0] (in view: work.coderNibbles04(codernibbles0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":55:7:55:10|ROM outD_1[6:0] (in view: work.coderNibbles04(codernibbles0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":28:7:28:10|ROM outU_1[6:0] (in view: work.coderNibbles04(codernibbles0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":82:7:82:10|ROM outC_1[6:0] (in view: work.coderNibbles04(codernibbles0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":82:7:82:10|Found ROM .delname. (in view: work.coderNibbles04(codernibbles0)) with 10 words by 7 bits.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":55:7:55:10|ROM outD_1[6:0] (in view: work.coderNibbles04(codernibbles0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":55:7:55:10|Found ROM .delname. (in view: work.coderNibbles04(codernibbles0)) with 10 words by 7 bits.
+@W: FA239 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":28:7:28:10|ROM outU_1[6:0] (in view: work.coderNibbles04(codernibbles0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\elith\documents\github\arqui3cm3\bcd01\codernibbles04.vhdl":28:7:28:10|Found ROM .delname. (in view: work.coderNibbles04(codernibbles0)) with 10 words by 7 bits.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_23[11] because it is equivalent to instance U10.outACss_cl_22[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_22[11] because it is equivalent to instance U10.outACss_cl_20[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_21[11] because it is equivalent to instance U10.outACss_cl_19[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_20[11] because it is equivalent to instance U10.outACss_cl_18[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_19[11] because it is equivalent to instance U10.outACss_cl_17[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_18[11] because it is equivalent to instance U10.outACss_cl_16[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_17[11] because it is equivalent to instance U10.outACss_cl_15[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_16[11] because it is equivalent to instance U10.outACss_cl_14[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":25:13:25:14|Removing user instance U10.outACss_cl_15[11] because it is equivalent to instance U10.outACss_cl_13[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_11[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_9[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_8[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_7[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_6[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_5[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_4[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_3[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift12bit04.vhdl":23:6:23:7|Removing sequential instance outACss_cl_2[11] (in view: work.shift12bit04(shift12bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift8bit04.vhdl":23:6:23:7|Removing sequential instance outACs_cl_7[7] (in view: work.shift8bit04(shift8bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift8bit04.vhdl":23:6:23:7|Removing sequential instance outACs_cl_5[7] (in view: work.shift8bit04(shift8bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift8bit04.vhdl":23:6:23:7|Removing sequential instance outACs_cl_4[7] (in view: work.shift8bit04(shift8bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift8bit04.vhdl":23:6:23:7|Removing sequential instance outACs_cl_3[7] (in view: work.shift8bit04(shift8bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\shift8bit04.vhdl":23:6:23:7|Removing sequential instance outACs_cl_2[7] (in view: work.shift8bit04(shift8bit0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\init04.vhdl":26:6:26:7|Removing sequential instance outACA8init_1[4] (in view: work.init04(init0)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_11[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_10[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_9[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_8[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_7[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_6[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_5[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_4[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_3[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl_2[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\sust04.vhdl":26:5:26:6|Removing sequential instance U08.outAC12bitsu_cl[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_7[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_6[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_5[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_4[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_3[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_2[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\portab04.vhdl":22:6:22:7|Removing sequential instance U02.ACLpA_cl_1[7] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_11[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_10[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_9[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_8[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_7[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_6[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_5[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_4[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_3[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_2[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\compadd04.vhdl":24:5:24:6|Removing sequential instance U09.outBuf12ca_cl_1[11] (in view: work.topp04(topp0)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+@W: MO129 :"c:\users\elith\documents\github\arqui3cm3\bcd01\leeinst04.vhdl":30:9:30:10|Sequential instance U05.outcode[3] is reduced to a combinational gate by constant propagation.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr_ret[1] (in view: ScratchLib.cell54(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr_ret[2] (in view: ScratchLib.cell54(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr_ret[0] (in view: ScratchLib.cell54(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr_ret[3] (in view: ScratchLib.cell54(netlist)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Removing sequential instance U13.outr[3] (in view: work.topp04(topp0)) because it does not drive other instances.
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr[3] (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Removing sequential instance U13.outr[2] (in view: work.topp04(topp0)) because it does not drive other instances.
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr[2] (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Removing sequential instance U13.outr[1] (in view: work.topp04(topp0)) because it does not drive other instances.
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr[1] (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Removing sequential instance U13.outr[0] (in view: work.topp04(topp0)) because it does not drive other instances.
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\contring04.vhdl":20:8:20:9|Boundary register U13.outr[0] (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 152MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		   988.18ns		 215 /       154
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 152MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\pcinc04.vhdl":25:6:25:7|Boundary register U03.outpc_3_.fb (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\pcinc04.vhdl":25:6:25:7|Boundary register U03.outpc_2_.fb (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\pcinc04.vhdl":25:6:25:7|Boundary register U03.outpc_1_.fb (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\bcd01\pcinc04.vhdl":25:6:25:7|Boundary register U03.outpc_0_.fb (in view: work.topp04(topp0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 152MB)
+
+@N: MT611 :|Automatically generated clock osc00|osc_int_inferred_clock is not used and is being removed
+@N: MT617 :|Automatically generated clock div00|outdiv_derived_clock has lost its master clock osc00|osc_int_inferred_clock and is being removed
+@N: MT617 :|Automatically generated clock pcinc04|outFlagpc_derived_clock has lost its master clock div00|outdiv_derived_clock and is being removed
+@N: MT611 :|Automatically generated clock div00|outdiv_derived_clock is not used and is being removed
+@N: MT617 :|Automatically generated clock pcinc04|outFlagpc_derived_clock has lost its master clock div00|outdiv_derived_clock and is being removed
+@N: MT611 :|Automatically generated clock pcinc04|outFlagpc_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 164 clock pin(s) of sequential element(s)
+0 instances converted, 164 sequential instances remain driven by gated/generated clocks
+
+================================================================================================= Gated/Generated Clocks ==================================================================================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance     Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       U14.D00.OSCInst0     OSCH                   164        U15.outr_ret        Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+===========================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 152MB)
+
+Writing Analyst data base C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 152MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\bcd00_bcd00.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 152MB peak: 154MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 154MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Dec 06 21:59:43 2017
+#
+
+
+Top view:               topp04
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 988.123
+
+                   Requested     Estimated     Requested     Estimated                 Clock      Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type       Group          
+-----------------------------------------------------------------------------------------------------------------
+System             1.0 MHz       84.2 MHz      1000.000      11.877        988.123     system     system_clkgroup
+=================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    System  |  1000.000    988.123  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                     Starting                                             Arrival            
+Instance             Reference     Type        Pin     Net                Time        Slack  
+                     Clock                                                                   
+---------------------------------------------------------------------------------------------
+U14.DO1.sdiv[21]     System        FD1S3IX     Q       sdiv[21]           1.180       988.123
+U14.DO1.sdiv[19]     System        FD1S3IX     Q       sdiv[19]           1.108       988.195
+U14.DO1.sdiv[20]     System        FD1S3IX     Q       sdiv[20]           1.108       988.195
+U14.DO1.sdiv[18]     System        FD1S3IX     Q       sdiv[18]           1.044       988.259
+U14.DO1.sdiv[17]     System        FD1S3IX     Q       sdiv[17]           1.148       989.308
+U14.DO1.sdiv[16]     System        FD1S3IX     Q       sdiv[16]           1.044       989.412
+U14.DO1.sdiv[15]     System        FD1S3IX     Q       sdiv[15]           1.148       990.461
+U14.DO1.sdiv[14]     System        FD1S3IX     Q       sdiv[14]           1.044       990.565
+U03.outpc[0]         System        FD1P3IX     Q       outpcport_c[0]     1.204       992.111
+U03.outpc[1]         System        FD1P3IX     Q       outpcport_c[1]     1.188       992.127
+=============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                       Starting                                                Required            
+Instance               Reference     Type        Pin     Net                   Time         Slack  
+                       Clock                                                                       
+---------------------------------------------------------------------------------------------------
+U15.outBCDmux_1[1]     System        FD1S3DX     D       outBCDmux_1_en2       1000.089     988.123
+U15.outBCDmux_1[5]     System        FD1S3DX     D       outBCDmux_1_en2_3     1000.089     988.123
+U15.outBCDmux_1[6]     System        FD1S3DX     D       outBCDmux_1_en2_4     1000.089     988.123
+U14.DO1.sdiv[21]       System        FD1S3IX     D       un2_sdiv[21]          999.894      989.083
+U14.DO1.sdiv[19]       System        FD1S3IX     D       un2_sdiv[19]          999.894      989.226
+U14.DO1.sdiv[20]       System        FD1S3IX     D       un2_sdiv[20]          999.894      989.226
+U15.outBCDmux_1[0]     System        FD1S3BX     D       outBCDmux_1_en2_5     1000.089     989.276
+U15.outBCDmux_1[2]     System        FD1S3DX     D       outBCDmux_1_en2_0     1000.089     989.276
+U15.outBCDmux_1[3]     System        FD1S3DX     D       outBCDmux_1_en2_1     1000.089     989.276
+U15.outBCDmux_1[4]     System        FD1S3DX     D       outBCDmux_1_en2_2     1000.089     989.276
+===================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         1000.089
+
+    - Propagation time:                      11.966
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     988.123
+
+    Number of logic level(s):                11
+    Starting point:                          U14.DO1.sdiv[21] / Q
+    Ending point:                            U15.outBCDmux_1[1] / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            System [rising] on pin CK
+
+Instance / Net                                  Pin      Pin                Arrival     No. of    
+Name                               Type         Name     Dir     Delay      Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+U14.DO1.sdiv[21]                   FD1S3IX      Q        Out     1.180      1.180       -         
+sdiv[21]                           Net          -        -       -          -           5         
+U14.DO1.sdiv_RNIOV3F1[18]          ORCALUT4     D        In      0.000      1.180       -         
+U14.DO1.sdiv_RNIOV3F1[18]          ORCALUT4     Z        Out     1.153      2.333       -         
+N_322                              Net          -        -       -          -           3         
+U14.DO1.sdiv_RNIN1L62[16]          ORCALUT4     A        In      0.000      2.333       -         
+U14.DO1.sdiv_RNIN1L62[16]          ORCALUT4     Z        Out     1.153      3.485       -         
+N_324                              Net          -        -       -          -           3         
+U14.DO1.sdiv_RNIIV5U2[14]          ORCALUT4     A        In      0.000      3.485       -         
+U14.DO1.sdiv_RNIIV5U2[14]          ORCALUT4     Z        Out     1.089      4.574       -         
+N_326                              Net          -        -       -          -           2         
+U14.DO1.sdiv_RNI5AL74[21]          ORCALUT4     A        In      0.000      4.574       -         
+U14.DO1.sdiv_RNI5AL74[21]          ORCALUT4     Z        Out     1.017      5.591       -         
+sdiv_RNI5AL74[21]                  Net          -        -       -          -           1         
+U14.DO1.sdiv_RNI6NJ68[15]          PFUMX        BLUT     In      0.000      5.591       -         
+U14.DO1.sdiv_RNI6NJ68[15]          PFUMX        Z        Out     -0.033     5.558       -         
+N_334                              Net          -        -       -          -           1         
+U14.DO1.sdiv_RNIBBTTD[15]          L6MUX21      D0       In      0.000      5.558       -         
+U14.DO1.sdiv_RNIBBTTD[15]          L6MUX21      Z        Out     0.988      6.546       -         
+N_32                               Net          -        -       -          -           9         
+U13.outr_cnv[0]                    ORCALUT4     C        In      0.000      6.546       -         
+U13.outr_cnv[0]                    ORCALUT4     Z        Out     1.265      7.811       -         
+outr_cnv[0]                        Net          -        -       -          -           8         
+U13.outren[2]                      ORCALUT4     A        In      0.000      7.811       -         
+U13.outren[2]                      ORCALUT4     Z        Out     1.153      8.963       -         
+N_3_0_0                            Net          -        -       -          -           3         
+U15.un1_selmux_7_u_i_0             ORCALUT4     B        In      0.000      8.963       -         
+U15.un1_selmux_7_u_i_0             ORCALUT4     Z        Out     1.233      10.196      -         
+N_511_i                            Net          -        -       -          -           6         
+U15.un1_selmux_7_u_i_0_RNI9PP8     ORCALUT4     B        In      0.000      10.196      -         
+U15.un1_selmux_7_u_i_0_RNI9PP8     ORCALUT4     Z        Out     1.153      11.349      -         
+un1_selmux_7_u_i_0_RNI9PP8         Net          -        -       -          -           3         
+U15.outBCDmux_1_en2                ORCALUT4     A        In      0.000      11.349      -         
+U15.outBCDmux_1_en2                ORCALUT4     Z        Out     0.617      11.966      -         
+outBCDmux_1_en2                    Net          -        -       -          -           1         
+U15.outBCDmux_1[1]                 FD1S3DX      D        In      0.000      11.966      -         
+==================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 152MB peak: 154MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 152MB peak: 154MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 164 of 6864 (2%)
+PIC Latch:       0
+I/O cells:       59
+
+
+Details:
+BB:             2
+CCU2D:          12
+FD1P3AX:        99
+FD1P3IX:        9
+FD1P3JX:        3
+FD1S3AX:        13
+FD1S3BX:        1
+FD1S3DX:        6
+FD1S3IX:        23
+FD1S3JX:        1
+GSR:            1
+IB:             13
+IFS1P3DX:       9
+INV:            2
+L6MUX21:        2
+OB:             44
+ORCALUT4:       211
+OSCH:           1
+PFUMX:          4
+PUR:            1
+VHI:            15
+VLO:            14
+false:          3
+true:           2
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 154MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Wed Dec 06 21:59:43 2017
+
+###########################################################]
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

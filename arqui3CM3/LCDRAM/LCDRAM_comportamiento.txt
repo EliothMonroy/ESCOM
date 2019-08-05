@@ -1,0 +1,4 @@
+Primero se configurara el LCD con el contador, cuando encendamos reset que es el primero del segundo swicth
+veremos como los leds rojos, cuando se acabe de configurar podremos usar el teclado, el caracter oprimido se verá
+en el dip switch  y se aumentara el contador leds azules, cuando activemos el wr que es el primero del primer switch
+se aumentara el contador leds verdes y ya se vera en la pantalla

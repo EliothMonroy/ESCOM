@@ -1,0 +1,1 @@
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":32:11:32:31|Net pbuff\.un2_inflagbuffwrite_0 appears to be an unidentified clock source. Assuming default frequency. 

@@ -1,0 +1,88 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00_scck.rpt 
+Printing clock  summary report in "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\lcdram00_lcdram00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist toplcdram00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock                                           Clock              
+Clock                            Frequency     Period        Type                                            Group              
+--------------------------------------------------------------------------------------------------------------------------------
+System                           1.0 MHz       1000.000      system                                          system_clkgroup    
+div00|outdiv_derived_clock       2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0
+osc00|osc_int_inferred_clock     2.1 MHz       480.769       inferred                                        Inferred_clkgroup_0
+================================================================================================================================
+
+@W: MT531 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Found signal identified as System clock which controls 20 sequential elements including LCD03.outWordc_1[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\div00.vhdl":22:2:22:3|Found inferred clock osc00|osc_int_inferred_clock which controls 22 sequential elements including K01.OS01.sdiv[20:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+
+@W: MO171 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 76MB peak: 141MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sun Dec 11 16:39:52 2016
+
+###########################################################]

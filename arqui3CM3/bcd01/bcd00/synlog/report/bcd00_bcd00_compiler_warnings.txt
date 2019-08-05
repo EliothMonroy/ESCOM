@@ -1,0 +1,27 @@
+@W: CD638 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl":46:7:46:10|Signal sout is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CG296 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":19:8:19:14|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":27:24:27:30|Referenced variable intbcdc is not in sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":25:24:25:30|Referenced variable intbcdd is not in sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":23:24:23:30|Referenced variable intbcdu is not in sensitivity list.
+@W: CL117 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl":21:7:21:10|Latch generated from process for signal outBCDmux(6 downto 0); possible missing assignment in an if or case statement.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":23:6:23:7|Pruning unused register outFlagss_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl":24:5:24:6|Pruning unused register outFlagca_cl_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":26:5:26:6|Pruning unused register outFlagsu_cl_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":26:5:26:6|Pruning unused register outFlagsuB_cl_1. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":27:13:27:28|Sharing sequential element outFlagsuB_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":27:13:27:28|Sharing sequential element outFlagsuB. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":23:6:23:7|Pruning unused register outFlags_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL117 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl":30:9:30:10|Latch generated from process for signal outcode(3 downto 0); possible missing assignment in an if or case statement.
+@W: CG296 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl":23:13:23:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl":25:10:25:14|Referenced variable clkpc is not in sensitivity list.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl":22:6:22:7|Pruning unused register outFlagLp_cl_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Pruning unused register outFlag8init_cl_8. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":26:6:26:7|Pruning unused register outFlag12init_cl_1. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":27:13:27:30|Sharing sequential element outFlag12init_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl":27:13:27:30|Sharing sequential element outFlag12init. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL247 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl":11:1:11:5|Input port bit 7 of inacs(7 downto 0) is unused 
+@W: CL246 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":11:1:11:10|Input port bits 6 to 0 of inac8bitsu(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL247 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl":12:1:12:11|Input port bit 0 of inac12bitsu(11 downto 0) is unused 
+@W: CL247 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl":11:1:11:6|Input port bit 11 of inacss(11 downto 0) is unused 
+

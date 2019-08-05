@@ -1,0 +1,26 @@
+#Start recording tcl command: 9/16/2017 13:53:20
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00; Project name: fa00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00.ldf"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/packagesumaresta00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/xnor00.vhdl"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/topsumaresta00.vhdl"
+prj_project save
+prj_project save
+prj_run Export -impl fa00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+pgr_program run
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+prj_run Export -impl fa00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+pgr_program run
+pgr_project close
+prj_run Export -impl fa00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa00/fa00/fa00.xcf"
+pgr_program run
+prj_project save
+prj_project close
+#Stop recording: 9/16/2017 23:39:24

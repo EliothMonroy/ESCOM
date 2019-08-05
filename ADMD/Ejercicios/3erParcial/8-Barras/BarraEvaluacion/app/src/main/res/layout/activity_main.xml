@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="16dp">
+    <TextView
+        android:id="@+id/xtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu calificación:" />
+    <RatingBar
+        android:id="@+id/xrb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="2.0" />
+    <Button
+        android:id="@+id/xbn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+    <LinearLayout
+        android:id="@+id/xll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/xtv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: " />
+        <TextView
+            android:id="@+id/xtv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

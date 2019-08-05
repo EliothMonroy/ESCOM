@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:W00.D00.osc_int"

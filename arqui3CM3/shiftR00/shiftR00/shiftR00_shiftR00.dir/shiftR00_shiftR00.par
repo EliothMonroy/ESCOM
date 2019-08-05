@@ -1,0 +1,25 @@
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Sep 18 21:31:03 2017
+
+C:/lscc/diamond/3.9_x64/ispfpga\bin\nt64\par -f shiftR00_shiftR00.p2t
+shiftR00_shiftR00_map.ncd shiftR00_shiftR00.dir shiftR00_shiftR00.prf -gui
+
+
+Preference file: shiftR00_shiftR00.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            467.706      0            0.377        0            14           Complete
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 14 secs 
+
+par done!

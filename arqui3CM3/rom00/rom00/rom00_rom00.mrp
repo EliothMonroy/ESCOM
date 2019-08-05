@@ -1,0 +1,270 @@
+
+           Lattice Mapping Report File for Design Module 'toprom00'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     rom00_rom00.ngd -o rom00_rom00_map.ncd -pr rom00_rom00.prf -mp
+     rom00_rom00.mrp -lpf C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/
+     rom00_rom00_synplify.lpf -lpf
+     C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00.lpf -c 0 -gui -msgset
+     C:/Users/eliot/Documents/Github/arqui3CM3/rom00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  10/20/17  11:35:01
+
+Design Summary
+--------------
+
+   Number of registers:     34 out of  7209 (0%)
+      PFU registers:           27 out of  6864 (0%)
+      PIO registers:            7 out of   345 (2%)
+   Number of SLICEs:        27 out of  3432 (1%)
+      SLICEs as Logic/ROM:     27 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:         53 out of  6864 (1%)
+      Number used as logic LUTs:         29
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 21 + 4(JTAG) out of 115 (22%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net RO00.sclk_0: 22 loads, 22 rising, 0 falling (Driver: RO00/D00/OSCInst0
+     )
+
+                                    Page 1
+
+
+
+
+Design:  toprom00                                      Date:  10/20/17  11:35:01
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  1
+     Net outdiv_RNIFKBM6: 9 loads, 2 LSLICEs
+   Number of LSRs:  2
+     Net enable0_pad_RNIQQ717: 9 loads, 2 LSLICEs
+     Net RO00/DO1/N_32_i: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net outcontro_c[1]: 12 loads
+     Net outcontro_c[2]: 12 loads
+     Net RO00/DO1/N_32_i: 12 loads
+     Net outcontro_c[0]: 11 loads
+     Net outcontro_c[3]: 11 loads
+     Net outdiv_RNIFKBM6: 10 loads
+     Net enable0_pad_RNIQQ717: 9 loads
+     Net cdiv0_c[1]: 8 loads
+     Net cdiv0_c[3]: 8 loads
+     Net RO00/DO1/sdiv[21]: 5 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| clk0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[0]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outWord0[6]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outWord0[5]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outWord0[4]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outWord0[3]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outWord0[2]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outWord0[1]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outWord0[0]         | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outtransist0[3]     | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  toprom00                                      Date:  10/20/17  11:35:01
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| outtransist0[2]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outtransist0[1]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outtransist0[0]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontro[3]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontro[2]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontro[1]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcontro[0]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| enable0             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[3]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[2]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[1]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Block RO00/DO1/VCC undriven or does not drive anything - clipped.
+Block RO01/VCC undriven or does not drive anything - clipped.
+Block RO02/GND undriven or does not drive anything - clipped.
+Signal RO00/D00/GND undriven or does not drive anything - clipped.
+Signal RO00/DO1/GND undriven or does not drive anything - clipped.
+Signal RO00/D00/OSCInst0_SEDSTDBY undriven or does not drive anything - clipped.
+     
+Signal RO00/DO1/un2_sdiv_s_21_0_S1 undriven or does not drive anything -
+     clipped.
+Signal RO00/DO1/un2_sdiv_s_21_0_COUT undriven or does not drive anything -
+     clipped.
+Signal RO00/DO1/un2_sdiv_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal RO00/DO1/N_1 undriven or does not drive anything - clipped.
+Block RO00/D00/GND was optimized away.
+Block RO00/DO1/GND was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                RO00/D00/OSCInst0
+
+                                    Page 3
+
+
+
+
+Design:  toprom00                                      Date:  10/20/17  11:35:01
+
+OSC Summary (cont)
+------------------
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     RO00.sclk_0
+  OSC Nominal Frequency (MHz):                      2.08
+
+ASIC Components
+---------------
+
+Instance Name: RO00/D00/OSCInst0
+         Type: OSCH
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 58 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

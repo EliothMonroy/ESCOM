@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Report for cell and00.and0
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                 OB        1       100.0
+                           ORCALUT4        1       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL             8           

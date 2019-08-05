@@ -1,0 +1,276 @@
+(edif coder7seg00
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2016 5 18 20 27 57)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "I-2014.03LC , mapper maplat, Build 923R"))
+     )
+   )
+  (external ispmach4s
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell DLAT (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port Q (direction OUTPUT))
+           (port D (direction INPUT))
+           (port LAT (direction INPUT))
+         )
+       )
+    )
+    (cell IBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell INV (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell OBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell coder7seg00 (cellType GENERIC)
+       (view coder7seg0 (viewType NETLIST)
+         (interface
+           (port (array (rename inwordkey "inWordkey(6:0)") 7) (direction INPUT))
+           (port (array (rename inwordmem "inWordmem(6:0)") 7) (direction INPUT))
+           (port (array (rename outwordbuff "outWordBuff(6:0)") 7) (direction OUTPUT))
+           (port wrbuff (direction INPUT))
+         )
+         (contents
+          (instance wrbuff (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_0 "inWordkey[0]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_1 "inWordkey[1]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_2 "inWordkey[2]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_3 "inWordkey[3]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_4 "inWordkey[4]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_5 "inWordkey[5]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordkey_6 "inWordkey[6]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_0 "inWordmem[0]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_1 "inWordmem[1]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_2 "inWordmem[2]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_3 "inWordmem[3]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_4 "inWordmem[4]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_5 "inWordmem[5]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename inWordmem_6 "inWordmem[6]") (viewRef prim (cellRef IBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_0 "outWordBuff[0]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_1 "outWordBuff[1]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_2 "outWordBuff[2]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_3 "outWordBuff[3]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_4 "outWordBuff[4]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_5 "outWordBuff[5]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBuff_6 "outWordBuff[6]") (viewRef prim (cellRef OBUF (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_0 "outWordBufflat[0]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_1 "outWordBufflat[1]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_2 "outWordBufflat[2]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_3 "outWordBufflat[3]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_4 "outWordBufflat[4]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_5 "outWordBufflat[5]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (instance wrbuff_i (viewRef prim (cellRef INV (libraryRef ispmach4s)))          )
+          (instance (rename outWordBufflat_6 "outWordBufflat[6]") (viewRef prim (cellRef DLAT (libraryRef ispmach4s)))          )
+          (net wrbuff_i (joined
+           (portRef O (instanceRef wrbuff_i))
+           (portRef LAT (instanceRef outWordBufflat_6))
+           (portRef LAT (instanceRef outWordBufflat_5))
+           (portRef LAT (instanceRef outWordBufflat_4))
+           (portRef LAT (instanceRef outWordBufflat_3))
+           (portRef LAT (instanceRef outWordBufflat_2))
+           (portRef LAT (instanceRef outWordBufflat_1))
+           (portRef LAT (instanceRef outWordBufflat_0))
+          ))
+          (net wrbuff_c (joined
+           (portRef O (instanceRef wrbuff))
+           (portRef I0 (instanceRef wrbuff_i))
+          ))
+          (net wrbuff (joined
+           (portRef wrbuff)
+           (portRef I0 (instanceRef wrbuff))
+          ))
+          (net (rename inWordkey_c_0 "inWordkey_c[0]") (joined
+           (portRef O (instanceRef inWordkey_0))
+           (portRef D (instanceRef outWordBufflat_0))
+          ))
+          (net (rename inWordkey_0 "inWordkey[0]") (joined
+           (portRef (member inwordkey 6))
+           (portRef I0 (instanceRef inWordkey_0))
+          ))
+          (net (rename inWordkey_c_1 "inWordkey_c[1]") (joined
+           (portRef O (instanceRef inWordkey_1))
+           (portRef D (instanceRef outWordBufflat_1))
+          ))
+          (net (rename inWordkey_1 "inWordkey[1]") (joined
+           (portRef (member inwordkey 5))
+           (portRef I0 (instanceRef inWordkey_1))
+          ))
+          (net (rename inWordkey_c_2 "inWordkey_c[2]") (joined
+           (portRef O (instanceRef inWordkey_2))
+           (portRef D (instanceRef outWordBufflat_2))
+          ))
+          (net (rename inWordkey_2 "inWordkey[2]") (joined
+           (portRef (member inwordkey 4))
+           (portRef I0 (instanceRef inWordkey_2))
+          ))
+          (net (rename inWordkey_c_3 "inWordkey_c[3]") (joined
+           (portRef O (instanceRef inWordkey_3))
+           (portRef D (instanceRef outWordBufflat_3))
+          ))
+          (net (rename inWordkey_3 "inWordkey[3]") (joined
+           (portRef (member inwordkey 3))
+           (portRef I0 (instanceRef inWordkey_3))
+          ))
+          (net (rename inWordkey_c_4 "inWordkey_c[4]") (joined
+           (portRef O (instanceRef inWordkey_4))
+           (portRef D (instanceRef outWordBufflat_4))
+          ))
+          (net (rename inWordkey_4 "inWordkey[4]") (joined
+           (portRef (member inwordkey 2))
+           (portRef I0 (instanceRef inWordkey_4))
+          ))
+          (net (rename inWordkey_c_5 "inWordkey_c[5]") (joined
+           (portRef O (instanceRef inWordkey_5))
+           (portRef D (instanceRef outWordBufflat_5))
+          ))
+          (net (rename inWordkey_5 "inWordkey[5]") (joined
+           (portRef (member inwordkey 1))
+           (portRef I0 (instanceRef inWordkey_5))
+          ))
+          (net (rename inWordkey_c_6 "inWordkey_c[6]") (joined
+           (portRef O (instanceRef inWordkey_6))
+           (portRef D (instanceRef outWordBufflat_6))
+          ))
+          (net (rename inWordkey_6 "inWordkey[6]") (joined
+           (portRef (member inwordkey 0))
+           (portRef I0 (instanceRef inWordkey_6))
+          ))
+          (net (rename inWordmem_c_0 "inWordmem_c[0]") (joined
+           (portRef O (instanceRef inWordmem_0))
+          ))
+          (net (rename inWordmem_0 "inWordmem[0]") (joined
+           (portRef (member inwordmem 6))
+           (portRef I0 (instanceRef inWordmem_0))
+          ))
+          (net (rename inWordmem_c_1 "inWordmem_c[1]") (joined
+           (portRef O (instanceRef inWordmem_1))
+          ))
+          (net (rename inWordmem_1 "inWordmem[1]") (joined
+           (portRef (member inwordmem 5))
+           (portRef I0 (instanceRef inWordmem_1))
+          ))
+          (net (rename inWordmem_c_2 "inWordmem_c[2]") (joined
+           (portRef O (instanceRef inWordmem_2))
+          ))
+          (net (rename inWordmem_2 "inWordmem[2]") (joined
+           (portRef (member inwordmem 4))
+           (portRef I0 (instanceRef inWordmem_2))
+          ))
+          (net (rename inWordmem_c_3 "inWordmem_c[3]") (joined
+           (portRef O (instanceRef inWordmem_3))
+          ))
+          (net (rename inWordmem_3 "inWordmem[3]") (joined
+           (portRef (member inwordmem 3))
+           (portRef I0 (instanceRef inWordmem_3))
+          ))
+          (net (rename inWordmem_c_4 "inWordmem_c[4]") (joined
+           (portRef O (instanceRef inWordmem_4))
+          ))
+          (net (rename inWordmem_4 "inWordmem[4]") (joined
+           (portRef (member inwordmem 2))
+           (portRef I0 (instanceRef inWordmem_4))
+          ))
+          (net (rename inWordmem_c_5 "inWordmem_c[5]") (joined
+           (portRef O (instanceRef inWordmem_5))
+          ))
+          (net (rename inWordmem_5 "inWordmem[5]") (joined
+           (portRef (member inwordmem 1))
+           (portRef I0 (instanceRef inWordmem_5))
+          ))
+          (net (rename inWordmem_c_6 "inWordmem_c[6]") (joined
+           (portRef O (instanceRef inWordmem_6))
+          ))
+          (net (rename inWordmem_6 "inWordmem[6]") (joined
+           (portRef (member inwordmem 0))
+           (portRef I0 (instanceRef inWordmem_6))
+          ))
+          (net (rename outWordBuff_c_0 "outWordBuff_c[0]") (joined
+           (portRef Q (instanceRef outWordBufflat_0))
+           (portRef I0 (instanceRef outWordBuff_0))
+          ))
+          (net (rename outWordBuff_0 "outWordBuff[0]") (joined
+           (portRef O (instanceRef outWordBuff_0))
+           (portRef (member outwordbuff 6))
+          ))
+          (net (rename outWordBuff_c_1 "outWordBuff_c[1]") (joined
+           (portRef Q (instanceRef outWordBufflat_1))
+           (portRef I0 (instanceRef outWordBuff_1))
+          ))
+          (net (rename outWordBuff_1 "outWordBuff[1]") (joined
+           (portRef O (instanceRef outWordBuff_1))
+           (portRef (member outwordbuff 5))
+          ))
+          (net (rename outWordBuff_c_2 "outWordBuff_c[2]") (joined
+           (portRef Q (instanceRef outWordBufflat_2))
+           (portRef I0 (instanceRef outWordBuff_2))
+          ))
+          (net (rename outWordBuff_2 "outWordBuff[2]") (joined
+           (portRef O (instanceRef outWordBuff_2))
+           (portRef (member outwordbuff 4))
+          ))
+          (net (rename outWordBuff_c_3 "outWordBuff_c[3]") (joined
+           (portRef Q (instanceRef outWordBufflat_3))
+           (portRef I0 (instanceRef outWordBuff_3))
+          ))
+          (net (rename outWordBuff_3 "outWordBuff[3]") (joined
+           (portRef O (instanceRef outWordBuff_3))
+           (portRef (member outwordbuff 3))
+          ))
+          (net (rename outWordBuff_c_4 "outWordBuff_c[4]") (joined
+           (portRef Q (instanceRef outWordBufflat_4))
+           (portRef I0 (instanceRef outWordBuff_4))
+          ))
+          (net (rename outWordBuff_4 "outWordBuff[4]") (joined
+           (portRef O (instanceRef outWordBuff_4))
+           (portRef (member outwordbuff 2))
+          ))
+          (net (rename outWordBuff_c_5 "outWordBuff_c[5]") (joined
+           (portRef Q (instanceRef outWordBufflat_5))
+           (portRef I0 (instanceRef outWordBuff_5))
+          ))
+          (net (rename outWordBuff_5 "outWordBuff[5]") (joined
+           (portRef O (instanceRef outWordBuff_5))
+           (portRef (member outwordbuff 1))
+          ))
+          (net (rename outWordBuff_c_6 "outWordBuff_c[6]") (joined
+           (portRef Q (instanceRef outWordBufflat_6))
+           (portRef I0 (instanceRef outWordBuff_6))
+          ))
+          (net (rename outWordBuff_6 "outWordBuff[6]") (joined
+           (portRef O (instanceRef outWordBuff_6))
+           (portRef (member outwordbuff 0))
+          ))
+         )
+        (property orig_inst_of (string "coder7seg00"))
+       )
+    )
+  )
+  (design coder7seg00 (cellRef coder7seg00 (libraryRef work)))
+)

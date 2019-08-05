@@ -1,0 +1,15 @@
+Synopsys VHDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.7_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":11:7:11:17|Top entity is set to toplcdram00.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Dec 11 16:39:42 2016
+
+###########################################################]

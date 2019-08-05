@@ -1,0 +1,18 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\synwork\generic00_generic00_hdl_.srs  -top  topgeneric00  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\div00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\osc00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\packagediv00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\toposcdiv00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\and00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\xor00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\uc00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\packagegeneric00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl  -log  C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\syntax.log  -fileorder  C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\syntmp\hdlorder.tcl 
+rc:0 success:1 runtime:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\synwork\generic00_generic00_hdl_.srs|io:o|time:0|size:0|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\div00.vhdl|io:i|time:1506839068|size:2011|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\osc00.vhdl|io:i|time:1504111464|size:513|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\packagediv00.vhdl|io:i|time:1507134399|size:392|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\toposcdiv00.vhdl|io:i|time:1507135035|size:498|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\and00.vhdl|io:i|time:1510335480|size:251|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\xor00.vhdl|io:i|time:1505320787|size:238|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl|io:i|time:1510938788|size:929|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl|io:i|time:1510938641|size:926|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\uc00.vhdl|io:i|time:1510937552|size:822|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\packagegeneric00.vhdl|io:i|time:1510678250|size:1105|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl|io:i|time:1510682361|size:1869|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\syntax.log|io:o|time:1510938799|size:1032|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_vhdl.exe|io:i|time:1489222824|size:2416640|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe|io:i|time:1489223076|size:3082752|exec:1

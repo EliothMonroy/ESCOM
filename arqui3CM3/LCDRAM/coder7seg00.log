@@ -1,0 +1,16 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+EDIF2BLIF: Warning: Remove floating instance: :
+	inWordmem[0]
+
+Inspect circuit coder7seg00
+    Number of input ports   : 3
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 26
+    Number of nets          : 41
+
+No design errors found in circuit coder7seg00
+
+WriteBLIF ended normally.

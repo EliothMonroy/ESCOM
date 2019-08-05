@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="rom00" device="LCMXO2-7000HE-4TG144C" default_implementation="rom00">
+    <Options/>
+    <Implementation title="rom00" dir="rom00" description="rom00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="toprom00"/>
+        <Source name="rom00/source/div00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="rom00/source/osc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="rom00/source/packagediv00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="rom00/source/toposcdiv00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contReadRo00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="rom00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packagerom00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="toprom00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="toprom00"/>
+        </Source>
+        <Source name="rom00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="rom00/rom00.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="rom001.sty"/>
+</BaliProject>

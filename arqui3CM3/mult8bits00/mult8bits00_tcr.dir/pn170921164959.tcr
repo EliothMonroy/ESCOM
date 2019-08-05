@@ -1,0 +1,15 @@
+#Start recording tcl command: 9/21/2017 16:09:37
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00; Project name: mult8bits00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00.ldf"
+prj_project save
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00/mult8bits00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00/mult8bits00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00/mult8bits00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00/mult8bits00.xcf"
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mult8bits00/mult8bits00/mult8bits00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 9/21/2017 16:49:59

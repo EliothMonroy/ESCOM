@@ -1,0 +1,8 @@
+#Start recording tcl command: 10/24/2017 11:51:18
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/lcd00; Project name: lcd00
+prj_project new -name "lcd00" -impl "lcd00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/source/div00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/source/osc00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/source/packagediv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/rom00/rom00/source/toposcdiv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcd00/source"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcd00/source/div00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcd00/source/osc00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcd00/source/packagediv00.vhdl" "C:/Users/eliot/Documents/Github/arqui3CM3/lcd00/lcd00/source/toposcdiv00.vhdl"
+prj_project save
+prj_project save
+#Stop recording: 10/24/2017 11:54:55

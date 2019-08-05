@@ -1,0 +1,11 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00   -part LCMXO2_7000HE  -package TG144C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synlog\report\mux00_mux00_fpga_mapper.xml  -top_level_module  mux00  -flow mapping  -multisrs  -oedif  C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.edi   -freq 1.000   C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synwork\mux00_mux00_prem.srd  -devicelib  C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\syntmp\mux00_mux00.plg  -osyn  C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srm  -prjdir  C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\  -prjname  proj_1  -log  C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synlog\mux00_mux00_fpga_mapper.srr 
+rc:0 success:1 runtime:3
+file:C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.edi|io:o|time:1505233084|size:13609|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synwork\mux00_mux00_prem.srd|io:i|time:1505233082|size:2207|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1489047244|size:54295|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1489047244|size:40584|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\syntmp\mux00_mux00.plg|io:o|time:1505233085|size:265|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srm|io:o|time:1505233084|size:4796|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synlog\mux00_mux00_fpga_mapper.srr|io:o|time:1505233085|size:8642|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\m_gen_lattice.exe|io:i|time:1489220624|size:19190784|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1489222152|size:23049728|exec:1

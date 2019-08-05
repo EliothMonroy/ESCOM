@@ -1,0 +1,518 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      inkeyk(3:0)                   inkeyk                  3          4            -1
+      Port          2      outcontk(3:0)                 outcontk                  3          4            -1
+      Port          3      out7segk(7:0)                 out7segk                  7          8            -1
+      Port          4      outrk(3:0)                    outrk                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      inkeyk_3_                   inkeyk[3]                       1            0            
+        Port      inkeyk_2_                   inkeyk[2]                       1            1            
+        Port      inkeyk_1_                   inkeyk[1]                       1            2            
+        Port      inkeyk_0_                   inkeyk[0]                       1            3            
+        Port      outcontk_3_                 outcontk[3]                       2            0            
+        Port      outcontk_2_                 outcontk[2]                       2            1            
+        Port      outcontk_1_                 outcontk[1]                       2            2            
+        Port      outcontk_0_                 outcontk[0]                       2            3            
+        Port      out7segk_7_                 out7segk[7]                       3            0            
+        Port      out7segk_6_                 out7segk[6]                       3            1            
+        Port      out7segk_5_                 out7segk[5]                       3            2            
+        Port      out7segk_4_                 out7segk[4]                       3            3            
+        Port      out7segk_3_                 out7segk[3]                       3            4            
+        Port      out7segk_2_                 out7segk[2]                       3            5            
+        Port      out7segk_1_                 out7segk[1]                       3            6            
+        Port      out7segk_0_                 out7segk[0]                       3            7            
+        Port      outrk_3_                    outrk[3]                       4            0            
+        Port      outrk_2_                    outrk[2]                       4            1            
+        Port      outrk_1_                    outrk[1]                       4            2            
+        Port      outrk_0_                    outrk[0]                       4            3            
+End
+Section Cross Reference File
+Design 'topkey00' created Wed May 18 21:48:45 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst        K02_outcontc_2_                           K02.outcontc[2]
+   Inst        K02_outcontc_3_                           K02.outcontc[3]
+   Inst      K02_out7segc_1_0_                         K02.out7segc_1[0]
+   Inst      K02_out7segc_1_1_                         K02.out7segc_1[1]
+   Inst      K02_out7segc_1_2_                         K02.out7segc_1[2]
+   Inst      K02_out7segc_1_3_                         K02.out7segc_1[3]
+   Inst      K02_out7segc_1_4_                         K02.out7segc_1[4]
+   Inst      K02_out7segc_1_5_                         K02.out7segc_1[5]
+   Inst        K02_outcontc_0_                           K02.outcontc[0]
+   Inst        K02_outcontc_1_                           K02.outcontc[1]
+   Inst      K02_out7segc_1_7_                         K02.out7segc_1[7]
+   Inst           K02_outFlago                              K02.outFlago
+   Inst              K02_aux04                                 K02.aux04
+   Inst              K02_aux03                                 K02.aux03
+   Inst              K02_aux02                                 K02.aux02
+   Inst              K02_aux01                                 K02.aux01
+   Inst           K01_sring_3_                              K01.sring[3]
+   Inst            K01_outr_0_                               K01.outr[0]
+   Inst            K01_outr_1_                               K01.outr[1]
+   Inst            K01_outr_2_                               K01.outr[2]
+   Inst            K01_outr_3_                               K01.outr[3]
+   Inst              inkeyk_0_                                 inkeyk[0]
+   Inst              inkeyk_1_                                 inkeyk[1]
+   Inst              inkeyk_2_                                 inkeyk[2]
+   Inst              inkeyk_3_                                 inkeyk[3]
+   Inst            outcontk_0_                               outcontk[0]
+   Inst            outcontk_1_                               outcontk[1]
+   Inst            outcontk_2_                               outcontk[2]
+   Inst            outcontk_3_                               outcontk[3]
+   Inst            out7segk_0_                               out7segk[0]
+   Inst            out7segk_1_                               out7segk[1]
+   Inst            out7segk_2_                               out7segk[2]
+   Inst            out7segk_3_                               out7segk[3]
+   Inst            out7segk_4_                               out7segk[4]
+   Inst            out7segk_5_                               out7segk[5]
+   Inst            out7segk_6_                               out7segk[6]
+   Inst            out7segk_7_                               out7segk[7]
+   Inst               outrk_0_                                  outrk[0]
+   Inst               outrk_1_                                  outrk[1]
+   Inst               outrk_2_                                  outrk[2]
+   Inst               outrk_3_                                  outrk[3]
+   Inst   K02_out7segc_28_1_82_a3_1_1               K02.out7segc_28_1_82_a3_1_1
+   Inst   K02_out7segc_28_1_82_a3_1                 K02.out7segc_28_1_82_a3_1
+   Inst   K02_out7segc_28_0_0_a3_1_1_0_             K02.out7segc_28_0_0_a3_1_1[0]
+   Inst   K02_out7segc_28_0_0_a3_1_0_               K02.out7segc_28_0_0_a3_1[0]
+   Inst   K02_out7segc_28_0_0_a3_1_4_               K02.out7segc_28_0_0_a3_1[4]
+   Inst   K02_out7segc_28_0_0_a3_4_                 K02.out7segc_28_0_0_a3[4]
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i             K02.un1_outFlago_0_sqmuxa_3_i
+   Inst   K02_un1_aux0137_i_0_a3_1_1                K02.un1_aux0137_i_0_a3_1_1
+   Inst   K02_un1_aux0137_i_0_a3_1                  K02.un1_aux0137_i_0_a3_1
+   Inst   K02_un1_aux0137_i_0_a3_0_1                K02.un1_aux0137_i_0_a3_0_1
+   Inst   K02_un1_aux0137_i_0_a3_0                  K02.un1_aux0137_i_0_a3_0
+   Inst   K02_un1_aux0137_i_0_a3_1_0                K02.un1_aux0137_i_0_a3_1_0
+   Inst   K02_un1_aux0137_i_0_a3                    K02.un1_aux0137_i_0_a3
+   Inst   K02_pcoder_aux01_5_f0_i_a3_0_1            K02.pcoder.aux01_5_f0_i_a3_0_1
+   Inst   K02_pcoder_aux01_5_f0_i_a3_0              K02.pcoder.aux01_5_f0_i_a3_0
+   Inst   K02_pcoder_aux02_3_f0_i_a3_0_1            K02.pcoder.aux02_3_f0_i_a3_0_1
+   Inst   K02_pcoder_aux02_3_f0_i_a3_0              K02.pcoder.aux02_3_f0_i_a3_0
+   Inst   K02_pcoder_aux03_3_f0_i_a3_0_1            K02.pcoder.aux03_3_f0_i_a3_0_1
+   Inst   K02_pcoder_aux03_3_f0_i_a3_0              K02.pcoder.aux03_3_f0_i_a3_0
+   Inst   K02_pcoder_aux04_3_f0_i_a3_0_1            K02.pcoder.aux04_3_f0_i_a3_0_1
+   Inst   K02_pcoder_aux04_3_f0_i_a3_0              K02.pcoder.aux04_3_f0_i_a3_0
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_o3          K02.un1_outFlago_0_sqmuxa_3_i_o3
+   Inst   K02_un1_aux0137_i_0_o3_1                  K02.un1_aux0137_i_0_o3_1
+   Inst   K02_un1_aux0137_i_0_o3_2                  K02.un1_aux0137_i_0_o3_2
+   Inst   K02_un1_aux0137_i_0_o3_3                  K02.un1_aux0137_i_0_o3_3
+   Inst   K02_un1_aux0137_i_0_o3_4                  K02.un1_aux0137_i_0_o3_4
+   Inst   K02_un1_aux0137_i_0_o3_5                  K02.un1_aux0137_i_0_o3_5
+   Inst   K02_un1_aux0137_i_0_o3_6                  K02.un1_aux0137_i_0_o3_6
+   Inst   K02_un1_aux0137_i_0_o3                    K02.un1_aux0137_i_0_o3
+   Inst   K02_out7segc_28_2_59_0_1                  K02.out7segc_28_2_59_0_1
+   Inst   K02_out7segc_28_2_59_0_2                  K02.out7segc_28_2_59_0_2
+   Inst   K02_out7segc_28_2_59_0_3                  K02.out7segc_28_2_59_0_3
+   Inst   K02_out7segc_28_2_59_0                    K02.out7segc_28_2_59_0
+   Inst   K02_un1_aux0137_i_0_a3_2_1                K02.un1_aux0137_i_0_a3_2_1
+   Inst   K02_un1_aux0137_i_0_a3_2                  K02.un1_aux0137_i_0_a3_2
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_1           K02.un1_outFlago_0_sqmuxa_3_i_1
+   Inst        K02_outcontc_11                           K02.outcontc_11
+   Inst   K02_out7segc_28_1_82_0_1                  K02.out7segc_28_1_82_0_1
+   Inst   K02_out7segc_28_1_82_0_2                  K02.out7segc_28_1_82_0_2
+   Inst   K02_out7segc_28_1_82_0                    K02.out7segc_28_1_82_0
+   Inst   K02_out7segc_28_0_0_0_0_                  K02.out7segc_28_0_0_0[0]
+   Inst   K02_out7segc_28_0_0_2_0_                  K02.out7segc_28_0_0_2[0]
+   Inst   K02_out7segc_28_0_0_3_0_                  K02.out7segc_28_0_0_3[0]
+   Inst   K02_out7segc_28_0_0_0_                    K02.out7segc_28_0_0[0]
+   Inst   K02_out7segc_28_0_0_1_1_                  K02.out7segc_28_0_0_1[1]
+   Inst   K02_out7segc_28_0_0_1_                    K02.out7segc_28_0_0[1]
+   Inst   K02_out7segc_28_0_0_1_4_                  K02.out7segc_28_0_0_1[4]
+   Inst   K02_out7segc_28_0_0_2_4_                  K02.out7segc_28_0_0_2[4]
+   Inst   K02_out7segc_28_0_0_4_                    K02.out7segc_28_0_0[4]
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_o3_1        K02.un1_outFlago_0_sqmuxa_3_i_o3_1
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_o3_2        K02.un1_outFlago_0_sqmuxa_3_i_o3_2
+   Inst             K02_N_71_i                                K02.N_71_i
+   Inst             K02_N_72_i                                K02.N_72_i
+   Inst             K02_N_69_i                                K02.N_69_i
+   Inst             K02_N_70_i                                K02.N_70_i
+   Inst    K02_outcontk_c_i_1_                       K02.outcontk_c_i[1]
+   Inst       K02_outcontc_8_i                          K02.outcontc_8_i
+   Inst    K02_outcontk_c_i_2_                       K02.outcontk_c_i[2]
+   Inst      K02_outcontc_10_i                         K02.outcontc_10_i
+   Inst    K02_outcontk_c_i_3_                       K02.outcontk_c_i[3]
+   Inst      K02_outcontc_12_i                         K02.outcontc_12_i
+   Inst             K02_N_82_i                                K02.N_82_i
+   Inst             K02_N_87_i                                K02.N_87_i
+   Inst             K02_N_88_i                                K02.N_88_i
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_i           K02.un1_outFlago_0_sqmuxa_3_i_i
+   Inst      K02_outcontc_11_1                         K02.outcontc_11_1
+   Inst   K02_out7segc_28_0_0_i_1_                  K02.out7segc_28_0_0_i[1]
+   Inst             K02_N_49_i                                K02.N_49_i
+   Inst             K02_N_48_i                                K02.N_48_i
+   Inst   K02_out7segc_28_0_0_i_0_                  K02.out7segc_28_0_0_i[0]
+   Inst             K02_N_53_i                                K02.N_53_i
+   Inst             K02_N_52_i                                K02.N_52_i
+   Inst             K02_N_51_i                                K02.N_51_i
+   Inst             K02_N_50_i                                K02.N_50_i
+   Inst   K02_out7segc_28_0_0_1_i_0_                K02.out7segc_28_0_0_1_i[0]
+   Inst   K02_out7segc_28_1_82_0_i                  K02.out7segc_28_1_82_0_i
+   Inst             K02_N_64_i                                K02.N_64_i
+   Inst             K02_N_65_i                                K02.N_65_i
+   Inst             K02_N_63_i                                K02.N_63_i
+   Inst   K02_pcoder_aux04_3_f0_i_o3_i              K02.pcoder.aux04_3_f0_i_o3_i
+   Inst   K02_pcoder_aux03_3_f0_i_o3_i              K02.pcoder.aux03_3_f0_i_o3_i
+   Inst   K02_pcoder_aux04_3_f0_i_o3_0_i            K02.pcoder.aux04_3_f0_i_o3_0_i
+   Inst             K02_N_89_i                                K02.N_89_i
+   Inst   K02_out7segc_28_0_0_o3_i_1_               K02.out7segc_28_0_0_o3_i[1]
+   Inst          inkeyk_c_i_0_                             inkeyk_c_i[0]
+   Inst   K02_out7segc_28_0_0_o3_i_4_               K02.out7segc_28_0_0_o3_i[4]
+   Inst    K02_outcontce_i_i_i                       K02.outcontce_i_i_i
+   Inst             K02_N_77_i                                K02.N_77_i
+   Inst   K02_out7segc_1_1_0_i_7_                   K02.out7segc_1_1_0_i[7]
+   Inst             K02_N_75_i                                K02.N_75_i
+   Inst             K02_N_76_i                                K02.N_76_i
+   Inst             K02_N_73_i                                K02.N_73_i
+   Inst             K02_N_74_i                                K02.N_74_i
+   Inst   K02_out7segc_28_0_0_i_4_                  K02.out7segc_28_0_0_i[4]
+   Inst             K02_N_47_i                                K02.N_47_i
+   Inst             K02_N_46_i                                K02.N_46_i
+   Inst             K02_N_62_i                                K02.N_62_i
+   Inst   K02_out7segc_28_2_59_0_i                  K02.out7segc_28_2_59_0_i
+   Inst             K02_N_61_i                                K02.N_61_i
+   Inst             K02_N_60_i                                K02.N_60_i
+   Inst   K02_un1_aux0137_i_0_o3_i                  K02.un1_aux0137_i_0_o3_i
+   Inst             K02_N_95_i                                K02.N_95_i
+   Inst             K02_N_81_i                                K02.N_81_i
+   Inst             K02_N_79_i                                K02.N_79_i
+   Inst             K02_N_80_i                                K02.N_80_i
+   Inst             K02_N_78_i                                K02.N_78_i
+   Inst   K02_pcoder_aux02_3_f0_i_o3_i              K02.pcoder.aux02_3_f0_i_o3_i
+   Inst   K02_pcoder_aux01_5_f0_i_o3_i              K02.pcoder.aux01_5_f0_i_o3_i
+   Inst             K02_N_94_i                                K02.N_94_i
+   Inst             K02_N_93_i                                K02.N_93_i
+   Inst         K01_outrk_i_3_                            K01.outrk_i[3]
+   Inst   K02_pcoder_aux01_5_f0_i_o3_1              K02.pcoder.aux01_5_f0_i_o3_1
+   Inst   K02_pcoder_aux01_5_f0_i_o3                K02.pcoder.aux01_5_f0_i_o3
+   Inst   K02_pcoder_aux02_3_f0_i_o3                K02.pcoder.aux02_3_f0_i_o3
+   Inst          K02_inFlagk_i                             K02.inFlagk_i
+   Inst          K01_outr_0_2_                             K01.outr_0[2]
+   Inst           K01_resetk_i                              K01.resetk_i
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_a3_1        K02.un1_outFlago_0_sqmuxa_3_i_a3_1
+   Inst   K02_pcoder_aux04_3_f0_i_a3_1              K02.pcoder.aux04_3_f0_i_a3_1
+   Inst   K02_pcoder_aux02_3_f0_i                   K02.pcoder.aux02_3_f0_i
+   Inst   K02_pcoder_aux01_5_f0_i                   K02.pcoder.aux01_5_f0_i
+   Inst   K02_out7segc_1_1_0_7_                     K02.out7segc_1_1_0[7]
+   Inst      K02_outcontce_i_i                         K02.outcontce_i_i
+   Inst   K02_out7segc_28_0_0_o3_4_                 K02.out7segc_28_0_0_o3[4]
+   Inst   K02_out7segc_28_0_0_o3_1_                 K02.out7segc_28_0_0_o3[1]
+   Inst   K02_pcoder_aux04_3_f0_i_o3_0              K02.pcoder.aux04_3_f0_i_o3_0
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_x3          K02.un1_outFlago_0_sqmuxa_3_i_x3
+   Inst   K02_pcoder_aux01_5_f0_i_o3_0              K02.pcoder.aux01_5_f0_i_o3_0
+   Inst   K02_pcoder_aux03_3_f0_i_o3_0              K02.pcoder.aux03_3_f0_i_o3_0
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_o3_0        K02.un1_outFlago_0_sqmuxa_3_i_o3_0
+   Inst         K01_outrk_i_2_                            K01.outrk_i[2]
+   Inst   K02_out7segc_28_2_59_0_o3                 K02.out7segc_28_2_59_0_o3
+   Inst   K02_out7segc_28_2_59_a3_0                 K02.out7segc_28_2_59_a3_0
+   Inst   K02_out7segc_28_2_59_a3_1                 K02.out7segc_28_2_59_a3_1
+   Inst            K02_aux02_i                               K02.aux02_i
+   Inst   K02_pcoder_aux02_3_f0_i_a3                K02.pcoder.aux02_3_f0_i_a3
+   Inst            K02_aux01_i                               K02.aux01_i
+   Inst   K02_pcoder_aux01_5_f0_i_a3                K02.pcoder.aux01_5_f0_i_a3
+   Inst   K02_out7segc_1_1_0_a3_7_                  K02.out7segc_1_1_0_a3[7]
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_a3_2        K02.un1_outFlago_0_sqmuxa_3_i_a3_2
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_a3_3        K02.un1_outFlago_0_sqmuxa_3_i_a3_3
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_a3_4        K02.un1_outFlago_0_sqmuxa_3_i_a3_4
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_a3          K02.un1_outFlago_0_sqmuxa_3_i_a3
+   Inst        K02_inkeyk_i_2_                           K02.inkeyk_i[2]
+   Inst        K02_inkeyk_i_3_                           K02.inkeyk_i[3]
+   Inst   K02_out7segc_28_2_59_a3_2                 K02.out7segc_28_2_59_a3_2
+   Inst   K02_un1_outFlago_0_sqmuxa_3_i_a3_0        K02.un1_outFlago_0_sqmuxa_3_i_a3_0
+   Inst   K02_pcoder_aux03_3_f0_i_a3                K02.pcoder.aux03_3_f0_i_a3
+   Inst   K02_pcoder_aux04_3_f0_i                   K02.pcoder.aux04_3_f0_i
+   Inst   K02_pcoder_aux03_3_f0_i                   K02.pcoder.aux03_3_f0_i
+   Inst         K01_outrk_i_0_                            K01.outrk_i[0]
+   Inst   K02_pcoder_aux04_3_f0_i_o3_1              K02.pcoder.aux04_3_f0_i_o3_1
+   Inst   K02_pcoder_aux03_3_f0_i_o3_1              K02.pcoder.aux03_3_f0_i_o3_1
+   Inst   K02_pcoder_aux03_3_f0_i_o3                K02.pcoder.aux03_3_f0_i_o3
+   Inst   K02_pcoder_aux04_3_f0_i_o3                K02.pcoder.aux04_3_f0_i_o3
+   Inst   K02_out7segc_28_0_0_1_0_                  K02.out7segc_28_0_0_1[0]
+   Inst          K01_outr_0_0_                             K01.outr_0[0]
+   Inst          K01_outr_0_1_                             K01.outr_0[1]
+   Inst       K02_outFlago_0_r                          K02.outFlago_0.r
+   Inst       K02_outFlago_0_m                          K02.outFlago_0.m
+   Inst       K02_outFlago_0_n                          K02.outFlago_0.n
+   Inst       K02_outFlago_0_p                          K02.outFlago_0.p
+   Inst         K02_outFlago_1                            K02.outFlago_1
+   Inst         K01_outrk_i_1_                            K01.outrk_i[1]
+   Inst   K02_out7segc_28_2_59_0_a3                 K02.out7segc_28_2_59_0_a3
+   Inst         K02_outcontc_9                            K02.outcontc_9
+   Inst        K02_outcontc_c1                           K02.outcontc_c1
+   Inst         K02_outcontc_7                            K02.outcontc_7
+   Inst   K02_out7segc_28_0_0_a3_0_4_               K02.out7segc_28_0_0_a3_0[4]
+   Inst   K02_out7segc_28_0_0_a3_1_                 K02.out7segc_28_0_0_a3[1]
+   Inst        K02_inkeyk_i_1_                           K02.inkeyk_i[1]
+   Inst   K02_out7segc_28_0_0_a3_0_1_               K02.out7segc_28_0_0_a3_0[1]
+   Inst   K02_out7segc_28_0_0_a3_0_                 K02.out7segc_28_0_0_a3[0]
+   Inst   K02_out7segc_28_0_0_a3_0_0_               K02.out7segc_28_0_0_a3_0[0]
+   Inst   K02_out7segc_28_0_0_a3_2_0_               K02.out7segc_28_0_0_a3_2[0]
+   Inst   K02_out7segc_28_1_82_0_a3                 K02.out7segc_28_1_82_0_a3
+   Inst   K02_out7segc_28_1_82_a3_0                 K02.out7segc_28_1_82_a3_0
+   Inst            K02_aux04_i                               K02.aux04_i
+   Inst   K02_pcoder_aux04_3_f0_i_a3                K02.pcoder.aux04_3_f0_i_a3
+   Inst            K02_aux03_i                               K02.aux03_i
+   Inst          K01_outr_0_3_                             K01.outr_0[3]
+   Inst        K02_outcontc_n3                           K02.outcontc_n3
+   Inst        K02_outcontc_n2                           K02.outcontc_n2
+   Inst        K02_outcontc_n1                           K02.outcontc_n1
+   Inst        K02_outcontc_12                           K02.outcontc_12
+   Inst        K02_outcontc_10                           K02.outcontc_10
+   Inst         K02_outcontc_8                            K02.outcontc_8
+   Inst            K02_N_112_i                               K02.N_112_i
+   Net                 vcc_n_n                                       VCC
+   Net          k01_sring_3__n                              K01.sring[3]
+   Net               k01_n_1_n                                   K01.N_1
+   Net               k01_n_2_n                                   K01.N_2
+   Net               k01_n_3_n                                   K01.N_3
+   Net               k01_n_4_n                                   K01.N_4
+   Net               k01_n_5_n                                   K01.N_5
+   Net             k02_aux01_n                                 K02.aux01
+   Net             k02_aux02_n                                 K02.aux02
+   Net             k02_aux03_n                                 K02.aux03
+   Net             k02_aux04_n                                 K02.aux04
+   Net              k02_n_13_n                                  K02.N_13
+   Net              k02_n_14_n                                  K02.N_14
+   Net               k02_n_6_n                                   K02.N_6
+   Net         k02_outcontce_n                             K02.outcontce
+   Net             k02_n_114_n                                 K02.N_114
+   Net             k02_n_116_n                                 K02.N_116
+   Net             k02_n_118_n                                 K02.N_118
+   Net              k02_n_46_n                                  K02.N_46
+   Net              k02_n_52_n                                  K02.N_52
+   Net              k02_n_65_n                                  K02.N_65
+   Net              k02_n_70_n                                  K02.N_70
+   Net              k02_n_72_n                                  K02.N_72
+   Net              k02_n_74_n                                  K02.N_74
+   Net              k02_n_76_n                                  K02.N_76
+   Net              k02_n_78_n                                  K02.N_78
+   Net              k02_n_79_n                                  K02.N_79
+   Net              k02_n_80_n                                  K02.N_80
+   Net              k02_n_82_n                                  K02.N_82
+   Net              k02_n_87_n                                  K02.N_87
+   Net              k02_n_88_n                                  K02.N_88
+   Net              k02_n_95_n                                  K02.N_95
+   Net            k02_n_32_i_n                                K02.N_32_i
+   Net              k02_n_68_n                                  K02.N_68
+   Net    k02_out7segc_28_4__n                        K02.out7segc_28[4]
+   Net    k02_out7segc_28_1__n                        K02.out7segc_28[1]
+   Net    k02_out7segc_28_0__n                        K02.out7segc_28[0]
+   Net              k02_n_86_n                                  K02.N_86
+   Net             k02_n_112_n                                 K02.N_112
+   Net       k02_outcontc_n1_n                           K02.outcontc_n1
+   Net       k02_outcontc_n2_n                           K02.outcontc_n2
+   Net       k02_outcontc_n3_n                           K02.outcontc_n3
+   Net              k02_n_28_n                                  K02.N_28
+   Net              k02_n_29_n                                  K02.N_29
+   Net              k02_n_27_n                                  K02.N_27
+   Net              k02_n_26_n                                  K02.N_26
+   Net              k02_n_25_n                                  K02.N_25
+   Net       k02_outcontc_c1_n                           K02.outcontc_c1
+   Net              k02_n_47_n                                  K02.N_47
+   Net              k02_n_48_n                                  K02.N_48
+   Net              k02_n_49_n                                  K02.N_49
+   Net              k02_n_50_n                                  K02.N_50
+   Net              k02_n_51_n                                  K02.N_51
+   Net              k02_n_53_n                                  K02.N_53
+   Net              k02_n_63_n                                  K02.N_63
+   Net              k02_n_64_n                                  K02.N_64
+   Net              k02_n_69_n                                  K02.N_69
+   Net              k02_n_44_n                                  K02.N_44
+   Net              k02_n_71_n                                  K02.N_71
+   Net             k02_n_128_n                                 K02.N_128
+   Net               k02_n_7_n                                   K02.N_7
+   Net              k02_n_96_n                                  K02.N_96
+   Net              k02_n_60_n                                  K02.N_60
+   Net              k02_n_61_n                                  K02.N_61
+   Net              k02_n_92_n                                  K02.N_92
+   Net              k02_n_62_n                                  K02.N_62
+   Net              k02_n_73_n                                  K02.N_73
+   Net              k02_n_45_n                                  K02.N_45
+   Net              k02_n_75_n                                  K02.N_75
+   Net             k02_n_127_n                                 K02.N_127
+   Net              k02_n_77_n                                  K02.N_77
+   Net              k02_n_89_n                                  K02.N_89
+   Net              k02_n_93_n                                  K02.N_93
+   Net              k02_n_94_n                                  K02.N_94
+   Net              k02_n_81_n                                  K02.N_81
+   Net            outrk_i_3__n                                outrk_i[3]
+   Net            outrk_i_2__n                                outrk_i[2]
+   Net           inkeyk_i_2__n                               inkeyk_i[2]
+   Net           inkeyk_i_3__n                               inkeyk_i[3]
+   Net           k02_aux01_i_n                               K02.aux01_i
+   Net           k02_aux02_i_n                               K02.aux02_i
+   Net            outrk_i_1__n                                outrk_i[1]
+   Net            outrk_i_0__n                                outrk_i[0]
+   Net           k02_aux03_i_n                               K02.aux03_i
+   Net           k02_aux04_i_n                               K02.aux04_i
+   Net           inkeyk_i_1__n                               inkeyk_i[1]
+   Net           k02_n_112_i_n                               K02.N_112_i
+   Net           inkeyk_c_0__n                               inkeyk_c[0]
+   Net             inkeyk_0__n                                 inkeyk[0]
+   Net           inkeyk_c_1__n                               inkeyk_c[1]
+   Net             inkeyk_1__n                                 inkeyk[1]
+   Net           inkeyk_c_2__n                               inkeyk_c[2]
+   Net             inkeyk_2__n                                 inkeyk[2]
+   Net           inkeyk_c_3__n                               inkeyk_c[3]
+   Net         outcontk_c_0__n                             outcontk_c[0]
+   Net           outcontk_0__n                               outcontk[0]
+   Net         outcontk_c_1__n                             outcontk_c[1]
+   Net           outcontk_1__n                               outcontk[1]
+   Net         outcontk_c_2__n                             outcontk_c[2]
+   Net           outcontk_2__n                               outcontk[2]
+   Net         outcontk_c_3__n                             outcontk_c[3]
+   Net         out7segk_c_0__n                             out7segk_c[0]
+   Net           out7segk_0__n                               out7segk[0]
+   Net         out7segk_c_1__n                             out7segk_c[1]
+   Net           out7segk_1__n                               out7segk[1]
+   Net         out7segk_c_2__n                             out7segk_c[2]
+   Net           out7segk_2__n                               out7segk[2]
+   Net         out7segk_c_3__n                             out7segk_c[3]
+   Net           out7segk_3__n                               out7segk[3]
+   Net         out7segk_c_4__n                             out7segk_c[4]
+   Net           out7segk_4__n                               out7segk[4]
+   Net         out7segk_c_5__n                             out7segk_c[5]
+   Net           out7segk_5__n                               out7segk[5]
+   Net           out7segk_6__n                               out7segk[6]
+   Net         out7segk_c_7__n                             out7segk_c[7]
+   Net            outrk_c_0__n                                outrk_c[0]
+   Net              outrk_0__n                                  outrk[0]
+   Net            outrk_c_1__n                                outrk_c[1]
+   Net              outrk_1__n                                  outrk[1]
+   Net            outrk_c_2__n                                outrk_c[2]
+   Net              outrk_2__n                                  outrk[2]
+   Net            outrk_c_3__n                                outrk_c[3]
+   Net            k02_n_62_i_n                                K02.N_62_i
+   Net            k02_n_68_0_n                                K02.N_68_0
+   Net            k02_n_61_i_n                                K02.N_61_i
+   Net            k02_n_60_i_n                                K02.N_60_i
+   Net            k02_n_96_i_n                                K02.N_96_i
+   Net            k02_n_95_i_n                                K02.N_95_i
+   Net            k02_n_81_i_n                                K02.N_81_i
+   Net            k02_n_79_i_n                                K02.N_79_i
+   Net            k02_n_80_i_n                                K02.N_80_i
+   Net            k02_n_78_i_n                                K02.N_78_i
+   Net            k02_n_45_0_n                                K02.N_45_0
+   Net           k02_n_127_0_n                               K02.N_127_0
+   Net           k02_n_126_i_n                               K02.N_126_i
+   Net           k02_n_123_i_n                               K02.N_123_i
+   Net            k02_n_94_i_n                                K02.N_94_i
+   Net            k02_n_93_i_n                                K02.N_93_i
+   Net           k02_n_122_i_n                               K02.N_122_i
+   Net           k02_n_121_i_n                               K02.N_121_i
+   Net           k02_n_120_i_n                               K02.N_120_i
+   Net           k02_n_118_i_n                               K02.N_118_i
+   Net            k02_n_89_i_n                                K02.N_89_i
+   Net           k02_n_117_i_n                               K02.N_117_i
+   Net           k02_n_116_i_n                               K02.N_116_i
+   Net         inkeyk_c_i_0__n                             inkeyk_c_i[0]
+   Net           k02_n_114_i_n                               K02.N_114_i
+   Net       k02_outcontce_0_n                           K02.outcontce_0
+   Net            k02_n_77_i_n                                K02.N_77_i
+   Net            k02_n_13_0_n                                K02.N_13_0
+   Net            k02_n_75_i_n                                K02.N_75_i
+   Net            k02_n_76_i_n                                K02.N_76_i
+   Net            k02_n_21_i_n                                K02.N_21_i
+   Net            k02_n_73_i_n                                K02.N_73_i
+   Net            k02_n_74_i_n                                K02.N_74_i
+   Net            k02_n_19_i_n                                K02.N_19_i
+   Net    k02_out7segc_28_0_4__n                      K02.out7segc_28_0[4]
+   Net            k02_n_47_i_n                                K02.N_47_i
+   Net            k02_n_46_i_n                                K02.N_46_i
+   Net    k02_out7segc_28_0_1__n                      K02.out7segc_28_0[1]
+   Net            k02_n_49_i_n                                K02.N_49_i
+   Net            k02_n_48_i_n                                K02.N_48_i
+   Net    k02_out7segc_28_0_0__n                      K02.out7segc_28_0[0]
+   Net            k02_n_53_i_n                                K02.N_53_i
+   Net            k02_n_52_i_n                                K02.N_52_i
+   Net            k02_n_51_i_n                                K02.N_51_i
+   Net            k02_n_50_i_n                                K02.N_50_i
+   Net             k01_n_1_i_n                                 K01.N_1_i
+   Net            k02_n_86_0_n                                K02.N_86_0
+   Net            k02_n_64_i_n                                K02.N_64_i
+   Net            k02_n_65_i_n                                K02.N_65_i
+   Net            k02_n_63_i_n                                K02.N_63_i
+   Net            k02_n_44_0_n                                K02.N_44_0
+   Net           k02_n_128_0_n                               K02.N_128_0
+   Net           k02_n_125_i_n                               K02.N_125_i
+   Net           k02_n_124_i_n                               K02.N_124_i
+   Net            k02_n_71_i_n                                K02.N_71_i
+   Net            k02_n_72_i_n                                K02.N_72_i
+   Net            k02_n_17_i_n                                K02.N_17_i
+   Net            k02_n_69_i_n                                K02.N_69_i
+   Net            k02_n_70_i_n                                K02.N_70_i
+   Net            k02_n_15_i_n                                K02.N_15_i
+   Net       outcontk_c_i_1__n                           outcontk_c_i[1]
+   Net            k02_n_25_0_n                                K02.N_25_0
+   Net       outcontk_c_i_2__n                           outcontk_c_i[2]
+   Net            k02_n_27_0_n                                K02.N_27_0
+   Net       outcontk_c_i_3__n                           outcontk_c_i[3]
+   Net            k02_n_29_0_n                                K02.N_29_0
+   Net            k02_n_82_i_n                                K02.N_82_i
+   Net            k02_n_87_i_n                                K02.N_87_i
+   Net            k02_n_88_i_n                                K02.N_88_i
+   Net             k02_n_6_0_n                                 K02.N_6_0
+   Net            k02_n_28_1_n                                K02.N_28_1
+   Net          k02_n_86_0_1_n                              K02.N_86_0_1
+   Net          k02_n_86_0_2_n                              K02.N_86_0_2
+   Net    k02_out7segc_28_0_1_0__n                    K02.out7segc_28_0_1[0]
+   Net    k02_out7segc_28_0_2_0__n                    K02.out7segc_28_0_2[0]
+   Net    k02_out7segc_28_0_3_0__n                    K02.out7segc_28_0_3[0]
+   Net    k02_out7segc_28_0_1_1__n                    K02.out7segc_28_0_1[1]
+   Net    k02_out7segc_28_0_1_4__n                    K02.out7segc_28_0_1[4]
+   Net    k02_out7segc_28_0_2_4__n                    K02.out7segc_28_0_2[4]
+   Net         k02_n_117_i_1_n                             K02.N_117_i_1
+   Net         k02_n_117_i_2_n                             K02.N_117_i_2
+   Net          k02_n_96_i_1_n                              K02.N_96_i_1
+   Net          k02_n_96_i_2_n                              K02.N_96_i_2
+   Net          k02_n_96_i_3_n                              K02.N_96_i_3
+   Net          k02_n_96_i_4_n                              K02.N_96_i_4
+   Net          k02_n_96_i_5_n                              K02.N_96_i_5
+   Net          k02_n_96_i_6_n                              K02.N_96_i_6
+   Net          k02_n_68_0_1_n                              K02.N_68_0_1
+   Net          k02_n_68_0_2_n                              K02.N_68_0_2
+   Net          k02_n_68_0_3_n                              K02.N_68_0_3
+   Net            k02_n_81_1_n                                K02.N_81_1
+   Net           k02_n_6_0_1_n                               K02.N_6_0_1
+   Net            k02_n_80_1_n                                K02.N_80_1
+   Net            k02_n_79_1_n                                K02.N_79_1
+   Net            k02_n_78_1_n                                K02.N_78_1
+   Net            k02_n_76_1_n                                K02.N_76_1
+   Net            k02_n_74_1_n                                K02.N_74_1
+   Net            k02_n_72_1_n                                K02.N_72_1
+   Net            k02_n_70_1_n                                K02.N_70_1
+   Net            k02_n_65_1_n                                K02.N_65_1
+   Net            k02_n_52_1_n                                K02.N_52_1
+   Net            k02_n_46_1_n                                K02.N_46_1
+   Net    k02_outflago_0_un3_n                        K02.outFlago_0.un3
+   Net    k02_outflago_0_un1_n                        K02.outFlago_0.un1
+   Net    k02_outflago_0_un0_n                        K02.outFlago_0.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     inkeyk_3_
+        Input     clkk
+        Input     resetk
+        Input     inFlagk
+        Input     inkeyk_2_
+        Input     inkeyk_1_
+        Input     inkeyk_0_
+        Output     outcontk_3_
+        Output     out7segk_7_
+        Output     outrk_3_
+        Output     outFlagk
+        Output     outcontk_2_
+        Output     outcontk_1_
+        Output     outcontk_0_
+        Output     out7segk_6_
+        Output     out7segk_5_
+        Output     out7segk_4_
+        Output     out7segk_3_
+        Output     out7segk_2_
+        Output     out7segk_1_
+        Output     out7segk_0_
+        Output     outrk_2_
+        Output     outrk_1_
+        Output     outrk_0_
+End

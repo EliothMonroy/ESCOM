@@ -1,0 +1,3 @@
+@W: CD638 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":33:7:33:16|Signal soutcontro is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

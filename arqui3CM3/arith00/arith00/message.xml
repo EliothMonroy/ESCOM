@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SL</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>so_cry_0_0_S1</Dynamic>
+            <Navigation>so_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>so_cry_0_0_S0</Dynamic>
+            <Navigation>so_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>so_s_3_0_S1</Dynamic>
+            <Navigation>so_s_3_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>so_s_3_0_COUT</Dynamic>
+            <Navigation>so_s_3_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>SL</Dynamic>
+            <Navigation>SL</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl&quot;:13:2:13:4|Signal LED is floating; a simulation mismatch is possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Signal LED is floating; a simulation mismatch is possible.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

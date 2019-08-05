@@ -1,0 +1,117 @@
+---------------------------------------------------
+Report for cell toplcdram00
+   Instance path: toplcdram00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     106.00        100.0
+                                  LUT4	     154.00        100.0
+                               DISTRAM	       6.00        100.0
+                                 IOBUF	         46        100.0
+                                PFUREG	        103        100.0
+                                RIPPLE	         18        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              toposc00	          1        18.4
+                              topkey00	          1        22.3
+                                 ram00	          1         9.9
+                              config00	          1        27.3
+                          contconfig00	          1         9.1
+                            contread00	          1         7.5
+                           bufferlcd00	          1         5.0
+---------------------------------------------------
+Report for cell bufferlcd00
+   Instance path: toplcdram00/LCD06
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.33         5.0
+                                  LUT4	      10.00         6.5
+                                PFUREG	         10         9.7
+---------------------------------------------------
+Report for cell config00
+   Instance path: toplcdram00/LCD03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.92        27.3
+                                  LUT4	      42.00        27.3
+                                PFUREG	         22        21.4
+---------------------------------------------------
+Report for cell contconfig00
+   Instance path: toplcdram00/LCD02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.63         9.1
+                                  LUT4	      10.00         6.5
+                                PFUREG	         11        10.7
+                                RIPPLE	          4        22.2
+---------------------------------------------------
+Report for cell contread00
+   Instance path: toplcdram00/RA05
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.00         7.5
+                                  LUT4	       9.00         5.8
+                                PFUREG	          6         5.8
+                                RIPPLE	          3        16.7
+---------------------------------------------------
+Report for cell ram00
+   Instance path: toplcdram00/RA03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.50         9.9
+                                  LUT4	       9.00         5.8
+                               DISTRAM	       6.00        100.0
+                                PFUREG	         11        10.7
+---------------------------------------------------
+Report for cell topkey00
+   Instance path: toplcdram00/RA02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.62        22.3
+                                  LUT4	      48.00        31.2
+                                PFUREG	         21        20.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            contring00	          1         1.3
+                               coder00	          1        21.0
+---------------------------------------------------
+Report for cell coder00
+   Instance path: toplcdram00/RA02/K02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.28        21.0
+                                  LUT4	      48.00        31.2
+                                PFUREG	         16        15.5
+---------------------------------------------------
+Report for cell contring00
+   Instance path: toplcdram00/RA02/K01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.33         1.3
+                                PFUREG	          5         4.9
+---------------------------------------------------
+Report for cell toposc00
+   Instance path: toplcdram00/K01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      19.50        18.4
+                                  LUT4	      17.00        11.0
+                                PFUREG	         22        21.4
+                                RIPPLE	         11        61.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 osc00	          1         0.0
+                                 div00	          1        18.4
+---------------------------------------------------
+Report for cell div00
+   Instance path: toplcdram00/K01/OS01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      19.50        18.4
+                                  LUT4	      17.00        11.0
+                                PFUREG	         22        21.4
+                                RIPPLE	         11        61.1
+---------------------------------------------------
+Report for cell osc00
+   Instance path: toplcdram00/K01/OS00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

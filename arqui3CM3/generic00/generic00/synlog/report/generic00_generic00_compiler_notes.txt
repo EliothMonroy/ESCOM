@@ -1,0 +1,14 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl":6:7:6:18|Top entity is set to topgeneric00.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl":6:7:6:18|Synthesizing work.topgeneric00.arch.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\uc00.vhdl":5:7:5:10|Synthesizing work.uc00.arch.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl":5:7:5:12|Synthesizing work.xorg00.arch.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl":5:7:5:12|Synthesizing work.andg00.arch.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N|Running in 64-bit mode
+

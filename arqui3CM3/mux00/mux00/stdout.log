@@ -1,0 +1,130 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.9_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.9_x64\synpbase
+Hostname:    ELIOTHLAPTOP
+Date:        Tue Sep 12 11:17:58 2017
+Version:     L-2016.09L-1
+
+Arguments:   -product synplify_pro -batch mux00_mux00_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+Technology initialized from device list to: LATTICE-XP
+
+log file: "C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srr"
+
+Running: hdl_info_gen in foreground
+
+
+
+Generating HDL info...
+
+
+hdl_info_gen completed
+# Tue Sep 12 11:17:59 2017
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srf
+
+log file: "C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srr"
+
+Running: mux00 in foreground
+
+
+
+Running proj_1|mux00
+
+
+Running: compile (Compile) on proj_1|mux00
+# Tue Sep 12 11:17:59 2017
+
+
+Running: compile_flow (Compile Process) on proj_1|mux00
+# Tue Sep 12 11:17:59 2017
+
+
+Running: compiler (Compile Input) on proj_1|mux00
+# Tue Sep 12 11:17:59 2017
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synwork\mux00_mux00_comp.srs to C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srs
+
+
+compiler completed
+# Tue Sep 12 11:18:01 2017
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|mux00
+# Tue Sep 12 11:18:01 2017
+
+
+multi_srs_gen completed
+# Tue Sep 12 11:18:01 2017
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synwork\mux00_mux00_mult.srs to C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srs
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srf
+
+Complete: Compile Process on proj_1|mux00
+
+
+Running: premap (Pre-mapping) on proj_1|mux00
+# Tue Sep 12 11:18:01 2017
+
+
+premap completed with warnings
+# Tue Sep 12 11:18:02 2017
+
+Return Code: 1
+Run Time:00h:00m:01s
+
+Complete: Compile on proj_1|mux00
+
+
+Running: map (Map) on proj_1|mux00
+# Tue Sep 12 11:18:02 2017
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on proj_1|mux00
+# Tue Sep 12 11:18:02 2017
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\synwork\mux00_mux00_m.srm to C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srm
+
+
+fpga_mapper completed
+# Tue Sep 12 11:18:05 2017
+
+Return Code: 0
+Run Time:00h:00m:03s
+
+Complete: Map on proj_1|mux00
+
+Copied C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srr to C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\mux00_mux00.srf
+
+Complete: Logic Synthesis on proj_1|mux00
+
+TCL script complete: "mux00_mux00_synplify.tcl"
+
+exit status=0
+
+exit status=0
+
+Save changes for project:
+C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00\proj_1.prj
+
+batch mode default:no
+

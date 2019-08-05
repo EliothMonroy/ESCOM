@@ -1,0 +1,1 @@
+run_tcl -fg OsciladorInterno_OsciladorInterno_synplify.tcl

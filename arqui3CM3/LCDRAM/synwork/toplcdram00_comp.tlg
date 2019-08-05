@@ -1,0 +1,65 @@
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":7:7:7:17|Synthesizing work.toplcdram00.toplcdram0 
+@W: CD277 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd":21:9:21:14|Port direction mismatch between component and entity
+@W: CD279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd":32:2:32:9|Port offtrank of component topkey00 not found on corresponding entity
+@W: CD730 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":84:2:84:5|Component declaration has 9 ports but entity declares 8 ports
+@W: CD285 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":105:24:105:32|Port map width mismatch (7 => 8) on port inWordm of component ram00 
+@W: CD279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd":67:14:67:22|Port outcontcw of component contread00 not found on corresponding entity
+@W: CD730 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":110:2:110:5|Component declaration has 11 ports but entity declares 10 ports
+@W: CD285 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":125:23:125:28|Port map width mismatch (5 => 6) on port outcc of component contconfig00 
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":6:7:6:17|Synthesizing work.bufferlcd00.bufferlcd0 
+@W: CG296 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":25:7:25:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":33:23:33:33|Referenced variable inwordwrite is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":28:16:28:27|Referenced variable inwordconfig is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":35:10:35:13|Referenced variable rswb is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":34:11:34:14|Referenced variable rwwb is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":30:9:30:12|Referenced variable rscb is not in sensitivity list
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":29:9:29:12|Referenced variable rwcb is not in sensitivity list
+Post processing for work.bufferlcd00.bufferlcd0
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\bufferlcd00.vhd":27:4:27:5|Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":6:7:6:14|Synthesizing work.config00.config0 
+Post processing for work.config00.config0
+@W: CL111 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|All reachable assignments to outWordc(6) assign '0'; register removed by optimization
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Latch generated from process for signal outWordc(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Latch generated from process for signal outFlagc; possible missing assignment in an if or case statement.
+@W: CL111 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|All reachable assignments to RWc assign '0'; register removed by optimization
+@W: CL111 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|All reachable assignments to RSc assign '0'; register removed by optimization
+@W: CL117 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Latch generated from process for signal ENc; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":6:7:6:18|Synthesizing work.contconfig00.contconfig0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":28:7:28:11|Removed redundant assignment
+Post processing for work.contconfig00.contconfig0
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":6:7:6:16|Synthesizing work.contread00.contread0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":50:8:50:18|Removed redundant assignment
+Post processing for work.contread00.contread0
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd":6:7:6:11|Synthesizing work.ram00.ram0 
+Post processing for work.ram00.ram0
+@N: CL134 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\ram00.vhd":28:9:28:12|Found RAM sram, depth=16, width=8
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd":7:7:7:14|Synthesizing work.topkey00.topkey0 
+@W: CD279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagekey00.vhd":21:2:21:9|Port offtranc of component coder00 not found on corresponding entity
+@W: CD730 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd":26:2:26:4|Component declaration has 9 ports but entity declares 8 ports
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":6:7:6:13|Synthesizing work.coder00.coder0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":42:12:42:19|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":95:5:95:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":149:5:149:12|Removed redundant assignment
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":206:11:206:18|Removed redundant assignment
+@W: CG296 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":22:10:22:16|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:12:28:15|Referenced variable clkc is not in sensitivity list
+Post processing for work.coder00.coder0
+@W: CL189 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:8:28:9|Register bit out7segc(6) is always 1, optimizing ...
+@W: CL260 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:8:28:9|Pruning register bit 6 of out7segc(7 downto 0)  
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":6:7:6:16|Synthesizing work.contring00.contring0 
+Post processing for work.contring00.contring0
+@W: CL279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":20:9:20:10|Pruning register bits 2 to 0 of sring(3 downto 0)  
+Post processing for work.topkey00.topkey0
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\div00.vhd":6:7:6:11|Synthesizing work.div00.div0 
+Post processing for work.div00.div0
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0 
+@W: CD280 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Unbound component OSCTIMER mapped to black box
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\osc00.vhd":17:10:17:17|Synthesizing work.osctimer.syn_black_box 
+Post processing for work.osctimer.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toplcdram00.toplcdram0
+@W: CL138 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contread00.vhd":27:5:27:6|Register bit RScw is always 1, optimizing ...

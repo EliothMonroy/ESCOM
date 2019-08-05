@@ -1,0 +1,13 @@
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\topgeneric01.vhdl":6:7:6:18|Selected library: work cell: topgeneric01 view arch as top level
+@N: NF107 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\topgeneric01.vhdl":6:7:6:18|Selected library: work cell: topgeneric01 view arch as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Nov 29 11:12:40 2017
+
+###########################################################]

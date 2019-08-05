@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LCD03/N_27_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>oscdis0</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>tmrrst0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=K01.OS01.outdiv_i loads=7 clock_loads=4
+   Signal=LCD03/ENc_RNO loads=1 clock_loads=1
+   Signal=LCD03/outWordc_1_RNO[7] loads=1 clock_loads=1
+   Signal=LCD03/N_45_i loads=1 clock_loads=1
+   Signal=LCD03/N_109_i loads=1 clock_loads=1
+   Signal=LCD03/N_108_i loads=1 clock_loads=1
+   Signal=LCD03/N_8_i loads=1 clock_loads=1
+   Signal=LCD03/N_107_i loads=1 clock_loads=1
+   Signal=LCD03/N_19_i loads=1 clock_loads=1
+   Signal=LCD03/un1_inflagc_2_0_a3_0 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=K01.OS01.outdiv_i loads=7 clock_loads=4
+   Signal=LCD03/ENc_RNO loads=1 clock_loads=1
+   Signal=LCD03/outWordc_1_RNO[7] loads=1 clock_loads=1
+   Signal=LCD03/N_45_i loads=1 clock_loads=1
+   Signal=LCD03/N_109_i loads=1 clock_loads=1
+   Signal=LCD03/N_108_i loads=1 clock_loads=1
+   Signal=LCD03/N_8_i loads=1 clock_loads=1
+   Signal=LCD03/N_107_i loads=1 clock_loads=1
+   Signal=LCD03/N_19_i loads=1 clock_loads=1
+   Signal=LCD03/un1_inflagc_2_0_a3_0 loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>K01/OS01/un1_sdiv_1_cry_19_0_COUT</Dynamic>
+            <Navigation>K01/OS01/un1_sdiv_1_cry_19_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>K01/OS01/un1_sdiv_1_cry_0_0_S0</Dynamic>
+            <Navigation>K01/OS01/un1_sdiv_1_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>K01/OS00/OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>K01/OS00/OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>LCD02/un1_outcc_s_5_0_COUT</Dynamic>
+            <Navigation>LCD02/un1_outcc_s_5_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>LCD02/un1_outcc_s_5_0_S1</Dynamic>
+            <Navigation>LCD02/un1_outcc_s_5_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>LCD02/un1_outcc_cry_0_0_S0</Dynamic>
+            <Navigation>LCD02/un1_outcc_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RA05/un1_incontkey_cry_3_0_COUT</Dynamic>
+            <Navigation>RA05/un1_incontkey_cry_3_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RA05/un1_incontkey_cry_3_0_S0</Dynamic>
+            <Navigation>RA05/un1_incontkey_cry_3_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RA05/un1_incontkey_cry_1_0_S0</Dynamic>
+            <Navigation>RA05/un1_incontkey_cry_1_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RA05/un1_incontkey_cry_1_0_S1</Dynamic>
+            <Navigation>RA05/un1_incontkey_cry_1_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RA05/un1_incontkey_cry_0_0_S0</Dynamic>
+            <Navigation>RA05/un1_incontkey_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RA05/un1_incontkey_cry_0_0_S1</Dynamic>
+            <Navigation>RA05/un1_incontkey_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>oscdis0</Dynamic>
+            <Navigation>oscdis0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>tmrrst0</Dynamic>
+            <Navigation>tmrrst0</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>14</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:29:7:29:13|Incomplete sensitivity list - assuming completeness</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Incomplete sensitivity list - assuming completeness</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:37:23:37:33|Referenced variable inwordwrite is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>Referenced variable inwordwrite is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:32:16:32:27|Referenced variable inwordconfig is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>Referenced variable inwordconfig is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:39:10:39:13|Referenced variable rswb is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Referenced variable rswb is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:38:11:38:14|Referenced variable rwwb is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Referenced variable rwwb is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:34:9:34:12|Referenced variable rscb is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Referenced variable rscb is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:33:9:33:12|Referenced variable rwcb is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Referenced variable rwcb is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:31:4:31:5|Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:31:4:31:5|Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:31:4:31:5|Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl&quot;:31:4:31:5|Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL111 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl&quot;:25:5:25:8|All reachable assignments to outWordc(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.</Dynamic>
+            <Navigation>CL111</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>All reachable assignments to outWordc(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl&quot;:25:5:25:8|Latch generated from process for signal outWordc(7 downto 0); possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Latch generated from process for signal outWordc(7 downto 0); possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl&quot;:25:5:25:8|Latch generated from process for signal outFlagc; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Latch generated from process for signal outFlagc; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL111 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl&quot;:25:5:25:8|All reachable assignments to RWc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.</Dynamic>
+            <Navigation>CL111</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>All reachable assignments to RWc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL111 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl&quot;:25:5:25:8|All reachable assignments to RSc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.</Dynamic>
+            <Navigation>CL111</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>All reachable assignments to RSc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl&quot;:25:5:25:8|Latch generated from process for signal ENc; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Latch generated from process for signal ENc; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl&quot;:24:10:24:16|Incomplete sensitivity list - assuming completeness</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Incomplete sensitivity list - assuming completeness</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl&quot;:30:12:30:15|Referenced variable clkc is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Referenced variable clkc is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl&quot;:30:8:30:9|Pruning register bit 6 of out7segc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bit 6 of out7segc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl&quot;:24:9:24:10|Pruning register bits 2 to 0 of sring(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Pruning register bits 2 to 0 of sring(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD276 :&quot;C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd&quot;:2297:8:2297:15|Map for port sedstdby of component osch not found</Dynamic>
+            <Navigation>CD276</Navigation>
+            <Navigation>C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Map for port sedstdby of component osch not found</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl&quot;:23:7:23:13|oscout0 is not assigned a value (floating) -- simulation mismatch possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>oscout0 is not assigned a value (floating) -- simulation mismatch possible. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL138 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl&quot;:27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.</Dynamic>
+            <Navigation>CL138</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing register 'RWcw' because it is only assigned 0 or its original value.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL158 :&quot;C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl&quot;:24:7:24:13|Inout tmrrst0 is unused</Dynamic>
+            <Navigation>CL158</Navigation>
+            <Navigation>C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Inout tmrrst0 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl&quot;:36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT531 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Found signal identified as System clock which controls 20 sequential elements including LCD03.outWordc_1[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance.</Dynamic>
+            <Navigation>MT531</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Found signal identified as System clock which controls 20 sequential elements including LCD03.outWordc_1[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\div00.vhdl&quot;:22:2:22:3|Found inferred clock osc00|osc_int_inferred_clock which controls 22 sequential elements including K01.OS01.sdiv[20:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\div00.vhdl</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock which controls 22 sequential elements including K01.OS01.sdiv[20:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO171 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl&quot;:31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO171</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl&quot;:36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO171 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl&quot;:31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO171</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl&quot;:36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl&quot;:25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:K01.OS00.osc_int&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:K01.OS00.osc_int&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

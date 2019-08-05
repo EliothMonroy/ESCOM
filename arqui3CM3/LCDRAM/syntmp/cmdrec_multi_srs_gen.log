@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  toplcdram00  -multisrs  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\toplcdram00_comp.srs"  -osyn  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\toplcdram00_mult.srs"  -log  "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synlog\toplcdram00_multi_srs_gen.srr" 
+rc:0 success:1
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\toplcdram00_comp.srs|i|1463627178|21628
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synwork\toplcdram00_mult.srs|o|1463627179|6916
+C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\synlog\toplcdram00_multi_srs_gen.srr|o|1463627179|510
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401252736|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401252932|6337536

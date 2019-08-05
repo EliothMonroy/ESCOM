@@ -1,0 +1,27 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_hdl_.srs  -top  topp04  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\div00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\osc00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\packagediv00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\toposcdiv00.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac8bit04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac12bit04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\coderNibbles04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contIter04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contring04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\packagep04.vhdl -lib work C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl  -log  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\syntax.log  -fileorder  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\syntmp\hdlorder.tcl 
+rc:0 success:1 runtime:1
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_hdl_.srs|io:o|time:0|size:0|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\div00.vhdl|io:i|time:1512504735|size:2058|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\osc00.vhdl|io:i|time:1512504735|size:523|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\packagediv00.vhdl|io:i|time:1512504735|size:402|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\toposcdiv00.vhdl|io:i|time:1512504735|size:507|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac8bit04.vhdl|io:i|time:1512616689|size:826|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac12bit04.vhdl|io:i|time:1512616951|size:844|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\coderNibbles04.vhdl|io:i|time:1512617698|size:2820|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl|io:i|time:1512618054|size:1758|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contIter04.vhdl|io:i|time:1512618122|size:927|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contring04.vhdl|io:i|time:1512618315|size:699|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl|io:i|time:1512618350|size:1896|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl|io:i|time:1512618379|size:913|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl|io:i|time:1512618414|size:774|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl|io:i|time:1512618446|size:2797|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl|io:i|time:1512618474|size:916|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl|io:i|time:1512618503|size:1167|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl|io:i|time:1512618537|size:1222|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl|io:i|time:1512618575|size:1317|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\packagep04.vhdl|io:i|time:1512619094|size:4055|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl|io:i|time:1512619164|size:6123|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\syntax.log|io:o|time:1512619176|size:1016|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_vhdl.exe|io:i|time:1489222824|size:2416640|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_vhdl.exe|io:i|time:1489223076|size:3082752|exec:1

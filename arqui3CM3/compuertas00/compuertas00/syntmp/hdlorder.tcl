@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/diamond/3.9_x64/cae_library/synthesis/vhdl/machxo2.vhd" "C:/Users/ELITH/Documents/GitHub/arqui3CM3/compuertas00/compuertas00.vhdl" 

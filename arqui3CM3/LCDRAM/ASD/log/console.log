@@ -1,0 +1,155 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/packagekey00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\packagekey00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/packagelcdram00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\packagelcdram00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/bufferlcd00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\bufferlcd00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/config00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\config00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/contconfig00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\contconfig00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/contread00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\contread00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/ram00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\ram00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/coder00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\coder00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/contring00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\contring00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/topkey00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\topkey00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/div00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\div00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/osc00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\osc00.vhdl ... Done
+addfile {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/toplcdram00.vhdl}
+# Adding file C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl ... Done
+vlib {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/ASD/work}
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/packagekey00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\packagekey00.vhdl
+# Compile Package "packagekey00"
+# Error: VLM_0030: packagekey00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/packagelcdram00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\packagelcdram00.vhdl
+# Compile Package "packagelcdram00"
+# Error: VLM_0030: packagelcdram00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/bufferlcd00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\bufferlcd00.vhdl
+# Compile Entity "bufferlcd00"
+# Error: VLM_0030: bufferlcd00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "bufferlcd0" of Entity "bufferlcd00"
+# Error: COMP96_0056: bufferlcd00.vhdl : (27, 1): Cannot find referenced entity declaration "bufferlcd00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/config00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\config00.vhdl
+# Compile Entity "config00"
+# Error: VLM_0030: config00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "config0" of Entity "config00"
+# Error: COMP96_0056: config00.vhdl : (21, 1): Cannot find referenced entity declaration "config00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/contconfig00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\contconfig00.vhdl
+# Compile Entity "contconfig00"
+# Error: VLM_0030: contconfig00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "contconfig0" of Entity "contconfig00"
+# Error: COMP96_0056: contconfig00.vhdl : (18, 1): Cannot find referenced entity declaration "contconfig00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/contread00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\contread00.vhdl
+# Compile Entity "contread00"
+# Error: VLM_0030: contread00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "contread0" of Entity "contread00"
+# Error: COMP96_0056: contread00.vhdl : (23, 1): Cannot find referenced entity declaration "contread00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/ram00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\ram00.vhdl
+# Compile Entity "ram00"
+# Error: VLM_0030: ram00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "ram0" of Entity "ram00"
+# Error: COMP96_0056: ram00.vhdl : (28, 1): Cannot find referenced entity declaration "ram00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/coder00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\coder00.vhdl
+# Compile Entity "coder00"
+# Error: VLM_0030: coder00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "coder0" of Entity "coder00"
+# Error: COMP96_0056: coder00.vhdl : (22, 1): Cannot find referenced entity declaration "coder00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/contring00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\contring00.vhdl
+# Compile Entity "contring00"
+# Error: VLM_0030: contring00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "contring0" of Entity "contring00"
+# Error: COMP96_0056: contring00.vhdl : (17, 1): Cannot find referenced entity declaration "contring00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/topkey00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\topkey00.vhdl
+# Compile Entity "topkey00"
+# Error: COMP96_0078: topkey00.vhdl : (5, 5): Unknown identifier "packagekey00".
+# Error: VLM_0030: topkey00.vhdl : (7, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "topkey0" of Entity "topkey00"
+# Error: COMP96_0056: topkey00.vhdl : (22, 1): Cannot find referenced entity declaration "topkey00".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/div00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\div00.vhdl
+# Compile Entity "div00"
+# Error: VLM_0030: div00.vhdl : (6, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "div0" of Entity "div00"
+# Error: COMP96_0056: div00.vhdl : (18, 1): Cannot find referenced entity declaration "div00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/osc00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\osc00.vhdl
+# Compile Entity "osc00"
+# Error: VLM_0030: osc00.vhdl : (4, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "osc0" of Entity "osc00"
+# Error: COMP96_0056: osc00.vhdl : (13, 1): Cannot find referenced entity declaration "osc00".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+vcom -dbg -work work {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/toplcdram00.vhdl}
+# Compile...
+# File: C:\Users\MiguelAngel\Documents\ESCOM\5to Semestre\Arquitectura\Proyectos\LCDRAM\toplcdram00.vhdl
+# Compile Entity "toplcdram00"
+# Error: COMP96_0078: toplcdram00.vhdl : (5, 5): Unknown identifier "packagelcdram00".
+# Error: VLM_0030: toplcdram00.vhdl : (7, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "toplcdram0" of Entity "toplcdram00"
+# Error: COMP96_0056: toplcdram00.vhdl : (35, 1): Cannot find referenced entity declaration "toplcdram00".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+entity toplcdram00
+# Cannot select this entity.
+vsim +access +r toplcdram00 -PL pmi_work -L ovi_machxo2
+# Error: vsim: cannot select specified top-level
+add wave *
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+# Error: Simulation not initialized.
+#     while executing
+# "error "Simulation not initialized.""
+#     (procedure "run" line 6)
+#     invoked from within
+# "run 1000ns"
+#     (file "C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/ASD/ASD.ado" line 50)
+#     invoked from within
+# "source {C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/ASD/ASD.ado}"
+#     invoked from within
+# "interp eval $slave "source $source_file""

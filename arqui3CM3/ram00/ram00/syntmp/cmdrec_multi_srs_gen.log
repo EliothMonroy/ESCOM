@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  topram00  -multisrs  C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synwork\ram00_ram00_comp.srs  -osyn  C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synwork\ram00_ram00_mult.srs  -log  C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synlog\ram00_ram00_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synwork\ram00_ram00_comp.srs|io:i|time:1507950531|size:15054|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synwork\ram00_ram00_mult.srs|io:o|time:1507950533|size:4669|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\synlog\ram00_ram00_multi_srs_gen.srr|io:o|time:1507950533|size:520|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1489043252|size:3128320|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1489043520|size:3947520|exec:1

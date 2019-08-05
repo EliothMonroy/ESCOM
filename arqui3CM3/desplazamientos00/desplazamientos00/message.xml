@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/DO1/un2_sdiv_s_21_0_COUT</Dynamic>
+            <Navigation>W00/DO1/un2_sdiv_s_21_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/DO1/un2_sdiv_s_21_0_S1</Dynamic>
+            <Navigation>W00/DO1/un2_sdiv_s_21_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/DO1/un2_sdiv_cry_0_0_S0</Dynamic>
+            <Navigation>W00/DO1/un2_sdiv_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>W00/D00/OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>W00/D00/OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD276 :&quot;C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd&quot;:2297:8:2297:15|Map for port sedstdby of component osch not found</Dynamic>
+            <Navigation>CD276</Navigation>
+            <Navigation>C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Map for port sedstdby of component osch not found</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\eliot\documents\github\arqui3cm3\desplazamientos00\desplazamientos00\source\div00.vhdl&quot;:21:2:21:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including W00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\eliot\documents\github\arqui3cm3\desplazamientos00\desplazamientos00\source\div00.vhdl</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including W00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:W00.D00.osc_int&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:W00.D00.osc_int&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

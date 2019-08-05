@@ -1,0 +1,70 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|topmult4bit00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\mult4bits00\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\and00.vhdl":1505491035
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\or00.vhdl":1505491076
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\packageha00.vhdl":1505491693
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\xor00.vhdl":1505491608
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\ha00.vhdl":1505491255
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\packagefa00.vhdl":1505491791
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\fa00.vhdl":1505491815
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\packagemult4bit00.vhdl":1505491868
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\mult4bits00\\topmult4bit00.vhdl":1506179809
+0 "C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\and00.vhdl" vhdl
+2 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\or00.vhdl" vhdl
+3 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\packageha00.vhdl" vhdl
+4 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\xor00.vhdl" vhdl
+5 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\ha00.vhdl" vhdl
+6 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\packagefa00.vhdl" vhdl
+7 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\fa00.vhdl" vhdl
+8 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\packagemult4bit00.vhdl" vhdl
+9 "C:\Users\eliot\Documents\Github\arqui3CM3\mult4bits00\topmult4bit00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 0 
+3 -1
+4 0 
+5 1 4 3 
+6 0 
+7 5 2 0 6 
+8 0 
+9 1 7 8 
+
+# Dependency Lists (Users Of)
+0 8 7 6 4 2 1 
+1 9 5 
+2 7 
+3 5 
+4 5 
+5 7 
+6 7 
+7 9 
+8 9 
+9 -1
+
+# Design Unit to File Association
+arch work and00 and0 1
+module work and00 1
+arch work or00 or0 2
+module work or00 2
+arch work xor00 xor0 4
+module work xor00 4
+arch work ha00 ha0 5
+module work ha00 5
+arch work fa00 fa0 7
+module work fa00 7
+arch work topmult4bit00 topmult4bit0 9
+module work topmult4bit00 9

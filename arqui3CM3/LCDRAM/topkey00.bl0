@@ -1,0 +1,584 @@
+#$ DATE Wed May 18 21:48:45 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE topkey00
+#$ PINS 24 out7segk_3_ out7segk_2_ inkeyk_3_ out7segk_1_ out7segk_0_ outcontk_3_ outrk_2_ outrk_1_ out7segk_7_ outrk_0_ outrk_3_ clkk resetk inFlagk outFlagk inkeyk_2_ inkeyk_1_ inkeyk_0_ outcontk_2_ outcontk_1_ outcontk_0_ out7segk_6_ out7segk_5_ out7segk_4_
+#$ NODES 199 vcc_n_n K01_sring_3_ K02_aux01 K02_aux02 K02_aux03 K02_aux04 k02_n_6_n k02_outcontce_n k02_n_114_n k02_n_116_n \
+#  k02_n_118_n k02_n_46_n k02_n_52_n k02_n_65_n k02_n_70_n k02_n_72_n k02_n_74_n k02_n_76_n k02_n_78_n k02_n_79_n \
+#  k02_n_80_n k02_n_82_n k02_n_87_n k02_n_88_n k02_n_95_n K02_un1_outFlago_0_sqmuxa_3_i_x3 k02_n_112_n K02_outcontc_n1 K02_outcontc_n2 K02_outcontc_n3 \
+#  k02_n_28_n k02_n_29_n k02_n_27_n k02_n_26_n k02_n_25_n k02_outcontc_c1_n k02_n_47_n k02_n_48_n k02_n_49_n k02_n_50_n \
+#  k02_n_51_n k02_n_53_n k02_n_63_n k02_n_64_n k02_n_69_n k02_n_44_n k02_n_71_n k02_n_128_n k02_n_7_n k02_n_96_n \
+#  k02_n_60_n k02_n_61_n k02_n_92_n k02_n_62_n k02_n_73_n k02_n_45_n k02_n_75_n k02_n_127_n k02_n_77_n k02_n_89_n \
+#  k02_n_93_n k02_n_94_n k02_n_81_n inFlagk_i outrk_i_3__n outrk_i_2__n inkeyk_i_2__n inkeyk_i_3__n k02_aux01_i_n k02_aux02_i_n \
+#  outrk_i_1__n outrk_i_0__n k02_aux03_i_n k02_aux04_i_n inkeyk_i_1__n clkk_c resetk_c inkeyk_c_0__n inkeyk_c_1__n inkeyk_c_2__n \
+#  inkeyk_c_3__n inFlagk_c K02_outcontc_0_reg K02_outcontc_1_reg K02_outcontc_2_reg K02_outcontc_3_reg K02_out7segc_1_0_reg K02_out7segc_1_1_reg K02_out7segc_1_2_reg K02_out7segc_1_3_reg \
+#  K02_out7segc_1_4_reg K02_out7segc_1_5_reg K02_out7segc_1_7_reg K01_outr_0_reg K01_outr_1_reg K01_outr_2_reg K01_outr_3_reg K02_outFlagoreg k02_n_62_i_n k02_n_68_0_n \
+#  k02_n_61_i_n k02_n_60_i_n k02_n_96_i_n k02_n_95_i_n k02_n_81_i_n k02_n_79_i_n k02_n_80_i_n k02_n_78_i_n k02_n_45_0_n k02_n_127_0_n \
+#  k02_n_126_i_n k02_n_123_i_n k02_n_94_i_n k02_n_93_i_n k02_n_122_i_n k02_n_121_i_n k02_n_120_i_n k02_n_118_i_n k02_n_89_i_n k02_n_117_i_n \
+#  k02_n_116_i_n inkeyk_c_i_0__n k02_n_114_i_n k02_outcontce_0_n k02_n_77_i_n k02_n_13_0_n k02_n_75_i_n k02_n_76_i_n k02_n_73_i_n k02_n_74_i_n \
+#  k02_out7segc_28_0_4__n k02_n_47_i_n k02_n_46_i_n k02_out7segc_28_0_1__n k02_n_49_i_n k02_n_48_i_n k02_out7segc_28_0_0__n k02_n_53_i_n k02_n_52_i_n k02_n_51_i_n \
+#  k02_n_50_i_n k01_n_1_i_n k02_n_86_0_n k02_n_64_i_n k02_n_65_i_n k02_n_63_i_n k02_n_44_0_n k02_n_128_0_n k02_n_125_i_n k02_n_124_i_n \
+#  k02_n_71_i_n k02_n_72_i_n k02_n_69_i_n k02_n_70_i_n outcontk_c_i_1__n k02_n_25_0_n outcontk_c_i_2__n k02_n_27_0_n outcontk_c_i_3__n k02_n_29_0_n \
+#  k02_n_82_i_n k02_n_87_i_n k02_n_88_i_n k02_n_6_0_n k02_n_28_1_n k02_n_86_0_1_n k02_n_86_0_2_n k02_out7segc_28_0_1_0__n k02_out7segc_28_0_2_0__n k02_out7segc_28_0_3_0__n \
+#  k02_out7segc_28_0_1_1__n k02_out7segc_28_0_1_4__n k02_out7segc_28_0_2_4__n k02_n_117_i_1_n k02_n_117_i_2_n k02_n_96_i_1_n k02_n_96_i_2_n k02_n_96_i_3_n k02_n_96_i_4_n k02_n_96_i_5_n \
+#  k02_n_96_i_6_n k02_n_68_0_1_n k02_n_68_0_2_n k02_n_68_0_3_n k02_n_81_1_n k02_n_6_0_1_n k02_n_80_1_n k02_n_79_1_n k02_n_78_1_n k02_n_76_1_n \
+#  k02_n_74_1_n k02_n_72_1_n k02_n_70_1_n k02_n_65_1_n k02_n_52_1_n k02_n_46_1_n k02_outflago_0_un3_n k02_outflago_0_un1_n k02_outflago_0_un0_n 
+.model topkey00
+.inputs inkeyk_3_.BLIF clkk.BLIF resetk.BLIF inFlagk.BLIF inkeyk_2_.BLIF inkeyk_1_.BLIF inkeyk_0_.BLIF vcc_n_n.BLIF K01_sring_3_.BLIF \
+  K02_aux01.BLIF K02_aux02.BLIF K02_aux03.BLIF K02_aux04.BLIF k02_n_6_n.BLIF k02_outcontce_n.BLIF k02_n_114_n.BLIF k02_n_116_n.BLIF k02_n_118_n.BLIF \
+  k02_n_46_n.BLIF k02_n_52_n.BLIF k02_n_65_n.BLIF k02_n_70_n.BLIF k02_n_72_n.BLIF k02_n_74_n.BLIF k02_n_76_n.BLIF k02_n_78_n.BLIF k02_n_79_n.BLIF \
+  k02_n_80_n.BLIF k02_n_82_n.BLIF k02_n_87_n.BLIF k02_n_88_n.BLIF k02_n_95_n.BLIF K02_un1_outFlago_0_sqmuxa_3_i_x3.BLIF k02_n_112_n.BLIF K02_outcontc_n1.BLIF K02_outcontc_n2.BLIF \
+  K02_outcontc_n3.BLIF k02_n_28_n.BLIF k02_n_29_n.BLIF k02_n_27_n.BLIF k02_n_26_n.BLIF k02_n_25_n.BLIF k02_outcontc_c1_n.BLIF k02_n_47_n.BLIF k02_n_48_n.BLIF \
+  k02_n_49_n.BLIF k02_n_50_n.BLIF k02_n_51_n.BLIF k02_n_53_n.BLIF k02_n_63_n.BLIF k02_n_64_n.BLIF k02_n_69_n.BLIF k02_n_44_n.BLIF k02_n_71_n.BLIF \
+  k02_n_128_n.BLIF k02_n_7_n.BLIF k02_n_96_n.BLIF k02_n_60_n.BLIF k02_n_61_n.BLIF k02_n_92_n.BLIF k02_n_62_n.BLIF k02_n_73_n.BLIF k02_n_45_n.BLIF \
+  k02_n_75_n.BLIF k02_n_127_n.BLIF k02_n_77_n.BLIF k02_n_89_n.BLIF k02_n_93_n.BLIF k02_n_94_n.BLIF k02_n_81_n.BLIF inFlagk_i.BLIF outrk_i_3__n.BLIF \
+  outrk_i_2__n.BLIF inkeyk_i_2__n.BLIF inkeyk_i_3__n.BLIF k02_aux01_i_n.BLIF k02_aux02_i_n.BLIF outrk_i_1__n.BLIF outrk_i_0__n.BLIF k02_aux03_i_n.BLIF k02_aux04_i_n.BLIF \
+  inkeyk_i_1__n.BLIF clkk_c.BLIF resetk_c.BLIF inkeyk_c_0__n.BLIF inkeyk_c_1__n.BLIF inkeyk_c_2__n.BLIF inkeyk_c_3__n.BLIF inFlagk_c.BLIF K02_outcontc_0_reg.BLIF \
+  K02_outcontc_1_reg.BLIF K02_outcontc_2_reg.BLIF K02_outcontc_3_reg.BLIF K02_out7segc_1_0_reg.BLIF K02_out7segc_1_1_reg.BLIF K02_out7segc_1_2_reg.BLIF K02_out7segc_1_3_reg.BLIF K02_out7segc_1_4_reg.BLIF K02_out7segc_1_5_reg.BLIF \
+  K02_out7segc_1_7_reg.BLIF K01_outr_0_reg.BLIF K01_outr_1_reg.BLIF K01_outr_2_reg.BLIF K01_outr_3_reg.BLIF K02_outFlagoreg.BLIF k02_n_62_i_n.BLIF k02_n_68_0_n.BLIF k02_n_61_i_n.BLIF \
+  k02_n_60_i_n.BLIF k02_n_96_i_n.BLIF k02_n_95_i_n.BLIF k02_n_81_i_n.BLIF k02_n_79_i_n.BLIF k02_n_80_i_n.BLIF k02_n_78_i_n.BLIF k02_n_45_0_n.BLIF k02_n_127_0_n.BLIF \
+  k02_n_126_i_n.BLIF k02_n_123_i_n.BLIF k02_n_94_i_n.BLIF k02_n_93_i_n.BLIF k02_n_122_i_n.BLIF k02_n_121_i_n.BLIF k02_n_120_i_n.BLIF k02_n_118_i_n.BLIF k02_n_89_i_n.BLIF \
+  k02_n_117_i_n.BLIF k02_n_116_i_n.BLIF inkeyk_c_i_0__n.BLIF k02_n_114_i_n.BLIF k02_outcontce_0_n.BLIF k02_n_77_i_n.BLIF k02_n_13_0_n.BLIF k02_n_75_i_n.BLIF k02_n_76_i_n.BLIF \
+  k02_n_73_i_n.BLIF k02_n_74_i_n.BLIF k02_out7segc_28_0_4__n.BLIF k02_n_47_i_n.BLIF k02_n_46_i_n.BLIF k02_out7segc_28_0_1__n.BLIF k02_n_49_i_n.BLIF k02_n_48_i_n.BLIF k02_out7segc_28_0_0__n.BLIF \
+  k02_n_53_i_n.BLIF k02_n_52_i_n.BLIF k02_n_51_i_n.BLIF k02_n_50_i_n.BLIF k01_n_1_i_n.BLIF k02_n_86_0_n.BLIF k02_n_64_i_n.BLIF k02_n_65_i_n.BLIF k02_n_63_i_n.BLIF \
+  k02_n_44_0_n.BLIF k02_n_128_0_n.BLIF k02_n_125_i_n.BLIF k02_n_124_i_n.BLIF k02_n_71_i_n.BLIF k02_n_72_i_n.BLIF k02_n_69_i_n.BLIF k02_n_70_i_n.BLIF outcontk_c_i_1__n.BLIF \
+  k02_n_25_0_n.BLIF outcontk_c_i_2__n.BLIF k02_n_27_0_n.BLIF outcontk_c_i_3__n.BLIF k02_n_29_0_n.BLIF k02_n_82_i_n.BLIF k02_n_87_i_n.BLIF k02_n_88_i_n.BLIF k02_n_6_0_n.BLIF \
+  k02_n_28_1_n.BLIF k02_n_86_0_1_n.BLIF k02_n_86_0_2_n.BLIF k02_out7segc_28_0_1_0__n.BLIF k02_out7segc_28_0_2_0__n.BLIF k02_out7segc_28_0_3_0__n.BLIF k02_out7segc_28_0_1_1__n.BLIF k02_out7segc_28_0_1_4__n.BLIF k02_out7segc_28_0_2_4__n.BLIF \
+  k02_n_117_i_1_n.BLIF k02_n_117_i_2_n.BLIF k02_n_96_i_1_n.BLIF k02_n_96_i_2_n.BLIF k02_n_96_i_3_n.BLIF k02_n_96_i_4_n.BLIF k02_n_96_i_5_n.BLIF k02_n_96_i_6_n.BLIF k02_n_68_0_1_n.BLIF \
+  k02_n_68_0_2_n.BLIF k02_n_68_0_3_n.BLIF k02_n_81_1_n.BLIF k02_n_6_0_1_n.BLIF k02_n_80_1_n.BLIF k02_n_79_1_n.BLIF k02_n_78_1_n.BLIF k02_n_76_1_n.BLIF k02_n_74_1_n.BLIF \
+  k02_n_72_1_n.BLIF k02_n_70_1_n.BLIF k02_n_65_1_n.BLIF k02_n_52_1_n.BLIF k02_n_46_1_n.BLIF k02_outflago_0_un3_n.BLIF k02_outflago_0_un1_n.BLIF k02_outflago_0_un0_n.BLIF  
+.outputs outcontk_3_ out7segk_7_ outrk_3_ outFlagk outcontk_2_ outcontk_1_ outcontk_0_ out7segk_6_ out7segk_5_ out7segk_4_ out7segk_3_ \
+  out7segk_2_ out7segk_1_ out7segk_0_ outrk_2_ outrk_1_ outrk_0_ K02_outcontc_2_reg.D K02_outcontc_2_reg.CE K02_outcontc_2_reg.C K02_outcontc_3_reg.D K02_outcontc_3_reg.CE \
+  K02_outcontc_3_reg.C K02_out7segc_1_0_reg.D K02_out7segc_1_0_reg.CE K02_out7segc_1_0_reg.C K02_out7segc_1_1_reg.D K02_out7segc_1_1_reg.CE K02_out7segc_1_1_reg.C K02_out7segc_1_2_reg.D K02_out7segc_1_2_reg.CE K02_out7segc_1_2_reg.C K02_out7segc_1_3_reg.D \
+  K02_out7segc_1_3_reg.CE K02_out7segc_1_3_reg.C K02_out7segc_1_4_reg.D K02_out7segc_1_4_reg.CE K02_out7segc_1_4_reg.C K02_out7segc_1_5_reg.D K02_out7segc_1_5_reg.CE K02_out7segc_1_5_reg.C K02_outcontc_0_reg.D K02_outcontc_0_reg.CE K02_outcontc_0_reg.C \
+  K02_outcontc_1_reg.D K02_outcontc_1_reg.CE K02_outcontc_1_reg.C K02_out7segc_1_7_reg.D K02_out7segc_1_7_reg.C K02_outFlagoreg.D K02_outFlagoreg.C K02_aux04.D K02_aux04.CE K02_aux04.C K02_aux03.D \
+  K02_aux03.CE K02_aux03.C K02_aux02.D K02_aux02.CE K02_aux02.C K02_aux01.D K02_aux01.CE K02_aux01.C K01_sring_3_.D K01_sring_3_.C K01_outr_0_reg.D \
+  K01_outr_0_reg.C K01_outr_1_reg.D K01_outr_1_reg.C K01_outr_2_reg.D K01_outr_2_reg.C K01_outr_3_reg.D K01_outr_3_reg.C K02_un1_outFlago_0_sqmuxa_3_i_x3.X1 K02_un1_outFlago_0_sqmuxa_3_i_x3.X2 K02_outcontc_n3.X1 K02_outcontc_n3.X2 \
+  K02_outcontc_n2.X1 K02_outcontc_n2.X2 K02_outcontc_n1.X1 K02_outcontc_n1.X2 vcc_n_n k02_n_6_n k02_outcontce_n k02_n_114_n k02_n_116_n k02_n_118_n k02_n_46_n \
+  k02_n_52_n k02_n_65_n k02_n_70_n k02_n_72_n k02_n_74_n k02_n_76_n k02_n_78_n k02_n_79_n k02_n_80_n k02_n_82_n k02_n_87_n \
+  k02_n_88_n k02_n_95_n k02_n_112_n k02_n_28_n k02_n_29_n k02_n_27_n k02_n_26_n k02_n_25_n k02_outcontc_c1_n k02_n_47_n k02_n_48_n \
+  k02_n_49_n k02_n_50_n k02_n_51_n k02_n_53_n k02_n_63_n k02_n_64_n k02_n_69_n k02_n_44_n k02_n_71_n k02_n_128_n k02_n_7_n \
+  k02_n_96_n k02_n_60_n k02_n_61_n k02_n_92_n k02_n_62_n k02_n_73_n k02_n_45_n k02_n_75_n k02_n_127_n k02_n_77_n k02_n_89_n \
+  k02_n_93_n k02_n_94_n k02_n_81_n inFlagk_i outrk_i_3__n outrk_i_2__n inkeyk_i_2__n inkeyk_i_3__n k02_aux01_i_n k02_aux02_i_n outrk_i_1__n \
+  outrk_i_0__n k02_aux03_i_n k02_aux04_i_n inkeyk_i_1__n clkk_c resetk_c inkeyk_c_0__n inkeyk_c_1__n inkeyk_c_2__n inkeyk_c_3__n inFlagk_c \
+  k02_n_62_i_n k02_n_68_0_n k02_n_61_i_n k02_n_60_i_n k02_n_96_i_n k02_n_95_i_n k02_n_81_i_n k02_n_79_i_n k02_n_80_i_n k02_n_78_i_n k02_n_45_0_n \
+  k02_n_127_0_n k02_n_126_i_n k02_n_123_i_n k02_n_94_i_n k02_n_93_i_n k02_n_122_i_n k02_n_121_i_n k02_n_120_i_n k02_n_118_i_n k02_n_89_i_n k02_n_117_i_n \
+  k02_n_116_i_n inkeyk_c_i_0__n k02_n_114_i_n k02_outcontce_0_n k02_n_77_i_n k02_n_13_0_n k02_n_75_i_n k02_n_76_i_n k02_n_73_i_n k02_n_74_i_n k02_out7segc_28_0_4__n \
+  k02_n_47_i_n k02_n_46_i_n k02_out7segc_28_0_1__n k02_n_49_i_n k02_n_48_i_n k02_out7segc_28_0_0__n k02_n_53_i_n k02_n_52_i_n k02_n_51_i_n k02_n_50_i_n k01_n_1_i_n \
+  k02_n_86_0_n k02_n_64_i_n k02_n_65_i_n k02_n_63_i_n k02_n_44_0_n k02_n_128_0_n k02_n_125_i_n k02_n_124_i_n k02_n_71_i_n k02_n_72_i_n k02_n_69_i_n \
+  k02_n_70_i_n outcontk_c_i_1__n k02_n_25_0_n outcontk_c_i_2__n k02_n_27_0_n outcontk_c_i_3__n k02_n_29_0_n k02_n_82_i_n k02_n_87_i_n k02_n_88_i_n k02_n_6_0_n \
+  k02_n_28_1_n k02_n_86_0_1_n k02_n_86_0_2_n k02_out7segc_28_0_1_0__n k02_out7segc_28_0_2_0__n k02_out7segc_28_0_3_0__n k02_out7segc_28_0_1_1__n k02_out7segc_28_0_1_4__n k02_out7segc_28_0_2_4__n k02_n_117_i_1_n k02_n_117_i_2_n \
+  k02_n_96_i_1_n k02_n_96_i_2_n k02_n_96_i_3_n k02_n_96_i_4_n k02_n_96_i_5_n k02_n_96_i_6_n k02_n_68_0_1_n k02_n_68_0_2_n k02_n_68_0_3_n k02_n_81_1_n k02_n_6_0_1_n \
+  k02_n_80_1_n k02_n_79_1_n k02_n_78_1_n k02_n_76_1_n k02_n_74_1_n k02_n_72_1_n k02_n_70_1_n k02_n_65_1_n k02_n_52_1_n k02_n_46_1_n k02_outflago_0_un3_n \
+  k02_outflago_0_un1_n k02_outflago_0_un0_n
+.names  k02_outcontce_n.BLIF K02_outcontc_2_reg.CE
+1 1
+.names  clkk_c.BLIF K02_outcontc_2_reg.C
+1 1
+.names  k02_outcontce_n.BLIF K02_outcontc_3_reg.CE
+1 1
+.names  clkk_c.BLIF K02_outcontc_3_reg.C
+1 1
+.names  k02_outcontce_n.BLIF K02_out7segc_1_0_reg.CE
+1 1
+.names  clkk_c.BLIF K02_out7segc_1_0_reg.C
+1 1
+.names  k02_outcontce_n.BLIF K02_out7segc_1_1_reg.CE
+1 1
+.names  clkk_c.BLIF K02_out7segc_1_1_reg.C
+1 1
+.names  k02_outcontce_n.BLIF K02_out7segc_1_2_reg.CE
+1 1
+.names  clkk.BLIF clkk_c
+1 1
+.names  clkk_c.BLIF K02_out7segc_1_2_reg.C
+1 1
+.names  resetk.BLIF resetk_c
+1 1
+.names  inkeyk_0_.BLIF inkeyk_c_0__n
+1 1
+.names  inkeyk_1_.BLIF inkeyk_c_1__n
+1 1
+.names  inkeyk_2_.BLIF inkeyk_c_2__n
+1 1
+.names  k02_outcontce_n.BLIF K02_out7segc_1_3_reg.CE
+1 1
+.names  inkeyk_3_.BLIF inkeyk_c_3__n
+1 1
+.names  inFlagk.BLIF inFlagk_c
+1 1
+.names  clkk_c.BLIF K02_out7segc_1_3_reg.C
+1 1
+.names  K02_outcontc_0_reg.BLIF outcontk_0_
+1 1
+.names  K02_outcontc_1_reg.BLIF outcontk_1_
+1 1
+.names  K02_outcontc_2_reg.BLIF outcontk_2_
+1 1
+.names  K02_outcontc_3_reg.BLIF outcontk_3_
+1 1
+.names  k02_outcontce_n.BLIF K02_out7segc_1_4_reg.CE
+1 1
+.names  K02_out7segc_1_0_reg.BLIF out7segk_0_
+1 1
+.names  K02_out7segc_1_1_reg.BLIF out7segk_1_
+1 1
+.names  clkk_c.BLIF K02_out7segc_1_4_reg.C
+1 1
+.names  K02_out7segc_1_2_reg.BLIF out7segk_2_
+1 1
+.names  K02_out7segc_1_3_reg.BLIF out7segk_3_
+1 1
+.names  K02_out7segc_1_4_reg.BLIF out7segk_4_
+1 1
+.names  K02_out7segc_1_5_reg.BLIF out7segk_5_
+1 1
+.names  k02_outcontce_n.BLIF K02_out7segc_1_5_reg.CE
+1 1
+.names  vcc_n_n.BLIF out7segk_6_
+1 1
+.names  K02_out7segc_1_7_reg.BLIF out7segk_7_
+1 1
+.names  clkk_c.BLIF K02_out7segc_1_5_reg.C
+1 1
+.names  K01_outr_0_reg.BLIF outrk_0_
+1 1
+.names  K01_outr_1_reg.BLIF outrk_1_
+1 1
+.names  K01_outr_2_reg.BLIF outrk_2_
+1 1
+.names  K01_outr_3_reg.BLIF outrk_3_
+1 1
+.names  k02_outcontce_n.BLIF K02_outcontc_0_reg.CE
+1 1
+.names  K02_outFlagoreg.BLIF outFlagk
+1 1
+.names  k02_n_114_i_n.BLIF outrk_i_0__n.BLIF k02_n_65_1_n
+11 1
+.names  clkk_c.BLIF K02_outcontc_0_reg.C
+1 1
+.names  k02_n_65_1_n.BLIF outrk_i_1__n.BLIF k02_n_65_n
+11 1
+.names  inkeyk_i_1__n.BLIF inkeyk_i_2__n.BLIF k02_n_52_1_n
+11 1
+.names  k02_n_52_1_n.BLIF K01_outr_3_reg.BLIF k02_n_52_n
+11 1
+.names  k02_n_114_n.BLIF outrk_i_1__n.BLIF k02_n_46_1_n
+11 1
+.names  k02_outcontce_n.BLIF K02_outcontc_1_reg.CE
+1 1
+.names  k02_n_46_1_n.BLIF outrk_i_3__n.BLIF k02_n_46_n
+11 1
+.names  k02_n_6_0_1_n.BLIF k02_n_122_i_n.BLIF k02_n_6_0_n
+11 1
+.names  clkk_c.BLIF K02_outcontc_1_reg.C
+1 1
+.names  K02_aux01.BLIF inFlagk_i.BLIF k02_n_80_1_n
+11 1
+.names  k02_n_80_1_n.BLIF K01_outr_3_reg.BLIF k02_n_80_n
+11 1
+.names  K02_aux03.BLIF inFlagk_i.BLIF k02_n_79_1_n
+11 1
+.names  k02_n_79_1_n.BLIF K01_outr_1_reg.BLIF k02_n_79_n
+11 1
+.names  clkk_c.BLIF K02_out7segc_1_7_reg.C
+1 1
+.names  K02_aux04.BLIF inFlagk_i.BLIF k02_n_78_1_n
+11 1
+.names  k02_n_78_1_n.BLIF K01_outr_0_reg.BLIF k02_n_78_n
+11 1
+.names  k02_n_95_n.BLIF k02_n_118_i_n.BLIF k02_n_76_1_n
+11 1
+.names  k02_n_76_1_n.BLIF k02_n_126_i_n.BLIF k02_n_76_n
+11 1
+.names  clkk_c.BLIF K02_outFlagoreg.C
+1 1
+.names  k02_n_95_n.BLIF k02_n_116_i_n.BLIF k02_n_74_1_n
+11 1
+.names  k02_n_74_1_n.BLIF k02_n_123_i_n.BLIF k02_n_74_n
+11 1
+.names  k02_n_95_n.BLIF k02_n_116_i_n.BLIF k02_n_72_1_n
+11 1
+.names  k02_n_72_1_n.BLIF k02_n_125_i_n.BLIF k02_n_72_n
+11 1
+.names  resetk_c.BLIF K02_aux04.CE
+1 1
+.names  k02_n_95_n.BLIF k02_n_118_i_n.BLIF k02_n_70_1_n
+11 1
+.names  k02_n_70_1_n.BLIF k02_n_124_i_n.BLIF k02_n_70_n
+11 1
+.names  clkk_c.BLIF K02_aux04.C
+1 1
+.names  k02_n_117_i_1_n.BLIF k02_n_117_i_2_n.BLIF k02_n_117_i_n
+11 1
+.names  K02_un1_outFlago_0_sqmuxa_3_i_x3.BLIF k02_n_78_i_n.BLIF k02_n_96_i_1_n
+11 1
+.names  k02_n_79_i_n.BLIF k02_n_80_i_n.BLIF k02_n_96_i_2_n
+11 1
+.names  k02_n_81_i_n.BLIF k02_n_95_i_n.BLIF k02_n_96_i_3_n
+11 1
+.names  resetk_c.BLIF K02_aux03.CE
+1 1
+.names  k02_n_117_i_n.BLIF k02_n_122_i_n.BLIF k02_n_96_i_4_n
+11 1
+.names  k02_n_96_i_1_n.BLIF k02_n_96_i_2_n.BLIF k02_n_96_i_5_n
+11 1
+.names  clkk_c.BLIF K02_aux03.C
+1 1
+.names  k02_n_96_i_3_n.BLIF k02_n_96_i_4_n.BLIF k02_n_96_i_6_n
+11 1
+.names  k02_n_96_i_5_n.BLIF k02_n_96_i_6_n.BLIF k02_n_96_i_n
+11 1
+.names  k02_n_60_i_n.BLIF k02_n_61_i_n.BLIF k02_n_68_0_1_n
+11 1
+.names  k02_n_62_i_n.BLIF outrk_i_0__n.BLIF k02_n_68_0_2_n
+11 1
+.names  resetk_c.BLIF K02_aux02.CE
+1 1
+.names  k02_n_68_0_1_n.BLIF k02_n_68_0_2_n.BLIF k02_n_68_0_3_n
+11 1
+.names  k02_n_68_0_3_n.BLIF resetk_c.BLIF k02_n_68_0_n
+11 1
+.names  clkk_c.BLIF K02_aux02.C
+1 1
+.names  k02_n_123_i_n.BLIF K02_aux02.BLIF k02_n_81_1_n
+11 1
+.names  k02_n_81_1_n.BLIF inFlagk_i.BLIF k02_n_81_n
+11 1
+.names  K02_un1_outFlago_0_sqmuxa_3_i_x3.BLIF k02_n_117_i_n.BLIF k02_n_6_0_1_n
+11 1
+.names  k02_n_28_1_n.BLIF resetk_c.BLIF k02_n_28_n
+11 1
+.names  resetk_c.BLIF K02_aux01.CE
+1 1
+.names  k02_n_63_i_n.BLIF k02_n_64_i_n.BLIF k02_n_86_0_1_n
+11 1
+.names  k02_n_65_i_n.BLIF resetk_c.BLIF k02_n_86_0_2_n
+11 1
+.names  clkk_c.BLIF K02_aux01.C
+1 1
+.names  k02_n_86_0_1_n.BLIF k02_n_86_0_2_n.BLIF k02_n_86_0_n
+11 1
+.names  k02_n_53_i_n.BLIF k01_n_1_i_n.BLIF k02_out7segc_28_0_1_0__n
+11 1
+.names  k02_n_50_i_n.BLIF k02_n_51_i_n.BLIF k02_out7segc_28_0_2_0__n
+11 1
+.names  k02_out7segc_28_0_1_0__n.BLIF k02_out7segc_28_0_2_0__n.BLIF k02_out7segc_28_0_3_0__n
+11 1
+.names  clkk_c.BLIF K01_sring_3_.C
+1 1
+.names  k02_out7segc_28_0_3_0__n.BLIF k02_n_52_i_n.BLIF k02_out7segc_28_0_0__n
+11 1
+.names  k02_n_49_i_n.BLIF k01_n_1_i_n.BLIF k02_out7segc_28_0_1_1__n
+11 1
+.names  k02_out7segc_28_0_1_1__n.BLIF k02_n_48_i_n.BLIF k02_out7segc_28_0_1__n
+11 1
+.names  k02_n_46_i_n.BLIF k02_n_47_i_n.BLIF k02_out7segc_28_0_1_4__n
+11 1
+.names  clkk_c.BLIF K01_outr_0_reg.C
+1 1
+.names  outrk_i_0__n.BLIF resetk_c.BLIF k02_out7segc_28_0_2_4__n
+11 1
+.names  k02_out7segc_28_0_1_4__n.BLIF k02_out7segc_28_0_2_4__n.BLIF k02_out7segc_28_0_4__n
+11 1
+.names  k02_n_82_i_n.BLIF k02_n_87_i_n.BLIF k02_n_117_i_1_n
+11 1
+.names  k02_n_88_i_n.BLIF k02_n_89_i_n.BLIF k02_n_117_i_2_n
+11 1
+.names  clkk_c.BLIF K01_outr_1_reg.C
+1 1
+.names  k02_n_71_n.BLIF k02_n_71_i_n
+0 1
+.names  k02_n_72_n.BLIF k02_n_72_i_n
+0 1
+.names  k02_n_69_n.BLIF k02_n_69_i_n
+0 1
+.names  k02_n_70_n.BLIF k02_n_70_i_n
+0 1
+.names  clkk_c.BLIF K01_outr_2_reg.C
+1 1
+.names  K02_outcontc_1_reg.BLIF outcontk_c_i_1__n
+0 1
+.names  k02_n_25_0_n.BLIF k02_n_25_n
+0 1
+.names  K02_outcontc_2_reg.BLIF outcontk_c_i_2__n
+0 1
+.names  k02_n_27_0_n.BLIF k02_n_27_n
+0 1
+.names  clkk_c.BLIF K01_outr_3_reg.C
+1 1
+.names  K02_outcontc_3_reg.BLIF outcontk_c_i_3__n
+0 1
+.names  k02_n_29_0_n.BLIF k02_n_29_n
+0 1
+.names  k02_n_82_n.BLIF k02_n_82_i_n
+0 1
+.names  k02_n_116_n.BLIF K02_un1_outFlago_0_sqmuxa_3_i_x3.X1
+1 1
+.names  k02_n_87_n.BLIF k02_n_87_i_n
+0 1
+.names  k02_n_88_n.BLIF k02_n_88_i_n
+0 1
+.names  k02_n_118_n.BLIF K02_un1_outFlago_0_sqmuxa_3_i_x3.X2
+1 1
+.names  k02_n_6_0_n.BLIF k02_n_6_n
+0 1
+.names  k02_outcontc_c1_n.BLIF K02_outcontc_2_reg.BLIF k02_n_28_1_n
+11 1
+.names  k02_out7segc_28_0_1__n.BLIF K02_out7segc_1_1_reg.D
+0 1
+.names  k02_n_28_n.BLIF K02_outcontc_n3.X1
+1 1
+.names  k02_n_49_n.BLIF k02_n_49_i_n
+0 1
+.names  k02_n_48_n.BLIF k02_n_48_i_n
+0 1
+.names  k02_n_29_n.BLIF K02_outcontc_n3.X2
+1 1
+.names  k02_out7segc_28_0_0__n.BLIF K02_out7segc_1_0_reg.D
+0 1
+.names  k02_n_53_n.BLIF k02_n_53_i_n
+0 1
+.names  k02_n_52_n.BLIF k02_n_52_i_n
+0 1
+.names  k02_n_26_n.BLIF K02_outcontc_n2.X1
+1 1
+.names  k02_n_51_n.BLIF k02_n_51_i_n
+0 1
+.names  k02_n_50_n.BLIF k02_n_50_i_n
+0 1
+.names  k02_n_27_n.BLIF K02_outcontc_n2.X2
+1 1
+.names  k01_n_1_i_n.BLIF K01_sring_3_.D
+0 1
+.names  k02_n_86_0_n.BLIF K02_out7segc_1_2_reg.D
+0 1
+.names  k02_n_64_n.BLIF k02_n_64_i_n
+0 1
+.names  k02_n_25_n.BLIF K02_outcontc_n1.X1
+1 1
+.names  k02_n_65_n.BLIF k02_n_65_i_n
+0 1
+.names  k02_n_63_n.BLIF k02_n_63_i_n
+0 1
+.names  k02_n_112_n.BLIF K02_outcontc_n1.X2
+1 1
+.names  k02_n_44_0_n.BLIF k02_n_44_n
+0 1
+.names  k02_n_128_0_n.BLIF k02_n_128_n
+0 1
+.names  k02_n_118_i_n.BLIF k02_n_118_n
+0 1
+.names  K02_outcontc_n2.BLIF K02_outcontc_2_reg.D
+1 1
+.names  k02_n_89_n.BLIF k02_n_89_i_n
+0 1
+.names  K02_outcontc_n3.BLIF K02_outcontc_3_reg.D
+1 1
+.names  k02_n_116_i_n.BLIF k02_n_116_n
+0 1
+.names  K02_outcontc_n1.BLIF K02_outcontc_1_reg.D
+1 1
+.names  inkeyk_c_0__n.BLIF inkeyk_c_i_0__n
+0 1
+.names  k02_n_114_i_n.BLIF k02_n_114_n
+0 1
+.names  k02_outcontce_0_n.BLIF k02_outcontce_n
+0 1
+.names  k02_n_77_n.BLIF k02_n_77_i_n
+0 1
+.names  k02_n_13_0_n.BLIF K02_out7segc_1_7_reg.D
+0 1
+.names  k02_n_75_n.BLIF k02_n_75_i_n
+0 1
+.names  k02_n_76_n.BLIF k02_n_76_i_n
+0 1
+.names  k02_n_73_n.BLIF k02_n_73_i_n
+0 1
+.names  k02_n_74_n.BLIF k02_n_74_i_n
+0 1
+.names  k02_out7segc_28_0_4__n.BLIF K02_out7segc_1_4_reg.D
+0 1
+.names  k02_n_47_n.BLIF k02_n_47_i_n
+0 1
+.names  k02_n_46_n.BLIF k02_n_46_i_n
+0 1
+.names  k02_n_62_n.BLIF k02_n_62_i_n
+0 1
+.names  k02_n_68_0_n.BLIF K02_out7segc_1_3_reg.D
+0 1
+.names  k02_n_61_n.BLIF k02_n_61_i_n
+0 1
+.names  k02_n_60_n.BLIF k02_n_60_i_n
+0 1
+.names  k02_n_96_i_n.BLIF k02_n_96_n
+0 1
+.names  k02_n_95_n.BLIF k02_n_95_i_n
+0 1
+.names  k02_n_81_n.BLIF k02_n_81_i_n
+0 1
+.names  k02_n_79_n.BLIF k02_n_79_i_n
+0 1
+.names  k02_n_80_n.BLIF k02_n_80_i_n
+0 1
+.names  k02_n_78_n.BLIF k02_n_78_i_n
+0 1
+.names  k02_n_45_0_n.BLIF k02_n_45_n
+0 1
+.names  k02_n_127_0_n.BLIF k02_n_127_n
+0 1
+.names  k02_n_94_n.BLIF k02_n_94_i_n
+0 1
+.names  k02_n_93_n.BLIF k02_n_93_i_n
+0 1
+.names  K01_outr_3_reg.BLIF outrk_i_3__n
+0 1
+.names  K01_outr_3_reg.BLIF outrk_i_0__n.BLIF k02_n_126_i_n
+11 1
+.names  k02_n_120_i_n.BLIF k02_n_126_i_n.BLIF k02_n_127_0_n
+11 1
+.names  k02_n_121_i_n.BLIF k02_n_123_i_n.BLIF k02_n_45_0_n
+11 1
+.names  inFlagk_c.BLIF inFlagk_i
+0 1
+.names  K01_outr_1_reg.BLIF resetk_c.BLIF K01_outr_2_reg.D
+11 1
+.names  resetk_c.BLIF K02_out7segc_1_5_reg.D
+0 1
+.names  K01_outr_0_reg.BLIF K01_outr_3_reg.BLIF k02_n_94_n
+11 1
+.names  k02_n_92_n.BLIF k02_n_114_i_n.BLIF k02_n_95_n
+11 1
+.names  k02_n_73_i_n.BLIF k02_n_74_i_n.BLIF K02_aux02.D
+11 1
+.names  k02_n_75_i_n.BLIF k02_n_76_i_n.BLIF K02_aux01.D
+11 1
+.names  k02_n_77_i_n.BLIF resetk_c.BLIF k02_n_13_0_n
+11 1
+.names  k02_n_96_n.BLIF resetk_c.BLIF k02_outcontce_0_n
+11 1
+.names  inkeyk_c_i_0__n.BLIF inkeyk_i_1__n.BLIF k02_n_114_i_n
+11 1
+.names  outrk_i_0__n.BLIF outrk_i_3__n.BLIF k02_n_116_i_n
+11 1
+.names  outrk_i_1__n.BLIF outrk_i_2__n.BLIF k02_n_118_i_n
+11 1
+.names  k02_n_117_i_n.BLIF k02_n_118_i_n.BLIF k02_n_120_i_n
+11 1
+.names  k02_n_116_i_n.BLIF k02_n_117_i_n.BLIF k02_n_121_i_n
+11 1
+.names  k02_n_93_i_n.BLIF k02_n_94_i_n.BLIF k02_n_122_i_n
+11 1
+.names  K01_outr_2_reg.BLIF outrk_i_2__n
+0 1
+.names  K01_outr_2_reg.BLIF outrk_i_1__n.BLIF k02_n_123_i_n
+11 1
+.names  k02_n_92_n.BLIF K01_outr_1_reg.BLIF k02_n_61_n
+11 1
+.names  inkeyk_c_3__n.BLIF K01_outr_2_reg.BLIF k02_n_62_n
+11 1
+.names  K02_aux02.BLIF k02_aux02_i_n
+0 1
+.names  k02_n_45_n.BLIF k02_aux02_i_n.BLIF k02_n_73_n
+11 1
+.names  K02_aux01.BLIF k02_aux01_i_n
+0 1
+.names  k02_n_127_n.BLIF k02_aux01_i_n.BLIF k02_n_75_n
+11 1
+.names  k02_n_96_n.BLIF K02_out7segc_1_7_reg.BLIF k02_n_77_n
+11 1
+.names  k02_n_114_n.BLIF inkeyk_c_3__n.BLIF k02_n_82_n
+11 1
+.names  k02_n_114_n.BLIF inkeyk_c_2__n.BLIF k02_n_87_n
+11 1
+.names  inkeyk_c_2__n.BLIF inkeyk_c_3__n.BLIF k02_n_88_n
+11 1
+.names  inkeyk_c_0__n.BLIF inkeyk_c_1__n.BLIF k02_n_89_n
+11 1
+.names  inkeyk_c_2__n.BLIF inkeyk_i_2__n
+0 1
+.names  inkeyk_c_3__n.BLIF inkeyk_i_3__n
+0 1
+.names  inkeyk_i_2__n.BLIF inkeyk_i_3__n.BLIF k02_n_92_n
+11 1
+.names  K01_outr_1_reg.BLIF K01_outr_2_reg.BLIF k02_n_93_n
+11 1
+.names  k02_n_128_n.BLIF k02_aux03_i_n.BLIF k02_n_71_n
+11 1
+.names  k02_n_69_i_n.BLIF k02_n_70_i_n.BLIF K02_aux04.D
+11 1
+.names  k02_n_71_i_n.BLIF k02_n_72_i_n.BLIF K02_aux03.D
+11 1
+.names  K01_outr_0_reg.BLIF outrk_i_0__n
+0 1
+.names  K01_outr_0_reg.BLIF outrk_i_3__n.BLIF k02_n_124_i_n
+11 1
+.names  K01_outr_1_reg.BLIF outrk_i_2__n.BLIF k02_n_125_i_n
+11 1
+.names  k02_n_121_i_n.BLIF k02_n_125_i_n.BLIF k02_n_128_0_n
+11 1
+.names  k02_n_120_i_n.BLIF k02_n_124_i_n.BLIF k02_n_44_0_n
+11 1
+.names  outrk_i_1__n.BLIF resetk_c.BLIF k01_n_1_i_n
+11 1
+.names  K01_outr_3_reg.BLIF resetk_c.BLIF K01_outr_0_reg.D
+11 1
+.names  K01_outr_0_reg.BLIF resetk_c.BLIF K01_outr_1_reg.D
+11 1
+.names  k02_n_6_n.BLIF k02_outflago_0_un3_n
+0 1
+.names  K02_outFlagoreg.BLIF k02_n_6_n.BLIF k02_outflago_0_un1_n
+11 1
+.names  k02_n_96_i_n.BLIF k02_outflago_0_un3_n.BLIF k02_outflago_0_un0_n
+11 1
+.names  k02_outflago_0_un1_n.BLIF k02_outflago_0_un0_n.BLIF k02_n_7_n
+1- 1
+-1 1
+.names  k02_n_7_n.BLIF resetk_c.BLIF K02_outFlagoreg.D
+11 1
+.names  K01_outr_1_reg.BLIF outrk_i_1__n
+0 1
+.names  inkeyk_c_2__n.BLIF outrk_i_1__n.BLIF k02_n_60_n
+11 1
+.names  k02_outcontc_c1_n.BLIF resetk_c.BLIF k02_n_26_n
+11 1
+.names  K02_outcontc_0_reg.BLIF K02_outcontc_1_reg.BLIF k02_outcontc_c1_n
+11 1
+.names  K02_outcontc_0_reg.BLIF resetk_c.BLIF k02_n_112_n
+11 1
+.names  k02_n_114_i_n.BLIF K01_outr_1_reg.BLIF k02_n_47_n
+11 1
+.names  inkeyk_c_1__n.BLIF K01_outr_3_reg.BLIF k02_n_48_n
+11 1
+.names  inkeyk_c_1__n.BLIF inkeyk_i_1__n
+0 1
+.names  k02_n_116_i_n.BLIF inkeyk_i_1__n.BLIF k02_n_49_n
+11 1
+.names  inkeyk_c_0__n.BLIF K01_outr_3_reg.BLIF k02_n_50_n
+11 1
+.names  inkeyk_c_2__n.BLIF outrk_i_3__n.BLIF k02_n_51_n
+11 1
+.names  k02_n_114_i_n.BLIF outrk_i_3__n.BLIF k02_n_53_n
+11 1
+.names  inkeyk_c_0__n.BLIF K01_outr_1_reg.BLIF k02_n_63_n
+11 1
+.names  k02_n_116_i_n.BLIF inkeyk_c_1__n.BLIF k02_n_64_n
+11 1
+.names  K02_aux04.BLIF k02_aux04_i_n
+0 1
+.names  k02_n_44_n.BLIF k02_aux04_i_n.BLIF k02_n_69_n
+11 1
+.names  K02_aux03.BLIF k02_aux03_i_n
+0 1
+.names  K01_sring_3_.BLIF resetk_c.BLIF K01_outr_3_reg.D
+11 1
+.names  outcontk_c_i_3__n.BLIF resetk_c.BLIF k02_n_29_0_n
+11 1
+.names  outcontk_c_i_2__n.BLIF resetk_c.BLIF k02_n_27_0_n
+11 1
+.names  outcontk_c_i_1__n.BLIF resetk_c.BLIF k02_n_25_0_n
+11 1
+.names  k02_n_112_n.BLIF K02_outcontc_0_reg.D
+0 1
+.names  vcc_n_n
+1
+.end

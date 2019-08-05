@@ -1,0 +1,10 @@
+clkcc  i
+resetcc  i
+inFlagcc  i
+outcc[5]  b
+outcc[4]  b
+outcc[3]  b
+outcc[2]  b
+outcc[1]  b
+outcc[0]  b
+outFlagcc  o

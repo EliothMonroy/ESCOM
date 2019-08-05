@@ -1,0 +1,7 @@
+#Start recording tcl command: 6/7/2016 00:04:29
+#Project Location: C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM; Project name: lcdram00
+prj_project new -name "lcdram00" -impl "lcdram00" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/osc00.vhdl"
+prj_src add "C:/Users/MiguelAngel/Documents/ESCOM/5to Semestre/Arquitectura/Proyectos/LCDRAM/div00.vhdl"
+#Stop recording: 6/7/2016 00:36:35

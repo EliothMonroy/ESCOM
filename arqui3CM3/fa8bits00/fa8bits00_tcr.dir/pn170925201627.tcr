@@ -1,0 +1,7 @@
+#Start recording tcl command: 9/25/2017 18:57:13
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00; Project name: fa8bits00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00.ldf"
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/fa8bits00/fa8bits00/fa8bits00.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 9/25/2017 20:16:27

@@ -1,0 +1,430 @@
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
+#install: C:\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: ELIOTHLAPTOP
+
+# Tue Sep 19 11:48:04 2017
+
+#Implementation: desplazamientosbarril00
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00.vhdl":8:7:8:29|Top entity is set to desplazamientosbarril00.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00.vhdl":8:7:8:29|Synthesizing work.desplazamientosbarril00.desplazamientosbarril0.
+@N: CD364 :"C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00.vhdl":42:6:42:10|Removing redundant assignment.
+Post processing for work.desplazamientosbarril00.desplazamientosbarril0
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:48:04 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:48:04 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:48:04 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep 19 11:48:06 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Sep 19 11:48:06 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00\desplazamientosbarril00_desplazamientosbarril00_scck.rpt 
+Printing clock  summary report in "C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00\desplazamientosbarril00_desplazamientosbarril00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist desplazamientosbarril00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock        Clock                   Clock
+Clock                            Frequency     Period        Type         Group                   Load 
+-------------------------------------------------------------------------------------------------------
+desplazamientosbarril00|clks     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     19   
+=======================================================================================================
+
+@W: MT529 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Found inferred clock desplazamientosbarril00|clks which controls 19 sequential elements including scont[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Sep 19 11:48:06 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Sep 19 11:48:06 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   993.74ns		  34 /        19
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_7_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_6_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_5_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_4_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_3_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_2_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_1_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\eliot\documents\github\arqui3cm3\desplazamientosbarril00\desplazamientosbarril00.vhdl":22:2:22:3|Boundary register outs_0_.fb (in view: work.desplazamientosbarril00(desplazamientosbarril0)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 19 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clks                port                   19         outs_0io[0]    
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 142MB)
+
+Writing Analyst data base C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00\synwork\desplazamientosbarril00_desplazamientosbarril00_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\eliot\Documents\Github\arqui3CM3\desplazamientosbarril00\desplazamientosbarril00\desplazamientosbarril00_desplazamientosbarril00.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+@W: MT420 |Found inferred clock desplazamientosbarril00|clks with period 1000.00ns. Please declare a user-defined clock on object "p:clks"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Sep 19 11:48:07 2017
+#
+
+
+Top view:               desplazamientosbarril00
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 993.744
+
+                                 Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------
+desplazamientosbarril00|clks     1.0 MHz       159.8 MHz     1000.000      6.257         993.744     inferred     Inferred_clkgroup_0
+=====================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------
+desplazamientosbarril00|clks  desplazamientosbarril00|clks  |  1000.000    993.744  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: desplazamientosbarril00|clks
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                                          Arrival            
+Instance     Reference                        Type        Pin     Net          Time        Slack  
+             Clock                                                                                
+--------------------------------------------------------------------------------------------------
+scont[0]     desplazamientosbarril00|clks     FD1S3IX     Q       scont[0]     1.108       993.744
+scont[1]     desplazamientosbarril00|clks     FD1S3IX     Q       scont[1]     1.108       993.886
+scont[2]     desplazamientosbarril00|clks     FD1S3IX     Q       scont[2]     1.044       993.950
+sins[0]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[0]      1.108       997.347
+sins[2]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[2]      1.108       997.347
+sins[3]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[3]      1.108       997.347
+sins[4]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[4]      1.108       997.347
+sins[5]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[5]      1.108       997.347
+sins[6]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[6]      1.108       997.347
+sins[7]      desplazamientosbarril00|clks     FD1P3AX     Q       sins[7]      1.108       997.347
+==================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                                               Required            
+Instance        Reference                        Type         Pin     Net              Time         Slack  
+                Clock                                                                                      
+-----------------------------------------------------------------------------------------------------------
+outs_0io[0]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[1]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[2]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[3]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[4]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[5]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[6]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+outs_0io[7]     desplazamientosbarril00|clks     OFS1P3IX     SP      un1_sins29_i     999.528      993.744
+sins[0]         desplazamientosbarril00|clks     FD1P3AX      SP      un1_sins24_i     999.528      993.744
+sins[1]         desplazamientosbarril00|clks     FD1P3AX      SP      un1_sins24_i     999.528      993.744
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.528
+
+    - Propagation time:                      5.785
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     993.744
+
+    Number of logic level(s):                4
+    Starting point:                          scont[0] / Q
+    Ending point:                            outs_0io[0] / SP
+    The start point is clocked by            desplazamientosbarril00|clks [rising] on pin CK
+    The end   point is clocked by            desplazamientosbarril00|clks [rising] on pin SCLK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+scont[0]                           FD1S3IX      Q        Out     1.108     1.108       -         
+scont[0]                           Net          -        -       -         -           3         
+ps\.un1_scont_cry_0_0              CCU2D        B1       In      0.000     1.108       -         
+ps\.un1_scont_cry_0_0              CCU2D        COUT     Out     1.545     2.652       -         
+ps\.un1_scont_cry_0                Net          -        -       -         -           1         
+ps\.un1_scont_cry_1_0              CCU2D        CIN      In      0.000     2.652       -         
+ps\.un1_scont_cry_1_0              CCU2D        COUT     Out     0.143     2.795       -         
+ps\.un1_scont_cry_2                Net          -        -       -         -           1         
+ps\.un1_scont_cry_3_0              CCU2D        CIN      In      0.000     2.795       -         
+ps\.un1_scont_cry_3_0              CCU2D        S1       Out     1.725     4.520       -         
+ps\.un1_scont                      Net          -        -       -         -           4         
+ps\.un1_scont_cry_3_0_RNI5ACQ1     ORCALUT4     D        In      0.000     4.520       -         
+ps\.un1_scont_cry_3_0_RNI5ACQ1     ORCALUT4     Z        Out     1.265     5.785       -         
+un1_sins29_i                       Net          -        -       -         -           8         
+outs_0io[0]                        OFS1P3IX     SP       In      0.000     5.785       -         
+=================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 19 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       24
+
+
+Details:
+CCU2D:          3
+FD1P3AX:        8
+FD1S3IX:        3
+GSR:            1
+IB:             16
+OB:             8
+OFS1P3IX:       8
+ORCALUT4:       34
+PFUMX:          1
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 32MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Sep 19 11:48:07 2017
+
+###########################################################]

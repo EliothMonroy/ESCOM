@@ -1,0 +1,8 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl":7:7:7:13|Top entity is set to arith00.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl":7:7:7:13|Synthesizing work.arith00.arith0.
+@N: CL159 :"C:\Users\eliot\Documents\Github\arqui3CM3\arith00\arith00.vhdl":9:2:9:3|Input SL is unused.
+@N|Running in 64-bit mode
+

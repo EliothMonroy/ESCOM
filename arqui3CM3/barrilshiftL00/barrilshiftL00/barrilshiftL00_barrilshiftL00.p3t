@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "barrilshiftL00_barrilshiftL00.log"
+-o "barrilshiftL00_barrilshiftL00.csv"
+-pr "barrilshiftL00_barrilshiftL00.prf"

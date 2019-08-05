@@ -1,0 +1,20 @@
+----------------------------------------------------------------------
+Report for cell compuertas00.compuertas0
+
+Register bits: 0 of 6864 (0%)
+Latch bits:      8
+PIC Latch:       0
+I/O cells:       27
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S1AY        8       100.0
+                                GSR        1       100.0
+                                 IB       19       100.0
+                                 OB        8       100.0
+                           ORCALUT4       17       100.0
+                              PFUMX        8       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL            64           

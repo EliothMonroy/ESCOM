@@ -1,0 +1,15 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe  -osyn  C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synwork\rom00_rom00_comp.srs  -top  toprom00  -hdllog  C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synlog\rom00_rom00_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\div00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\osc00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\packagediv00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\packagerom00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\toposcdiv00.vhdl -lib work C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl 
+rc:0 success:1 runtime:1
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synwork\rom00_rom00_comp.srs|io:o|time:1508517296|size:8277|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synlog\rom00_rom00_compiler.srr|io:o|time:1508517296|size:4947|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1480973228|size:73964|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\div00.vhdl|io:i|time:1506839068|size:2011|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\osc00.vhdl|io:i|time:1504111464|size:513|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\packagediv00.vhdl|io:i|time:1507134399|size:392|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl|io:i|time:1508517290|size:800|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl|io:i|time:1508517259|size:1061|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\packagerom00.vhdl|io:i|time:1508345723|size:697|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\toposcdiv00.vhdl|io:i|time:1507135035|size:498|exec:0
+file:C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl|io:i|time:1508516472|size:1454|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_hdl.exe|io:i|time:1489222768|size:1338368|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe|io:i|time:1489222974|size:1754112|exec:1

@@ -1,0 +1,5 @@
+@W: CD638 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl":41:7:41:13|Signal sinflag is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl":21:2:21:3|Pruning unused register outFlagx_cl_7. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl":21:2:21:3|Pruning unused register outFlaga_cl_7. Make sure that there are no unused intermediate registers.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

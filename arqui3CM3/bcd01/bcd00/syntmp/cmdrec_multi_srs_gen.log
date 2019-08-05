@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  topp04  -multisrs  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_comp.srs  -osyn  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_mult.srs  -log  C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synlog\bcd00_bcd00_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_comp.srs|io:i|time:1512619177|size:35289|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synwork\bcd00_bcd00_mult.srs|io:o|time:1512619178|size:7944|exec:0
+file:C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\synlog\bcd00_bcd00_multi_srs_gen.srr|io:o|time:1512619178|size:409|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1489043252|size:3128320|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1489043520|size:3947520|exec:1

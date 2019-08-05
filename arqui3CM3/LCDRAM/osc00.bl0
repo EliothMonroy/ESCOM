@@ -1,0 +1,21 @@
+#$ DATE Wed May 18 21:53:13 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ PROPERTY LATTICE OSCTIMER inst11= osc_dis_c, tmr_rst_c, osc_out_c, tmr_out_c, 1024; 
+#$ MODULE osc00
+#$ PINS 4 osc_dis tmr_rst osc_out tmr_out
+#$ NODES 4 osc_dis_c tmr_rst_c osc_out_c tmr_out_c 
+#$ EXTERNAL OSCTIMER 4 DYNOSCDIS'i' TIMERRES'i' OSCOUT'o' TIMEROUT'o'
+
+#$ INSTANCE inst11 OSCTIMER 4 osc_dis_c tmr_rst_c osc_out_c tmr_out_c
+.model osc00
+.inputs osc_dis.BLIF tmr_rst.BLIF osc_out_c.BLIF tmr_out_c.BLIF  
+.outputs osc_out tmr_out osc_dis_c tmr_rst_c
+.names  osc_dis.BLIF osc_dis_c
+1 1
+.names  tmr_rst.BLIF tmr_rst_c
+1 1
+.names  osc_out_c.BLIF osc_out
+1 1
+.names  tmr_out_c.BLIF tmr_out
+1 1
+.end

@@ -1,0 +1,75 @@
+#$ DATE Wed May 18 20:28:02 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE coder7seg00
+#$ PINS 22 inWordkey_6_ inWordmem_6_ outWordBuff_6_ wrbuff inWordkey_5_ inWordkey_4_ inWordkey_3_ inWordkey_2_ inWordkey_1_ inWordkey_0_ inWordmem_5_ inWordmem_4_ inWordmem_3_ inWordmem_2_ inWordmem_1_ inWordmem_0_ outWordBuff_5_ outWordBuff_4_ outWordBuff_3_ outWordBuff_2_ outWordBuff_1_ outWordBuff_0_
+#$ NODES 16 wrbuff_i wrbuff_c outWordBufflat_0_reg outWordBufflat_1_reg outWordBufflat_2_reg outWordBufflat_3_reg outWordBufflat_4_reg outWordBufflat_5_reg outWordBufflat_6_reg inwordmem_6__n \
+#  inwordmem_5__n inwordmem_4__n inwordmem_3__n inwordmem_2__n inwordmem_1__n inwordmem_0__n 
+.model coder7seg00
+.inputs inWordkey_6_.BLIF inWordmem_6_.BLIF wrbuff.BLIF inWordkey_5_.BLIF inWordkey_4_.BLIF inWordkey_3_.BLIF inWordkey_2_.BLIF inWordkey_1_.BLIF inWordkey_0_.BLIF \
+  inWordmem_5_.BLIF inWordmem_4_.BLIF inWordmem_3_.BLIF inWordmem_2_.BLIF inWordmem_1_.BLIF inWordmem_0_.BLIF wrbuff_i.BLIF wrbuff_c.BLIF outWordBufflat_0_reg.BLIF \
+  outWordBufflat_1_reg.BLIF outWordBufflat_2_reg.BLIF outWordBufflat_3_reg.BLIF outWordBufflat_4_reg.BLIF outWordBufflat_5_reg.BLIF outWordBufflat_6_reg.BLIF inwordmem_6__n.BLIF inwordmem_5__n.BLIF inwordmem_4__n.BLIF \
+  inwordmem_3__n.BLIF inwordmem_2__n.BLIF inwordmem_1__n.BLIF inwordmem_0__n.BLIF  
+.outputs outWordBuff_6_ outWordBuff_5_ outWordBuff_4_ outWordBuff_3_ outWordBuff_2_ outWordBuff_1_ outWordBuff_0_ outWordBufflat_0_reg.D outWordBufflat_0_reg.LH outWordBufflat_1_reg.D outWordBufflat_1_reg.LH \
+  outWordBufflat_2_reg.D outWordBufflat_2_reg.LH outWordBufflat_3_reg.D outWordBufflat_3_reg.LH outWordBufflat_4_reg.D outWordBufflat_4_reg.LH outWordBufflat_5_reg.D outWordBufflat_5_reg.LH outWordBufflat_6_reg.D outWordBufflat_6_reg.LH wrbuff_i \
+  wrbuff_c inwordmem_6__n inwordmem_5__n inwordmem_4__n inwordmem_3__n inwordmem_2__n inwordmem_1__n inwordmem_0__n
+.names  wrbuff.BLIF wrbuff_c
+1 1
+.names  inWordkey_0_.BLIF outWordBufflat_0_reg.D
+1 1
+.names  inWordkey_1_.BLIF outWordBufflat_1_reg.D
+1 1
+.names  inWordkey_2_.BLIF outWordBufflat_2_reg.D
+1 1
+.names  inWordkey_3_.BLIF outWordBufflat_3_reg.D
+1 1
+.names  inWordkey_4_.BLIF outWordBufflat_4_reg.D
+1 1
+.names  inWordkey_5_.BLIF outWordBufflat_5_reg.D
+1 1
+.names  inWordkey_6_.BLIF outWordBufflat_6_reg.D
+1 1
+.names  outWordBufflat_0_reg.BLIF outWordBuff_0_
+1 1
+.names  outWordBufflat_1_reg.BLIF outWordBuff_1_
+1 1
+.names  outWordBufflat_2_reg.BLIF outWordBuff_2_
+1 1
+.names  outWordBufflat_3_reg.BLIF outWordBuff_3_
+1 1
+.names  outWordBufflat_4_reg.BLIF outWordBuff_4_
+1 1
+.names  outWordBufflat_5_reg.BLIF outWordBuff_5_
+1 1
+.names  outWordBufflat_6_reg.BLIF outWordBuff_6_
+1 1
+.names  wrbuff_c.BLIF wrbuff_i
+0 1
+.names  inWordmem_6_.BLIF inwordmem_6__n
+1 1
+.names  inWordmem_5_.BLIF inwordmem_5__n
+1 1
+.names  inWordmem_4_.BLIF inwordmem_4__n
+1 1
+.names  inWordmem_3_.BLIF inwordmem_3__n
+1 1
+.names  inWordmem_2_.BLIF inwordmem_2__n
+1 1
+.names  inWordmem_1_.BLIF inwordmem_1__n
+1 1
+.names  inWordmem_0_.BLIF inwordmem_0__n
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_0_reg.LH
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_1_reg.LH
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_2_reg.LH
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_3_reg.LH
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_4_reg.LH
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_5_reg.LH
+1 1
+.names  wrbuff_i.BLIF outWordBufflat_6_reg.LH
+1 1
+.end

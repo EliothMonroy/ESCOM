@@ -1,0 +1,6 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":6:7:6:18|Top entity is set to contconfig00.
+@N: CD630 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":6:7:6:18|Synthesizing work.contconfig00.contconfig0 
+@N: CD364 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd":28:7:28:11|Removed redundant assignment
+

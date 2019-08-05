@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/11/2017 22:25:50
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/mux00; Project name: mux00
+prj_project new -name "mux00" -impl "mux00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/mux00/mux00.vhdl"
+#Stop recording: 9/11/2017 22:26:48

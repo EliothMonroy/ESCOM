@@ -1,0 +1,747 @@
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
+#install: C:\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: ELIOTH
+
+# Mon Dec 11 20:11:43 2017
+
+#Implementation: generic01
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\topgeneric01.vhdl":6:7:6:18|Top entity is set to topgeneric01.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\topgeneric01.vhdl":6:7:6:18|Synthesizing work.topgeneric01.arch.
+@W: CD638 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\topgeneric01.vhdl":42:7:42:13|Signal sinflag is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\multg00.vhdl":5:7:5:13|Synthesizing work.multg00.arch.
+Post processing for work.multg00.arch
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\topmult8bits00.vhdl":6:7:6:19|Synthesizing work.topmult8bit00.topmult8bit0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\fa00.vhdl":7:7:7:10|Synthesizing work.fa00.fa0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\or00.vhdl":5:7:5:10|Synthesizing work.or00.or0.
+Post processing for work.or00.or0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\topha00.vhdl":6:7:6:13|Synthesizing work.topha00.topha0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xor00.vhdl":5:7:5:11|Synthesizing work.xor00.xor0.
+Post processing for work.xor00.xor0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\and00.vhdl":5:7:5:11|Synthesizing work.and00.and0.
+Post processing for work.and00.and0
+Post processing for work.topha00.topha0
+Post processing for work.fa00.fa0
+Post processing for work.topmult8bit00.topmult8bit0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":5:7:5:13|Synthesizing work.xnorg00.arch.
+Post processing for work.xnorg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Pruning unused register outFlagxnor_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":5:7:5:12|Synthesizing work.norg00.arch.
+Post processing for work.norg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Pruning unused register outFlagnor_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":5:7:5:13|Synthesizing work.nandg00.arch.
+Post processing for work.nandg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Pruning unused register outFlagnand_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":5:7:5:12|Synthesizing work.notg00.arch.
+Post processing for work.notg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Pruning unused register outFlagnot_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\uc00.vhdl":5:7:5:10|Synthesizing work.uc00.arch.
+Post processing for work.uc00.arch
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\substg00.vhdl":5:7:5:14|Synthesizing work.substg00.arch.
+Post processing for work.substg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\substg00.vhdl":23:2:23:3|Pruning unused register outFlagsub_cl_6. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\addg00.vhdl":5:7:5:12|Synthesizing work.addg00.arch.
+Post processing for work.addg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\addg00.vhdl":23:2:23:3|Pruning unused register outFlagadd_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\topfa8bits00.vhdl":6:7:6:18|Synthesizing work.topfa8bits00.topfa8bits0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xnor00.vhdl":5:7:5:12|Synthesizing work.xnor00.xnor0.
+Post processing for work.xnor00.xnor0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\topfa00.vhdl":6:7:6:13|Synthesizing work.topfa00.topfa0.
+Post processing for work.topfa00.topfa0
+Post processing for work.topfa8bits00.topfa8bits0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":5:7:5:11|Synthesizing work.org00.arch.
+Post processing for work.org00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Pruning unused register outFlago_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":5:7:5:12|Synthesizing work.xorg00.arch.
+Post processing for work.xorg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Pruning unused register outFlagx_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":5:7:5:12|Synthesizing work.andg00.arch.
+Post processing for work.andg00.arch
+@W: CL169 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Pruning unused register outFlaga_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.topgeneric01.arch
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Register bit outga(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Register bit outgx(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\org00.vhdl":21:2:21:3|Register bit outgo(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\addg00.vhdl":23:2:23:3|Register bit outSLadd is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\substg00.vhdl":23:2:23:3|Register bit outSLsub is always 1.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\notg00.vhdl":20:2:20:3|Register bit outgnot(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\nandg00.vhdl":21:2:21:3|Register bit outgnand(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\norg00.vhdl":21:2:21:3|Register bit outgnor(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(8) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(9) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(10) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(11) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(12) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(13) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(14) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\xnorg00.vhdl":21:2:21:3|Register bit outgxnor(15) is always 0.
+@N: CL189 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\multg00.vhdl":20:2:20:3|Register bit outFlagmult is always 0.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 80MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Dec 11 20:11:43 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Dec 11 20:11:44 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Dec 11 20:11:44 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\synwork\generic01_generic01_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Dec 11 20:11:45 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Mon Dec 11 20:11:45 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\generic01_generic01_scck.rpt 
+Printing clock  summary report in "C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\generic01_generic01_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 106MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 116MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: FX469 :|Net So[15] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[14] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[13] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[12] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[11] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[10] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[9] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@W: FX469 :|Net So[8] is undriven; adding disabled tristate to drive this net. To avoid the addition of a tristate, add a driver to the net.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_2(topha0)) of type view:work.and00_72_2(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_28(topha0)) of type view:work.and00_0_27(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_29(topha0)) of type view:work.and00_0_30(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_45(topha0)) of type view:work.and00_0_46(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_61(topha0)) of type view:work.and00_0_62(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_77(topha0)) of type view:work.and00_0_78(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_93(topha0)) of type view:work.and00_0_94(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_109(topha0)) of type view:work.and00_0_110(and0) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist topgeneric01
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock                                           Clock                   Clock
+Clock                            Frequency     Period        Type                                            Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------
+div00|outdiv_derived_clock       2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0     318  
+osc00|osc_int_inferred_clock     2.1 MHz       480.769       inferred                                        Inferred_clkgroup_0     23   
+==========================================================================================================================================
+
+@W: MT529 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\div00.vhdl":20:2:20:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including G00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 62MB peak: 147MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Dec 11 20:11:46 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Mon Dec 11 20:11:47 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+@N: MO111 :|Tristate driver tri0_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[15] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri1_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[14] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri2_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[13] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri3_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[12] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri4_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[11] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri5_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[10] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri6_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[9] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver tri7_inst (in view: work.topfa8bits00(topfa8bits0)) on net So[8] (in view: work.topfa8bits00(topfa8bits0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver sadd_t[8] (in view: work.topgeneric01(arch)) on net sadd[8] (in view: work.topgeneric01(arch)) has its enable tied to GND.
+@N: MO111 :|Tristate driver sadd_t[9] (in view: work.topgeneric01(arch)) on net sadd[9] (in view: work.topgeneric01(arch)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_31[15] because it is equivalent to instance G13.outgmult_cl_30[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_30[15] because it is equivalent to instance G13.outgmult_cl_28[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_29[15] because it is equivalent to instance G13.outgmult_cl_27[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_28[15] because it is equivalent to instance G13.outgmult_cl_26[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_27[15] because it is equivalent to instance G13.outgmult_cl_25[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_26[15] because it is equivalent to instance G13.outgmult_cl_24[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_25[15] because it is equivalent to instance G13.outgmult_cl_23[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_24[15] because it is equivalent to instance G13.outgmult_cl_22[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_23[15] because it is equivalent to instance G13.outgmult_cl_21[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\generic01\multg00.vhdl":22:3:22:6|Removing user instance G13.outgmult_cl_22[15] because it is equivalent to instance G13.outgmult_cl_20[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_15[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_14[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_13[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_12[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_11[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_10[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_9[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_8[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_7[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_6[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_5[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_4[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_3[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\xnorg00.vhdl":21:2:21:3|Removing sequential instance outgxnor_cl_2[15] (in view: work.xnorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_15[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_14[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_13[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_12[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_11[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_10[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_9[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_8[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_7[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_6[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_5[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_4[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_3[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\norg00.vhdl":21:2:21:3|Removing sequential instance outgnor_cl_2[15] (in view: work.norg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\nandg00.vhdl":21:2:21:3|Removing sequential instance outgnand_cl_11[15] (in view: work.nandg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_15[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_14[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_13[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_12[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_11[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_10[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_9[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_8[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_7[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_6[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_5[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_4[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_3[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\notg00.vhdl":20:2:20:3|Removing sequential instance outgnot_cl_2[15] (in view: work.notg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_15[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_12[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_11[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_10[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_9[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_8[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_7[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_6[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_5[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_4[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_3[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_2[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance outgadd_cl_1[15] (in view: work.addg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_15[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_14[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_13[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_12[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_11[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_10[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_9[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_8[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_7[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_6[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_5[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_4[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_3[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_2[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\org00.vhdl":21:2:21:3|Removing sequential instance outgo_cl_1[15] (in view: work.org00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_15[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_14[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_11[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_10[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_9[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_8[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_7[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_6[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_5[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_4[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_3[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Removing sequential instance outgx_cl_2[15] (in view: work.xorg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_15[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_14[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_13[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_12[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_11[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_10[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_9[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_8[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_7[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_6[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_5[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_4[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_3[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Removing sequential instance outga_cl_2[15] (in view: work.andg00(arch)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 157MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 157MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 159MB)
+
+@N: BN362 :"c:\users\elith\documents\github\arqui3cm3\generic01\addg00.vhdl":23:2:23:3|Removing sequential instance G05.outSLadd_cl (in view: work.topgeneric01(arch)) because it does not drive other instances.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 159MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 159MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 159MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 159MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 167MB peak: 169MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:03s		   469.41ns		 360 /       172
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 167MB peak: 169MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_15_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_14_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_13_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_12_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_11_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_10_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_9_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_8_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_7_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_6_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_5_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_4_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_3_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_2_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_1_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\elith\documents\github\arqui3cm3\generic01\uc00.vhdl":22:2:22:3|Boundary register G07.outuc_0_.fb (in view: work.topgeneric01(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 167MB peak: 169MB)
+
+@N: MT611 :|Automatically generated clock div00|outdiv_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 172 clock pin(s) of sequential element(s)
+0 instances converted, 172 sequential instances remain driven by gated/generated clocks
+
+================================================================================================= Gated/Generated Clocks ==================================================================================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance     Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       G00.D00.OSCInst0     OSCH                   172        G07_outucio[0]      Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+===========================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 169MB)
+
+Writing Analyst data base C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\synwork\generic01_generic01_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 165MB peak: 169MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\ELITH\Documents\GitHub\arqui3CM3\generic01\generic01\generic01_generic01.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 170MB peak: 172MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 170MB peak: 172MB)
+
+@W: MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:G00.D00.osc_int"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Dec 11 20:11:52 2017
+#
+
+
+Top view:               topgeneric01
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 469.852
+
+                                 Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------
+osc00|osc_int_inferred_clock     2.1 MHz       91.6 MHz      480.769       10.917        469.852     inferred     Inferred_clkgroup_0
+=====================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------
+osc00|osc_int_inferred_clock  osc00|osc_int_inferred_clock  |  480.769     469.852  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: osc00|osc_int_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                     Starting                                                          Arrival            
+Instance             Reference                        Type        Pin     Net          Time        Slack  
+                     Clock                                                                                
+----------------------------------------------------------------------------------------------------------
+G00.DO1.sdiv[21]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[21]     1.180       469.852
+G00.DO1.sdiv[19]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[19]     1.108       469.924
+G00.DO1.sdiv[20]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[20]     1.108       469.924
+G00.DO1.sdiv[18]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[18]     1.044       469.988
+G00.DO1.sdiv[17]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[17]     1.148       471.037
+G00.DO1.sdiv[16]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[16]     1.044       471.141
+G00.DO1.sdiv[15]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[15]     1.148       472.190
+G00.DO1.sdiv[14]     osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[14]     1.044       472.294
+G00.DO1.sdiv[0]      osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[0]      0.972       475.170
+G00.DO1.sdiv[1]      osc00|osc_int_inferred_clock     FD1S3IX     Q       sdiv[1]      0.972       475.313
+==========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                     Starting                                                              Required            
+Instance             Reference                        Type        Pin     Net              Time         Slack  
+                     Clock                                                                                     
+---------------------------------------------------------------------------------------------------------------
+G00.DO1.sdiv[21]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[21]     480.664      469.852
+G00.DO1.sdiv[19]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[19]     480.664      469.995
+G00.DO1.sdiv[20]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[20]     480.664      469.995
+G00.DO1.sdiv[17]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[17]     480.664      470.138
+G00.DO1.sdiv[18]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[18]     480.664      470.138
+G00.DO1.sdiv[15]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[15]     480.664      470.281
+G00.DO1.sdiv[16]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[16]     480.664      470.281
+G00.DO1.sdiv[13]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[13]     480.664      470.423
+G00.DO1.sdiv[14]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[14]     480.664      470.423
+G00.DO1.sdiv[11]     osc00|osc_int_inferred_clock     FD1S3IX     D       un2_sdiv[11]     480.664      470.566
+===============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      480.769
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         480.664
+
+    - Propagation time:                      10.811
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     469.852
+
+    Number of logic level(s):                18
+    Starting point:                          G00.DO1.sdiv[21] / Q
+    Ending point:                            G00.DO1.sdiv[21] / D
+    The start point is clocked by            osc00|osc_int_inferred_clock [rising] on pin CK
+    The end   point is clocked by            osc00|osc_int_inferred_clock [rising] on pin CK
+
+Instance / Net                                  Pin      Pin                Arrival     No. of    
+Name                               Type         Name     Dir     Delay      Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+G00.DO1.sdiv[21]                   FD1S3IX      Q        Out     1.180      1.180       -         
+sdiv[21]                           Net          -        -       -          -           5         
+G00.DO1.sdiv_RNICDTB1[18]          ORCALUT4     D        In      0.000      1.180       -         
+G00.DO1.sdiv_RNICDTB1[18]          ORCALUT4     Z        Out     1.153      2.333       -         
+N_5                                Net          -        -       -          -           3         
+G00.DO1.sdiv_RNI56R12[16]          ORCALUT4     C        In      0.000      2.333       -         
+G00.DO1.sdiv_RNI56R12[16]          ORCALUT4     Z        Out     1.153      3.485       -         
+N_7                                Net          -        -       -          -           3         
+G00.DO1.sdiv_RNIQQON2[14]          ORCALUT4     C        In      0.000      3.485       -         
+G00.DO1.sdiv_RNIQQON2[14]          ORCALUT4     Z        Out     1.089      4.574       -         
+N_9                                Net          -        -       -          -           2         
+G00.DO1.un2_sdiv_cry_0_0_RNO_5     ORCALUT4     B        In      0.000      4.574       -         
+G00.DO1.un2_sdiv_cry_0_0_RNO_5     ORCALUT4     Z        Out     1.017      5.591       -         
+un2_sdiv_cry_0_0_RNO_5             Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_0_0_RNO_1     PFUMX        BLUT     In      0.000      5.591       -         
+G00.DO1.un2_sdiv_cry_0_0_RNO_1     PFUMX        Z        Out     -0.033     5.558       -         
+N_14                               Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_0_0_RNO       L6MUX21      D0       In      0.000      5.558       -         
+G00.DO1.un2_sdiv_cry_0_0_RNO       L6MUX21      Z        Out     0.732      6.290       -         
+un1_outdiv_0_sqmuxa_1[0]           Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_0_0           CCU2D        B0       In      0.000      6.290       -         
+G00.DO1.un2_sdiv_cry_0_0           CCU2D        COUT     Out     1.545      7.834       -         
+un2_sdiv_cry_0                     Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_1_0           CCU2D        CIN      In      0.000      7.834       -         
+G00.DO1.un2_sdiv_cry_1_0           CCU2D        COUT     Out     0.143      7.977       -         
+un2_sdiv_cry_2                     Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_3_0           CCU2D        CIN      In      0.000      7.977       -         
+G00.DO1.un2_sdiv_cry_3_0           CCU2D        COUT     Out     0.143      8.120       -         
+un2_sdiv_cry_4                     Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_5_0           CCU2D        CIN      In      0.000      8.120       -         
+G00.DO1.un2_sdiv_cry_5_0           CCU2D        COUT     Out     0.143      8.263       -         
+un2_sdiv_cry_6                     Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_7_0           CCU2D        CIN      In      0.000      8.263       -         
+G00.DO1.un2_sdiv_cry_7_0           CCU2D        COUT     Out     0.143      8.406       -         
+un2_sdiv_cry_8                     Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_9_0           CCU2D        CIN      In      0.000      8.406       -         
+G00.DO1.un2_sdiv_cry_9_0           CCU2D        COUT     Out     0.143      8.548       -         
+un2_sdiv_cry_10                    Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_11_0          CCU2D        CIN      In      0.000      8.548       -         
+G00.DO1.un2_sdiv_cry_11_0          CCU2D        COUT     Out     0.143      8.691       -         
+un2_sdiv_cry_12                    Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_13_0          CCU2D        CIN      In      0.000      8.691       -         
+G00.DO1.un2_sdiv_cry_13_0          CCU2D        COUT     Out     0.143      8.834       -         
+un2_sdiv_cry_14                    Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_15_0          CCU2D        CIN      In      0.000      8.834       -         
+G00.DO1.un2_sdiv_cry_15_0          CCU2D        COUT     Out     0.143      8.977       -         
+un2_sdiv_cry_16                    Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_17_0          CCU2D        CIN      In      0.000      8.977       -         
+G00.DO1.un2_sdiv_cry_17_0          CCU2D        COUT     Out     0.143      9.120       -         
+un2_sdiv_cry_18                    Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_cry_19_0          CCU2D        CIN      In      0.000      9.120       -         
+G00.DO1.un2_sdiv_cry_19_0          CCU2D        COUT     Out     0.143      9.262       -         
+un2_sdiv_cry_20                    Net          -        -       -          -           1         
+G00.DO1.un2_sdiv_s_21_0            CCU2D        CIN      In      0.000      9.262       -         
+G00.DO1.un2_sdiv_s_21_0            CCU2D        S0       Out     1.549      10.811      -         
+un2_sdiv[21]                       Net          -        -       -          -           1         
+G00.DO1.sdiv[21]                   FD1S3IX      D        In      0.000      10.811      -         
+==================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 170MB peak: 172MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 170MB peak: 172MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 172 of 6864 (3%)
+PIC Latch:       0
+I/O cells:       46
+
+
+Details:
+BB:             1
+CCU2D:          12
+FD1P3AX:        131
+FD1S3AX:        1
+FD1S3IX:        22
+GSR:            1
+IB:             26
+IFS1P3DX:       1
+INV:            8
+L6MUX21:        1
+OB:             19
+OFS1P3DX:       1
+OFS1P3IX:       16
+ORCALUT4:       350
+OSCH:           1
+PFUMX:          5
+PUR:            1
+VHI:            13
+VLO:            35
+false:          235
+true:           257
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 35MB peak: 172MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:05s cputime
+# Mon Dec 11 20:11:53 2017
+
+###########################################################]

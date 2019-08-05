@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "lcdram00_lcdram00.log"
+-o "lcdram00_lcdram00.csv"
+-pr "lcdram00_lcdram00.prf"

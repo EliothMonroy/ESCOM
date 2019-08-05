@@ -1,0 +1,31 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|contconfig00|-prodtype|synplify_pro|-nostructver|-encrypt|-pro|-lite|-compiler_compatible|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-fileorder|C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\bin64\\c_vhdl.exe":1401252904
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\location.map":1310486174
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std1164.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\numeric.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\umr_capim.vhd":1401252768
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\arith.vhd":1401252522
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\unsigned.vhd":1401252522
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\packagekey00.vhd":1463522046
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\packagelcdram00.vhd":1463622021
+#CUR:"C:\\users\\alberto rios\\documents\\ipn\\escom\\5semestre\\arquitectura\\vhdl\\lcdram\\contconfig00.vhd":1463522777
+0 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagekey00.vhd" vhdl
+1 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagelcdram00.vhd" vhdl
+2 "C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contconfig00.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+
+# Dependency Lists (Users Of)
+0 -1
+1 -1
+2 -1
+
+# Design Unit to File Association
+arch work contconfig00 contconfig0 2
+module work contconfig00 2

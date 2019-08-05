@@ -1,0 +1,136 @@
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
+#install: C:\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: ELIOTHLAPTOP
+
+# Tue Nov 28 10:58:46 2017
+
+#Implementation: generic01
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\topgeneric01.vhdl":6:7:6:18|Top entity is set to topgeneric01.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\topgeneric01.vhdl":6:7:6:18|Synthesizing work.topgeneric01.arch.
+@W: CD638 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\topgeneric01.vhdl":44:7:44:13|Signal sinflag is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\uc00.vhdl":5:7:5:10|Synthesizing work.uc00.arch.
+Post processing for work.uc00.arch
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\substg00.vhdl":5:7:5:14|Synthesizing work.substg00.arch.
+Post processing for work.substg00.arch
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\substg00.vhdl":23:2:23:3|Pruning unused register outFlagsub_cl_6. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\addg00.vhdl":5:7:5:12|Synthesizing work.addg00.arch.
+Post processing for work.addg00.arch
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\addg00.vhdl":23:2:23:3|Pruning unused register outFlagadd_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\topfa8bits00.vhdl":6:7:6:18|Synthesizing work.topfa8bits00.topfa8bits0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\and00.vhdl":5:7:5:11|Synthesizing work.and00.and0.
+Post processing for work.and00.and0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\xnor00.vhdl":5:7:5:12|Synthesizing work.xnor00.xnor0.
+Post processing for work.xnor00.xnor0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\xor00.vhdl":5:7:5:11|Synthesizing work.xor00.xor0.
+Post processing for work.xor00.xor0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\topfa00.vhdl":6:7:6:13|Synthesizing work.topfa00.topfa0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\or00.vhdl":5:7:5:10|Synthesizing work.or00.or0.
+Post processing for work.or00.or0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\topha00.vhdl":6:7:6:13|Synthesizing work.topha00.topha0.
+Post processing for work.topha00.topha0
+Post processing for work.topfa00.topfa0
+Post processing for work.topfa8bits00.topfa8bits0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\xorg00.vhdl":5:7:5:12|Synthesizing work.xorg00.arch.
+Post processing for work.xorg00.arch
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\xorg00.vhdl":21:2:21:3|Pruning unused register outFlagx_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\andg00.vhdl":5:7:5:12|Synthesizing work.andg00.arch.
+Post processing for work.andg00.arch
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\andg00.vhdl":21:2:21:3|Pruning unused register outFlaga_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.topgeneric01.arch
+@W: CL138 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\addg00.vhdl":23:2:23:3|Removing register 'outSLadd' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic01\substg00.vhdl":23:2:23:3|Register bit outSLsub is always 1.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Nov 28 10:58:47 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Nov 28 10:58:47 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Nov 28 10:58:47 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Nov 28 10:58:48 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Nov 28 10:58:49 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\generic01_generic01_scck.rpt 
+Printing clock  summary report in "C:\Users\eliot\Documents\Github\arqui3CM3\generic01\generic01\generic01_generic01_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@E: BN364 |True (VCC) and false (GND) driving same net in netlist "topgeneric01"; one load of the net is G03. Multiple-driver error 
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Nov 28 10:58:49 2017
+
+###########################################################]

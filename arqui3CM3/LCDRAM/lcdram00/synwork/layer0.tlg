@@ -1,0 +1,61 @@
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":11:7:11:17|Synthesizing work.toplcdram00.toplcdram0.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":10:7:10:17|Synthesizing work.bufferlcd00.bufferlcd0.
+@W: CG296 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":29:7:29:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":37:23:37:33|Referenced variable inwordwrite is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":32:16:32:27|Referenced variable inwordconfig is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":39:10:39:13|Referenced variable rswb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":38:11:38:14|Referenced variable rwwb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":34:9:34:12|Referenced variable rscb is not in sensitivity list
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":33:9:33:12|Referenced variable rwcb is not in sensitivity list
+Post processing for work.bufferlcd00.bufferlcd0
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal outwordbuff(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal RWbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal RSbb; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl":31:4:31:5|Latch generated from process for signal ENbb; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":10:7:10:14|Synthesizing work.config00.config0.
+Post processing for work.config00.config0
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to outWordc(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal outWordc(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal outFlagc; possible missing assignment in an if or case statement.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to RWc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|All reachable assignments to RSc are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl":25:5:25:8|Latch generated from process for signal ENc; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl":10:7:10:18|Synthesizing work.contconfig00.contconfig0.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl":32:7:32:11|Removing redundant assignment.
+Post processing for work.contconfig00.contconfig0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":10:7:10:16|Synthesizing work.contread00.contread0.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":50:8:50:18|Removing redundant assignment.
+Post processing for work.contread00.contread0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl":10:7:10:11|Synthesizing work.ram00.ram0.
+Post processing for work.ram00.ram0
+@N: CL134 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl":31:9:31:12|Found RAM sram, depth=16, width=8
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\topkey00.vhdl":11:7:11:14|Synthesizing work.topkey00.topkey0.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":10:7:10:13|Synthesizing work.coder00.coder0.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":44:12:44:19|Removing redundant assignment.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":97:5:97:12|Removing redundant assignment.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":151:5:151:12|Removing redundant assignment.
+@N: CD364 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":208:11:208:18|Removing redundant assignment.
+@W: CG296 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":24:10:24:16|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:12:30:15|Referenced variable clkc is not in sensitivity list
+Post processing for work.coder00.coder0
+@N: CL189 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:8:30:9|Register bit out7segc(6) is always 1.
+@W: CL260 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl":30:8:30:9|Pruning register bit 6 of out7segc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl":10:7:10:16|Synthesizing work.contring00.contring0.
+Post processing for work.contring00.contring0
+@W: CL279 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl":24:9:24:10|Pruning register bits 2 to 0 of sring(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Post processing for work.topkey00.topkey0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toposc00.vhdl":9:7:9:14|Synthesizing work.toposc00.toposc0.
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\div00.vhdl":10:7:10:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposc00.toposc0
+Post processing for work.toplcdram00.toplcdram0
+@W: CL240 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":23:7:23:13|oscout0 is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL138 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":27:5:27:6|Removing register 'RWcw' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl":27:5:27:6|Register bit RScw is always 1.
+@N: CL159 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":22:7:22:13|Input oscdis0 is unused.
+@W: CL158 :"C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl":24:7:24:13|Inout tmrrst0 is unused

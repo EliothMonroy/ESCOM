@@ -1,0 +1,432 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+            Lattice Mapping Report File for Design Module 'topp04'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     bcd00_bcd00.ngd -o bcd00_bcd00_map.ncd -pr bcd00_bcd00.prf -mp
+     bcd00_bcd00.mrp -lpf C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00/
+     bcd00_bcd00_synplify.lpf -lpf
+     C:/Users/ELITH/Documents/GitHub/arqui3CM3/bcd01/bcd00.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  12/06/17  21:59:47
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    164 out of  7209 (2%)
+      PFU registers:          155 out of  6864 (2%)
+      PIO registers:            9 out of   345 (3%)
+   Number of SLICEs:       123 out of  3432 (4%)
+      SLICEs as Logic/ROM:    123 out of  3432 (4%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:        236 out of  6864 (3%)
+      Number used as logic LUTs:        212
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 59 + 4(JTAG) out of 115 (55%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net U14.sclk_0_0: 102 loads, 102 rising, 0 falling (Driver:
+     U14/D00/OSCInst0 )
+   Number of Clock Enables:  10
+
+     Net readport.un1_codoplp_i_o2_RNIBLJSE: 8 loads, 0 LSLICEs
+     Net outdiv_RNI07B7E: 27 loads, 26 LSLICEs
+     Net U08/outAC12bitsu_1_cnv[0]: 6 loads, 6 LSLICEs
+     Net U01/aux1_RNO: 1 loads, 1 LSLICEs
+     Net U06/outACs_1ce[1]: 4 loads, 4 LSLICEs
+     Net U10/outACss_1ce[10]: 6 loads, 6 LSLICEs
+     Net U09/snibb00_cnv[0]: 6 loads, 6 LSLICEs
+     Net U09/aux_RNIVG8MG: 7 loads, 7 LSLICEs
+     Net U07/aux_RNI0V7CG: 6 loads, 6 LSLICEs
+     Net U04/outac8_cnv[0]: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net U15/outbcdmux12 merged into GSR:  7
+   Number of LSRs:  3
+     Net U01/fb: 1 loads, 1 LSLICEs
+     Net N_32: 12 loads, 12 LSLICEs
+     Net reset0_pad_RNI7LVCE: 7 loads, 7 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net soutFlagpc_c: 36 loads
+     Net outdiv_RNI07B7E: 34 loads
+     Net N_32: 22 loads
+     Net outcodeport_c[1]: 13 loads
+     Net U08.outAC12bitsu_cl[11]: 13 loads
+     Net U09.outBuf12ca_cl[11]: 13 loads
+     Net outport120_c[2]: 12 loads
+     Net outport120_c[9]: 12 loads
+     Net U10/outACss_cl[11]: 12 loads
+     Net U15/outr_ret_2: 12 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 'U15/outbcdmux12' to infer global GSR
+     net.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| sFlagInst           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| clk0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[0]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outDisplay[6]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| outDisplay[5]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outDisplay[4]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outDisplay[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outDisplay[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outDisplay[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outDisplay[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outTransist0[3]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outTransist0[2]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outTransist0[1]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outTransist0[0]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[7]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[6]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[5]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[4]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport8a0[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[11]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[10]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[9]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[8]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[7]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[6]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[5]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[4]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| outport120[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outport120[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| inport8a0[7]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[6]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[5]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[4]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[3]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[2]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[1]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| inport8a0[0]        | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| outcodeport[3]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcodeport[2]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcodeport[1]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outcodeport[0]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outpcport[3]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outpcport[2]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outpcport[1]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outpcport[0]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| soutFlagrom         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sFlag12B            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sFlag12out          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sFlag8out           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| soutFlagpc          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| reset0              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[3]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[2]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[1]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block U03/GND undriven or does not drive anything - clipped.
+Block U03/VCC undriven or does not drive anything - clipped.
+Block U04/VCC undriven or does not drive anything - clipped.
+Block U04/GND undriven or does not drive anything - clipped.
+Block U05/GND undriven or does not drive anything - clipped.
+Block U05/VCC undriven or does not drive anything - clipped.
+Block U07/VCC undriven or does not drive anything - clipped.
+Block U09/VCC undriven or does not drive anything - clipped.
+Block U09/GND undriven or does not drive anything - clipped.
+Block U10/VCC undriven or does not drive anything - clipped.
+Block U10/GND undriven or does not drive anything - clipped.
+Block U11/VCC undriven or does not drive anything - clipped.
+Block U11/GND undriven or does not drive anything - clipped.
+Block U13/GND undriven or does not drive anything - clipped.
+Block U13/VCC undriven or does not drive anything - clipped.
+Block U14/DO1/VCC undriven or does not drive anything - clipped.
+Block U15/GND undriven or does not drive anything - clipped.
+Block U15/VCC undriven or does not drive anything - clipped.
+Block U06/VCC undriven or does not drive anything - clipped.
+Block U06/GND undriven or does not drive anything - clipped.
+Block U02/VCC undriven or does not drive anything - clipped.
+Block U02/GND undriven or does not drive anything - clipped.
+Block U01/VCC undriven or does not drive anything - clipped.
+Block U01/GND undriven or does not drive anything - clipped.
+Block U08/VCC undriven or does not drive anything - clipped.
+Signal U14/DO1/N_32_i was merged into signal N_32
+Signal outFlagsu_tri_enable_i was merged into signal outFlagsu_tri_enable
+Signal U14/D00/GND undriven or does not drive anything - clipped.
+Signal U14/DO1/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal U14/D00/OSCInst0_SEDSTDBY undriven or does not drive anything - clipped.
+Signal U14/DO1/un2_sdiv_s_21_0_S1 undriven or does not drive anything - clipped.
+     
+Signal U14/DO1/un2_sdiv_s_21_0_COUT undriven or does not drive anything -
+     clipped.
+Signal U14/DO1/un2_sdiv_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal U14/DO1/N_1 undriven or does not drive anything - clipped.
+Block U14/DO1/sdiv_RNIBBTTD_0[15] was optimized away.
+Block U08/outFlagsu_tri_enable_RNIP51C was optimized away.
+Block U14/D00/GND was optimized away.
+Block U14/DO1/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                U14/D00/OSCInst0
+
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     U14.sclk_0_0
+  OSC Nominal Frequency (MHz):                      2.08
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: U14/D00/OSCInst0
+         Type: OSCH
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'U15/outbcdmux12' of the design has been inferred as
+        Global Set Reset (GSR). The reset signal used for GSR control is
+        'U15/outbcdmux12'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 38 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

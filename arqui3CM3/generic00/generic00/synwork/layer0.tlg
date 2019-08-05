@@ -1,0 +1,20 @@
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl":6:7:6:18|Synthesizing work.topgeneric00.arch.
+@W: CD638 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\topgeneric00.vhdl":41:7:41:13|Signal sinflag is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\uc00.vhdl":5:7:5:10|Synthesizing work.uc00.arch.
+Post processing for work.uc00.arch
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl":5:7:5:12|Synthesizing work.xorg00.arch.
+Post processing for work.xorg00.arch
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\xorg00.vhdl":21:2:21:3|Pruning unused register outFlagx_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl":5:7:5:12|Synthesizing work.andg00.arch.
+Post processing for work.andg00.arch
+@W: CL169 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\andg00.vhdl":21:2:21:3|Pruning unused register outFlaga_cl_7. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\generic00\generic00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.topgeneric00.arch

@@ -1,0 +1,13 @@
+i<>.\..\packagekey00.vhdl
+i<>.\..\packagelcdram00.vhdl
+i<>.\..\bufferlcd00.vhdl
+i<>.\..\config00.vhdl
+i<>.\..\contconfig00.vhdl
+i<>.\..\contread00.vhdl
+i<>.\..\ram00.vhdl
+i<>.\..\coder00.vhdl
+i<>.\..\contring00.vhdl
+i<>.\..\topkey00.vhdl
+i<>.\..\div00.vhdl
+i<>.\..\osc00.vhdl
+i<>.\..\toplcdram00.vhdl

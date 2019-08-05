@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"c:\users\elith\documents\github\arqui3cm3\lcd00\lcd00\source\div00.vhdl":20:2:20:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including L00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

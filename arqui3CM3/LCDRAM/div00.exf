@@ -1,0 +1,168 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      indiv(3:0)                    indiv                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      indiv_3_                    indiv[3]                       1            0            
+        Port      indiv_2_                    indiv[2]                       1            1            
+        Port      indiv_1_                    indiv[1]                       1            2            
+        Port      indiv_0_                    indiv[0]                       1            3            
+End
+Section Cross Reference File
+Design 'div00' created Wed May 18 21:53:31 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                sdiv_9_                                   sdiv[9]
+   Inst               sdiv_10_                                  sdiv[10]
+   Inst               sdiv_11_                                  sdiv[11]
+   Inst                sdiv_7_                                   sdiv[7]
+   Inst                sdiv_8_                                   sdiv[8]
+   Inst                sdiv_4_                                   sdiv[4]
+   Inst                sdiv_5_                                   sdiv[5]
+   Inst                sdiv_6_                                   sdiv[6]
+   Inst                sdiv_2_                                   sdiv[2]
+   Inst                sdiv_3_                                   sdiv[3]
+   Inst                sdiv_0_                                   sdiv[0]
+   Inst                sdiv_1_                                   sdiv[1]
+   Inst               indiv_0_                                  indiv[0]
+   Inst               indiv_1_                                  indiv[1]
+   Inst               indiv_2_                                  indiv[2]
+   Inst               indiv_3_                                  indiv[3]
+   Inst   divisor_un32_sdiv_0_a2_1                  divisor.un32_sdiv_0_a2_1
+   Inst   divisor_un32_sdiv_0_a2                    divisor.un32_sdiv_0_a2
+   Inst   divisor_un23_sdiv_0_a2_1                  divisor.un23_sdiv_0_a2_1
+   Inst   divisor_un23_sdiv_0_a2                    divisor.un23_sdiv_0_a2
+   Inst   divisor_un1_outdiv30_i_a8_1               divisor.un1_outdiv30_i_a8_1
+   Inst   divisor_un32_sdiv_0_1                     divisor.un32_sdiv_0_1
+   Inst    divisor_un32_sdiv_0                       divisor.un32_sdiv_0
+   Inst   divisor_un23_sdiv_0_1                     divisor.un23_sdiv_0_1
+   Inst    divisor_un23_sdiv_0                       divisor.un23_sdiv_0
+   Inst   divisor_un14_sdiv_0_1                     divisor.un14_sdiv_0_1
+   Inst    divisor_un14_sdiv_0                       divisor.un14_sdiv_0
+   Inst   divisor_un1_outdiv30_i_a8_2_1             divisor.un1_outdiv30_i_a8_2_1
+   Inst   divisor_un1_outdiv30_i_a8_2               divisor.un1_outdiv30_i_a8_2
+   Inst   divisor_un1_outdiv30_i_a8_1_1             divisor.un1_outdiv30_i_a8_1_1
+   Inst   divisor_un14_sdiv_0_a2_0_1                divisor.un14_sdiv_0_a2_0_1
+   Inst   divisor_un14_sdiv_0_a2_0_2                divisor.un14_sdiv_0_a2_0_2
+   Inst   divisor_un14_sdiv_0_a2_0_3                divisor.un14_sdiv_0_a2_0_3
+   Inst   divisor_un14_sdiv_0_a2_0_4                divisor.un14_sdiv_0_a2_0_4
+   Inst   divisor_un14_sdiv_0_a2_0                  divisor.un14_sdiv_0_a2_0
+   Inst   divisor_un1_outdiv30_i_2                  divisor.un1_outdiv30_i_2
+   Inst   divisor_un1_outdiv30_i                    divisor.un1_outdiv30_i
+   Inst   divisor_un14_sdiv_0_a2_1                  divisor.un14_sdiv_0_a2_1
+   Inst   divisor_un14_sdiv_0_a2                    divisor.un14_sdiv_0_a2
+   Inst   divisor_un32_sdiv_0_i                     divisor.un32_sdiv_0_i
+   Inst   divisor_un23_sdiv_0_i                     divisor.un23_sdiv_0_i
+   Inst   divisor_un14_sdiv_0_i                     divisor.un14_sdiv_0_i
+   Inst   divisor_un1_outdiv30_i_1                  divisor.un1_outdiv30_i_1
+   Inst   divisor_un61_sdiv_0_3_i                   divisor.un61_sdiv_0_3_i
+   Inst   divisor_un61_sdiv_0_i                     divisor.un61_sdiv_0_i
+   Inst   divisor_un52_sdiv_0_1_i                   divisor.un52_sdiv_0_1_i
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_1_r            un1_outdiv_0_sqmuxa_1_0_m8_1.r
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_1_m            un1_outdiv_0_sqmuxa_1_0_m8_1.m
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_1_n            un1_outdiv_0_sqmuxa_1_0_m8_1.n
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_1_p            un1_outdiv_0_sqmuxa_1_0_m8_1.p
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_0_r            un1_outdiv_0_sqmuxa_1_0_m8_0.r
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_0_m            un1_outdiv_0_sqmuxa_1_0_m8_0.m
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_0_n            un1_outdiv_0_sqmuxa_1_0_m8_0.n
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_0_p            un1_outdiv_0_sqmuxa_1_0_m8_0.p
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_r              un1_outdiv_0_sqmuxa_1_0_m8.r
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_m              un1_outdiv_0_sqmuxa_1_0_m8.m
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_n              un1_outdiv_0_sqmuxa_1_0_m8.n
+   Inst   un1_outdiv_0_sqmuxa_1_0_m8_p              un1_outdiv_0_sqmuxa_1_0_m8.p
+   Inst             indiv_i_1_                                indiv_i[1]
+   Inst   divisor_un1_outdiv30_i_a2                 divisor.un1_outdiv30_i_a2
+   Inst   divisor_un1_outdiv30_i_a8_0               divisor.un1_outdiv30_i_a8_0
+   Inst             indiv_i_2_                                indiv_i[2]
+   Inst   divisor_un1_outdiv30_i_a8                 divisor.un1_outdiv30_i_a8
+   Inst              sdiv_i_6_                                 sdiv_i[6]
+   Inst              sdiv_i_5_                                 sdiv_i[5]
+   Inst              sdiv_i_7_                                 sdiv_i[7]
+   Inst              sdiv_i_8_                                 sdiv_i[8]
+   Inst             indiv_i_3_                                indiv_i[3]
+   Inst             indiv_i_0_                                indiv_i[0]
+   Inst              sdiv_i_1_                                 sdiv_i[1]
+   Inst              sdiv_i_0_                                 sdiv_i[0]
+   Inst              sdiv_i_2_                                 sdiv_i[2]
+   Inst              sdiv_i_3_                                 sdiv_i[3]
+   Inst              sdiv_i_4_                                 sdiv_i[4]
+   Inst   divisor_un14_sdiv_0_a2_2                  divisor.un14_sdiv_0_a2_2
+   Inst   divisor_un52_sdiv_0_1                     divisor.un52_sdiv_0_1
+   Inst    divisor_un61_sdiv_0                       divisor.un61_sdiv_0
+   Inst   divisor_un61_sdiv_0_3                     divisor.un61_sdiv_0_3
+   Inst   divisor_un52_sdiv_0_o2                    divisor.un52_sdiv_0_o2
+   Inst             sdiv_i_10_                                sdiv_i[10]
+   Inst   divisor_un32_sdiv_0_o2                    divisor.un32_sdiv_0_o2
+   Inst   divisor_un23_sdiv_0_o2                    divisor.un23_sdiv_0_o2
+   Inst              sdiv_i_9_                                 sdiv_i[9]
+   Inst             sdiv_i_11_                                sdiv_i[11]
+   Net               sdiv_0__n                                   sdiv[0]
+   Net               sdiv_1__n                                   sdiv[1]
+   Net               sdiv_2__n                                   sdiv[2]
+   Net               sdiv_3__n                                   sdiv[3]
+   Net               sdiv_4__n                                   sdiv[4]
+   Net               sdiv_5__n                                   sdiv[5]
+   Net               sdiv_6__n                                   sdiv[6]
+   Net               sdiv_7__n                                   sdiv[7]
+   Net               sdiv_8__n                                   sdiv[8]
+   Net               sdiv_9__n                                   sdiv[9]
+   Net              sdiv_10__n                                  sdiv[10]
+   Net              sdiv_11__n                                  sdiv[11]
+   Net     divisor_un14_sdiv_n                         divisor.un14_sdiv
+   Net     divisor_un23_sdiv_n                         divisor.un23_sdiv
+   Net     divisor_un32_sdiv_n                         divisor.un32_sdiv
+   Net     divisor_un42_sdiv_n                         divisor.un42_sdiv
+   Net     divisor_un52_sdiv_n                         divisor.un52_sdiv
+   Net     divisor_un61_sdiv_n                         divisor.un61_sdiv
+   Net             sdiv_i_6__n                                 sdiv_i[6]
+   Net            indiv_i_2__n                                indiv_i[2]
+   Net            indiv_i_1__n                                indiv_i[1]
+   Net            indiv_i_0__n                                indiv_i[0]
+   Net            indiv_i_3__n                                indiv_i[3]
+   Net             sdiv_i_8__n                                 sdiv_i[8]
+   Net             sdiv_i_7__n                                 sdiv_i[7]
+   Net             sdiv_i_5__n                                 sdiv_i[5]
+   Net             sdiv_i_4__n                                 sdiv_i[4]
+   Net             sdiv_i_3__n                                 sdiv_i[3]
+   Net             sdiv_i_2__n                                 sdiv_i[2]
+   Net             sdiv_i_0__n                                 sdiv_i[0]
+   Net             sdiv_i_1__n                                 sdiv_i[1]
+   Net             sdiv_i_9__n                                 sdiv_i[9]
+   Net            sdiv_i_10__n                                sdiv_i[10]
+   Net            sdiv_i_11__n                                sdiv_i[11]
+   Net            indiv_c_0__n                                indiv_c[0]
+   Net              indiv_0__n                                  indiv[0]
+   Net            indiv_c_1__n                                indiv_c[1]
+   Net              indiv_1__n                                  indiv[1]
+   Net            indiv_c_2__n                                indiv_c[2]
+   Net              indiv_2__n                                  indiv[2]
+   Net            indiv_c_3__n                                indiv_c[3]
+   Net    divisor_un52_sdiv_i_n                       divisor.un52_sdiv_i
+   Net    divisor_un61_sdiv_i_n                       divisor.un61_sdiv_i
+   Net    divisor_un42_sdiv_i_n                       divisor.un42_sdiv_i
+   Net    divisor_un32_sdiv_i_n                       divisor.un32_sdiv_i
+   Net    divisor_un23_sdiv_i_n                       divisor.un23_sdiv_i
+   Net    divisor_un14_sdiv_i_n                       divisor.un14_sdiv_i
+   Net    divisor_un32_sdiv_i_1_n                     divisor.un32_sdiv_i_1
+   Net    divisor_un23_sdiv_i_1_n                     divisor.un23_sdiv_i_1
+   Net    divisor_un14_sdiv_i_1_n                     divisor.un14_sdiv_i_1
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_1_un3_n          un1_outdiv_0_sqmuxa_1_0_m8_1.un3
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_1_un1_n          un1_outdiv_0_sqmuxa_1_0_m8_1.un1
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_1_un0_n          un1_outdiv_0_sqmuxa_1_0_m8_1.un0
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_0_un3_n          un1_outdiv_0_sqmuxa_1_0_m8_0.un3
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_0_un1_n          un1_outdiv_0_sqmuxa_1_0_m8_0.un1
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_0_un0_n          un1_outdiv_0_sqmuxa_1_0_m8_0.un0
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_un3_n            un1_outdiv_0_sqmuxa_1_0_m8.un3
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_un1_n            un1_outdiv_0_sqmuxa_1_0_m8.un1
+   Net    un1_outdiv_0_sqmuxa_1_0_m8_un0_n            un1_outdiv_0_sqmuxa_1_0_m8.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     indiv_3_
+        Input     clkdiv
+        Input     indiv_2_
+        Input     indiv_1_
+        Input     indiv_0_
+        Output     outdiv
+End

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>L00/DO1/un2_sdiv_s_21_0_COUT</Dynamic>
+            <Navigation>L00/DO1/un2_sdiv_s_21_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>L00/DO1/un2_sdiv_s_21_0_S1</Dynamic>
+            <Navigation>L00/DO1/un2_sdiv_s_21_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>L00/DO1/un2_sdiv_cry_0_0_S0</Dynamic>
+            <Navigation>L00/DO1/un2_sdiv_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>L00/D00/OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>L00/D00/OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl&quot;:50:7:50:10|Signal srwc is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Signal srwc is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl&quot;:47:2:47:3|Pruning register bit 7 of outworddd(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning register bit 7 of outworddd(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD276 :&quot;C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd&quot;:2297:8:2297:15|Map for port sedstdby of component osch not found</Dynamic>
+            <Navigation>CD276</Navigation>
+            <Navigation>C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Map for port sedstdby of component osch not found</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl&quot;:50:7:50:10|Signal sRWc is floating; a simulation mismatch is possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Signal sRWc is floating; a simulation mismatch is possible.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL167 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl&quot;:97:1:97:3|Input rwc of instance L05 is floating</Dynamic>
+            <Navigation>CL167</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl</Navigation>
+            <Navigation>97</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>97</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Input rwc of instance L05 is floating</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL138 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl&quot;:24:2:24:3|Removing register 'RSc' because it is only assigned 0 or its original value.</Dynamic>
+            <Navigation>CL138</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Removing register 'RSc' because it is only assigned 0 or its original value.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL138 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl&quot;:24:2:24:3|Removing register 'RWc' because it is only assigned 0 or its original value.</Dynamic>
+            <Navigation>CL138</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Removing register 'RWc' because it is only assigned 0 or its original value.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl&quot;:24:2:24:3|Pruning register bit 6 of comandoc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning register bit 6 of comandoc(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\elith\documents\github\arqui3cm3\lcd00\lcd00\source\div00.vhdl&quot;:20:2:20:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including L00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\elith\documents\github\arqui3cm3\lcd00\lcd00\source\div00.vhdl</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including L00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\elith\documents\github\arqui3cm3\lcd00\lcddata00.vhdl&quot;:61:19:61:26|ROM outworddd_2[6:0] (in view: work.lcddata00(arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\elith\documents\github\arqui3cm3\lcd00\lcddata00.vhdl</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>ROM outworddd_2[6:0] (in view: work.lcddata00(arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\elith\documents\github\arqui3cm3\lcd00\lcddata00.vhdl&quot;:61:19:61:26|ROM outworddd_2[6:0] (in view: work.lcddata00(arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\elith\documents\github\arqui3cm3\lcd00\lcddata00.vhdl</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>ROM outworddd_2[6:0] (in view: work.lcddata00(arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:L00.D00.osc_int&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object &quot;n:L00.D00.osc_int&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

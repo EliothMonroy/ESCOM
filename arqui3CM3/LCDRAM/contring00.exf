@@ -1,0 +1,50 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      outr(3:0)                     outr                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      outr_3_                     outr[3]                       1            0            
+        Port      outr_2_                     outr[2]                       1            1            
+        Port      outr_1_                     outr[1]                       1            2            
+        Port      outr_0_                     outr[0]                       1            3            
+End
+Section Cross Reference File
+Design 'contring00' created Wed May 18 20:45:53 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst               sring_3_                                  sring[3]
+   Inst             outrDFF_0_                                outrDFF[0]
+   Inst             outrDFF_1_                                outrDFF[1]
+   Inst             outrDFF_2_                                outrDFF[2]
+   Inst             outrDFF_3_                                outrDFF[3]
+   Inst                outr_0_                                   outr[0]
+   Inst                outr_1_                                   outr[1]
+   Inst                outr_2_                                   outr[2]
+   Inst                outr_3_                                   outr[3]
+   Inst            outr_c_i_1_                               outr_c_i[1]
+   Inst           sring_0_i_3_                              sring_0_i[3]
+   Inst              outr_0_0_                                 outr_0[0]
+   Inst              outr_0_1_                                 outr_0[1]
+   Inst              outr_0_3_                                 outr_0[3]
+   Inst              outr_0_2_                                 outr_0[2]
+   Inst             sring_0_3_                                sring_0[3]
+   Net              sring_3__n                                  sring[3]
+   Net             outr_c_0__n                                 outr_c[0]
+   Net               outr_0__n                                   outr[0]
+   Net             outr_c_1__n                                 outr_c[1]
+   Net               outr_1__n                                   outr[1]
+   Net             outr_c_2__n                                 outr_c[2]
+   Net               outr_2__n                                   outr[2]
+   Net             outr_c_3__n                                 outr_c[3]
+   Net           outr_c_i_1__n                               outr_c_i[1]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     clkr
+        Input     resetr
+        Output     outr_3_
+        Output     outr_2_
+        Output     outr_1_
+        Output     outr_0_
+End

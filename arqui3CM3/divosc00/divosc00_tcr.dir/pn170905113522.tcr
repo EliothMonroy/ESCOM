@@ -1,0 +1,10 @@
+#Start recording tcl command: 9/5/2017 10:37:16
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/divosc00; Project name: divosc00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00/divosc00.ldf"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00/packagediv00.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/divosc00/toposcdiv00.vhdl"
+prj_run Export -impl divosc00 -task Jedecgen
+prj_run Export -impl divosc00 -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 9/5/2017 11:35:22

@@ -1,0 +1,69 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":8:7:8:14|Top entity is set to toprom00.
+File C:\lscc\diamond\3.9_x64\synpbase\lib\cpld\lattice.vhd changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\osc00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\packagediv00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\packagerom00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\toposcdiv00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl changed - recompiling
+VHDL syntax check successful!
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl changed - recompiling
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl changed - recompiling
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":8:7:8:14|Synthesizing work.toprom00.toprom0.
+@W: CD638 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\toprom00.vhdl":33:7:33:16|Signal soutcontro is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00.vhdl":7:7:7:11|Synthesizing work.rom00.rom0.
+Post processing for work.rom00.rom0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl":7:7:7:18|Synthesizing work.contreadro00.contreadro0.
+@N: CD364 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\contReadRo00.vhdl":27:6:27:14|Removing redundant assignment.
+Post processing for work.contreadro00.contreadro0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.toprom00.toprom0
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:56 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\eliot\Documents\Github\arqui3CM3\rom00\rom00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:56 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Oct 20 11:34:56 2017
+
+###########################################################]

@@ -1,0 +1,10 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_2(topha0)) of type view:work.and00_72_2(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_28(topha0)) of type view:work.and00_0_27(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_29(topha0)) of type view:work.and00_0_30(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_45(topha0)) of type view:work.and00_0_46(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_61(topha0)) of type view:work.and00_0_62(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_77(topha0)) of type view:work.and00_0_78(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_93(topha0)) of type view:work.and00_0_94(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\elith\documents\github\arqui3cm3\generic01\generic01\source\topha00.vhdl":13:1:13:4|Removing instance HA01 (in view: work.topha00_3_109(topha0)) of type view:work.and00_0_110(and0) because it does not drive other instances.

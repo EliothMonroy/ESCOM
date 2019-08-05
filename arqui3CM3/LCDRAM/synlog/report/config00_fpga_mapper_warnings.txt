@@ -1,0 +1,9 @@
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net N_8_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_9_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net N_6_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_7_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_8_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\config00.vhd":21:5:21:8|Net un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 

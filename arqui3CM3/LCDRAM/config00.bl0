@@ -1,0 +1,335 @@
+#$ DATE Wed May 18 20:53:05 2016
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE config00
+#$ PINS 20 incontc_5_ outWordc_7_ resetc inFlagc RWc RSc ENc outFlagc incontc_4_ incontc_3_ incontc_2_ incontc_1_ incontc_0_ outWordc_6_ outWordc_5_ outWordc_4_ outWordc_3_ outWordc_2_ outWordc_1_ outWordc_0_
+#$ NODES 115 outWordc_1_0_reg outWordc_1_1_reg outWordc_1_2_reg outWordc_1_3_reg outWordc_1_4_reg outWordc_1_5_reg gnd_n_n outWordc_1_7_reg un1_inflagc_1 un1_inflagc_6 \
+#  vcc_n_n N_40 N_41 N_42 N_50 N_60 N_61 N_69 N_70 N_71 \
+#  N_72 N_73 N_74 N_75 N_80 N_81 N_82 N_84 N_89 N_23 \
+#  N_68 N_76 N_87 N_88 N_54 N_53 N_52 N_85 N_77 N_86 \
+#  N_65 N_66 N_63 N_64 N_83 incontc_i_5__n incontc_i_4__n incontc_i_1__n incontc_i_3__n incontc_i_2__n \
+#  N_82_i incontc_i_0__n resetc_c inFlagc_c incontc_c_0__n incontc_c_1__n incontc_c_2__n incontc_c_3__n incontc_c_4__n incontc_c_5__n \
+#  ENclatrsreg outFlagclatrsreg N_64_i N_63_i un1_inflagc_9_0 N_66_i N_65_i un1_inflagc_8_0 N_86_i un1_inflagc_6_i \
+#  un1_inflagc_7_0 N_77_i N_74_i N_80_i un1_resetc_8_0 N_40_i N_41_i N_84_i N_42_i N_43_i \
+#  N_71_i N_85_i N_46_i N_50_i N_52_0 N_53_0 N_54_0 N_89_i N_88_i N_87_i \
+#  N_76_i N_75_i N_68_i N_69_i un1_inflagc_10_0 N_73_i N_70_i N_72_i N_61_i N_60_i \
+#  un1_inflagc_10_0_1 un1_inflagc_10_0_2 N_30_i_1 N_30_i_2 N_63_1 N_28_i_1 N_26_i_1 N_8_i_1 N_6_i_1 N_80_1 \
+#  N_75_1 N_73_1 N_70_1 N_69_1 un1_inflagc_6_1 
+.model config00
+.inputs incontc_5_.BLIF resetc.BLIF inFlagc.BLIF incontc_4_.BLIF incontc_3_.BLIF incontc_2_.BLIF incontc_1_.BLIF incontc_0_.BLIF outWordc_1_0_reg.BLIF \
+  outWordc_1_1_reg.BLIF outWordc_1_2_reg.BLIF outWordc_1_3_reg.BLIF outWordc_1_4_reg.BLIF outWordc_1_5_reg.BLIF gnd_n_n.BLIF outWordc_1_7_reg.BLIF un1_inflagc_1.BLIF un1_inflagc_6.BLIF \
+  vcc_n_n.BLIF N_40.BLIF N_41.BLIF N_42.BLIF N_50.BLIF N_60.BLIF N_61.BLIF N_69.BLIF N_70.BLIF \
+  N_71.BLIF N_72.BLIF N_73.BLIF N_74.BLIF N_75.BLIF N_80.BLIF N_81.BLIF N_82.BLIF N_84.BLIF \
+  N_89.BLIF N_23.BLIF N_68.BLIF N_76.BLIF N_87.BLIF N_88.BLIF N_54.BLIF N_53.BLIF N_52.BLIF \
+  N_85.BLIF N_77.BLIF N_86.BLIF N_65.BLIF N_66.BLIF N_63.BLIF N_64.BLIF N_83.BLIF incontc_i_5__n.BLIF \
+  incontc_i_4__n.BLIF incontc_i_1__n.BLIF incontc_i_3__n.BLIF incontc_i_2__n.BLIF N_82_i.BLIF incontc_i_0__n.BLIF resetc_c.BLIF inFlagc_c.BLIF incontc_c_0__n.BLIF \
+  incontc_c_1__n.BLIF incontc_c_2__n.BLIF incontc_c_3__n.BLIF incontc_c_4__n.BLIF incontc_c_5__n.BLIF ENclatrsreg.BLIF outFlagclatrsreg.BLIF N_64_i.BLIF N_63_i.BLIF \
+  un1_inflagc_9_0.BLIF N_66_i.BLIF N_65_i.BLIF un1_inflagc_8_0.BLIF N_86_i.BLIF un1_inflagc_6_i.BLIF un1_inflagc_7_0.BLIF N_77_i.BLIF N_74_i.BLIF \
+  N_80_i.BLIF un1_resetc_8_0.BLIF N_40_i.BLIF N_41_i.BLIF N_84_i.BLIF N_42_i.BLIF N_43_i.BLIF N_71_i.BLIF N_85_i.BLIF \
+  N_46_i.BLIF N_50_i.BLIF N_52_0.BLIF N_53_0.BLIF N_54_0.BLIF N_89_i.BLIF N_88_i.BLIF N_87_i.BLIF N_76_i.BLIF \
+  N_75_i.BLIF N_68_i.BLIF N_69_i.BLIF un1_inflagc_10_0.BLIF N_73_i.BLIF N_70_i.BLIF N_72_i.BLIF N_61_i.BLIF N_60_i.BLIF \
+  un1_inflagc_10_0_1.BLIF un1_inflagc_10_0_2.BLIF N_30_i_1.BLIF N_30_i_2.BLIF N_63_1.BLIF N_28_i_1.BLIF N_26_i_1.BLIF N_8_i_1.BLIF N_6_i_1.BLIF \
+  N_80_1.BLIF N_75_1.BLIF N_73_1.BLIF N_70_1.BLIF N_69_1.BLIF un1_inflagc_6_1.BLIF  
+.outputs outWordc_7_ RWc RSc ENc outFlagc outWordc_6_ outWordc_5_ outWordc_4_ outWordc_3_ outWordc_2_ outWordc_1_ \
+  outWordc_0_ outWordc_1_2_reg.D outWordc_1_2_reg.LH outWordc_1_2_reg.AR ENclatrsreg.D ENclatrsreg.LH ENclatrsreg.AR outWordc_1_5_reg.D outWordc_1_5_reg.LH outWordc_1_5_reg.AR outWordc_1_7_reg.D \
+  outWordc_1_7_reg.LH outWordc_1_7_reg.AR outWordc_1_0_reg.D outWordc_1_0_reg.LH outWordc_1_0_reg.AR outWordc_1_3_reg.D outWordc_1_3_reg.LH outWordc_1_3_reg.AR outWordc_1_1_reg.D outWordc_1_1_reg.LH outWordc_1_1_reg.AR \
+  outFlagclatrsreg.D outFlagclatrsreg.LH outFlagclatrsreg.AR outWordc_1_4_reg.D outWordc_1_4_reg.LH outWordc_1_4_reg.AR gnd_n_n un1_inflagc_1 un1_inflagc_6 vcc_n_n N_40 \
+  N_41 N_42 N_50 N_60 N_61 N_69 N_70 N_71 N_72 N_73 N_74 \
+  N_75 N_80 N_81 N_82 N_84 N_89 N_23 N_68 N_76 N_87 N_88 \
+  N_54 N_53 N_52 N_85 N_77 N_86 N_65 N_66 N_63 N_64 N_83 \
+  incontc_i_5__n incontc_i_4__n incontc_i_1__n incontc_i_3__n incontc_i_2__n N_82_i incontc_i_0__n resetc_c inFlagc_c incontc_c_0__n incontc_c_1__n \
+  incontc_c_2__n incontc_c_3__n incontc_c_4__n incontc_c_5__n N_64_i N_63_i un1_inflagc_9_0 N_66_i N_65_i un1_inflagc_8_0 N_86_i \
+  un1_inflagc_6_i un1_inflagc_7_0 N_77_i N_74_i N_80_i un1_resetc_8_0 N_40_i N_41_i N_84_i N_42_i N_43_i \
+  N_71_i N_85_i N_46_i N_50_i N_52_0 N_53_0 N_54_0 N_89_i N_88_i N_87_i N_76_i \
+  N_75_i N_68_i N_69_i un1_inflagc_10_0 N_73_i N_70_i N_72_i N_61_i N_60_i un1_inflagc_10_0_1 un1_inflagc_10_0_2 \
+  N_30_i_1 N_30_i_2 N_63_1 N_28_i_1 N_26_i_1 N_8_i_1 N_6_i_1 N_80_1 N_75_1 N_73_1 N_70_1 \
+  N_69_1 un1_inflagc_6_1
+.names  resetc.BLIF resetc_c
+1 1
+.names  inFlagc.BLIF inFlagc_c
+1 1
+.names  incontc_0_.BLIF incontc_c_0__n
+1 1
+.names  incontc_1_.BLIF incontc_c_1__n
+1 1
+.names  incontc_2_.BLIF incontc_c_2__n
+1 1
+.names  incontc_3_.BLIF incontc_c_3__n
+1 1
+.names  incontc_4_.BLIF incontc_c_4__n
+1 1
+.names  incontc_5_.BLIF incontc_c_5__n
+1 1
+.names  outWordc_1_0_reg.BLIF outWordc_0_
+1 1
+.names  outWordc_1_1_reg.BLIF outWordc_1_
+1 1
+.names  outWordc_1_2_reg.BLIF outWordc_2_
+1 1
+.names  outWordc_1_3_reg.BLIF outWordc_3_
+1 1
+.names  outWordc_1_4_reg.BLIF outWordc_4_
+1 1
+.names  outWordc_1_5_reg.BLIF outWordc_5_
+1 1
+.names  gnd_n_n.BLIF outWordc_6_
+1 1
+.names  outWordc_1_7_reg.BLIF outWordc_7_
+1 1
+.names  gnd_n_n.BLIF RWc
+1 1
+.names  gnd_n_n.BLIF RSc
+1 1
+.names  ENclatrsreg.BLIF ENc
+1 1
+.names  outFlagclatrsreg.BLIF outFlagc
+1 1
+.names  N_73_1.BLIF resetc_c.BLIF N_73
+11 1
+.names  N_50.BLIF incontc_i_3__n.BLIF N_70_1
+11 1
+.names  N_70_1.BLIF resetc_c.BLIF N_70
+11 1
+.names  N_23.BLIF incontc_c_1__n.BLIF N_69_1
+11 1
+.names  N_69_1.BLIF incontc_i_3__n.BLIF N_69
+11 1
+.names  N_84.BLIF N_41.BLIF un1_inflagc_6_1
+11 1
+.names  un1_inflagc_6_1.BLIF N_43_i.BLIF un1_inflagc_6
+11 1
+.names  N_43_i.BLIF N_88_i.BLIF N_63_1
+11 1
+.names  N_63_1.BLIF N_89_i.BLIF N_63
+11 1
+.names  N_71_i.BLIF N_73_i.BLIF N_28_i_1
+11 1
+.names  N_28_i_1.BLIF N_74_i.BLIF outWordc_1_7_reg.AR
+11 1
+.names  N_70_i.BLIF N_71_i.BLIF N_26_i_1
+11 1
+.names  N_26_i_1.BLIF N_72_i.BLIF outWordc_1_0_reg.AR
+11 1
+.names  N_42_i.BLIF N_43_i.BLIF N_8_i_1
+11 1
+.names  N_8_i_1.BLIF N_61_i.BLIF outWordc_1_0_reg.LH
+11 1
+.names  N_42_i.BLIF N_43_i.BLIF N_6_i_1
+11 1
+.names  N_6_i_1.BLIF N_60_i.BLIF outWordc_1_1_reg.LH
+11 1
+.names  N_40_i.BLIF incontc_c_2__n.BLIF N_80_1
+11 1
+.names  N_80_1.BLIF incontc_i_3__n.BLIF N_80
+11 1
+.names  N_89.BLIF incontc_i_3__n.BLIF N_75_1
+11 1
+.names  N_75_1.BLIF resetc_c.BLIF N_75
+11 1
+.names  N_82.BLIF incontc_c_1__n.BLIF N_73_1
+11 1
+.names  N_75.BLIF N_75_i
+0 1
+.names  N_68.BLIF N_68_i
+0 1
+.names  N_69.BLIF N_69_i
+0 1
+.names  un1_inflagc_10_0.BLIF outFlagclatrsreg.AR
+0 1
+.names  N_73.BLIF N_73_i
+0 1
+.names  N_70.BLIF N_70_i
+0 1
+.names  N_72.BLIF N_72_i
+0 1
+.names  N_61.BLIF N_61_i
+0 1
+.names  N_60.BLIF N_60_i
+0 1
+.names  N_68_i.BLIF resetc_c.BLIF un1_inflagc_10_0_1
+11 1
+.names  N_69_i.BLIF inFlagc_c.BLIF un1_inflagc_10_0_2
+11 1
+.names  un1_inflagc_10_0_1.BLIF un1_inflagc_10_0_2.BLIF un1_inflagc_10_0
+11 1
+.names  N_71_i.BLIF N_87_i.BLIF N_30_i_1
+11 1
+.names  N_75_i.BLIF N_76_i.BLIF N_30_i_2
+11 1
+.names  N_30_i_1.BLIF N_30_i_2.BLIF outWordc_1_1_reg.AR
+11 1
+.names  un1_resetc_8_0.BLIF outWordc_1_2_reg.AR
+0 1
+.names  N_40_i.BLIF N_40
+0 1
+.names  N_41_i.BLIF N_41
+0 1
+.names  N_84.BLIF N_84_i
+0 1
+.names  N_42_i.BLIF N_42
+0 1
+.names  N_71.BLIF N_71_i
+0 1
+.names  N_85.BLIF N_85_i
+0 1
+.names  N_50_i.BLIF N_50
+0 1
+.names  N_52_0.BLIF N_52
+0 1
+.names  N_53_0.BLIF N_53
+0 1
+.names  N_54_0.BLIF N_54
+0 1
+.names  N_89.BLIF N_89_i
+0 1
+.names  N_88.BLIF N_88_i
+0 1
+.names  N_87.BLIF N_87_i
+0 1
+.names  N_76.BLIF N_76_i
+0 1
+.names  N_64.BLIF N_64_i
+0 1
+.names  N_63.BLIF N_63_i
+0 1
+.names  un1_inflagc_9_0.BLIF outWordc_1_3_reg.LH
+0 1
+.names  N_66.BLIF N_66_i
+0 1
+.names  N_65.BLIF N_65_i
+0 1
+.names  un1_inflagc_8_0.BLIF outWordc_1_2_reg.LH
+0 1
+.names  N_86.BLIF N_86_i
+0 1
+.names  un1_inflagc_6.BLIF un1_inflagc_6_i
+0 1
+.names  un1_inflagc_7_0.BLIF outWordc_1_4_reg.LH
+0 1
+.names  N_77.BLIF N_77_i
+0 1
+.names  N_74.BLIF N_74_i
+0 1
+.names  N_80.BLIF N_80_i
+0 1
+.names  N_86.BLIF incontc_c_0__n.BLIF outFlagclatrsreg.LH
+11 1
+.names  incontc_c_5__n.BLIF incontc_i_5__n
+0 1
+.names  incontc_c_4__n.BLIF incontc_i_4__n
+0 1
+.names  incontc_i_4__n.BLIF incontc_i_5__n.BLIF N_23
+11 1
+.names  N_53.BLIF resetc_c.BLIF N_81
+11 1
+.names  N_52.BLIF resetc_c.BLIF N_77
+11 1
+.names  N_41_i.BLIF N_83.BLIF N_76
+11 1
+.names  N_41_i.BLIF N_85.BLIF N_74
+11 1
+.names  N_87.BLIF incontc_c_1__n.BLIF N_72
+11 1
+.names  N_40.BLIF resetc_c.BLIF N_71
+11 1
+.names  N_23.BLIF N_54.BLIF N_68
+11 1
+.names  N_43_i.BLIF incontc_c_3__n.BLIF N_66
+11 1
+.names  N_43_i.BLIF N_50_i.BLIF N_65
+11 1
+.names  N_84.BLIF un1_inflagc_1.BLIF N_64
+11 1
+.names  N_86.BLIF incontc_c_1__n.BLIF outWordc_1_7_reg.LH
+11 1
+.names  incontc_c_3__n.BLIF incontc_i_1__n.BLIF N_61
+11 1
+.names  incontc_c_1__n.BLIF incontc_i_1__n
+0 1
+.names  incontc_c_3__n.BLIF incontc_i_3__n
+0 1
+.names  incontc_i_1__n.BLIF incontc_i_3__n.BLIF N_60
+11 1
+.names  N_86_i.BLIF un1_inflagc_6_i.BLIF un1_inflagc_7_0
+11 1
+.names  N_65_i.BLIF N_66_i.BLIF un1_inflagc_8_0
+11 1
+.names  N_63_i.BLIF N_64_i.BLIF un1_inflagc_9_0
+11 1
+.names  incontc_c_0__n.BLIF incontc_i_0__n
+0 1
+.names  N_43_i.BLIF incontc_i_0__n.BLIF un1_inflagc_1
+11 1
+.names  incontc_c_1__n.BLIF incontc_c_2__n.BLIF N_89
+11 1
+.names  N_82.BLIF N_82_i
+0 1
+.names  N_82_i.BLIF incontc_i_1__n.BLIF N_88
+11 1
+.names  N_83.BLIF incontc_c_3__n.BLIF N_87
+11 1
+.names  N_43_i.BLIF N_82.BLIF N_86
+11 1
+.names  N_83.BLIF incontc_i_3__n.BLIF N_85
+11 1
+.names  incontc_i_2__n.BLIF incontc_i_3__n.BLIF N_84
+11 1
+.names  incontc_c_2__n.BLIF incontc_i_2__n
+0 1
+.names  incontc_i_2__n.BLIF resetc_c.BLIF N_83
+11 1
+.names  incontc_c_2__n.BLIF incontc_c_3__n.BLIF N_82
+11 1
+.names  N_81.BLIF outWordc_1_4_reg.AR
+0 1
+.names  N_42.BLIF incontc_c_0__n.BLIF N_54_0
+11 1
+.names  N_40_i.BLIF N_42_i.BLIF N_53_0
+11 1
+.names  N_40_i.BLIF incontc_c_0__n.BLIF N_52_0
+11 1
+.names  N_41.BLIF incontc_i_2__n.BLIF N_50_i
+11 1
+.names  N_71_i.BLIF N_85_i.BLIF N_46_i
+11 1
+.names  N_40_i.BLIF resetc_c.BLIF N_43_i
+11 1
+.names  N_82_i.BLIF N_84_i.BLIF N_42_i
+11 1
+.names  incontc_c_0__n.BLIF incontc_i_1__n.BLIF N_41_i
+11 1
+.names  N_23.BLIF inFlagc_c.BLIF N_40_i
+11 1
+.names  N_80_i.BLIF resetc_c.BLIF un1_resetc_8_0
+11 1
+.names  N_46_i.BLIF N_63_i.BLIF outWordc_1_3_reg.AR
+11 1
+.names  N_74_i.BLIF N_77_i.BLIF ENclatrsreg.AR
+11 1
+.names  gnd_n_n
+.names  vcc_n_n
+1
+.names  vcc_n_n.BLIF outWordc_1_2_reg.D
+1 1
+.names  vcc_n_n.BLIF ENclatrsreg.D
+1 1
+.names  un1_inflagc_1.BLIF ENclatrsreg.LH
+1 1
+.names  vcc_n_n.BLIF outWordc_1_5_reg.D
+1 1
+.names  un1_inflagc_6.BLIF outWordc_1_5_reg.LH
+1 1
+.names  N_46_i.BLIF outWordc_1_5_reg.AR
+1 1
+.names  vcc_n_n.BLIF outWordc_1_7_reg.D
+1 1
+.names  vcc_n_n.BLIF outWordc_1_0_reg.D
+1 1
+.names  vcc_n_n.BLIF outWordc_1_3_reg.D
+1 1
+.names  vcc_n_n.BLIF outWordc_1_1_reg.D
+1 1
+.names  vcc_n_n.BLIF outFlagclatrsreg.D
+1 1
+.names  vcc_n_n.BLIF outWordc_1_4_reg.D
+1 1
+.end

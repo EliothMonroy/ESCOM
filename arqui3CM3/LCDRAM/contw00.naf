@@ -1,0 +1,13 @@
+clkcw  i
+inFlagcw  i
+inFlagx  i
+outcontcw[5]  b
+outcontcw[4]  b
+outcontcw[3]  b
+outcontcw[2]  b
+outcontcw[1]  b
+outcontcw[0]  b
+RWcw  o
+RScw  o
+ENcw  o
+outFlagcw  o

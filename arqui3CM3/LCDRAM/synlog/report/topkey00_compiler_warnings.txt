@@ -1,0 +1,8 @@
+@W: CD279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\packagekey00.vhd":21:2:21:9|Port offtranc of component coder00 not found on corresponding entity
+@W: CD730 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\topkey00.vhd":26:2:26:4|Component declaration has 9 ports but entity declares 8 ports
+@W: CG296 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":22:10:22:16|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:12:28:15|Referenced variable clkc is not in sensitivity list
+@W: CL189 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:8:28:9|Register bit out7segc(6) is always 1, optimizing ...
+@W: CL260 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\coder00.vhd":28:8:28:9|Pruning register bit 6 of out7segc(7 downto 0)  
+@W: CL279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":20:9:20:10|Pruning register bits 2 to 0 of sring(3 downto 0)  
+

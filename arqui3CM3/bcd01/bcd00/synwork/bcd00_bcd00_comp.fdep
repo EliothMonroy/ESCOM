@@ -1,0 +1,135 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\bcd00\\synwork\\bcd00_bcd00_comp.srs|-top|topp04|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\bcd00\\source\\div00.vhdl":1512504735
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\cpld\\lattice.vhd":1489047246
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\bcd00\\source\\osc00.vhdl":1512504735
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\bcd00\\source\\packagediv00.vhdl":1512504735
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\ac8bit04.vhdl":1512616689
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\ac12bit04.vhdl":1512616951
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\coderNibbles04.vhdl":1512617698
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\compadd04.vhdl":1512618054
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\contIter04.vhdl":1512618122
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\contring04.vhdl":1512618315
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\init04.vhdl":1512618350
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\leeInst04.vhdl":1512618379
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\mux04.vhdl":1512618414
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\pcinc04.vhdl":1512618446
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\portAB04.vhdl":1512618474
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\shift8bit04.vhdl":1512618503
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\shift12bit04.vhdl":1512618537
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\sust04.vhdl":1512618575
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\packagep04.vhdl":1512619094
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\bcd00\\source\\toposcdiv00.vhdl":1512504735
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\bcd01\\topp04.vhdl":1512619164
+0			"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\div00.vhdl" vhdl
+2			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\osc00.vhdl" vhdl
+3			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\packagediv00.vhdl" vhdl
+4			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac8bit04.vhdl" vhdl
+5			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\ac12bit04.vhdl" vhdl
+6			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\coderNibbles04.vhdl" vhdl
+7			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\compadd04.vhdl" vhdl
+8			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contIter04.vhdl" vhdl
+9			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\contring04.vhdl" vhdl
+10			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\init04.vhdl" vhdl
+11			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\leeInst04.vhdl" vhdl
+12			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\mux04.vhdl" vhdl
+13			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\pcinc04.vhdl" vhdl
+14			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\portAB04.vhdl" vhdl
+15			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift8bit04.vhdl" vhdl
+16			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\shift12bit04.vhdl" vhdl
+17			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\sust04.vhdl" vhdl
+18			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\packagep04.vhdl" vhdl
+19			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\bcd00\source\toposcdiv00.vhdl" vhdl
+20			"C:\Users\ELITH\Documents\GitHub\arqui3CM3\bcd01\topp04.vhdl" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+19 3 1 2
+20 18 12 19 9 6 8 16 7 17 5 15 11 4 13 14 10
+#Dependency Lists(Users Of)
+0 -1
+1 19
+2 19
+3 19
+4 20
+5 20
+6 20
+7 20
+8 20
+9 20
+10 20
+11 20
+12 20
+13 20
+14 20
+15 20
+16 20
+17 20
+18 20
+19 20
+20 -1
+#Design Unit to File Association
+module work topp04 20
+arch work topp04 topp0 20
+module work toposcdiv00 19
+arch work toposcdiv00 toposcdiv0 19
+module work sust04 17
+arch work sust04 sust0 17
+module work shift12bit04 16
+arch work shift12bit04 shift12bit0 16
+module work shift8bit04 15
+arch work shift8bit04 shift8bit0 15
+module work portab04 14
+arch work portab04 portab0 14
+module work pcinc04 13
+arch work pcinc04 pcinc0 13
+module work mux04 12
+arch work mux04 mux0 12
+module work leeinst04 11
+arch work leeinst04 leeinst0 11
+module work init04 10
+arch work init04 init0 10
+module work contring04 9
+arch work contring04 contring0 9
+module work contiter04 8
+arch work contiter04 contiter0 8
+module work compadd04 7
+arch work compadd04 compadd0 7
+module work codernibbles04 6
+arch work codernibbles04 codernibbles0 6
+module work ac12bit04 5
+arch work ac12bit04 ac12bit0 5
+module work ac8bit04 4
+arch work ac8bit04 ac8bit0 4
+module work osc00 2
+arch work osc00 osc0 2
+module work div00 1
+arch work div00 div0 1

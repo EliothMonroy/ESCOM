@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Segundo Parcial</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_led_control">Analisis</string>
+    <string name="list_title">Dispositivos conectado</string>
+    <string name="list_title2">Paired Devices</string>
+</resources>

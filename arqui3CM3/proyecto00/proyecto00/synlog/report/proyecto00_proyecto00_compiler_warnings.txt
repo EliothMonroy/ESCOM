@@ -1,0 +1,6 @@
+@W: CG296 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\mux00.vhdl":18:8:18:14|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\mux00.vhdl":24:9:24:12|Referenced variable rwrm is not in sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\mux00.vhdl":20:7:20:13|Referenced variable enablem is not in sensitivity list.
+@W: CL279 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\proyecto00\proyecto00\source\contring00.vhdl":19:2:19:3|Pruning register bits 2 to 0 of soutr(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

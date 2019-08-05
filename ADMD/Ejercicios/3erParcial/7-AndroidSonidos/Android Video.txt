@@ -1,0 +1,38 @@
+///////////////////////////////////////////
+// Video.
+// MainActivity.java
+import android.app.*;
+import android.net.*;
+import android.os.*;
+import android.widget.*;
+public class MainActivity extends Activity {
+	VideoView	vvw;
+	Uri		uri;
+	MediaController mcr;
+	@Override
+	public void onCreate(Bundle b) {
+		super.onCreate(b);
+		setContentView(R.layout.activity_main);
+		vvw = (VideoView) findViewById(R.id.xvv1);
+		uri = Uri.parse("android.resource://com.example.escom.calendario/"+ R.raw.video2);
+		mcr = new MediaController(this);
+		vvw.setMediaController(mcr);
+		vvw.setVideoURI(uri);
+		vvw.start();
+	}
+}
+
+//////////////////////////////////////////////
+// activity_main.xml
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+    <VideoView
+        android:id="@+id/xvv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+//////////////////////////////////////////////

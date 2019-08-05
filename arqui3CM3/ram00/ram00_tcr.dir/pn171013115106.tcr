@@ -1,0 +1,8 @@
+#Start recording tcl command: 10/13/2017 10:40:21
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/ram00; Project name: ram00
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/ram00/ram00.ldf"
+prj_run Export -impl ram00 -task Jedecgen
+prj_project save
+prj_project save
+prj_run Translate -impl ram00
+#Stop recording: 10/13/2017 11:51:06

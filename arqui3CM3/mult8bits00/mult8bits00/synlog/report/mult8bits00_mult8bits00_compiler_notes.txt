@@ -1,0 +1,12 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\topmult8bits00.vhdl":6:7:6:19|Top entity is set to topmult8bit00.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\topmult8bits00.vhdl":6:7:6:19|Synthesizing work.topmult8bit00.topmult8bit0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\fa00.vhdl":7:7:7:10|Synthesizing work.fa00.fa0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\or00.vhdl":6:7:6:10|Synthesizing work.or00.or0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\ha00.vhdl":7:7:7:10|Synthesizing work.ha00.ha0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\xor00.vhdl":6:7:6:11|Synthesizing work.xor00.xor0.
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\mult8bits00\mult8bits00\source\and00.vhdl":6:7:6:11|Synthesizing work.and00.and0.
+@N|Running in 64-bit mode
+

@@ -1,0 +1,738 @@
+
+synpwrap -msg -prj "and00_and00_synplify.tcl" -log "and00_and00.srf"
+Copyright (C) 1992-2017 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.9.1.119
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of and00_and00.srf
+#Build: Synplify Pro L-2016.09L-1, Build 147R, Mar  7 2017
+#install: C:\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: ELIOTHLAPTOP
+
+# Thu Sep 07 21:42:34 2017
+
+#Implementation: and00
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 284R, built Mar 10 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\eliot\Documents\Github\arqui3CM3\and00\and00.vhdl":5:7:5:11|Top entity is set to and00.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\eliot\Documents\Github\arqui3CM3\and00\and00.vhdl":5:7:5:11|Synthesizing work.and00.and0.
+Post processing for work.and00.and0
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 74MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Sep 07 21:42:34 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\ELITH\Documents\GitHub\arqui3CM3\and00\and00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Sep 07 21:42:35 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Sep 07 21:42:35 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 279R, built Mar  8 2017
+@N|Running in 64-bit mode
+File C:\Users\ELITH\Documents\GitHub\arqui3CM3\and00\and00\synwork\and00_and00_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Sep 07 21:42:36 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Sep 07 21:42:37 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\eliot\Documents\Github\arqui3CM3\and00\and00\and00_and00_scck.rpt 
+Printing clock  summary report in "C:\Users\eliot\Documents\Github\arqui3CM3\and00\and00\and00_and00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist and00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Sep 07 21:42:38 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Sep 07 21:42:38 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		100000.00ns		   1 /         0
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+
+Writing Analyst data base C:\Users\eliot\Documents\Github\arqui3CM3\and00\and00\synwork\and00_and00_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 141MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\eliot\Documents\Github\arqui3CM3\and00\and00\and00_and00.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 144MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Sep 07 21:42:40 2017
+#
+
+
+Top view:               and00
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 144MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 144MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       3
+
+
+Details:
+GSR:            1
+IB:             2
+OB:             1
+ORCALUT4:       1
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 144MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Thu Sep 07 21:42:41 2017
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HE -path "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00" -path "C:/Users/eliot/Documents/Github/arqui3CM3/and00"   "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00/and00_and00.edi" "and00_and00.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to and00_and00.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data"  -p "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00" -p "C:/Users/eliot/Documents/Github/arqui3CM3/and00"  "and00_and00.ngo" "and00_and00.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'and00_and00.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+      7 blocks expanded
+Complete the first expansion.
+Writing 'and00_and00.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "and00_and00.ngd" -o "and00_and00_map.ncd" -pr "and00_and00.prf" -mp "and00_and00.mrp" -lpf "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00/and00_and00_synplify.lpf" -lpf "C:/Users/eliot/Documents/Github/arqui3CM3/and00/and00.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: and00_and00.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:      0 out of  7209 (0%)
+      PFU registers:            0 out of  6864 (0%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:         1 out of  3432 (0%)
+      SLICEs as Logic/ROM:      1 out of  3432 (0%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:          1 out of  6864 (0%)
+      Number used as logic LUTs:          1
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 3 + 4(JTAG) out of 115 (6%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net Aa_c: 1 loads
+     Net Ba_c: 1 loads
+     Net Ya_c: 1 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 57 MB
+
+Dumping design to file and00_and00_map.ncd.
+
+mpartrce -p "and00_and00.p2t" -f "and00_and00.p3t" -tf "and00_and00.pt" "and00_and00_map.ncd" "and00_and00.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "and00_and00_map.ncd"
+Thu Sep 07 21:42:44 2017
+
+PAR: Place And Route Diamond (64-bit) 3.9.1.119.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/eliot/Documents/Github/arqui3CM3/and00/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF and00_and00_map.ncd and00_and00.dir/5_1.ncd and00_and00.prf
+Preference file: and00_and00.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file and00_and00_map.ncd.
+Design name: and00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    3+4(JTAG)/336     2% used
+                   3+4(JTAG)/115     6% bonded
+
+   SLICE              1/3432         <1% used
+
+
+
+Number of Signals: 3
+Number of Connections: 3
+
+Pin Constraint Summary:
+   3 out of 3 pins locked (100% locked).
+
+No signal is selected as primary clock.
+
+
+No signal is selected as secondary clock.
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 3108.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  3108
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+
+  PRIMARY  : 0 out of 8 (0%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   3 + 4(JTAG) out of 336 (2.1%) PIO sites used.
+   3 + 4(JTAG) out of 115 (6.1%) bonded PIO sites used.
+   Number of PIO comps: 3; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 28 (  0%) | -          | -         |
+| 1        | 0 / 29 (  0%) | -          | -         |
+| 2        | 2 / 29 (  6%) | 2.5V       | -         |
+| 3        | 0 / 9 (  0%)  | -          | -         |
+| 4        | 1 / 10 ( 10%) | 2.5V       | -         |
+| 5        | 0 / 10 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file and00_and00.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 3 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 6 secs 
+
+Start NBR router at 21:42:50 09/07/17
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 21:42:50 09/07/17
+
+Start NBR section for initial routing at 21:42:50 09/07/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 21:42:50 09/07/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for re-routing at 21:42:50 09/07/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for post-routing at 21:42:50 09/07/17
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 6 secs 
+Total REAL time: 6 secs 
+Completely routed.
+End of route.  3 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file and00_and00.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 7 secs 
+Total REAL time to completion: 7 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "and00_and00.t2b" -w "and00_and00.ncd" -jedec "and00_and00.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.1.119
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file and00_and00.ncd.
+Design name: and00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from and00_and00.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "and00_and00.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 

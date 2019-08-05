@@ -1,0 +1,19 @@
+#Start recording tcl command: 9/21/2017 20:11:09
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00; Project name: desplazamientosbarril00
+prj_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00/desplazamientosbarril00.ldf"
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00/topdesplazamientosbarril00.vhdl"
+prj_run Export -impl desplazamientosbarril00 -task Jedecgen
+pgr_project open "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00/desplazamientosbarril00/desplazamientosbarril00.xcf"
+pgr_program set -port FTUSB-1
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00/desplazamientosbarril00/desplazamientosbarril00.xcf"
+pgr_program run
+pgr_program set -port FTUSB-0
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00/desplazamientosbarril00/desplazamientosbarril00.xcf"
+pgr_program run
+prj_run Export -impl desplazamientosbarril00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/desplazamientosbarril00/desplazamientosbarril00/desplazamientosbarril00.xcf"
+pgr_program run
+pgr_program run
+prj_project save
+pgr_project close
+#Stop recording: 9/21/2017 20:44:57

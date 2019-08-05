@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="mux00" device="LCMXO2-7000HE-4TG144C" default_implementation="mux00">
+    <Options/>
+    <Implementation title="mux00" dir="mux00" description="mux00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="mux00"/>
+        <Source name="mux00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="mux00"/>
+        </Source>
+        <Source name="mux00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="mux00/mux00.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="mux001.sty"/>
+</BaliProject>

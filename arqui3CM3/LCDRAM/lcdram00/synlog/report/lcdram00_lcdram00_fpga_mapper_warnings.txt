@@ -1,0 +1,12 @@
+@W: MO171 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":31:4:31:5|Sequential instance LCD06.RWbb reduced to a combinational gate by constant propagation 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\bufferlcd00.vhdl":36:11:36:31|Net LCD06.pbuff\.un2_inflagbuffwrite appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\beatl\desktop\arqui\proyectos\lcdram\config00.vhdl":25:5:25:8|Net LCD03.un1_inflagc_3 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT420 |Found inferred clock osc00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on object "n:K01.OS00.osc_int"

@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell compuertas00
+   Instance path: compuertas00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      16.00        100.0
+                                  LUT4	      17.00        100.0
+                                 IOBUF	         27        100.0
+                                PFUREG	          8        100.0

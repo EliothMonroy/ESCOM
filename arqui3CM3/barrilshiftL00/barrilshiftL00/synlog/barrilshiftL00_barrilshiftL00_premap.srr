@@ -1,0 +1,63 @@
+# Tue Sep 19 11:37:37 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\barrilshiftL00_barrilshiftL00_scck.rpt 
+Printing clock  summary report in "C:\Users\eliot\Documents\Github\arqui3CM3\barrilshiftL00\barrilshiftL00\barrilshiftL00_barrilshiftL00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist topbarrilshiftL00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock                                           Clock                   Clock
+Clock                            Frequency     Period        Type                                            Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------
+div00|outdiv_derived_clock       2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Inferred_clkgroup_0     20   
+osc00|osc_int_inferred_clock     2.1 MHz       480.769       inferred                                        Inferred_clkgroup_0     23   
+==========================================================================================================================================
+
+@W: MT529 :"c:\users\eliot\documents\github\arqui3cm3\barrilshiftl00\barrilshiftl00\source\div00.vhdl":21:2:21:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including W00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Sep 19 11:37:38 2017
+
+###########################################################]

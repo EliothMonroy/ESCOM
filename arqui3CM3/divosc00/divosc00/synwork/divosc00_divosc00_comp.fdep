@@ -1,0 +1,41 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\divosc00\\divosc00\\synwork\\divosc00_divosc00_comp.srs|-top|toposcdiv00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\osc00vhdl\\osc00.vhdl":1505480292
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\cpld\\lattice.vhd":1489047246
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\divosc00\\div00.vhdl":1505480537
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\divosc00\\packagediv00.vhdl":1505480570
+#CUR:"C:\\Users\\eliot\\Documents\\Github\\arqui3CM3\\divosc00\\toposcdiv00.vhdl":1505480558
+0			"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\eliot\Documents\Github\arqui3CM3\osc00vhdl\osc00.vhdl" vhdl
+2			"C:\Users\eliot\Documents\Github\arqui3CM3\divosc00\div00.vhdl" vhdl
+3			"C:\Users\eliot\Documents\Github\arqui3CM3\divosc00\packagediv00.vhdl" vhdl
+4			"C:\Users\eliot\Documents\Github\arqui3CM3\divosc00\toposcdiv00.vhdl" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 3 2 1
+#Dependency Lists(Users Of)
+0 -1
+1 4
+2 4
+3 4
+4 -1
+#Design Unit to File Association
+module work toposcdiv00 4
+arch work toposcdiv00 toposcdiv0 4
+module work div00 2
+arch work div00 div0 2
+module work osc00 1
+arch work osc00 osc0 1

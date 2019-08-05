@@ -1,0 +1,16 @@
+#Start recording tcl command: 9/16/2017 23:39:24
+#Project Location: C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00; Project name: arith00
+prj_project new -name "arith00" -impl "arith00" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_project save
+pgr_project close
+prj_src add "C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00/arith00.vhdl"
+prj_run Export -impl arith00 -task Jedecgen
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00/arith00/arith00.xcf"
+prj_src add -exclude "C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00/arith00/arith00.xcf"
+prj_src enable "C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00/arith00/arith00.xcf"
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00/arith00/arith00.xcf"
+pgr_program run
+pgr_project save "C:/Users/ELITH/Documents/GitHub/arqui3CM3/arith00/arith00/arith00.xcf"
+prj_project save
+pgr_project close
+#Stop recording: 9/16/2017 23:51:02

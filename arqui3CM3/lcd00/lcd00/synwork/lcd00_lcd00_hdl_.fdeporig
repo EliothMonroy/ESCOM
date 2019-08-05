@@ -1,0 +1,84 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|toplcd00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcd00\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489223076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489244912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1489043000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1480973228
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcd00\\source\\div00.vhdl":1508873051
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcd00\\source\\osc00.vhdl":1508873051
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcd00\\source\\packagediv00.vhdl":1508873051
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcd00\\source\\toposcdiv00.vhdl":1508873051
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcdcontconfig00.vhdl":1510512691
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcdconfig00.vhdl":1511322507
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcdcontdata00.vhdl":1511322662
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcddata00.vhdl":1511322646
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\lcdmux00.vhdl":1510520836
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\packagelcd00.vhdl":1509930291
+#CUR:"C:\\Users\\ELITH\\Documents\\GitHub\\arqui3CM3\\lcd00\\toplcd00.vhdl":1510524459
+0 "C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\div00.vhdl" vhdl
+2 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\osc00.vhdl" vhdl
+3 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\packagediv00.vhdl" vhdl
+4 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcd00\source\toposcdiv00.vhdl" vhdl
+5 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontconfig00.vhdl" vhdl
+6 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdconfig00.vhdl" vhdl
+7 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdcontdata00.vhdl" vhdl
+8 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcddata00.vhdl" vhdl
+9 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\lcdmux00.vhdl" vhdl
+10 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\packagelcd00.vhdl" vhdl
+11 "C:\Users\ELITH\Documents\GitHub\arqui3CM3\lcd00\toplcd00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 2 1 3 
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 4 5 6 7 8 9 10 
+
+# Dependency Lists (Users Of)
+0 -1
+1 4 
+2 4 
+3 4 
+4 11 
+5 11 
+6 11 
+7 11 
+8 11 
+9 11 
+10 11 
+11 -1
+
+# Design Unit to File Association
+arch work div00 div0 1
+module work div00 1
+arch work osc00 osc0 2
+module work osc00 2
+arch work toposcdiv00 toposcdiv0 4
+module work toposcdiv00 4
+arch work lcdcontconfig00 arch 5
+module work lcdcontconfig00 5
+arch work lcdconfig00 arch 6
+module work lcdconfig00 6
+arch work lcdcontdata00 arch 7
+module work lcdcontdata00 7
+arch work lcddata00 arch 8
+module work lcddata00 8
+arch work lcdmux00 arch 9
+module work lcdmux00 9
+arch work toplcd00 arch 11
+module work toplcd00 11

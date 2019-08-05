@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1103737</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>LOCATE COMP &quot;SLICE_0&quot; SITE &quot;13&quot; ;
+</Dynamic>
+            <Dynamic>LOCATE COMP &quot;salida[0]&quot; SITE &quot;13&quot; ;
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103737</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>LOCATE COMP &quot;SLICE_1&quot; SITE &quot;14&quot; ;
+</Dynamic>
+            <Dynamic>LOCATE COMP &quot;salida[1]&quot; SITE &quot;14&quot; ;
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103737</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>LOCATE COMP &quot;SLICE_2&quot; SITE &quot;19&quot; ;
+</Dynamic>
+            <Dynamic>LOCATE COMP &quot;salida[2]&quot; SITE &quot;19&quot; ;
+</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=pmux.un1_selector_1 loads=3 clock_loads=3</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=pmux.un1_selector_1 loads=3 clock_loads=3</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00.vhdl&quot;:24:2:24:5|Latch generated from process for signal salida(2 downto 0); possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>C:\Users\eliot\Documents\Github\arqui3CM3\mux00\mux00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from process for signal salida(2 downto 0); possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT531 :&quot;c:\users\eliot\documents\github\arqui3cm3\mux00\mux00.vhdl&quot;:24:2:24:5|Found signal identified as System clock which controls 3 sequential elements including salida[2:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance.</Dynamic>
+            <Navigation>MT531</Navigation>
+            <Navigation>c:\users\eliot\documents\github\arqui3cm3\mux00\mux00.vhdl</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found signal identified as System clock which controls 3 sequential elements including salida[2:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,3 @@
+@E: CD178 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\toplcdram00.vhd":101:35:101:44|Can't find formal incontw
+@E|Parse errors encountered - exiting
+

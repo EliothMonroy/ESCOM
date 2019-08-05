@@ -1,0 +1,13 @@
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\toprotR00.vhdl":8:7:8:15|Synthesizing work.toprotr00.toprotr0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00.vhdl":8:7:8:12|Synthesizing work.rotr00.rotr0.
+Post processing for work.rotr00.rotr0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\rotR00\rotR00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.toprotr00.toprotr0

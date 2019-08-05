@@ -1,0 +1,66 @@
+# Sun Sep 17 22:25:07 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\word00\word00_scck.rpt 
+Printing clock  summary report in "C:\Users\ELITH\Documents\GitHub\arqui3CM3\word00\word00\word00_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+@W: BN132 :"c:\users\elith\documents\github\arqui3cm3\word00\coder00.vhdl":16:2:16:5|Removing sequential instance W02.outcoder_1[3] because it is equivalent to instance W02.outcoder_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist topword00
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                            Requested     Requested     Clock                                           Clock                     Clock
+Clock                            Frequency     Period        Type                                            Group                     Load 
+--------------------------------------------------------------------------------------------------------------------------------------------
+System                           1.0 MHz       1000.000      system                                          system_clkgroup           4    
+div00|outdiv_derived_clock       2.1 MHz       480.769       derived (from osc00|osc_int_inferred_clock)     Autoconstr_clkgroup_0     5    
+osc00|osc_int_inferred_clock     2.1 MHz       480.769       inferred                                        Autoconstr_clkgroup_0     23   
+============================================================================================================================================
+
+@W: MT531 :"c:\users\elith\documents\github\arqui3cm3\word00\coder00.vhdl":16:2:16:5|Found signal identified as System clock which controls 4 sequential elements including W02.outcoder_1[0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"c:\users\elith\documents\github\arqui3cm3\divosc00vhdl\div00.vhdl":21:2:21:3|Found inferred clock osc00|osc_int_inferred_clock which controls 23 sequential elements including W00.DO1.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Sep 17 22:25:08 2017
+
+###########################################################]

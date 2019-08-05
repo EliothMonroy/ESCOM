@@ -1,0 +1,22 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_hdl_.srs  -top  toplcdram00  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\osc00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\div00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packageosc00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toposc00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packagekey00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\topkey00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packagelcdram00.vhdl -lib work C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl  -log  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\syntax.log  -fileorder  C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\syntmp\hdlorder.tcl 
+rc:0 success:1 runtime:2
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\synwork\lcdram00_lcdram00_hdl_.srs|o|0|0
+C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd|i|1377014408|73964
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\osc00.vhdl|i|1465316654|527
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\div00.vhdl|i|1465316650|2096
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packageosc00.vhdl|i|1465316632|387
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toposc00.vhdl|i|1465316616|527
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl|i|1465312808|2068
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl|i|1465310217|819
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl|i|1465312601|6063
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packagekey00.vhdl|i|1465312675|743
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\topkey00.vhdl|i|1465322198|1015
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl|i|1465323120|1558
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl|i|1465310277|1140
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl|i|1465323602|3847
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl|i|1465310280|1045
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packagelcdram00.vhdl|i|1465316510|3004
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl|i|1465316566|3516
+C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\lcdram00\syntax.log|o|1481495982|960
+C:\lscc\diamond\3.7_x64\synpbase\bin\c_vhdl.exe|i|1449734236|2359296
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_vhdl.exe|i|1449734446|3228672

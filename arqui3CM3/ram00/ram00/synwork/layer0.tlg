@@ -1,0 +1,32 @@
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\topram00.vhdl":8:7:8:14|Synthesizing work.topram00.topram0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\contReadRa00.vhdl":7:7:7:18|Synthesizing work.contreadra00.contreadra0.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\contReadRa00.vhdl":32:8:32:17|Removing redundant assignment.
+Post processing for work.contreadra00.contreadra0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\mux00.vhdl":7:7:7:11|Synthesizing work.mux00.mux0.
+@W: CG296 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\mux00.vhdl":18:8:18:14|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\mux00.vhdl":24:9:24:12|Referenced variable rwrm is not in sensitivity list.
+@W: CG290 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\mux00.vhdl":20:7:20:13|Referenced variable enablem is not in sensitivity list.
+Post processing for work.mux00.mux0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00.vhdl":7:7:7:11|Synthesizing work.ram00.ram0.
+Post processing for work.ram00.ram0
+@N: CL134 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00.vhdl":21:7:21:13|Found RAM wordram, depth=32, width=7
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\coder00.vhdl":7:7:7:13|Synthesizing work.coder00.coder0.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\coder00.vhdl":32:3:32:12|Removing redundant assignment.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\coder00.vhdl":39:7:39:16|Removing redundant assignment.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\coder00.vhdl":75:7:75:16|Removing redundant assignment.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\coder00.vhdl":111:7:111:16|Removing redundant assignment.
+@N: CD364 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\coder00.vhdl":147:7:147:16|Removing redundant assignment.
+Post processing for work.coder00.coder0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\contring00.vhdl":7:7:7:16|Synthesizing work.contring00.contring0.
+Post processing for work.contring00.contring0
+@W: CL279 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\contring00.vhdl":19:2:19:3|Pruning register bits 2 to 0 of soutr(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\toposcdiv00.vhdl":8:7:8:17|Synthesizing work.toposcdiv00.toposcdiv0.
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\div00.vhdl":7:7:7:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\ELITH\Documents\GitHub\arqui3CM3\ram00\ram00\source\osc00.vhdl":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.toposcdiv00.toposcdiv0
+Post processing for work.topram00.topram0

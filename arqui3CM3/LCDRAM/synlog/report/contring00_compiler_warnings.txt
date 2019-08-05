@@ -1,0 +1,2 @@
+@W: CL279 :"C:\users\alberto rios\documents\ipn\escom\5semestre\arquitectura\vhdl\lcdram\contring00.vhd":20:9:20:10|Pruning register bits 2 to 0 of sring(3 downto 0)  
+

@@ -1,0 +1,14 @@
+#Start recording tcl command: 8/29/2017 11:05:24
+#Project Location: C:/Users/eliot/Documents/Github/arqui3CM3/Adder; Project name: SumadorRestador
+prj_project open "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/SumadorRestador.ldf"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/and.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/xor.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/packageha.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/ha.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/or.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/topadder4bits.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/packagefa.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/fa.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/xnor.vhdl"
+prj_src add "C:/Users/eliot/Documents/Github/arqui3CM3/Adder/packageadder.vhdl"
+#Stop recording: 8/29/2017 11:51:28

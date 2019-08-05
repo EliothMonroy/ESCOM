@@ -1,0 +1,111 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\lcdram00\\synwork\\lcdram00_lcdram00_comp.srs|-top|toplcdram00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\bin64\\c_vhdl.exe":1449734446
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\location.map":1449914594
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\std.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\std1164.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\numeric.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\arith.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1449734046
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1377014408
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\osc00.vhdl":1465316654
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\cpld\\lattice.vhd":1449730182
+#CUR:"C:\\lscc\\diamond\\3.7_x64\\synpbase\\lib\\lucent\\machxo2.vhd":1449730182
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\div00.vhdl":1465316650
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\packageosc00.vhdl":1465316632
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\toposc00.vhdl":1465316616
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\ram00.vhdl":1465312808
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\contring00.vhdl":1465310217
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\coder00.vhdl":1465312601
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\packagekey00.vhdl":1465312675
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\topkey00.vhdl":1465322198
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\contread00.vhdl":1465323120
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\contconfig00.vhdl":1465310277
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\config00.vhdl":1465323602
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\bufferlcd00.vhdl":1465310280
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\packagelcdram00.vhdl":1465316510
+#CUR:"C:\\Users\\beatl\\Desktop\\Arqui\\Proyectos\\LCDRAM\\toplcdram00.vhdl":1465316566
+0 "C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\osc00.vhdl" vhdl
+2 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\div00.vhdl" vhdl
+3 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packageosc00.vhdl" vhdl
+4 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toposc00.vhdl" vhdl
+5 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\ram00.vhdl" vhdl
+6 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contring00.vhdl" vhdl
+7 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\coder00.vhdl" vhdl
+8 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packagekey00.vhdl" vhdl
+9 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\topkey00.vhdl" vhdl
+10 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contread00.vhdl" vhdl
+11 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\contconfig00.vhdl" vhdl
+12 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\config00.vhdl" vhdl
+13 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\bufferlcd00.vhdl" vhdl
+14 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\packagelcdram00.vhdl" vhdl
+15 "C:\Users\beatl\Desktop\Arqui\Proyectos\LCDRAM\toplcdram00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 0 
+3 0 
+4 1 2 0 3 
+5 0 
+6 0 
+7 0 
+8 0 
+9 6 7 8 0 
+10 0 
+11 0 
+12 0 
+13 0 
+14 0 
+15 4 9 5 10 11 12 13 14 0 
+
+# Dependency Lists (Users Of)
+0 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+1 4 
+2 4 
+3 4 
+4 15 
+5 15 
+6 9 
+7 9 
+8 9 
+9 15 
+10 15 
+11 15 
+12 15 
+13 15 
+14 15 
+15 -1
+
+# Design Unit to File Association
+arch work osc00 osc0 1
+module work osc00 1
+arch work div00 div0 2
+module work div00 2
+arch work toposc00 toposc0 4
+module work toposc00 4
+arch work ram00 ram0 5
+module work ram00 5
+arch work contring00 contring0 6
+module work contring00 6
+arch work coder00 coder0 7
+module work coder00 7
+arch work topkey00 topkey0 9
+module work topkey00 9
+arch work contread00 contread0 10
+module work contread00 10
+arch work contconfig00 contconfig0 11
+module work contconfig00 11
+arch work config00 config0 12
+module work config00 12
+arch work bufferlcd00 bufferlcd0 13
+module work bufferlcd00 13
+arch work toplcdram00 toplcdram0 15
+module work toplcdram00 15
+
+
+# Configuration files used
