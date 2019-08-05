@@ -1,0 +1,37 @@
+funcion main(){
+
+  entero t = 150;
+  flotante b = 2.1;
+
+  nota n[3] = [3mi, 0.5sol, fa];
+
+
+  tocar(t, flauta){
+    n, 2mi, si, 4la, 4fa,
+    n, 2re
+  }
+  /*
+
+  b = 1.0;
+
+  si(b >= 2.0 || t < 100){
+    t = t - 50;
+    tocar(t, piano){
+      n, 2(re, mi, do, si, la)^3
+    }
+  }
+  sino{
+    tocar(120, flauta){
+      do, 0.3re, mi^2
+    }
+  }
+
+  t = 160;
+  para(entero k = 0, k < 10 && t > 100, k++){
+    tocar(t, guitarra){
+      do, re, mi
+    }
+    t = t - 50;
+  }*/
+
+}

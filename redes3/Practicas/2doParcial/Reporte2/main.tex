@@ -1,0 +1,106 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[top=0.70in, bottom=0.70in, left=0.8in,right=0.80in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage[bookmarks,colorlinks=false]{hyperref}
+\hypersetup{pdfborder = {0 0 0}}
+\usepackage{verbatim}
+\usepackage[final]{pdfpages} 
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{pslatex}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{listingsutf8}
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{
+	style=mystyle,
+	inputencoding=utf8/latin1
+}
+
+\usepackage[font=small,labelfont=bf]{caption}
+\def\figurename{\textbf{Figure }}
+\usepackage{fancyhdr}
+\fancypagestyle{plain}
+{
+    \fancyfoot[L]{\emph{Administraci\'on de Servicios en Red}}
+    \fancyfoot[R]{\thepage}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+}
+\pagestyle{fancy}
+\rhead{\emph{Pr\'actica 1}}
+\fancyfoot[LO,LE]{\emph{Administraci\'on de Servicios en Red}}
+\cfoot{}
+\fancyfoot[RO, RE]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\pgfpagesdeclarelayout{boxed}
+{ \edef\pgfpageoptionborder{0pt}}
+{ 
+    \pgfpagesphysicalpageoptions {logical pages=0,} 
+    \pgfpageslogicalpageoptions{1}
+    {
+        border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+        border shrink=\pgfpageoptionborder,%
+        resized width=.95\pgfphysicalwidth,%
+        resized height=.95\pgfphysicalheight,%
+        center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+    }
+}
+\pgfpagesuselayout{boxed}
+\setlength{\parindent}{1cm}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} 
+\begin{document}
+\renewcommand\bibname{Referencias Bibliogr\'aficas}
+\lhead{ }
+%-------------PORTADA Y CONTRAPORTADA--------------%
+\input{Portada.tex}
+%-------------INDICE-------------------------------%
+\pagenumbering{roman}
+\pagestyle{empty}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\addtocontents{lof}{\protect\thispagestyle{empty}}
+%\listoffigures
+\cleardoublepage
+\pagestyle{fancy}
+\newpage
+\pagenumbering{arabic}
+%---------------CONTENIDO-------------------------%
+\input{Introduccion.tex}
+\input{Desarrollo.tex}
+\input{Cuestionario.tex}
+\input{Resultados.tex}
+\input{Conclusiones.tex}
+\input{referencias.tex}
+\end{document}

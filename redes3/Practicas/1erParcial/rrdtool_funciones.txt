@@ -1,0 +1,16 @@
+rrdtool: documentación https://oss.oetiker.ch/rrdtool/
+
+create: está función permite configurar una nueva base de datos Round Robin (RRD). Este archivo es creado para ser llenado con datos desconocidos, a excepción de que una o más archivos fuentes de RRD hayan sido especificadados y proveen de datos validos para realizar un prellenado al archivo rrd.
+
+update: alimenta de nuevos datos hacia el RRD. El tiempo de los datos es alineado (interpolado) acorde a las propiedades del RRD hacia el que los datos están siendo escritos.
+
+dump: escribe los contenidos de un archivo RRD en una forma legible para los humanos (XML). QUe a su vez puede ser leido  por rrdrestore. En forma conjunta, pueden realizar transferencia de archivos de una arquitectura de computadora a otra.
+
+fetch: normalmente es usada está función internamente por la función graph (para gráficar), para obtener datos de RRDs. Está función analiza los datos obtenidos y trata de regresarlos de la forma solicitada.
+
+graph: función usada para representar un RRD hacia una forma visible humanamente (como una gráfica). También puede generar reportes númericos
+
+***Diferencias entre v1 y v2 (implementados en python)***
+al llamar a la función getCMD() y configurar la comunidad con CommunityData() podemos especificar que queremos usar la versión 1 del MIB al pasar el parámetro "mpModel" igual a 0.
+En caso de que no lo requiramos, por default se establecerá que usamos la versión MIB 2
+Además, podemos hacer una consultar para más de un objeto MIB en la versión 2, a diferencia de la 1

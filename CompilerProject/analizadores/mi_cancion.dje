@@ -1,0 +1,29 @@
+funcion main(){
+    entero arreglo[5] = [1, 2, 3, 4, 5];
+    entero prueba = 8*8;
+    //un ejemplo del lenguaje, este es el himno a la alegria en piano
+    booleano k = verdadero;
+    entero tempo = 115; //una variable tipo Entera
+    flotante compas = 4.8; //el compas tambien es de tipo entero y siempre se asume que sera n/4
+
+    nota notas[9] = [fa, sol, la^2, sol, fa, mi, re^2, mi, fa];
+    nota notas2[3] = [fa, re, mi]; // <- numero mas llave sustituye a esta estructura
+
+    // Solo notas simples para los parentesis de notas y llaves, separados por comas
+    // Los demas operandos se aplican a parentesis, llaves y arreglos
+    // corchetes para los arreglos
+    // el parametro sincronizacion es opcion
+
+    tocar(tempo, guitarra, 0){
+        notas, 2fa, 2mi, notas, 2(do, mi), 2re, 2mi, notas2,
+        fa, mi, re, mi, 2la, notas, 2(do, mi), 2re
+    }
+
+    tocar(100, piano){mi}
+    // Marca error en el post
+    para(entero i = 0, i < 5+5, i++) {
+        tocar(tempo, flauta){
+          2{mi, re}^2
+        } //si no tiene tiempo entonces se pone secuencialmente con la primera tocar que encuentre que si lo tenga
+    }
+}

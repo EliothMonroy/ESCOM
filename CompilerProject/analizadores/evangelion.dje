@@ -1,0 +1,24 @@
+funcion main(){
+
+  /*
+  tocar(110, piano){
+    do, mi, fa, 0.5mi, 1{mi, fa}, 1{fa, fa, si, la},
+    0.6sol, 0.2fa, 0.6sol
+  }
+*/
+
+/*
+  tocar(100, flauta){
+    re^4, si^2, la^2, sol, re^3,
+    si^2, la^2, si,
+    re^4, si^2, la^2, sol
+  }
+  */
+  /*
+Do,Re,Mi,Fa;
+  */
+
+  tocar(120, flauta){
+    sol,sol,.5mi,.5fa,.5sol,.6la,sol,fa,mi,1.2re,  mi,mi,.5do,.5re,.5mi,.5fa,mi,1.1re,1.1do   //la,la,do,la,sol,sol,do,re,mi,fa
+  }
+}

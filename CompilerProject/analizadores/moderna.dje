@@ -1,0 +1,12 @@
+funcion main(){
+
+  tocar(110, piano, 0){
+    .25la,si,sol,.25la,si,re,
+    .25la,si,.5sol,.5sol,.25la,si,sol
+  }
+  nota a[6]=[.5fa,la,.25fa,.5fa,.25fa,1.5la];
+  nota b[12]=[.5la,.25sol,.25mi,.5sol,.25mi,.25re,.5mi,.25re,.5do,.25do,.25do,.25do];
+  tocar(104, piano, 6){
+    a,a,b,b
+  }
+}

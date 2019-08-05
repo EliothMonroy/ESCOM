@@ -1,0 +1,21 @@
+Entrega del proyecto de compiladores
+
+
+Integrantes:
+
+  Arteaga Lara Samuel
+  Barrera Pérez Carlos Tonatihu
+  Flores Tepatl Giselle
+  Mendoza Jaimes Ian
+  Monroy Martos Elioth
+
+
+Grupo: 3CM6
+
+Requerimientos:
+
+1) Python 3.5 o superior
+2) Tener instalado ply (modulos de lex y yacc)
+3) Tener instalada la biblioteca pydub (sudo pip3 install pydub)
+
+Instrucciones de compilacion:

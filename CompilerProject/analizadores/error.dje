@@ -1,0 +1,26 @@
+funcion main(){
+
+  entero tempo = 100;
+  entero a = 2;
+
+  nota n[4] = [0.4do, 3re, mi^3, 4(la, sol)^2];
+
+  tocar(tempo, piano){
+    n, do, re, 2{do, re, mi, fa}^5
+  }
+
+  para(entero j = 0, j <= 2, j++){
+    si(j == 0){
+      tocar(tempo, guitarra, 0){
+        si, la, sol
+      }
+    }
+    sino{
+      tempo = tempo + 50;
+      tocar(tempo, flauta){
+        si, do, 4mi
+      }
+    }
+  }
+
+}

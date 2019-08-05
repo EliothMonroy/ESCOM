@@ -1,0 +1,19 @@
+configuración básica de snmpd.config
+snmpconf -r none -g basic_setup
+
+para acceder a este archivo podemos usar:
+gedit /etc/snmp/snmpd.conf
+
+comando get:
+$ snmpget -v2c -c grupo4CM1 10.100.72.213 1.3.6.1.2.1.1.1.0
+
+Comando set:
+$ snmpset -v2c -c grupo4CM1 10.100.72.213 1.3.6.1.2.1.1.6.0 s "Hola"
+
+Comando walk:
+$ snmpwalk -v2c -c grupo4CM1 12.120.186.8:7777
+
+s: Indicamos el tipo de dato (String en este caso)
+
+Arrancar servicio snmp en MacOS:
+launchctl load -w /System/Library/LaunchDaemons/org.net-snmp.snmpd.plist

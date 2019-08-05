@@ -1,0 +1,48 @@
+\chapter{Códigos}
+\section{Examen 1}
+A continuación, se muestran los códigos elaborados para la realización del examen.
+
+El archivo con el que se inicia la ejecución del programa, es con main.py, el cual solo crea una instancia del objeto Gestor, el cual se encuentra dentro del archivo gestor.py. Esto para ajustarnos al desarrollo orientado a objetos.\newline
+main.py:
+\lstinputlisting[language=Python]{src/primero/main.py}
+
+El archivo gestor.py, es el que maneja toda la interfaz principal.\newline
+gestor.py:
+\lstinputlisting[language=Python]{src/primero/gestor.py}
+Este archivo, maneja todo lo referente a los agentes.\newline
+agente.py:
+\lstinputlisting[language=Python]{src/primero/agente.py}
+Este archivo, permite el registro de un nuevo agente.\newline
+agregar\_agente.py:
+\lstinputlisting[language=Python]{src/primero/agregaragente.py}
+Ejemplo de como se almacena la información sobre los agentes, para la persistencia.\newline
+agentes.json:
+\lstinputlisting[language=Java]{src/primero/agentes.json}
+Permite monitorear a un agente y además realiza la consultas correspondientes para mostrar las gráficas.\newline
+monitor.py:
+\lstinputlisting[language=Python]{src/primero/monitor.py}
+Archivo en donde se encuentran todas las consultas necesarias para el correspondiente monitoreo.\newline
+SNMP.py:
+\lstinputlisting[language=Python]{src/primero/SNMP.py}
+Posteriormente, para la detección de umbrales, se uso el siguiente código.\newline
+detector\_umbrales.py:
+\lstinputlisting[language=Python]{src/primero/detectorumbrales.py}
+Para enviar los correos electrónicos de notificación cuando se sobrepasa un umbral se uso el código siguiente.\newline
+notificador.py:
+\lstinputlisting[language=Python]{src/primero/notificador.py}
+Al igual que se envía una notificación, también se escribe en un archivo de log, el cual es controlado por el siguiente script.\newline
+logger.py:
+\lstinputlisting[language=Python]{src/primero/logger.py}
+
+\section{Examen 2}
+En este examen, se hizo uso de un script hecho en python el cual permite graficar un archivo rrd dado, el script usado es el siguiente.\newline
+Graficador.py:
+\lstinputlisting[language=Python]{src/segundo/Graficador.py}
+Además se hizo uso del siguiente script que permite actualizar un archivo rrd con información nueva.\newline
+P2Ejercicio5.py:
+\lstinputlisting[language=Python]{src/segundo/P2Ejercicio5.py}
+Y por último, se realizaron algunas modificaciones a los programas de notificación y logger que se mostraron en la sección anterior, el código se puede ver a continuación.\newline
+notificador.py:
+\lstinputlisting[language=Python]{src/segundo/notificador.py}
+logger.py:
+\lstinputlisting[language=Python]{src/segundo/logger.py}

@@ -1,0 +1,2 @@
+MacOs, ha sobrepasado el umbral máximo de uso de RAM, a las: 2019-03-13 10:22:11.973518
+MacOs, ha sobrepasado el umbral máximo de uso de RAM, a las: 2019-03-13 10:25:11.985842

@@ -1,0 +1,66 @@
+hostname R1
+!
+service tftp
+service telnet
+service http encrypted password GAKMOVTW$217ef3dd39b610621156be14f8168b71
+service ftp
+!
+administrator rcp encrypted password JBRSOTAT$O.tm3Uq3uJjiTMlzMquVV0
+!
+!
+!
+!
+router ospf
+  router-id 192.168.232.5
+  network 192.168.232.0/30 area 0
+  network 192.168.232.4/30 area 0
+  network 192.168.201.0/24 area 0
+!
+interface loopback lo
+  ip address 127.0.0.1/8
+  ip mtu 16436
+!
+
+interface ethernet eth0
+  ip address 192.168.201.15/24
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth1
+  ip address 192.168.232.1/30
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth2
+  ip address 192.168.232.5/30
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth3
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth4
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth5
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth6
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth7
+  ip mtu 1500
+  shutdown
+!
+interface bridge br0
+  ip mtu 1500
+  shutdown
+!
+interface bridge br1
+  ip mtu 1500
+  shutdown
+!

@@ -1,0 +1,35 @@
+funcion main(){
+
+  entero a = 1;
+  entero d = 0;
+  flotante b = 0.0;
+  booleano c = verdadero;
+  //Ya no existen los arreglos de cualquier otra cosa que no sean notas
+  //entero aa[2] = [1, 2];
+  //flotante bb[3] = [1.4, 2.4, 3.0];
+  //booleano cc[2] = [verdadero, falso];
+
+  nota n[3] = [2.3fa^3, 4(mi, re, do)^2, re];
+
+  si(b <= -0.3 || falso || verdadero){
+    c = falso;
+    a = 2 * a;
+  }
+
+  si( falso || (d < 0 && d == 0) ){
+    d = 40;
+  }
+
+  para(entero k = 0, k < 10 && a >= 0, k++){
+    d = k;
+    a--;
+  }
+
+  b = 10.0;
+  mientras(b> 0.0){
+    c = verdadero;
+    b = b - 2.0;
+    b--;
+  }
+
+}

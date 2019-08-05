@@ -1,0 +1,8 @@
+ip ubuntu
+10.100.72.178
+
+ip observium:
+10.100.78.66
+
+ip windows:
+10.100.72.213

@@ -1,0 +1,2 @@
+para agregar un agente a observium
+nano /etc/hosts

@@ -1,0 +1,5 @@
+Configurar SNMP en MacOs
+https://support.solarwinds.com/Success_Center/Orion_Platform/Knowledgebase_Articles/Configure_SNMP_service_on_Mac_OSX_Sierra
+
+HDD MIB
+https://www.netscantools.com/snmp-host-resources-mib-analysis.html

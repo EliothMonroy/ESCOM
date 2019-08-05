@@ -1,0 +1,16 @@
+{
+    "1": {
+        "comunidad": "comunidadEquipo8_grupo4cm1",
+        "hostname": "windows10",
+        "ip": "10.100.70.251",
+        "puerto": "161",
+        "version": "1"
+    },
+    "2": {
+        "comunidad": "comunidadEquipo8_grupo4cm1",
+        "hostname": "ubuntu",
+        "ip": "10.100.70.6",
+        "puerto": "161",
+        "version": "1"
+    }
+}

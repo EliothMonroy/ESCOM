@@ -1,0 +1,10 @@
+funcion main(){
+  nota mis[2]=[.5mi,.5mi];
+  nota soles[2]=[.5sol,.5sol];
+  nota misl[2]=[.5mi,.75mi];
+  nota dos[2]=[.5do,.5do];
+  tocar(80, piano, 0){
+    mis,.5fa,soles,.5fa,.5mi,.5re,dos,.5re,misl,.25re,.75re,.5mi,.5mi,.5fa,.5sol,.5sol,.5fa,.5mi,.5re,.5do,.5do,.5re,.5mi,.75re,.25do,.75do,.5re,.5mi,.5do,.5re,.25mi,.25fa,.5mi,.5do,.5re,.25mi,.25fa,.5mi,.5re,.5do,.5re,.75re,.5mi,.5mi,.5fa,.5sol,.5sol,.5fa,.25mi
+  }
+}
+

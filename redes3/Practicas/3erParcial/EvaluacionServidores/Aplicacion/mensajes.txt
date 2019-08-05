@@ -1,0 +1,3 @@
+Sobrecarga de CPU detectada;, ha sobrepasado el umbral máximo de uso de CPU, a las: 
+Sobrecarga de RAM detectada;, ha sobrepasado el umbral máximo de uso de RAM, a las: 
+Sobrecarga de HDD detectada;, ha sobrepasado el umbral máximo de uso de HDD, a las: 

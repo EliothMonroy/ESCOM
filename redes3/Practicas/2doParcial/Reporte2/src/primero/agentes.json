@@ -1,0 +1,30 @@
+{
+    "1": {
+        "comunidad": "public",
+        "hostname": "MacOs",
+        "ip": "localhost",
+        "puerto": "161",
+        "version": "1"
+    },
+    "2": {
+        "comunidad": "grupo4CM1",
+        "hostname": "Ubuntu1",
+        "ip": "localhost",
+        "puerto": "161",
+        "version": "1"
+    },
+    "3": {
+        "comunidad": "public",
+        "hostname": "Mac2",
+        "ip": "localhost",
+        "puerto": "161",
+        "version": "1"
+    },
+    "4": {
+        "comunidad": "variation/linux-full-walk",
+        "hostname": "Profa",
+        "ip": "10.100.71.200",
+        "puerto": "1024",
+        "version": "1"
+    }
+}

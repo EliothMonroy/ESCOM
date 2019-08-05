@@ -1,0 +1,32 @@
+Entrega del proyecto de compiladores
+
+DJ Elith 3000
+
+Integrantes:
+
+  Arteaga Lara Samuel
+  Barrera Pérez Carlos Tonatihu
+  Flores Tepatl Giselle
+  Mendoza Jaimes Ian
+  Monroy Martos Elioth
+
+
+Grupo: 3CM6
+
+Requerimientos:
+
+1) Python 3.5 o superior
+2) Tener instalado ply (modulos de lex y yacc)
+3) Tener instalada la biblioteca pydub (sudo pip3 install pydub)
+
+
+Instrucciones de compilacion:
+
+Ejecutar la siguiente linea en la carpeta del proyecto:
+
+python3 compilador_dje.py nombre_del_archivo_a_compilar
+
+Ejemplo:
+	python3 compilador_dje.py canciones/c.dje
+
+En la carpeta canciones, están algunos pedazos de canciones escritas en nuestro lenguaje.

@@ -1,0 +1,5 @@
+Sobrecarga de CPU detectada;, ha sobrepasado el umbral máximo de uso de CPU, a las: 
+Sobrecarga de RAM detectada;, ha sobrepasado el umbral máximo de uso de RAM, a las: 
+Sobrecarga de HDD detectada;, ha sobrepasado el umbral máximo de uso de HDD, a las: 
+Detección de Falla 4CM1 Equipo9;, se ha salido del rango definido para ifInOctets, a las: 
+Detección de final de Falla 4CM1 Equipo9;, ha concluido la aberración existente en ifInOctets, a las: 

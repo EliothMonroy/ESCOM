@@ -1,0 +1,7 @@
+MacOs, se ha salido del rango definido para ifInOctets, a las:  Wed Mar 27 11:16:27 2019 
+MacOs, ha concluido la aberración existente en ifInOctets, a las:  Wed Mar 27 11:16:36 2019 
+MacOs, se ha salido del rango definido para ifInOctets, a las:  Wed Mar 27 11:16:40 2019 
+MacOs, ha concluido la aberración existente en ifInOctets, a las:  Wed Mar 27 11:16:46 2019 
+MacOs, se ha salido del rango definido para ifInOctets, a las:  Wed Mar 27 11:29:00 2019 
+Compu Profa, se ha salido del rango definido para ifInOctets, a las:  Wed Mar 27 11:37:00 2019 
+Compu Profa, se ha salido del rango definido para ifInOctets, a las:  Wed Mar 27 11:47:00 2019 

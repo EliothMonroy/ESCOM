@@ -1,0 +1,40 @@
+1) Inicio
+
+1. el número de dispositivos conectados -> contar en el archivo de hosts las ip's agregadas (HECHO)
+2. el estatus de conexión cada dispositivo -> con un ping o con una consulta snmp? Miguel--->> SEGUN YO CON UN PING, PORQUE EN LA MIB NO HAY UN REGISTRO SOBRE ESTO 
+
+
+*********3. el número de interfaces de red que están disponibles (de cada dispositivo monitoreado i guess) -> con una consulta mib  MIGUEL --->>YA ESTÁ
+*********4. el estatus de cada interfaz, si esta activa (up) o inactiva (down) -> otra consulta MIB        MIGUEL--->YA ESTÁ
+
+2) Agregar agente
+
+*********1. Para agregar un agente, se debe indicar: hostname, versión SNMP, puerto SNMP y comunidad. -> aparte del hostname necesitamos la ip, la versión de SNMP la pasamos mediante -v ?, el puerto SNMP mediante que bandera se pasa? 
+2. La información debe ser permanente. -> tenemos que almacenar la información
+
+3) Eliminar agente
+
+1. El sistema debe eliminar cualquier agente.
+2. Se debe eliminar la información generada por el mismo.
+
+4) Estado de dispositivo
+
+1. Indicar la información principal del agente: nombre del host, ip, nombre (?), versión y logo del sistemas operativo, número de interfaces de red, tiempo de actividad desde el último reinicio, ubicación física y la información de contacto con el administrador -> puras consultas  ---> YA ESTÁ
+
+4.1) Gráficas de dispositivos
+
+1. El sistema debe mostrar el resultado del monitoreo en tiempo real, usando gráficas. En ellas se debe describir el comportamiento de alguno objecto de la MIB (al menos 5), la información debe ser obtenida en tiempo real con SNMP. La persistencia de información debe ser óptima pensando en información de alto rendimiento.
+Opciones:
+* Tráfico de interfaz (entrada y salida)--- ESTE
+* Estadísticas de paquetes Ipv4 (entrada y salida)
+* Estadísticas ICMP (entrada y salida)--- ESTE
+* Estadísticas IP (entrada y salida)
+* Estadísticas de paquetes SNMP (entrada y salida)
+* Conexiones TCP establecidas
+* Segmentos TCP (entrada y salida)--- ESTE
+* Estadísticas TCP (entrada y salida)
+* Datagramas UCP (entrada y salida)----- ESTE
+* Errores UDP (entrada y salida)----- ESTE (AUNQUE NO HAY ERROR DE SALIDA)
+* Respuestas PING (entrada y salida)
+* Respuestas SNMP (entrada y salida) ----- ESTE
+* Uso del sistema de archivos

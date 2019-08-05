@@ -1,0 +1,33 @@
+\chapter{Introducción}
+\section{Servicios}
+
+\subsection{HTTP}
+\noindent
+    Hypertext Transfer Protocol (HTTP) (o Protocolo de Transferencia de Hipertexto en español) es un protocolo de la capa de aplicación para la transmisión de documentos hipermedia, como HTML. Fue diseñado para la comunicación entre los navegadores y servidores web, aunque puede ser utilizado para otros propósitos también. Sigue el clásico modelo cliente-servidor, en el que un cliente establece una conexión, realizando una petición a un servidor y espera una respuesta del mismo. Se trata de un protocolo sin estado, lo que significa que el servidor no guarda ningún dato (estado) entre dos peticiones. Aunque en la mayoría de casos se basa en una conexión del tipo TCP/IP, puede ser usado sobre cualquier capa de transporte segura o de confianza, es decir, sobre cualquier protocolo que no pierda mensajes silenciosamente, tal como UDP.
+    
+\subsection{SSH}
+\noindent
+    SSH (o Secure SHell) es un protocolo que facilita las comunicaciones seguras entre dos sistemas usando una arquitectura cliente/servidor y que permite a los usuarios conectarse a un host remotamente. A diferencia de otros protocolos de comunicación remota tales como FTP o Telnet, SSH encripta la sesión de conexión, haciendo imposible que alguien pueda obtener contraseñas no encriptadas.
+\noindent
+    SSH está diseñado para reemplazar los métodos más viejos y menos seguros para registrarse remotamente en otro sistema a través de la shell de comando, tales como telnet o rsh. El uso de métodos seguros para registrarse remotamente a otros sistemas reduce los riesgos de seguridad tanto para el sistema cliente como para el sistema remoto.
+    
+\subsection{SMTP}
+\noindent
+El SMTP (Simple Mail Transfer Protocol, o protocolo simple de transferencia de correo) nació en 1982 y sigue siendo el estándar de Internet más utilizado a día de hoy. SMTP es un protocolo de mensajería empleado para mandar un email de un servidor de origen a un servidor de destino, ambos servidores SMTP. 
+
+El servidor SMTP es un ordenador encargado de llevar a cabo el servicio SMTP, permitiendo el transporte de correo electrónico por Internet. La retransmisión SMTP funciona de la siguiente manera: si el servidor SMTP confirma las identidades del remitente y del destinatario, entonces el envío se realiza.
+
+\subsection{FTP}
+\noindent
+FTP (File Transfer Protocol o Protocolo de transferencia de archivos) es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos.
+
+El servicio FTP es ofrecido por la capa de aplicación del modelo de capas de red TCP/IP al usuario, utilizando normalmente el puerto de red 20 y el 21. Un problema básico de FTP es que está pensado para ofrecer la máxima velocidad en la conexión, pero no la máxima seguridad, ya que todo el intercambio de información, desde el login y password del usuario en el servidor hasta la transferencia de cualquier archivo, se realiza en texto plano sin ningún tipo de cifrado, con lo que un posible atacante puede capturar este tráfico, acceder al servidor y/o apropiarse de los archivos transferidos.
+
+\subsection{DNS}
+\noindent
+El DNS, o sistema de nombres de dominio, traduce los nombres de dominios a direcciones IP. El sistema DNS de Internet administra el mapeo entre los nombres y las direcciones IP. Los servidores de DNS convierten las solicitudes de nombres en direcciones IP y controlan a qué servidor se dirigirá un usuario final cuando escriba un nombre de dominio. 
+Existen distintos tipos de servicios DNS:
+
+DNS autoritativo: un servicio de DNS autoritativo proporciona un mecanismo de actualización que los desarrolladores utilizan para administrar sus nombres DNS públicos.
+
+DNS recurrente: los clientes normalmente no realizan consultas directamente a los servicios de DNS autoritativo. En su lugar, generalmente se conectan con otro tipo de servicio de DNS conocido como solucionador o un servicio de DNS recurrente.

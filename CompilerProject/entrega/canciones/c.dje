@@ -1,0 +1,24 @@
+funcion main(){
+
+  nota a[8] = [mi, re, do, si, la, sol, la, si];
+
+  tocar(60, piano, 0){
+    1{sol, si, la}, 2re, 1{re, re, fa, re},
+    2sol, 1{sol, sol, fa, mi}, 2fa, 1{fa, fa, mi, re},
+    4do
+  }
+
+  tocar(60, guitarra, 0){
+    2sol, 2do, 2re
+  }
+
+  nota t[6] = [3fa, 0.5fa, fa^2, mi, 2fa, fa];
+  para(entero i = 0, i < 3, i++){
+    tocar(100, guitarra){
+      t, mi, 2fa, sol,
+      2(la, fa), 2(sol, mi), t,
+      3do
+    }
+  }
+
+}

@@ -1,0 +1,3162 @@
+Created by PLY version 3.10 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    COMENTARIO
+    dje
+
+Grammar
+
+Rule 0     S' -> funcion
+Rule 1     funcion -> FUNCION MAIN PAREN_IZQ PAREN_DER cuerpo
+Rule 2     cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER
+Rule 3     declaracion -> tocar
+Rule 4     declaracion -> declaracion_si
+Rule 5     declaracion -> declaracion_mientras
+Rule 6     declaracion -> declaracion_para
+Rule 7     declaracion -> dec_variable
+Rule 8     declaracion -> modificacion_var
+Rule 9     declaracion -> expresion PUNTO_COMA
+Rule 10    lista_declaraciones -> lista_declaraciones declaracion
+Rule 11    lista_declaraciones -> declaracion
+Rule 12    declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo
+Rule 13    declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo
+Rule 14    declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo
+Rule 15    declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo
+Rule 16    parametros_para -> dec_asignacion COMA expresion COMA expresion
+Rule 17    instrumento -> PIANO
+Rule 18    instrumento -> GUITARRA
+Rule 19    instrumento -> FLAUTA
+Rule 20    numero -> CONSTANTE_ENTERA
+Rule 21    numero -> CONSTANTE_FLOTANTE
+Rule 22    lista_notas -> lista_notas COMA nota
+Rule 23    lista_notas -> nota
+Rule 24    nota -> DO
+Rule 25    nota -> RE
+Rule 26    nota -> MI
+Rule 27    nota -> FA
+Rule 28    nota -> SOL
+Rule 29    nota -> LA
+Rule 30    nota -> SI
+Rule 31    paren_notas -> PAREN_IZQ lista_notas PAREN_DER
+Rule 32    llaves_notas -> LLAVE_IZQ lista_notas LLAVE_DER
+Rule 33    elemento -> paren_notas
+Rule 34    elemento -> llaves_notas
+Rule 35    elemento -> nota
+Rule 36    elemento -> ID
+Rule 37    tiempo_nota -> numero elemento
+Rule 38    tiempo_nota -> numero modificador_nota
+Rule 39    elemento_potencia -> tiempo_nota
+Rule 40    elemento_potencia -> modificador_nota
+Rule 41    elemento_potencia -> elemento
+Rule 42    potencia_nota -> elemento_potencia POTENCIA numero
+Rule 43    modificador_nota -> MODIFICADOR elemento
+Rule 44    tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar
+Rule 45    parametros_tocar -> tempo COMA instrumento sincronizacion
+Rule 46    tempo -> CONSTANTE_ENTERA
+Rule 47    tempo -> ID
+Rule 48    sincronizacion -> COMA CONSTANTE_ENTERA
+Rule 49    sincronizacion -> COMA CONSTANTE_FLOTANTE
+Rule 50    sincronizacion -> COMA ID
+Rule 51    sincronizacion -> vacio
+Rule 52    cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER
+Rule 53    lista_tocar -> lista_tocar COMA elemento_tocar
+Rule 54    lista_tocar -> elemento_tocar
+Rule 55    elemento_tocar -> tiempo_nota
+Rule 56    elemento_tocar -> potencia_nota
+Rule 57    elemento_tocar -> modificador_nota
+Rule 58    elemento_tocar -> elemento
+Rule 59    arreglo -> CORCHETE_IZQ lista_arreglos CORCHETE_DER
+Rule 60    indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+Rule 61    lista_arreglos -> lista_arreglos COMA elemento_arreglo
+Rule 62    lista_arreglos -> elemento_arreglo
+Rule 63    elemento_arreglo -> elemento_tocar
+Rule 64    elemento_arreglo -> numero
+Rule 65    elemento_arreglo -> BOOLEANO
+Rule 66    lista_variables -> expresion
+Rule 67    lista_variables -> arreglo
+Rule 68    tipo_dato -> ENTERO
+Rule 69    tipo_dato -> FLOTANTE
+Rule 70    tipo_dato -> BOOL
+Rule 71    tipo_dato -> NOTA
+Rule 72    tipo_var -> ID
+Rule 73    tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+Rule 74    dec_variable -> dec_asignacion PUNTO_COMA
+Rule 75    dec_asignacion -> tipo_dato asignacion
+Rule 76    asignacion -> tipo_var ASIGNACION lista_variables
+Rule 77    modificacion_var -> asignacion PUNTO_COMA
+Rule 78    expresion -> PAREN_IZQ expresion PAREN_DER
+Rule 79    expresion -> ID
+Rule 80    expresion -> numero
+Rule 81    expresion -> BOOLEANO
+Rule 82    expresion -> indice_arreglo
+Rule 83    expresion -> expresion OPERADOR_LOGICO expresion
+Rule 84    expresion -> expresion SUMA expresion
+Rule 85    expresion -> expresion RESTA expresion
+Rule 86    expresion -> expresion MULTI expresion
+Rule 87    expresion -> expresion DIVISION expresion
+Rule 88    expresion -> expresion OR expresion
+Rule 89    expresion -> expresion AND expresion
+Rule 90    expresion -> - expresion
+Rule 91    expresion -> expresion POST
+Rule 92    expresion -> PRE expresion
+Rule 93    vacio -> <empty>
+
+Terminals, with rules where they appear
+
+-                    : 90
+AND                  : 89
+ASIGNACION           : 76
+BOOL                 : 70
+BOOLEANO             : 65 81
+COMA                 : 16 16 22 45 48 49 50 53 61
+COMENTARIO           : 
+CONSTANTE_ENTERA     : 20 46 48 60 73
+CONSTANTE_FLOTANTE   : 21 49
+CORCHETE_DER         : 59 60 73
+CORCHETE_IZQ         : 59 60 73
+DIVISION             : 87
+DO                   : 24
+ENTERO               : 68
+FA                   : 27
+FLAUTA               : 19
+FLOTANTE             : 69
+FUNCION              : 1
+GUITARRA             : 18
+ID                   : 36 47 50 60 72 73 79
+LA                   : 29
+LLAVE_DER            : 2 32 52
+LLAVE_IZQ            : 2 32 52
+MAIN                 : 1
+MI                   : 26
+MIENTRAS             : 14
+MODIFICADOR          : 43
+MULTI                : 86
+NOTA                 : 71
+OPERADOR_LOGICO      : 83
+OR                   : 88
+PARA                 : 15
+PAREN_DER            : 1 12 13 14 15 31 44 78
+PAREN_IZQ            : 1 12 13 14 15 31 44 78
+PIANO                : 17
+POST                 : 91
+POTENCIA             : 42
+PRE                  : 92
+PUNTO_COMA           : 9 74 77
+RE                   : 25
+RESTA                : 85
+SI                   : 12 13 30
+SINO                 : 13
+SOL                  : 28
+SUMA                 : 84
+TOCAR                : 44
+dje                  : 
+error                : 
+
+Nonterminals, with rules where they appear
+
+arreglo              : 67
+asignacion           : 75 77
+cuerpo               : 1 12 13 13 14 15
+cuerpo_tocar         : 44
+dec_asignacion       : 16 74
+dec_variable         : 7
+declaracion          : 10 11
+declaracion_mientras : 5
+declaracion_para     : 6
+declaracion_si       : 4
+elemento             : 37 41 43 58
+elemento_arreglo     : 61 62
+elemento_potencia    : 42
+elemento_tocar       : 53 54 63
+expresion            : 9 12 13 14 16 16 66 78 83 83 84 84 85 85 86 86 87 87 88 88 89 89 90 91 92
+funcion              : 0
+indice_arreglo       : 82
+instrumento          : 45
+lista_arreglos       : 59 61
+lista_declaraciones  : 2 10
+lista_notas          : 22 31 32
+lista_tocar          : 52 53
+lista_variables      : 76
+llaves_notas         : 34
+modificacion_var     : 8
+modificador_nota     : 38 40 57
+nota                 : 22 23 35
+numero               : 37 38 42 64 80
+parametros_para      : 15
+parametros_tocar     : 44
+paren_notas          : 33
+potencia_nota        : 56
+sincronizacion       : 45
+tempo                : 45
+tiempo_nota          : 39 55
+tipo_dato            : 75
+tipo_var             : 76
+tocar                : 3
+vacio                : 51
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . funcion
+    (1) funcion -> . FUNCION MAIN PAREN_IZQ PAREN_DER cuerpo
+
+    FUNCION         shift and go to state 2
+
+    funcion                        shift and go to state 1
+
+state 1
+
+    (0) S' -> funcion .
+
+
+
+state 2
+
+    (1) funcion -> FUNCION . MAIN PAREN_IZQ PAREN_DER cuerpo
+
+    MAIN            shift and go to state 3
+
+
+state 3
+
+    (1) funcion -> FUNCION MAIN . PAREN_IZQ PAREN_DER cuerpo
+
+    PAREN_IZQ       shift and go to state 4
+
+
+state 4
+
+    (1) funcion -> FUNCION MAIN PAREN_IZQ . PAREN_DER cuerpo
+
+    PAREN_DER       shift and go to state 5
+
+
+state 5
+
+    (1) funcion -> FUNCION MAIN PAREN_IZQ PAREN_DER . cuerpo
+    (2) cuerpo -> . LLAVE_IZQ lista_declaraciones LLAVE_DER
+
+    LLAVE_IZQ       shift and go to state 7
+
+    cuerpo                         shift and go to state 6
+
+state 6
+
+    (1) funcion -> FUNCION MAIN PAREN_IZQ PAREN_DER cuerpo .
+
+    $end            reduce using rule 1 (funcion -> FUNCION MAIN PAREN_IZQ PAREN_DER cuerpo .)
+
+
+state 7
+
+    (2) cuerpo -> LLAVE_IZQ . lista_declaraciones LLAVE_DER
+    (10) lista_declaraciones -> . lista_declaraciones declaracion
+    (11) lista_declaraciones -> . declaracion
+    (3) declaracion -> . tocar
+    (4) declaracion -> . declaracion_si
+    (5) declaracion -> . declaracion_mientras
+    (6) declaracion -> . declaracion_para
+    (7) declaracion -> . dec_variable
+    (8) declaracion -> . modificacion_var
+    (9) declaracion -> . expresion PUNTO_COMA
+    (44) tocar -> . TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar
+    (12) declaracion_si -> . SI PAREN_IZQ expresion PAREN_DER cuerpo
+    (13) declaracion_si -> . SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo
+    (14) declaracion_mientras -> . MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo
+    (15) declaracion_para -> . PARA PAREN_IZQ parametros_para PAREN_DER cuerpo
+    (74) dec_variable -> . dec_asignacion PUNTO_COMA
+    (77) modificacion_var -> . asignacion PUNTO_COMA
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (75) dec_asignacion -> . tipo_dato asignacion
+    (76) asignacion -> . tipo_var ASIGNACION lista_variables
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+    (68) tipo_dato -> . ENTERO
+    (69) tipo_dato -> . FLOTANTE
+    (70) tipo_dato -> . BOOL
+    (71) tipo_dato -> . NOTA
+    (72) tipo_var -> . ID
+    (73) tipo_var -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    TOCAR           shift and go to state 17
+    SI              shift and go to state 19
+    MIENTRAS        shift and go to state 20
+    PARA            shift and go to state 21
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 24
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+    ENTERO          shift and go to state 34
+    FLOTANTE        shift and go to state 35
+    BOOL            shift and go to state 36
+    NOTA            shift and go to state 37
+
+    lista_declaraciones            shift and go to state 8
+    declaracion                    shift and go to state 9
+    tocar                          shift and go to state 10
+    declaracion_si                 shift and go to state 11
+    declaracion_mientras           shift and go to state 12
+    declaracion_para               shift and go to state 13
+    dec_variable                   shift and go to state 14
+    modificacion_var               shift and go to state 15
+    expresion                      shift and go to state 16
+    dec_asignacion                 shift and go to state 22
+    asignacion                     shift and go to state 23
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+    tipo_dato                      shift and go to state 30
+    tipo_var                       shift and go to state 31
+
+state 8
+
+    (2) cuerpo -> LLAVE_IZQ lista_declaraciones . LLAVE_DER
+    (10) lista_declaraciones -> lista_declaraciones . declaracion
+    (3) declaracion -> . tocar
+    (4) declaracion -> . declaracion_si
+    (5) declaracion -> . declaracion_mientras
+    (6) declaracion -> . declaracion_para
+    (7) declaracion -> . dec_variable
+    (8) declaracion -> . modificacion_var
+    (9) declaracion -> . expresion PUNTO_COMA
+    (44) tocar -> . TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar
+    (12) declaracion_si -> . SI PAREN_IZQ expresion PAREN_DER cuerpo
+    (13) declaracion_si -> . SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo
+    (14) declaracion_mientras -> . MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo
+    (15) declaracion_para -> . PARA PAREN_IZQ parametros_para PAREN_DER cuerpo
+    (74) dec_variable -> . dec_asignacion PUNTO_COMA
+    (77) modificacion_var -> . asignacion PUNTO_COMA
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (75) dec_asignacion -> . tipo_dato asignacion
+    (76) asignacion -> . tipo_var ASIGNACION lista_variables
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+    (68) tipo_dato -> . ENTERO
+    (69) tipo_dato -> . FLOTANTE
+    (70) tipo_dato -> . BOOL
+    (71) tipo_dato -> . NOTA
+    (72) tipo_var -> . ID
+    (73) tipo_var -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    LLAVE_DER       shift and go to state 38
+    TOCAR           shift and go to state 17
+    SI              shift and go to state 19
+    MIENTRAS        shift and go to state 20
+    PARA            shift and go to state 21
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 24
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+    ENTERO          shift and go to state 34
+    FLOTANTE        shift and go to state 35
+    BOOL            shift and go to state 36
+    NOTA            shift and go to state 37
+
+    declaracion                    shift and go to state 39
+    tocar                          shift and go to state 10
+    declaracion_si                 shift and go to state 11
+    declaracion_mientras           shift and go to state 12
+    declaracion_para               shift and go to state 13
+    dec_variable                   shift and go to state 14
+    modificacion_var               shift and go to state 15
+    expresion                      shift and go to state 16
+    dec_asignacion                 shift and go to state 22
+    asignacion                     shift and go to state 23
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+    tipo_dato                      shift and go to state 30
+    tipo_var                       shift and go to state 31
+
+state 9
+
+    (11) lista_declaraciones -> declaracion .
+
+    LLAVE_DER       reduce using rule 11 (lista_declaraciones -> declaracion .)
+    TOCAR           reduce using rule 11 (lista_declaraciones -> declaracion .)
+    SI              reduce using rule 11 (lista_declaraciones -> declaracion .)
+    MIENTRAS        reduce using rule 11 (lista_declaraciones -> declaracion .)
+    PARA            reduce using rule 11 (lista_declaraciones -> declaracion .)
+    PAREN_IZQ       reduce using rule 11 (lista_declaraciones -> declaracion .)
+    ID              reduce using rule 11 (lista_declaraciones -> declaracion .)
+    BOOLEANO        reduce using rule 11 (lista_declaraciones -> declaracion .)
+    -               reduce using rule 11 (lista_declaraciones -> declaracion .)
+    PRE             reduce using rule 11 (lista_declaraciones -> declaracion .)
+    CONSTANTE_ENTERA reduce using rule 11 (lista_declaraciones -> declaracion .)
+    CONSTANTE_FLOTANTE reduce using rule 11 (lista_declaraciones -> declaracion .)
+    ENTERO          reduce using rule 11 (lista_declaraciones -> declaracion .)
+    FLOTANTE        reduce using rule 11 (lista_declaraciones -> declaracion .)
+    BOOL            reduce using rule 11 (lista_declaraciones -> declaracion .)
+    NOTA            reduce using rule 11 (lista_declaraciones -> declaracion .)
+
+
+state 10
+
+    (3) declaracion -> tocar .
+
+    LLAVE_DER       reduce using rule 3 (declaracion -> tocar .)
+    TOCAR           reduce using rule 3 (declaracion -> tocar .)
+    SI              reduce using rule 3 (declaracion -> tocar .)
+    MIENTRAS        reduce using rule 3 (declaracion -> tocar .)
+    PARA            reduce using rule 3 (declaracion -> tocar .)
+    PAREN_IZQ       reduce using rule 3 (declaracion -> tocar .)
+    ID              reduce using rule 3 (declaracion -> tocar .)
+    BOOLEANO        reduce using rule 3 (declaracion -> tocar .)
+    -               reduce using rule 3 (declaracion -> tocar .)
+    PRE             reduce using rule 3 (declaracion -> tocar .)
+    CONSTANTE_ENTERA reduce using rule 3 (declaracion -> tocar .)
+    CONSTANTE_FLOTANTE reduce using rule 3 (declaracion -> tocar .)
+    ENTERO          reduce using rule 3 (declaracion -> tocar .)
+    FLOTANTE        reduce using rule 3 (declaracion -> tocar .)
+    BOOL            reduce using rule 3 (declaracion -> tocar .)
+    NOTA            reduce using rule 3 (declaracion -> tocar .)
+
+
+state 11
+
+    (4) declaracion -> declaracion_si .
+
+    LLAVE_DER       reduce using rule 4 (declaracion -> declaracion_si .)
+    TOCAR           reduce using rule 4 (declaracion -> declaracion_si .)
+    SI              reduce using rule 4 (declaracion -> declaracion_si .)
+    MIENTRAS        reduce using rule 4 (declaracion -> declaracion_si .)
+    PARA            reduce using rule 4 (declaracion -> declaracion_si .)
+    PAREN_IZQ       reduce using rule 4 (declaracion -> declaracion_si .)
+    ID              reduce using rule 4 (declaracion -> declaracion_si .)
+    BOOLEANO        reduce using rule 4 (declaracion -> declaracion_si .)
+    -               reduce using rule 4 (declaracion -> declaracion_si .)
+    PRE             reduce using rule 4 (declaracion -> declaracion_si .)
+    CONSTANTE_ENTERA reduce using rule 4 (declaracion -> declaracion_si .)
+    CONSTANTE_FLOTANTE reduce using rule 4 (declaracion -> declaracion_si .)
+    ENTERO          reduce using rule 4 (declaracion -> declaracion_si .)
+    FLOTANTE        reduce using rule 4 (declaracion -> declaracion_si .)
+    BOOL            reduce using rule 4 (declaracion -> declaracion_si .)
+    NOTA            reduce using rule 4 (declaracion -> declaracion_si .)
+
+
+state 12
+
+    (5) declaracion -> declaracion_mientras .
+
+    LLAVE_DER       reduce using rule 5 (declaracion -> declaracion_mientras .)
+    TOCAR           reduce using rule 5 (declaracion -> declaracion_mientras .)
+    SI              reduce using rule 5 (declaracion -> declaracion_mientras .)
+    MIENTRAS        reduce using rule 5 (declaracion -> declaracion_mientras .)
+    PARA            reduce using rule 5 (declaracion -> declaracion_mientras .)
+    PAREN_IZQ       reduce using rule 5 (declaracion -> declaracion_mientras .)
+    ID              reduce using rule 5 (declaracion -> declaracion_mientras .)
+    BOOLEANO        reduce using rule 5 (declaracion -> declaracion_mientras .)
+    -               reduce using rule 5 (declaracion -> declaracion_mientras .)
+    PRE             reduce using rule 5 (declaracion -> declaracion_mientras .)
+    CONSTANTE_ENTERA reduce using rule 5 (declaracion -> declaracion_mientras .)
+    CONSTANTE_FLOTANTE reduce using rule 5 (declaracion -> declaracion_mientras .)
+    ENTERO          reduce using rule 5 (declaracion -> declaracion_mientras .)
+    FLOTANTE        reduce using rule 5 (declaracion -> declaracion_mientras .)
+    BOOL            reduce using rule 5 (declaracion -> declaracion_mientras .)
+    NOTA            reduce using rule 5 (declaracion -> declaracion_mientras .)
+
+
+state 13
+
+    (6) declaracion -> declaracion_para .
+
+    LLAVE_DER       reduce using rule 6 (declaracion -> declaracion_para .)
+    TOCAR           reduce using rule 6 (declaracion -> declaracion_para .)
+    SI              reduce using rule 6 (declaracion -> declaracion_para .)
+    MIENTRAS        reduce using rule 6 (declaracion -> declaracion_para .)
+    PARA            reduce using rule 6 (declaracion -> declaracion_para .)
+    PAREN_IZQ       reduce using rule 6 (declaracion -> declaracion_para .)
+    ID              reduce using rule 6 (declaracion -> declaracion_para .)
+    BOOLEANO        reduce using rule 6 (declaracion -> declaracion_para .)
+    -               reduce using rule 6 (declaracion -> declaracion_para .)
+    PRE             reduce using rule 6 (declaracion -> declaracion_para .)
+    CONSTANTE_ENTERA reduce using rule 6 (declaracion -> declaracion_para .)
+    CONSTANTE_FLOTANTE reduce using rule 6 (declaracion -> declaracion_para .)
+    ENTERO          reduce using rule 6 (declaracion -> declaracion_para .)
+    FLOTANTE        reduce using rule 6 (declaracion -> declaracion_para .)
+    BOOL            reduce using rule 6 (declaracion -> declaracion_para .)
+    NOTA            reduce using rule 6 (declaracion -> declaracion_para .)
+
+
+state 14
+
+    (7) declaracion -> dec_variable .
+
+    LLAVE_DER       reduce using rule 7 (declaracion -> dec_variable .)
+    TOCAR           reduce using rule 7 (declaracion -> dec_variable .)
+    SI              reduce using rule 7 (declaracion -> dec_variable .)
+    MIENTRAS        reduce using rule 7 (declaracion -> dec_variable .)
+    PARA            reduce using rule 7 (declaracion -> dec_variable .)
+    PAREN_IZQ       reduce using rule 7 (declaracion -> dec_variable .)
+    ID              reduce using rule 7 (declaracion -> dec_variable .)
+    BOOLEANO        reduce using rule 7 (declaracion -> dec_variable .)
+    -               reduce using rule 7 (declaracion -> dec_variable .)
+    PRE             reduce using rule 7 (declaracion -> dec_variable .)
+    CONSTANTE_ENTERA reduce using rule 7 (declaracion -> dec_variable .)
+    CONSTANTE_FLOTANTE reduce using rule 7 (declaracion -> dec_variable .)
+    ENTERO          reduce using rule 7 (declaracion -> dec_variable .)
+    FLOTANTE        reduce using rule 7 (declaracion -> dec_variable .)
+    BOOL            reduce using rule 7 (declaracion -> dec_variable .)
+    NOTA            reduce using rule 7 (declaracion -> dec_variable .)
+
+
+state 15
+
+    (8) declaracion -> modificacion_var .
+
+    LLAVE_DER       reduce using rule 8 (declaracion -> modificacion_var .)
+    TOCAR           reduce using rule 8 (declaracion -> modificacion_var .)
+    SI              reduce using rule 8 (declaracion -> modificacion_var .)
+    MIENTRAS        reduce using rule 8 (declaracion -> modificacion_var .)
+    PARA            reduce using rule 8 (declaracion -> modificacion_var .)
+    PAREN_IZQ       reduce using rule 8 (declaracion -> modificacion_var .)
+    ID              reduce using rule 8 (declaracion -> modificacion_var .)
+    BOOLEANO        reduce using rule 8 (declaracion -> modificacion_var .)
+    -               reduce using rule 8 (declaracion -> modificacion_var .)
+    PRE             reduce using rule 8 (declaracion -> modificacion_var .)
+    CONSTANTE_ENTERA reduce using rule 8 (declaracion -> modificacion_var .)
+    CONSTANTE_FLOTANTE reduce using rule 8 (declaracion -> modificacion_var .)
+    ENTERO          reduce using rule 8 (declaracion -> modificacion_var .)
+    FLOTANTE        reduce using rule 8 (declaracion -> modificacion_var .)
+    BOOL            reduce using rule 8 (declaracion -> modificacion_var .)
+    NOTA            reduce using rule 8 (declaracion -> modificacion_var .)
+
+
+state 16
+
+    (9) declaracion -> expresion . PUNTO_COMA
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      shift and go to state 40
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 17
+
+    (44) tocar -> TOCAR . PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar
+
+    PAREN_IZQ       shift and go to state 49
+
+
+state 18
+
+    (78) expresion -> PAREN_IZQ . expresion PAREN_DER
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 50
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 19
+
+    (12) declaracion_si -> SI . PAREN_IZQ expresion PAREN_DER cuerpo
+    (13) declaracion_si -> SI . PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo
+
+    PAREN_IZQ       shift and go to state 52
+
+
+state 20
+
+    (14) declaracion_mientras -> MIENTRAS . PAREN_IZQ expresion PAREN_DER cuerpo
+
+    PAREN_IZQ       shift and go to state 53
+
+
+state 21
+
+    (15) declaracion_para -> PARA . PAREN_IZQ parametros_para PAREN_DER cuerpo
+
+    PAREN_IZQ       shift and go to state 54
+
+
+state 22
+
+    (74) dec_variable -> dec_asignacion . PUNTO_COMA
+
+    PUNTO_COMA      shift and go to state 55
+
+
+state 23
+
+    (77) modificacion_var -> asignacion . PUNTO_COMA
+
+    PUNTO_COMA      shift and go to state 56
+
+
+state 24
+
+    (79) expresion -> ID .
+    (60) indice_arreglo -> ID . CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+    (72) tipo_var -> ID .
+    (73) tipo_var -> ID . CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PUNTO_COMA      reduce using rule 79 (expresion -> ID .)
+    OPERADOR_LOGICO reduce using rule 79 (expresion -> ID .)
+    SUMA            reduce using rule 79 (expresion -> ID .)
+    RESTA           reduce using rule 79 (expresion -> ID .)
+    MULTI           reduce using rule 79 (expresion -> ID .)
+    DIVISION        reduce using rule 79 (expresion -> ID .)
+    OR              reduce using rule 79 (expresion -> ID .)
+    AND             reduce using rule 79 (expresion -> ID .)
+    POST            reduce using rule 79 (expresion -> ID .)
+    CORCHETE_IZQ    shift and go to state 57
+    ASIGNACION      reduce using rule 72 (tipo_var -> ID .)
+
+
+state 25
+
+    (80) expresion -> numero .
+
+    PUNTO_COMA      reduce using rule 80 (expresion -> numero .)
+    OPERADOR_LOGICO reduce using rule 80 (expresion -> numero .)
+    SUMA            reduce using rule 80 (expresion -> numero .)
+    RESTA           reduce using rule 80 (expresion -> numero .)
+    MULTI           reduce using rule 80 (expresion -> numero .)
+    DIVISION        reduce using rule 80 (expresion -> numero .)
+    OR              reduce using rule 80 (expresion -> numero .)
+    AND             reduce using rule 80 (expresion -> numero .)
+    POST            reduce using rule 80 (expresion -> numero .)
+    PAREN_DER       reduce using rule 80 (expresion -> numero .)
+    COMA            reduce using rule 80 (expresion -> numero .)
+
+
+state 26
+
+    (81) expresion -> BOOLEANO .
+
+    PUNTO_COMA      reduce using rule 81 (expresion -> BOOLEANO .)
+    OPERADOR_LOGICO reduce using rule 81 (expresion -> BOOLEANO .)
+    SUMA            reduce using rule 81 (expresion -> BOOLEANO .)
+    RESTA           reduce using rule 81 (expresion -> BOOLEANO .)
+    MULTI           reduce using rule 81 (expresion -> BOOLEANO .)
+    DIVISION        reduce using rule 81 (expresion -> BOOLEANO .)
+    OR              reduce using rule 81 (expresion -> BOOLEANO .)
+    AND             reduce using rule 81 (expresion -> BOOLEANO .)
+    POST            reduce using rule 81 (expresion -> BOOLEANO .)
+    PAREN_DER       reduce using rule 81 (expresion -> BOOLEANO .)
+    COMA            reduce using rule 81 (expresion -> BOOLEANO .)
+
+
+state 27
+
+    (82) expresion -> indice_arreglo .
+
+    PUNTO_COMA      reduce using rule 82 (expresion -> indice_arreglo .)
+    OPERADOR_LOGICO reduce using rule 82 (expresion -> indice_arreglo .)
+    SUMA            reduce using rule 82 (expresion -> indice_arreglo .)
+    RESTA           reduce using rule 82 (expresion -> indice_arreglo .)
+    MULTI           reduce using rule 82 (expresion -> indice_arreglo .)
+    DIVISION        reduce using rule 82 (expresion -> indice_arreglo .)
+    OR              reduce using rule 82 (expresion -> indice_arreglo .)
+    AND             reduce using rule 82 (expresion -> indice_arreglo .)
+    POST            reduce using rule 82 (expresion -> indice_arreglo .)
+    PAREN_DER       reduce using rule 82 (expresion -> indice_arreglo .)
+    COMA            reduce using rule 82 (expresion -> indice_arreglo .)
+
+
+state 28
+
+    (90) expresion -> - . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 58
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 29
+
+    (92) expresion -> PRE . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 59
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 30
+
+    (75) dec_asignacion -> tipo_dato . asignacion
+    (76) asignacion -> . tipo_var ASIGNACION lista_variables
+    (72) tipo_var -> . ID
+    (73) tipo_var -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    ID              shift and go to state 61
+
+    asignacion                     shift and go to state 60
+    tipo_var                       shift and go to state 31
+
+state 31
+
+    (76) asignacion -> tipo_var . ASIGNACION lista_variables
+
+    ASIGNACION      shift and go to state 62
+
+
+state 32
+
+    (20) numero -> CONSTANTE_ENTERA .
+
+    PUNTO_COMA      reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    OPERADOR_LOGICO reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    SUMA            reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    RESTA           reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    MULTI           reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    DIVISION        reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    OR              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    AND             reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    POST            reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    PAREN_DER       reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    COMA            reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    ID              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    MODIFICADOR     reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    PAREN_IZQ       reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    LLAVE_IZQ       reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    DO              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    RE              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    MI              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    FA              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    SOL             reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    LA              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    SI              reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    CORCHETE_DER    reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+    LLAVE_DER       reduce using rule 20 (numero -> CONSTANTE_ENTERA .)
+
+
+state 33
+
+    (21) numero -> CONSTANTE_FLOTANTE .
+
+    PUNTO_COMA      reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    OPERADOR_LOGICO reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    SUMA            reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    RESTA           reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    MULTI           reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    DIVISION        reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    OR              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    AND             reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    POST            reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    PAREN_DER       reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    COMA            reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    ID              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    MODIFICADOR     reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    PAREN_IZQ       reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    LLAVE_IZQ       reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    DO              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    RE              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    MI              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    FA              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    SOL             reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    LA              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    SI              reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    CORCHETE_DER    reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+    LLAVE_DER       reduce using rule 21 (numero -> CONSTANTE_FLOTANTE .)
+
+
+state 34
+
+    (68) tipo_dato -> ENTERO .
+
+    ID              reduce using rule 68 (tipo_dato -> ENTERO .)
+
+
+state 35
+
+    (69) tipo_dato -> FLOTANTE .
+
+    ID              reduce using rule 69 (tipo_dato -> FLOTANTE .)
+
+
+state 36
+
+    (70) tipo_dato -> BOOL .
+
+    ID              reduce using rule 70 (tipo_dato -> BOOL .)
+
+
+state 37
+
+    (71) tipo_dato -> NOTA .
+
+    ID              reduce using rule 71 (tipo_dato -> NOTA .)
+
+
+state 38
+
+    (2) cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .
+
+    $end            reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    SINO            reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    LLAVE_DER       reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    TOCAR           reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    SI              reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    MIENTRAS        reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    PARA            reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    PAREN_IZQ       reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    ID              reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    BOOLEANO        reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    -               reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    PRE             reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    CONSTANTE_ENTERA reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    CONSTANTE_FLOTANTE reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    ENTERO          reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    FLOTANTE        reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    BOOL            reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+    NOTA            reduce using rule 2 (cuerpo -> LLAVE_IZQ lista_declaraciones LLAVE_DER .)
+
+
+state 39
+
+    (10) lista_declaraciones -> lista_declaraciones declaracion .
+
+    LLAVE_DER       reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    TOCAR           reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    SI              reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    MIENTRAS        reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    PARA            reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    PAREN_IZQ       reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    ID              reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    BOOLEANO        reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    -               reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    PRE             reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    CONSTANTE_ENTERA reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    CONSTANTE_FLOTANTE reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    ENTERO          reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    FLOTANTE        reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    BOOL            reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+    NOTA            reduce using rule 10 (lista_declaraciones -> lista_declaraciones declaracion .)
+
+
+state 40
+
+    (9) declaracion -> expresion PUNTO_COMA .
+
+    LLAVE_DER       reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    TOCAR           reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    SI              reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    MIENTRAS        reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    PARA            reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    PAREN_IZQ       reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    ID              reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    BOOLEANO        reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    -               reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    PRE             reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    CONSTANTE_ENTERA reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    CONSTANTE_FLOTANTE reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    ENTERO          reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    FLOTANTE        reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    BOOL            reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+    NOTA            reduce using rule 9 (declaracion -> expresion PUNTO_COMA .)
+
+
+state 41
+
+    (83) expresion -> expresion OPERADOR_LOGICO . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 63
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 42
+
+    (84) expresion -> expresion SUMA . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 64
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 43
+
+    (85) expresion -> expresion RESTA . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 65
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 44
+
+    (86) expresion -> expresion MULTI . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 66
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 45
+
+    (87) expresion -> expresion DIVISION . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 67
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 46
+
+    (88) expresion -> expresion OR . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 68
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 47
+
+    (89) expresion -> expresion AND . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 69
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 48
+
+    (91) expresion -> expresion POST .
+
+    PUNTO_COMA      reduce using rule 91 (expresion -> expresion POST .)
+    OPERADOR_LOGICO reduce using rule 91 (expresion -> expresion POST .)
+    SUMA            reduce using rule 91 (expresion -> expresion POST .)
+    RESTA           reduce using rule 91 (expresion -> expresion POST .)
+    MULTI           reduce using rule 91 (expresion -> expresion POST .)
+    DIVISION        reduce using rule 91 (expresion -> expresion POST .)
+    OR              reduce using rule 91 (expresion -> expresion POST .)
+    AND             reduce using rule 91 (expresion -> expresion POST .)
+    POST            reduce using rule 91 (expresion -> expresion POST .)
+    PAREN_DER       reduce using rule 91 (expresion -> expresion POST .)
+    COMA            reduce using rule 91 (expresion -> expresion POST .)
+
+
+state 49
+
+    (44) tocar -> TOCAR PAREN_IZQ . parametros_tocar PAREN_DER cuerpo_tocar
+    (45) parametros_tocar -> . tempo COMA instrumento sincronizacion
+    (46) tempo -> . CONSTANTE_ENTERA
+    (47) tempo -> . ID
+
+    CONSTANTE_ENTERA shift and go to state 72
+    ID              shift and go to state 73
+
+    parametros_tocar               shift and go to state 70
+    tempo                          shift and go to state 71
+
+state 50
+
+    (78) expresion -> PAREN_IZQ expresion . PAREN_DER
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PAREN_DER       shift and go to state 74
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 51
+
+    (79) expresion -> ID .
+    (60) indice_arreglo -> ID . CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_DER       reduce using rule 79 (expresion -> ID .)
+    OPERADOR_LOGICO reduce using rule 79 (expresion -> ID .)
+    SUMA            reduce using rule 79 (expresion -> ID .)
+    RESTA           reduce using rule 79 (expresion -> ID .)
+    MULTI           reduce using rule 79 (expresion -> ID .)
+    DIVISION        reduce using rule 79 (expresion -> ID .)
+    OR              reduce using rule 79 (expresion -> ID .)
+    AND             reduce using rule 79 (expresion -> ID .)
+    POST            reduce using rule 79 (expresion -> ID .)
+    PUNTO_COMA      reduce using rule 79 (expresion -> ID .)
+    COMA            reduce using rule 79 (expresion -> ID .)
+    CORCHETE_IZQ    shift and go to state 75
+
+
+state 52
+
+    (12) declaracion_si -> SI PAREN_IZQ . expresion PAREN_DER cuerpo
+    (13) declaracion_si -> SI PAREN_IZQ . expresion PAREN_DER cuerpo SINO cuerpo
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 76
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 53
+
+    (14) declaracion_mientras -> MIENTRAS PAREN_IZQ . expresion PAREN_DER cuerpo
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 77
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 54
+
+    (15) declaracion_para -> PARA PAREN_IZQ . parametros_para PAREN_DER cuerpo
+    (16) parametros_para -> . dec_asignacion COMA expresion COMA expresion
+    (75) dec_asignacion -> . tipo_dato asignacion
+    (68) tipo_dato -> . ENTERO
+    (69) tipo_dato -> . FLOTANTE
+    (70) tipo_dato -> . BOOL
+    (71) tipo_dato -> . NOTA
+
+    ENTERO          shift and go to state 34
+    FLOTANTE        shift and go to state 35
+    BOOL            shift and go to state 36
+    NOTA            shift and go to state 37
+
+    parametros_para                shift and go to state 78
+    dec_asignacion                 shift and go to state 79
+    tipo_dato                      shift and go to state 30
+
+state 55
+
+    (74) dec_variable -> dec_asignacion PUNTO_COMA .
+
+    LLAVE_DER       reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    TOCAR           reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    SI              reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    MIENTRAS        reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    PARA            reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    PAREN_IZQ       reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    ID              reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    BOOLEANO        reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    -               reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    PRE             reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    CONSTANTE_ENTERA reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    CONSTANTE_FLOTANTE reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    ENTERO          reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    FLOTANTE        reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    BOOL            reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+    NOTA            reduce using rule 74 (dec_variable -> dec_asignacion PUNTO_COMA .)
+
+
+state 56
+
+    (77) modificacion_var -> asignacion PUNTO_COMA .
+
+    LLAVE_DER       reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    TOCAR           reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    SI              reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    MIENTRAS        reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    PARA            reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    PAREN_IZQ       reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    ID              reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    BOOLEANO        reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    -               reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    PRE             reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    CONSTANTE_ENTERA reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    CONSTANTE_FLOTANTE reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    ENTERO          reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    FLOTANTE        reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    BOOL            reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+    NOTA            reduce using rule 77 (modificacion_var -> asignacion PUNTO_COMA .)
+
+
+state 57
+
+    (60) indice_arreglo -> ID CORCHETE_IZQ . CONSTANTE_ENTERA CORCHETE_DER
+    (73) tipo_var -> ID CORCHETE_IZQ . CONSTANTE_ENTERA CORCHETE_DER
+
+    CONSTANTE_ENTERA shift and go to state 80
+
+
+state 58
+
+    (90) expresion -> - expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 90 (expresion -> - expresion .)
+    OPERADOR_LOGICO reduce using rule 90 (expresion -> - expresion .)
+    SUMA            reduce using rule 90 (expresion -> - expresion .)
+    RESTA           reduce using rule 90 (expresion -> - expresion .)
+    MULTI           reduce using rule 90 (expresion -> - expresion .)
+    DIVISION        reduce using rule 90 (expresion -> - expresion .)
+    OR              reduce using rule 90 (expresion -> - expresion .)
+    AND             reduce using rule 90 (expresion -> - expresion .)
+    POST            reduce using rule 90 (expresion -> - expresion .)
+    PAREN_DER       reduce using rule 90 (expresion -> - expresion .)
+    COMA            reduce using rule 90 (expresion -> - expresion .)
+
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! SUMA            [ shift and go to state 42 ]
+  ! RESTA           [ shift and go to state 43 ]
+  ! MULTI           [ shift and go to state 44 ]
+  ! DIVISION        [ shift and go to state 45 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+  ! POST            [ shift and go to state 48 ]
+
+
+state 59
+
+    (92) expresion -> PRE expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 92 (expresion -> PRE expresion .)
+    OPERADOR_LOGICO reduce using rule 92 (expresion -> PRE expresion .)
+    SUMA            reduce using rule 92 (expresion -> PRE expresion .)
+    RESTA           reduce using rule 92 (expresion -> PRE expresion .)
+    MULTI           reduce using rule 92 (expresion -> PRE expresion .)
+    DIVISION        reduce using rule 92 (expresion -> PRE expresion .)
+    OR              reduce using rule 92 (expresion -> PRE expresion .)
+    AND             reduce using rule 92 (expresion -> PRE expresion .)
+    POST            reduce using rule 92 (expresion -> PRE expresion .)
+    PAREN_DER       reduce using rule 92 (expresion -> PRE expresion .)
+    COMA            reduce using rule 92 (expresion -> PRE expresion .)
+
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! SUMA            [ shift and go to state 42 ]
+  ! RESTA           [ shift and go to state 43 ]
+  ! MULTI           [ shift and go to state 44 ]
+  ! DIVISION        [ shift and go to state 45 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+  ! POST            [ shift and go to state 48 ]
+
+
+state 60
+
+    (75) dec_asignacion -> tipo_dato asignacion .
+
+    PUNTO_COMA      reduce using rule 75 (dec_asignacion -> tipo_dato asignacion .)
+    COMA            reduce using rule 75 (dec_asignacion -> tipo_dato asignacion .)
+
+
+state 61
+
+    (72) tipo_var -> ID .
+    (73) tipo_var -> ID . CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    ASIGNACION      reduce using rule 72 (tipo_var -> ID .)
+    CORCHETE_IZQ    shift and go to state 81
+
+
+state 62
+
+    (76) asignacion -> tipo_var ASIGNACION . lista_variables
+    (66) lista_variables -> . expresion
+    (67) lista_variables -> . arreglo
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (59) arreglo -> . CORCHETE_IZQ lista_arreglos CORCHETE_DER
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CORCHETE_IZQ    shift and go to state 85
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    lista_variables                shift and go to state 82
+    expresion                      shift and go to state 83
+    arreglo                        shift and go to state 84
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 63
+
+    (83) expresion -> expresion OPERADOR_LOGICO expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .)
+    OPERADOR_LOGICO reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .)
+    OR              reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .)
+    AND             reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .)
+    PAREN_DER       reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .)
+    COMA            reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .)
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    POST            shift and go to state 48
+
+  ! SUMA            [ reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .) ]
+  ! RESTA           [ reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .) ]
+  ! MULTI           [ reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .) ]
+  ! DIVISION        [ reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .) ]
+  ! POST            [ reduce using rule 83 (expresion -> expresion OPERADOR_LOGICO expresion .) ]
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+
+
+state 64
+
+    (84) expresion -> expresion SUMA expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    OPERADOR_LOGICO reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    SUMA            reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    RESTA           reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    OR              reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    AND             reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    PAREN_DER       reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    COMA            reduce using rule 84 (expresion -> expresion SUMA expresion .)
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    POST            shift and go to state 48
+
+  ! MULTI           [ reduce using rule 84 (expresion -> expresion SUMA expresion .) ]
+  ! DIVISION        [ reduce using rule 84 (expresion -> expresion SUMA expresion .) ]
+  ! POST            [ reduce using rule 84 (expresion -> expresion SUMA expresion .) ]
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! SUMA            [ shift and go to state 42 ]
+  ! RESTA           [ shift and go to state 43 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+
+
+state 65
+
+    (85) expresion -> expresion RESTA expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    OPERADOR_LOGICO reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    SUMA            reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    RESTA           reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    OR              reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    AND             reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    PAREN_DER       reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    COMA            reduce using rule 85 (expresion -> expresion RESTA expresion .)
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    POST            shift and go to state 48
+
+  ! MULTI           [ reduce using rule 85 (expresion -> expresion RESTA expresion .) ]
+  ! DIVISION        [ reduce using rule 85 (expresion -> expresion RESTA expresion .) ]
+  ! POST            [ reduce using rule 85 (expresion -> expresion RESTA expresion .) ]
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! SUMA            [ shift and go to state 42 ]
+  ! RESTA           [ shift and go to state 43 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+
+
+state 66
+
+    (86) expresion -> expresion MULTI expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    OPERADOR_LOGICO reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    SUMA            reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    RESTA           reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    MULTI           reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    DIVISION        reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    OR              reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    AND             reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    PAREN_DER       reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    COMA            reduce using rule 86 (expresion -> expresion MULTI expresion .)
+    POST            shift and go to state 48
+
+  ! POST            [ reduce using rule 86 (expresion -> expresion MULTI expresion .) ]
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! SUMA            [ shift and go to state 42 ]
+  ! RESTA           [ shift and go to state 43 ]
+  ! MULTI           [ shift and go to state 44 ]
+  ! DIVISION        [ shift and go to state 45 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+
+
+state 67
+
+    (87) expresion -> expresion DIVISION expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    OPERADOR_LOGICO reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    SUMA            reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    RESTA           reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    MULTI           reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    DIVISION        reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    OR              reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    AND             reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    PAREN_DER       reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    COMA            reduce using rule 87 (expresion -> expresion DIVISION expresion .)
+    POST            shift and go to state 48
+
+  ! POST            [ reduce using rule 87 (expresion -> expresion DIVISION expresion .) ]
+  ! OPERADOR_LOGICO [ shift and go to state 41 ]
+  ! SUMA            [ shift and go to state 42 ]
+  ! RESTA           [ shift and go to state 43 ]
+  ! MULTI           [ shift and go to state 44 ]
+  ! DIVISION        [ shift and go to state 45 ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+
+
+state 68
+
+    (88) expresion -> expresion OR expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 88 (expresion -> expresion OR expresion .)
+    OR              reduce using rule 88 (expresion -> expresion OR expresion .)
+    PAREN_DER       reduce using rule 88 (expresion -> expresion OR expresion .)
+    COMA            reduce using rule 88 (expresion -> expresion OR expresion .)
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+  ! OPERADOR_LOGICO [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! SUMA            [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! RESTA           [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! MULTI           [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! DIVISION        [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! AND             [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! POST            [ reduce using rule 88 (expresion -> expresion OR expresion .) ]
+  ! OR              [ shift and go to state 46 ]
+
+
+state 69
+
+    (89) expresion -> expresion AND expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 89 (expresion -> expresion AND expresion .)
+    OR              reduce using rule 89 (expresion -> expresion AND expresion .)
+    AND             reduce using rule 89 (expresion -> expresion AND expresion .)
+    PAREN_DER       reduce using rule 89 (expresion -> expresion AND expresion .)
+    COMA            reduce using rule 89 (expresion -> expresion AND expresion .)
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    POST            shift and go to state 48
+
+  ! OPERADOR_LOGICO [ reduce using rule 89 (expresion -> expresion AND expresion .) ]
+  ! SUMA            [ reduce using rule 89 (expresion -> expresion AND expresion .) ]
+  ! RESTA           [ reduce using rule 89 (expresion -> expresion AND expresion .) ]
+  ! MULTI           [ reduce using rule 89 (expresion -> expresion AND expresion .) ]
+  ! DIVISION        [ reduce using rule 89 (expresion -> expresion AND expresion .) ]
+  ! POST            [ reduce using rule 89 (expresion -> expresion AND expresion .) ]
+  ! OR              [ shift and go to state 46 ]
+  ! AND             [ shift and go to state 47 ]
+
+
+state 70
+
+    (44) tocar -> TOCAR PAREN_IZQ parametros_tocar . PAREN_DER cuerpo_tocar
+
+    PAREN_DER       shift and go to state 86
+
+
+state 71
+
+    (45) parametros_tocar -> tempo . COMA instrumento sincronizacion
+
+    COMA            shift and go to state 87
+
+
+state 72
+
+    (46) tempo -> CONSTANTE_ENTERA .
+
+    COMA            reduce using rule 46 (tempo -> CONSTANTE_ENTERA .)
+
+
+state 73
+
+    (47) tempo -> ID .
+
+    COMA            reduce using rule 47 (tempo -> ID .)
+
+
+state 74
+
+    (78) expresion -> PAREN_IZQ expresion PAREN_DER .
+
+    PUNTO_COMA      reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    OPERADOR_LOGICO reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    SUMA            reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    RESTA           reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    MULTI           reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    DIVISION        reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    OR              reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    AND             reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    POST            reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    PAREN_DER       reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+    COMA            reduce using rule 78 (expresion -> PAREN_IZQ expresion PAREN_DER .)
+
+
+state 75
+
+    (60) indice_arreglo -> ID CORCHETE_IZQ . CONSTANTE_ENTERA CORCHETE_DER
+
+    CONSTANTE_ENTERA shift and go to state 88
+
+
+state 76
+
+    (12) declaracion_si -> SI PAREN_IZQ expresion . PAREN_DER cuerpo
+    (13) declaracion_si -> SI PAREN_IZQ expresion . PAREN_DER cuerpo SINO cuerpo
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PAREN_DER       shift and go to state 89
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 77
+
+    (14) declaracion_mientras -> MIENTRAS PAREN_IZQ expresion . PAREN_DER cuerpo
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PAREN_DER       shift and go to state 90
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 78
+
+    (15) declaracion_para -> PARA PAREN_IZQ parametros_para . PAREN_DER cuerpo
+
+    PAREN_DER       shift and go to state 91
+
+
+state 79
+
+    (16) parametros_para -> dec_asignacion . COMA expresion COMA expresion
+
+    COMA            shift and go to state 92
+
+
+state 80
+
+    (60) indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA . CORCHETE_DER
+    (73) tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA . CORCHETE_DER
+
+    CORCHETE_DER    shift and go to state 93
+
+
+state 81
+
+    (73) tipo_var -> ID CORCHETE_IZQ . CONSTANTE_ENTERA CORCHETE_DER
+
+    CONSTANTE_ENTERA shift and go to state 94
+
+
+state 82
+
+    (76) asignacion -> tipo_var ASIGNACION lista_variables .
+
+    PUNTO_COMA      reduce using rule 76 (asignacion -> tipo_var ASIGNACION lista_variables .)
+    COMA            reduce using rule 76 (asignacion -> tipo_var ASIGNACION lista_variables .)
+
+
+state 83
+
+    (66) lista_variables -> expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PUNTO_COMA      reduce using rule 66 (lista_variables -> expresion .)
+    COMA            reduce using rule 66 (lista_variables -> expresion .)
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 84
+
+    (67) lista_variables -> arreglo .
+
+    PUNTO_COMA      reduce using rule 67 (lista_variables -> arreglo .)
+    COMA            reduce using rule 67 (lista_variables -> arreglo .)
+
+
+state 85
+
+    (59) arreglo -> CORCHETE_IZQ . lista_arreglos CORCHETE_DER
+    (61) lista_arreglos -> . lista_arreglos COMA elemento_arreglo
+    (62) lista_arreglos -> . elemento_arreglo
+    (63) elemento_arreglo -> . elemento_tocar
+    (64) elemento_arreglo -> . numero
+    (65) elemento_arreglo -> . BOOLEANO
+    (55) elemento_tocar -> . tiempo_nota
+    (56) elemento_tocar -> . potencia_nota
+    (57) elemento_tocar -> . modificador_nota
+    (58) elemento_tocar -> . elemento
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (37) tiempo_nota -> . numero elemento
+    (38) tiempo_nota -> . numero modificador_nota
+    (42) potencia_nota -> . elemento_potencia POTENCIA numero
+    (43) modificador_nota -> . MODIFICADOR elemento
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (39) elemento_potencia -> . tiempo_nota
+    (40) elemento_potencia -> . modificador_nota
+    (41) elemento_potencia -> . elemento
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    BOOLEANO        shift and go to state 99
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+    MODIFICADOR     shift and go to state 105
+    ID              shift and go to state 109
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    lista_arreglos                 shift and go to state 95
+    elemento_arreglo               shift and go to state 96
+    elemento_tocar                 shift and go to state 97
+    numero                         shift and go to state 98
+    tiempo_nota                    shift and go to state 100
+    potencia_nota                  shift and go to state 101
+    modificador_nota               shift and go to state 102
+    elemento                       shift and go to state 103
+    elemento_potencia              shift and go to state 104
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 86
+
+    (44) tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER . cuerpo_tocar
+    (52) cuerpo_tocar -> . LLAVE_IZQ lista_tocar LLAVE_DER
+
+    LLAVE_IZQ       shift and go to state 120
+
+    cuerpo_tocar                   shift and go to state 119
+
+state 87
+
+    (45) parametros_tocar -> tempo COMA . instrumento sincronizacion
+    (17) instrumento -> . PIANO
+    (18) instrumento -> . GUITARRA
+    (19) instrumento -> . FLAUTA
+
+    PIANO           shift and go to state 122
+    GUITARRA        shift and go to state 123
+    FLAUTA          shift and go to state 124
+
+    instrumento                    shift and go to state 121
+
+state 88
+
+    (60) indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA . CORCHETE_DER
+
+    CORCHETE_DER    shift and go to state 125
+
+
+state 89
+
+    (12) declaracion_si -> SI PAREN_IZQ expresion PAREN_DER . cuerpo
+    (13) declaracion_si -> SI PAREN_IZQ expresion PAREN_DER . cuerpo SINO cuerpo
+    (2) cuerpo -> . LLAVE_IZQ lista_declaraciones LLAVE_DER
+
+    LLAVE_IZQ       shift and go to state 7
+
+    cuerpo                         shift and go to state 126
+
+state 90
+
+    (14) declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER . cuerpo
+    (2) cuerpo -> . LLAVE_IZQ lista_declaraciones LLAVE_DER
+
+    LLAVE_IZQ       shift and go to state 7
+
+    cuerpo                         shift and go to state 127
+
+state 91
+
+    (15) declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER . cuerpo
+    (2) cuerpo -> . LLAVE_IZQ lista_declaraciones LLAVE_DER
+
+    LLAVE_IZQ       shift and go to state 7
+
+    cuerpo                         shift and go to state 128
+
+state 92
+
+    (16) parametros_para -> dec_asignacion COMA . expresion COMA expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 129
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 93
+
+    (60) indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .
+    (73) tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .
+
+    PUNTO_COMA      reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    OPERADOR_LOGICO reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    SUMA            reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    RESTA           reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    MULTI           reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    DIVISION        reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    OR              reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    AND             reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    POST            reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    ASIGNACION      reduce using rule 73 (tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+
+
+state 94
+
+    (73) tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA . CORCHETE_DER
+
+    CORCHETE_DER    shift and go to state 130
+
+
+state 95
+
+    (59) arreglo -> CORCHETE_IZQ lista_arreglos . CORCHETE_DER
+    (61) lista_arreglos -> lista_arreglos . COMA elemento_arreglo
+
+    CORCHETE_DER    shift and go to state 131
+    COMA            shift and go to state 132
+
+
+state 96
+
+    (62) lista_arreglos -> elemento_arreglo .
+
+    CORCHETE_DER    reduce using rule 62 (lista_arreglos -> elemento_arreglo .)
+    COMA            reduce using rule 62 (lista_arreglos -> elemento_arreglo .)
+
+
+state 97
+
+    (63) elemento_arreglo -> elemento_tocar .
+
+    CORCHETE_DER    reduce using rule 63 (elemento_arreglo -> elemento_tocar .)
+    COMA            reduce using rule 63 (elemento_arreglo -> elemento_tocar .)
+
+
+state 98
+
+    (64) elemento_arreglo -> numero .
+    (37) tiempo_nota -> numero . elemento
+    (38) tiempo_nota -> numero . modificador_nota
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (43) modificador_nota -> . MODIFICADOR elemento
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    CORCHETE_DER    reduce using rule 64 (elemento_arreglo -> numero .)
+    COMA            reduce using rule 64 (elemento_arreglo -> numero .)
+    ID              shift and go to state 109
+    MODIFICADOR     shift and go to state 105
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    elemento                       shift and go to state 133
+    modificador_nota               shift and go to state 134
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 99
+
+    (65) elemento_arreglo -> BOOLEANO .
+
+    CORCHETE_DER    reduce using rule 65 (elemento_arreglo -> BOOLEANO .)
+    COMA            reduce using rule 65 (elemento_arreglo -> BOOLEANO .)
+
+
+state 100
+
+    (55) elemento_tocar -> tiempo_nota .
+    (39) elemento_potencia -> tiempo_nota .
+
+    CORCHETE_DER    reduce using rule 55 (elemento_tocar -> tiempo_nota .)
+    COMA            reduce using rule 55 (elemento_tocar -> tiempo_nota .)
+    LLAVE_DER       reduce using rule 55 (elemento_tocar -> tiempo_nota .)
+    POTENCIA        reduce using rule 39 (elemento_potencia -> tiempo_nota .)
+
+
+state 101
+
+    (56) elemento_tocar -> potencia_nota .
+
+    CORCHETE_DER    reduce using rule 56 (elemento_tocar -> potencia_nota .)
+    COMA            reduce using rule 56 (elemento_tocar -> potencia_nota .)
+    LLAVE_DER       reduce using rule 56 (elemento_tocar -> potencia_nota .)
+
+
+state 102
+
+    (57) elemento_tocar -> modificador_nota .
+    (40) elemento_potencia -> modificador_nota .
+
+    CORCHETE_DER    reduce using rule 57 (elemento_tocar -> modificador_nota .)
+    COMA            reduce using rule 57 (elemento_tocar -> modificador_nota .)
+    LLAVE_DER       reduce using rule 57 (elemento_tocar -> modificador_nota .)
+    POTENCIA        reduce using rule 40 (elemento_potencia -> modificador_nota .)
+
+
+state 103
+
+    (58) elemento_tocar -> elemento .
+    (41) elemento_potencia -> elemento .
+
+    CORCHETE_DER    reduce using rule 58 (elemento_tocar -> elemento .)
+    COMA            reduce using rule 58 (elemento_tocar -> elemento .)
+    LLAVE_DER       reduce using rule 58 (elemento_tocar -> elemento .)
+    POTENCIA        reduce using rule 41 (elemento_potencia -> elemento .)
+
+
+state 104
+
+    (42) potencia_nota -> elemento_potencia . POTENCIA numero
+
+    POTENCIA        shift and go to state 135
+
+
+state 105
+
+    (43) modificador_nota -> MODIFICADOR . elemento
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    ID              shift and go to state 109
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    elemento                       shift and go to state 136
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 106
+
+    (33) elemento -> paren_notas .
+
+    CORCHETE_DER    reduce using rule 33 (elemento -> paren_notas .)
+    COMA            reduce using rule 33 (elemento -> paren_notas .)
+    POTENCIA        reduce using rule 33 (elemento -> paren_notas .)
+    LLAVE_DER       reduce using rule 33 (elemento -> paren_notas .)
+
+
+state 107
+
+    (34) elemento -> llaves_notas .
+
+    CORCHETE_DER    reduce using rule 34 (elemento -> llaves_notas .)
+    COMA            reduce using rule 34 (elemento -> llaves_notas .)
+    POTENCIA        reduce using rule 34 (elemento -> llaves_notas .)
+    LLAVE_DER       reduce using rule 34 (elemento -> llaves_notas .)
+
+
+state 108
+
+    (35) elemento -> nota .
+
+    CORCHETE_DER    reduce using rule 35 (elemento -> nota .)
+    COMA            reduce using rule 35 (elemento -> nota .)
+    POTENCIA        reduce using rule 35 (elemento -> nota .)
+    LLAVE_DER       reduce using rule 35 (elemento -> nota .)
+
+
+state 109
+
+    (36) elemento -> ID .
+
+    CORCHETE_DER    reduce using rule 36 (elemento -> ID .)
+    COMA            reduce using rule 36 (elemento -> ID .)
+    POTENCIA        reduce using rule 36 (elemento -> ID .)
+    LLAVE_DER       reduce using rule 36 (elemento -> ID .)
+
+
+state 110
+
+    (31) paren_notas -> PAREN_IZQ . lista_notas PAREN_DER
+    (22) lista_notas -> . lista_notas COMA nota
+    (23) lista_notas -> . nota
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    lista_notas                    shift and go to state 137
+    nota                           shift and go to state 138
+
+state 111
+
+    (32) llaves_notas -> LLAVE_IZQ . lista_notas LLAVE_DER
+    (22) lista_notas -> . lista_notas COMA nota
+    (23) lista_notas -> . nota
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    lista_notas                    shift and go to state 139
+    nota                           shift and go to state 138
+
+state 112
+
+    (24) nota -> DO .
+
+    CORCHETE_DER    reduce using rule 24 (nota -> DO .)
+    COMA            reduce using rule 24 (nota -> DO .)
+    POTENCIA        reduce using rule 24 (nota -> DO .)
+    LLAVE_DER       reduce using rule 24 (nota -> DO .)
+    PAREN_DER       reduce using rule 24 (nota -> DO .)
+
+
+state 113
+
+    (25) nota -> RE .
+
+    CORCHETE_DER    reduce using rule 25 (nota -> RE .)
+    COMA            reduce using rule 25 (nota -> RE .)
+    POTENCIA        reduce using rule 25 (nota -> RE .)
+    LLAVE_DER       reduce using rule 25 (nota -> RE .)
+    PAREN_DER       reduce using rule 25 (nota -> RE .)
+
+
+state 114
+
+    (26) nota -> MI .
+
+    CORCHETE_DER    reduce using rule 26 (nota -> MI .)
+    COMA            reduce using rule 26 (nota -> MI .)
+    POTENCIA        reduce using rule 26 (nota -> MI .)
+    LLAVE_DER       reduce using rule 26 (nota -> MI .)
+    PAREN_DER       reduce using rule 26 (nota -> MI .)
+
+
+state 115
+
+    (27) nota -> FA .
+
+    CORCHETE_DER    reduce using rule 27 (nota -> FA .)
+    COMA            reduce using rule 27 (nota -> FA .)
+    POTENCIA        reduce using rule 27 (nota -> FA .)
+    LLAVE_DER       reduce using rule 27 (nota -> FA .)
+    PAREN_DER       reduce using rule 27 (nota -> FA .)
+
+
+state 116
+
+    (28) nota -> SOL .
+
+    CORCHETE_DER    reduce using rule 28 (nota -> SOL .)
+    COMA            reduce using rule 28 (nota -> SOL .)
+    POTENCIA        reduce using rule 28 (nota -> SOL .)
+    LLAVE_DER       reduce using rule 28 (nota -> SOL .)
+    PAREN_DER       reduce using rule 28 (nota -> SOL .)
+
+
+state 117
+
+    (29) nota -> LA .
+
+    CORCHETE_DER    reduce using rule 29 (nota -> LA .)
+    COMA            reduce using rule 29 (nota -> LA .)
+    POTENCIA        reduce using rule 29 (nota -> LA .)
+    LLAVE_DER       reduce using rule 29 (nota -> LA .)
+    PAREN_DER       reduce using rule 29 (nota -> LA .)
+
+
+state 118
+
+    (30) nota -> SI .
+
+    CORCHETE_DER    reduce using rule 30 (nota -> SI .)
+    COMA            reduce using rule 30 (nota -> SI .)
+    POTENCIA        reduce using rule 30 (nota -> SI .)
+    LLAVE_DER       reduce using rule 30 (nota -> SI .)
+    PAREN_DER       reduce using rule 30 (nota -> SI .)
+
+
+state 119
+
+    (44) tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .
+
+    LLAVE_DER       reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    TOCAR           reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    SI              reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    MIENTRAS        reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    PARA            reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    PAREN_IZQ       reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    ID              reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    BOOLEANO        reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    -               reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    PRE             reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    CONSTANTE_ENTERA reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    CONSTANTE_FLOTANTE reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    ENTERO          reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    FLOTANTE        reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    BOOL            reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+    NOTA            reduce using rule 44 (tocar -> TOCAR PAREN_IZQ parametros_tocar PAREN_DER cuerpo_tocar .)
+
+
+state 120
+
+    (52) cuerpo_tocar -> LLAVE_IZQ . lista_tocar LLAVE_DER
+    (53) lista_tocar -> . lista_tocar COMA elemento_tocar
+    (54) lista_tocar -> . elemento_tocar
+    (55) elemento_tocar -> . tiempo_nota
+    (56) elemento_tocar -> . potencia_nota
+    (57) elemento_tocar -> . modificador_nota
+    (58) elemento_tocar -> . elemento
+    (37) tiempo_nota -> . numero elemento
+    (38) tiempo_nota -> . numero modificador_nota
+    (42) potencia_nota -> . elemento_potencia POTENCIA numero
+    (43) modificador_nota -> . MODIFICADOR elemento
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (39) elemento_potencia -> . tiempo_nota
+    (40) elemento_potencia -> . modificador_nota
+    (41) elemento_potencia -> . elemento
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    MODIFICADOR     shift and go to state 105
+    ID              shift and go to state 109
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    lista_tocar                    shift and go to state 140
+    elemento_tocar                 shift and go to state 141
+    tiempo_nota                    shift and go to state 100
+    potencia_nota                  shift and go to state 101
+    modificador_nota               shift and go to state 102
+    elemento                       shift and go to state 103
+    numero                         shift and go to state 142
+    elemento_potencia              shift and go to state 104
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 121
+
+    (45) parametros_tocar -> tempo COMA instrumento . sincronizacion
+    (48) sincronizacion -> . COMA CONSTANTE_ENTERA
+    (49) sincronizacion -> . COMA CONSTANTE_FLOTANTE
+    (50) sincronizacion -> . COMA ID
+    (51) sincronizacion -> . vacio
+    (93) vacio -> .
+
+    COMA            shift and go to state 143
+    PAREN_DER       reduce using rule 93 (vacio -> .)
+
+    sincronizacion                 shift and go to state 144
+    vacio                          shift and go to state 145
+
+state 122
+
+    (17) instrumento -> PIANO .
+
+    COMA            reduce using rule 17 (instrumento -> PIANO .)
+    PAREN_DER       reduce using rule 17 (instrumento -> PIANO .)
+
+
+state 123
+
+    (18) instrumento -> GUITARRA .
+
+    COMA            reduce using rule 18 (instrumento -> GUITARRA .)
+    PAREN_DER       reduce using rule 18 (instrumento -> GUITARRA .)
+
+
+state 124
+
+    (19) instrumento -> FLAUTA .
+
+    COMA            reduce using rule 19 (instrumento -> FLAUTA .)
+    PAREN_DER       reduce using rule 19 (instrumento -> FLAUTA .)
+
+
+state 125
+
+    (60) indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .
+
+    PAREN_DER       reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    OPERADOR_LOGICO reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    SUMA            reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    RESTA           reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    MULTI           reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    DIVISION        reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    OR              reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    AND             reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    POST            reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    PUNTO_COMA      reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+    COMA            reduce using rule 60 (indice_arreglo -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+
+
+state 126
+
+    (12) declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .
+    (13) declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo . SINO cuerpo
+
+    LLAVE_DER       reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    TOCAR           reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    SI              reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    MIENTRAS        reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    PARA            reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    PAREN_IZQ       reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    ID              reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    BOOLEANO        reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    -               reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    PRE             reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    CONSTANTE_ENTERA reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    CONSTANTE_FLOTANTE reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    ENTERO          reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    FLOTANTE        reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    BOOL            reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    NOTA            reduce using rule 12 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo .)
+    SINO            shift and go to state 146
+
+
+state 127
+
+    (14) declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .
+
+    LLAVE_DER       reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    TOCAR           reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    SI              reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    MIENTRAS        reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    PARA            reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    PAREN_IZQ       reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    ID              reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    BOOLEANO        reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    -               reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    PRE             reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    CONSTANTE_ENTERA reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    CONSTANTE_FLOTANTE reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    ENTERO          reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    FLOTANTE        reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    BOOL            reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+    NOTA            reduce using rule 14 (declaracion_mientras -> MIENTRAS PAREN_IZQ expresion PAREN_DER cuerpo .)
+
+
+state 128
+
+    (15) declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .
+
+    LLAVE_DER       reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    TOCAR           reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    SI              reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    MIENTRAS        reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    PARA            reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    PAREN_IZQ       reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    ID              reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    BOOLEANO        reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    -               reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    PRE             reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    CONSTANTE_ENTERA reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    CONSTANTE_FLOTANTE reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    ENTERO          reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    FLOTANTE        reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    BOOL            reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+    NOTA            reduce using rule 15 (declaracion_para -> PARA PAREN_IZQ parametros_para PAREN_DER cuerpo .)
+
+
+state 129
+
+    (16) parametros_para -> dec_asignacion COMA expresion . COMA expresion
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    COMA            shift and go to state 147
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 130
+
+    (73) tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .
+
+    ASIGNACION      reduce using rule 73 (tipo_var -> ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER .)
+
+
+state 131
+
+    (59) arreglo -> CORCHETE_IZQ lista_arreglos CORCHETE_DER .
+
+    PUNTO_COMA      reduce using rule 59 (arreglo -> CORCHETE_IZQ lista_arreglos CORCHETE_DER .)
+    COMA            reduce using rule 59 (arreglo -> CORCHETE_IZQ lista_arreglos CORCHETE_DER .)
+
+
+state 132
+
+    (61) lista_arreglos -> lista_arreglos COMA . elemento_arreglo
+    (63) elemento_arreglo -> . elemento_tocar
+    (64) elemento_arreglo -> . numero
+    (65) elemento_arreglo -> . BOOLEANO
+    (55) elemento_tocar -> . tiempo_nota
+    (56) elemento_tocar -> . potencia_nota
+    (57) elemento_tocar -> . modificador_nota
+    (58) elemento_tocar -> . elemento
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (37) tiempo_nota -> . numero elemento
+    (38) tiempo_nota -> . numero modificador_nota
+    (42) potencia_nota -> . elemento_potencia POTENCIA numero
+    (43) modificador_nota -> . MODIFICADOR elemento
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (39) elemento_potencia -> . tiempo_nota
+    (40) elemento_potencia -> . modificador_nota
+    (41) elemento_potencia -> . elemento
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    BOOLEANO        shift and go to state 99
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+    MODIFICADOR     shift and go to state 105
+    ID              shift and go to state 109
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    elemento_arreglo               shift and go to state 148
+    elemento_tocar                 shift and go to state 97
+    numero                         shift and go to state 98
+    tiempo_nota                    shift and go to state 100
+    potencia_nota                  shift and go to state 101
+    modificador_nota               shift and go to state 102
+    elemento                       shift and go to state 103
+    elemento_potencia              shift and go to state 104
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 133
+
+    (37) tiempo_nota -> numero elemento .
+
+    CORCHETE_DER    reduce using rule 37 (tiempo_nota -> numero elemento .)
+    COMA            reduce using rule 37 (tiempo_nota -> numero elemento .)
+    POTENCIA        reduce using rule 37 (tiempo_nota -> numero elemento .)
+    LLAVE_DER       reduce using rule 37 (tiempo_nota -> numero elemento .)
+
+
+state 134
+
+    (38) tiempo_nota -> numero modificador_nota .
+
+    CORCHETE_DER    reduce using rule 38 (tiempo_nota -> numero modificador_nota .)
+    COMA            reduce using rule 38 (tiempo_nota -> numero modificador_nota .)
+    POTENCIA        reduce using rule 38 (tiempo_nota -> numero modificador_nota .)
+    LLAVE_DER       reduce using rule 38 (tiempo_nota -> numero modificador_nota .)
+
+
+state 135
+
+    (42) potencia_nota -> elemento_potencia POTENCIA . numero
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    numero                         shift and go to state 149
+
+state 136
+
+    (43) modificador_nota -> MODIFICADOR elemento .
+
+    CORCHETE_DER    reduce using rule 43 (modificador_nota -> MODIFICADOR elemento .)
+    COMA            reduce using rule 43 (modificador_nota -> MODIFICADOR elemento .)
+    POTENCIA        reduce using rule 43 (modificador_nota -> MODIFICADOR elemento .)
+    LLAVE_DER       reduce using rule 43 (modificador_nota -> MODIFICADOR elemento .)
+
+
+state 137
+
+    (31) paren_notas -> PAREN_IZQ lista_notas . PAREN_DER
+    (22) lista_notas -> lista_notas . COMA nota
+
+    PAREN_DER       shift and go to state 150
+    COMA            shift and go to state 151
+
+
+state 138
+
+    (23) lista_notas -> nota .
+
+    PAREN_DER       reduce using rule 23 (lista_notas -> nota .)
+    COMA            reduce using rule 23 (lista_notas -> nota .)
+    LLAVE_DER       reduce using rule 23 (lista_notas -> nota .)
+
+
+state 139
+
+    (32) llaves_notas -> LLAVE_IZQ lista_notas . LLAVE_DER
+    (22) lista_notas -> lista_notas . COMA nota
+
+    LLAVE_DER       shift and go to state 152
+    COMA            shift and go to state 151
+
+
+state 140
+
+    (52) cuerpo_tocar -> LLAVE_IZQ lista_tocar . LLAVE_DER
+    (53) lista_tocar -> lista_tocar . COMA elemento_tocar
+
+    LLAVE_DER       shift and go to state 153
+    COMA            shift and go to state 154
+
+
+state 141
+
+    (54) lista_tocar -> elemento_tocar .
+
+    LLAVE_DER       reduce using rule 54 (lista_tocar -> elemento_tocar .)
+    COMA            reduce using rule 54 (lista_tocar -> elemento_tocar .)
+
+
+state 142
+
+    (37) tiempo_nota -> numero . elemento
+    (38) tiempo_nota -> numero . modificador_nota
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (43) modificador_nota -> . MODIFICADOR elemento
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    ID              shift and go to state 109
+    MODIFICADOR     shift and go to state 105
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    elemento                       shift and go to state 133
+    modificador_nota               shift and go to state 134
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 143
+
+    (48) sincronizacion -> COMA . CONSTANTE_ENTERA
+    (49) sincronizacion -> COMA . CONSTANTE_FLOTANTE
+    (50) sincronizacion -> COMA . ID
+
+    CONSTANTE_ENTERA shift and go to state 155
+    CONSTANTE_FLOTANTE shift and go to state 156
+    ID              shift and go to state 157
+
+
+state 144
+
+    (45) parametros_tocar -> tempo COMA instrumento sincronizacion .
+
+    PAREN_DER       reduce using rule 45 (parametros_tocar -> tempo COMA instrumento sincronizacion .)
+
+
+state 145
+
+    (51) sincronizacion -> vacio .
+
+    PAREN_DER       reduce using rule 51 (sincronizacion -> vacio .)
+
+
+state 146
+
+    (13) declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO . cuerpo
+    (2) cuerpo -> . LLAVE_IZQ lista_declaraciones LLAVE_DER
+
+    LLAVE_IZQ       shift and go to state 7
+
+    cuerpo                         shift and go to state 158
+
+state 147
+
+    (16) parametros_para -> dec_asignacion COMA expresion COMA . expresion
+    (78) expresion -> . PAREN_IZQ expresion PAREN_DER
+    (79) expresion -> . ID
+    (80) expresion -> . numero
+    (81) expresion -> . BOOLEANO
+    (82) expresion -> . indice_arreglo
+    (83) expresion -> . expresion OPERADOR_LOGICO expresion
+    (84) expresion -> . expresion SUMA expresion
+    (85) expresion -> . expresion RESTA expresion
+    (86) expresion -> . expresion MULTI expresion
+    (87) expresion -> . expresion DIVISION expresion
+    (88) expresion -> . expresion OR expresion
+    (89) expresion -> . expresion AND expresion
+    (90) expresion -> . - expresion
+    (91) expresion -> . expresion POST
+    (92) expresion -> . PRE expresion
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (60) indice_arreglo -> . ID CORCHETE_IZQ CONSTANTE_ENTERA CORCHETE_DER
+
+    PAREN_IZQ       shift and go to state 18
+    ID              shift and go to state 51
+    BOOLEANO        shift and go to state 26
+    -               shift and go to state 28
+    PRE             shift and go to state 29
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+
+    expresion                      shift and go to state 159
+    numero                         shift and go to state 25
+    indice_arreglo                 shift and go to state 27
+
+state 148
+
+    (61) lista_arreglos -> lista_arreglos COMA elemento_arreglo .
+
+    CORCHETE_DER    reduce using rule 61 (lista_arreglos -> lista_arreglos COMA elemento_arreglo .)
+    COMA            reduce using rule 61 (lista_arreglos -> lista_arreglos COMA elemento_arreglo .)
+
+
+state 149
+
+    (42) potencia_nota -> elemento_potencia POTENCIA numero .
+
+    CORCHETE_DER    reduce using rule 42 (potencia_nota -> elemento_potencia POTENCIA numero .)
+    COMA            reduce using rule 42 (potencia_nota -> elemento_potencia POTENCIA numero .)
+    LLAVE_DER       reduce using rule 42 (potencia_nota -> elemento_potencia POTENCIA numero .)
+
+
+state 150
+
+    (31) paren_notas -> PAREN_IZQ lista_notas PAREN_DER .
+
+    CORCHETE_DER    reduce using rule 31 (paren_notas -> PAREN_IZQ lista_notas PAREN_DER .)
+    COMA            reduce using rule 31 (paren_notas -> PAREN_IZQ lista_notas PAREN_DER .)
+    POTENCIA        reduce using rule 31 (paren_notas -> PAREN_IZQ lista_notas PAREN_DER .)
+    LLAVE_DER       reduce using rule 31 (paren_notas -> PAREN_IZQ lista_notas PAREN_DER .)
+
+
+state 151
+
+    (22) lista_notas -> lista_notas COMA . nota
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    nota                           shift and go to state 160
+
+state 152
+
+    (32) llaves_notas -> LLAVE_IZQ lista_notas LLAVE_DER .
+
+    CORCHETE_DER    reduce using rule 32 (llaves_notas -> LLAVE_IZQ lista_notas LLAVE_DER .)
+    COMA            reduce using rule 32 (llaves_notas -> LLAVE_IZQ lista_notas LLAVE_DER .)
+    POTENCIA        reduce using rule 32 (llaves_notas -> LLAVE_IZQ lista_notas LLAVE_DER .)
+    LLAVE_DER       reduce using rule 32 (llaves_notas -> LLAVE_IZQ lista_notas LLAVE_DER .)
+
+
+state 153
+
+    (52) cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .
+
+    LLAVE_DER       reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    TOCAR           reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    SI              reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    MIENTRAS        reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    PARA            reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    PAREN_IZQ       reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    ID              reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    BOOLEANO        reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    -               reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    PRE             reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    CONSTANTE_ENTERA reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    CONSTANTE_FLOTANTE reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    ENTERO          reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    FLOTANTE        reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    BOOL            reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+    NOTA            reduce using rule 52 (cuerpo_tocar -> LLAVE_IZQ lista_tocar LLAVE_DER .)
+
+
+state 154
+
+    (53) lista_tocar -> lista_tocar COMA . elemento_tocar
+    (55) elemento_tocar -> . tiempo_nota
+    (56) elemento_tocar -> . potencia_nota
+    (57) elemento_tocar -> . modificador_nota
+    (58) elemento_tocar -> . elemento
+    (37) tiempo_nota -> . numero elemento
+    (38) tiempo_nota -> . numero modificador_nota
+    (42) potencia_nota -> . elemento_potencia POTENCIA numero
+    (43) modificador_nota -> . MODIFICADOR elemento
+    (33) elemento -> . paren_notas
+    (34) elemento -> . llaves_notas
+    (35) elemento -> . nota
+    (36) elemento -> . ID
+    (20) numero -> . CONSTANTE_ENTERA
+    (21) numero -> . CONSTANTE_FLOTANTE
+    (39) elemento_potencia -> . tiempo_nota
+    (40) elemento_potencia -> . modificador_nota
+    (41) elemento_potencia -> . elemento
+    (31) paren_notas -> . PAREN_IZQ lista_notas PAREN_DER
+    (32) llaves_notas -> . LLAVE_IZQ lista_notas LLAVE_DER
+    (24) nota -> . DO
+    (25) nota -> . RE
+    (26) nota -> . MI
+    (27) nota -> . FA
+    (28) nota -> . SOL
+    (29) nota -> . LA
+    (30) nota -> . SI
+
+    MODIFICADOR     shift and go to state 105
+    ID              shift and go to state 109
+    CONSTANTE_ENTERA shift and go to state 32
+    CONSTANTE_FLOTANTE shift and go to state 33
+    PAREN_IZQ       shift and go to state 110
+    LLAVE_IZQ       shift and go to state 111
+    DO              shift and go to state 112
+    RE              shift and go to state 113
+    MI              shift and go to state 114
+    FA              shift and go to state 115
+    SOL             shift and go to state 116
+    LA              shift and go to state 117
+    SI              shift and go to state 118
+
+    elemento_tocar                 shift and go to state 161
+    tiempo_nota                    shift and go to state 100
+    potencia_nota                  shift and go to state 101
+    modificador_nota               shift and go to state 102
+    elemento                       shift and go to state 103
+    numero                         shift and go to state 142
+    elemento_potencia              shift and go to state 104
+    paren_notas                    shift and go to state 106
+    llaves_notas                   shift and go to state 107
+    nota                           shift and go to state 108
+
+state 155
+
+    (48) sincronizacion -> COMA CONSTANTE_ENTERA .
+
+    PAREN_DER       reduce using rule 48 (sincronizacion -> COMA CONSTANTE_ENTERA .)
+
+
+state 156
+
+    (49) sincronizacion -> COMA CONSTANTE_FLOTANTE .
+
+    PAREN_DER       reduce using rule 49 (sincronizacion -> COMA CONSTANTE_FLOTANTE .)
+
+
+state 157
+
+    (50) sincronizacion -> COMA ID .
+
+    PAREN_DER       reduce using rule 50 (sincronizacion -> COMA ID .)
+
+
+state 158
+
+    (13) declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .
+
+    LLAVE_DER       reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    TOCAR           reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    SI              reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    MIENTRAS        reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    PARA            reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    PAREN_IZQ       reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    ID              reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    BOOLEANO        reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    -               reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    PRE             reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    CONSTANTE_ENTERA reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    CONSTANTE_FLOTANTE reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    ENTERO          reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    FLOTANTE        reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    BOOL            reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+    NOTA            reduce using rule 13 (declaracion_si -> SI PAREN_IZQ expresion PAREN_DER cuerpo SINO cuerpo .)
+
+
+state 159
+
+    (16) parametros_para -> dec_asignacion COMA expresion COMA expresion .
+    (83) expresion -> expresion . OPERADOR_LOGICO expresion
+    (84) expresion -> expresion . SUMA expresion
+    (85) expresion -> expresion . RESTA expresion
+    (86) expresion -> expresion . MULTI expresion
+    (87) expresion -> expresion . DIVISION expresion
+    (88) expresion -> expresion . OR expresion
+    (89) expresion -> expresion . AND expresion
+    (91) expresion -> expresion . POST
+
+    PAREN_DER       reduce using rule 16 (parametros_para -> dec_asignacion COMA expresion COMA expresion .)
+    OPERADOR_LOGICO shift and go to state 41
+    SUMA            shift and go to state 42
+    RESTA           shift and go to state 43
+    MULTI           shift and go to state 44
+    DIVISION        shift and go to state 45
+    OR              shift and go to state 46
+    AND             shift and go to state 47
+    POST            shift and go to state 48
+
+
+state 160
+
+    (22) lista_notas -> lista_notas COMA nota .
+
+    PAREN_DER       reduce using rule 22 (lista_notas -> lista_notas COMA nota .)
+    COMA            reduce using rule 22 (lista_notas -> lista_notas COMA nota .)
+    LLAVE_DER       reduce using rule 22 (lista_notas -> lista_notas COMA nota .)
+
+
+state 161
+
+    (53) lista_tocar -> lista_tocar COMA elemento_tocar .
+
+    LLAVE_DER       reduce using rule 53 (lista_tocar -> lista_tocar COMA elemento_tocar .)
+    COMA            reduce using rule 53 (lista_tocar -> lista_tocar COMA elemento_tocar .)
+

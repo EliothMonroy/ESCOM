@@ -1,0 +1,56 @@
+\chapter{Códigos}
+\section{Evaluación 4}
+\subsection{Servidor de información HTTP}
+\noindent
+Para el servidor de información http, se configuró un pequeño servidor implementado en python usando la librería de Flask. A continuación se muestra el código.\\
+servidor-flask.py:
+\lstinputlisting[language=Python]{src/primero/servidor-flask.py}
+\section{Evaluación 5}
+\noindent
+Para el desarrollo del monitor de los servidores, se continúo trabajando en Python 3 usando como base los programas anteriormente desarrollados. El programa principal que ejecuta todo el monitoreador es el siguiente.\\
+main.py:
+\lstinputlisting[language=Python]{src/segundo/main.py}
+\noindent
+El siguiente archivo, funciona para permitir al usuario agregar agentes, y au vez monitorearlos, creando un hilo por cada agente al momento de que se da click.\\
+gestor.py:
+\lstinputlisting[language=Python]{src/segundo/gestor.py}
+\noindent
+El archivo que contiene la clase con al que se modela a un agente es la siguiente.\\
+agente.py:
+\lstinputlisting[language=Python]{src/segundo/agente.py}
+\noindent
+Para agregar un agente, es usado el siguiente programa.\\
+agregar-agente.py:
+\lstinputlisting[language=Python]{src/segundo/agregar-agente.py}
+\noindent
+Esta es la clase hilo encargada de monitoreas tanto los objetos mib del agente, como a los servidores configurados anteriormente.\\
+monitor.py:
+\lstinputlisting[language=Python]{src/segundo/monitor.py}
+\noindent
+Este archivo contiene las funciones snmp necesarias para que se puedan monitorear los objetos de la mib.\\
+SNMP.py:
+\lstinputlisting[language=Python]{src/segundo/SNMP.py}
+\noindent
+Este programa, permite monitorear el servidor ssh de un agente.\\
+Sensor-SSH.py:
+\lstinputlisting[language=Python]{src/segundo/Sensor-SSH.py}
+\noindent
+Este programa, permite monitorear el servidor smtp de un agente.\\
+smtp-cliente.py:
+\lstinputlisting[language=Python]{src/segundo/smtp-cliente.py}
+\noindent
+Este programa, permite monitorear el servidor http de un agente.\\
+http-cliente.py:
+\lstinputlisting[language=Python]{src/segundo/http-cliente.py}
+\noindent
+Este programa, permite monitorear el servidor ftp de un agente.\\
+ftp-cliente.py:
+\lstinputlisting[language=Python]{src/segundo/ftp-cliente.py}
+\noindent
+Este programa, permite monitorear el servidor dns de un agente.\\
+SensDNS.py:
+\lstinputlisting[language=Python]{src/segundo/SensDNS.py}
+\noindent
+Finalmente, este programa convierte toda la información monitoreada de un agente y sus servidores a un archivo pdf.\\
+PDFM.py:
+\lstinputlisting[language=Python]{src/segundo/PDFM.py}

@@ -1,0 +1,23 @@
+\babel@toc {spanish}{}
+\thispagestyle {empty}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}FCAPS}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}L\IeC {\'\i }nea base}{2}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}M\IeC {\'\i }nimos cuadrados}{3}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Holt Winters}{3}{section.1.4}% 
+\contentsline {chapter}{\numberline {2}Desarrollo y Resultados}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Examen 1.- Administraci\IeC {\'o}n de fallas con m\IeC {\'\i }nimos cuadrados}{5}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Ejercicio 1: Definici\IeC {\'o}n de umbrales}{5}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Ejercicio 2: M\IeC {\'\i }nimos Cuadrados}{6}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Ejercicio 3: Env\IeC {\'\i }o de Correos}{7}{subsection.2.1.3}% 
+\contentsline {subsection}{\numberline {2.1.4}Ejercicio 4: Lectura Completa}{8}{subsection.2.1.4}% 
+\contentsline {section}{\numberline {2.2}Examen 2.- Administraci\IeC {\'o}n de fallas usando series de datos no lineales mediante Holt Winters}{9}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Evidencia 1}{9}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Evidencia 2}{10}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Evidencia 3}{11}{subsection.2.2.3}% 
+\contentsline {chapter}{\numberline {3}Cuestionario}{12}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}C\IeC {\'o}digos}{17}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Examen 1}{17}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Examen 2}{39}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Conclusiones}{45}{chapter.5}% 
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{46}{chapter.5}% 
