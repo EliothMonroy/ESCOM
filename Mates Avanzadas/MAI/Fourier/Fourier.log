@@ -1,0 +1,284 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (MiKTeX 2.4) (preloaded format=latex 2009.4.5)  30 JUL 2011 17:01
+entering extended mode
+**C:/Users/Gris*Cruces/Documents/Apuntes*cb*ESCOM/Fourier/Fourier.tex
+(C:/Users/Gris Cruces/Documents/Apuntes cb ESCOM/Fourier/Fourier.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8g> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+(C:\texmf\tex\latex\base\article.cls
+Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
+(C:\texmf\tex\latex\base\size10.clo
+File: size10.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (C:\texmf\tex\generic\babel\babel.sty
+Package: babel 2005/05/21 v3.8g The Babel package
+
+(C:\texmf\tex\generic\babel\spanish.ldf
+Language: spanish.ldf 2005/03/31 v4.2b Spanish support from the babel system
+ (C:\texmf\tex\generic\babel\babel.def
+File: babel.def 2005/05/21 v3.8g Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@spanish = a dialect from \language0
+\es@quottoks=\toks14
+\es@quotdepth=\count88
+Package babel Info: Making . an active character on input line 509.
+Package babel Info: Making " an active character on input line 540.
+Package babel Info: Making < an active character on input line 641.
+Package babel Info: Making > an active character on input line 642.
+)) (C:\texmf\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\texmf\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\texmf\tex\latex\graphics\graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+ (C:\texmf\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (C:\texmf\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2003/03/12 v1.1 MiKTeX 'graphics' configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(C:\texmf\tex\latex\graphics\pdftex.def
+File: pdftex.def 2005/06/20 v0.03m graphics/color for pdftex
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(C:\texmf\tex\latex\anysize\anysize.sty
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen106
+\@Rightmargin=\dimen107
+\@Topmargin=\dimen108
+\@Bottommargin=\dimen109
+)
+\c@dmt=\count90
+\c@dfn=\count91
+ (Fourier.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+ (C:\texmf\tex\context\base\supp-pdf.tex
+(C:\texmf\tex\context\base\supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count92
+\scratchcounter=\count93
+\scratchtoks=\toks16
+\scratchdimen=\dimen110
+\scratchskip=\skip43
+\scratchmuskip=\muskip10
+\scratchbox=\box26
+\scratchread=\read1
+\scratchwrite=\write3
+\zeropoint=\dimen111
+\onepoint=\dimen112
+\onebasepoint=\dimen113
+\minusone=\count94
+\thousandpoint=\dimen114
+\onerealpoint=\dimen115
+\emptytoks=\toks17
+\nextbox=\box27
+\nextdepth=\dimen116
+\everyline=\toks18
+\!!counta=\count95
+\!!countb=\count96
+\recursecounter=\count97
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen117
+\MPnumerator=\count101
+\everyMPtoPDFconversion=\toks19
+) [1
+
+{psfonts.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 39.
+ <f1p1.jpg, id=11, 310.15875pt x 119.69719pt>
+File: f1p1.jpg Graphic file (type jpg)
+ <use f1p1.jpg>
+<f1p2.jpg, id=12, 322.20375pt x 213.04594pt>
+File: f1p2.jpg Graphic file (type jpg)
+ <use f1p2.jpg> [1 <f1p1.jpg> <f1p2.jpg>] <f1p3.jpg, id=34, 322.95656pt x 210.0
+3468pt>
+File: f1p3.jpg Graphic file (type jpg)
+ <use f1p3.jpg>
+<f1p4.jpg, id=35, 322.20375pt x 213.79875pt>
+File: f1p4.jpg Graphic file (type jpg)
+ <use f1p4.jpg>
+Overfull \hbox (2.49004pt too wide) in paragraph at lines 93--94
+[]\OT1/cmr/m/n/10 Muchas fun-ciones cono-ci-das pueden de-sar-rol-larse en se-r
+ies in-fini-tas e in-te-grales que con-tienen fun-ciones trigonometri-
+ []
+
+[2 <f1p3.jpg> <f1p4.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+[3] [4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+<cases.png, id=70, 136.51pt x 81.30376pt>
+File: cases.png Graphic file (type png)
+ <use cases.png>
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+[7] <ejemplo1.png, id=74, 168.63pt x 235.88126pt>
+File: ejemplo1.png Graphic file (type png)
+ <use ejemplo1.png>
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+[8 <cases.png> <ejemplo1.png>]
+Missing character: There is no í in font cmr10!
+Missing character: There is no ñ in font cmr10!
+Missing character: There is no ñ in font cmr10!
+ <senal.jpg, id=78, 386.19281pt x 143.78719pt>
+File: senal.jpg Graphic file (type jpg)
+
+<use senal.jpg> [9 <senal.jpg>]
+<flip_flop.jpg, id=82, 298.11375pt x 234.8775pt>
+File: flip_flop.jpg Graphic file (type jpg)
+ <use flip_flop.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+
+ []
+
+[10
+
+ <flip_flop.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
+
+ []
+
+Missing character: There is no ñ in font cmr10!
+Missing character: There is no ñ in font cmr10!
+[11] <circuito.jpg, id=89, 310.15875pt x 140.02313pt>
+File: circuito.jpg Graphic file (type jpg)
+ <use circuito.jpg>
+[12 <circuito.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+<limites.jpg, id=94, 338.76563pt x 201.00093pt>
+File: limites.jpg Graphic file (type jpg)
+ <use limites.jpg> [13 <limites.jpg>]
+Missing character: There is no ó in font cmr10!
+Missing character: There is no ó in font cmr10!
+ [14] [15]
+Missing character: There is no ñ in font cmbx10!
+ <grafica_scsenales.jpg, id=107, 254.45062pt x 149.8097pt>
+File: grafica_scsenales.jpg Graphic file (type jpg)
+
+<use grafica_scsenales.jpg> [16 <grafica_scsenales.jpg>] [17] (Fourier.toc
+Missing character: There is no ñ in font cmr10!
+)
+\tf@toc=\write4
+
+(Fourier.lof)
+\tf@lof=\write5
+ [18
+
+] (Fourier.aux) ) 
+Here is how much of TeX's memory you used:
+ 1591 strings out of 95515
+ 17968 string characters out of 1189490
+ 76653 words of memory out of 1072244
+ 4646 multiletter control sequences out of 60000
+ 6469 words of font info for 23 fonts, out of 1000000 for 2000
+ 14 hyphenation exceptions out of 4999
+ 25i,8n,25p,854b,208s stack positions out of 5000i,500n,10000p,200000b,32768s
+PDF statistics:
+ 117 PDF objects out of 300000
+ 0 named destinations out of 300000
+ 56 words of extra memory for PDF output out of 65536
+<C:\texmf\fonts\type1\bluesky\cm\cmsy5.pfb><C:\texmf\fonts\typ
+e1\bluesky\cm\cmr5.pfb><C:\texmf\fonts\type1\bluesky\cm\cmmi5.pfb><C:\texmf\fon
+ts\type1\bluesky\cm\cmbxti10.pfb><C:\texmf\fonts\type1\bluesky\cm\cmmi7.pfb><C:
+\texmf\fonts\type1\bluesky\cm\cmex10.pfb><C:\texmf\fonts\type1\bluesky\cm\cmsy7
+.pfb><C:\texmf\fonts\type1\bluesky\cm\cmsy10.pfb><C:\texmf\fonts\type1\bluesky\
+cm\cmr7.pfb><C:\texmf\fonts\type1\bluesky\cm\cmr10.pfb><C:\texmf\fonts\type1\bl
+uesky\cm\cmmi10.pfb><C:\texmf\fonts\type1\bluesky\cm\cmti10.pfb><C:\texmf\fonts
+\type1\bluesky\cm\cmbx10.pfb><C:\texmf\fonts\type1\bluesky\cm\cmr17.pfb><C:\tex
+mf\fonts\type1\bluesky\cm\cmbx12.pfb>
+Output written on Fourier.pdf (19 pages, 243947 bytes).

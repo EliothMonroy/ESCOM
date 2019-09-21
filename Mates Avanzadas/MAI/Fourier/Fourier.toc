@@ -1,0 +1,13 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\'on}{1}
+\contentsline {subsection}{\numberline {1.1}Clasificaci\'on de las Funciones}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Funciones Peri\'odicas, definici\'on y gr\'afica}{1}
+\contentsline {subsubsection}{\numberline {1.1.2}Funciones Pares e Impares, definici\'on y gr\'aficas}{2}
+\contentsline {section}{\numberline {2}Conceptos y definici\'on de Serie de Fourier}{2}
+\contentsline {subsection}{\numberline {2.1}Funciones Ortogonales}{3}
+\contentsline {subsection}{\numberline {2.2}Determinaci\'on de la Serie de Fourier de Se\~nales El\'ectricas}{9}
+\contentsline {subsection}{\numberline {2.3}Interpretaci\'on Geom\'etrica de la serie de Fourier}{13}
+\contentsline {subsubsection}{\numberline {2.3.1}Condiciones de Dirichlet}{13}
+\contentsline {subsection}{\numberline {2.4}Serie de Fourier Compleja}{14}
+\contentsline {subsubsection}{\numberline {2.4.1}Definici\'on de la Serie de Fourier Compleja}{15}
+\contentsline {subsubsection}{\numberline {2.4.2}Determinaci\'on de la Serie Compleja de Señales}{16}
