@@ -1,0 +1,48 @@
+﻿Del sistema masa resorte amortiguador:
+
+
+-Obtener la ecuación diferencial que describe el sistema.
+
+-Obtener la función de transferencia en terminos de Laplace (la entrada es la fuerza, la salida es el desplazamiento)
+
+
+-Dibujar el diagrama de polos y ceros para los tres casos del video visto ayer
+(https://www.youtube.com/watch?v=WLo-iid4XS8)
+
+m=0.2 
+k=4
+ b=0.1, 0.3 y 0.9
+
+
+-Bosquejar el diagrama de bode para cada uno de estos casos.
+
+
+
+-Ver la relación con la aplicación que pueden encontrar en:
+
+http://mathlets.org/mathlets/amplitude-response-pole-diagram/
+
+
+
+-Buscar en:
+
+http://148.204.58.221/ealdana/comunicaciones/Libro2/11-Sistemas_con_entrada_exponenciales.pdf
+
+ 
+como calcular el factor de calidad Q y que relación tiene con la frecuencia de resonancia y el ancho de banda.
+
+
+
+
+Enlaces de referencia:
+
+http://www.sharetechnote.com/html/EngMath_DifferentialEquation.html
+
+
+http://www.monografias.com/trabajos104/aplicaciones-transformada-laplace/aplicaciones-transformada-laplace.shtml
+
+
+http://lpsa.swarthmore.edu/Bode/BodeRules.pdf
+
+http://mathlets.org/mathlets/amplitude-response-pole-diagram/
+
